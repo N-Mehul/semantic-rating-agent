@@ -188,7 +188,35 @@ def run_evaluation(predictions_path: str, actual_path: str, output_results_path:
     sent_correct = sent_correct_mask.sum()
     sent_incorrect = n_matched - sent_correct
     sent_accuracy = (sent_correct / n_matched) * 100.0
+    # Sentiment Error Analysis
+    # Create a DataFrame of sentiment errors with required fields
+    error_df = matched_df.loc[~sent_correct_mask, ["review_text", "actual_sentiment", "predicted_sentiment"]].copy()
+    # Include confidence if column exists
+    if "prediction_confidence" in matched_df.columns:
+        error_df["confidence"] = matched_df.loc[~sent_correct_mask, "prediction_confidence"]
+    else:
+        error_df["confidence"] = None
+    # Add row index identifier
+    error_df["row_id"] = error_df.index
 
+    # Save errors to CSV in same output directory
+    error_output_path = os.path.join(os.path.dirname(output_results_path), "sentiment_errors.csv")
+    error_df.to_csv(error_output_path, index=False, encoding="utf-8")
+    print(f"Sentiment errors saved to: {error_output_path}")
+
+    # Sentiment confusion summary (Actual vs Predicted)
+    sentiment_labels = ["Negative", "Neutral", "Positive"]
+    confusion_counts = {}
+    for actual in sentiment_labels:
+        for pred in sentiment_labels:
+            if actual != pred:
+                count = ((actual_sents.str.lower() == actual.lower()) & (pred_sents.str.lower() == pred.lower())).sum()
+                key = f"Actual {actual} -> Predicted {pred}"
+                confusion_counts[key] = int(count)
+
+    print("\nSentiment Error Summary:")
+    for k, v in confusion_counts.items():
+        print(f"{k}: {v}")
     # Rating Metrics
     actual_ratings = matched_df["actual_rating"].values
     pred_likert = matched_df["predicted_likert_rating"].values
