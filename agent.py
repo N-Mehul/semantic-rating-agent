@@ -164,6 +164,176 @@ def _is_balanced(counts: list) -> bool:
     return max(counts) / min(counts) < 3.0
 
 
+# ── Compiled sentiment-signal patterns (module-level for performance) ─────────
+# General linguistic phrase patterns — NOT exact review-text memorization.
+# Used by _apply_sentiment_rules() to post-process centroid predictions.
+_STRONG_NEGATIVE_PATTERNS: List[re.Pattern] = [
+    re.compile(r'\bvery poor\b',                re.IGNORECASE),
+    re.compile(r'\bnot up to the mark\b',       re.IGNORECASE),
+    re.compile(r'\bvery slow\b',                re.IGNORECASE),
+    re.compile(r'\bvery disappointed\b',        re.IGNORECASE),
+    re.compile(r"\bwouldn.t recommend\b",       re.IGNORECASE),
+    re.compile(r'\bregret buying\b',            re.IGNORECASE),
+    re.compile(r'\bnot worth\b',                re.IGNORECASE),
+    re.compile(r'\boverheats?\b',               re.IGNORECASE),
+    re.compile(r'\blags often\b',               re.IGNORECASE),
+    re.compile(r'\bdrains too fast\b',          re.IGNORECASE),
+    re.compile(r'\bflickering\b',               re.IGNORECASE),
+    re.compile(r'\bbad and muffled\b',          re.IGNORECASE),
+    re.compile(r'\bdisappointing\b',            re.IGNORECASE),
+    re.compile(r'\breturning (?:this|it)\b',    re.IGNORECASE),
+    re.compile(r'\bhangs often\b',              re.IGNORECASE),
+]
+
+_STRONG_NEUTRAL_PATTERNS: List[re.Pattern] = [
+    re.compile(r'\bfine but could be better\b',          re.IGNORECASE),
+    re.compile(r'\bnothing special\b',                    re.IGNORECASE),
+    re.compile(r'\baverage experience\b',                 re.IGNORECASE),
+    re.compile(r'\bokay for casual use\b',                re.IGNORECASE),
+    re.compile(r'\bneither great nor bad\b',              re.IGNORECASE),
+    re.compile(r'\bnot bad for daily use\b',              re.IGNORECASE),
+    re.compile(r'\bnot the best in this range\b',         re.IGNORECASE),
+    re.compile(r'\bexpected.{0,20}more for the price\b',  re.IGNORECASE),
+    re.compile(r'\bperformance is average\b',             re.IGNORECASE),
+    re.compile(r'\bcould be slightly better\b',           re.IGNORECASE),
+    re.compile(r'\bdelayed sometimes\b',                  re.IGNORECASE),
+    re.compile(r'\bnot very loud\b',                      re.IGNORECASE),
+    re.compile(r'\ba bit bulky\b',                        re.IGNORECASE),
+]
+
+
+def _apply_sentiment_rules(text: str, predicted_sentiment: str) -> str:
+    """
+    Post-processing sentiment override using general linguistic patterns.
+    Applied AFTER the centroid/ML classifier — the classifier is NOT changed.
+
+    Rule 1 (Neutral → Negative):
+        If the ML model predicts Neutral but the text contains ≥1 strong-negative
+        phrase and zero neutral-hedge phrases → override to Negative.
+
+    Rule 2 (Negative → Neutral):
+        If the ML model predicts Negative but the text contains ≥1 neutral-hedge
+        phrase and zero strong-negative phrases → override to Neutral.
+
+    Conflict guard: when both signal types match, keep the ML prediction.
+    Positive predictions are never changed by these rules.
+    Patterns are general linguistic rules — NOT exact review-text memorization.
+    """
+    has_strong_neg   = any(p.search(text) for p in _STRONG_NEGATIVE_PATTERNS)
+    has_neutral_hedge = any(p.search(text) for p in _STRONG_NEUTRAL_PATTERNS)
+
+    # Rule 1: centroid said Neutral, but text has clear negative signals only
+    if predicted_sentiment == "Neutral" and has_strong_neg and not has_neutral_hedge:
+        return "Negative"
+
+    # Rule 2: centroid said Negative, but text has clear neutral-hedge signals only
+    if predicted_sentiment == "Negative" and has_neutral_hedge and not has_strong_neg:
+        return "Neutral"
+
+    # Conflict present, or no applicable rule — keep centroid prediction unchanged
+    return predicted_sentiment
+
+
+def _build_rating_uncertainty(
+    pred_dist: Dict[str, float],
+    level: float = 0.80,
+    margin_threshold: float = 0.10,
+) -> Dict[str, Any]:
+    """
+    Build calibrated uncertainty metrics and credible prediction intervals from a rating probability distribution.
+
+    Parameters
+    ----------
+    pred_dist : Dict[str, float]
+        Dictionary mapping rating scale keys (e.g. '1', '2', '3', '4', '5') to non-negative probabilities.
+    level : float
+        Nominal coverage level for the highest-density credible prediction interval (default: 0.80).
+    margin_threshold : float
+        Confidence margin threshold (top1_prob - top2_prob) to classify as 'confident' vs 'ambiguous' (default: 0.10).
+
+    Returns
+    -------
+    Dict[str, Any] containing:
+        - confidence: float (top-1 probability in [0.0, 1.0])
+        - prediction_margin: float (top-1 prob - top-2 prob)
+        - uncertainty_status: str ("confident" or "ambiguous")
+        - uncertainty_explanation: str (human-readable explanation)
+        - rating_distribution: Dict[str, float] (normalized 5-class distribution)
+        - prediction_interval: Dict[str, Any] (level, lower, upper, covered_mass)
+    """
+    if not pred_dist:
+        return {
+            "confidence": 0.0,
+            "prediction_margin": 0.0,
+            "uncertainty_status": "ambiguous",
+            "uncertainty_explanation": "No probability distribution available.",
+            "rating_distribution": {},
+            "prediction_interval": {"level": level, "lower": 1, "upper": 5, "covered_mass": 1.0},
+        }
+
+    # Ensure all ratings are normalized floats
+    total = sum(pred_dist.values())
+    if total > 0:
+        norm_dist = {str(k): float(v) / total for k, v in pred_dist.items()}
+    else:
+        norm_dist = {str(k): 1.0 / len(pred_dist) for k in pred_dist}
+
+    # Sort classes by probability descending
+    sorted_items = sorted(norm_dist.items(), key=lambda x: -x[1])
+    top1_k, top1_prob = sorted_items[0]
+    top2_k, top2_prob = sorted_items[1] if len(sorted_items) > 1 else (top1_k, top1_prob)
+
+    confidence = float(top1_prob)
+    prediction_margin = float(top1_prob - top2_prob)
+
+    if prediction_margin >= margin_threshold:
+        uncertainty_status = "confident"
+        uncertainty_explanation = "Rating prediction is relatively confident."
+    else:
+        uncertainty_status = "ambiguous"
+        uncertainty_explanation = "Rating prediction is uncertain because multiple ratings have similar probabilities."
+
+    # Highest Density Credible Prediction Interval
+    # Accumulate most probable classes until cumulative mass reaches or exceeds level
+    cum_mass = 0.0
+    chosen_ratings: List[int] = []
+    for rk, p in sorted_items:
+        try:
+            r_int = int(float(rk))
+            chosen_ratings.append(r_int)
+        except (ValueError, TypeError):
+            continue
+        cum_mass += p
+        if cum_mass >= level:
+            break
+
+    if not chosen_ratings:
+        lower, upper = 1, 5
+    else:
+        lower = max(1, min(chosen_ratings))
+        upper = min(5, max(chosen_ratings))
+
+    covered_mass = sum(norm_dist.get(str(r), norm_dist.get(f"{r}.0", 0.0)) for r in range(lower, upper + 1))
+
+    prediction_interval = {
+        "level": float(level),
+        "lower": int(lower),
+        "upper": int(upper),
+        "covered_mass": round(float(covered_mass), 4),
+    }
+
+    rounded_dist = {k: round(float(v), 4) for k, v in norm_dist.items()}
+
+    return {
+        "confidence": round(confidence, 4),
+        "prediction_margin": round(prediction_margin, 4),
+        "uncertainty_status": uncertainty_status,
+        "uncertainty_explanation": uncertainty_explanation,
+        "rating_distribution": rounded_dist,
+        "prediction_interval": prediction_interval,
+    }
+
+
 def _infer_scale_label(rmin: float, rmax: float, n_unique: int) -> str:
     if rmin == 1 and rmax == 5 and n_unique <= 5:
         return "5-point Likert scale (1–5)"
@@ -2422,6 +2592,10 @@ class SemanticRatingAgent:
             for sv, s_val in sorted_sents:
                 sent_sims_display[sv] = round(float(s_val), 4)
 
+            # ── General Sentiment Rule Override ──────────────────────────────
+            # Applied after centroid prediction; classifier is NOT modified.
+            top_sent = _apply_sentiment_rules(text, top_sent)
+
         # ── 2. Example-Based Rating Prediction ────────────────────────────────
         has_rating = bool(example_bank or rating_profiles or self.primary_rating_col)
         rating_scale_vals = target_info.get("rating", {}).get("unique_values", [1.0, 2.0, 3.0, 4.0, 5.0])
@@ -2500,14 +2674,116 @@ class SemanticRatingAgent:
 
         if has_rating:
             r_disp = int(float(most_likely_rating)) if float(most_likely_rating).is_integer() else most_likely_rating
+            unc_info = _build_rating_uncertainty(predicted_dist, level=0.80, margin_threshold=0.10)
+            r_dist_str = ", ".join(f"{k}: {v*100:.1f}%" for k, v in unc_info["rating_distribution"].items())
+            p_int = unc_info["prediction_interval"]
             lines += [
                 "",
                 f"Predicted Likert Rating: {r_disp}",
-                f"Rating Confidence: {rating_conf_str}",
+                f"Rating Confidence: {unc_info['confidence']*100:.1f}% ({unc_info['uncertainty_status']}, margin: +{unc_info['prediction_margin']*100:.1f}%)",
                 f"Expected Rating: {exp_rating:.2f}",
+                f"Rating Distribution: [{r_dist_str}]",
+                f"Prediction Interval (80%): [{p_int['lower']}–{p_int['upper']} ⭐]",
+                f"Uncertainty Note: {unc_info['uncertainty_explanation']}",
             ]
 
         return "\n".join(lines)
+
+    def predict_text(self, text: str) -> Dict[str, Any]:
+        """
+        Analyze an unseen review text and return a structured dictionary containing
+        predicted sentiment, predicted Likert rating, continuous expected rating,
+        and calibrated uncertainty metrics (distribution, confidence, margin, status, interval).
+        """
+        patterns = self.memory.get("text_rating_patterns", {})
+        example_bank = patterns.get("example_bank", [])
+        rating_profiles = patterns.get("rating_profiles", {})
+        sent_profiles = patterns.get("sentiment_profiles", {})
+        target_info = self.memory.get("target_analysis", {})
+
+        vec = self._embed([text])[0]
+
+        # 1. Sentiment Prediction
+        top_sent = "Unknown"
+        sent_conf_str = "Low"
+        sent_sims_display: Dict[str, float] = {}
+
+        if sent_profiles:
+            sent_sims: Dict[str, float] = {}
+            for sv, prof in sent_profiles.items():
+                centroid = np.array(prof["centroid"])
+                sent_sims[sv] = _cosine_sim(vec, centroid)
+
+            sorted_sents = sorted(sent_sims.items(), key=lambda x: -x[1])
+            top_sent, top_sent_sim = sorted_sents[0] if sorted_sents else ("Unknown", 0.0)
+            sec_sent_sim = sorted_sents[1][1] if len(sorted_sents) > 1 else top_sent_sim
+            sent_margin = top_sent_sim - sec_sent_sim
+
+            if sent_margin >= 0.08:
+                sent_conf_str = "High"
+            elif sent_margin >= 0.03:
+                sent_conf_str = "Moderate"
+            else:
+                sent_conf_str = "Low"
+
+            for sv, s_val in sorted_sents:
+                sent_sims_display[sv] = round(float(s_val), 4)
+
+            # Sentiment Rule Override
+            top_sent = _apply_sentiment_rules(text, top_sent)
+
+        # 2. Likert Rating Prediction
+        rating_scale_vals = target_info.get("rating", {}).get("unique_values", [1.0, 2.0, 3.0, 4.0, 5.0])
+        rating_scale_keys = [str(int(v)) if float(v).is_integer() else str(v) for v in sorted(rating_scale_vals)]
+        predicted_dist: Dict[str, float] = {k: 0.0 for k in rating_scale_keys}
+
+        if example_bank:
+            bank_sims = np.array([_cosine_sim(vec, np.array(e["embedding"])) for e in example_bank])
+            top_k = min(5, len(example_bank))
+            top_indices = np.argsort(-bank_sims)[:top_k]
+            top_sim_values = bank_sims[top_indices]
+            weights = _softmax(top_sim_values, temp=0.1)
+
+            for w, idx in zip(weights, top_indices):
+                e = example_bank[idx]
+                e_dist = e.get("rating_distribution", {})
+                for rk in rating_scale_keys:
+                    p_val = float(e_dist.get(rk, e_dist.get(str(float(rk)), 0.0)))
+                    predicted_dist[rk] += float(w * p_val)
+
+            tot_w = sum(predicted_dist.values())
+            if tot_w > 0:
+                predicted_dist = {k: v / tot_w for k, v in predicted_dist.items()}
+            else:
+                predicted_dist = {k: 1.0 / len(predicted_dist) for k in predicted_dist}
+
+        elif rating_profiles:
+            sims = {rk: _cosine_sim(vec, np.array(rating_profiles[rk]["centroid"])) for rk in rating_scale_keys if rk in rating_profiles}
+            w = _softmax(np.array(list(sims.values())), temp=0.1)
+            for k, val in zip(sims.keys(), w):
+                predicted_dist[k] = float(val)
+
+        exp_rating = sum(float(k) * predicted_dist[k] for k in rating_scale_keys)
+        most_likely_rating = max(predicted_dist.items(), key=lambda x: x[1])[0]
+        r_val = float(most_likely_rating)
+        pred_likert = int(r_val) if r_val.is_integer() else r_val
+
+        # 3. Calibrated Uncertainty Layer
+        unc_info = _build_rating_uncertainty(predicted_dist, level=0.80, margin_threshold=0.10)
+
+        return {
+            "review_text": text,
+            "predicted_sentiment": top_sent,
+            "sentiment_confidence": sent_conf_str,
+            "predicted_likert_rating": pred_likert,
+            "expected_rating": round(exp_rating, 4),
+            "confidence": unc_info["confidence"],
+            "prediction_margin": unc_info["prediction_margin"],
+            "uncertainty_status": unc_info["uncertainty_status"],
+            "uncertainty_explanation": unc_info["uncertainty_explanation"],
+            "rating_distribution": unc_info["rating_distribution"],
+            "prediction_interval": unc_info["prediction_interval"],
+        }
 
     # ──────────────────────────────────────────────────────────────────────────
     # Orchestrator

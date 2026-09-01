@@ -37,7 +37,13 @@ if sys.platform == "win32":
 import numpy as np
 import pandas as pd
 
-from agent import SemanticRatingAgent, _cosine_sim, _softmax
+from agent import (
+    SemanticRatingAgent,
+    _cosine_sim,
+    _softmax,
+    _apply_sentiment_rules,
+    _build_rating_uncertainty,
+)
 
 MEMORY_FILE    = "memory.json"
 DEFAULT_OUTPUT = os.path.join("data", "predictions.csv")
@@ -45,7 +51,7 @@ DEFAULT_OUTPUT = os.path.join("data", "predictions.csv")
 
 def predict_single(agent: SemanticRatingAgent, text: str) -> dict:
     """
-    Predict sentiment and Likert rating for one review text.
+    Predict sentiment, Likert rating, and calibrated uncertainty metrics for one review text.
     Exact implementation matching agent.py's prediction logic.
     """
     patterns        = agent.memory.get("text_rating_patterns", {})
@@ -66,6 +72,11 @@ def predict_single(agent: SemanticRatingAgent, text: str) -> dict:
         }
         sorted_sents = sorted(sent_sims.items(), key=lambda x: -x[1])
         top_sent = sorted_sents[0][0] if sorted_sents else "Unknown"
+
+    # ── General Sentiment Rule Override ───────────────────────────────────
+    # Applied after centroid prediction; classifier is NOT modified.
+    if top_sent != "Unknown":
+        top_sent = _apply_sentiment_rules(text, top_sent)
 
     # ── 2. Likert Rating Prediction ──────────────────────────────────────────
     rating_vals = target_info.get("rating", {}).get("unique_values", [1.0, 2.0, 3.0, 4.0, 5.0])
@@ -107,10 +118,21 @@ def predict_single(agent: SemanticRatingAgent, text: str) -> dict:
     best_rating_v = float(best_rating_k)
     pred_likert = int(best_rating_v) if best_rating_v.is_integer() else best_rating_v
 
+    # ── 3. Calibrated Uncertainty Metrics ─────────────────────────────────────
+    unc_info = _build_rating_uncertainty(pred_dist, level=0.80, margin_threshold=0.10)
+    p_int = unc_info["prediction_interval"]
+
     return {
-        "predicted_sentiment":     top_sent,
-        "predicted_likert_rating": pred_likert,
-        "expected_rating":         round(exp_rating, 4),
+        "predicted_sentiment":       top_sent,
+        "predicted_likert_rating":   pred_likert,
+        "expected_rating":           round(exp_rating, 4),
+        "confidence":                unc_info["confidence"],
+        "prediction_margin":         unc_info["prediction_margin"],
+        "uncertainty_status":        unc_info["uncertainty_status"],
+        "uncertainty_explanation":   unc_info["uncertainty_explanation"],
+        "prediction_interval_lower": p_int["lower"],
+        "prediction_interval_upper": p_int["upper"],
+        "rating_distribution":       json.dumps(unc_info["rating_distribution"]),
     }
 
 
@@ -131,6 +153,7 @@ def run_batch(input_csv: str, output_csv: str = DEFAULT_OUTPUT) -> None:
         text_col = "review_text"
     else:
         text_col = df_in.columns[0]
+        print(f"Note: Using column '{text_col}' as review_text.")
 
     reviews = df_in[text_col].fillna("").astype(str).tolist()
     total = len(reviews)
@@ -153,27 +176,48 @@ def run_batch(input_csv: str, output_csv: str = DEFAULT_OUTPUT) -> None:
 
         if not review_text.strip():
             results.append({
-                "review_text":             review_text,
-                "predicted_sentiment":     "Unknown",
-                "predicted_likert_rating": None,
-                "expected_rating":         None,
+                "review_text":               review_text,
+                "predicted_sentiment":       "Unknown",
+                "predicted_likert_rating":   None,
+                "expected_rating":           None,
+                "confidence":                None,
+                "prediction_margin":         None,
+                "uncertainty_status":        "ambiguous",
+                "uncertainty_explanation":   "Empty review text.",
+                "prediction_interval_lower": 1,
+                "prediction_interval_upper": 5,
+                "rating_distribution":       "{}",
             })
             continue
 
         try:
             pred = predict_single(agent, review_text)
             results.append({
-                "review_text":             review_text,
-                "predicted_sentiment":     pred["predicted_sentiment"],
-                "predicted_likert_rating": pred["predicted_likert_rating"],
-                "expected_rating":         pred["expected_rating"],
+                "review_text":               review_text,
+                "predicted_sentiment":       pred["predicted_sentiment"],
+                "predicted_likert_rating":   pred["predicted_likert_rating"],
+                "expected_rating":           pred["expected_rating"],
+                "confidence":                pred["confidence"],
+                "prediction_margin":         pred["prediction_margin"],
+                "uncertainty_status":        pred["uncertainty_status"],
+                "uncertainty_explanation":   pred["uncertainty_explanation"],
+                "prediction_interval_lower": pred["prediction_interval_lower"],
+                "prediction_interval_upper": pred["prediction_interval_upper"],
+                "rating_distribution":       pred["rating_distribution"],
             })
         except Exception:
             results.append({
-                "review_text":             review_text,
-                "predicted_sentiment":     "Unknown",
-                "predicted_likert_rating": None,
-                "expected_rating":         None,
+                "review_text":               review_text,
+                "predicted_sentiment":       "Unknown",
+                "predicted_likert_rating":   None,
+                "expected_rating":           None,
+                "confidence":                None,
+                "prediction_margin":         None,
+                "uncertainty_status":        "ambiguous",
+                "uncertainty_explanation":   "Prediction failed.",
+                "prediction_interval_lower": 1,
+                "prediction_interval_upper": 5,
+                "rating_distribution":       "{}",
             })
 
     print("Processing complete.", flush=True)
@@ -183,12 +227,21 @@ def run_batch(input_csv: str, output_csv: str = DEFAULT_OUTPUT) -> None:
     if out_dir:
         os.makedirs(out_dir, exist_ok=True)
 
-    df_out = pd.DataFrame(results, columns=[
+    output_columns = [
         "review_text",
         "predicted_sentiment",
         "predicted_likert_rating",
         "expected_rating",
-    ])
+        "confidence",
+        "prediction_margin",
+        "uncertainty_status",
+        "uncertainty_explanation",
+        "prediction_interval_lower",
+        "prediction_interval_upper",
+        "rating_distribution",
+    ]
+
+    df_out = pd.DataFrame(results, columns=output_columns)
     df_out.to_csv(output_csv, index=False, encoding="utf-8")
 
 
