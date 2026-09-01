@@ -164,74 +164,6 @@ def _is_balanced(counts: list) -> bool:
     return max(counts) / min(counts) < 3.0
 
 
-# ── Compiled sentiment-signal patterns (module-level for performance) ─────────
-# General linguistic phrase patterns — NOT exact review-text memorization.
-# Used by _apply_sentiment_rules() to post-process centroid predictions.
-_STRONG_NEGATIVE_PATTERNS: List[re.Pattern] = [
-    re.compile(r'\bvery poor\b',                re.IGNORECASE),
-    re.compile(r'\bnot up to the mark\b',       re.IGNORECASE),
-    re.compile(r'\bvery slow\b',                re.IGNORECASE),
-    re.compile(r'\bvery disappointed\b',        re.IGNORECASE),
-    re.compile(r"\bwouldn.t recommend\b",       re.IGNORECASE),
-    re.compile(r'\bregret buying\b',            re.IGNORECASE),
-    re.compile(r'\bnot worth\b',                re.IGNORECASE),
-    re.compile(r'\boverheats?\b',               re.IGNORECASE),
-    re.compile(r'\blags often\b',               re.IGNORECASE),
-    re.compile(r'\bdrains too fast\b',          re.IGNORECASE),
-    re.compile(r'\bflickering\b',               re.IGNORECASE),
-    re.compile(r'\bbad and muffled\b',          re.IGNORECASE),
-    re.compile(r'\bdisappointing\b',            re.IGNORECASE),
-    re.compile(r'\breturning (?:this|it)\b',    re.IGNORECASE),
-    re.compile(r'\bhangs often\b',              re.IGNORECASE),
-]
-
-_STRONG_NEUTRAL_PATTERNS: List[re.Pattern] = [
-    re.compile(r'\bfine but could be better\b',          re.IGNORECASE),
-    re.compile(r'\bnothing special\b',                    re.IGNORECASE),
-    re.compile(r'\baverage experience\b',                 re.IGNORECASE),
-    re.compile(r'\bokay for casual use\b',                re.IGNORECASE),
-    re.compile(r'\bneither great nor bad\b',              re.IGNORECASE),
-    re.compile(r'\bnot bad for daily use\b',              re.IGNORECASE),
-    re.compile(r'\bnot the best in this range\b',         re.IGNORECASE),
-    re.compile(r'\bexpected.{0,20}more for the price\b',  re.IGNORECASE),
-    re.compile(r'\bperformance is average\b',             re.IGNORECASE),
-    re.compile(r'\bcould be slightly better\b',           re.IGNORECASE),
-    re.compile(r'\bdelayed sometimes\b',                  re.IGNORECASE),
-    re.compile(r'\bnot very loud\b',                      re.IGNORECASE),
-    re.compile(r'\ba bit bulky\b',                        re.IGNORECASE),
-]
-
-
-def _apply_sentiment_rules(text: str, predicted_sentiment: str) -> str:
-    """
-    Post-processing sentiment override using general linguistic patterns.
-    Applied AFTER the centroid/ML classifier — the classifier is NOT changed.
-
-    Rule 1 (Neutral → Negative):
-        If the ML model predicts Neutral but the text contains ≥1 strong-negative
-        phrase and zero neutral-hedge phrases → override to Negative.
-
-    Rule 2 (Negative → Neutral):
-        If the ML model predicts Negative but the text contains ≥1 neutral-hedge
-        phrase and zero strong-negative phrases → override to Neutral.
-
-    Conflict guard: when both signal types match, keep the ML prediction.
-    Positive predictions are never changed by these rules.
-    Patterns are general linguistic rules — NOT exact review-text memorization.
-    """
-    has_strong_neg   = any(p.search(text) for p in _STRONG_NEGATIVE_PATTERNS)
-    has_neutral_hedge = any(p.search(text) for p in _STRONG_NEUTRAL_PATTERNS)
-
-    # Rule 1: centroid said Neutral, but text has clear negative signals only
-    if predicted_sentiment == "Neutral" and has_strong_neg and not has_neutral_hedge:
-        return "Negative"
-
-    # Rule 2: centroid said Negative, but text has clear neutral-hedge signals only
-    if predicted_sentiment == "Negative" and has_neutral_hedge and not has_strong_neg:
-        return "Neutral"
-
-    # Conflict present, or no applicable rule — keep centroid prediction unchanged
-    return predicted_sentiment
 
 
 def _build_rating_uncertainty(
@@ -2592,9 +2524,6 @@ class SemanticRatingAgent:
             for sv, s_val in sorted_sents:
                 sent_sims_display[sv] = round(float(s_val), 4)
 
-            # ── General Sentiment Rule Override ──────────────────────────────
-            # Applied after centroid prediction; classifier is NOT modified.
-            top_sent = _apply_sentiment_rules(text, top_sent)
 
         # ── 2. Example-Based Rating Prediction ────────────────────────────────
         has_rating = bool(example_bank or rating_profiles or self.primary_rating_col)
@@ -2729,8 +2658,6 @@ class SemanticRatingAgent:
             for sv, s_val in sorted_sents:
                 sent_sims_display[sv] = round(float(s_val), 4)
 
-            # Sentiment Rule Override
-            top_sent = _apply_sentiment_rules(text, top_sent)
 
         # 2. Likert Rating Prediction
         rating_scale_vals = target_info.get("rating", {}).get("unique_values", [1.0, 2.0, 3.0, 4.0, 5.0])

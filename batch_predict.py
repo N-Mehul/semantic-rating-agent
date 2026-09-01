@@ -41,7 +41,6 @@ from agent import (
     SemanticRatingAgent,
     _cosine_sim,
     _softmax,
-    _apply_sentiment_rules,
     _build_rating_uncertainty,
 )
 
@@ -73,10 +72,6 @@ def predict_single(agent: SemanticRatingAgent, text: str) -> dict:
         sorted_sents = sorted(sent_sims.items(), key=lambda x: -x[1])
         top_sent = sorted_sents[0][0] if sorted_sents else "Unknown"
 
-    # ── General Sentiment Rule Override ───────────────────────────────────
-    # Applied after centroid prediction; classifier is NOT modified.
-    if top_sent != "Unknown":
-        top_sent = _apply_sentiment_rules(text, top_sent)
 
     # ── 2. Likert Rating Prediction ──────────────────────────────────────────
     rating_vals = target_info.get("rating", {}).get("unique_values", [1.0, 2.0, 3.0, 4.0, 5.0])
