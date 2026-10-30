@@ -1,0 +1,574 @@
+{
+  "eval_id": "test_smartphone_20261030_153215",
+  "product_name": "Test Smartphone",
+  "timestamp_utc": "2026-10-30T10:06:45.669440+00:00",
+  "embedding_model": "nomic-embed-text",
+  "k_setting": 3,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "qualitative_constructs": [
+    "PV"
+  ],
+  "n_personas": 4,
+  "n_evaluations": 24,
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Test Smartphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "cosine_similarities": [
+        0.585587,
+        0.608827,
+        0.609225,
+        0.564015,
+        0.57406
+      ],
+      "pmf_probabilities": [
+        0.177344,
+        0.368404,
+        0.371672,
+        0.0,
+        0.08258
+      ],
+      "expected_rating": 2.4421,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Test Smartphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "cosine_similarities": [
+        0.585719,
+        0.625194,
+        0.673288,
+        0.602142,
+        0.593034
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.261802,
+        0.58077,
+        0.108916,
+        0.048512
+      ],
+      "expected_rating": 2.9441,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Test Smartphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "cosine_similarities": [
+        0.562475,
+        0.52017,
+        0.573296,
+        0.518845,
+        0.536938
+      ],
+      "pmf_probabilities": [
+        0.371319,
+        0.011274,
+        0.463421,
+        0.0,
+        0.153986
+      ],
+      "expected_rating": 2.5541,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Test Smartphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "cosine_similarities": [
+        0.56438,
+        0.565226,
+        0.582649,
+        0.555075,
+        0.514306
+      ],
+      "pmf_probabilities": [
+        0.238327,
+        0.242352,
+        0.325279,
+        0.194041,
+        0.0
+      ],
+      "expected_rating": 2.475,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Test Smartphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "cosine_similarities": [
+        0.53528,
+        0.545492,
+        0.61262,
+        0.529286,
+        0.540436
+      ],
+      "pmf_probabilities": [
+        0.051368,
+        0.138887,
+        0.714189,
+        0.0,
+        0.095556
+      ],
+      "expected_rating": 2.9495,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Test Smartphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "cosine_similarities": [
+        0.528932,
+        0.542275,
+        0.500233,
+        0.54165,
+        0.50277
+      ],
+      "pmf_probabilities": [
+        0.25022,
+        0.366556,
+        0.0,
+        0.361106,
+        0.022118
+      ],
+      "expected_rating": 2.5383,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Test Smartphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "cosine_similarities": [
+        0.634113,
+        0.652079,
+        0.680627,
+        0.62023,
+        0.639737
+      ],
+      "pmf_probabilities": [
+        0.110505,
+        0.2535,
+        0.480728,
+        0.0,
+        0.155267
+      ],
+      "expected_rating": 2.836,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Test Smartphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "cosine_similarities": [
+        0.582045,
+        0.613325,
+        0.691962,
+        0.60585,
+        0.59407
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.176694,
+        0.620909,
+        0.13447,
+        0.067927
+      ],
+      "expected_rating": 3.0936,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Test Smartphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "cosine_similarities": [
+        0.599651,
+        0.558899,
+        0.605091,
+        0.577079,
+        0.583624
+      ],
+      "pmf_probabilities": [
+        0.313842,
+        0.0,
+        0.355738,
+        0.140009,
+        0.190411
+      ],
+      "expected_rating": 2.8931,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Test Smartphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "cosine_similarities": [
+        0.604886,
+        0.61153,
+        0.623171,
+        0.608048,
+        0.580664
+      ],
+      "pmf_probabilities": [
+        0.19381,
+        0.246968,
+        0.340115,
+        0.219107,
+        0.0
+      ],
+      "expected_rating": 2.5845,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Test Smartphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "cosine_similarities": [
+        0.560354,
+        0.571834,
+        0.643539,
+        0.565263,
+        0.567849
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.107221,
+        0.776926,
+        0.04585,
+        0.070002
+      ],
+      "expected_rating": 3.0786,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Test Smartphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "cosine_similarities": [
+        0.567047,
+        0.579687,
+        0.554608,
+        0.581226,
+        0.536338
+      ],
+      "pmf_probabilities": [
+        0.2238,
+        0.315922,
+        0.133145,
+        0.327134,
+        0.0
+      ],
+      "expected_rating": 2.5636,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Test Smartphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "cosine_similarities": [
+        0.61681,
+        0.638988,
+        0.643916,
+        0.60878,
+        0.615751
+      ],
+      "pmf_probabilities": [
+        0.099946,
+        0.375981,
+        0.437313,
+        0.0,
+        0.08676
+      ],
+      "expected_rating": 2.5976,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Test Smartphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "cosine_similarities": [
+        0.591528,
+        0.623449,
+        0.696532,
+        0.625219,
+        0.590079
+      ],
+      "pmf_probabilities": [
+        0.00821,
+        0.189161,
+        0.603437,
+        0.199192,
+        0.0
+      ],
+      "expected_rating": 2.9936,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Test Smartphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "cosine_similarities": [
+        0.573631,
+        0.519052,
+        0.561469,
+        0.537646,
+        0.546032
+      ],
+      "pmf_probabilities": [
+        0.38282,
+        0.0,
+        0.297518,
+        0.130423,
+        0.189239
+      ],
+      "expected_rating": 2.7433,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Test Smartphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "cosine_similarities": [
+        0.578296,
+        0.581406,
+        0.602881,
+        0.584081,
+        0.57727
+      ],
+      "pmf_probabilities": [
+        0.027304,
+        0.110047,
+        0.681436,
+        0.181212,
+        0.0
+      ],
+      "expected_rating": 3.0166,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Test Smartphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "cosine_similarities": [
+        0.549777,
+        0.5685,
+        0.650792,
+        0.559731,
+        0.565741
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.128542,
+        0.69352,
+        0.06834,
+        0.109598
+      ],
+      "expected_rating": 3.159,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Test Smartphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "cosine_similarities": [
+        0.535977,
+        0.544198,
+        0.497645,
+        0.558553,
+        0.516641
+      ],
+      "pmf_probabilities": [
+        0.232613,
+        0.282502,
+        0.0,
+        0.369611,
+        0.115273
+      ],
+      "expected_rating": 2.8524,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Test Smartphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "cosine_similarities": [
+        0.643871,
+        0.665073,
+        0.668446,
+        0.630621,
+        0.631984
+      ],
+      "pmf_probabilities": [
+        0.152487,
+        0.396504,
+        0.435323,
+        0.0,
+        0.015686
+      ],
+      "expected_rating": 2.3299,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Test Smartphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "cosine_similarities": [
+        0.597512,
+        0.643095,
+        0.685407,
+        0.642207,
+        0.619543
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.227683,
+        0.439029,
+        0.223247,
+        0.110041
+      ],
+      "expected_rating": 3.2156,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Test Smartphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "cosine_similarities": [
+        0.609499,
+        0.553223,
+        0.61151,
+        0.59599,
+        0.604362
+      ],
+      "pmf_probabilities": [
+        0.26995,
+        0.0,
+        0.279596,
+        0.205149,
+        0.245305
+      ],
+      "expected_rating": 3.1559,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Test Smartphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "cosine_similarities": [
+        0.60013,
+        0.602545,
+        0.620389,
+        0.597961,
+        0.595958
+      ],
+      "pmf_probabilities": [
+        0.112185,
+        0.177091,
+        0.65687,
+        0.053854,
+        0.0
+      ],
+      "expected_rating": 2.6524,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Test Smartphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "cosine_similarities": [
+        0.586072,
+        0.579943,
+        0.652833,
+        0.583404,
+        0.613054
+      ],
+      "pmf_probabilities": [
+        0.053023,
+        0.0,
+        0.63059,
+        0.029937,
+        0.28645
+      ],
+      "expected_rating": 3.4968,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Test Smartphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "cosine_similarities": [
+        0.549109,
+        0.581535,
+        0.52474,
+        0.57065,
+        0.535612
+      ],
+      "pmf_probabilities": [
+        0.176654,
+        0.411723,
+        0.0,
+        0.332814,
+        0.078809
+      ],
+      "expected_rating": 2.7254,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    }
+  ]
+}

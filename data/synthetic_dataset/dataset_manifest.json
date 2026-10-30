@@ -1,0 +1,62 @@
+{
+  "sources": {
+    "gemini_v2": {
+      "label": "Gemini 2.5 Flash, 2048-token run",
+      "dir": "data/pilot_gemini_v2",
+      "note": "20 of 40 responses (P1 and P2 only); stopped on quota errors.",
+      "task_id": "Q26_BI_proxy",
+      "construct": "BI",
+      "anchor_sha": "4cac7a730652e839",
+      "anchors": [
+        "I do not intend to continue using my current smartphone.",
+        "I am unlikely to keep using my current smartphone in the near future.",
+        "I am undecided about whether I will continue using my current smartphone.",
+        "I intend to continue using my current smartphone for the foreseeable future.",
+        "I am certain I will continue using my current smartphone unless I need to replace it."
+      ],
+      "profile_version": "v1",
+      "human_reference": "Q26_Q21_proxy"
+    },
+    "openai_v1": {
+      "label": "OpenAI chat model",
+      "dir": "data/pilot_openai_v1",
+      "note": "Zero responses so far (insufficient quota).",
+      "task_id": "Q26_BI_proxy",
+      "construct": "BI",
+      "anchor_sha": "4cac7a730652e839",
+      "anchors": [
+        "I do not intend to continue using my current smartphone.",
+        "I am unlikely to keep using my current smartphone in the near future.",
+        "I am undecided about whether I will continue using my current smartphone.",
+        "I intend to continue using my current smartphone for the foreseeable future.",
+        "I am certain I will continue using my current smartphone unless I need to replace it."
+      ],
+      "profile_version": "v1",
+      "human_reference": "Q26_Q21_proxy"
+    }
+  },
+  "n_rows": 20,
+  "n_scored": 20,
+  "encoders": {
+    "local_mpnet_baseline": "sentence-transformers/all-mpnet-base-v2",
+    "local_minilm": "sentence-transformers/all-MiniLM-L6-v2",
+    "local_bge_base": "BAAI/bge-base-en-v1.5"
+  },
+  "ssr": {
+    "functions": "canonical_ssr.cosine_similarities -> similarities_to_pmf -> expected_rating",
+    "epsilon": 0.0,
+    "temperature": 1.0,
+    "anchor_status": "PROPOSED_DOMAIN_ADAPTATION_NOT_ORIGINAL_MAIER_ANCHOR (single set per construct; paper's six sets unavailable)"
+  },
+  "columns_note": "{encoder}__s1..s5 = cosine similarity to the 5 anchors; __p1..p5 = PMF; __E expected rating; __sd, __entropy = PMF uncertainty",
+  "sha256": {
+    "canonical_ssr.py": "22277736fd2be508b06180938df83315890a1d55e778315e423e8d9c7f432abd",
+    "anchors_csv": "8801ef10e679c9ebb841de21b28f56a4a6cddd35bbbbc4f9f5141ec9d2793212"
+  },
+  "limitations": [
+    "Personas without responses are listed as not_generated in the coverage table; nothing is imputed.",
+    "Single anchor set per construct and local encoders, not the paper's six sets or embedding model.",
+    "v1 specs sample attributes independently; v2-only attributes (age, education, ...) are absent from v1-prompt sources.",
+    "Sources with human_reference 'none' have no comparable human answers in the collected survey."
+  ]
+}

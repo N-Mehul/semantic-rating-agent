@@ -1,4 +1,8 @@
 """
+LEGACY (mobile-phone review rating; NOT the canonical SSR pipeline). This module's kNN example-bank scoring
+and its direct-rating LLM mode are earlier-stage work kept for provenance of the baselines in data/. The canonical
+SSR pipeline is canonical_ssr.py + scripts/ + dashboard/. See docs/project_status/legacy_direct_rating_paths.md.
+
 agent.py — Semantic Rating Agent
 
 A dataset-agnostic agent that deeply understands any CSV dataset:
@@ -164,6 +168,108 @@ def _is_balanced(counts: list) -> bool:
     return max(counts) / min(counts) < 3.0
 
 
+
+
+def _build_rating_uncertainty(
+    pred_dist: Dict[str, float],
+    level: float = 0.80,
+    margin_threshold: float = 0.10,
+) -> Dict[str, Any]:
+    """
+    Build calibrated uncertainty metrics and credible prediction intervals from a rating probability distribution.
+
+    Parameters
+    ----------
+    pred_dist : Dict[str, float]
+        Dictionary mapping rating scale keys (e.g. '1', '2', '3', '4', '5') to non-negative probabilities.
+    level : float
+        Nominal coverage level for the highest-density credible prediction interval (default: 0.80).
+    margin_threshold : float
+        Confidence margin threshold (top1_prob - top2_prob) to classify as 'confident' vs 'ambiguous' (default: 0.10).
+
+    Returns
+    -------
+    Dict[str, Any] containing:
+        - confidence: float (top-1 probability in [0.0, 1.0])
+        - prediction_margin: float (top-1 prob - top-2 prob)
+        - uncertainty_status: str ("confident" or "ambiguous")
+        - uncertainty_explanation: str (human-readable explanation)
+        - rating_distribution: Dict[str, float] (normalized 5-class distribution)
+        - prediction_interval: Dict[str, Any] (level, lower, upper, covered_mass)
+    """
+    if not pred_dist:
+        return {
+            "confidence": 0.0,
+            "prediction_margin": 0.0,
+            "uncertainty_status": "ambiguous",
+            "uncertainty_explanation": "No probability distribution available.",
+            "rating_distribution": {},
+            "prediction_interval": {"level": level, "lower": 1, "upper": 5, "covered_mass": 1.0},
+        }
+
+    # Ensure all ratings are normalized floats
+    total = sum(pred_dist.values())
+    if total > 0:
+        norm_dist = {str(k): float(v) / total for k, v in pred_dist.items()}
+    else:
+        norm_dist = {str(k): 1.0 / len(pred_dist) for k in pred_dist}
+
+    # Sort classes by probability descending
+    sorted_items = sorted(norm_dist.items(), key=lambda x: -x[1])
+    top1_k, top1_prob = sorted_items[0]
+    top2_k, top2_prob = sorted_items[1] if len(sorted_items) > 1 else (top1_k, top1_prob)
+
+    confidence = float(top1_prob)
+    prediction_margin = float(top1_prob - top2_prob)
+
+    if prediction_margin >= margin_threshold:
+        uncertainty_status = "confident"
+        uncertainty_explanation = "Rating prediction is relatively confident."
+    else:
+        uncertainty_status = "ambiguous"
+        uncertainty_explanation = "Rating prediction is uncertain because multiple ratings have similar probabilities."
+
+    # Highest Density Credible Prediction Interval
+    # Accumulate most probable classes until cumulative mass reaches or exceeds level
+    cum_mass = 0.0
+    chosen_ratings: List[int] = []
+    for rk, p in sorted_items:
+        try:
+            r_int = int(float(rk))
+            chosen_ratings.append(r_int)
+        except (ValueError, TypeError):
+            continue
+        cum_mass += p
+        if cum_mass >= level:
+            break
+
+    if not chosen_ratings:
+        lower, upper = 1, 5
+    else:
+        lower = max(1, min(chosen_ratings))
+        upper = min(5, max(chosen_ratings))
+
+    covered_mass = sum(norm_dist.get(str(r), norm_dist.get(f"{r}.0", 0.0)) for r in range(lower, upper + 1))
+
+    prediction_interval = {
+        "level": float(level),
+        "lower": int(lower),
+        "upper": int(upper),
+        "covered_mass": round(float(covered_mass), 4),
+    }
+
+    rounded_dist = {k: round(float(v), 4) for k, v in norm_dist.items()}
+
+    return {
+        "confidence": round(confidence, 4),
+        "prediction_margin": round(prediction_margin, 4),
+        "uncertainty_status": uncertainty_status,
+        "uncertainty_explanation": uncertainty_explanation,
+        "rating_distribution": rounded_dist,
+        "prediction_interval": prediction_interval,
+    }
+
+
 def _infer_scale_label(rmin: float, rmax: float, n_unique: int) -> str:
     if rmin == 1 and rmax == 5 and n_unique <= 5:
         return "5-point Likert scale (1–5)"
@@ -202,6 +308,8 @@ def _infer_col_role(col: str, det: dict) -> str:
 
 DEFAULT_OLLAMA_MODEL = "llama3.2:3b"
 DEFAULT_OLLAMA_HOST  = "http://localhost:11434"
+DEFAULT_GROQ_MODEL   = "qwen/qwen3.6-27b"
+DEFAULT_GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 
 class BaseReasoningEngine:
@@ -217,6 +325,136 @@ class BaseReasoningEngine:
         agent_context: Dict[str, Any]
     ) -> str:
         raise NotImplementedError
+
+
+class GroqReasoningEngine(BaseReasoningEngine):
+    """
+    Cloud LLM reasoning engine utilizing Groq (llama-3.1-8b-instant).
+    OpenAI-compatible chat completion API with high speed and zero local GPU requirement.
+    Reads API key from GROQ_API_KEY environment variable.
+    """
+
+    def __init__(self, model: str = DEFAULT_GROQ_MODEL, api_key: Optional[str] = None):
+        self.model = model
+        self.api_key = api_key or os.environ.get("GROQ_API_KEY", "")
+        self.api_url = DEFAULT_GROQ_API_URL
+
+    def check_availability(self) -> Tuple[bool, str]:
+        """Check if GROQ_API_KEY is configured."""
+        key = self.api_key or os.environ.get("GROQ_API_KEY", "")
+        if not key:
+            return False, (
+                "GROQ_API_KEY environment variable is not set.\n"
+                "Please set it with: $env:GROQ_API_KEY=\"gsk_...\" (PowerShell) or export GROQ_API_KEY=\"...\""
+            )
+        return True, f"Groq API key configured. Target model: '{self.model}'."
+
+    def synthesize_answer(
+        self,
+        query: str,
+        retrieved_chunks: List[Dict[str, Any]],
+        dynamic_evidence: Optional[Dict[str, Any]],
+        agent_context: Dict[str, Any]
+    ) -> str:
+        avail, reason = self.check_availability()
+        if not avail:
+            return (
+                "━━ GROQ REASONING ENGINE UNAVAILABLE ━━\n\n"
+                f"{reason}\n\n"
+                "Please ensure GROQ_API_KEY is set in your environment."
+            )
+
+        system_prompt = (
+            "You are an expert scientific data analyst and researcher assisting a user in understanding a dataset.\n"
+            "Your task is to interpret the user's question, analyze the supplied dataset evidence, and provide a clear, "
+            "rigorous, and natural-language answer.\n\n"
+            "CRITICAL RULES FOR REASONING:\n"
+            "1. EVIDENCE-FIRST RULE: Answer ONLY using the facts, statistical tests, column profiles, and patterns provided in the EVIDENCE section below. Never invent metrics or rely on external general assumptions about products/datasets.\n"
+            "2. INSUFFICIENT EVIDENCE: If the supplied evidence does not support answering the question, state explicitly: 'The dataset does not provide enough evidence to determine this reliably.' Do NOT speculate or make up unsupported facts.\n"
+            "3. METHODOLOGICAL RIGOR & CAUSALITY: Explicitly distinguish between empirical observations (e.g. counts/distributions), statistical associations (e.g. Spearman rho, Kruskal-Wallis H, Cramer's V), and potential explanations. NEVER claim causality from correlational or observational data (correlation != causation).\n"
+            "4. TEXT-TO-RATING INTEGRITY & DATA QUALITY: If the data quality notice reports 'Centroid Collapse' or decoupled text-to-rating labels, you MUST respect this limitation. Explain clearly that sentiment (Positive/Neutral/Negative) can be informative, but predicting exact numeric ratings directly from review text is unreliable in this dataset because text templates are shared across all rating levels.\n"
+            "5. NO PREDEFINED TEMPLATES: Formulate a direct, coherent, and well-reasoned response tailored specifically to the user's question without fixed boilerplate."
+        )
+
+        evidence_sections = []
+        tq = agent_context.get("dataset_text_quality", {})
+        if tq:
+            dq_notice = (
+                f"Total Unique Texts: {tq.get('total_unique_texts')} across {tq.get('total_rows_with_text')} rows.\n"
+                f"Centroid Collapse Detected: {tq.get('centroid_collapse_detected')}.\n"
+                f"Average Centroid Cosine Similarity: {tq.get('avg_centroid_similarity')}.\n"
+                f"Explanation: {tq.get('centroid_collapse_explanation')}"
+            )
+            evidence_sections.append(f"=== DATASET QUALITY & LIMITATION WARNINGS ===\n{dq_notice}")
+
+        if dynamic_evidence:
+            dyn_text = f"Column: {dynamic_evidence.get('column')} (Role: {dynamic_evidence.get('role')}, Kind: {dynamic_evidence.get('kind')})\n"
+            if "top_values" in dynamic_evidence:
+                dyn_text += f"Top Values / Frequencies: {dynamic_evidence.get('top_values')}\n"
+            if "group_means" in dynamic_evidence:
+                dyn_text += f"Target Group Means: {dynamic_evidence.get('group_means')}\n"
+            if "summary_stats" in dynamic_evidence:
+                dyn_text += f"Summary Statistics: {dynamic_evidence.get('summary_stats')}\n"
+            evidence_sections.append(f"=== DYNAMIC DATASET INSPECTION (ON-THE-FLY) ===\n{dyn_text}")
+
+        if retrieved_chunks:
+            ret_texts = []
+            for i, c in enumerate(retrieved_chunks, 1):
+                ret_texts.append(f"Finding [{i}] - {c.get('title')} (Relevance: {c.get('similarity', 0.0):.3f}):\n{c.get('content_text')}")
+            evidence_sections.append("=== RETRIEVED DATASET EVIDENCE & STATISTICAL FINDINGS ===\n" + "\n\n".join(ret_texts))
+        else:
+            evidence_sections.append("=== RETRIEVED DATASET EVIDENCE ===\nNo pre-computed findings retrieved.")
+
+        user_content = (
+            f"{chr(10).join(evidence_sections)}\n\n"
+            f"=== USER QUESTION ===\n{query}\n\n"
+            f"Please provide your reasoned analysis and answer based strictly on the evidence above:"
+        )
+
+        import urllib.request
+        import urllib.error
+        import time
+
+        payload = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_content}
+            ],
+            "temperature": 0.2,
+        }
+
+        key = self.api_key or os.environ.get("GROQ_API_KEY", "")
+        req_data = json.dumps(payload).encode("utf-8")
+        req = urllib.request.Request(
+            self.api_url,
+            data=req_data,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {key}",
+                "User-Agent": "SemanticRatingAgent/Groq",
+            },
+        )
+
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    if resp.status == 200:
+                        resp_json = json.loads(resp.read().decode("utf-8"))
+                        choices = resp_json.get("choices", [])
+                        if choices:
+                            return choices[0].get("message", {}).get("content", "").strip()
+                        return "Groq returned empty response."
+            except urllib.error.HTTPError as e:
+                if e.code == 429:
+                    time.sleep(2.0 * (attempt + 1))
+                    continue
+                return f"Error from Groq API: HTTP {e.code} - {e.reason}"
+            except Exception as e:
+                return f"Error communicating with Groq: {e}"
+
+        return "Groq API request failed after retries."
+
 
 
 class OllamaReasoningEngine(BaseReasoningEngine):
@@ -2422,6 +2660,7 @@ class SemanticRatingAgent:
             for sv, s_val in sorted_sents:
                 sent_sims_display[sv] = round(float(s_val), 4)
 
+
         # ── 2. Example-Based Rating Prediction ────────────────────────────────
         has_rating = bool(example_bank or rating_profiles or self.primary_rating_col)
         rating_scale_vals = target_info.get("rating", {}).get("unique_values", [1.0, 2.0, 3.0, 4.0, 5.0])
@@ -2432,7 +2671,7 @@ class SemanticRatingAgent:
 
         if example_bank:
             bank_sims = np.array([_cosine_sim(vec, np.array(e["embedding"])) for e in example_bank])
-            top_k = min(5, len(example_bank))
+            top_k = min(3, len(example_bank))  # k=3: consistent with validated batch path (predict_text/predict_single)
             top_indices = np.argsort(-bank_sims)[:top_k]
             top_sim_values = bank_sims[top_indices]
             weights = _softmax(top_sim_values, temp=0.1)
@@ -2500,14 +2739,335 @@ class SemanticRatingAgent:
 
         if has_rating:
             r_disp = int(float(most_likely_rating)) if float(most_likely_rating).is_integer() else most_likely_rating
+            unc_info = _build_rating_uncertainty(predicted_dist, level=0.80, margin_threshold=0.10)
+            r_dist_str = ", ".join(f"{k}: {v*100:.1f}%" for k, v in unc_info["rating_distribution"].items())
+            p_int = unc_info["prediction_interval"]
             lines += [
                 "",
                 f"Predicted Likert Rating: {r_disp}",
-                f"Rating Confidence: {rating_conf_str}",
+                f"Rating Confidence: {unc_info['confidence']*100:.1f}% ({unc_info['uncertainty_status']}, margin: +{unc_info['prediction_margin']*100:.1f}%)",
                 f"Expected Rating: {exp_rating:.2f}",
+                f"Rating Distribution: [{r_dist_str}]",
+                f"Prediction Interval (80%): [{p_int['lower']}–{p_int['upper']} ⭐]",
+                f"Uncertainty Note: {unc_info['uncertainty_explanation']}",
             ]
 
         return "\n".join(lines)
+
+    def predict_text(
+        self,
+        text: str,
+        use_prototype_anchors: bool = False,
+        prototypes: Optional[Dict[str, Any]] = None,
+        temperature: float = 0.10,
+        top_k: int = 3,
+    ) -> Dict[str, Any]:
+        """
+        Analyze an unseen review text and return a structured dictionary containing
+        predicted sentiment, predicted Likert rating, continuous expected rating,
+        and calibrated uncertainty metrics (distribution, confidence, margin, status, interval).
+
+        Parameters
+        ----------
+        text : str
+            Review text to analyze.
+        use_prototype_anchors : bool, optional
+            If True, uses rating-level multi-prototype centroids instead of the example bank (default: False).
+        prototypes : Dict[str, Any], optional
+            Pre-computed rating prototypes dictionary from `build_rating_prototypes()`.
+        temperature : float, optional
+            Softmax temperature for scaling cosine similarities (default: 0.10).
+        top_k : int, optional
+            Number of nearest neighbors to retrieve in example bank mode (default: 3).
+        """
+        patterns = self.memory.get("text_rating_patterns", {})
+        example_bank = patterns.get("example_bank", [])
+        rating_profiles = patterns.get("rating_profiles", {})
+        sent_profiles = patterns.get("sentiment_profiles", {})
+        target_info = self.memory.get("target_analysis", {})
+
+        vec = self._embed([text])[0]
+
+        # 1. Sentiment Prediction
+        top_sent = "Unknown"
+        sent_conf_str = "Low"
+        sent_sims_display: Dict[str, float] = {}
+
+        if sent_profiles:
+            sent_sims: Dict[str, float] = {}
+            for sv, prof in sent_profiles.items():
+                centroid = np.array(prof["centroid"])
+                sent_sims[sv] = _cosine_sim(vec, centroid)
+
+            sorted_sents = sorted(sent_sims.items(), key=lambda x: -x[1])
+            top_sent, top_sent_sim = sorted_sents[0] if sorted_sents else ("Unknown", 0.0)
+            sec_sent_sim = sorted_sents[1][1] if len(sorted_sents) > 1 else top_sent_sim
+            sent_margin = top_sent_sim - sec_sent_sim
+
+            if sent_margin >= 0.08:
+                sent_conf_str = "High"
+            elif sent_margin >= 0.03:
+                sent_conf_str = "Moderate"
+            else:
+                sent_conf_str = "Low"
+
+            for sv, s_val in sorted_sents:
+                sent_sims_display[sv] = round(float(s_val), 4)
+
+
+        # 2. Likert Rating Prediction
+        rating_scale_vals = target_info.get("rating", {}).get("unique_values", [1.0, 2.0, 3.0, 4.0, 5.0])
+        rating_scale_keys = [str(int(v)) if float(v).is_integer() else str(v) for v in sorted(rating_scale_vals)]
+        predicted_dist: Dict[str, float] = {k: 0.0 for k in rating_scale_keys}
+
+        if use_prototype_anchors:
+            # Multi-prototype mode: predict using rating-level prototype centroids
+            active_protos = prototypes or getattr(self, "rating_prototypes", None)
+            if active_protos:
+                sims = {rk: _cosine_sim(vec, np.array(active_protos[rk]["centroid"])) for rk in rating_scale_keys if rk in active_protos}
+                w = _softmax(np.array(list(sims.values())), temp=temperature)
+                for k, val in zip(sims.keys(), w):
+                    predicted_dist[k] = float(val)
+            elif rating_profiles:
+                sims = {rk: _cosine_sim(vec, np.array(rating_profiles[rk]["centroid"])) for rk in rating_scale_keys if rk in rating_profiles}
+                w = _softmax(np.array(list(sims.values())), temp=temperature)
+                for k, val in zip(sims.keys(), w):
+                    predicted_dist[k] = float(val)
+            else:
+                predicted_dist = {k: 1.0 / len(rating_scale_keys) for k in rating_scale_keys}
+
+        elif example_bank:
+            # Baseline mode: example bank nearest-neighbor empirical distribution retrieval
+            bank_sims = np.array([_cosine_sim(vec, np.array(e["embedding"])) for e in example_bank])
+            k_val = min(top_k, len(example_bank))
+            top_indices = np.argsort(-bank_sims)[:k_val]
+            top_sim_values = bank_sims[top_indices]
+            weights = _softmax(top_sim_values, temp=temperature)
+
+            for w, idx in zip(weights, top_indices):
+                e = example_bank[idx]
+                e_dist = e.get("rating_distribution", {})
+                for rk in rating_scale_keys:
+                    p_val = float(e_dist.get(rk, e_dist.get(str(float(rk)), 0.0)))
+                    predicted_dist[rk] += float(w * p_val)
+
+            tot_w = sum(predicted_dist.values())
+            if tot_w > 0:
+                predicted_dist = {k: v / tot_w for k, v in predicted_dist.items()}
+            else:
+                predicted_dist = {k: 1.0 / len(predicted_dist) for k in predicted_dist}
+
+        elif rating_profiles:
+            sims = {rk: _cosine_sim(vec, np.array(rating_profiles[rk]["centroid"])) for rk in rating_scale_keys if rk in rating_profiles}
+            w = _softmax(np.array(list(sims.values())), temp=temperature)
+            for k, val in zip(sims.keys(), w):
+                predicted_dist[k] = float(val)
+
+        exp_rating = sum(float(k) * predicted_dist[k] for k in rating_scale_keys)
+        most_likely_rating = max(predicted_dist.items(), key=lambda x: x[1])[0]
+        r_val = float(most_likely_rating)
+        pred_likert = int(r_val) if r_val.is_integer() else r_val
+
+        # 3. Calibrated Uncertainty Layer
+        unc_info = _build_rating_uncertainty(predicted_dist, level=0.80, margin_threshold=0.10)
+
+        return {
+            "review_text": text,
+            "predicted_sentiment": top_sent,
+            "sentiment_confidence": sent_conf_str,
+            "predicted_likert_rating": pred_likert,
+            "expected_rating": round(exp_rating, 4),
+            "confidence": unc_info["confidence"],
+            "prediction_margin": unc_info["prediction_margin"],
+            "uncertainty_status": unc_info["uncertainty_status"],
+            "uncertainty_explanation": unc_info["uncertainty_explanation"],
+            "rating_distribution": unc_info["rating_distribution"],
+            "prediction_interval": unc_info["prediction_interval"],
+        }
+
+    def build_rating_prototypes(
+        self,
+        csv_path: Optional[str] = None,
+        n_per_rating: int = 20,
+        seed: int = 42,
+    ) -> Dict[str, Any]:
+        """
+        Stratified selection of multi-prototype anchors from the training dataset.
+        Draws `n_per_rating` unique reviews per rating level (1-5) strictly from
+        the training pool (rows with valid review_id), embeds them, and calculates
+        rating prototype centroids.
+
+        Parameters
+        ----------
+        csv_path : str, optional
+            Path to dataset CSV (defaults to memory or self.csv_path).
+        n_per_rating : int
+            Number of anchor examples per rating level (default: 20).
+        seed : int
+            Random seed for reproducible sampling.
+
+        Returns
+        -------
+        Dict mapping rating keys ("1"-"5") to prototype dicts with centroid, n_examples, and texts.
+        """
+        target_csv = csv_path or self.csv_path or self.memory.get("load_stats", {}).get("csv_path")
+        if target_csv and os.path.exists(target_csv):
+            df = pd.read_csv(target_csv, low_memory=False)
+        elif self.df_clean is not None:
+            df = self.df_clean
+        else:
+            return {}
+
+        text_col = self.primary_text_col or self.memory.get("column_detection_summary", {}).get("primary_text_column", "review_text")
+        rating_col = self.primary_rating_col or self.memory.get("column_detection_summary", {}).get("primary_rating_column", "rating")
+
+        # Training pool: rows with valid review_id (leakage-free)
+        if "review_id" in df.columns:
+            train_pool = df.dropna(subset=["review_id", text_col, rating_col]).copy()
+        else:
+            train_pool = df.dropna(subset=[text_col, rating_col]).copy()
+
+        train_pool[rating_col] = train_pool[rating_col].astype(float)
+        prototypes: Dict[str, Any] = {}
+        rng = random.Random(seed)
+
+        for r in [1, 2, 3, 4, 5]:
+            bucket = train_pool[train_pool[rating_col] == float(r)]
+            unique_texts = bucket[text_col].dropna().unique().tolist()
+            sample_n = min(n_per_rating, len(unique_texts))
+            sampled_texts = rng.sample(unique_texts, sample_n) if sample_n > 0 else []
+
+            if sampled_texts:
+                embs = self._embed(sampled_texts)
+                centroid = np.mean(embs, axis=0)
+                prototypes[str(r)] = {
+                    "rating": r,
+                    "n_examples": len(sampled_texts),
+                    "examples": sampled_texts,
+                    "centroid": centroid.tolist(),
+                    "embeddings": [e.tolist() for e in embs],
+                }
+
+        self.rating_prototypes = prototypes
+        return prototypes
+
+    def tune_temperature_validation(
+        self,
+        csv_path: Optional[str] = None,
+        temperatures: Optional[List[float]] = None,
+        val_fraction: float = 0.20,
+        n_prototypes_per_rating: int = 20,
+        seed: int = 42,
+    ) -> Dict[str, Any]:
+        """
+        Evaluates softmax temperature candidates on a stratified validation split of training data.
+
+        Compares:
+          * Exact accuracy (%)
+          * ±1 accuracy (%)
+          * MAE
+          * RMSE
+          * Spearman correlation
+          * Pearson correlation
+
+        Parameters
+        ----------
+        csv_path : str, optional
+            Path to CSV dataset.
+        temperatures : List[float], optional
+            Candidate temperatures (default: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30]).
+        val_fraction : float
+            Validation split size (default: 0.20).
+        n_prototypes_per_rating : int
+            Number of prototypes per rating for the prototype arm (default: 20).
+        seed : int
+            Random seed for reproducible split.
+
+        Returns
+        -------
+        Dict with sweep comparison table, best temperature, and per-temperature metrics.
+        """
+        from sklearn.model_selection import StratifiedShuffleSplit
+
+        temps = temperatures or [0.05, 0.10, 0.15, 0.20, 0.25, 0.30]
+        target_csv = csv_path or self.csv_path or self.memory.get("load_stats", {}).get("csv_path")
+        if target_csv and os.path.exists(target_csv):
+            df = pd.read_csv(target_csv, low_memory=False)
+        elif self.df_clean is not None:
+            df = self.df_clean
+        else:
+            return {}
+
+        text_col = self.primary_text_col or self.memory.get("column_detection_summary", {}).get("primary_text_column", "review_text")
+        rating_col = self.primary_rating_col or self.memory.get("column_detection_summary", {}).get("primary_rating_column", "rating")
+
+        if "review_id" in df.columns:
+            train_pool = df.dropna(subset=["review_id", text_col, rating_col]).copy()
+        else:
+            train_pool = df.dropna(subset=[text_col, rating_col]).copy()
+
+        train_pool[rating_col] = train_pool[rating_col].astype(float)
+
+        # Stratified validation split
+        sss = StratifiedShuffleSplit(n_splits=1, test_size=val_fraction, random_state=seed)
+        train_idx, val_idx = next(sss.split(train_pool, train_pool[rating_col]))
+
+        val_df = train_pool.iloc[val_idx].copy()
+        train_sub = train_pool.iloc[train_idx].copy()
+
+        # Build prototypes strictly from the 80% training split
+        prototypes = self.build_rating_prototypes(csv_path=None, n_per_rating=n_prototypes_per_rating, seed=seed)
+
+        # Pre-embed unique validation texts
+        unique_val_texts = val_df[text_col].dropna().unique().tolist()
+        val_embs = self._embed(unique_val_texts)
+        val_text_map = {t: val_embs[i] for i, t in enumerate(unique_val_texts)}
+
+        sweep_rows = []
+        for t_val in temps:
+            y_true, y_disc, y_exp = [], [], []
+            for _, row in val_df.iterrows():
+                t_str = str(row[text_col])
+                if t_str not in val_text_map:
+                    continue
+                vec = val_text_map[t_str]
+                ratings = [1, 2, 3, 4, 5]
+                sims = [float(_cosine_sim(vec, np.array(prototypes[str(r)]["centroid"]))) for r in ratings if str(r) in prototypes]
+                probs = _softmax(np.array(sims), temp=t_val)
+                exp_r = sum(r * p for r, p in zip(ratings, probs))
+                disc_r = ratings[int(np.argmax(probs))]
+
+                y_true.append(float(row[rating_col]))
+                y_disc.append(float(disc_r))
+                y_exp.append(float(exp_r))
+
+            y_t_arr = np.array(y_true)
+            y_d_arr = np.array(y_disc)
+            y_e_arr = np.array(y_exp)
+
+            exact = float(np.mean(y_t_arr == y_d_arr) * 100.0)
+            within_1 = float(np.mean(np.abs(y_t_arr - y_d_arr) <= 1.0) * 100.0)
+            mae = float(np.mean(np.abs(y_t_arr - y_e_arr)))
+            rmse = float(np.sqrt(np.mean((y_t_arr - y_e_arr) ** 2)))
+            spear, _ = stats.spearmanr(y_t_arr, y_e_arr)
+            pear, _ = stats.pearsonr(y_t_arr, y_e_arr)
+
+            sweep_rows.append({
+                "temperature": t_val,
+                "exact_accuracy_pct": round(exact, 2),
+                "within_1_pct": round(within_1, 2),
+                "mae": round(mae, 4),
+                "rmse": round(rmse, 4),
+                "spearman_rho": round(float(spear), 4),
+                "pearson_r": round(float(pear), 4),
+            })
+
+        best_by_mae = min(sweep_rows, key=lambda x: x["mae"])
+        return {
+            "validation_rows": len(val_df),
+            "best_temperature": best_by_mae["temperature"],
+            "sweep_results": sweep_rows,
+        }
 
     # ──────────────────────────────────────────────────────────────────────────
     # Orchestrator
@@ -2584,3 +3144,340 @@ class SemanticRatingAgent:
         print("\n" + "═" * 62)
         print("  COMPREHENSIVE ANALYSIS COMPLETE — ready for questions.")
         print("═" * 62 + "\n")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Agentic Rating Prediction — Additive Comparison Arm
+# (Does NOT modify the deterministic model or any existing code above)
+# ─────────────────────────────────────────────────────────────────────────────
+
+# --- VADER lexicon baseline ------------------------------------------------
+
+def predict_rating_vader(review_text: str) -> int:
+    """
+    Zero-API-cost lexicon baseline: VADER compound score binned into 1-5.
+
+    Threshold calibration:
+        compound ≤ -0.6  → 1★
+        -0.6 < compound ≤ -0.2 → 2★
+        -0.2 < compound ≤ +0.2 → 3★
+        +0.2 < compound ≤ +0.6 → 4★
+        compound > +0.6 → 5★
+    """
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+    _vader = SentimentIntensityAnalyzer()
+    compound = _vader.polarity_scores(str(review_text))["compound"]
+    if compound <= -0.6:
+        return 1
+    elif compound <= -0.2:
+        return 2
+    elif compound <= 0.2:
+        return 3
+    elif compound <= 0.6:
+        return 4
+    else:
+        return 5
+
+
+# --- Few-shot anchor selection ---------------------------------------------
+
+def select_anchor_examples(
+    csv_path: str,
+    eval_review_ids: Optional[set] = None,
+    n_per_rating: int = 5,
+    seed: int = 42,
+) -> List[Dict[str, Any]]:
+    """
+    Stratified selection of anchor examples from the training pool.
+
+    Draws `n_per_rating` reviews per rating level (1-5) from rows NOT in the
+    eval set, with a deterministic seed for reproducibility.
+
+    Parameters
+    ----------
+    csv_path : str
+        Path to the full CSV (e.g. 'data/Mobile Reviews Sentiment.csv').
+    eval_review_ids : set, optional
+        Set of review_id values to EXCLUDE (the eval subset).
+        If None, excludes rows with NaN review_id (which are the eval
+        rows appended to the CSV without IDs).
+    n_per_rating : int
+        Number of anchor examples per rating level (default: 5).
+    seed : int
+        Random seed for reproducibility.
+
+    Returns
+    -------
+    List[Dict] with keys: rating (int), review_text (str), review_id (int)
+    """
+    df = pd.read_csv(csv_path, low_memory=False)
+
+    # Training pool: rows with valid review_id (IDs 1-39998 in this dataset)
+    train_pool = df.dropna(subset=["review_id", "review_text", "rating"]).copy()
+    train_pool["review_id"] = train_pool["review_id"].astype(int)
+
+    if eval_review_ids:
+        train_pool = train_pool[~train_pool["review_id"].isin(eval_review_ids)]
+
+    anchors: List[Dict[str, Any]] = []
+    rng = random.Random(seed)
+
+    for rating_val in [1, 2, 3, 4, 5]:
+        bucket = train_pool[train_pool["rating"] == float(rating_val)]
+        if len(bucket) == 0:
+            continue
+        sample_n = min(n_per_rating, len(bucket))
+        sampled = bucket.sample(n=sample_n, random_state=seed)
+        for _, row in sampled.iterrows():
+            anchors.append({
+                "rating": int(rating_val),
+                "review_text": str(row["review_text"]),
+                "review_id": int(row["review_id"]),
+            })
+
+    return anchors
+
+
+# --- Agentic LLM-based rating prediction ----------------------------------
+# LEGACY / NOT CANONICAL SSR: everything from here to the end of this file asks the LLM to return a numeric
+# rating ({"rating": <1-5>}). The target pipeline never does this: the LLM writes free text and the rating is
+# derived geometrically by canonical_ssr.py. Kept unchanged for provenance. See
+# docs/project_status/legacy_direct_rating_paths.md.
+
+_AGENTIC_SYSTEM_PROMPT = """You are a precise mobile phone review rating predictor.
+
+RATING RUBRIC (use these definitions strictly):
+1★ — Unusable, angry, regretful. Words like "terrible", "waste", "worst", "broken", "scam".
+2★ — Disappointed, below expectations. Words like "disappointing", "wouldn't recommend", "not worth".
+3★ — Mixed or functional-but-unremarkable. Words like "okay", "decent", "fine", "average", "could be better".
+4★ — Satisfied, would recommend. Words like "good", "happy", "great value", "love", "solid".
+5★ — Exceptional, enthusiastic, superlative. Words like "perfect", "amazing", "best ever", "incredible", "blown away".
+
+IMPORTANT: Focus on the EMOTIONAL INTENSITY and OVERALL TONE of the review, not just individual keywords.
+A review that says "Absolutely love this phone!" is likely 4★ or 5★.
+A review that says "Does what it's supposed to, nothing special" is likely 3★.
+
+You MUST respond with ONLY a valid JSON object in this exact format:
+{"rating": <integer 1-5>, "reasoning": "<brief explanation>"}
+
+Do NOT include any text outside the JSON object. No markdown, no code fences, no preamble."""
+
+
+def _build_agentic_prompt(
+    review_text: str,
+    anchor_examples: List[Dict[str, Any]],
+) -> str:
+    """Build the user prompt with few-shot anchors and the target review."""
+    parts = ["Here are example reviews with their correct ratings:\n"]
+    for ex in anchor_examples:
+        parts.append(f'Rating {ex["rating"]}★: "{ex["review_text"]}"')
+    parts.append(f'\nNow predict the rating for this review:\n"{review_text}"')
+    parts.append('\nRespond with ONLY a JSON object: {"rating": <1-5>, "reasoning": "<explanation>"}')
+    return "\n".join(parts)
+
+
+def _parse_agentic_response(raw: str) -> Optional[Dict[str, Any]]:
+    """
+    Parse LLM response as JSON {"rating": int, "reasoning": str}.
+    Falls back to regex extraction if JSON parsing fails.
+    """
+    raw = raw.strip()
+
+    # Strip markdown code fences if present
+    if raw.startswith("```"):
+        lines = raw.split("\n")
+        lines = [l for l in lines if not l.strip().startswith("```")]
+        raw = "\n".join(lines).strip()
+
+    # Try strict JSON parse
+    try:
+        obj = json.loads(raw)
+        rating = int(obj.get("rating", 0))
+        reasoning = str(obj.get("reasoning", ""))
+        if 1 <= rating <= 5:
+            return {"rating": rating, "reasoning": reasoning}
+    except (json.JSONDecodeError, ValueError, TypeError):
+        pass
+
+    # Regex fallback: find "rating": <digit>
+    match = re.search(r'"rating"\s*:\s*(\d)', raw)
+    if match:
+        rating = int(match.group(1))
+        if 1 <= rating <= 5:
+            # Try to extract reasoning too
+            reasoning_match = re.search(r'"reasoning"\s*:\s*"([^"]*)"', raw)
+            reasoning = reasoning_match.group(1) if reasoning_match else ""
+            return {"rating": rating, "reasoning": reasoning}
+
+    # Last resort: find any standalone digit 1-5
+    digit_match = re.search(r'\b([1-5])\b', raw)
+    if digit_match:
+        return {"rating": int(digit_match.group(1)), "reasoning": f"[fallback parse] {raw[:100]}"}
+
+    return None
+
+
+def predict_rating_agentic(
+    review_text: str,
+    anchor_examples: List[Dict[str, Any]],
+    n_samples: int = 5,
+    temperature: float = 0.8,
+    provider: str = "groq",
+    model: Optional[str] = None,
+    host: str = DEFAULT_OLLAMA_HOST,
+    api_key: Optional[str] = None,
+    max_retries: int = 3,
+) -> Dict[str, Any]:
+    """
+    Agentic LLM-based rating prediction using SSR (Stochastic Sampling Rating) pattern.
+
+    Calls the LLM n_samples times at temperature > 0 to build a rating DISTRIBUTION
+    per review, not a single point estimate.
+
+    Parameters
+    ----------
+    review_text : str
+        The review text to predict a rating for.
+    anchor_examples : List[Dict]
+        Few-shot anchor examples [{"rating": int, "review_text": str}, ...].
+    n_samples : int
+        Number of LLM samples to collect per review (default: 5).
+    temperature : float
+        LLM sampling temperature (default: 0.8).
+    provider : str
+        LLM provider: "groq" (cloud, free tier, default) or "ollama" (local).
+    model : str, optional
+        Model identifier. Defaults to llama-3.1-8b-instant for Groq, llama3.2:3b for Ollama.
+    host : str
+        Ollama API host URL (only used when provider="ollama").
+    api_key : str, optional
+        Groq API key (defaults to os.environ["GROQ_API_KEY"]).
+    max_retries : int
+        Maximum retry attempts per sample for malformed responses or rate limits.
+
+    Returns
+    -------
+    Dict with keys: mean, mode, median, samples, reasonings, raw_responses, fallback_count
+    """
+    import urllib.request
+    import urllib.error
+    import time
+
+    if provider.lower() == "groq":
+        target_model = model or DEFAULT_GROQ_MODEL
+        groq_key = api_key or os.environ.get("GROQ_API_KEY", "")
+        if not groq_key:
+            raise ValueError(
+                "GROQ_API_KEY environment variable is not set.\n"
+                "Please set it with: $env:GROQ_API_KEY=\"gsk_...\" (PowerShell) or export GROQ_API_KEY=\"...\""
+            )
+    else:
+        target_model = model or DEFAULT_OLLAMA_MODEL
+
+    user_prompt = _build_agentic_prompt(review_text, anchor_examples)
+    samples: List[int] = []
+    reasonings: List[str] = []
+    raw_responses: List[str] = []
+    fallback_count = 0
+
+    for sample_idx in range(n_samples):
+        parsed = None
+        for attempt in range(max_retries + 2):  # extra headroom for rate limit backoff
+            if provider.lower() == "groq":
+                payload = {
+                    "model": target_model,
+                    "messages": [
+                        {"role": "system", "content": _AGENTIC_SYSTEM_PROMPT},
+                        {"role": "user", "content": user_prompt}
+                    ],
+                    "temperature": temperature,
+                    "response_format": {"type": "json_object"}
+                }
+                req_url = DEFAULT_GROQ_API_URL
+                headers = {
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {groq_key}",
+                    "User-Agent": "SemanticRatingAgent/Groq"
+                }
+            else:
+                payload = {
+                    "model": target_model,
+                    "system": _AGENTIC_SYSTEM_PROMPT,
+                    "prompt": user_prompt,
+                    "stream": False,
+                    "options": {
+                        "temperature": temperature,
+                    },
+                }
+                req_url = f"{host.rstrip('/')}/api/generate"
+                headers = {
+                    "Content-Type": "application/json",
+                    "User-Agent": "SemanticRatingAgent"
+                }
+
+            try:
+                req_data = json.dumps(payload).encode("utf-8")
+                req = urllib.request.Request(req_url, data=req_data, headers=headers)
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    if resp.status == 200:
+                        resp_json = json.loads(resp.read().decode("utf-8"))
+                        if provider.lower() == "groq":
+                            choices = resp_json.get("choices", [])
+                            raw_text = choices[0].get("message", {}).get("content", "").strip() if choices else ""
+                        else:
+                            raw_text = resp_json.get("response", "").strip()
+
+                        raw_responses.append(raw_text)
+                        parsed = _parse_agentic_response(raw_text)
+                        time.sleep(0.08)  # Smooth pacing for API limits
+                        if parsed is not None:
+                            if "[fallback parse]" in parsed.get("reasoning", ""):
+                                fallback_count += 1
+                            break
+                        else:
+                            fallback_count += 1
+                    else:
+                        raw_responses.append(f"[HTTP {resp.status}]")
+            except urllib.error.HTTPError as e:
+                if e.code == 429:
+                    # Rate limit encountered: exponential backoff
+                    sleep_time = min(30.0, 2.0 * (attempt + 1))
+                    time.sleep(sleep_time)
+                    continue
+                else:
+                    raw_responses.append(f"[HTTP {e.code}: {e.reason}]")
+            except Exception as e:
+                raw_responses.append(f"[ERROR: {e}]")
+                time.sleep(1.0)
+
+        if parsed is not None:
+            samples.append(parsed["rating"])
+            reasonings.append(parsed["reasoning"])
+
+    if not samples:
+        return {
+            "mean": float("nan"),
+            "mode": -1,
+            "median": float("nan"),
+            "samples": [],
+            "reasonings": [],
+            "raw_responses": raw_responses,
+            "fallback_count": fallback_count,
+        }
+
+    mean_val = float(np.mean(samples))
+    median_val = float(np.median(samples))
+    from collections import Counter
+    counts = Counter(samples)
+    mode_val = counts.most_common(1)[0][0]
+
+    return {
+        "mean": round(mean_val, 4),
+        "mode": int(mode_val),
+        "median": round(median_val, 4),
+        "samples": samples,
+        "reasonings": reasonings,
+        "raw_responses": raw_responses,
+        "fallback_count": fallback_count,
+    }
+

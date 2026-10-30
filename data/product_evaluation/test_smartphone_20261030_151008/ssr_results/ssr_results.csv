@@ -1,0 +1,7 @@
+persona_id,product_name,construct_code,construct_name,expected_rating,p1,p2,p3,p4,p5,embedding_model,k_nearest_neighbors
+P1_premium_tier_owner,Test Smartphone,PE,Performance Expectancy,2.9602,0.073044,0.240177,0.513537,0.0,0.173242,nomic-embed-text,3
+P1_premium_tier_owner,Test Smartphone,BI,Behavioral Intention,3.0426,0.0,0.205241,0.570741,0.20018,0.023838,nomic-embed-text,3
+P1_premium_tier_owner,Test Smartphone,EE,Effort Expectancy,3.1801,0.247551,0.0,0.301054,0.227615,0.22378,nomic-embed-text,3
+P1_premium_tier_owner,Test Smartphone,HM,Hedonic Motivation,2.7921,0.085397,0.242509,0.466683,0.205411,0.0,nomic-embed-text,3
+P1_premium_tier_owner,Test Smartphone,SI,Social Influence,3.1384,0.0,0.167579,0.609169,0.140481,0.082771,nomic-embed-text,3
+P1_premium_tier_owner,Test Smartphone,PP,Perceived Protection,2.6545,0.27119,0.307193,0.0,0.339203,0.082414,nomic-embed-text,3

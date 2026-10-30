@@ -1,0 +1,34 @@
+[
+  {
+    "persona_id": "P1_premium_tier_owner",
+    "product_name": "Test Smartphone",
+    "response_text": "I'm not really into switching up my OS, so that's a big minus. The AI camera sounds neat but I'm skeptical about how much I'll actually use it. Plus, at ₹24,999, it's a stretch for me. I'd rather save up for a new iPhone when I can. The specs seem okay for my needs, but I'm worried about the battery life and whether it will last through my daily usage. If the price came down or they added some iOS-like features, I might consider it. Overall, it feels a bit too pricey for what it offers, and I'd stick with what I know for now.",
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-10-30T10:03:47.802621+00:00"
+  },
+  {
+    "persona_id": "P2_midrange_heavy_user",
+    "product_name": "Test Smartphone",
+    "response_text": "The AI camera sounds cool, but I'm not sure it's worth the extra money. My OnePlus works just fine, and I haven't faced many issues with it. The price of Test Smartphone is a bit steep for me right now, and I'd rather save up for something more urgent. Plus, I'm not sure how much I'd use an AI camera on a daily basis. The tech comfort isn't a dealbreaker, but I do appreciate the simplicity of my current setup. If it offered some really unique features that weren't available on my current phone, I might reconsider, but for now, I think I'll stick with what I know.",
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-10-30T10:04:36.152556+00:00"
+  },
+  {
+    "persona_id": "P3_midrange_moderate_user",
+    "product_name": "Test Smartphone",
+    "response_text": "The AI camera sounds like a neat feature, but I'm not sure how useful it will be for my everyday tasks. I mostly use my phone for messaging, browsing social media, and studying, so I'm not sure how much I'll benefit from it. Also, the price is a bit steep for me right now, as I'm on a tight budget. I'm a bit skeptical about switching to a new phone when my current one is still working fine. The battery life on my current phone is a big concern, and I'm not sure if this new one will address that. If they could make it a bit cheaper or offer some discounts, I might consider it. Overall, I think it's a cool concept, but I need to see some more convincing reasons to part with my current phone.",
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-10-30T10:05:29.931200+00:00"
+  },
+  {
+    "persona_id": "P4_budget_or_undisclosed_price",
+    "product_name": "Test Smartphone",
+    "response_text": "The AI camera sounds cool, but at ₹24,999, it’s a stretch for my budget. I use my phone mostly for social media, messaging, and online classes, and my current iPhone handles it just fine. The Android ecosystem is a bit daunting, and I’m not sure about the battery life or app compatibility. I’d consider it if the price was more like my current phone or if there were some killer features that I really needed. The social perception might be a plus since most of my friends are already using Android phones, but the effort to switch might be too much. Overall, I’d rather hold on to what I have until something really compelling comes along.",
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-10-30T10:06:19.611147+00:00"
+  }
+]

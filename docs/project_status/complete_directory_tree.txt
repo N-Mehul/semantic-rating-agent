@@ -1,0 +1,329 @@
+Folder PATH listing for volume Windows
+Volume serial number is 8043-BA5D
+C:.
+|   .gitignore
+|   agent.py
+|   aspect_rating_model.py
+|   batch_predict.py
+|   canonical_ssr.py
+|   CLEANUP_LOG.md
+|   current_baseline_evaluation.py
+|   evaluate_predictions.py
+|   five_anchor_ssr.py
+|   main.py
+|   memory.json
+|   Project_Report.docx
+|   pymc_compute.py
+|   pymc_response_rater.py
+|   README.md
+|   requirements.txt
+|   survey_ssr_bridge.py
+|   target_leakage_audit_report.md
+|   
++---analysis
+|       calibration.py
+|       decision_rules.py
+|       distribution_eval.py
+|       label_structure.py
+|       metrics.py
+|       splits.py
+|       __init__.py
+|       
++---dashboard
+|   |   data_access.py
+|   |   product_research.py
+|   |   server.py
+|   |   survey_batches.py
+|   |   workflow.py
+|   |   __init__.py
+|   |   
+|   \---static
+|           app.js
+|           index.html
+|           styles.css
+|           
++---data
+|   |   actual_reviews.xlsx
+|   |   Capstone_Reviews(Responses).xlsx
+|   |   evaluation_results.csv
+|   |   human_survey_cleaned.csv
+|   |   human_survey_inclusion_exclusion_log.csv
+|   |   Mobile Reviews Sentiment.csv
+|   |   ollama_ft_generation_manifest.json
+|   |   predictions.csv
+|   |   reviews_only.csv
+|   |   
+|   +---aspect_model
+|   |       metrics.json
+|   |       predictions.csv
+|   |       
+|   +---calibrated_discretization
+|   |       final_report.md
+|   |       heldout_metrics.json
+|   |       heldout_predictions.csv
+|   |       learned_calibration_thresholds.json
+|   |       
+|   +---construct_prompts
+|   |       construct_registry.json
+|   |       FT_BI01_prompts.jsonl
+|   |       FT_PE01_prompts.jsonl
+|   |       Q26_BI_proxy_prompts.jsonl
+|   |       
+|   +---current_baseline_evaluation
+|   |       confusion_matrix.csv
+|   |       final_report.md
+|   |       metrics.json
+|   |       per_rating_metrics.csv
+|   |       probability_summary.csv
+|   |       range_metrics.csv
+|   |       
+|   +---dashboard_demo_runs
+|   |       runs.jsonl
+|   |       
+|   +---personas
+|   |       aggregate_survey_summary.csv
+|   |       persona_assignments.csv
+|   |       persona_profiles.json
+|   |       persona_q21_outcomes_for_step7.csv
+|   |       theme_counts.csv
+|   |       
+|   +---persona_generator
+|   |       persona_cards.json
+|   |       persona_generator_manifest.json
+|   |       respondent_specs.jsonl
+|   |       respondent_specs_extended.jsonl
+|   |       
+|   +---pilot
+|   |       evaluation_metrics.json
+|   |       ssr_config.json
+|   |       synthetic_respondent_specs.jsonl
+|   |       synthetic_responses.jsonl
+|   |       
+|   +---pilot_embedding_comparison
+|   |       comparison_metrics.json
+|   |       gemini_v2_scoring_manifest.json
+|   |       human_scores_local_bge_base.csv
+|   |       human_scores_local_minilm.csv
+|   |       human_scores_local_mpnet_baseline.csv
+|   |       persona_matched_gemini_v2_per_response_scores.csv
+|   |       persona_matched_gemini_v2_summary.csv
+|   |       persona_matched_per_response_scores.csv
+|   |       synthetic_scores_local_bge_base_gemini_v2.csv
+|   |       synthetic_scores_local_minilm_gemini_v2.csv
+|   |       synthetic_scores_local_mpnet_baseline_gemini_v2.csv
+|   |       
+|   +---pilot_gemini
+|   |       gemini_generated_responses.jsonl
+|   |       
+|   +---pilot_gemini_v2
+|   |       gemini_generated_responses.jsonl
+|   |       generation_config.json
+|   |       prompts.jsonl
+|   |       
+|   +---pilot_ollama_control_FT_BI01
+|   |       condition_scores.csv
+|   |       generation_config.json
+|   |       prompts.jsonl
+|   |       responses.jsonl
+|   |       
+|   +---pilot_ollama_control_FT_PE01
+|   |       condition_scores.csv
+|   |       generation_config.json
+|   |       prompts.jsonl
+|   |       responses.jsonl
+|   |       
+|   +---pilot_ollama_control_Q26_BI_proxy
+|   |       condition_scores.csv
+|   |       generation_config.json
+|   |       prompts.jsonl
+|   |       responses.jsonl
+|   |       
+|   +---pilot_ollama_persona_FT_BI01
+|   |       condition_scores.csv
+|   |       generation_config.json
+|   |       prompts.jsonl
+|   |       responses.jsonl
+|   |       
+|   +---pilot_ollama_persona_FT_PE01
+|   |       condition_scores.csv
+|   |       generation_config.json
+|   |       prompts.jsonl
+|   |       responses.jsonl
+|   |       
+|   +---pilot_ollama_persona_Q26_BI_proxy
+|   |       condition_scores.csv
+|   |       generation_config.json
+|   |       prompts.jsonl
+|   |       responses.jsonl
+|   |       
+|   +---synthetic_dataset
+|   |       coverage_by_persona_source.csv
+|   |       dataset_manifest.json
+|   |       synthetic_survey_dataset.csv
+|   |       
+|   +---validation
+|   |       distribution_comparison.csv
+|   |       methodology_metrics.json
+|   |       persona_consistency.csv
+|   |       persona_ordering.csv
+|   |       validation_summary.json
+|   |       
+|   \---validation_split
+|           frozen_split_manifest.json
+|           
++---docs
+|   +---project_status
+|   |       complete_directory_tree.txt
+|   |       DIGITAL_PERSONA_PROJECT_HANDOVER_REPORT.md
+|   |       evidence_matrix.csv
+|   |       full_project_audit.md
+|   |       human_survey_data_quality_report.md
+|   |       legacy_direct_rating_paths.md
+|   |       methodology_audit.md
+|   |       persona_leakage_and_dev_only_proposal.md
+|   |       pipeline_component_checklist.md
+|   |       step10_gemini_v2_persona_matched_report.md
+|   |       step11_final_research_results.md
+|   |       step3_final_verification.md
+|   |       step4_personas_report.md
+|   |       step5_7_pilot_report.md
+|   |       step8_embedding_comparison_report.md
+|   |       step9_persona_matched_report.md
+|   |       validation_agent_report.md
+|   |       workflow_requirements_checklist.md
+|   |       
+|   +---ssr_verification
+|   |   |   canonical_ssr_verification.md
+|   |   |   implementation_audit.md
+|   |   |   original_anchor_source_audit.md
+|   |   |   paper_method.md
+|   |   |   reproduction_readiness.md
+|   |   |   
+|   |   \---source_excerpts
+|   |           maier_appendix_c.txt
+|   |           maier_section_a43.txt
+|   |           match_57037.txt
+|   |           
+|   \---survey_instrument
+|           google_forms_build_guide.md
+|           smartphone_construct_anchor_statements.csv
+|           survey_codebook.csv
+|           survey_instrument.md
+|           survey_validation_checks.py
+|           survey_validation_report.md
+|           
++---experiments
+|   |   __init__.py
+|   |   
+|   \---d1_accuracy
+|           config.json
+|           dataset_audit.md
+|           finalize_completed_screen.py
+|           run_experiments.py
+|           __init__.py
+|           
++---paper
+|       ssr_paper_ieee.docx
+|       ssr_paper_ieee.tex
+|       
++---results
+|       calibration_regimeA.json
+|       calibration_regimeB.json
+|       calibration_summary.csv
+|       ceiling_summary.json
+|       class5_metrics.csv
+|       cm_regimeA_median.csv
+|       cm_regimeA_mode.csv
+|       cm_regimeA_prior_corrected_mode.csv
+|       cm_regimeA_rounded_expected.csv
+|       cm_regimeB_median.csv
+|       cm_regimeB_mode.csv
+|       cm_regimeB_prior_corrected_mode.csv
+|       cm_regimeB_rounded_expected.csv
+|       distribution_eval_regimeA.json
+|       distribution_eval_regimeB.json
+|       distribution_eval_summary.csv
+|       dist_histogram_regimeA.png
+|       dist_histogram_regimeB.png
+|       embedding_cache.npz
+|       label_structure_report.json
+|       nll_vs_T_regimeA.png
+|       nll_vs_T_regimeB.png
+|       per_class_ceiling_regimeA.csv
+|       per_class_ceiling_regimeB.csv
+|       per_class_ceiling_summary.json
+|       per_text_distributions_regimeA.csv
+|       per_text_distributions_regimeB.csv
+|       reliability_diagram_regimeA.png
+|       reliability_diagram_regimeB.png
+|       splits_regimeA.json
+|       splits_regimeB.json
+|       
++---scripts
+|       build_personas.py
+|       clean_human_survey.py
+|       dp_constructs.py
+|       dp_methodology_eval.py
+|       dp_persona_generator.py
+|       dp_synthetic_dataset.py
+|       dp_validation_agent.py
+|       gemini_utils.py
+|       ollama_utils.py
+|       pilot_generate_api.py
+|       pilot_generate_condition.py
+|       pilot_generate_gemini.py
+|       pilot_generate_openai.py
+|       run_pipeline.py
+|       ssr_embedding_comparison.py
+|       ssr_eval_lib.py
+|       ssr_persona_matched_evaluation.py
+|       ssr_score_gemini_v2.py
+|       test_gemini_api.py
+|       verify_pipeline_outputs.py
+|       
++---tests
+|       conftest.py
+|       test_analysis.py
+|       test_canonical_ssr.py
+|       test_clean_human_survey.py
+|       test_dashboard.py
+|       test_dashboard_single_screen.py
+|       test_dashboard_workflow.py
+|       test_dp_pipeline.py
+|       test_gemini_generation.py
+|       test_gemini_model_config.py
+|       test_gemini_quality.py
+|       test_gemini_v2_eval.py
+|       test_methodology_eval.py
+|       test_ollama_provider.py
+|       test_openai_generation.py
+|       test_persona_matched.py
+|       test_pipeline_verification.py
+|       test_product_research.py
+|       test_provider_errors.py
+|       test_run_log_isolation.py
+|       test_simple_page.py
+|       test_ssr_eval.py
+|       test_ssr_reference_parity.py
+|       test_survey_batches.py
+|       test_survey_ssr_bridge.py
+|       test_workflow_components.py
+|       __init__.py
+|       
+\---_archive
+        correlation_results.py
+        embedding_comparison_experiment.py
+        model_comparison_experiment.py
+        optimized_model_comparison_experiment.py
+        persona_rating5_investigation.md
+        rating5_training_signal_investigation.md
+        rating_calibration_investigation.md
+        rating_intensity_investigation.md
+        rating_uncertainty_implementation.md
+        README.md
+        safe_feature_model_comparison_experiment.py
+        sentiment_rating_correlation_analysis.md
+        sentiment_rating_investigation.md
+        text_to_aspect_rating_investigation.md
+        xgboost_batch_experiment.py
+        

@@ -1,0 +1,10 @@
+{
+  "provider": "ollama",
+  "model": "qwen2.5:0.5b",
+  "condition": "control",
+  "task": "Q26_BI_proxy",
+  "per_persona": 1,
+  "system_prompt": "You role-play one survey respondent answering an open-ended question in your own words, 1-4 sentences, informal student register. Give reasons that fit the profile. Use words only: no numbers, no scores, no ratings, no stars. Do not mention being an AI.",
+  "user_template": "Question: {question}",
+  "note": "Text only; no ratings requested. Control prompts contain no persona information."
+}

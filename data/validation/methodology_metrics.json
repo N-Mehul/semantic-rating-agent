@@ -1,0 +1,346 @@
+{
+  "split": {
+    "status": "verified_against_frozen_manifest",
+    "method": "ssr_eval_lib.dev_test_split(q21, test_size=0.5, seed=20261028), stratified by Q21",
+    "source": "usable Q26 answers of the 200-person primary cohort (row order of human_scores_*.csv)",
+    "n_dev": 97,
+    "n_test": 97,
+    "sha256": "c74982763f86fbf69208f33d001db19654a6849c6be942ed9ac543cdcf9d9c31",
+    "seed": 20261028
+  },
+  "selected_encoder_on_dev": "local_bge_base",
+  "selected_encoder_test": {
+    "test": {
+      "n": 97,
+      "exact_accuracy_argmax": 0.35051546391752575,
+      "mae_expected_rating": 0.8609072841812964,
+      "baseline_majority_accuracy": 0.35051546391752575,
+      "baseline_mean_mae": 0.9012647465192901,
+      "spearman_rho": {
+        "status": "computed",
+        "value": 0.29682802189924845,
+        "ci95": [
+          0.09353789490344434,
+          0.4760932572857601
+        ]
+      },
+      "pearson_r": {
+        "status": "computed",
+        "value": 0.3273874274819691
+      },
+      "cohen_kappa_linear": {
+        "status": "computed",
+        "value": 0.22519969080133984
+      },
+      "cohen_kappa_quadratic": {
+        "status": "computed",
+        "value": 0.3427507231445893
+      },
+      "cohen_kappa_unweighted": {
+        "status": "computed",
+        "value": 0.11228936664729794
+      }
+    },
+    "test_distribution": {
+      "human_q21_distribution": [
+        0.0825,
+        0.0412,
+        0.3505,
+        0.3299,
+        0.1959
+      ],
+      "mean_ssr_pmf": [
+        0.0958,
+        0.089,
+        0.2633,
+        0.271,
+        0.2809
+      ],
+      "jsd_base2": {
+        "status": "computed",
+        "value": 0.01889138989831722
+      }
+    }
+  },
+  "all_encoders_test_for_information": {
+    "local_mpnet_baseline": {
+      "test": {
+        "n": 97,
+        "exact_accuracy_argmax": 0.31958762886597936,
+        "mae_expected_rating": 0.8909780825427129,
+        "baseline_majority_accuracy": 0.35051546391752575,
+        "baseline_mean_mae": 0.9012647465192901,
+        "spearman_rho": {
+          "status": "computed",
+          "value": 0.16945179926516424,
+          "ci95": [
+            -0.042452319029287505,
+            0.3670859568534735
+          ]
+        },
+        "pearson_r": {
+          "status": "computed",
+          "value": 0.21449976929454964
+        },
+        "cohen_kappa_linear": {
+          "status": "computed",
+          "value": 0.004022440986556464
+        },
+        "cohen_kappa_quadratic": {
+          "status": "computed",
+          "value": 0.02433295187616691
+        },
+        "cohen_kappa_unweighted": {
+          "status": "computed",
+          "value": -0.010257219504497428
+        }
+      },
+      "test_distribution": {
+        "human_q21_distribution": [
+          0.0825,
+          0.0412,
+          0.3505,
+          0.3299,
+          0.1959
+        ],
+        "mean_ssr_pmf": [
+          0.0685,
+          0.118,
+          0.4309,
+          0.2312,
+          0.1514
+        ],
+        "jsd_base2": {
+          "status": "computed",
+          "value": 0.025726554271065953
+        }
+      }
+    },
+    "local_minilm": {
+      "test": {
+        "n": 97,
+        "exact_accuracy_argmax": 0.2268041237113402,
+        "mae_expected_rating": 0.8687040416919259,
+        "baseline_majority_accuracy": 0.35051546391752575,
+        "baseline_mean_mae": 0.9012647465192901,
+        "spearman_rho": {
+          "status": "computed",
+          "value": 0.2568270552899322,
+          "ci95": [
+            0.056288577816032734,
+            0.4425544856382112
+          ]
+        },
+        "pearson_r": {
+          "status": "computed",
+          "value": 0.31248044514615997
+        },
+        "cohen_kappa_linear": {
+          "status": "computed",
+          "value": 0.03608786610878667
+        },
+        "cohen_kappa_quadratic": {
+          "status": "computed",
+          "value": 0.11749415128671703
+        },
+        "cohen_kappa_unweighted": {
+          "status": "computed",
+          "value": -0.03632478632478642
+        }
+      },
+      "test_distribution": {
+        "human_q21_distribution": [
+          0.0825,
+          0.0412,
+          0.3505,
+          0.3299,
+          0.1959
+        ],
+        "mean_ssr_pmf": [
+          0.0712,
+          0.1542,
+          0.2734,
+          0.2289,
+          0.2723
+        ],
+        "jsd_base2": {
+          "status": "computed",
+          "value": 0.03996694759462422
+        }
+      }
+    },
+    "local_bge_base": {
+      "test": {
+        "n": 97,
+        "exact_accuracy_argmax": 0.35051546391752575,
+        "mae_expected_rating": 0.8609072841812964,
+        "baseline_majority_accuracy": 0.35051546391752575,
+        "baseline_mean_mae": 0.9012647465192901,
+        "spearman_rho": {
+          "status": "computed",
+          "value": 0.29682802189924845,
+          "ci95": [
+            0.09353789490344434,
+            0.4760932572857601
+          ]
+        },
+        "pearson_r": {
+          "status": "computed",
+          "value": 0.3273874274819691
+        },
+        "cohen_kappa_linear": {
+          "status": "computed",
+          "value": 0.22519969080133984
+        },
+        "cohen_kappa_quadratic": {
+          "status": "computed",
+          "value": 0.3427507231445893
+        },
+        "cohen_kappa_unweighted": {
+          "status": "computed",
+          "value": 0.11228936664729794
+        }
+      },
+      "test_distribution": {
+        "human_q21_distribution": [
+          0.0825,
+          0.0412,
+          0.3505,
+          0.3299,
+          0.1959
+        ],
+        "mean_ssr_pmf": [
+          0.0958,
+          0.089,
+          0.2633,
+          0.271,
+          0.2809
+        ],
+        "jsd_base2": {
+          "status": "computed",
+          "value": 0.01889138989831722
+        }
+      }
+    }
+  },
+  "synthetic_vs_human_test_by_persona": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "n_synthetic": 10,
+      "n_human_test": 30,
+      "ks_expected_rating": {
+        "status": "computed",
+        "statistic": 0.6333333333333333,
+        "note": "descriptive; p-value not reported (n_synthetic small)"
+      },
+      "jsd_mean_pmf_vs_human_text_pmf": {
+        "status": "computed",
+        "value": 0.05670383591717756
+      },
+      "jsd_mean_pmf_vs_human_q21": {
+        "status": "computed",
+        "value": 0.07309225105129441
+      }
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "n_synthetic": 10,
+      "n_human_test": 20,
+      "ks_expected_rating": {
+        "status": "computed",
+        "statistic": 0.5,
+        "note": "descriptive; p-value not reported (n_synthetic small)"
+      },
+      "jsd_mean_pmf_vs_human_text_pmf": {
+        "status": "computed",
+        "value": 0.06321136728886148
+      },
+      "jsd_mean_pmf_vs_human_q21": {
+        "status": "computed",
+        "value": 0.11978594515122318
+      }
+    }
+  ],
+  "tstr": {
+    "status": "unavailable",
+    "reason": "synthetic labels are not independent of the scoring method (e.g. SSR-derived), so TSTR would be circular; fewer than 5 synthetic examples in some class ({3: 19, 5: 1})",
+    "n_train": 20,
+    "n_test": 97,
+    "train_class_counts": {
+      "3": 19,
+      "5": 1
+    }
+  },
+  "conditions": [
+    {
+      "folder": "pilot_ollama_persona_Q26_BI_proxy",
+      "condition": "persona",
+      "n_saved": 4,
+      "n_scored": 3,
+      "mean_pmf": [
+        0.026,
+        0.1717,
+        0.4875,
+        0.162,
+        0.1528
+      ],
+      "mean_expected_rating": 3.24392746498764,
+      "expected_ratings": [
+        2.7277,
+        3.4942,
+        3.5098
+      ]
+    },
+    {
+      "folder": "pilot_ollama_control_Q26_BI_proxy",
+      "condition": "control",
+      "n_saved": 4,
+      "n_scored": 4,
+      "mean_pmf": [
+        0.0384,
+        0.1293,
+        0.4877,
+        0.147,
+        0.1976
+      ],
+      "mean_expected_rating": 3.3360240354595523,
+      "expected_ratings": [
+        4.0607,
+        3.2239,
+        3.2984,
+        2.761
+      ]
+    }
+  ],
+  "leakage_audit": {
+    "respondent_overlap_dev_test": 0,
+    "duplicate_respondent_ids_primary": 0,
+    "identical_q26_texts_in_both_halves": {
+      "count": 4,
+      "examples": [
+        "good",
+        "no",
+        "yes",
+        "yess"
+      ],
+      "note": "short answers such as 'yes' occur in both halves; this is identical input text, not a shared respondent"
+    },
+    "encoder_selected_on": "dev half only",
+    "anchors_unchanged_since_step6": true,
+    "canonical_ssr_unchanged_since_step6": true,
+    "anchors_tuned_on_data": "no evidence: the anchor file is a pre-approved artefact whose hash is unchanged",
+    "persona_construction_used_test_respondents": true,
+    "persona_construction_note": "Personas and their Q23-Q25 theme summaries were built from the whole 200-person primary cohort, which includes test-half respondents. Q21 and Q26 (the evaluation pair) were excluded from persona profiles and prompts, but this is a residual leakage risk for persona-level comparisons.",
+    "prompt_development_on_test": "unable to verify from the repository history; no prompt was tuned against test metrics in the recorded steps",
+    "test_split_persisted_before_this_run": "no (the split was recomputed deterministically from a fixed seed; now frozen in a manifest)"
+  },
+  "metric_definitions": {
+    "exact_accuracy": "argmax of the SSR PMF equals Q21",
+    "mae": "|E[r] - Q21|",
+    "spearman/pearson": "E[r] vs Q21",
+    "cohen_kappa": "argmax vs Q21 on labels 1-5; linear and quadratic weights (ordinal) and unweighted",
+    "jsd": "Jensen-Shannon divergence, log base 2 (0 = identical, 1 = disjoint)",
+    "ks": "two-sample KS statistic on E[r]",
+    "proxy": "Q21 (rebuy-brand likelihood) is a proxy for the Behavioral Intention anchors"
+  }
+}

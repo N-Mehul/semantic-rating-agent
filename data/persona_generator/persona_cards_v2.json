@@ -1,0 +1,451 @@
+[
+  {
+    "persona_id": "P1_premium_tier_owner",
+    "n_human_respondents": 87,
+    "pct_of_primary_cohort": 33.7,
+    "defining_rule": "price_paid above ₹35,000",
+    "median_age": 20.0,
+    "age_range": [
+      18,
+      32
+    ],
+    "top_operating_system": [
+      "iOS (iPhone) (46)",
+      "Android (41)"
+    ],
+    "top_brands": [
+      "Apple (iPhone) (46)",
+      "Samsung (17)",
+      "Vivo (6)",
+      "OnePlus (6)"
+    ],
+    "top_daily_usage": [
+      "4–6 hours (31)",
+      "6–8 hours (24)",
+      "2–4 hours (16)"
+    ],
+    "top_gender": [
+      "Male (44)",
+      "Female (43)"
+    ],
+    "top_current_status": [
+      "Student (82)",
+      "Working professional (4)"
+    ],
+    "top_area_type": [
+      "Metro city (28)",
+      "Tier-2 city (27)",
+      "Town or rural area (24)",
+      "Tier-3 city (8)"
+    ],
+    "top_monthly_spending": [
+      "Less than ₹10,000 (45)",
+      "₹10,000–₹50,000 (17)",
+      "Prefer not to say (15)"
+    ],
+    "top_replacement_frequency": [
+      "Every 2–3 years (32)",
+      "After more than 4 years (23)",
+      "Every 3–4 years (18)"
+    ],
+    "top_upgrade_reason": [
+      "I wanted a newer model (23)",
+      "My previous phone became slow. (19)",
+      "My previous phone stopped working (17)"
+    ],
+    "top_info_sources": [
+      "Friends or family (21)",
+      "Brand website (19)",
+      "Online customer reviews (16)"
+    ],
+    "top_main_uses": [
+      "Social media (83.9% of respondents)",
+      "Work or study (74.7% of respondents)",
+      "Payments and banking (74.7% of respondents)",
+      "Calls and messaging (72.4% of respondents)",
+      "Photography and videos (63.2% of respondents)"
+    ],
+    "tech_comfort_mean_1to5": 3.91,
+    "experience_themes_Q23_Q25": [
+      {
+        "theme": "positive_general",
+        "pct_of_usable_answers": 82.6,
+        "mentions": 199
+      },
+      {
+        "theme": "performance_speed",
+        "pct_of_usable_answers": 15.4,
+        "mentions": 37
+      },
+      {
+        "theme": "camera",
+        "pct_of_usable_answers": 14.5,
+        "mentions": 35
+      },
+      {
+        "theme": "battery",
+        "pct_of_usable_answers": 14.1,
+        "mentions": 34
+      },
+      {
+        "theme": "negative_issue",
+        "pct_of_usable_answers": 10.4,
+        "mentions": 25
+      }
+    ],
+    "synthetic_respondent_ids": [
+      "P1_S01",
+      "P1_S02",
+      "P1_S03",
+      "P1_S04",
+      "P1_S05",
+      "P1_S06",
+      "P1_S07",
+      "P1_S08",
+      "P1_S09",
+      "P1_S10"
+    ],
+    "interpretation_note": "Descriptive segment defined by price paid and daily use; not a statistically derived cluster.",
+    "excluded_from_profile": [
+      "Q21 rebuy intention",
+      "Q26 free text",
+      "any evaluation label"
+    ]
+  },
+  {
+    "persona_id": "P2_midrange_heavy_user",
+    "n_human_respondents": 52,
+    "pct_of_primary_cohort": 20.2,
+    "defining_rule": "price_paid ₹10,000–₹35,000 and daily use ≥ 6 hours",
+    "median_age": 20.5,
+    "age_range": [
+      19,
+      35
+    ],
+    "top_operating_system": [
+      "Android (52)"
+    ],
+    "top_brands": [
+      "OnePlus (12)",
+      "Vivo (11)",
+      "Other (8)",
+      "Xiaomi (6)"
+    ],
+    "top_daily_usage": [
+      "6–8 hours (27)",
+      "More than 8 hours (25)"
+    ],
+    "top_gender": [
+      "Female (31)",
+      "Male (21)"
+    ],
+    "top_current_status": [
+      "Student (49)",
+      "Not currently working (2)"
+    ],
+    "top_area_type": [
+      "Town or rural area (29)",
+      "Metro city (12)",
+      "Tier-2 city (10)",
+      "Tier-3 city (1)"
+    ],
+    "top_monthly_spending": [
+      "Less than ₹10,000 (34)",
+      "Prefer not to say (10)",
+      "₹10,000–₹50,000 (7)"
+    ],
+    "top_replacement_frequency": [
+      "After more than 4 years (27)",
+      "Every 3–4 years (12)",
+      "Every 2–3 years (9)"
+    ],
+    "top_upgrade_reason": [
+      "My previous phone became slow. (17)",
+      "My previous phone stopped working (15)",
+      "Other (13)"
+    ],
+    "top_info_sources": [
+      "Friends or family (19)",
+      "YouTube reviews (10)",
+      "Brand website (8)"
+    ],
+    "top_main_uses": [
+      "Social media (90.4% of respondents)",
+      "Calls and messaging (63.5% of respondents)",
+      "Payments and banking (61.5% of respondents)",
+      "Work or study (61.5% of respondents)",
+      "Photography and videos (57.7% of respondents)"
+    ],
+    "tech_comfort_mean_1to5": 3.56,
+    "experience_themes_Q23_Q25": [
+      {
+        "theme": "positive_general",
+        "pct_of_usable_answers": 66.2,
+        "mentions": 96
+      },
+      {
+        "theme": "negative_issue",
+        "pct_of_usable_answers": 15.2,
+        "mentions": 22
+      },
+      {
+        "theme": "camera",
+        "pct_of_usable_answers": 13.1,
+        "mentions": 19
+      },
+      {
+        "theme": "battery",
+        "pct_of_usable_answers": 11.0,
+        "mentions": 16
+      },
+      {
+        "theme": "performance_speed",
+        "pct_of_usable_answers": 9.7,
+        "mentions": 14
+      }
+    ],
+    "synthetic_respondent_ids": [
+      "P2_S01",
+      "P2_S02",
+      "P2_S03",
+      "P2_S04",
+      "P2_S05",
+      "P2_S06",
+      "P2_S07",
+      "P2_S08",
+      "P2_S09",
+      "P2_S10"
+    ],
+    "interpretation_note": "Descriptive segment defined by price paid and daily use; not a statistically derived cluster.",
+    "excluded_from_profile": [
+      "Q21 rebuy intention",
+      "Q26 free text",
+      "any evaluation label"
+    ]
+  },
+  {
+    "persona_id": "P3_midrange_moderate_user",
+    "n_human_respondents": 87,
+    "pct_of_primary_cohort": 33.7,
+    "defining_rule": "price_paid ₹10,000–₹35,000 and daily use < 6 hours",
+    "median_age": 20.0,
+    "age_range": [
+      18,
+      26
+    ],
+    "top_operating_system": [
+      "Android (84)",
+      "iOS (iPhone) (3)"
+    ],
+    "top_brands": [
+      "Samsung (19)",
+      "Realme (16)",
+      "Vivo (13)",
+      "Oppo (10)"
+    ],
+    "top_daily_usage": [
+      "4–6 hours (46)",
+      "2–4 hours (34)",
+      "Less than 2 hours (7)"
+    ],
+    "top_gender": [
+      "Female (44)",
+      "Male (43)"
+    ],
+    "top_current_status": [
+      "Student (83)",
+      "Not currently working (2)"
+    ],
+    "top_area_type": [
+      "Town or rural area (47)",
+      "Tier-2 city (17)",
+      "Metro city (17)",
+      "Tier-3 city (6)"
+    ],
+    "top_monthly_spending": [
+      "Less than ₹10,000 (57)",
+      "Prefer not to say (21)",
+      "₹10,000–₹50,000 (7)"
+    ],
+    "top_replacement_frequency": [
+      "After more than 4 years (40)",
+      "Every 3–4 years (20)",
+      "Every 2–3 years (16)"
+    ],
+    "top_upgrade_reason": [
+      "My previous phone stopped working (27)",
+      "My previous phone became slow. (22)",
+      "Other (17)"
+    ],
+    "top_info_sources": [
+      "Friends or family (26)",
+      "Brand website (19)",
+      "YouTube reviews (16)"
+    ],
+    "top_main_uses": [
+      "Social media (78.2% of respondents)",
+      "Work or study (74.7% of respondents)",
+      "Calls and messaging (70.1% of respondents)",
+      "Payments and banking (56.3% of respondents)",
+      "Watching videos or streaming (43.7% of respondents)"
+    ],
+    "tech_comfort_mean_1to5": 3.62,
+    "experience_themes_Q23_Q25": [
+      {
+        "theme": "positive_general",
+        "pct_of_usable_answers": 74.0,
+        "mentions": 182
+      },
+      {
+        "theme": "battery",
+        "pct_of_usable_answers": 11.8,
+        "mentions": 29
+      },
+      {
+        "theme": "negative_issue",
+        "pct_of_usable_answers": 11.4,
+        "mentions": 28
+      },
+      {
+        "theme": "camera",
+        "pct_of_usable_answers": 11.4,
+        "mentions": 28
+      },
+      {
+        "theme": "performance_speed",
+        "pct_of_usable_answers": 10.2,
+        "mentions": 25
+      }
+    ],
+    "synthetic_respondent_ids": [
+      "P3_S01",
+      "P3_S02",
+      "P3_S03",
+      "P3_S04",
+      "P3_S05",
+      "P3_S06",
+      "P3_S07",
+      "P3_S08",
+      "P3_S09",
+      "P3_S10"
+    ],
+    "interpretation_note": "Descriptive segment defined by price paid and daily use; not a statistically derived cluster.",
+    "excluded_from_profile": [
+      "Q21 rebuy intention",
+      "Q26 free text",
+      "any evaluation label"
+    ]
+  },
+  {
+    "persona_id": "P4_budget_or_undisclosed_price",
+    "n_human_respondents": 32,
+    "pct_of_primary_cohort": 12.4,
+    "defining_rule": "price_paid below ₹10,000 or 'Prefer not to say'",
+    "median_age": 20.0,
+    "age_range": [
+      18,
+      22
+    ],
+    "top_operating_system": [
+      "Android (25)",
+      "iOS (iPhone) (7)"
+    ],
+    "top_brands": [
+      "Apple (iPhone) (7)",
+      "Xiaomi (5)",
+      "Vivo (5)",
+      "Samsung (5)"
+    ],
+    "top_daily_usage": [
+      "4–6 hours (9)",
+      "6–8 hours (8)",
+      "2–4 hours (7)"
+    ],
+    "top_gender": [
+      "Female (23)",
+      "Male (9)"
+    ],
+    "top_current_status": [
+      "Student (32)"
+    ],
+    "top_area_type": [
+      "Town or rural area (17)",
+      "Metro city (9)",
+      "Tier-3 city (3)",
+      "Tier-2 city (3)"
+    ],
+    "top_monthly_spending": [
+      "Less than ₹10,000 (18)",
+      "Prefer not to say (12)",
+      "₹10,000–₹50,000 (2)"
+    ],
+    "top_replacement_frequency": [
+      "After more than 4 years (20)",
+      "Every 1–2 years (5)",
+      "Every 3–4 years (3)"
+    ],
+    "top_upgrade_reason": [
+      "Other (10)",
+      "My previous phone stopped working (8)",
+      "I wanted a newer model (5)"
+    ],
+    "top_info_sources": [
+      "Other (9)",
+      "Social media (5)",
+      "Brand website (5)"
+    ],
+    "top_main_uses": [
+      "Social media (71.9% of respondents)",
+      "Work or study (68.8% of respondents)",
+      "Calls and messaging (68.8% of respondents)",
+      "Payments and banking (65.6% of respondents)",
+      "Photography and videos (56.2% of respondents)"
+    ],
+    "tech_comfort_mean_1to5": 3.69,
+    "experience_themes_Q23_Q25": [
+      {
+        "theme": "positive_general",
+        "pct_of_usable_answers": 73.0,
+        "mentions": 65
+      },
+      {
+        "theme": "performance_speed",
+        "pct_of_usable_answers": 15.7,
+        "mentions": 14
+      },
+      {
+        "theme": "negative_issue",
+        "pct_of_usable_answers": 14.6,
+        "mentions": 13
+      },
+      {
+        "theme": "battery",
+        "pct_of_usable_answers": 11.2,
+        "mentions": 10
+      },
+      {
+        "theme": "display",
+        "pct_of_usable_answers": 9.0,
+        "mentions": 8
+      }
+    ],
+    "synthetic_respondent_ids": [
+      "P4_S01",
+      "P4_S02",
+      "P4_S03",
+      "P4_S04",
+      "P4_S05",
+      "P4_S06",
+      "P4_S07",
+      "P4_S08",
+      "P4_S09",
+      "P4_S10"
+    ],
+    "interpretation_note": "Descriptive segment defined by price paid and daily use; not a statistically derived cluster.",
+    "excluded_from_profile": [
+      "Q21 rebuy intention",
+      "Q26 free text",
+      "any evaluation label"
+    ]
+  }
+]

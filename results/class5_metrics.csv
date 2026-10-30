@@ -1,0 +1,9 @@
+regime,rule,TP,FP,FN,precision,recall,F1
+A,mode,0,0,220,0.0,0.0,0.0
+A,median,0,0,220,0.0,0.0,0.0
+A,rounded_expected,0,0,220,0.0,0.0,0.0
+A,prior_corrected_mode,172,460,48,0.2722,0.7818,0.4038
+B,mode,0,0,352,0.0,0.0,0.0
+B,median,0,0,352,0.0,0.0,0.0
+B,rounded_expected,0,0,352,0.0,0.0,0.0
+B,prior_corrected_mode,319,877,33,0.2667,0.9062,0.4121

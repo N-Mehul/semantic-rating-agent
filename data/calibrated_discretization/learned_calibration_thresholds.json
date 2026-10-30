@@ -1,0 +1,13 @@
+{
+  "method": "ordered five-bin dynamic programming minimizing calibration SSE",
+  "calibration_rows": 39997,
+  "official_rows_excluded": 10003,
+  "cutpoints": [
+    1.54945,
+    2.49895,
+    3.22775,
+    4.00455
+  ],
+  "calibration_sse": 28731.0,
+  "frozen_before_official_evaluation": true
+}

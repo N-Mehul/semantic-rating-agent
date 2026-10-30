@@ -1,0 +1,54 @@
+{
+  "source_dir": "data/pilot_gemini_v2",
+  "prompts": 40,
+  "responses_on_disk": 20,
+  "unique_ids": 20,
+  "passed_quality_and_scored": 20,
+  "excluded_by_quality": [],
+  "prompt_ids_without_response": [
+    "P3_S01",
+    "P3_S02",
+    "P3_S03",
+    "P3_S04",
+    "P3_S05",
+    "P3_S06",
+    "P3_S07",
+    "P3_S08",
+    "P3_S09",
+    "P3_S10",
+    "P4_S01",
+    "P4_S02",
+    "P4_S03",
+    "P4_S04",
+    "P4_S05",
+    "P4_S06",
+    "P4_S07",
+    "P4_S08",
+    "P4_S09",
+    "P4_S10"
+  ],
+  "failure_records": 6,
+  "failure_kinds": [
+    "rate_limit_or_quota"
+  ],
+  "scored_by_persona": {
+    "P1": 10,
+    "P2": 10,
+    "P3": 0,
+    "P4": 0
+  },
+  "finish_reasons": [
+    "STOP"
+  ],
+  "anchor_set": "Behavioral Intention (single approved set)",
+  "configs": [
+    "local_mpnet_baseline",
+    "local_minilm",
+    "local_bge_base"
+  ],
+  "score_files": {
+    "local_mpnet_baseline": "synthetic_scores_local_mpnet_baseline_gemini_v2.csv",
+    "local_minilm": "synthetic_scores_local_minilm_gemini_v2.csv",
+    "local_bge_base": "synthetic_scores_local_bge_base_gemini_v2.csv"
+  }
+}

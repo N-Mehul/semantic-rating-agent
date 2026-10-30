@@ -1,0 +1,15 @@
+{
+  "provider": "google-genai",
+  "model_requested": "gemini-2.5-flash",
+  "settings": {
+    "temperature": 1.0,
+    "max_output_tokens": 2048,
+    "timeout_s": 60
+  },
+  "system_prompt": "You role-play one survey respondent answering an open-ended question in your own words, 1-4 sentences, informal student register. Give reasons that fit the profile. Use words only: no numbers, no scores, no ratings, no stars. Do not mention being an AI.",
+  "user_template": "Respondent profile: {profile}.\n\nQuestion: {question}",
+  "question": "Do you think your smartphone is worth the price you paid, and would you choose the same brand again? Why or why not?",
+  "label": "gemini_generated",
+  "supersedes": "none; data/pilot_gemini (512-token pilot) is kept unchanged for reproducibility",
+  "note": "No Q21, Q26 or evaluation labels are in any prompt (leak-checked). Text only; no ratings requested. API key never stored."
+}
