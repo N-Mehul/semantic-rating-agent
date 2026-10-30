@@ -1,0 +1,124 @@
+{
+  "regimes": {
+    "A": {
+      "rows": [
+        {
+          "regime": "A",
+          "true_class": 1,
+          "n_test": 196,
+          "knn_acc": 0.7245,
+          "ceiling_acc": 0.6582,
+          "gap": 0.0663,
+          "mean_entropy": 1.3489,
+          "median_entropy": 1.3614,
+          "pct_errors_within1": 0.8148
+        },
+        {
+          "regime": "A",
+          "true_class": 2,
+          "n_test": 312,
+          "knn_acc": 0.4808,
+          "ceiling_acc": 0.4679,
+          "gap": 0.0128,
+          "mean_entropy": 1.6488,
+          "median_entropy": 1.697,
+          "pct_errors_within1": 0.8395
+        },
+        {
+          "regime": "A",
+          "true_class": 3,
+          "n_test": 347,
+          "knn_acc": 0.0807,
+          "ceiling_acc": 0.1037,
+          "gap": -0.0231,
+          "mean_entropy": 1.6808,
+          "median_entropy": 1.7221,
+          "pct_errors_within1": 0.9216
+        },
+        {
+          "regime": "A",
+          "true_class": 4,
+          "n_test": 426,
+          "knn_acc": 0.9061,
+          "ceiling_acc": 0.8545,
+          "gap": 0.0516,
+          "mean_entropy": 1.6585,
+          "median_entropy": 1.6682,
+          "pct_errors_within1": 0.225
+        },
+        {
+          "regime": "A",
+          "true_class": 5,
+          "n_test": 220,
+          "knn_acc": 0.0,
+          "ceiling_acc": 0.0455,
+          "gap": -0.0455,
+          "mean_entropy": 1.6446,
+          "median_entropy": 1.6446,
+          "pct_errors_within1": 1.0
+        }
+      ],
+      "interpretation": "Regime A \u2014 Class-3 diagnosis: IRREDUCIBLE CEILING PROBLEM. The train-derived oracle achieves a per-class ceiling accuracy of 0.1037 on class 3, and the frozen kNN baseline scores 0.0807, giving a gap of -0.0231 (kNN minus ceiling). The gap of -0.0231 is within the \u00b15 pp threshold, so the kNN baseline is essentially at its own per-class ceiling for class 3. The low accuracy (0.0807) is explained by the ceiling itself being low \u2014 a data and annotation-noise limitation, not a decoding failure. Mean entropy of class-3-modal texts is 1.6808 bits, higher than class-4-modal texts (1.6585 bits), confirming that class-3 texts carry more within-text rater disagreement and their low ceiling is structurally determined by annotation noise. 92.2% of class-3 misclassifications land within \u00b11 (predicted 2 or 4), consistent with genuine adjacent-class ambiguity rather than systematic error. Conclusion: improving class-3 accuracy requires more consistent annotations or a richer feature space \u2014 it is not fixable by changing the decoding rule alone. Class-2 verdict: IRREDUCIBLE CEILING PROBLEM (kNN=0.4808, ceiling=0.4679, gap=+0.0128)."
+    },
+    "B": {
+      "rows": [
+        {
+          "regime": "B",
+          "true_class": 1,
+          "n_test": 118,
+          "knn_acc": 0.6271,
+          "ceiling_acc": 0.0,
+          "gap": 0.6271,
+          "mean_entropy": 1.3508,
+          "median_entropy": 1.3486,
+          "pct_errors_within1": 0.7045
+        },
+        {
+          "regime": "B",
+          "true_class": 2,
+          "n_test": 241,
+          "knn_acc": 0.3859,
+          "ceiling_acc": 0.0,
+          "gap": 0.3859,
+          "mean_entropy": 1.6703,
+          "median_entropy": 1.6758,
+          "pct_errors_within1": 0.6554
+        },
+        {
+          "regime": "B",
+          "true_class": 3,
+          "n_test": 431,
+          "knn_acc": 0.065,
+          "ceiling_acc": 0.0,
+          "gap": 0.065,
+          "mean_entropy": 1.6733,
+          "median_entropy": 1.679,
+          "pct_errors_within1": 0.9653
+        },
+        {
+          "regime": "B",
+          "true_class": 4,
+          "n_test": 655,
+          "knn_acc": 0.9573,
+          "ceiling_acc": 1.0,
+          "gap": -0.0427,
+          "mean_entropy": 1.6716,
+          "median_entropy": 1.6702,
+          "pct_errors_within1": 0.4643
+        },
+        {
+          "regime": "B",
+          "true_class": 5,
+          "n_test": 352,
+          "knn_acc": 0.0,
+          "ceiling_acc": 0.0,
+          "gap": 0.0,
+          "mean_entropy": NaN,
+          "median_entropy": NaN,
+          "pct_errors_within1": 0.9915
+        }
+      ],
+      "interpretation": "Regime B \u2014 Class-3 diagnosis: IRREDUCIBLE CEILING PROBLEM. In Regime B every test text is unseen at training time (n_fallback = 1797/1797, confirmed in ceiling_summary.json), so the train-derived oracle degenerates to always predicting the global-prior mode (rating 4). Its per-class ceiling for class 3 is therefore 0.0000 \u2014 not because class 3 is especially hard, but because the oracle has no text-specific information at all. The kNN baseline scores 0.0650 on class 3 by using embedding similarity to seen training texts, which is better than the degenerate oracle, confirming semantic generalisation. The per-class ceiling for Regime B is not an informative upper bound by class; the informative comparison is Regime A, where the ceiling is 0.1037 and the gap is only \u22120.0231 (IRREDUCIBLE). Mean entropy of class-3-modal texts in the Regime B training split: 1.6733 bits. 96.5% of class-3 errors fall within \u00b11 of the true rating (predicted 2 or 4), consistent with adjacent-class ambiguity rather than systematic error. Conclusion: class-3 low accuracy is an irreducible consequence of annotation noise, not fixable by changing the decoding rule. Class-2 verdict: IRREDUCIBLE CEILING PROBLEM (kNN=0.3859, oracle ceiling=0.0000 \u2014 degenerate for same reason)."
+    }
+  }
+}

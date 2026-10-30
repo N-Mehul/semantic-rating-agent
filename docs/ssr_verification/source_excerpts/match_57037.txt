@@ -1,0 +1,47 @@
+s. In practice, we construct mm such reference statement sets Σi\Sigma_{i} where i=0,…,m−1i=0,\dots,m-1, across which we eventually average the respective single-response pmfs to obtain a single-response result pmf. In this analysis, we use m=6m=6 sets (see App. [C.1](https://arxiv.org/html/2510.08338#A3.SS1)). They are all similar but not identical, and designed to capture the different ways a consumer may express their purchase intent. However, as this use of multiple sets of reference statements is more an implementation detail than a theoretical innovation, and since it will complicate the mathematical notation unnecessarily, we do not explicitly mention it in the following.
+To effectively compute the similarity between a response text tc~t_{\tilde{c}} and a reference statement σr\sigma_{r}, we retrieve embedding vectors 𝒗σr\bm{v}_{\sigma_{r}} and 𝒗tc~\bm{v}_{t_{\tilde{c}}} from a text-embedding model for each of the reference statements as well as the response text from synthetic consumer c~\tilde{c}, respectively. In this study, we exclusively use OpenAI’s “text-embedding-3-small” model. Tests with “text-embedding-3-large” left the results virtually unchanged. With these vectors, every response can be mapped to a similarity in the embedding space by means of cosine similarity as
+We then interpret this similarity as proportional to a response probability prp_{r} for integer response rr, such that
+where ℓ\ell is the reference statement with minimum similarity over the corresponding set Σi\Sigma_{i} and normalization ∑r=15pc~,i​(r)=1\sum_{r=1}^{5}p_{\tilde{c},i}(r)=1. Note that subtracting the minimum similarity over the reference statement set γ⁡(σℓ,i,tc~)\gamma(\sigma_{\ell,i},t_{\tilde{c}}) is a way to adjust for potential low variance in the similarity scores. In practice, we observe that within the space of all embeddable language, the numerical difference between extremes like “It’s very unlikely that I’d buy it.” and “It’s very likely that I’d buy it.” is numerically small, and so if we do not subtract the minimum similarity, the resulting pmf will be almost entirely flat. For ϵ=0\epsilon=0, this equation can be read as follows: For every similarity, subtract the minimum similarity over the reference statement set. Normalize the remaining similarities by the total sum to obtain a probability mass function (pmf). Of course, following this procedure means that for every textual response we obtain a rating distribution where one of the ratings has zero likelihood to occur. The parameter ϵ\epsilon offsets this bias and makes it more controllable.
+To make this mapping from a similarity to a probability mass function (pmf) even more controllable, we can introduce a temperature-like parameter that controls how “smeared out” the resulting pmf should be
+with ∑rpc~,i​(r,T)=1\sum_{r}p_{\tilde{c},i}(r,T)=1.
+While we restrict our study to ϵ=0\epsilon=0 and T=1T=1, it is worth introducing them as levers to make the SSR mapping more controllable. One can, for instance, design an optimization procedure to find values for ϵ\epsilon and TT that yield the best SSR mapping in terms of the success metrics defined in Section [A.3](https://arxiv.org/html/2510.08338#A1.SS3). A first test suggests that T=1T=1 is a reasonable choice as a rule of thumb, but that there is optimization potential: clearly there are optima to be found around T=1T=1 both for maximizing correlation and distribution similarity (see Fig. [32](https://arxiv.org/html/2510.08338#A5.F32)). A full Python code implementation of SSR is given in Appendix [C.2](https://arxiv.org/html/2510.08338#A3.SS2).
+
+Fig. [5](https://arxiv.org/html/2510.08338#A2.F5) shows an examples of a product concept image similar to those used in the study. When we refer to “image stimulus” in the main text, an image like this, including either both an illustration and the concept description or only a concept description was supplied to an LLM synthetic consumer. When we refer to “text stimulus,” only the text was given to the synthetic consumer. For the latter, the text was previously transcribed from the product concept image using GPT-4o.
+
+### C.1. Reference Statement Sets
+To map free-text responses onto a 5pt Likert scale, we constructed six sets of anchor statements, five statements in each set (one for each Likert category 1 through 5). These anchors serve as semantic prototypes against which model-generated responses are compared in embedding space. Each anchor statement was written to reflect the intensity of purchase intent associated with its corresponding Likert rating:
+- • 
+
+The lowest anchor expresses a purchase to be unlikely.
+
+- • 
+
+The middle anchor reflects indifference or uncertainty.
+
+- • 
+
+The highest anchor conveys intent or possible intent to purchase.
+
+The lowest anchor expresses a purchase to be unlikely.
+The middle anchor reflects indifference or uncertainty.
+The highest anchor conveys intent or possible intent to purchase.
+The remaining two intermediate anchors were formulated as semantically in between their adjacent statements. The anchors were designed to be short, generic, and domain-independent, such that they could plausibly apply to any consumer product concept. Their purpose is not to capture the nuances of any specific product, but to provide a reference gradient of intent from “purchase improbable” to “purchase probable.” This approach allows defining the Likert scale in a way that adapts to the stylistic tendencies of LLM responses, ensuring that the full range of intent is captured.
+
+### C.2. SSR Implementation
+We give a full Python implementation of the SSR method, available on GitHub at [https://github.com/pymc-labs/semantic-similarity-rating](https://github.com/pymc-labs/semantic-similarity-rating). The package offers a simple programming interface for generating SSR-based Likert scale response distributions from LLM responses.
+
+To benchmark the performance of zero-shot LLM elicitation against a classical machine learning approach, we trained gradient-boosted decision tree models (LightGBM ([21](https://arxiv.org/html/2510.08338#bib.bib21))) on subsets of the survey data. The goal was to assess how well a model trained on demographic and product features could reproduce individual Likert ratings compared to synthetic responses generated by LLMs.
+We considered the complete set of 57 consumer concept surveys used in the main study. For each of 300 iterations, we randomly split the surveys in half. One half (28 surveys) was used for training, the other half (29 surveys) for testing. This setup mirrors the cross-study generalization scenario relevant for real-world applications, where new concepts and respondents are unseen during training.
+On each training split, we fitted a LightGBM classifier with the following input features:
+- • 
+
+Demographics (5 features): age, gender, income tier, region, and ethnicity.
+
+- • 
+
+Concept attributes (3 features): category of personal care, price tier, and concept source.
+
+Demographics (5 features): age, gender, income tier, region, and ethnicity.
+Concept attributes (3 features): category of personal care, price tier, and concept source.
+The target variable was the purchase-intent rating on a 5-point Likert scale. Models were trained with default LightGBM hyperparameters, using multiclass classification (with the five Likert values treated as separate classes). Missing feature data was assigned a “Null” category.
+For each held-out study, we predicted Likert responses for all respondents and aggregated them into synthetic response distributions. We then compared these predictions to the original human survey data using two metrics: (i) test–retest reliability (ρ\rho), defined analogously to the procedure in the main text, i.e. by Pearson correlation between synthetic and human mean purchase intents of the 29 surveys of the test set, split in half once again, and (ii) distributional similarity (Kx​yK^{xy}), defined as the complement of the Kolmogorov–S

@@ -1,0 +1,9 @@
+source_key,persona_id,planned,responses_on_disk,passed_quality_and_scored,not_generated,coverage_status
+gemini_v2,P1_premium_tier_owner,10,10,10,0,complete
+gemini_v2,P2_midrange_heavy_user,10,10,10,0,complete
+gemini_v2,P3_midrange_moderate_user,10,0,0,10,none
+gemini_v2,P4_budget_or_undisclosed_price,10,0,0,10,none
+openai_v1,P1_premium_tier_owner,10,0,0,10,none
+openai_v1,P2_midrange_heavy_user,10,0,0,10,none
+openai_v1,P3_midrange_moderate_user,10,0,0,10,none
+openai_v1,P4_budget_or_undisclosed_price,10,0,0,10,none

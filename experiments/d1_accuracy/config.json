@@ -1,0 +1,45 @@
+{
+  "seed": 42,
+  "group_cv_folds": 3,
+  "knn_training_cap_per_fold": 2500,
+  "test_workbook": "data/actual_reviews.xlsx",
+  "training_csv": "data/Mobile Reviews Sentiment.csv",
+  "target": "rating",
+  "rating_classes": [1, 2, 3, 4, 5],
+  "group_column": "review_text",
+  "row_level_protocol": "fixed held-out workbook; distinct review IDs but 90/110 unique review texts overlap training",
+  "grouped_protocol": "3-fold GroupKFold on exact review_text; out-of-fold predictions only",
+  "probability_tolerance": 1e-12,
+  "threads": 4,
+  "tfidf": {
+    "max_features": 3000,
+    "ngram_range": [1, 2],
+    "min_df": 2,
+    "sublinear_tf": true
+  },
+  "output_files": [
+    "model_comparison.csv",
+    "feature_comparison.csv",
+    "best_model_report.md",
+    "cv_per_class_metrics.csv",
+    "run_metadata.json"
+  ],
+  "protected_inputs_and_outputs": [
+    "aspect_rating_model.py",
+    "data/aspect_model/",
+    "data/current_baseline_evaluation/",
+    "data/calibrated_discretization/",
+    "data/predictions.csv",
+    "data/evaluation_results.csv",
+    "agent.py",
+    "batch_predict.py",
+    "canonical_ssr.py"
+  ],
+  "notes": [
+    "No dependencies are installed by this experiment.",
+    "Five aspect ratings are diagnostic-only due to simultaneous sub-target leakage.",
+    "review_id, customer_name, rating, and post-publication helpful_votes are excluded from valid predictor sets.",
+    "Raw high-cardinality price_local is excluded; price_usd is used instead.",
+    "Original D1 evaluation artifacts are read-only."
+  ]
+}

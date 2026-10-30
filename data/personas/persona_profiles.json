@@ -1,0 +1,1003 @@
+[
+  {
+    "persona_id": "P1_premium_tier_owner",
+    "n": 87,
+    "pct_of_primary": 33.7,
+    "defining_rule": "price_paid above ₹35,000",
+    "age_range": [
+      18,
+      32
+    ],
+    "median_age": 20.0,
+    "gender": [
+      {
+        "category": "Male",
+        "n": 44,
+        "pct": 50.6
+      },
+      {
+        "category": "Female",
+        "n": 43,
+        "pct": 49.4
+      }
+    ],
+    "current_status": [
+      {
+        "category": "Student",
+        "n": 82,
+        "pct": 94.3
+      },
+      {
+        "category": "Working professional",
+        "n": 4,
+        "pct": 4.6
+      }
+    ],
+    "area_type": [
+      {
+        "category": "Metro city",
+        "n": 28,
+        "pct": 32.2
+      },
+      {
+        "category": "Tier-2 city",
+        "n": 27,
+        "pct": 31.0
+      },
+      {
+        "category": "Town or rural area",
+        "n": 24,
+        "pct": 27.6
+      },
+      {
+        "category": "Tier-3 city",
+        "n": 8,
+        "pct": 9.2
+      }
+    ],
+    "monthly_spending": [
+      {
+        "category": "Less than ₹10,000",
+        "n": 45,
+        "pct": 51.7
+      },
+      {
+        "category": "₹10,000–₹50,000",
+        "n": 17,
+        "pct": 19.5
+      },
+      {
+        "category": "Prefer not to say",
+        "n": 15,
+        "pct": 17.2
+      }
+    ],
+    "operating_system": [
+      {
+        "category": "iOS (iPhone)",
+        "n": 46,
+        "pct": 52.9
+      },
+      {
+        "category": "Android",
+        "n": 41,
+        "pct": 47.1
+      }
+    ],
+    "brand": [
+      {
+        "category": "Apple (iPhone)",
+        "n": 46,
+        "pct": 52.9
+      },
+      {
+        "category": "Samsung",
+        "n": 17,
+        "pct": 19.5
+      },
+      {
+        "category": "Vivo",
+        "n": 6,
+        "pct": 6.9
+      },
+      {
+        "category": "OnePlus",
+        "n": 6,
+        "pct": 6.9
+      }
+    ],
+    "usage_duration": [
+      {
+        "category": "More than 2 years",
+        "n": 44,
+        "pct": 50.6
+      },
+      {
+        "category": "1–2 years",
+        "n": 22,
+        "pct": 25.3
+      },
+      {
+        "category": "Less than 3 months",
+        "n": 10,
+        "pct": 11.5
+      }
+    ],
+    "replacement_frequency": [
+      {
+        "category": "Every 2–3 years",
+        "n": 32,
+        "pct": 36.8
+      },
+      {
+        "category": "After more than 4 years",
+        "n": 23,
+        "pct": 26.4
+      },
+      {
+        "category": "Every 3–4 years",
+        "n": 18,
+        "pct": 20.7
+      }
+    ],
+    "upgrade_reason": [
+      {
+        "category": "I wanted a newer model",
+        "n": 23,
+        "pct": 26.4
+      },
+      {
+        "category": "My previous phone became slow.",
+        "n": 19,
+        "pct": 21.8
+      },
+      {
+        "category": "My previous phone stopped working",
+        "n": 17,
+        "pct": 19.5
+      }
+    ],
+    "daily_usage": [
+      {
+        "category": "4–6 hours",
+        "n": 31,
+        "pct": 35.6
+      },
+      {
+        "category": "6–8 hours",
+        "n": 24,
+        "pct": 27.6
+      },
+      {
+        "category": "2–4 hours",
+        "n": 16,
+        "pct": 18.4
+      }
+    ],
+    "info_sources": [
+      {
+        "category": "Friends or family",
+        "n": 21,
+        "pct": 24.1
+      },
+      {
+        "category": "Brand website",
+        "n": 19,
+        "pct": 21.8
+      },
+      {
+        "category": "Online customer reviews",
+        "n": 16,
+        "pct": 18.4
+      }
+    ],
+    "main_use_top": [
+      {
+        "category": "Social media",
+        "n": 73,
+        "pct_of_respondents": 83.9
+      },
+      {
+        "category": "Work or study",
+        "n": 65,
+        "pct_of_respondents": 74.7
+      },
+      {
+        "category": "Payments and banking",
+        "n": 65,
+        "pct_of_respondents": 74.7
+      },
+      {
+        "category": "Calls and messaging",
+        "n": 63,
+        "pct_of_respondents": 72.4
+      },
+      {
+        "category": "Photography and videos",
+        "n": 55,
+        "pct_of_respondents": 63.2
+      }
+    ],
+    "tech_comfort_mean_1to5": 3.91,
+    "top_experience_themes_from_Q23_Q25": [
+      {
+        "theme": "positive_general",
+        "pct_of_usable_answers": 82.6,
+        "mentions": 199
+      },
+      {
+        "theme": "performance_speed",
+        "pct_of_usable_answers": 15.4,
+        "mentions": 37
+      },
+      {
+        "theme": "camera",
+        "pct_of_usable_answers": 14.5,
+        "mentions": 35
+      },
+      {
+        "theme": "battery",
+        "pct_of_usable_answers": 14.1,
+        "mentions": 34
+      },
+      {
+        "theme": "negative_issue",
+        "pct_of_usable_answers": 10.4,
+        "mentions": 25
+      }
+    ],
+    "text_denominators_usable_Q23_Q25": {
+      "text_overall_experience": 80,
+      "text_battery_camera": 81,
+      "text_performance_display": 80
+    },
+    "excluded_from_profile": "Q21 rebuy intention and Q26 text (held out for Step 7 evaluation)"
+  },
+  {
+    "persona_id": "P2_midrange_heavy_user",
+    "n": 52,
+    "pct_of_primary": 20.2,
+    "defining_rule": "price_paid ₹10,000–₹35,000 and daily use ≥ 6 hours",
+    "age_range": [
+      19,
+      35
+    ],
+    "median_age": 20.5,
+    "gender": [
+      {
+        "category": "Female",
+        "n": 31,
+        "pct": 59.6
+      },
+      {
+        "category": "Male",
+        "n": 21,
+        "pct": 40.4
+      }
+    ],
+    "current_status": [
+      {
+        "category": "Student",
+        "n": 49,
+        "pct": 94.2
+      },
+      {
+        "category": "Not currently working",
+        "n": 2,
+        "pct": 3.8
+      }
+    ],
+    "area_type": [
+      {
+        "category": "Town or rural area",
+        "n": 29,
+        "pct": 55.8
+      },
+      {
+        "category": "Metro city",
+        "n": 12,
+        "pct": 23.1
+      },
+      {
+        "category": "Tier-2 city",
+        "n": 10,
+        "pct": 19.2
+      },
+      {
+        "category": "Tier-3 city",
+        "n": 1,
+        "pct": 1.9
+      }
+    ],
+    "monthly_spending": [
+      {
+        "category": "Less than ₹10,000",
+        "n": 34,
+        "pct": 65.4
+      },
+      {
+        "category": "Prefer not to say",
+        "n": 10,
+        "pct": 19.2
+      },
+      {
+        "category": "₹10,000–₹50,000",
+        "n": 7,
+        "pct": 13.5
+      }
+    ],
+    "operating_system": [
+      {
+        "category": "Android",
+        "n": 52,
+        "pct": 100.0
+      }
+    ],
+    "brand": [
+      {
+        "category": "OnePlus",
+        "n": 12,
+        "pct": 23.1
+      },
+      {
+        "category": "Vivo",
+        "n": 11,
+        "pct": 21.2
+      },
+      {
+        "category": "Other",
+        "n": 8,
+        "pct": 15.4
+      },
+      {
+        "category": "Xiaomi",
+        "n": 6,
+        "pct": 11.5
+      }
+    ],
+    "usage_duration": [
+      {
+        "category": "More than 2 years",
+        "n": 34,
+        "pct": 65.4
+      },
+      {
+        "category": "1–2 years",
+        "n": 15,
+        "pct": 28.8
+      },
+      {
+        "category": "3–6 months",
+        "n": 2,
+        "pct": 3.8
+      }
+    ],
+    "replacement_frequency": [
+      {
+        "category": "After more than 4 years",
+        "n": 27,
+        "pct": 51.9
+      },
+      {
+        "category": "Every 3–4 years",
+        "n": 12,
+        "pct": 23.1
+      },
+      {
+        "category": "Every 2–3 years",
+        "n": 9,
+        "pct": 17.3
+      }
+    ],
+    "upgrade_reason": [
+      {
+        "category": "My previous phone became slow.",
+        "n": 17,
+        "pct": 32.7
+      },
+      {
+        "category": "My previous phone stopped working",
+        "n": 15,
+        "pct": 28.8
+      },
+      {
+        "category": "Other",
+        "n": 13,
+        "pct": 25.0
+      }
+    ],
+    "daily_usage": [
+      {
+        "category": "6–8 hours",
+        "n": 27,
+        "pct": 51.9
+      },
+      {
+        "category": "More than 8 hours",
+        "n": 25,
+        "pct": 48.1
+      }
+    ],
+    "info_sources": [
+      {
+        "category": "Friends or family",
+        "n": 19,
+        "pct": 36.5
+      },
+      {
+        "category": "YouTube reviews",
+        "n": 10,
+        "pct": 19.2
+      },
+      {
+        "category": "Brand website",
+        "n": 8,
+        "pct": 15.4
+      }
+    ],
+    "main_use_top": [
+      {
+        "category": "Social media",
+        "n": 47,
+        "pct_of_respondents": 90.4
+      },
+      {
+        "category": "Calls and messaging",
+        "n": 33,
+        "pct_of_respondents": 63.5
+      },
+      {
+        "category": "Payments and banking",
+        "n": 32,
+        "pct_of_respondents": 61.5
+      },
+      {
+        "category": "Work or study",
+        "n": 32,
+        "pct_of_respondents": 61.5
+      },
+      {
+        "category": "Photography and videos",
+        "n": 30,
+        "pct_of_respondents": 57.7
+      }
+    ],
+    "tech_comfort_mean_1to5": 3.56,
+    "top_experience_themes_from_Q23_Q25": [
+      {
+        "theme": "positive_general",
+        "pct_of_usable_answers": 66.2,
+        "mentions": 96
+      },
+      {
+        "theme": "negative_issue",
+        "pct_of_usable_answers": 15.2,
+        "mentions": 22
+      },
+      {
+        "theme": "camera",
+        "pct_of_usable_answers": 13.1,
+        "mentions": 19
+      },
+      {
+        "theme": "battery",
+        "pct_of_usable_answers": 11.0,
+        "mentions": 16
+      },
+      {
+        "theme": "performance_speed",
+        "pct_of_usable_answers": 9.7,
+        "mentions": 14
+      }
+    ],
+    "text_denominators_usable_Q23_Q25": {
+      "text_overall_experience": 49,
+      "text_battery_camera": 48,
+      "text_performance_display": 48
+    },
+    "excluded_from_profile": "Q21 rebuy intention and Q26 text (held out for Step 7 evaluation)"
+  },
+  {
+    "persona_id": "P3_midrange_moderate_user",
+    "n": 87,
+    "pct_of_primary": 33.7,
+    "defining_rule": "price_paid ₹10,000–₹35,000 and daily use < 6 hours",
+    "age_range": [
+      18,
+      26
+    ],
+    "median_age": 20.0,
+    "gender": [
+      {
+        "category": "Female",
+        "n": 44,
+        "pct": 50.6
+      },
+      {
+        "category": "Male",
+        "n": 43,
+        "pct": 49.4
+      }
+    ],
+    "current_status": [
+      {
+        "category": "Student",
+        "n": 83,
+        "pct": 95.4
+      },
+      {
+        "category": "Not currently working",
+        "n": 2,
+        "pct": 2.3
+      }
+    ],
+    "area_type": [
+      {
+        "category": "Town or rural area",
+        "n": 47,
+        "pct": 54.0
+      },
+      {
+        "category": "Tier-2 city",
+        "n": 17,
+        "pct": 19.5
+      },
+      {
+        "category": "Metro city",
+        "n": 17,
+        "pct": 19.5
+      },
+      {
+        "category": "Tier-3 city",
+        "n": 6,
+        "pct": 6.9
+      }
+    ],
+    "monthly_spending": [
+      {
+        "category": "Less than ₹10,000",
+        "n": 57,
+        "pct": 65.5
+      },
+      {
+        "category": "Prefer not to say",
+        "n": 21,
+        "pct": 24.1
+      },
+      {
+        "category": "₹10,000–₹50,000",
+        "n": 7,
+        "pct": 8.0
+      }
+    ],
+    "operating_system": [
+      {
+        "category": "Android",
+        "n": 84,
+        "pct": 96.6
+      },
+      {
+        "category": "iOS (iPhone)",
+        "n": 3,
+        "pct": 3.4
+      }
+    ],
+    "brand": [
+      {
+        "category": "Samsung",
+        "n": 19,
+        "pct": 21.8
+      },
+      {
+        "category": "Realme",
+        "n": 16,
+        "pct": 18.4
+      },
+      {
+        "category": "Vivo",
+        "n": 13,
+        "pct": 14.9
+      },
+      {
+        "category": "Oppo",
+        "n": 10,
+        "pct": 11.5
+      }
+    ],
+    "usage_duration": [
+      {
+        "category": "More than 2 years",
+        "n": 61,
+        "pct": 70.1
+      },
+      {
+        "category": "1–2 years",
+        "n": 19,
+        "pct": 21.8
+      },
+      {
+        "category": "Less than 3 months",
+        "n": 4,
+        "pct": 4.6
+      }
+    ],
+    "replacement_frequency": [
+      {
+        "category": "After more than 4 years",
+        "n": 40,
+        "pct": 46.0
+      },
+      {
+        "category": "Every 3–4 years",
+        "n": 20,
+        "pct": 23.0
+      },
+      {
+        "category": "Every 2–3 years",
+        "n": 16,
+        "pct": 18.4
+      }
+    ],
+    "upgrade_reason": [
+      {
+        "category": "My previous phone stopped working",
+        "n": 27,
+        "pct": 31.0
+      },
+      {
+        "category": "My previous phone became slow.",
+        "n": 22,
+        "pct": 25.3
+      },
+      {
+        "category": "Other",
+        "n": 17,
+        "pct": 19.5
+      }
+    ],
+    "daily_usage": [
+      {
+        "category": "4–6 hours",
+        "n": 46,
+        "pct": 52.9
+      },
+      {
+        "category": "2–4 hours",
+        "n": 34,
+        "pct": 39.1
+      },
+      {
+        "category": "Less than 2 hours",
+        "n": 7,
+        "pct": 8.0
+      }
+    ],
+    "info_sources": [
+      {
+        "category": "Friends or family",
+        "n": 26,
+        "pct": 29.9
+      },
+      {
+        "category": "Brand website",
+        "n": 19,
+        "pct": 21.8
+      },
+      {
+        "category": "YouTube reviews",
+        "n": 16,
+        "pct": 18.4
+      }
+    ],
+    "main_use_top": [
+      {
+        "category": "Social media",
+        "n": 68,
+        "pct_of_respondents": 78.2
+      },
+      {
+        "category": "Work or study",
+        "n": 65,
+        "pct_of_respondents": 74.7
+      },
+      {
+        "category": "Calls and messaging",
+        "n": 61,
+        "pct_of_respondents": 70.1
+      },
+      {
+        "category": "Payments and banking",
+        "n": 49,
+        "pct_of_respondents": 56.3
+      },
+      {
+        "category": "Watching videos or streaming",
+        "n": 38,
+        "pct_of_respondents": 43.7
+      }
+    ],
+    "tech_comfort_mean_1to5": 3.62,
+    "top_experience_themes_from_Q23_Q25": [
+      {
+        "theme": "positive_general",
+        "pct_of_usable_answers": 74.0,
+        "mentions": 182
+      },
+      {
+        "theme": "battery",
+        "pct_of_usable_answers": 11.8,
+        "mentions": 29
+      },
+      {
+        "theme": "negative_issue",
+        "pct_of_usable_answers": 11.4,
+        "mentions": 28
+      },
+      {
+        "theme": "camera",
+        "pct_of_usable_answers": 11.4,
+        "mentions": 28
+      },
+      {
+        "theme": "performance_speed",
+        "pct_of_usable_answers": 10.2,
+        "mentions": 25
+      }
+    ],
+    "text_denominators_usable_Q23_Q25": {
+      "text_overall_experience": 83,
+      "text_battery_camera": 84,
+      "text_performance_display": 79
+    },
+    "excluded_from_profile": "Q21 rebuy intention and Q26 text (held out for Step 7 evaluation)"
+  },
+  {
+    "persona_id": "P4_budget_or_undisclosed_price",
+    "n": 32,
+    "pct_of_primary": 12.4,
+    "defining_rule": "price_paid below ₹10,000 or 'Prefer not to say'",
+    "age_range": [
+      18,
+      22
+    ],
+    "median_age": 20.0,
+    "gender": [
+      {
+        "category": "Female",
+        "n": 23,
+        "pct": 71.9
+      },
+      {
+        "category": "Male",
+        "n": 9,
+        "pct": 28.1
+      }
+    ],
+    "current_status": [
+      {
+        "category": "Student",
+        "n": 32,
+        "pct": 100.0
+      }
+    ],
+    "area_type": [
+      {
+        "category": "Town or rural area",
+        "n": 17,
+        "pct": 53.1
+      },
+      {
+        "category": "Metro city",
+        "n": 9,
+        "pct": 28.1
+      },
+      {
+        "category": "Tier-3 city",
+        "n": 3,
+        "pct": 9.4
+      },
+      {
+        "category": "Tier-2 city",
+        "n": 3,
+        "pct": 9.4
+      }
+    ],
+    "monthly_spending": [
+      {
+        "category": "Less than ₹10,000",
+        "n": 18,
+        "pct": 56.2
+      },
+      {
+        "category": "Prefer not to say",
+        "n": 12,
+        "pct": 37.5
+      },
+      {
+        "category": "₹10,000–₹50,000",
+        "n": 2,
+        "pct": 6.2
+      }
+    ],
+    "operating_system": [
+      {
+        "category": "Android",
+        "n": 25,
+        "pct": 78.1
+      },
+      {
+        "category": "iOS (iPhone)",
+        "n": 7,
+        "pct": 21.9
+      }
+    ],
+    "brand": [
+      {
+        "category": "Apple (iPhone)",
+        "n": 7,
+        "pct": 21.9
+      },
+      {
+        "category": "Xiaomi",
+        "n": 5,
+        "pct": 15.6
+      },
+      {
+        "category": "Vivo",
+        "n": 5,
+        "pct": 15.6
+      },
+      {
+        "category": "Samsung",
+        "n": 5,
+        "pct": 15.6
+      }
+    ],
+    "usage_duration": [
+      {
+        "category": "More than 2 years",
+        "n": 24,
+        "pct": 75.0
+      },
+      {
+        "category": "1–2 years",
+        "n": 5,
+        "pct": 15.6
+      },
+      {
+        "category": "6–12 months",
+        "n": 2,
+        "pct": 6.2
+      }
+    ],
+    "replacement_frequency": [
+      {
+        "category": "After more than 4 years",
+        "n": 20,
+        "pct": 62.5
+      },
+      {
+        "category": "Every 1–2 years",
+        "n": 5,
+        "pct": 15.6
+      },
+      {
+        "category": "Every 3–4 years",
+        "n": 3,
+        "pct": 9.4
+      }
+    ],
+    "upgrade_reason": [
+      {
+        "category": "Other",
+        "n": 10,
+        "pct": 31.2
+      },
+      {
+        "category": "My previous phone stopped working",
+        "n": 8,
+        "pct": 25.0
+      },
+      {
+        "category": "I wanted a newer model",
+        "n": 5,
+        "pct": 15.6
+      }
+    ],
+    "daily_usage": [
+      {
+        "category": "4–6 hours",
+        "n": 9,
+        "pct": 28.1
+      },
+      {
+        "category": "6–8 hours",
+        "n": 8,
+        "pct": 25.0
+      },
+      {
+        "category": "2–4 hours",
+        "n": 7,
+        "pct": 21.9
+      }
+    ],
+    "info_sources": [
+      {
+        "category": "Other",
+        "n": 9,
+        "pct": 28.1
+      },
+      {
+        "category": "Social media",
+        "n": 5,
+        "pct": 15.6
+      },
+      {
+        "category": "Brand website",
+        "n": 5,
+        "pct": 15.6
+      }
+    ],
+    "main_use_top": [
+      {
+        "category": "Social media",
+        "n": 23,
+        "pct_of_respondents": 71.9
+      },
+      {
+        "category": "Work or study",
+        "n": 22,
+        "pct_of_respondents": 68.8
+      },
+      {
+        "category": "Calls and messaging",
+        "n": 22,
+        "pct_of_respondents": 68.8
+      },
+      {
+        "category": "Payments and banking",
+        "n": 21,
+        "pct_of_respondents": 65.6
+      },
+      {
+        "category": "Photography and videos",
+        "n": 18,
+        "pct_of_respondents": 56.2
+      }
+    ],
+    "tech_comfort_mean_1to5": 3.69,
+    "top_experience_themes_from_Q23_Q25": [
+      {
+        "theme": "positive_general",
+        "pct_of_usable_answers": 73.0,
+        "mentions": 65
+      },
+      {
+        "theme": "performance_speed",
+        "pct_of_usable_answers": 15.7,
+        "mentions": 14
+      },
+      {
+        "theme": "negative_issue",
+        "pct_of_usable_answers": 14.6,
+        "mentions": 13
+      },
+      {
+        "theme": "battery",
+        "pct_of_usable_answers": 11.2,
+        "mentions": 10
+      },
+      {
+        "theme": "display",
+        "pct_of_usable_answers": 9.0,
+        "mentions": 8
+      }
+    ],
+    "text_denominators_usable_Q23_Q25": {
+      "text_overall_experience": 30,
+      "text_battery_camera": 30,
+      "text_performance_display": 29
+    },
+    "excluded_from_profile": "Q21 rebuy intention and Q26 text (held out for Step 7 evaluation)"
+  }
+]

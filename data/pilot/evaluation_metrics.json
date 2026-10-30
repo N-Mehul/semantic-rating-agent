@@ -1,0 +1,82 @@
+{
+  "n_pairs": 194,
+  "spearman": {
+    "rho": 0.151,
+    "p": 0.03556944302274662,
+    "ci95": [
+      0.007,
+      0.287
+    ]
+  },
+  "kendall_tau": 0.116,
+  "auc_q21_ge4_vs_le3": {
+    "auc": 0.543,
+    "ci95": [
+      0.466,
+      0.623
+    ],
+    "n_pos": 102
+  },
+  "mae_expected_vs_q21": 0.903,
+  "mae_constant_predict_q21_mean": 0.901,
+  "argmax_accuracy": 0.32,
+  "argmax_within_1": 0.711,
+  "majority_class_accuracy_q21": 0.356,
+  "mean_expected_rating_by_q21": {
+    "1": 3.027,
+    "2": 2.971,
+    "3": 3.312,
+    "4": 3.282,
+    "5": 3.358
+  },
+  "mean_rating_sd": 1.008,
+  "mean_entropy_nats": 1.209,
+  "expected_rating_range": [
+    2.288,
+    4.045
+  ],
+  "spearman_answers_ge3_words": {
+    "n": 98,
+    "rho": 0.22
+  },
+  "distribution": {
+    "human_q21_pmf": [
+      0.082,
+      0.036,
+      0.356,
+      0.325,
+      0.201
+    ],
+    "ssr_human_text_mean_pmf": [
+      0.08,
+      0.105,
+      0.422,
+      0.248,
+      0.146
+    ],
+    "ssr_synthetic_mean_pmf": [
+      0.004,
+      0.208,
+      0.52,
+      0.176,
+      0.092
+    ],
+    "w1_synthetic_vs_human_text_ssr": 0.282,
+    "w1_synthetic_vs_human_q21": 0.538,
+    "w1_human_text_ssr_vs_human_q21": 0.256,
+    "ks_expected_rating_synthetic_vs_human_text": {
+      "stat": 0.5273,
+      "p": 4.8e-09
+    },
+    "wasserstein_expected_rating_synthetic_vs_human_text": 0.2013,
+    "mean_expected_rating": {
+      "synthetic": 3.1443,
+      "human_text": 3.2758
+    }
+  },
+  "persona_rank_spearman_n4": {
+    "synthetic_E_vs_human_q21_mean": 0.8,
+    "human_text_E_vs_human_q21_mean": 0.2,
+    "note": "only 4 personas: descriptive, no inference"
+  }
+}

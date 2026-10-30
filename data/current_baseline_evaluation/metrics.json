@@ -1,0 +1,123 @@
+{
+  "label": "CURRENT PRE-IMPROVEMENT BASELINE",
+  "source_file": "C:\\Users\\mehul\\OneDrive - Shri Vile Parle Kelavani Mandal\\Capstone\\semantic_rating_agent\\data\\calibrated_discretization\\heldout_predictions.csv",
+  "n_rows": 10003,
+  "k_neighbours": 3,
+  "overall": {
+    "exact_accuracy": 0.461362,
+    "pm1_accuracy": 0.935519,
+    "mae": 0.605518,
+    "rmse": 0.862599,
+    "spearman_r": 0.775507,
+    "pearson_r": 0.769555
+  },
+  "per_rating": {
+    "1": {
+      "support": 1320,
+      "precision": 0.521984,
+      "recall": 0.773485,
+      "f1": 0.623321
+    },
+    "2": {
+      "support": 1989,
+      "precision": 0.41992,
+      "recall": 0.42182,
+      "f1": 0.420868
+    },
+    "3": {
+      "support": 2412,
+      "precision": 0.386364,
+      "recall": 0.091625,
+      "f1": 0.148123
+    },
+    "4": {
+      "support": 2785,
+      "precision": 0.462662,
+      "recall": 0.909874,
+      "f1": 0.613411
+    },
+    "5": {
+      "support": 1497,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "range_72pct": {
+    "overall_coverage": 0.817755,
+    "actual3_coverage": 0.60738,
+    "actual4_coverage": 0.909874,
+    "actual5_coverage": 0.884436,
+    "overall_avg_width": 2.162151,
+    "actual3_avg_width": 2.149254,
+    "actual4_avg_width": 2.259964,
+    "actual5_avg_width": 2.323981,
+    "actual5_pct_exactly_45": 0.560454,
+    "actual5_pct_width_ge3": 0.323981,
+    "n_actual5_in_range": 1324,
+    "n_actual3_in_range": 1465
+  },
+  "problem_focus": {
+    "recall_per_rating": {
+      "1": 0.773485,
+      "2": 0.42182,
+      "3": 0.091625,
+      "4": 0.909874,
+      "5": 0.0
+    },
+    "n_predicted_5star": 0,
+    "n_actual_5star": 1497,
+    "n_actual5_captured_by_range": 1324,
+    "n_actual3_captured_by_range": 1465,
+    "pct_actual5_captured_by_range": 0.884436,
+    "pct_actual3_captured_by_range": 0.60738
+  },
+  "probability_diagnostics": {
+    "overall_mean": {
+      "P1": 0.129164,
+      "P2": 0.196852,
+      "P3": 0.250059,
+      "P4": 0.278993,
+      "P5": 0.144931
+    },
+    "mean_expected_rating": 3.11366,
+    "median_expected_rating": 3.9015,
+    "per_actual_rating": {
+      "1": {
+        "P1": 0.418537,
+        "P2": 0.389757,
+        "P3": 0.159374,
+        "P4": 0.028915,
+        "P5": 0.003411
+      },
+      "2": {
+        "P1": 0.247585,
+        "P2": 0.364853,
+        "P3": 0.261956,
+        "P4": 0.097482,
+        "P5": 0.028125
+      },
+      "3": {
+        "P1": 0.084428,
+        "P2": 0.205829,
+        "P3": 0.285727,
+        "P4": 0.283112,
+        "P5": 0.140905
+      },
+      "4": {
+        "P1": 0.013699,
+        "P2": 0.064938,
+        "P3": 0.255915,
+        "P4": 0.427586,
+        "P5": 0.237861
+      },
+      "5": {
+        "P1": 0.003556,
+        "P2": 0.034483,
+        "P3": 0.245849,
+        "P4": 0.457595,
+        "P5": 0.258515
+      }
+    }
+  }
+}

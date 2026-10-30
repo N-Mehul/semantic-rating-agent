@@ -1,0 +1,21 @@
+source_key,synthetic_id,persona_id,spec_brand,brands_named_in_text,mentions_spec_brand,mentions_other_brand,os_contradiction,informational_note
+gemini_v2,P1_S01,P1_premium_tier_owner,Samsung,Samsung,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P1_S02,P1_premium_tier_owner,Apple (iPhone),Apple,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P1_S03,P1_premium_tier_owner,Apple (iPhone),Apple,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P1_S04,P1_premium_tier_owner,Apple (iPhone),,False,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P1_S05,P1_premium_tier_owner,Apple (iPhone),Apple,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P1_S06,P1_premium_tier_owner,Google,Google,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P1_S07,P1_premium_tier_owner,Apple (iPhone),Apple,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P1_S08,P1_premium_tier_owner,Samsung,Samsung,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P1_S09,P1_premium_tier_owner,Apple (iPhone),Apple,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P1_S10,P1_premium_tier_owner,Apple (iPhone),Apple,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P2_S01,P2_midrange_heavy_user,Samsung,Samsung,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P2_S02,P2_midrange_heavy_user,Samsung,Samsung,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P2_S03,P2_midrange_heavy_user,Motorola,Motorola,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P2_S04,P2_midrange_heavy_user,Vivo,Vivo,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P2_S05,P2_midrange_heavy_user,Samsung,Samsung,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P2_S06,P2_midrange_heavy_user,Vivo,Vivo,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P2_S07,P2_midrange_heavy_user,Other,,,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P2_S08,P2_midrange_heavy_user,Other,,,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P2_S09,P2_midrange_heavy_user,Realme,Realme,True,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency
+gemini_v2,P2_S10,P2_midrange_heavy_user,Other,,,False,False,mentioning another brand can be a legitimate switching intention; only os_contradiction is a hard inconsistency

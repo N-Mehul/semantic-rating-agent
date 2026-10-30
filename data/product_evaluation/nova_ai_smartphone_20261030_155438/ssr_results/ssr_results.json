@@ -1,0 +1,574 @@
+{
+  "eval_id": "nova_ai_smartphone_20261030_155438",
+  "product_name": "Nova AI Smartphone",
+  "timestamp_utc": "2026-10-30T10:29:19.064904+00:00",
+  "embedding_model": "nomic-embed-text",
+  "k_setting": 3,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "qualitative_constructs": [
+    "PV"
+  ],
+  "n_personas": 4,
+  "n_evaluations": 24,
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "cosine_similarities": [
+        0.628637,
+        0.649058,
+        0.666974,
+        0.63075,
+        0.661199
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.218567,
+        0.410315,
+        0.022608,
+        0.34851
+      ],
+      "expected_rating": 3.5011,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "cosine_similarities": [
+        0.623773,
+        0.657697,
+        0.707168,
+        0.658359,
+        0.629876
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.214696,
+        0.52779,
+        0.218886,
+        0.038628
+      ],
+      "expected_rating": 3.0814,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "cosine_similarities": [
+        0.604666,
+        0.570321,
+        0.629069,
+        0.599625,
+        0.607064
+      ],
+      "pmf_probabilities": [
+        0.215818,
+        0.0,
+        0.369156,
+        0.184139,
+        0.230887
+      ],
+      "expected_rating": 3.2143,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "cosine_similarities": [
+        0.597453,
+        0.577677,
+        0.605224,
+        0.601577,
+        0.562041
+      ],
+      "pmf_probabilities": [
+        0.264729,
+        0.116889,
+        0.322824,
+        0.295558,
+        0.0
+      ],
+      "expected_rating": 2.6492,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "cosine_similarities": [
+        0.587828,
+        0.564276,
+        0.642154,
+        0.575178,
+        0.60029
+      ],
+      "pmf_probabilities": [
+        0.158763,
+        0.0,
+        0.524978,
+        0.073489,
+        0.242771
+      ],
+      "expected_rating": 3.2415,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "cosine_similarities": [
+        0.596172,
+        0.600294,
+        0.531931,
+        0.620709,
+        0.595212
+      ],
+      "pmf_probabilities": [
+        0.225675,
+        0.240155,
+        0.0,
+        0.31187,
+        0.2223
+      ],
+      "expected_rating": 3.065,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "cosine_similarities": [
+        0.637916,
+        0.650319,
+        0.655277,
+        0.625329,
+        0.628553
+      ],
+      "pmf_probabilities": [
+        0.177915,
+        0.353217,
+        0.423301,
+        0.0,
+        0.045567
+      ],
+      "expected_rating": 2.3821,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "cosine_similarities": [
+        0.512437,
+        0.57094,
+        0.627316,
+        0.568376,
+        0.538753
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.228851,
+        0.449382,
+        0.218823,
+        0.102944
+      ],
+      "expected_rating": 3.1959,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "cosine_similarities": [
+        0.548086,
+        0.511565,
+        0.601807,
+        0.566494,
+        0.561475
+      ],
+      "pmf_probabilities": [
+        0.157686,
+        0.0,
+        0.389644,
+        0.237169,
+        0.2155
+      ],
+      "expected_rating": 3.3528,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "cosine_similarities": [
+        0.534464,
+        0.536198,
+        0.541948,
+        0.533821,
+        0.5069
+      ],
+      "pmf_probabilities": [
+        0.23196,
+        0.246553,
+        0.294941,
+        0.226545,
+        0.0
+      ],
+      "expected_rating": 2.5161,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "cosine_similarities": [
+        0.543617,
+        0.502323,
+        0.600311,
+        0.515673,
+        0.554937
+      ],
+      "pmf_probabilities": [
+        0.201191,
+        0.0,
+        0.477419,
+        0.065045,
+        0.256345
+      ],
+      "expected_rating": 3.1754,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "cosine_similarities": [
+        0.541887,
+        0.56283,
+        0.459569,
+        0.559459,
+        0.528538
+      ],
+      "pmf_probabilities": [
+        0.232249,
+        0.291338,
+        0.0,
+        0.281827,
+        0.194586
+      ],
+      "expected_rating": 2.9152,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "cosine_similarities": [
+        0.566622,
+        0.5974,
+        0.606594,
+        0.581067,
+        0.582324
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.305044,
+        0.396167,
+        0.143168,
+        0.155621
+      ],
+      "expected_rating": 3.1494,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "cosine_similarities": [
+        0.508941,
+        0.551809,
+        0.609862,
+        0.557992,
+        0.53198
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.198576,
+        0.467489,
+        0.227216,
+        0.106719
+      ],
+      "expected_rating": 3.2421,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "cosine_similarities": [
+        0.537171,
+        0.521931,
+        0.581826,
+        0.538585,
+        0.563558
+      ],
+      "pmf_probabilities": [
+        0.114227,
+        0.0,
+        0.448936,
+        0.124829,
+        0.312008
+      ],
+      "expected_rating": 3.5204,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "cosine_similarities": [
+        0.520989,
+        0.519622,
+        0.537524,
+        0.540089,
+        0.52612
+      ],
+      "pmf_probabilities": [
+        0.029561,
+        0.0,
+        0.387207,
+        0.442683,
+        0.140548
+      ],
+      "expected_rating": 3.6647,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "cosine_similarities": [
+        0.551266,
+        0.530755,
+        0.617891,
+        0.544502,
+        0.561647
+      ],
+      "pmf_probabilities": [
+        0.13469,
+        0.0,
+        0.572186,
+        0.09027,
+        0.202853
+      ],
+      "expected_rating": 3.2266,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "cosine_similarities": [
+        0.566966,
+        0.581524,
+        0.493398,
+        0.586934,
+        0.555938
+      ],
+      "pmf_probabilities": [
+        0.231513,
+        0.277327,
+        0.0,
+        0.294351,
+        0.196809
+      ],
+      "expected_rating": 2.9476,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "cosine_similarities": [
+        0.626826,
+        0.648034,
+        0.652302,
+        0.617358,
+        0.620847
+      ],
+      "pmf_probabilities": [
+        0.120492,
+        0.390394,
+        0.444715,
+        0.0,
+        0.044399
+      ],
+      "expected_rating": 2.4574,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "cosine_similarities": [
+        0.538734,
+        0.589276,
+        0.621647,
+        0.579452,
+        0.560167
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.258387,
+        0.423874,
+        0.208164,
+        0.109574
+      ],
+      "expected_rating": 3.1689,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "cosine_similarities": [
+        0.602847,
+        0.565519,
+        0.610799,
+        0.601199,
+        0.616802
+      ],
+      "pmf_probabilities": [
+        0.220134,
+        0.0,
+        0.267023,
+        0.210415,
+        0.302428
+      ],
+      "expected_rating": 3.375,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "cosine_similarities": [
+        0.576391,
+        0.55748,
+        0.584486,
+        0.562336,
+        0.556676
+      ],
+      "pmf_probabilities": [
+        0.365173,
+        0.014885,
+        0.515111,
+        0.104831,
+        0.0
+      ],
+      "expected_rating": 2.3596,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "cosine_similarities": [
+        0.585439,
+        0.553021,
+        0.625917,
+        0.559192,
+        0.588408
+      ],
+      "pmf_probabilities": [
+        0.220724,
+        0.0,
+        0.496327,
+        0.042014,
+        0.240936
+      ],
+      "expected_rating": 3.0824,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "cosine_similarities": [
+        0.569316,
+        0.59221,
+        0.512255,
+        0.587374,
+        0.556104
+      ],
+      "pmf_probabilities": [
+        0.222908,
+        0.312343,
+        0.0,
+        0.293452,
+        0.171297
+      ],
+      "expected_rating": 2.8779,
+      "embedding_model": "nomic-embed-text",
+      "k_nearest_neighbors": 3
+    }
+  ]
+}

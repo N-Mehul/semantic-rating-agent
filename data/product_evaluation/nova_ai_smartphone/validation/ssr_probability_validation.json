@@ -1,0 +1,877 @@
+{
+  "audit_metadata": {
+    "evaluation_id": "nova_ai_smartphone_ssr_eval_01",
+    "product_name": "Nova AI Smartphone",
+    "model": "nomic-embed-text",
+    "n_records": 24,
+    "all_pmfs_sum_to_one": true,
+    "all_ratings_in_bounds": true,
+    "zero_least_similar_anchor_verified": true
+  },
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "cosine_similarities": [
+        0.703148,
+        0.72198,
+        0.71101,
+        0.709504,
+        0.703486
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.564032,
+        0.235482,
+        0.190353,
+        0.010134
+      ],
+      "expected_rating": 2.6466,
+      "cosine_spread": 0.018832,
+      "shannon_entropy": 1.48,
+      "dominant_category": 2,
+      "dominant_mass": 0.564032,
+      "sensitivity": {
+        "T_0_5": 2.3128,
+        "T_1_0": 2.6466,
+        "T_1_5": 2.8209,
+        "T_2_0": 2.936,
+        "epsilon_0_01": 2.2671
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "cosine_similarities": [
+        0.806572,
+        0.759491,
+        0.761893,
+        0.741017,
+        0.775181
+      ],
+      "pmf_probabilities": [
+        0.471383,
+        0.132841,
+        0.150112,
+        0.0,
+        0.245664
+      ],
+      "expected_rating": 2.4157,
+      "cosine_spread": 0.065555,
+      "shannon_entropy": 1.8065,
+      "dominant_category": 1,
+      "dominant_mass": 0.471383,
+      "sensitivity": {
+        "T_0_5": 1.9423,
+        "T_1_0": 2.4157,
+        "T_1_5": 2.554,
+        "T_2_0": 2.6141,
+        "epsilon_0_01": 2.522
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "cosine_similarities": [
+        0.677838,
+        0.663203,
+        0.681357,
+        0.699818,
+        0.691152
+      ],
+      "pmf_probabilities": [
+        0.150333,
+        0.0,
+        0.186476,
+        0.376103,
+        0.287088
+      ],
+      "expected_rating": 3.6496,
+      "cosine_spread": 0.036615,
+      "shannon_entropy": 1.9103,
+      "dominant_category": 4,
+      "dominant_mass": 0.376103,
+      "sensitivity": {
+        "T_0_5": 3.9284,
+        "T_1_0": 3.6496,
+        "T_1_5": 3.5277,
+        "T_2_0": 3.462,
+        "epsilon_0_01": 3.496
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "cosine_similarities": [
+        0.69458,
+        0.71856,
+        0.735838,
+        0.705703,
+        0.720653
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.234101,
+        0.402775,
+        0.108586,
+        0.254538
+      ],
+      "expected_rating": 3.3836,
+      "cosine_spread": 0.041258,
+      "shannon_entropy": 1.8691,
+      "dominant_category": 3,
+      "dominant_mass": 0.402775,
+      "sensitivity": {
+        "T_0_5": 3.2948,
+        "T_1_0": 3.3836,
+        "T_1_5": 3.4188,
+        "T_2_0": 3.4377,
+        "epsilon_0_01": 3.1716
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "cosine_similarities": [
+        0.720255,
+        0.638364,
+        0.675824,
+        0.65602,
+        0.704451
+      ],
+      "pmf_probabilities": [
+        0.403218,
+        0.0,
+        0.184447,
+        0.086933,
+        0.325402
+      ],
+      "expected_rating": 2.9313,
+      "cosine_spread": 0.081891,
+      "shannon_entropy": 1.8116,
+      "dominant_category": 1,
+      "dominant_mass": 0.403218,
+      "sensitivity": {
+        "T_0_5": 2.6586,
+        "T_1_0": 2.9313,
+        "T_1_5": 3.033,
+        "T_2_0": 3.0859,
+        "epsilon_0_01": 2.8876
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "cosine_similarities": [
+        0.662931,
+        0.646356,
+        0.625341,
+        0.687758,
+        0.666249
+      ],
+      "pmf_probabilities": [
+        0.232137,
+        0.129777,
+        0.0,
+        0.385458,
+        0.252627
+      ],
+      "expected_rating": 3.2967,
+      "cosine_spread": 0.062417,
+      "shannon_entropy": 1.903,
+      "dominant_category": 4,
+      "dominant_mass": 0.385458,
+      "sensitivity": {
+        "T_0_5": 3.5354,
+        "T_1_0": 3.2967,
+        "T_1_5": 3.2029,
+        "T_2_0": 3.1538,
+        "epsilon_0_01": 3.2794
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "cosine_similarities": [
+        0.674104,
+        0.693484,
+        0.640452,
+        0.75121,
+        0.693723
+      ],
+      "pmf_probabilities": [
+        0.134225,
+        0.211526,
+        0.0,
+        0.441771,
+        0.212477
+      ],
+      "expected_rating": 3.3867,
+      "cosine_spread": 0.110758,
+      "shannon_entropy": 1.8584,
+      "dominant_category": 4,
+      "dominant_mass": 0.441771,
+      "sensitivity": {
+        "T_0_5": 3.6754,
+        "T_1_0": 3.3867,
+        "T_1_5": 3.2658,
+        "T_2_0": 3.2018,
+        "epsilon_0_01": 3.3719
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "cosine_similarities": [
+        0.630693,
+        0.679496,
+        0.648075,
+        0.715197,
+        0.723075
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.200777,
+        0.071509,
+        0.347652,
+        0.380062
+      ],
+      "expected_rating": 3.907,
+      "cosine_spread": 0.092382,
+      "shannon_entropy": 1.7976,
+      "dominant_category": 5,
+      "dominant_mass": 0.380062,
+      "sensitivity": {
+        "T_0_5": 4.1889,
+        "T_1_0": 3.907,
+        "T_1_5": 3.7827,
+        "T_2_0": 3.7153,
+        "epsilon_0_01": 3.7921
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "cosine_similarities": [
+        0.617293,
+        0.625351,
+        0.640146,
+        0.707586,
+        0.683113
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.043086,
+        0.122196,
+        0.482785,
+        0.351933
+      ],
+      "expected_rating": 4.1436,
+      "cosine_spread": 0.090293,
+      "shannon_entropy": 1.6035,
+      "dominant_category": 4,
+      "dominant_mass": 0.482785,
+      "sensitivity": {
+        "T_0_5": 4.2815,
+        "T_1_0": 4.1436,
+        "T_1_5": 4.0043,
+        "T_2_0": 3.9071,
+        "epsilon_0_01": 3.984
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "cosine_similarities": [
+        0.580257,
+        0.633578,
+        0.614526,
+        0.656583,
+        0.699764
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.188131,
+        0.12091,
+        0.269302,
+        0.421657
+      ],
+      "expected_rating": 3.9245,
+      "cosine_spread": 0.119507,
+      "shannon_entropy": 1.857,
+      "dominant_category": 5,
+      "dominant_mass": 0.421657,
+      "sensitivity": {
+        "T_0_5": 4.3076,
+        "T_1_0": 3.9245,
+        "T_1_5": 3.7817,
+        "T_2_0": 3.7098,
+        "epsilon_0_01": 3.8248
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "cosine_similarities": [
+        0.696151,
+        0.716832,
+        0.771697,
+        0.769778,
+        0.730642
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.101204,
+        0.369699,
+        0.360307,
+        0.168789
+      ],
+      "expected_rating": 3.5967,
+      "cosine_spread": 0.075546,
+      "shannon_entropy": 1.829,
+      "dominant_category": 3,
+      "dominant_mass": 0.369699,
+      "sensitivity": {
+        "T_0_5": 3.5784,
+        "T_1_0": 3.5967,
+        "T_1_5": 3.5829,
+        "T_2_0": 3.5698,
+        "epsilon_0_01": 3.4755
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "cosine_similarities": [
+        0.613354,
+        0.617391,
+        0.585835,
+        0.677753,
+        0.67728
+      ],
+      "pmf_probabilities": [
+        0.11351,
+        0.130161,
+        0.0,
+        0.379141,
+        0.377187
+      ],
+      "expected_rating": 3.7763,
+      "cosine_spread": 0.091918,
+      "shannon_entropy": 1.8003,
+      "dominant_category": 4,
+      "dominant_mass": 0.379141,
+      "sensitivity": {
+        "T_0_5": 4.2208,
+        "T_1_0": 3.7763,
+        "T_1_5": 3.5479,
+        "T_2_0": 3.4199,
+        "epsilon_0_01": 3.7456
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "cosine_similarities": [
+        0.618956,
+        0.6088,
+        0.56721,
+        0.652761,
+        0.588557
+      ],
+      "pmf_probabilities": [
+        0.258426,
+        0.207706,
+        0.0,
+        0.427254,
+        0.106614
+      ],
+      "expected_rating": 2.9159,
+      "cosine_spread": 0.085551,
+      "shannon_entropy": 1.8439,
+      "dominant_category": 4,
+      "dominant_mass": 0.427254,
+      "sensitivity": {
+        "T_0_5": 3.094,
+        "T_1_0": 2.9159,
+        "T_1_5": 2.9062,
+        "T_2_0": 2.9147,
+        "epsilon_0_01": 2.9199
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "cosine_similarities": [
+        0.800958,
+        0.813492,
+        0.881246,
+        0.806131,
+        0.804858
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.123007,
+        0.787952,
+        0.050766,
+        0.038275
+      ],
+      "expected_rating": 3.0043,
+      "cosine_spread": 0.080288,
+      "shannon_entropy": 1.0413,
+      "dominant_category": 3,
+      "dominant_mass": 0.787952,
+      "sensitivity": {
+        "T_0_5": 2.985,
+        "T_1_0": 3.0043,
+        "T_1_5": 3.0865,
+        "T_2_0": 3.1602,
+        "epsilon_0_01": 2.8252
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "cosine_similarities": [
+        0.426908,
+        0.511377,
+        0.534853,
+        0.546346,
+        0.539415
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.199051,
+        0.254372,
+        0.281454,
+        0.265123
+      ],
+      "expected_rating": 3.6126,
+      "cosine_spread": 0.119438,
+      "shannon_entropy": 1.9885,
+      "dominant_category": 4,
+      "dominant_mass": 0.281454,
+      "sensitivity": {
+        "T_0_5": 3.7098,
+        "T_1_0": 3.6126,
+        "T_1_5": 3.5768,
+        "T_2_0": 3.5582,
+        "epsilon_0_01": 3.5525
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "cosine_similarities": [
+        0.561249,
+        0.618149,
+        0.582264,
+        0.6299,
+        0.625105
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.27041,
+        0.099869,
+        0.326255,
+        0.303466
+      ],
+      "expected_rating": 3.6628,
+      "cosine_spread": 0.068651,
+      "shannon_entropy": 1.8914,
+      "dominant_category": 4,
+      "dominant_mass": 0.326255,
+      "sensitivity": {
+        "T_0_5": 3.7723,
+        "T_1_0": 3.6628,
+        "T_1_5": 3.6151,
+        "T_2_0": 3.5888,
+        "epsilon_0_01": 3.542
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "cosine_similarities": [
+        0.623729,
+        0.615271,
+        0.630349,
+        0.655995,
+        0.657109
+      ],
+      "pmf_probabilities": [
+        0.079723,
+        0.0,
+        0.142117,
+        0.383828,
+        0.394333
+      ],
+      "expected_rating": 4.013,
+      "cosine_spread": 0.041838,
+      "shannon_entropy": 1.7506,
+      "dominant_category": 5,
+      "dominant_mass": 0.394333,
+      "sensitivity": {
+        "T_0_5": 4.3529,
+        "T_1_0": 4.013,
+        "T_1_5": 3.8095,
+        "T_2_0": 3.6874,
+        "epsilon_0_01": 3.8397
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "cosine_similarities": [
+        0.725719,
+        0.719779,
+        0.666891,
+        0.776533,
+        0.779723
+      ],
+      "pmf_probabilities": [
+        0.176031,
+        0.158258,
+        0.0,
+        0.328082,
+        0.337629
+      ],
+      "expected_rating": 3.493,
+      "cosine_spread": 0.112832,
+      "shannon_entropy": 1.9185,
+      "dominant_category": 5,
+      "dominant_mass": 0.337629,
+      "sensitivity": {
+        "T_0_5": 3.8953,
+        "T_1_0": 3.493,
+        "T_1_5": 3.3348,
+        "T_2_0": 3.2526,
+        "epsilon_0_01": 3.4787
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "cosine_similarities": [
+        0.72561,
+        0.743545,
+        0.725625,
+        0.767376,
+        0.745519
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.225244,
+        0.000185,
+        0.524538,
+        0.250033
+      ],
+      "expected_rating": 3.7994,
+      "cosine_spread": 0.041766,
+      "shannon_entropy": 1.475,
+      "dominant_category": 4,
+      "dominant_mass": 0.524538,
+      "sensitivity": {
+        "T_0_5": 3.8997,
+        "T_1_0": 3.7994,
+        "T_1_5": 3.7559,
+        "T_2_0": 3.7297,
+        "epsilon_0_01": 3.487
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "cosine_similarities": [
+        0.719201,
+        0.775249,
+        0.719168,
+        0.694043,
+        0.702248
+      ],
+      "pmf_probabilities": [
+        0.180091,
+        0.581314,
+        0.179856,
+        0.0,
+        0.058739
+      ],
+      "expected_rating": 2.176,
+      "cosine_spread": 0.081206,
+      "shannon_entropy": 1.5857,
+      "dominant_category": 2,
+      "dominant_mass": 0.581314,
+      "sensitivity": {
+        "T_0_5": 2.0253,
+        "T_1_0": 2.176,
+        "T_1_5": 2.305,
+        "T_2_0": 2.3922,
+        "epsilon_0_01": 2.2978
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "cosine_similarities": [
+        0.511607,
+        0.527966,
+        0.561987,
+        0.572785,
+        0.585746
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.080961,
+        0.249339,
+        0.302779,
+        0.366921
+      ],
+      "expected_rating": 3.9557,
+      "cosine_spread": 0.074139,
+      "shannon_entropy": 1.8459,
+      "dominant_category": 5,
+      "dominant_mass": 0.366921,
+      "sensitivity": {
+        "T_0_5": 4.2012,
+        "T_1_0": 3.9557,
+        "T_1_5": 3.8332,
+        "T_2_0": 3.7615,
+        "epsilon_0_01": 3.8163
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "cosine_similarities": [
+        0.543679,
+        0.564716,
+        0.585358,
+        0.575443,
+        0.619324
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.123657,
+        0.24499,
+        0.186711,
+        0.444641
+      ],
+      "expected_rating": 3.9523,
+      "cosine_spread": 0.075645,
+      "shannon_entropy": 1.842,
+      "dominant_category": 5,
+      "dominant_mass": 0.444641,
+      "sensitivity": {
+        "T_0_5": 4.3479,
+        "T_1_0": 3.9523,
+        "T_1_5": 3.8028,
+        "T_2_0": 3.7268,
+        "epsilon_0_01": 3.7884
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "cosine_similarities": [
+        0.694212,
+        0.636502,
+        0.666206,
+        0.725213,
+        0.761344
+      ],
+      "pmf_probabilities": [
+        0.191749,
+        0.0,
+        0.098695,
+        0.294754,
+        0.414802
+      ],
+      "expected_rating": 3.7409,
+      "cosine_spread": 0.124842,
+      "shannon_entropy": 1.8327,
+      "dominant_category": 5,
+      "dominant_mass": 0.414802,
+      "sensitivity": {
+        "T_0_5": 4.1703,
+        "T_1_0": 3.7409,
+        "T_1_5": 3.5761,
+        "T_2_0": 3.4926,
+        "epsilon_0_01": 3.6849
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "cosine_similarities": [
+        0.650825,
+        0.653741,
+        0.62086,
+        0.69269,
+        0.672525
+      ],
+      "pmf_probabilities": [
+        0.16081,
+        0.176455,
+        0.0,
+        0.385476,
+        0.27726
+      ],
+      "expected_rating": 3.4419,
+      "cosine_spread": 0.07183,
+      "shannon_entropy": 1.9089,
+      "dominant_category": 4,
+      "dominant_mass": 0.385476,
+      "sensitivity": {
+        "T_0_5": 3.777,
+        "T_1_0": 3.4419,
+        "T_1_5": 3.3029,
+        "T_2_0": 3.2296,
+        "epsilon_0_01": 3.4194
+      },
+      "checks": {
+        "pmf_sums_to_1": true,
+        "expected_rating_in_bounds": true,
+        "zero_least_similar_anchor": true
+      }
+    }
+  ]
+}

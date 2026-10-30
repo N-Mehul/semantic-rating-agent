@@ -1,0 +1,55 @@
+{
+  "seed": 20261028,
+  "extended_seed": 20261029,
+  "n_per_persona": 10,
+  "n_specs": 40,
+  "spec_variables": [
+    "brand",
+    "price_paid",
+    "usage_duration",
+    "replacement_frequency",
+    "upgrade_reason",
+    "daily_usage",
+    "area_type",
+    "gender",
+    "tech_comfort_1to5"
+  ],
+  "extended_variables": [
+    "age",
+    "education",
+    "current_status",
+    "monthly_spending",
+    "info_sources",
+    "main_uses"
+  ],
+  "attribute_coverage": {
+    "demographic": {
+      "gender": "v1+v2",
+      "area_type": "v1+v2",
+      "age": "v2 only",
+      "education": "v2 only",
+      "current_status": "v2 only",
+      "monthly_spending": "v2 only"
+    },
+    "behavioural": {
+      "brand": "v1+v2",
+      "operating_system": "v1+v2",
+      "price_paid": "v1+v2",
+      "usage_duration": "v1+v2",
+      "replacement_frequency": "v1+v2",
+      "upgrade_reason": "v1+v2",
+      "daily_usage": "v1+v2",
+      "tech_comfort_1to5": "v1+v2",
+      "main_uses": "v2 only",
+      "info_sources": "v2 only"
+    },
+    "note": "v1 = data/persona_generator/respondent_specs.jsonl (used in the prompts of all existing Gemini/OpenAI runs; unchanged). v2 = respondent_specs_extended.jsonl: same 40 specs plus the extra attributes, drawn from an independent random stream so v1 values are untouched. v2 attributes are NOT in the prompts of responses generated before v2 existed."
+  },
+  "primary_cohort_n": 200,
+  "inputs_sha256": {
+    "data/human_survey_cleaned.csv": "ef6d6eb92e2677f9e6c6b181abb7ad3f6ef0986903cf1d3c5fb897eaeb24052a",
+    "data/personas/persona_assignments.csv": "f0ecbf6e1a6730fa6809527e18b6b99cbc6f2af9a3e14b2b7483e43cba61533d",
+    "data/personas/persona_profiles.json": "fdb8f117c6e0f7bec94e36c4e0e149ace4ddfad19ef3d09557715cbe94a4d953"
+  },
+  "note": "Specs sample each attribute independently from the persona marginals; combinations can be unrealistic."
+}

@@ -1,0 +1,1950 @@
+{
+  "evaluation_id": "nova_x1_5g_20261030_185941",
+  "product_name": "Nova X1 5G",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-30T13:34:27.785019+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "primary_adoption_rating": 3.2077,
+      "primary_adoption_pmf": [
+        0.0,
+        0.200816,
+        0.498736,
+        0.192352,
+        0.108096
+      ],
+      "construct_scores": {
+        "PE": 3.0624,
+        "EE": 3.1315,
+        "HM": 2.5457,
+        "SI": 3.4702,
+        "PP": 2.8858,
+        "BI": 3.2077
+      },
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "cosine_similarities": [
+            0.606617,
+            0.639146,
+            0.668089,
+            0.598353,
+            0.631763
+          ],
+          "min_similarity": 0.598353,
+          "pmf_probabilities": [
+            0.054298,
+            0.268015,
+            0.458174,
+            0.0,
+            0.219513
+          ],
+          "expected_rating": 3.0624,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "cosine_similarities": [
+            0.568103,
+            0.550123,
+            0.592514,
+            0.558015,
+            0.569947
+          ],
+          "min_similarity": 0.550123,
+          "pmf_probabilities": [
+            0.204118,
+            0.0,
+            0.481242,
+            0.089589,
+            0.225051
+          ],
+          "expected_rating": 3.1315,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "cosine_similarities": [
+            0.567667,
+            0.564533,
+            0.581828,
+            0.566548,
+            0.532048
+          ],
+          "min_similarity": 0.532048,
+          "pmf_probabilities": [
+            0.233747,
+            0.213176,
+            0.326672,
+            0.226405,
+            0.0
+          ],
+          "expected_rating": 2.5457,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "cosine_similarities": [
+            0.550486,
+            0.554098,
+            0.61331,
+            0.556441,
+            0.571202
+          ],
+          "min_similarity": 0.550486,
+          "pmf_probabilities": [
+            0.0,
+            0.038795,
+            0.67475,
+            0.063957,
+            0.222497
+          ],
+          "expected_rating": 3.4702,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "cosine_similarities": [
+            0.532635,
+            0.564241,
+            0.48655,
+            0.555426,
+            0.523911
+          ],
+          "min_similarity": 0.48655,
+          "pmf_probabilities": [
+            0.200356,
+            0.337768,
+            0.0,
+            0.299445,
+            0.16243
+          ],
+          "expected_rating": 2.8858,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "cosine_similarities": [
+            0.594104,
+            0.62917,
+            0.681193,
+            0.627692,
+            0.612979
+          ],
+          "min_similarity": 0.594104,
+          "pmf_probabilities": [
+            0.0,
+            0.200816,
+            0.498736,
+            0.192352,
+            0.108096
+          ],
+          "expected_rating": 3.2077,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "primary_adoption_rating": 3.16,
+      "primary_adoption_pmf": [
+        0.0,
+        0.260334,
+        0.426166,
+        0.206656,
+        0.106844
+      ],
+      "construct_scores": {
+        "PE": 3.015,
+        "EE": 3.4208,
+        "HM": 2.67,
+        "SI": 3.3344,
+        "PP": 2.8712,
+        "BI": 3.16
+      },
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "cosine_similarities": [
+            0.625809,
+            0.650236,
+            0.653506,
+            0.627641,
+            0.6376
+          ],
+          "min_similarity": 0.625809,
+          "pmf_probabilities": [
+            0.0,
+            0.371523,
+            0.421272,
+            0.02787,
+            0.179335
+          ],
+          "expected_rating": 3.015,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "cosine_similarities": [
+            0.562071,
+            0.555778,
+            0.596973,
+            0.559597,
+            0.575
+          ],
+          "min_similarity": 0.555778,
+          "pmf_probabilities": [
+            0.089224,
+            0.0,
+            0.584074,
+            0.054159,
+            0.272543
+          ],
+          "expected_rating": 3.4208,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "cosine_similarities": [
+            0.56949,
+            0.579078,
+            0.597598,
+            0.578217,
+            0.548219
+          ],
+          "min_similarity": 0.548219,
+          "pmf_probabilities": [
+            0.16175,
+            0.234655,
+            0.375487,
+            0.228107,
+            0.0
+          ],
+          "expected_rating": 2.67,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "cosine_similarities": [
+            0.558065,
+            0.555386,
+            0.631066,
+            0.554112,
+            0.576124
+          ],
+          "min_similarity": 0.554112,
+          "pmf_probabilities": [
+            0.037939,
+            0.012225,
+            0.738569,
+            0.0,
+            0.211267
+          ],
+          "expected_rating": 3.3344,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "cosine_similarities": [
+            0.566194,
+            0.571572,
+            0.489989,
+            0.569454,
+            0.54823
+          ],
+          "min_similarity": 0.489989,
+          "pmf_probabilities": [
+            0.25789,
+            0.276091,
+            0.0,
+            0.268921,
+            0.197098
+          ],
+          "expected_rating": 2.8712,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "cosine_similarities": [
+            0.580077,
+            0.640371,
+            0.678778,
+            0.627939,
+            0.604822
+          ],
+          "min_similarity": 0.580077,
+          "pmf_probabilities": [
+            0.0,
+            0.260334,
+            0.426166,
+            0.206656,
+            0.106844
+          ],
+          "expected_rating": 3.16,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "primary_adoption_rating": 3.0583,
+      "primary_adoption_pmf": [
+        0.0,
+        0.273331,
+        0.439954,
+        0.241836,
+        0.044879
+      ],
+      "construct_scores": {
+        "PE": 2.6201,
+        "EE": 3.493,
+        "HM": 2.4945,
+        "SI": 3.0113,
+        "PP": 2.7561,
+        "BI": 3.0583
+      },
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "cosine_similarities": [
+            0.654385,
+            0.674662,
+            0.690906,
+            0.63762,
+            0.650176
+          ],
+          "min_similarity": 0.63762,
+          "pmf_probabilities": [
+            0.140117,
+            0.309592,
+            0.445352,
+            0.0,
+            0.104939
+          ],
+          "expected_rating": 2.6201,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "cosine_similarities": [
+            0.59088,
+            0.575799,
+            0.632514,
+            0.596584,
+            0.612308
+          ],
+          "min_similarity": 0.575799,
+          "pmf_probabilities": [
+            0.116826,
+            0.0,
+            0.439343,
+            0.161013,
+            0.282818
+          ],
+          "expected_rating": 3.493,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "cosine_similarities": [
+            0.586972,
+            0.58897,
+            0.591808,
+            0.585448,
+            0.548899
+          ],
+          "min_similarity": 0.548899,
+          "pmf_probabilities": [
+            0.241578,
+            0.254255,
+            0.272263,
+            0.231905,
+            0.0
+          ],
+          "expected_rating": 2.4945,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "cosine_similarities": [
+            0.582632,
+            0.551788,
+            0.63086,
+            0.548738,
+            0.585033
+          ],
+          "min_similarity": 0.548738,
+          "pmf_probabilities": [
+            0.218164,
+            0.019633,
+            0.528588,
+            0.0,
+            0.233614
+          ],
+          "expected_rating": 3.0113,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "cosine_similarities": [
+            0.569301,
+            0.60053,
+            0.519367,
+            0.58674,
+            0.548442
+          ],
+          "min_similarity": 0.519367,
+          "pmf_probabilities": [
+            0.219447,
+            0.35669,
+            0.0,
+            0.296086,
+            0.127776
+          ],
+          "expected_rating": 2.7561,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "cosine_similarities": [
+            0.558336,
+            0.617451,
+            0.653487,
+            0.610639,
+            0.568042
+          ],
+          "min_similarity": 0.558336,
+          "pmf_probabilities": [
+            0.0,
+            0.273331,
+            0.439954,
+            0.241836,
+            0.044879
+          ],
+          "expected_rating": 3.0583,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "primary_adoption_rating": 3.1791,
+      "primary_adoption_pmf": [
+        0.0,
+        0.23709,
+        0.435082,
+        0.239453,
+        0.088376
+      ],
+      "construct_scores": {
+        "PE": 2.8798,
+        "EE": 3.5361,
+        "HM": 2.4434,
+        "SI": 3.0563,
+        "PP": 2.8356,
+        "BI": 3.1791
+      },
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "cosine_similarities": [
+            0.597844,
+            0.610249,
+            0.625117,
+            0.588028,
+            0.603849
+          ],
+          "min_similarity": 0.588028,
+          "pmf_probabilities": [
+            0.115555,
+            0.261589,
+            0.436616,
+            0.0,
+            0.18624
+          ],
+          "expected_rating": 2.8798,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "cosine_similarities": [
+            0.568422,
+            0.542277,
+            0.588429,
+            0.59574,
+            0.587533
+          ],
+          "min_similarity": 0.542277,
+          "pmf_probabilities": [
+            0.152879,
+            0.0,
+            0.26987,
+            0.31262,
+            0.264631
+          ],
+          "expected_rating": 3.5361,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "cosine_similarities": [
+            0.539163,
+            0.530374,
+            0.551218,
+            0.528442,
+            0.512299
+          ],
+          "min_similarity": 0.512299,
+          "pmf_probabilities": [
+            0.268636,
+            0.18075,
+            0.389189,
+            0.161425,
+            0.0
+          ],
+          "expected_rating": 2.4434,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "cosine_similarities": [
+            0.547762,
+            0.531034,
+            0.599854,
+            0.527102,
+            0.553204
+          ],
+          "min_similarity": 0.527102,
+          "pmf_probabilities": [
+            0.167358,
+            0.031851,
+            0.589346,
+            0.0,
+            0.211445
+          ],
+          "expected_rating": 3.0563,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "cosine_similarities": [
+            0.553148,
+            0.564398,
+            0.466325,
+            0.556054,
+            0.52955
+          ],
+          "min_similarity": 0.466325,
+          "pmf_probabilities": [
+            0.256987,
+            0.290286,
+            0.0,
+            0.265589,
+            0.187139
+          ],
+          "expected_rating": 2.8356,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "cosine_similarities": [
+            0.521622,
+            0.56938,
+            0.609262,
+            0.569856,
+            0.539424
+          ],
+          "min_similarity": 0.521622,
+          "pmf_probabilities": [
+            0.0,
+            0.23709,
+            0.435082,
+            0.239453,
+            0.088376
+          ],
+          "expected_rating": 3.1791,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.606617,
+        0.639146,
+        0.668089,
+        0.598353,
+        0.631763
+      ],
+      "pmf_probabilities": [
+        0.054298,
+        0.268015,
+        0.458174,
+        0.0,
+        0.219513
+      ],
+      "expected_rating": 3.0624,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.568103,
+        0.550123,
+        0.592514,
+        0.558015,
+        0.569947
+      ],
+      "pmf_probabilities": [
+        0.204118,
+        0.0,
+        0.481242,
+        0.089589,
+        0.225051
+      ],
+      "expected_rating": 3.1315,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.567667,
+        0.564533,
+        0.581828,
+        0.566548,
+        0.532048
+      ],
+      "pmf_probabilities": [
+        0.233747,
+        0.213176,
+        0.326672,
+        0.226405,
+        0.0
+      ],
+      "expected_rating": 2.5457,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.550486,
+        0.554098,
+        0.61331,
+        0.556441,
+        0.571202
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.038795,
+        0.67475,
+        0.063957,
+        0.222497
+      ],
+      "expected_rating": 3.4702,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.532635,
+        0.564241,
+        0.48655,
+        0.555426,
+        0.523911
+      ],
+      "pmf_probabilities": [
+        0.200356,
+        0.337768,
+        0.0,
+        0.299445,
+        0.16243
+      ],
+      "expected_rating": 2.8858,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.594104,
+        0.62917,
+        0.681193,
+        0.627692,
+        0.612979
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.200816,
+        0.498736,
+        0.192352,
+        0.108096
+      ],
+      "expected_rating": 3.2077,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.625809,
+        0.650236,
+        0.653506,
+        0.627641,
+        0.6376
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.371523,
+        0.421272,
+        0.02787,
+        0.179335
+      ],
+      "expected_rating": 3.015,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.562071,
+        0.555778,
+        0.596973,
+        0.559597,
+        0.575
+      ],
+      "pmf_probabilities": [
+        0.089224,
+        0.0,
+        0.584074,
+        0.054159,
+        0.272543
+      ],
+      "expected_rating": 3.4208,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.56949,
+        0.579078,
+        0.597598,
+        0.578217,
+        0.548219
+      ],
+      "pmf_probabilities": [
+        0.16175,
+        0.234655,
+        0.375487,
+        0.228107,
+        0.0
+      ],
+      "expected_rating": 2.67,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.558065,
+        0.555386,
+        0.631066,
+        0.554112,
+        0.576124
+      ],
+      "pmf_probabilities": [
+        0.037939,
+        0.012225,
+        0.738569,
+        0.0,
+        0.211267
+      ],
+      "expected_rating": 3.3344,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.566194,
+        0.571572,
+        0.489989,
+        0.569454,
+        0.54823
+      ],
+      "pmf_probabilities": [
+        0.25789,
+        0.276091,
+        0.0,
+        0.268921,
+        0.197098
+      ],
+      "expected_rating": 2.8712,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.580077,
+        0.640371,
+        0.678778,
+        0.627939,
+        0.604822
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.260334,
+        0.426166,
+        0.206656,
+        0.106844
+      ],
+      "expected_rating": 3.16,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.654385,
+        0.674662,
+        0.690906,
+        0.63762,
+        0.650176
+      ],
+      "pmf_probabilities": [
+        0.140117,
+        0.309592,
+        0.445352,
+        0.0,
+        0.104939
+      ],
+      "expected_rating": 2.6201,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.59088,
+        0.575799,
+        0.632514,
+        0.596584,
+        0.612308
+      ],
+      "pmf_probabilities": [
+        0.116826,
+        0.0,
+        0.439343,
+        0.161013,
+        0.282818
+      ],
+      "expected_rating": 3.493,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.586972,
+        0.58897,
+        0.591808,
+        0.585448,
+        0.548899
+      ],
+      "pmf_probabilities": [
+        0.241578,
+        0.254255,
+        0.272263,
+        0.231905,
+        0.0
+      ],
+      "expected_rating": 2.4945,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.582632,
+        0.551788,
+        0.63086,
+        0.548738,
+        0.585033
+      ],
+      "pmf_probabilities": [
+        0.218164,
+        0.019633,
+        0.528588,
+        0.0,
+        0.233614
+      ],
+      "expected_rating": 3.0113,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.569301,
+        0.60053,
+        0.519367,
+        0.58674,
+        0.548442
+      ],
+      "pmf_probabilities": [
+        0.219447,
+        0.35669,
+        0.0,
+        0.296086,
+        0.127776
+      ],
+      "expected_rating": 2.7561,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.558336,
+        0.617451,
+        0.653487,
+        0.610639,
+        0.568042
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.273331,
+        0.439954,
+        0.241836,
+        0.044879
+      ],
+      "expected_rating": 3.0583,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.597844,
+        0.610249,
+        0.625117,
+        0.588028,
+        0.603849
+      ],
+      "pmf_probabilities": [
+        0.115555,
+        0.261589,
+        0.436616,
+        0.0,
+        0.18624
+      ],
+      "expected_rating": 2.8798,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.568422,
+        0.542277,
+        0.588429,
+        0.59574,
+        0.587533
+      ],
+      "pmf_probabilities": [
+        0.152879,
+        0.0,
+        0.26987,
+        0.31262,
+        0.264631
+      ],
+      "expected_rating": 3.5361,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.539163,
+        0.530374,
+        0.551218,
+        0.528442,
+        0.512299
+      ],
+      "pmf_probabilities": [
+        0.268636,
+        0.18075,
+        0.389189,
+        0.161425,
+        0.0
+      ],
+      "expected_rating": 2.4434,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.547762,
+        0.531034,
+        0.599854,
+        0.527102,
+        0.553204
+      ],
+      "pmf_probabilities": [
+        0.167358,
+        0.031851,
+        0.589346,
+        0.0,
+        0.211445
+      ],
+      "expected_rating": 3.0563,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.553148,
+        0.564398,
+        0.466325,
+        0.556054,
+        0.52955
+      ],
+      "pmf_probabilities": [
+        0.256987,
+        0.290286,
+        0.0,
+        0.265589,
+        0.187139
+      ],
+      "expected_rating": 2.8356,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.521622,
+        0.56938,
+        0.609262,
+        0.569856,
+        0.539424
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.23709,
+        0.435082,
+        0.239453,
+        0.088376
+      ],
+      "expected_rating": 3.1791,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.606617,
+      "cos_sim_2": 0.639146,
+      "cos_sim_3": 0.668089,
+      "cos_sim_4": 0.598353,
+      "cos_sim_5": 0.631763,
+      "min_similarity": 0.598353,
+      "p1": 0.054298,
+      "p2": 0.268015,
+      "p3": 0.458174,
+      "p4": 0.0,
+      "p5": 0.219513,
+      "set_expected_rating": 3.0624,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.568103,
+      "cos_sim_2": 0.550123,
+      "cos_sim_3": 0.592514,
+      "cos_sim_4": 0.558015,
+      "cos_sim_5": 0.569947,
+      "min_similarity": 0.550123,
+      "p1": 0.204118,
+      "p2": 0.0,
+      "p3": 0.481242,
+      "p4": 0.089589,
+      "p5": 0.225051,
+      "set_expected_rating": 3.1315,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.567667,
+      "cos_sim_2": 0.564533,
+      "cos_sim_3": 0.581828,
+      "cos_sim_4": 0.566548,
+      "cos_sim_5": 0.532048,
+      "min_similarity": 0.532048,
+      "p1": 0.233747,
+      "p2": 0.213176,
+      "p3": 0.326672,
+      "p4": 0.226405,
+      "p5": 0.0,
+      "set_expected_rating": 2.5457,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.550486,
+      "cos_sim_2": 0.554098,
+      "cos_sim_3": 0.61331,
+      "cos_sim_4": 0.556441,
+      "cos_sim_5": 0.571202,
+      "min_similarity": 0.550486,
+      "p1": 0.0,
+      "p2": 0.038795,
+      "p3": 0.67475,
+      "p4": 0.063957,
+      "p5": 0.222497,
+      "set_expected_rating": 3.4702,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.532635,
+      "cos_sim_2": 0.564241,
+      "cos_sim_3": 0.48655,
+      "cos_sim_4": 0.555426,
+      "cos_sim_5": 0.523911,
+      "min_similarity": 0.48655,
+      "p1": 0.200356,
+      "p2": 0.337768,
+      "p3": 0.0,
+      "p4": 0.299445,
+      "p5": 0.16243,
+      "set_expected_rating": 2.8858,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.594104,
+      "cos_sim_2": 0.62917,
+      "cos_sim_3": 0.681193,
+      "cos_sim_4": 0.627692,
+      "cos_sim_5": 0.612979,
+      "min_similarity": 0.594104,
+      "p1": 0.0,
+      "p2": 0.200816,
+      "p3": 0.498736,
+      "p4": 0.192352,
+      "p5": 0.108096,
+      "set_expected_rating": 3.2077,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.625809,
+      "cos_sim_2": 0.650236,
+      "cos_sim_3": 0.653506,
+      "cos_sim_4": 0.627641,
+      "cos_sim_5": 0.6376,
+      "min_similarity": 0.625809,
+      "p1": 0.0,
+      "p2": 0.371523,
+      "p3": 0.421272,
+      "p4": 0.02787,
+      "p5": 0.179335,
+      "set_expected_rating": 3.015,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.562071,
+      "cos_sim_2": 0.555778,
+      "cos_sim_3": 0.596973,
+      "cos_sim_4": 0.559597,
+      "cos_sim_5": 0.575,
+      "min_similarity": 0.555778,
+      "p1": 0.089224,
+      "p2": 0.0,
+      "p3": 0.584074,
+      "p4": 0.054159,
+      "p5": 0.272543,
+      "set_expected_rating": 3.4208,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.56949,
+      "cos_sim_2": 0.579078,
+      "cos_sim_3": 0.597598,
+      "cos_sim_4": 0.578217,
+      "cos_sim_5": 0.548219,
+      "min_similarity": 0.548219,
+      "p1": 0.16175,
+      "p2": 0.234655,
+      "p3": 0.375487,
+      "p4": 0.228107,
+      "p5": 0.0,
+      "set_expected_rating": 2.67,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.558065,
+      "cos_sim_2": 0.555386,
+      "cos_sim_3": 0.631066,
+      "cos_sim_4": 0.554112,
+      "cos_sim_5": 0.576124,
+      "min_similarity": 0.554112,
+      "p1": 0.037939,
+      "p2": 0.012225,
+      "p3": 0.738569,
+      "p4": 0.0,
+      "p5": 0.211267,
+      "set_expected_rating": 3.3344,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.566194,
+      "cos_sim_2": 0.571572,
+      "cos_sim_3": 0.489989,
+      "cos_sim_4": 0.569454,
+      "cos_sim_5": 0.54823,
+      "min_similarity": 0.489989,
+      "p1": 0.25789,
+      "p2": 0.276091,
+      "p3": 0.0,
+      "p4": 0.268921,
+      "p5": 0.197098,
+      "set_expected_rating": 2.8712,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.580077,
+      "cos_sim_2": 0.640371,
+      "cos_sim_3": 0.678778,
+      "cos_sim_4": 0.627939,
+      "cos_sim_5": 0.604822,
+      "min_similarity": 0.580077,
+      "p1": 0.0,
+      "p2": 0.260334,
+      "p3": 0.426166,
+      "p4": 0.206656,
+      "p5": 0.106844,
+      "set_expected_rating": 3.16,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.654385,
+      "cos_sim_2": 0.674662,
+      "cos_sim_3": 0.690906,
+      "cos_sim_4": 0.63762,
+      "cos_sim_5": 0.650176,
+      "min_similarity": 0.63762,
+      "p1": 0.140117,
+      "p2": 0.309592,
+      "p3": 0.445352,
+      "p4": 0.0,
+      "p5": 0.104939,
+      "set_expected_rating": 2.6201,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.59088,
+      "cos_sim_2": 0.575799,
+      "cos_sim_3": 0.632514,
+      "cos_sim_4": 0.596584,
+      "cos_sim_5": 0.612308,
+      "min_similarity": 0.575799,
+      "p1": 0.116826,
+      "p2": 0.0,
+      "p3": 0.439343,
+      "p4": 0.161013,
+      "p5": 0.282818,
+      "set_expected_rating": 3.493,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.586972,
+      "cos_sim_2": 0.58897,
+      "cos_sim_3": 0.591808,
+      "cos_sim_4": 0.585448,
+      "cos_sim_5": 0.548899,
+      "min_similarity": 0.548899,
+      "p1": 0.241578,
+      "p2": 0.254255,
+      "p3": 0.272263,
+      "p4": 0.231905,
+      "p5": 0.0,
+      "set_expected_rating": 2.4945,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.582632,
+      "cos_sim_2": 0.551788,
+      "cos_sim_3": 0.63086,
+      "cos_sim_4": 0.548738,
+      "cos_sim_5": 0.585033,
+      "min_similarity": 0.548738,
+      "p1": 0.218164,
+      "p2": 0.019633,
+      "p3": 0.528588,
+      "p4": 0.0,
+      "p5": 0.233614,
+      "set_expected_rating": 3.0113,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.569301,
+      "cos_sim_2": 0.60053,
+      "cos_sim_3": 0.519367,
+      "cos_sim_4": 0.58674,
+      "cos_sim_5": 0.548442,
+      "min_similarity": 0.519367,
+      "p1": 0.219447,
+      "p2": 0.35669,
+      "p3": 0.0,
+      "p4": 0.296086,
+      "p5": 0.127776,
+      "set_expected_rating": 2.7561,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.558336,
+      "cos_sim_2": 0.617451,
+      "cos_sim_3": 0.653487,
+      "cos_sim_4": 0.610639,
+      "cos_sim_5": 0.568042,
+      "min_similarity": 0.558336,
+      "p1": 0.0,
+      "p2": 0.273331,
+      "p3": 0.439954,
+      "p4": 0.241836,
+      "p5": 0.044879,
+      "set_expected_rating": 3.0583,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.597844,
+      "cos_sim_2": 0.610249,
+      "cos_sim_3": 0.625117,
+      "cos_sim_4": 0.588028,
+      "cos_sim_5": 0.603849,
+      "min_similarity": 0.588028,
+      "p1": 0.115555,
+      "p2": 0.261589,
+      "p3": 0.436616,
+      "p4": 0.0,
+      "p5": 0.18624,
+      "set_expected_rating": 2.8798,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.568422,
+      "cos_sim_2": 0.542277,
+      "cos_sim_3": 0.588429,
+      "cos_sim_4": 0.59574,
+      "cos_sim_5": 0.587533,
+      "min_similarity": 0.542277,
+      "p1": 0.152879,
+      "p2": 0.0,
+      "p3": 0.26987,
+      "p4": 0.31262,
+      "p5": 0.264631,
+      "set_expected_rating": 3.5361,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.539163,
+      "cos_sim_2": 0.530374,
+      "cos_sim_3": 0.551218,
+      "cos_sim_4": 0.528442,
+      "cos_sim_5": 0.512299,
+      "min_similarity": 0.512299,
+      "p1": 0.268636,
+      "p2": 0.18075,
+      "p3": 0.389189,
+      "p4": 0.161425,
+      "p5": 0.0,
+      "set_expected_rating": 2.4434,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.547762,
+      "cos_sim_2": 0.531034,
+      "cos_sim_3": 0.599854,
+      "cos_sim_4": 0.527102,
+      "cos_sim_5": 0.553204,
+      "min_similarity": 0.527102,
+      "p1": 0.167358,
+      "p2": 0.031851,
+      "p3": 0.589346,
+      "p4": 0.0,
+      "p5": 0.211445,
+      "set_expected_rating": 3.0563,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.553148,
+      "cos_sim_2": 0.564398,
+      "cos_sim_3": 0.466325,
+      "cos_sim_4": 0.556054,
+      "cos_sim_5": 0.52955,
+      "min_similarity": 0.466325,
+      "p1": 0.256987,
+      "p2": 0.290286,
+      "p3": 0.0,
+      "p4": 0.265589,
+      "p5": 0.187139,
+      "set_expected_rating": 2.8356,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova X1 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.521622,
+      "cos_sim_2": 0.56938,
+      "cos_sim_3": 0.609262,
+      "cos_sim_4": 0.569856,
+      "cos_sim_5": 0.539424,
+      "min_similarity": 0.521622,
+      "p1": 0.0,
+      "p2": 0.23709,
+      "p3": 0.435082,
+      "p4": 0.239453,
+      "p5": 0.088376,
+      "set_expected_rating": 3.1791,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "constructs": [
+    {
+      "construct_code": "PE",
+      "construct": "Performance Expectancy",
+      "free_text_prompt_ids": [
+        "FT_PE01"
+      ],
+      "free_text_prompts": [
+        "In your own words, how, if at all, does your current smartphone help you accomplish tasks or perform daily activities?"
+      ],
+      "likert_item_ids": [
+        "PE01",
+        "PE02",
+        "PE03",
+        "PE04"
+      ],
+      "approved_anchor_set": true,
+      "anchor_sha": "8255f9a0e0939b51",
+      "anchor_status_label": "PROPOSED_DOMAIN_ADAPTATION_NOT_ORIGINAL_MAIER_ANCHOR",
+      "generation_tasks": [
+        "FT_PE01"
+      ],
+      "status": "ready_for_generation_and_scoring",
+      "human_text_reference_in_collected_survey": "none"
+    },
+    {
+      "construct_code": "EE",
+      "construct": "Effort Expectancy",
+      "free_text_prompt_ids": [],
+      "free_text_prompts": [],
+      "likert_item_ids": [
+        "EE01",
+        "EE02",
+        "EE03",
+        "EE04"
+      ],
+      "approved_anchor_set": true,
+      "anchor_sha": "a871e86c18243414",
+      "anchor_status_label": "PROPOSED_DOMAIN_ADAPTATION_NOT_ORIGINAL_MAIER_ANCHOR",
+      "generation_tasks": [],
+      "status": "blocked_needs_approved_free_text_prompt",
+      "human_text_reference_in_collected_survey": "none"
+    },
+    {
+      "construct_code": "HM",
+      "construct": "Hedonic Motivation",
+      "free_text_prompt_ids": [],
+      "free_text_prompts": [],
+      "likert_item_ids": [
+        "HM01",
+        "HM02",
+        "HM03",
+        "HM04"
+      ],
+      "approved_anchor_set": true,
+      "anchor_sha": "2423cf1a2fc74534",
+      "anchor_status_label": "PROPOSED_DOMAIN_ADAPTATION_NOT_ORIGINAL_MAIER_ANCHOR",
+      "generation_tasks": [],
+      "status": "blocked_needs_approved_free_text_prompt",
+      "human_text_reference_in_collected_survey": "none"
+    },
+    {
+      "construct_code": "SI",
+      "construct": "Social Influence",
+      "free_text_prompt_ids": [],
+      "free_text_prompts": [],
+      "likert_item_ids": [
+        "SI01",
+        "SI02",
+        "SI03",
+        "SI04"
+      ],
+      "approved_anchor_set": true,
+      "anchor_sha": "33ea1aae54ea58e1",
+      "anchor_status_label": "PROPOSED_DOMAIN_ADAPTATION_NOT_ORIGINAL_MAIER_ANCHOR",
+      "generation_tasks": [],
+      "status": "blocked_needs_approved_free_text_prompt",
+      "human_text_reference_in_collected_survey": "none"
+    },
+    {
+      "construct_code": "PP",
+      "construct": "Perceived Protection",
+      "free_text_prompt_ids": [],
+      "free_text_prompts": [],
+      "likert_item_ids": [
+        "PP01",
+        "PP02",
+        "PP03",
+        "PP04"
+      ],
+      "approved_anchor_set": true,
+      "anchor_sha": "1734bb2ee66364f0",
+      "anchor_status_label": "PROPOSED_DOMAIN_ADAPTATION_NOT_ORIGINAL_MAIER_ANCHOR",
+      "generation_tasks": [],
+      "status": "blocked_needs_approved_free_text_prompt",
+      "human_text_reference_in_collected_survey": "none"
+    },
+    {
+      "construct_code": "BI",
+      "construct": "Behavioral Intention",
+      "free_text_prompt_ids": [
+        "FT_BI01"
+      ],
+      "free_text_prompts": [
+        "What factors most influence whether you intend to continue using your current smartphone or choose a replacement?"
+      ],
+      "likert_item_ids": [
+        "BI01",
+        "BI02",
+        "BI03",
+        "BI04"
+      ],
+      "approved_anchor_set": true,
+      "anchor_sha": "4cac7a730652e839",
+      "anchor_status_label": "PROPOSED_DOMAIN_ADAPTATION_NOT_ORIGINAL_MAIER_ANCHOR",
+      "generation_tasks": [
+        "Q26_BI_proxy",
+        "FT_BI01"
+      ],
+      "status": "ready_for_generation_and_scoring",
+      "human_text_reference_in_collected_survey": "Q26/Q21 proxy only (collected survey has no FT_BI01 answers)"
+    },
+    {
+      "construct_code": "PV",
+      "construct": "Price Value (open-ended only)",
+      "free_text_prompt_ids": [
+        "FT_PV01"
+      ],
+      "free_text_prompts": [
+        "In your own words, how do the benefits you receive from your current smartphone compare with what it costs?"
+      ],
+      "likert_item_ids": [],
+      "approved_anchor_set": false,
+      "anchor_sha": null,
+      "anchor_status_label": null,
+      "generation_tasks": [],
+      "status": "blocked_needs_approved_anchor_set",
+      "human_text_reference_in_collected_survey": "none"
+    }
+  ],
+  "tasks": {
+    "Q26_BI_proxy": {
+      "n_prompts": 40,
+      "construct": "BI",
+      "question_id": "Q26",
+      "profile_version": "v1",
+      "human_reference": "Q26_Q21_proxy",
+      "question_source": "collected survey (Q26)",
+      "anchor_sha": "4cac7a730652e839",
+      "prompts_file": "data/construct_prompts/Q26_BI_proxy_prompts.jsonl"
+    },
+    "FT_BI01": {
+      "n_prompts": 40,
+      "construct": "BI",
+      "question_id": "FT_BI01",
+      "profile_version": "v2",
+      "human_reference": null,
+      "question_source": "survey_codebook.csv",
+      "anchor_sha": "4cac7a730652e839",
+      "prompts_file": "data/construct_prompts/FT_BI01_prompts.jsonl"
+    },
+    "FT_PE01": {
+      "n_prompts": 40,
+      "construct": "PE",
+      "question_id": "FT_PE01",
+      "profile_version": "v2",
+      "human_reference": null,
+      "question_source": "survey_codebook.csv",
+      "anchor_sha": "8255f9a0e0939b51",
+      "prompts_file": "data/construct_prompts/FT_PE01_prompts.jsonl"
+    }
+  },
+  "anchor_file_sha256": "8801ef10e679c9ebb841de21b28f56a4a6cddd35bbbbc4f9f5141ec9d2793212",
+  "note": "Prompts only; no LLM was called. EE/HM/SI/PP have approved anchors but no approved free-text prompt; PV has a prompt but no approved anchors."
+}

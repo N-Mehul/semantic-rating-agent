@@ -1,0 +1,14 @@
+Claim,Component,Artifact_Path,Status_Evidence,Notes
+Mobile Reviews Dataset Size,Data Pipeline,data/Mobile Reviews Sentiment.csv,"50000 rows, 25 columns, 250051 nulls, 10001 duplicate rows",Verified via scratch/dataset_stats.py
+Mobile Reviews Target Collapse,Data Pipeline,data/Mobile Reviews Sentiment.csv,"110 unique review texts, all 110 have conflicting ratings across duplicates",Confirmed degenerate text distribution
+Aspect Random Forest Performance,Aspect Model,data/aspect_model/metrics.json,"Acc: 73.34%, Macro F1: 73.70%, MAE: 0.2680, RMSE: 0.5204, Spearman: 0.9166",Target leakage warning present in metrics.json
+Aspect Model Target Leakage,Aspect Model,target_leakage_audit_report.md,"Leakage status: POTENTIAL TARGET LEAKAGE — DIAGNOSTIC ONLY",Trained on 5 aspect ratings which directly correlate with overall rating
+Canonical SSR Isolated Implementation,SSR Verification,canonical_ssr.py,"Isolated 6-anchor-set cosine similarity + softmax PMF",Exact implementation of Maier et al. arXiv:2510.08338
+Deterministic Canonical SSR Tests,Testing,tests/test_canonical_ssr.py,"42 passed in 0.55s (pytest)",Deterministic unit tests covering PMF and expected rating calculation
+System Analysis Suite Tests,Testing,tests/test_analysis.py,"125 passed in 7.38s (pytest)",Regression and sanity analysis unit tests
+Smartphone Survey Instrument,Survey Instrument,docs/survey_instrument/survey_instrument.md,"Draft instrument: PE, EE, HM, SI, FC, BI + open-ended prompts",Designed for UTAUT2 smartphone technology adoption survey
+Survey Anchor Statements,Survey Instrument,docs/survey_instrument/smartphone_construct_anchor_statements.csv,"6 constructs x 6 anchor sets x 5 Likert levels (180 statements)",Complete 5-point Likert semantic anchor statements
+Digital Persona Generation,Persona Pipeline,N/A,NOT IMPLEMENTED,No pipeline exists to turn human demographics into promptable persona records
+Synthetic Survey Generator,Synthetic Data,N/A,NOT IMPLEMENTED,No automated pipeline generating responses from personas via LLM
+Human Benchmark Survey Data,Data Validation,N/A,NOT IMPLEMENTED,No real human responses collected yet using the survey instrument
+Live Pipeline Canonical SSR Integration,Production System,agent.py,PARTIAL / EXPERIMENTAL ONLY,agent.py uses direct LLM rating prediction or text nearest neighbor instead of canonical SSR

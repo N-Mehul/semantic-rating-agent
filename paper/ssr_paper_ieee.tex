@@ -1,0 +1,238 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{textcomp}
+\usepackage{url}
+
+\begin{document}
+
+\title{Digital Persona-Based Synthetic Survey Responses Scored with Semantic Similarity Rating: A Pilot Study on Smartphone Users}
+
+\author{\IEEEauthorblockN{Author Name 1, Author Name 2, Author Name 3}
+\IEEEauthorblockA{Department of \ldots, SVKM's \ldots\\
+Mumbai, India\\
+email: \ldots}}
+
+\maketitle
+
+\begin{abstract}
+Researchers now use large language models (LLMs) to create synthetic survey respondents, because real surveys take time and money. When an LLM is asked to give a rating directly (for example 1 to 5), the answers are often too narrow and biased towards a few numbers. Semantic Similarity Rating (SSR) avoids this problem. The LLM first writes a free-text answer, and the rating is then calculated from the similarity of that answer to five fixed anchor statements. In this work we build a complete, traceable pipeline around SSR. We collect a survey of 215 smartphone users (200 used for analysis), form four rule-based personas, generate synthetic answers with an LLM, and score them with SSR using three local sentence encoders. On the human data, the SSR score of the written answer shows a weak to modest rank correlation with the rebuy-intention rating (Spearman $\rho$ = 0.15 to 0.27, best encoder BGE-base). For the two personas that could be generated, the mean synthetic rating differs from the human mean by only $-$0.13 to $+$0.07, but all intervals include zero and only 10 synthetic answers per persona were available, so equivalence is not shown. We also report an earlier study on 10,003 mobile-review ratings, where an embedding-based baseline reaches 46.14\% exact accuracy and where heavy disagreement among raters limits what any model can achieve. A model using five aspect ratings reaches 73.34\% accuracy, but it carries target-leakage risk and is not a text-only result. We state all limits openly and share the design so that others can repeat and extend this work.
+\end{abstract}
+
+\begin{IEEEkeywords}
+semantic similarity rating, synthetic respondents, digital personas, large language models, sentence embeddings, survey research, technology adoption
+\end{IEEEkeywords}
+
+\section{Introduction}
+Market research and social science depend on surveys. Running a survey is slow and costly, so many researchers are trying LLMs as stand-ins for human respondents \cite{argyle2023,park2023}. A simple approach is to ask the LLM, ``Rate this from 1 to 5.'' This does not work well. The numbers produced are usually bunched around a few values, the spread is smaller than in real people, and small changes in the prompt change the answers \cite{maier2025}.
+
+Maier et al.\ proposed Semantic Similarity Rating (SSR) to fix this \cite{maier2025}. The LLM is asked to speak naturally and no number is requested. The text is converted into a vector, compared with five anchor statements that stand for ratings 1 to 5, and the similarities are turned into a probability distribution over the five ratings. The expected rating is then taken from this distribution.
+
+This paper reports a student-led, small-scale attempt to build and test such a pipeline for smartphone adoption in India. Our contributions are:
+\begin{enumerate}
+\item A traceable pipeline from a human survey to personas, LLM answers, SSR scores and validation, with hash checks and automatic audit tests.
+\item A pilot comparison of human and synthetic answers for two personas using three sentence encoders.
+\item An analysis on a mobile-review dataset showing how label disagreement sets a ceiling on accuracy, and how aspect-rating inputs can leak the target.
+\item A clear list of what the data support and what they do not.
+\end{enumerate}
+
+The results are preliminary. We prefer to say this plainly rather than claim more than the data allow.
+
+\section{Related Work}
+\textbf{Synthetic respondents.} Argyle et al.\ showed that language models, when conditioned on demographic details, can imitate the answer patterns of different groups \cite{argyle2023}. Park et al.\ built generative agents that act like believable people \cite{park2023}. Both works motivate the use of personas.
+
+\textbf{Rating elicitation.} Maier et al.\ compared direct numeric ratings with SSR on a large set of consumer purchase-intent surveys and found that SSR gives more realistic distributions \cite{maier2025}. We follow their equations, but our anchors, encoders and data are different (Section~\ref{sec:limits}).
+
+\textbf{Technology adoption.} UTAUT2 explains consumer use of technology through constructs such as performance expectancy, hedonic motivation, price value and habit \cite{venkatesh2012}. Our survey instrument was designed with these ideas in mind, but the data collected do not measure all of the constructs.
+
+\textbf{Sentence encoders.} We use three public encoders: all-mpnet-base-v2 \cite{song2020}, all-MiniLM-L6-v2 \cite{wang2020} and bge-base-en-v1.5 \cite{xiao2023}, all used through the Sentence-Transformers library \cite{reimers2019}.
+
+\section{Method}
+\subsection{Pipeline Overview}
+Fig.~\ref{fig:pipe} shows the flow. The LLM writes only text; it never gives a rating. Ratings are produced only by the SSR step.
+
+\begin{figure}[t]
+\centering
+\fbox{\parbox{0.92\columnwidth}{\centering\small
+Human survey (215 submissions)\\
+$\downarrow$ cleaning and eligibility rules\\
+Primary cohort (200)\\
+$\downarrow$ rule-based segmentation\\
+Four personas (P1--P4)\\
+$\downarrow$ seeded respondent profiles + prompt\\
+LLM free-text answer\\
+$\downarrow$ sentence encoder\\
+Cosine similarity to five anchors\\
+$\downarrow$ SSR mapping\\
+Probabilities $p(1)\ldots p(5)$ and $E[r]$\\
+$\downarrow$\\
+Comparison with human answers
+}}
+\caption{Overall pipeline used in this work.}
+\label{fig:pipe}
+\end{figure}
+
+\subsection{Human Survey and Cleaning}
+The survey has demographics, two Likert-type items (technology comfort, Q20; likelihood of buying the same brand again, Q21) and four free-text questions. We received 215 submissions. Four had no consent, six were under 18, one was not a smartphone owner, and four had unclear age eligibility (the self-declaration was blank or contradicted the recorded age). This leaves 204 eligible and 200 in the primary cohort. The original answers were kept unchanged and every exclusion was logged. Thirty-nine automatic checks confirmed that row counts, IDs and original answers match.
+
+The sample is young: 95.0\% are students, with ages 18 to 35 (median 20). Android is used by 80\% and iOS by 20\%. The mean of Q21 is 3.52 (SD 1.11). Many text answers are very short, so for the text analysis we use only answers passing a usability check (for example, 194 usable answers for the value and rebuy question, Q26).
+
+\subsection{Personas}
+Four personas were defined by simple rules on price paid and daily use (Table~\ref{tab:persona}). These variables were chosen by judgement and Q21 was not used in defining the groups. They are descriptive segments, not statistical clusters.
+
+\begin{table}[t]
+\caption{Personas and Their Size in the Primary Cohort}
+\label{tab:persona}
+\centering
+\small
+\begin{tabular}{@{}llr@{}}
+\toprule
+ID & Rule & $n$ \\
+\midrule
+P1 Premium owner & price $>$ Rs.~35,000 & 59 \\
+P2 Mid-range heavy & Rs.~10k--35k, use $\geq$ 6 h & 45 \\
+P3 Mid-range moderate & Rs.~10k--35k, use $<$ 6 h & 72 \\
+P4 Budget / undisclosed & price $<$ Rs.~10k or not stated & 24 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Synthetic Answer Generation}
+For each persona we prepared 10 respondent profiles by sampling attributes (brand, operating system, usage and so on) from the persona's own distributions with a fixed seed. The LLM (Gemini 2.5 Flash, temperature 1.0, 2048-token limit) was asked to answer as that person in a short, informal way. The prompt also included anonymised, grouped survey themes, never an individual's answer. Generation stopped because of quota limits, so only P1 and P2 have answers (20 of 40 planned). An attempt with a second provider produced no valid responses. Nothing was filled in for missing personas. A first pilot with a 512-token limit was discarded because 19 of 20 answers were cut off.
+
+\subsection{Semantic Similarity Rating}
+Let $\mathbf{v}_t$ be the embedding of a response and $\mathbf{v}_r$ the embedding of the anchor for rating $r\in\{1,\ldots,5\}$. The cosine similarity is
+\begin{equation}
+\gamma_r=\frac{\mathbf{v}_r\cdot\mathbf{v}_t}{\|\mathbf{v}_r\|\,\|\mathbf{v}_t\|}.
+\end{equation}
+Following \cite{maier2025}, let $\ell$ be the rating with the smallest similarity. The weight and probability are
+\begin{equation}
+w_r=\gamma_r-\gamma_\ell+\epsilon\,\delta_{\ell,r},\qquad p(r)=\frac{w_r}{\sum_{j=1}^{5}w_j},
+\end{equation}
+with $\epsilon=0$ and no extra temperature scaling, as in the paper. The expected rating is
+\begin{equation}
+E[r]=\sum_{r=1}^{5} r\,p(r).
+\end{equation}
+We also report the standard deviation and entropy of $p(r)$ as measures of uncertainty. The code in this part was kept unchanged after its first verification and its hash was checked in every later step.
+
+\subsection{Evaluation Design}
+\textit{Human proxy test.} For humans, we score the Q26 text and compare $E[r]$ with the same person's Q21 using Spearman correlation, mean absolute error (MAE) and exact accuracy, against a mean-predictor and a majority-class baseline. The answers were split into development and test halves (stratified by Q21, fixed seed); the encoder was chosen on the development half only.
+
+\textit{Persona-matched test.} For P1 and P2, we compare the mean $E[r]$ of synthetic and human answers of the same persona. We give a 2000-resample bootstrap interval for the difference, the Kolmogorov--Smirnov (KS) statistic, and the Wasserstein distance between mean probability distributions. We do not report $p$-values or claim equivalence tests.
+
+\subsection{Earlier Mobile-Review Study}
+In an earlier phase we used a public mobile-review file with about 10,000 evaluated rows. A sentence-embedding nearest-neighbour baseline with a temperature of 0.1 predicts a rating distribution; the final rating is the mode. We studied (i) how often the same text receives different ratings, (ii) an ``empirical ceiling'' (an oracle which knows the training rating distribution of each text), (iii) calibration, and (iv) a Random Forest on five aspect ratings (battery, camera, performance, design, display). The ceiling analysis uses two test settings: Regime A (random row split, 1,501 test rows) and Regime B (grouped split, no text shared with training, 1,797 test rows).
+
+\section{Results}
+\subsection{Human Proxy Test}
+Table~\ref{tab:human} shows that all three encoders give a positive but weak to modest association. BGE-base was selected on the development half. On the test half its Spearman $\rho$ is 0.297 (95\% CI 0.094 to 0.476). MAE is slightly better than the mean predictor (0.861 vs.\ 0.901), but exact accuracy (0.351) only equals the majority-class baseline (0.351). Q21 is only a proxy, since it asks about rebuying the brand, while the anchors talk about continued use.
+
+\begin{table}[t]
+\caption{SSR Score of Human Q26 Text vs.\ Q21 (Test Half, $n=97$)}
+\label{tab:human}
+\centering
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Encoder & Spearman $\rho$ [95\% CI] & MAE (base) & Acc. (base) \\
+\midrule
+MPNet & 0.169 [$-$0.042, 0.367] & 0.891 (0.901) & 0.320 (0.351) \\
+MiniLM & 0.257 [0.056, 0.443] & 0.869 (0.901) & 0.227 (0.351) \\
+BGE-base & 0.297 [0.094, 0.476] & 0.861 (0.901) & 0.351 (0.351) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Synthetic vs.\ Human, Same Persona}
+Table~\ref{tab:persona-match} gives the mean $E[r]$ difference (synthetic minus human). There are 10 synthetic answers per persona and 58 (P1) and 44 (P2) human answers. The mean gaps are small, between $-$0.127 and $+$0.069. However, every interval includes zero and some are wide (up to about $\pm$0.3), so the data are compatible with no difference and also with a moderate one. The KS values (0.37 to 0.67) are large, which suggests that the spread of scores differs even when the means are close.
+
+\begin{table}[t]
+\caption{Persona-Matched Mean $E[r]$ Difference (Synthetic $-$ Human)}
+\label{tab:persona-match}
+\centering
+\small
+\begin{tabular}{@{}llccc@{}}
+\toprule
+Persona & Encoder & Diff. & 95\% CI & KS \\
+\midrule
+P1 & BGE-base & $-$0.127 & [$-$0.320, 0.069] & 0.672 \\
+P1 & MiniLM & $-$0.053 & [$-$0.149, 0.058] & 0.621 \\
+P1 & MPNet & $-$0.042 & [$-$0.133, 0.049] & 0.434 \\
+P2 & BGE-base & 0.069 & [$-$0.169, 0.297] & 0.591 \\
+P2 & MiniLM & 0.062 & [$-$0.085, 0.222] & 0.545 \\
+P2 & MPNet & 0.018 & [$-$0.098, 0.149] & 0.368 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Other checks were mixed. First, the gap between personas in the synthetic data (at most 0.05) is much smaller than the gap in human Q21 (0.94). Second, the rankings of individual synthetic answers by different encoders agree poorly (Spearman 0.01 to 0.24), so single-answer scores should not be read on their own; only group summaries are meaningful. Third, no answer contradicted its profile's operating system. Finally, the stability across repeated generation could not be assessed because each profile was generated only once.
+
+\subsection{Mobile-Review Study}
+\textbf{Label disagreement.} Each of the 110 distinct texts in the training split has at least three different ratings, and the mean entropy of the rating distribution per text is about 1.56 bits (the maximum for five classes is 2.32 bits). Only 2 of 110 texts (1.8\%) have 5 stars as their most common rating.
+
+\textbf{Ceiling and baseline.} Table~\ref{tab:ceiling} compares the always-predict-4 floor, the oracle ceiling and the embedding baseline. In Regime A the baseline (0.4704) is inside the uncertainty range of the ceiling (0.4564), so it is near what these labels allow. In Regime B, every test text is new, so the ceiling falls to the floor (0.3645), while the baseline reaches 0.4574, showing real generalisation to new text.
+
+\begin{table}[t]
+\caption{Exact Accuracy: Floor, Ceiling and Baseline}
+\label{tab:ceiling}
+\centering
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+ & Regime A & Regime B \\
+\midrule
+Floor (always 4) & 0.2838 & 0.3645 \\
+Empirical ceiling & 0.4564 & 0.3645 \\
+kNN baseline (mode) & 0.4704 & 0.4574 \\
+Test rows & 1,501 & 1,797 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Five-star problem.} The mode rule never predicts 5 stars (recall 0). Dividing by the training prior raises 5-star recall to 0.782 (A) and 0.906 (B), but exact accuracy falls from 0.4704 to 0.3951 (A) and from 0.4574 to 0.3283 (B). This is a trade-off and not a pure gain. Temperature tuning changes the test NLL by less than 0.001, so the fixed value 0.1 is already close to best. Sampling from the predicted distribution, instead of taking the mode, matches the true rating histogram far better (Wasserstein-1 0.031 vs.\ 0.367 in Regime A).
+
+\textbf{Encoder comparison and aspect model.} On the full review set the three encoders give similar results (exact accuracy 36.8\% to 37.0\%, within-$\pm$1 about 83\%). The frozen text baseline on 10,003 rows reaches 46.14\% exact accuracy, 93.55\% within $\pm$1, MAE 0.6055 and Spearman 0.7755. The Random Forest on five aspect ratings reaches accuracy 73.34\%, macro-F1 73.70\%, MAE 0.2680 and Spearman 0.9166. These five inputs correlate with the overall rating at $r=0.93$ and are not available when only the review text is given, so this model is a diagnostic, not a text-only or SSR result.
+
+\section{Discussion}
+The main finding is that the pipeline works from start to end and its outputs are auditable, but the evidence for realism of synthetic answers is limited. The human proxy test shows that SSR extracts some signal from short, informal text, but not much; short answers such as ``good'' carry little information. The persona-matched means are close, yet the sample is too small to conclude equivalence. The review study explains one reason why accuracy stays low: when raters disagree on the same text, no model can do much better, and mode-based decisions erase rare classes such as 5 stars. SSR-style probability outputs and sampling handle this better than a single hard label.
+
+\section{Limitations}
+\label{sec:limits}
+\begin{itemize}
+\item Only 20 synthetic answers from one model and one run; personas P3 and P4 were never generated.
+\item Only one adapted Behavioural Intention anchor set was used. The original six sets of \cite{maier2025} could not be recovered from the paper text, so this is not an exact reproduction.
+\item Local encoders were used instead of the paper's embedding model; scores, and even the sign of differences, change with the encoder.
+\item Q21 is a single-item proxy for the construct described by the anchors.
+\item Profile attributes were sampled independently, so some combinations are unrealistic.
+\item Persona definitions were written after the authors had seen survey summaries, so the comparison is not blind.
+\item The sample is a convenience sample, mostly young students, and does not cover all UTAUT2 constructs.
+\item The review dataset has strong rater disagreement and the aspect model has leakage risk.
+\end{itemize}
+
+\section{Conclusion and Future Work}
+We built and tested an end-to-end SSR pipeline for synthetic smartphone-survey responses. Early results show a weak to modest link between SSR scores and stated intention, and small average gaps between synthetic and human answers for two personas, without proof of equivalence. Future work includes generating all four personas with many more answers, repeating generations for stability, recovering or designing all six anchor sets, using a survey that measures the full UTAUT2 constructs, and collecting a more varied sample.
+
+\section*{Data and Code Availability}
+The scripts, audit reports and result files are in the project repository; the raw survey is anonymous and was not edited. Please add the final public link before submission.
+
+\section*{Acknowledgment}
+The authors thank the survey participants and their faculty guides. Add funding and ethics approval details here as required by the venue.
+
+\section*{Disclosure on Use of AI Tools}
+The draft of this paper was prepared with the help of an AI writing assistant from the authors' own project files and results. The authors checked the numbers against the saved result files and take full responsibility for the content. Please keep or edit this statement according to the policy of the target conference.
+
+\begin{thebibliography}{00}
+\bibitem{maier2025} B. F. Maier \emph{et al.}, ``LLMs reproduce human purchase intent via semantic similarity elicitation of Likert ratings,'' arXiv:2510.08338, 2025.
+\bibitem{argyle2023} L. P. Argyle \emph{et al.}, ``Out of one, many: Using language models to simulate human samples,'' \emph{Political Analysis}, vol. 31, no. 3, pp. 337--351, 2023.
+\bibitem{park2023} J. S. Park \emph{et al.}, ``Generative agents: Interactive simulacra of human behavior,'' in \emph{Proc. ACM UIST}, 2023.
+\bibitem{venkatesh2012} V. Venkatesh, J. Y. L. Thong, and X. Xu, ``Consumer acceptance and use of information technology: Extending the unified theory of acceptance and use of technology,'' \emph{MIS Quarterly}, vol. 36, no. 1, pp. 157--178, 2012.
+\bibitem{reimers2019} N. Reimers and I. Gurevych, ``Sentence-BERT: Sentence embeddings using Siamese BERT-networks,'' in \emph{Proc. EMNLP-IJCNLP}, 2019, pp. 3982--3992.
+\bibitem{song2020} K. Song \emph{et al.}, ``MPNet: Masked and permuted pre-training for language understanding,'' in \emph{Proc. NeurIPS}, 2020.
+\bibitem{wang2020} W. Wang \emph{et al.}, ``MiniLM: Deep self-attention distillation for task-agnostic compression of pre-trained transformers,'' in \emph{Proc. NeurIPS}, 2020.
+\bibitem{xiao2023} S. Xiao \emph{et al.}, ``C-Pack: Packaged resources to advance general Chinese embedding,'' arXiv:2309.07597, 2023.
+\end{thebibliography}
+
+\end{document}

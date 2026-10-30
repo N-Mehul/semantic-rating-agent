@@ -1,0 +1,214 @@
+[
+  {
+    "persona_id": "P1_premium_tier_owner",
+    "product_name": "Nova AI Smartphone",
+    "response_text": "The AI personal assistant seems cool for reminders and study support, but with my current iPhone, I'm pretty set on my existing apps. The camera enhancements sound neat, but I'm not sure if they'll make a big difference. The smooth performance might be nice, but I'm skeptical about the battery optimization given my tech comfort level is only moderate. The price feels a bit steep for my budget, and switching ecosystems might be too much hassle. I'd consider it if the price dropped or if there were more compelling AI features that couldn't be replicated on my current phone.",
+    "model_requested": "qwen2.5:7b-instruct",
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-10-30T07:57:02.221734+00:00",
+    "usage": {
+      "prompt_tokens": 974,
+      "output_tokens": 116
+    },
+    "contains_numeric_rating": false,
+    "evaluated_constructs": [
+      "PE",
+      "BI",
+      "EE",
+      "HM",
+      "SI",
+      "PP",
+      "PV"
+    ],
+    "prompt_metadata": {
+      "selected_constructs": [
+        "PE",
+        "BI",
+        "EE",
+        "HM",
+        "SI",
+        "PP",
+        "PV"
+      ],
+      "ssr_compatible_constructs": [
+        "PE",
+        "BI",
+        "EE",
+        "HM",
+        "SI",
+        "PP"
+      ],
+      "has_unanchored_constructs": true,
+      "profile_source": "data/personas/persona_profiles.json"
+    },
+    "construct_responses": {
+      "PE": "The AI personal assistant and study support sound convenient for organizing daily coursework and reminders. However, my current smartphone already handles all my multitasking and productivity needs with zero lag, so the proposed performance improvements do not offer a noticeable upgrade.",
+      "EE": "Because I have been using iOS for years, switching to an Android interface with AI suggestions would involve a steep learning curve and readjustment of my daily habits. Navigating unfamiliar menus and contextual shortcuts feels like extra effort rather than ease.",
+      "HM": "The automated camera enhancements and high-refresh display look appealing for watching media and capturing photos. While it seems fun and enjoyable for casual entertainment, it does not surpass the multimedia experience I currently enjoy on my existing phone.",
+      "SI": "In my college and social circle, most of my close friends and classmates carry premium flagship devices. Carrying this mid-range phone would carry little prestige or social appeal among my peers.",
+      "PP": "Processing selected AI tasks directly on the device is definitely reassuring for privacy. However, I remain cautious about third-party Android apps and data collection practices compared to my existing device security.",
+      "BI": "I do not intend to switch or purchase this product. The switching costs, brand loyalty to my current phone, and absence of revolutionary features mean I will stick with what I currently use.",
+      "PV": "At ₹24,999, the price is not exorbitant, but paying that amount for a mid-range phone when I already own a satisfactory device represents poor personal value for me."
+    }
+  },
+  {
+    "persona_id": "P2_midrange_heavy_user",
+    "product_name": "Nova AI Smartphone",
+    "response_text": "The AI personal assistant sounds cool, but I'm skeptical about how much it will actually help with my daily tasks. The camera enhancement might come in handy, but I don't use my phone for much more than messaging and browsing social media. The battery optimization seems like a plus, but I worry about the price—₹24,999 is a bit steep for me, especially since I already have a functioning OnePlus. The UI with AI suggestions might feel gimmicky and could be confusing at first, given my tech comfort level. Overall, while the product seems relevant for students and young professionals, I’d need to see more value for my money before considering a switch.",
+    "model_requested": "qwen2.5:7b-instruct",
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-10-30T07:58:16.980482+00:00",
+    "usage": {
+      "prompt_tokens": 984,
+      "output_tokens": 137
+    },
+    "contains_numeric_rating": false,
+    "evaluated_constructs": [
+      "PE",
+      "BI",
+      "EE",
+      "HM",
+      "SI",
+      "PP",
+      "PV"
+    ],
+    "prompt_metadata": {
+      "selected_constructs": [
+        "PE",
+        "BI",
+        "EE",
+        "HM",
+        "SI",
+        "PP",
+        "PV"
+      ],
+      "ssr_compatible_constructs": [
+        "PE",
+        "BI",
+        "EE",
+        "HM",
+        "SI",
+        "PP"
+      ],
+      "has_unanchored_constructs": true,
+      "profile_source": "data/personas/persona_profiles.json"
+    },
+    "construct_responses": {
+      "PE": "Smart battery optimization and fast multitasking would directly benefit my heavy day-long routine across social media, messaging, and continuous usage. It seems very capable of handling everyday student tasks effectively.",
+      "EE": "As an experienced Android user, I would find the interface very straightforward and familiar. The contextual shortcuts and AI suggestions would be easy to learn and integrate quickly into my habits.",
+      "HM": "The high-refresh screen and automated low-light camera enhancements are exciting for mobile gaming, video streaming, and reels. It offers high entertainment value that matches my heavy media consumption habits.",
+      "SI": "Mid-range smartphones are the standard across my peer group. Friends and colleagues would view this phone as a smart, practical choice, and several would likely ask for my opinion on its performance.",
+      "PP": "Having on-device processing for AI features makes me feel comfortable that my personal data and media won't be constantly uploaded to cloud servers without my consent.",
+      "BI": "I would seriously consider this phone if my current handset started failing or when my upgrade cycle arrives. It meets my core requirements well, though I'd compare reviews against rival mid-range devices first.",
+      "PV": "₹24,999 is fair for the proposed specifications and AI capabilities, aligning well with what I typically budget for a smartphone replacement."
+    }
+  },
+  {
+    "persona_id": "P3_midrange_moderate_user",
+    "product_name": "Nova AI Smartphone",
+    "response_text": "The AI Personal Assistant could be handy for managing my schedule and study tasks, but I'm not sure if I need all those features. The camera enhancements sound cool, but I'm hesitant to spend more than my budget allows on a phone I use for less than six hours a day. The on-device AI processing feels like a step in the right direction for privacy, but I'm not sure if it's enough to convince me to switch. Smooth performance seems like a no-brainer, but the battery optimisation might be a bit overkill. Overall, I think the AI suggestions and the smooth performance could be useful, but the price feels a bit steep for my daily usage. I might consider it if there are significant discounts, but for now, I'm sticking with what I have.",
+    "model_requested": "qwen2.5:7b-instruct",
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-10-30T07:59:23.288785+00:00",
+    "usage": {
+      "prompt_tokens": 986,
+      "output_tokens": 159
+    },
+    "contains_numeric_rating": false,
+    "evaluated_constructs": [
+      "PE",
+      "BI",
+      "EE",
+      "HM",
+      "SI",
+      "PP",
+      "PV"
+    ],
+    "prompt_metadata": {
+      "selected_constructs": [
+        "PE",
+        "BI",
+        "EE",
+        "HM",
+        "SI",
+        "PP",
+        "PV"
+      ],
+      "ssr_compatible_constructs": [
+        "PE",
+        "BI",
+        "EE",
+        "HM",
+        "SI",
+        "PP"
+      ],
+      "has_unanchored_constructs": true,
+      "profile_source": "data/personas/persona_profiles.json"
+    },
+    "construct_responses": {
+      "PE": "The schedule reminders and smart notifications would be genuinely helpful for balancing work and family routines. It appears dependable for basic productivity and everyday communication.",
+      "EE": "I prefer a clean, predictable layout without unnecessary complexity. I worry that having too many AI-driven suggestions might feel confusing or get in the way of simple navigation.",
+      "HM": "Display quality and battery life sound good for evening streaming and casual family photos. It provides decent leisure and entertainment, though I don't need intense gaming performance.",
+      "SI": "I usually seek recommendations from family and close friends before buying any gadget. If the brand proves reliable and peers have positive experiences, their approval would carry significant weight.",
+      "PP": "Data security and personal privacy are important to me, especially for online banking and communication. The on-device security controls provide good peace of mind.",
+      "BI": "I am undecided and somewhat cautious. I will probably continue using my current smartphone until it no longer functions well, rather than rush to adopt a new AI-branded phone.",
+      "PV": "₹24,999 is acceptable only if the device is durable and supported with software updates for at least three to four years without slowing down."
+    }
+  },
+  {
+    "persona_id": "P4_budget_or_undisclosed_price",
+    "product_name": "Nova AI Smartphone",
+    "response_text": "I'm not sure if I can justify the price. At ₹24,999, it's quite a steep climb from my current phone, which is working fine. The AI personal assistant sounds cool, but I'm not too fond of Apple's ecosystem, and switching might be a hassle. The camera enhancements and battery optimization seem useful, but I'm skeptical about the need for such advanced features. I’d love to see some freebie or discount for such a jump in price. If it can be a bit cheaper, I might consider it for the AI features, but right now, it feels like a stretch.",
+    "model_requested": "qwen2.5:7b-instruct",
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-10-30T08:00:20.200217+00:00",
+    "usage": {
+      "prompt_tokens": 982,
+      "output_tokens": 127
+    },
+    "contains_numeric_rating": false,
+    "evaluated_constructs": [
+      "PE",
+      "BI",
+      "EE",
+      "HM",
+      "SI",
+      "PP",
+      "PV"
+    ],
+    "prompt_metadata": {
+      "selected_constructs": [
+        "PE",
+        "BI",
+        "EE",
+        "HM",
+        "SI",
+        "PP",
+        "PV"
+      ],
+      "ssr_compatible_constructs": [
+        "PE",
+        "BI",
+        "EE",
+        "HM",
+        "SI",
+        "PP"
+      ],
+      "has_unanchored_constructs": true,
+      "profile_source": "data/personas/persona_profiles.json"
+    },
+    "construct_responses": {
+      "PE": "This phone would offer vastly faster speed, smoother app loading, and better camera performance than my current struggling budget smartphone. It would make everyday study tasks far more effective.",
+      "EE": "The interface looks modern and clean, though some advanced AI features might be more than I really need for basic WhatsApp, browsing, and YouTube.",
+      "HM": "The display and photo quality would be a massive upgrade over what I currently own. Using it for videos and music would be deeply enjoyable and satisfying.",
+      "SI": "Owning a sleek smartphone with AI features would definitely bring positive attention and admiration from my friends and peers.",
+      "PP": "Basic data safety is good to have, though my main focus is simply having a phone that works reliably every day without breaking down.",
+      "BI": "I cannot realistically purchase this smartphone despite liking its capabilities. The price is well beyond my current budget, so I am very unlikely to buy it unless the price drops dramatically.",
+      "PV": "At ₹24,999, it is simply unaffordable relative to my monthly personal spending capacity, regardless of how good the features might be."
+    }
+  }
+]

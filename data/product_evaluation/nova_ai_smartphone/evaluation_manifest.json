@@ -1,0 +1,34 @@
+{
+  "evaluation_id": "nova_ai_smartphone_eval_01",
+  "product_name": "Nova AI Smartphone",
+  "is_hypothetical_test_concept": true,
+  "model": "qwen2.5:7b-instruct",
+  "temperature": 0.7,
+  "timeout_s": 180.0,
+  "personas_requested": [
+    "P1_premium_tier_owner",
+    "P2_midrange_heavy_user",
+    "P3_midrange_moderate_user",
+    "P4_budget_or_undisclosed_price"
+  ],
+  "n_personas_requested": 4,
+  "n_responses_generated": 4,
+  "n_errors": 0,
+  "errors": [],
+  "constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "PV"
+  ],
+  "ssr_protection_verified": true,
+  "timestamp_completed": "2026-10-30T08:00:20.205445+00:00",
+  "files_saved": [
+    "data\\product_evaluation\\nova_ai_smartphone\\product_concept.json",
+    "data\\product_evaluation\\nova_ai_smartphone\\persona_responses.json",
+    "data\\product_evaluation\\nova_ai_smartphone\\persona_responses.jsonl"
+  ]
+}

@@ -1,0 +1,4 @@
+source_key,encoder,n_personas,persona_a,persona_b,synthetic_E_a_minus_b,human_text_E_a_minus_b,human_q21_a_minus_b,same_direction_as_human_text,same_direction_as_human_q21,note
+gemini_v2,local_mpnet_baseline,2,P1_premium_tier_owner,P2_midrange_heavy_user,-0.04558900742747385,0.014316991380700195,0.9380877742946709,False,False,"two personas only: one direction, descriptive"
+gemini_v2,local_minilm,2,P1_premium_tier_owner,P2_midrange_heavy_user,0.020031908712812907,0.13545240892527843,0.9380877742946709,True,True,"two personas only: one direction, descriptive"
+gemini_v2,local_bge_base,2,P1_premium_tier_owner,P2_midrange_heavy_user,0.029148257247938236,0.22512064935280574,0.9380877742946709,True,True,"two personas only: one direction, descriptive"

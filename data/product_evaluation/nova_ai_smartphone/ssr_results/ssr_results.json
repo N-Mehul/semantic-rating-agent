@@ -1,0 +1,2698 @@
+{
+  "evaluation_id": "nova_ai_smartphone_ssr_eval_01",
+  "product_name": "Nova AI Smartphone",
+  "timestamp_utc": "2026-10-30T10:57:41.840706+00:00",
+  "embedding_model": "nomic-embed-text",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "cross_construct_averaging": false,
+  "qualitative_only_constructs": [
+    "PV"
+  ],
+  "k_nearest_neighbors": 3,
+  "nearest_neighbor_setting": "none_full_5_anchors",
+  "n_personas": 4,
+  "n_evaluations": 24,
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "response_text": "The AI personal assistant and study support sound convenient for organizing daily coursework and reminders. However, my current smartphone already handles all my multitasking and productivity needs with zero lag, so the proposed performance improvements do not offer a noticeable upgrade.",
+      "anchor_statements": [
+        "My current smartphone does not help me get important everyday tasks done.",
+        "My current smartphone offers little help for completing my everyday tasks.",
+        "My current smartphone helps with some tasks but makes little difference overall.",
+        "My current smartphone helps me complete most everyday tasks effectively.",
+        "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.703148,
+        0.72198,
+        0.71101,
+        0.709504,
+        0.703486
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.564032,
+        0.235482,
+        0.190353,
+        0.010134
+      ],
+      "expected_rating": 2.6466,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.703148
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "response_text": "I do not intend to switch or purchase this product. The switching costs, brand loyalty to my current phone, and absence of revolutionary features mean I will stick with what I currently use.",
+      "anchor_statements": [
+        "I do not intend to continue using my current smartphone.",
+        "I am unlikely to keep using my current smartphone in the near future.",
+        "I am undecided about whether I will continue using my current smartphone.",
+        "I intend to continue using my current smartphone for the foreseeable future.",
+        "I am certain I will continue using my current smartphone unless I need to replace it."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.806572,
+        0.759491,
+        0.761893,
+        0.741017,
+        0.775181
+      ],
+      "pmf_probabilities": [
+        0.471383,
+        0.132841,
+        0.150112,
+        0.0,
+        0.245664
+      ],
+      "expected_rating": 2.4157,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.741017
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "response_text": "Because I have been using iOS for years, switching to an Android interface with AI suggestions would involve a steep learning curve and readjustment of my daily habits. Navigating unfamiliar menus and contextual shortcuts feels like extra effort rather than ease.",
+      "anchor_statements": [
+        "Learning to use my current smartphone is very difficult for me.",
+        "I find many parts of my smartphone difficult to understand or operate.",
+        "Using my smartphone is manageable, although several tasks still take effort.",
+        "Most tasks on my smartphone are easy for me to learn and perform.",
+        "I can learn and use my smartphone features easily with very little effort."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.677838,
+        0.663203,
+        0.681357,
+        0.699818,
+        0.691152
+      ],
+      "pmf_probabilities": [
+        0.150333,
+        0.0,
+        0.186476,
+        0.376103,
+        0.287088
+      ],
+      "expected_rating": 3.6496,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.663203
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "response_text": "The automated camera enhancements and high-refresh display look appealing for watching media and capturing photos. While it seems fun and enjoyable for casual entertainment, it does not surpass the multimedia experience I currently enjoy on my existing phone.",
+      "anchor_statements": [
+        "Using my smartphone is not enjoyable for me.",
+        "I get little enjoyment from using my smartphone.",
+        "Using my smartphone is neither enjoyable nor unenjoyable.",
+        "I generally enjoy using my smartphone.",
+        "Using my smartphone is highly enjoyable and fun."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.69458,
+        0.71856,
+        0.735838,
+        0.705703,
+        0.720653
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.234101,
+        0.402775,
+        0.108586,
+        0.254538
+      ],
+      "expected_rating": 3.3836,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.69458
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "response_text": "In my college and social circle, most of my close friends and classmates carry premium flagship devices. Carrying this mid-range phone would carry little prestige or social appeal among my peers.",
+      "anchor_statements": [
+        "People important to me would discourage me from using a smartphone like mine.",
+        "People whose opinions I value are not supportive of my using this smartphone.",
+        "People important to me are divided about whether I should use this smartphone.",
+        "People whose opinions matter to me generally support my use of this smartphone.",
+        "People important to me strongly encourage me to use a smartphone like mine."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.720255,
+        0.638364,
+        0.675824,
+        0.65602,
+        0.704451
+      ],
+      "pmf_probabilities": [
+        0.403218,
+        0.0,
+        0.184447,
+        0.086933,
+        0.325402
+      ],
+      "expected_rating": 2.9313,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.638364
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "response_text": "Processing selected AI tasks directly on the device is definitely reassuring for privacy. However, I remain cautious about third-party Android apps and data collection practices compared to my existing device security.",
+      "anchor_statements": [
+        "I have no confidence that my smartphone protects my personal information.",
+        "My smartphone provides little protection for my personal information and accounts.",
+        "I feel only moderately protected when I use my smartphone.",
+        "I feel that my smartphone adequately protects my personal information.",
+        "I feel highly confident that my smartphone protects my personal information and accounts."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.662931,
+        0.646356,
+        0.625341,
+        0.687758,
+        0.666249
+      ],
+      "pmf_probabilities": [
+        0.232137,
+        0.129777,
+        0.0,
+        0.385458,
+        0.252627
+      ],
+      "expected_rating": 3.2967,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.625341
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "response_text": "Smart battery optimization and fast multitasking would directly benefit my heavy day-long routine across social media, messaging, and continuous usage. It seems very capable of handling everyday student tasks effectively.",
+      "anchor_statements": [
+        "My current smartphone does not help me get important everyday tasks done.",
+        "My current smartphone offers little help for completing my everyday tasks.",
+        "My current smartphone helps with some tasks but makes little difference overall.",
+        "My current smartphone helps me complete most everyday tasks effectively.",
+        "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.674104,
+        0.693484,
+        0.640452,
+        0.75121,
+        0.693723
+      ],
+      "pmf_probabilities": [
+        0.134225,
+        0.211526,
+        0.0,
+        0.441771,
+        0.212477
+      ],
+      "expected_rating": 3.3867,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.640452
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "response_text": "I would seriously consider this phone if my current handset started failing or when my upgrade cycle arrives. It meets my core requirements well, though I'd compare reviews against rival mid-range devices first.",
+      "anchor_statements": [
+        "I do not intend to continue using my current smartphone.",
+        "I am unlikely to keep using my current smartphone in the near future.",
+        "I am undecided about whether I will continue using my current smartphone.",
+        "I intend to continue using my current smartphone for the foreseeable future.",
+        "I am certain I will continue using my current smartphone unless I need to replace it."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.630693,
+        0.679496,
+        0.648075,
+        0.715197,
+        0.723075
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.200777,
+        0.071509,
+        0.347652,
+        0.380062
+      ],
+      "expected_rating": 3.907,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.630693
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "response_text": "As an experienced Android user, I would find the interface very straightforward and familiar. The contextual shortcuts and AI suggestions would be easy to learn and integrate quickly into my habits.",
+      "anchor_statements": [
+        "Learning to use my current smartphone is very difficult for me.",
+        "I find many parts of my smartphone difficult to understand or operate.",
+        "Using my smartphone is manageable, although several tasks still take effort.",
+        "Most tasks on my smartphone are easy for me to learn and perform.",
+        "I can learn and use my smartphone features easily with very little effort."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.617293,
+        0.625351,
+        0.640146,
+        0.707586,
+        0.683113
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.043086,
+        0.122196,
+        0.482785,
+        0.351933
+      ],
+      "expected_rating": 4.1436,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.617293
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "response_text": "The high-refresh screen and automated low-light camera enhancements are exciting for mobile gaming, video streaming, and reels. It offers high entertainment value that matches my heavy media consumption habits.",
+      "anchor_statements": [
+        "Using my smartphone is not enjoyable for me.",
+        "I get little enjoyment from using my smartphone.",
+        "Using my smartphone is neither enjoyable nor unenjoyable.",
+        "I generally enjoy using my smartphone.",
+        "Using my smartphone is highly enjoyable and fun."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.580257,
+        0.633578,
+        0.614526,
+        0.656583,
+        0.699764
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.188131,
+        0.12091,
+        0.269302,
+        0.421657
+      ],
+      "expected_rating": 3.9245,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.580257
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "response_text": "Mid-range smartphones are the standard across my peer group. Friends and colleagues would view this phone as a smart, practical choice, and several would likely ask for my opinion on its performance.",
+      "anchor_statements": [
+        "People important to me would discourage me from using a smartphone like mine.",
+        "People whose opinions I value are not supportive of my using this smartphone.",
+        "People important to me are divided about whether I should use this smartphone.",
+        "People whose opinions matter to me generally support my use of this smartphone.",
+        "People important to me strongly encourage me to use a smartphone like mine."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.696151,
+        0.716832,
+        0.771697,
+        0.769778,
+        0.730642
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.101204,
+        0.369699,
+        0.360307,
+        0.168789
+      ],
+      "expected_rating": 3.5967,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.696151
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "response_text": "Having on-device processing for AI features makes me feel comfortable that my personal data and media won't be constantly uploaded to cloud servers without my consent.",
+      "anchor_statements": [
+        "I have no confidence that my smartphone protects my personal information.",
+        "My smartphone provides little protection for my personal information and accounts.",
+        "I feel only moderately protected when I use my smartphone.",
+        "I feel that my smartphone adequately protects my personal information.",
+        "I feel highly confident that my smartphone protects my personal information and accounts."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.613354,
+        0.617391,
+        0.585835,
+        0.677753,
+        0.67728
+      ],
+      "pmf_probabilities": [
+        0.11351,
+        0.130161,
+        0.0,
+        0.379141,
+        0.377187
+      ],
+      "expected_rating": 3.7763,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.585835
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "response_text": "The schedule reminders and smart notifications would be genuinely helpful for balancing work and family routines. It appears dependable for basic productivity and everyday communication.",
+      "anchor_statements": [
+        "My current smartphone does not help me get important everyday tasks done.",
+        "My current smartphone offers little help for completing my everyday tasks.",
+        "My current smartphone helps with some tasks but makes little difference overall.",
+        "My current smartphone helps me complete most everyday tasks effectively.",
+        "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.618956,
+        0.6088,
+        0.56721,
+        0.652761,
+        0.588557
+      ],
+      "pmf_probabilities": [
+        0.258426,
+        0.207706,
+        0.0,
+        0.427254,
+        0.106614
+      ],
+      "expected_rating": 2.9159,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.56721
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "response_text": "I am undecided and somewhat cautious. I will probably continue using my current smartphone until it no longer functions well, rather than rush to adopt a new AI-branded phone.",
+      "anchor_statements": [
+        "I do not intend to continue using my current smartphone.",
+        "I am unlikely to keep using my current smartphone in the near future.",
+        "I am undecided about whether I will continue using my current smartphone.",
+        "I intend to continue using my current smartphone for the foreseeable future.",
+        "I am certain I will continue using my current smartphone unless I need to replace it."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.800958,
+        0.813492,
+        0.881246,
+        0.806131,
+        0.804858
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.123007,
+        0.787952,
+        0.050766,
+        0.038275
+      ],
+      "expected_rating": 3.0043,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.800958
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "response_text": "I prefer a clean, predictable layout without unnecessary complexity. I worry that having too many AI-driven suggestions might feel confusing or get in the way of simple navigation.",
+      "anchor_statements": [
+        "Learning to use my current smartphone is very difficult for me.",
+        "I find many parts of my smartphone difficult to understand or operate.",
+        "Using my smartphone is manageable, although several tasks still take effort.",
+        "Most tasks on my smartphone are easy for me to learn and perform.",
+        "I can learn and use my smartphone features easily with very little effort."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.426908,
+        0.511377,
+        0.534853,
+        0.546346,
+        0.539415
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.199051,
+        0.254372,
+        0.281454,
+        0.265123
+      ],
+      "expected_rating": 3.6126,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.426908
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "response_text": "Display quality and battery life sound good for evening streaming and casual family photos. It provides decent leisure and entertainment, though I don't need intense gaming performance.",
+      "anchor_statements": [
+        "Using my smartphone is not enjoyable for me.",
+        "I get little enjoyment from using my smartphone.",
+        "Using my smartphone is neither enjoyable nor unenjoyable.",
+        "I generally enjoy using my smartphone.",
+        "Using my smartphone is highly enjoyable and fun."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.561249,
+        0.618149,
+        0.582264,
+        0.6299,
+        0.625105
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.27041,
+        0.099869,
+        0.326255,
+        0.303466
+      ],
+      "expected_rating": 3.6628,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.561249
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "response_text": "I usually seek recommendations from family and close friends before buying any gadget. If the brand proves reliable and peers have positive experiences, their approval would carry significant weight.",
+      "anchor_statements": [
+        "People important to me would discourage me from using a smartphone like mine.",
+        "People whose opinions I value are not supportive of my using this smartphone.",
+        "People important to me are divided about whether I should use this smartphone.",
+        "People whose opinions matter to me generally support my use of this smartphone.",
+        "People important to me strongly encourage me to use a smartphone like mine."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.623729,
+        0.615271,
+        0.630349,
+        0.655995,
+        0.657109
+      ],
+      "pmf_probabilities": [
+        0.079723,
+        0.0,
+        0.142117,
+        0.383828,
+        0.394333
+      ],
+      "expected_rating": 4.013,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.615271
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "response_text": "Data security and personal privacy are important to me, especially for online banking and communication. The on-device security controls provide good peace of mind.",
+      "anchor_statements": [
+        "I have no confidence that my smartphone protects my personal information.",
+        "My smartphone provides little protection for my personal information and accounts.",
+        "I feel only moderately protected when I use my smartphone.",
+        "I feel that my smartphone adequately protects my personal information.",
+        "I feel highly confident that my smartphone protects my personal information and accounts."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.725719,
+        0.719779,
+        0.666891,
+        0.776533,
+        0.779723
+      ],
+      "pmf_probabilities": [
+        0.176031,
+        0.158258,
+        0.0,
+        0.328082,
+        0.337629
+      ],
+      "expected_rating": 3.493,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.666891
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "response_text": "This phone would offer vastly faster speed, smoother app loading, and better camera performance than my current struggling budget smartphone. It would make everyday study tasks far more effective.",
+      "anchor_statements": [
+        "My current smartphone does not help me get important everyday tasks done.",
+        "My current smartphone offers little help for completing my everyday tasks.",
+        "My current smartphone helps with some tasks but makes little difference overall.",
+        "My current smartphone helps me complete most everyday tasks effectively.",
+        "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.72561,
+        0.743545,
+        0.725625,
+        0.767376,
+        0.745519
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.225244,
+        0.000185,
+        0.524538,
+        0.250033
+      ],
+      "expected_rating": 3.7994,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.72561
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "response_text": "I cannot realistically purchase this smartphone despite liking its capabilities. The price is well beyond my current budget, so I am very unlikely to buy it unless the price drops dramatically.",
+      "anchor_statements": [
+        "I do not intend to continue using my current smartphone.",
+        "I am unlikely to keep using my current smartphone in the near future.",
+        "I am undecided about whether I will continue using my current smartphone.",
+        "I intend to continue using my current smartphone for the foreseeable future.",
+        "I am certain I will continue using my current smartphone unless I need to replace it."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.719201,
+        0.775249,
+        0.719168,
+        0.694043,
+        0.702248
+      ],
+      "pmf_probabilities": [
+        0.180091,
+        0.581314,
+        0.179856,
+        0.0,
+        0.058739
+      ],
+      "expected_rating": 2.176,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.694043
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "response_text": "The interface looks modern and clean, though some advanced AI features might be more than I really need for basic WhatsApp, browsing, and YouTube.",
+      "anchor_statements": [
+        "Learning to use my current smartphone is very difficult for me.",
+        "I find many parts of my smartphone difficult to understand or operate.",
+        "Using my smartphone is manageable, although several tasks still take effort.",
+        "Most tasks on my smartphone are easy for me to learn and perform.",
+        "I can learn and use my smartphone features easily with very little effort."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.511607,
+        0.527966,
+        0.561987,
+        0.572785,
+        0.585746
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.080961,
+        0.249339,
+        0.302779,
+        0.366921
+      ],
+      "expected_rating": 3.9557,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.511607
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "response_text": "The display and photo quality would be a massive upgrade over what I currently own. Using it for videos and music would be deeply enjoyable and satisfying.",
+      "anchor_statements": [
+        "Using my smartphone is not enjoyable for me.",
+        "I get little enjoyment from using my smartphone.",
+        "Using my smartphone is neither enjoyable nor unenjoyable.",
+        "I generally enjoy using my smartphone.",
+        "Using my smartphone is highly enjoyable and fun."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.543679,
+        0.564716,
+        0.585358,
+        0.575443,
+        0.619324
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.123657,
+        0.24499,
+        0.186711,
+        0.444641
+      ],
+      "expected_rating": 3.9523,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.543679
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "response_text": "Owning a sleek smartphone with AI features would definitely bring positive attention and admiration from my friends and peers.",
+      "anchor_statements": [
+        "People important to me would discourage me from using a smartphone like mine.",
+        "People whose opinions I value are not supportive of my using this smartphone.",
+        "People important to me are divided about whether I should use this smartphone.",
+        "People whose opinions matter to me generally support my use of this smartphone.",
+        "People important to me strongly encourage me to use a smartphone like mine."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.694212,
+        0.636502,
+        0.666206,
+        0.725213,
+        0.761344
+      ],
+      "pmf_probabilities": [
+        0.191749,
+        0.0,
+        0.098695,
+        0.294754,
+        0.414802
+      ],
+      "expected_rating": 3.7409,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.636502
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "response_text": "Basic data safety is good to have, though my main focus is simply having a phone that works reliably every day without breaking down.",
+      "anchor_statements": [
+        "I have no confidence that my smartphone protects my personal information.",
+        "My smartphone provides little protection for my personal information and accounts.",
+        "I feel only moderately protected when I use my smartphone.",
+        "I feel that my smartphone adequately protects my personal information.",
+        "I feel highly confident that my smartphone protects my personal information and accounts."
+      ],
+      "anchor_labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "cosine_similarities": [
+        0.650825,
+        0.653741,
+        0.62086,
+        0.69269,
+        0.672525
+      ],
+      "pmf_probabilities": [
+        0.16081,
+        0.176455,
+        0.0,
+        0.385476,
+        0.27726
+      ],
+      "expected_rating": 3.4419,
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "k_nearest_neighbors": 3,
+      "nearest_neighbor_setting": "none_full_5_anchors",
+      "temperature": 1.0,
+      "epsilon": 0.0,
+      "min_similarity": 0.62086
+    }
+  ],
+  "embedding_dimensions": 768,
+  "n_anchor_sets": 6,
+  "anchors_per_set": 5,
+  "total_anchors": 30,
+  "k_setting": 3,
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "primary_adoption_rating": 2.4157,
+      "primary_adoption_pmf": [
+        0.471383,
+        0.132841,
+        0.150112,
+        0.0,
+        0.245664
+      ],
+      "construct_scores": {
+        "PE": 2.6466,
+        "BI": 2.4157,
+        "EE": 3.6496,
+        "HM": 3.3836,
+        "SI": 2.9313,
+        "PP": 3.2967
+      },
+      "anchor_sets": [
+        {
+          "persona_id": "P1_premium_tier_owner",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "is_primary_adoption_outcome": false,
+          "response_text": "The AI personal assistant and study support sound convenient for organizing daily coursework and reminders. However, my current smartphone already handles all my multitasking and productivity needs with zero lag, so the proposed performance improvements do not offer a noticeable upgrade.",
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.703148,
+            0.72198,
+            0.71101,
+            0.709504,
+            0.703486
+          ],
+          "pmf_probabilities": [
+            0.0,
+            0.564032,
+            0.235482,
+            0.190353,
+            0.010134
+          ],
+          "expected_rating": 2.6466,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.703148
+        },
+        {
+          "persona_id": "P1_premium_tier_owner",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "is_primary_adoption_outcome": true,
+          "response_text": "I do not intend to switch or purchase this product. The switching costs, brand loyalty to my current phone, and absence of revolutionary features mean I will stick with what I currently use.",
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.806572,
+            0.759491,
+            0.761893,
+            0.741017,
+            0.775181
+          ],
+          "pmf_probabilities": [
+            0.471383,
+            0.132841,
+            0.150112,
+            0.0,
+            0.245664
+          ],
+          "expected_rating": 2.4157,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.741017
+        },
+        {
+          "persona_id": "P1_premium_tier_owner",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "is_primary_adoption_outcome": false,
+          "response_text": "Because I have been using iOS for years, switching to an Android interface with AI suggestions would involve a steep learning curve and readjustment of my daily habits. Navigating unfamiliar menus and contextual shortcuts feels like extra effort rather than ease.",
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.677838,
+            0.663203,
+            0.681357,
+            0.699818,
+            0.691152
+          ],
+          "pmf_probabilities": [
+            0.150333,
+            0.0,
+            0.186476,
+            0.376103,
+            0.287088
+          ],
+          "expected_rating": 3.6496,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.663203
+        },
+        {
+          "persona_id": "P1_premium_tier_owner",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "is_primary_adoption_outcome": false,
+          "response_text": "The automated camera enhancements and high-refresh display look appealing for watching media and capturing photos. While it seems fun and enjoyable for casual entertainment, it does not surpass the multimedia experience I currently enjoy on my existing phone.",
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.69458,
+            0.71856,
+            0.735838,
+            0.705703,
+            0.720653
+          ],
+          "pmf_probabilities": [
+            0.0,
+            0.234101,
+            0.402775,
+            0.108586,
+            0.254538
+          ],
+          "expected_rating": 3.3836,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.69458
+        },
+        {
+          "persona_id": "P1_premium_tier_owner",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "is_primary_adoption_outcome": false,
+          "response_text": "In my college and social circle, most of my close friends and classmates carry premium flagship devices. Carrying this mid-range phone would carry little prestige or social appeal among my peers.",
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.720255,
+            0.638364,
+            0.675824,
+            0.65602,
+            0.704451
+          ],
+          "pmf_probabilities": [
+            0.403218,
+            0.0,
+            0.184447,
+            0.086933,
+            0.325402
+          ],
+          "expected_rating": 2.9313,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.638364
+        },
+        {
+          "persona_id": "P1_premium_tier_owner",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "is_primary_adoption_outcome": false,
+          "response_text": "Processing selected AI tasks directly on the device is definitely reassuring for privacy. However, I remain cautious about third-party Android apps and data collection practices compared to my existing device security.",
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.662931,
+            0.646356,
+            0.625341,
+            0.687758,
+            0.666249
+          ],
+          "pmf_probabilities": [
+            0.232137,
+            0.129777,
+            0.0,
+            0.385458,
+            0.252627
+          ],
+          "expected_rating": 3.2967,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.625341
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "primary_adoption_rating": 3.907,
+      "primary_adoption_pmf": [
+        0.0,
+        0.200777,
+        0.071509,
+        0.347652,
+        0.380062
+      ],
+      "construct_scores": {
+        "PE": 3.3867,
+        "BI": 3.907,
+        "EE": 4.1436,
+        "HM": 3.9245,
+        "SI": 3.5967,
+        "PP": 3.7763
+      },
+      "anchor_sets": [
+        {
+          "persona_id": "P2_midrange_heavy_user",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "is_primary_adoption_outcome": false,
+          "response_text": "Smart battery optimization and fast multitasking would directly benefit my heavy day-long routine across social media, messaging, and continuous usage. It seems very capable of handling everyday student tasks effectively.",
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.674104,
+            0.693484,
+            0.640452,
+            0.75121,
+            0.693723
+          ],
+          "pmf_probabilities": [
+            0.134225,
+            0.211526,
+            0.0,
+            0.441771,
+            0.212477
+          ],
+          "expected_rating": 3.3867,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.640452
+        },
+        {
+          "persona_id": "P2_midrange_heavy_user",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "is_primary_adoption_outcome": true,
+          "response_text": "I would seriously consider this phone if my current handset started failing or when my upgrade cycle arrives. It meets my core requirements well, though I'd compare reviews against rival mid-range devices first.",
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.630693,
+            0.679496,
+            0.648075,
+            0.715197,
+            0.723075
+          ],
+          "pmf_probabilities": [
+            0.0,
+            0.200777,
+            0.071509,
+            0.347652,
+            0.380062
+          ],
+          "expected_rating": 3.907,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.630693
+        },
+        {
+          "persona_id": "P2_midrange_heavy_user",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "is_primary_adoption_outcome": false,
+          "response_text": "As an experienced Android user, I would find the interface very straightforward and familiar. The contextual shortcuts and AI suggestions would be easy to learn and integrate quickly into my habits.",
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.617293,
+            0.625351,
+            0.640146,
+            0.707586,
+            0.683113
+          ],
+          "pmf_probabilities": [
+            0.0,
+            0.043086,
+            0.122196,
+            0.482785,
+            0.351933
+          ],
+          "expected_rating": 4.1436,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.617293
+        },
+        {
+          "persona_id": "P2_midrange_heavy_user",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "is_primary_adoption_outcome": false,
+          "response_text": "The high-refresh screen and automated low-light camera enhancements are exciting for mobile gaming, video streaming, and reels. It offers high entertainment value that matches my heavy media consumption habits.",
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.580257,
+            0.633578,
+            0.614526,
+            0.656583,
+            0.699764
+          ],
+          "pmf_probabilities": [
+            0.0,
+            0.188131,
+            0.12091,
+            0.269302,
+            0.421657
+          ],
+          "expected_rating": 3.9245,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.580257
+        },
+        {
+          "persona_id": "P2_midrange_heavy_user",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "is_primary_adoption_outcome": false,
+          "response_text": "Mid-range smartphones are the standard across my peer group. Friends and colleagues would view this phone as a smart, practical choice, and several would likely ask for my opinion on its performance.",
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.696151,
+            0.716832,
+            0.771697,
+            0.769778,
+            0.730642
+          ],
+          "pmf_probabilities": [
+            0.0,
+            0.101204,
+            0.369699,
+            0.360307,
+            0.168789
+          ],
+          "expected_rating": 3.5967,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.696151
+        },
+        {
+          "persona_id": "P2_midrange_heavy_user",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "is_primary_adoption_outcome": false,
+          "response_text": "Having on-device processing for AI features makes me feel comfortable that my personal data and media won't be constantly uploaded to cloud servers without my consent.",
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.613354,
+            0.617391,
+            0.585835,
+            0.677753,
+            0.67728
+          ],
+          "pmf_probabilities": [
+            0.11351,
+            0.130161,
+            0.0,
+            0.379141,
+            0.377187
+          ],
+          "expected_rating": 3.7763,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.585835
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "primary_adoption_rating": 3.0043,
+      "primary_adoption_pmf": [
+        0.0,
+        0.123007,
+        0.787952,
+        0.050766,
+        0.038275
+      ],
+      "construct_scores": {
+        "PE": 2.9159,
+        "BI": 3.0043,
+        "EE": 3.6126,
+        "HM": 3.6628,
+        "SI": 4.013,
+        "PP": 3.493
+      },
+      "anchor_sets": [
+        {
+          "persona_id": "P3_midrange_moderate_user",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "is_primary_adoption_outcome": false,
+          "response_text": "The schedule reminders and smart notifications would be genuinely helpful for balancing work and family routines. It appears dependable for basic productivity and everyday communication.",
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.618956,
+            0.6088,
+            0.56721,
+            0.652761,
+            0.588557
+          ],
+          "pmf_probabilities": [
+            0.258426,
+            0.207706,
+            0.0,
+            0.427254,
+            0.106614
+          ],
+          "expected_rating": 2.9159,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.56721
+        },
+        {
+          "persona_id": "P3_midrange_moderate_user",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "is_primary_adoption_outcome": true,
+          "response_text": "I am undecided and somewhat cautious. I will probably continue using my current smartphone until it no longer functions well, rather than rush to adopt a new AI-branded phone.",
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.800958,
+            0.813492,
+            0.881246,
+            0.806131,
+            0.804858
+          ],
+          "pmf_probabilities": [
+            0.0,
+            0.123007,
+            0.787952,
+            0.050766,
+            0.038275
+          ],
+          "expected_rating": 3.0043,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.800958
+        },
+        {
+          "persona_id": "P3_midrange_moderate_user",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "is_primary_adoption_outcome": false,
+          "response_text": "I prefer a clean, predictable layout without unnecessary complexity. I worry that having too many AI-driven suggestions might feel confusing or get in the way of simple navigation.",
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.426908,
+            0.511377,
+            0.534853,
+            0.546346,
+            0.539415
+          ],
+          "pmf_probabilities": [
+            0.0,
+            0.199051,
+            0.254372,
+            0.281454,
+            0.265123
+          ],
+          "expected_rating": 3.6126,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.426908
+        },
+        {
+          "persona_id": "P3_midrange_moderate_user",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "is_primary_adoption_outcome": false,
+          "response_text": "Display quality and battery life sound good for evening streaming and casual family photos. It provides decent leisure and entertainment, though I don't need intense gaming performance.",
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.561249,
+            0.618149,
+            0.582264,
+            0.6299,
+            0.625105
+          ],
+          "pmf_probabilities": [
+            0.0,
+            0.27041,
+            0.099869,
+            0.326255,
+            0.303466
+          ],
+          "expected_rating": 3.6628,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.561249
+        },
+        {
+          "persona_id": "P3_midrange_moderate_user",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "is_primary_adoption_outcome": false,
+          "response_text": "I usually seek recommendations from family and close friends before buying any gadget. If the brand proves reliable and peers have positive experiences, their approval would carry significant weight.",
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.623729,
+            0.615271,
+            0.630349,
+            0.655995,
+            0.657109
+          ],
+          "pmf_probabilities": [
+            0.079723,
+            0.0,
+            0.142117,
+            0.383828,
+            0.394333
+          ],
+          "expected_rating": 4.013,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.615271
+        },
+        {
+          "persona_id": "P3_midrange_moderate_user",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "is_primary_adoption_outcome": false,
+          "response_text": "Data security and personal privacy are important to me, especially for online banking and communication. The on-device security controls provide good peace of mind.",
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.725719,
+            0.719779,
+            0.666891,
+            0.776533,
+            0.779723
+          ],
+          "pmf_probabilities": [
+            0.176031,
+            0.158258,
+            0.0,
+            0.328082,
+            0.337629
+          ],
+          "expected_rating": 3.493,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.666891
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "primary_adoption_rating": 2.176,
+      "primary_adoption_pmf": [
+        0.180091,
+        0.581314,
+        0.179856,
+        0.0,
+        0.058739
+      ],
+      "construct_scores": {
+        "PE": 3.7994,
+        "BI": 2.176,
+        "EE": 3.9557,
+        "HM": 3.9523,
+        "SI": 3.7409,
+        "PP": 3.4419
+      },
+      "anchor_sets": [
+        {
+          "persona_id": "P4_budget_or_undisclosed_price",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "is_primary_adoption_outcome": false,
+          "response_text": "This phone would offer vastly faster speed, smoother app loading, and better camera performance than my current struggling budget smartphone. It would make everyday study tasks far more effective.",
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.72561,
+            0.743545,
+            0.725625,
+            0.767376,
+            0.745519
+          ],
+          "pmf_probabilities": [
+            0.0,
+            0.225244,
+            0.000185,
+            0.524538,
+            0.250033
+          ],
+          "expected_rating": 3.7994,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.72561
+        },
+        {
+          "persona_id": "P4_budget_or_undisclosed_price",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "is_primary_adoption_outcome": true,
+          "response_text": "I cannot realistically purchase this smartphone despite liking its capabilities. The price is well beyond my current budget, so I am very unlikely to buy it unless the price drops dramatically.",
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.719201,
+            0.775249,
+            0.719168,
+            0.694043,
+            0.702248
+          ],
+          "pmf_probabilities": [
+            0.180091,
+            0.581314,
+            0.179856,
+            0.0,
+            0.058739
+          ],
+          "expected_rating": 2.176,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.694043
+        },
+        {
+          "persona_id": "P4_budget_or_undisclosed_price",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "is_primary_adoption_outcome": false,
+          "response_text": "The interface looks modern and clean, though some advanced AI features might be more than I really need for basic WhatsApp, browsing, and YouTube.",
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.511607,
+            0.527966,
+            0.561987,
+            0.572785,
+            0.585746
+          ],
+          "pmf_probabilities": [
+            0.0,
+            0.080961,
+            0.249339,
+            0.302779,
+            0.366921
+          ],
+          "expected_rating": 3.9557,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.511607
+        },
+        {
+          "persona_id": "P4_budget_or_undisclosed_price",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "is_primary_adoption_outcome": false,
+          "response_text": "The display and photo quality would be a massive upgrade over what I currently own. Using it for videos and music would be deeply enjoyable and satisfying.",
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.543679,
+            0.564716,
+            0.585358,
+            0.575443,
+            0.619324
+          ],
+          "pmf_probabilities": [
+            0.0,
+            0.123657,
+            0.24499,
+            0.186711,
+            0.444641
+          ],
+          "expected_rating": 3.9523,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.543679
+        },
+        {
+          "persona_id": "P4_budget_or_undisclosed_price",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "is_primary_adoption_outcome": false,
+          "response_text": "Owning a sleek smartphone with AI features would definitely bring positive attention and admiration from my friends and peers.",
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.694212,
+            0.636502,
+            0.666206,
+            0.725213,
+            0.761344
+          ],
+          "pmf_probabilities": [
+            0.191749,
+            0.0,
+            0.098695,
+            0.294754,
+            0.414802
+          ],
+          "expected_rating": 3.7409,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.636502
+        },
+        {
+          "persona_id": "P4_budget_or_undisclosed_price",
+          "product_name": "Nova AI Smartphone",
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "is_primary_adoption_outcome": false,
+          "response_text": "Basic data safety is good to have, though my main focus is simply having a phone that works reliably every day without breaking down.",
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ],
+          "cosine_similarities": [
+            0.650825,
+            0.653741,
+            0.62086,
+            0.69269,
+            0.672525
+          ],
+          "pmf_probabilities": [
+            0.16081,
+            0.176455,
+            0.0,
+            0.385476,
+            0.27726
+          ],
+          "expected_rating": 3.4419,
+          "embedding_model": "nomic-embed-text",
+          "embedding_dim": 768,
+          "k_nearest_neighbors": 3,
+          "nearest_neighbor_setting": "none_full_5_anchors",
+          "temperature": 1.0,
+          "epsilon": 0.0,
+          "min_similarity": 0.62086
+        }
+      ]
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.703148,
+      "cos_sim_2": 0.72198,
+      "cos_sim_3": 0.71101,
+      "cos_sim_4": 0.709504,
+      "cos_sim_5": 0.703486,
+      "min_similarity": 0.703148,
+      "p1": 0.0,
+      "p2": 0.564032,
+      "p3": 0.235482,
+      "p4": 0.190353,
+      "p5": 0.010134,
+      "set_expected_rating": 2.6466,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.806572,
+      "cos_sim_2": 0.759491,
+      "cos_sim_3": 0.761893,
+      "cos_sim_4": 0.741017,
+      "cos_sim_5": 0.775181,
+      "min_similarity": 0.741017,
+      "p1": 0.471383,
+      "p2": 0.132841,
+      "p3": 0.150112,
+      "p4": 0.0,
+      "p5": 0.245664,
+      "set_expected_rating": 2.4157,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.677838,
+      "cos_sim_2": 0.663203,
+      "cos_sim_3": 0.681357,
+      "cos_sim_4": 0.699818,
+      "cos_sim_5": 0.691152,
+      "min_similarity": 0.663203,
+      "p1": 0.150333,
+      "p2": 0.0,
+      "p3": 0.186476,
+      "p4": 0.376103,
+      "p5": 0.287088,
+      "set_expected_rating": 3.6496,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.69458,
+      "cos_sim_2": 0.71856,
+      "cos_sim_3": 0.735838,
+      "cos_sim_4": 0.705703,
+      "cos_sim_5": 0.720653,
+      "min_similarity": 0.69458,
+      "p1": 0.0,
+      "p2": 0.234101,
+      "p3": 0.402775,
+      "p4": 0.108586,
+      "p5": 0.254538,
+      "set_expected_rating": 3.3836,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.720255,
+      "cos_sim_2": 0.638364,
+      "cos_sim_3": 0.675824,
+      "cos_sim_4": 0.65602,
+      "cos_sim_5": 0.704451,
+      "min_similarity": 0.638364,
+      "p1": 0.403218,
+      "p2": 0.0,
+      "p3": 0.184447,
+      "p4": 0.086933,
+      "p5": 0.325402,
+      "set_expected_rating": 2.9313,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.662931,
+      "cos_sim_2": 0.646356,
+      "cos_sim_3": 0.625341,
+      "cos_sim_4": 0.687758,
+      "cos_sim_5": 0.666249,
+      "min_similarity": 0.625341,
+      "p1": 0.232137,
+      "p2": 0.129777,
+      "p3": 0.0,
+      "p4": 0.385458,
+      "p5": 0.252627,
+      "set_expected_rating": 3.2967,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.674104,
+      "cos_sim_2": 0.693484,
+      "cos_sim_3": 0.640452,
+      "cos_sim_4": 0.75121,
+      "cos_sim_5": 0.693723,
+      "min_similarity": 0.640452,
+      "p1": 0.134225,
+      "p2": 0.211526,
+      "p3": 0.0,
+      "p4": 0.441771,
+      "p5": 0.212477,
+      "set_expected_rating": 3.3867,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.630693,
+      "cos_sim_2": 0.679496,
+      "cos_sim_3": 0.648075,
+      "cos_sim_4": 0.715197,
+      "cos_sim_5": 0.723075,
+      "min_similarity": 0.630693,
+      "p1": 0.0,
+      "p2": 0.200777,
+      "p3": 0.071509,
+      "p4": 0.347652,
+      "p5": 0.380062,
+      "set_expected_rating": 3.907,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.617293,
+      "cos_sim_2": 0.625351,
+      "cos_sim_3": 0.640146,
+      "cos_sim_4": 0.707586,
+      "cos_sim_5": 0.683113,
+      "min_similarity": 0.617293,
+      "p1": 0.0,
+      "p2": 0.043086,
+      "p3": 0.122196,
+      "p4": 0.482785,
+      "p5": 0.351933,
+      "set_expected_rating": 4.1436,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.580257,
+      "cos_sim_2": 0.633578,
+      "cos_sim_3": 0.614526,
+      "cos_sim_4": 0.656583,
+      "cos_sim_5": 0.699764,
+      "min_similarity": 0.580257,
+      "p1": 0.0,
+      "p2": 0.188131,
+      "p3": 0.12091,
+      "p4": 0.269302,
+      "p5": 0.421657,
+      "set_expected_rating": 3.9245,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.696151,
+      "cos_sim_2": 0.716832,
+      "cos_sim_3": 0.771697,
+      "cos_sim_4": 0.769778,
+      "cos_sim_5": 0.730642,
+      "min_similarity": 0.696151,
+      "p1": 0.0,
+      "p2": 0.101204,
+      "p3": 0.369699,
+      "p4": 0.360307,
+      "p5": 0.168789,
+      "set_expected_rating": 3.5967,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.613354,
+      "cos_sim_2": 0.617391,
+      "cos_sim_3": 0.585835,
+      "cos_sim_4": 0.677753,
+      "cos_sim_5": 0.67728,
+      "min_similarity": 0.585835,
+      "p1": 0.11351,
+      "p2": 0.130161,
+      "p3": 0.0,
+      "p4": 0.379141,
+      "p5": 0.377187,
+      "set_expected_rating": 3.7763,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.618956,
+      "cos_sim_2": 0.6088,
+      "cos_sim_3": 0.56721,
+      "cos_sim_4": 0.652761,
+      "cos_sim_5": 0.588557,
+      "min_similarity": 0.56721,
+      "p1": 0.258426,
+      "p2": 0.207706,
+      "p3": 0.0,
+      "p4": 0.427254,
+      "p5": 0.106614,
+      "set_expected_rating": 2.9159,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.800958,
+      "cos_sim_2": 0.813492,
+      "cos_sim_3": 0.881246,
+      "cos_sim_4": 0.806131,
+      "cos_sim_5": 0.804858,
+      "min_similarity": 0.800958,
+      "p1": 0.0,
+      "p2": 0.123007,
+      "p3": 0.787952,
+      "p4": 0.050766,
+      "p5": 0.038275,
+      "set_expected_rating": 3.0043,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.426908,
+      "cos_sim_2": 0.511377,
+      "cos_sim_3": 0.534853,
+      "cos_sim_4": 0.546346,
+      "cos_sim_5": 0.539415,
+      "min_similarity": 0.426908,
+      "p1": 0.0,
+      "p2": 0.199051,
+      "p3": 0.254372,
+      "p4": 0.281454,
+      "p5": 0.265123,
+      "set_expected_rating": 3.6126,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.561249,
+      "cos_sim_2": 0.618149,
+      "cos_sim_3": 0.582264,
+      "cos_sim_4": 0.6299,
+      "cos_sim_5": 0.625105,
+      "min_similarity": 0.561249,
+      "p1": 0.0,
+      "p2": 0.27041,
+      "p3": 0.099869,
+      "p4": 0.326255,
+      "p5": 0.303466,
+      "set_expected_rating": 3.6628,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.623729,
+      "cos_sim_2": 0.615271,
+      "cos_sim_3": 0.630349,
+      "cos_sim_4": 0.655995,
+      "cos_sim_5": 0.657109,
+      "min_similarity": 0.615271,
+      "p1": 0.079723,
+      "p2": 0.0,
+      "p3": 0.142117,
+      "p4": 0.383828,
+      "p5": 0.394333,
+      "set_expected_rating": 4.013,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.725719,
+      "cos_sim_2": 0.719779,
+      "cos_sim_3": 0.666891,
+      "cos_sim_4": 0.776533,
+      "cos_sim_5": 0.779723,
+      "min_similarity": 0.666891,
+      "p1": 0.176031,
+      "p2": 0.158258,
+      "p3": 0.0,
+      "p4": 0.328082,
+      "p5": 0.337629,
+      "set_expected_rating": 3.493,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.72561,
+      "cos_sim_2": 0.743545,
+      "cos_sim_3": 0.725625,
+      "cos_sim_4": 0.767376,
+      "cos_sim_5": 0.745519,
+      "min_similarity": 0.72561,
+      "p1": 0.0,
+      "p2": 0.225244,
+      "p3": 0.000185,
+      "p4": 0.524538,
+      "p5": 0.250033,
+      "set_expected_rating": 3.7994,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.719201,
+      "cos_sim_2": 0.775249,
+      "cos_sim_3": 0.719168,
+      "cos_sim_4": 0.694043,
+      "cos_sim_5": 0.702248,
+      "min_similarity": 0.694043,
+      "p1": 0.180091,
+      "p2": 0.581314,
+      "p3": 0.179856,
+      "p4": 0.0,
+      "p5": 0.058739,
+      "set_expected_rating": 2.176,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.511607,
+      "cos_sim_2": 0.527966,
+      "cos_sim_3": 0.561987,
+      "cos_sim_4": 0.572785,
+      "cos_sim_5": 0.585746,
+      "min_similarity": 0.511607,
+      "p1": 0.0,
+      "p2": 0.080961,
+      "p3": 0.249339,
+      "p4": 0.302779,
+      "p5": 0.366921,
+      "set_expected_rating": 3.9557,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.543679,
+      "cos_sim_2": 0.564716,
+      "cos_sim_3": 0.585358,
+      "cos_sim_4": 0.575443,
+      "cos_sim_5": 0.619324,
+      "min_similarity": 0.543679,
+      "p1": 0.0,
+      "p2": 0.123657,
+      "p3": 0.24499,
+      "p4": 0.186711,
+      "p5": 0.444641,
+      "set_expected_rating": 3.9523,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.694212,
+      "cos_sim_2": 0.636502,
+      "cos_sim_3": 0.666206,
+      "cos_sim_4": 0.725213,
+      "cos_sim_5": 0.761344,
+      "min_similarity": 0.636502,
+      "p1": 0.191749,
+      "p2": 0.0,
+      "p3": 0.098695,
+      "p4": 0.294754,
+      "p5": 0.414802,
+      "set_expected_rating": 3.7409,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI Smartphone",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.650825,
+      "cos_sim_2": 0.653741,
+      "cos_sim_3": 0.62086,
+      "cos_sim_4": 0.69269,
+      "cos_sim_5": 0.672525,
+      "min_similarity": 0.62086,
+      "p1": 0.16081,
+      "p2": 0.176455,
+      "p3": 0.0,
+      "p4": 0.385476,
+      "p5": 0.27726,
+      "set_expected_rating": 3.4419,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

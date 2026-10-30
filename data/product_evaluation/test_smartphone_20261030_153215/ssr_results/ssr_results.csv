@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,expected_rating,p1,p2,p3,p4,p5,embedding_model,k_nearest_neighbors
+P1_premium_tier_owner,Test Smartphone,PE,Performance Expectancy,2.4421,0.177344,0.368404,0.371672,0.0,0.08258,nomic-embed-text,3
+P1_premium_tier_owner,Test Smartphone,BI,Behavioral Intention,2.9441,0.0,0.261802,0.58077,0.108916,0.048512,nomic-embed-text,3
+P1_premium_tier_owner,Test Smartphone,EE,Effort Expectancy,2.5541,0.371319,0.011274,0.463421,0.0,0.153986,nomic-embed-text,3
+P1_premium_tier_owner,Test Smartphone,HM,Hedonic Motivation,2.475,0.238327,0.242352,0.325279,0.194041,0.0,nomic-embed-text,3
+P1_premium_tier_owner,Test Smartphone,SI,Social Influence,2.9495,0.051368,0.138887,0.714189,0.0,0.095556,nomic-embed-text,3
+P1_premium_tier_owner,Test Smartphone,PP,Perceived Protection,2.5383,0.25022,0.366556,0.0,0.361106,0.022118,nomic-embed-text,3
+P2_midrange_heavy_user,Test Smartphone,PE,Performance Expectancy,2.836,0.110505,0.2535,0.480728,0.0,0.155267,nomic-embed-text,3
+P2_midrange_heavy_user,Test Smartphone,BI,Behavioral Intention,3.0936,0.0,0.176694,0.620909,0.13447,0.067927,nomic-embed-text,3
+P2_midrange_heavy_user,Test Smartphone,EE,Effort Expectancy,2.8931,0.313842,0.0,0.355738,0.140009,0.190411,nomic-embed-text,3
+P2_midrange_heavy_user,Test Smartphone,HM,Hedonic Motivation,2.5845,0.19381,0.246968,0.340115,0.219107,0.0,nomic-embed-text,3
+P2_midrange_heavy_user,Test Smartphone,SI,Social Influence,3.0786,0.0,0.107221,0.776926,0.04585,0.070002,nomic-embed-text,3
+P2_midrange_heavy_user,Test Smartphone,PP,Perceived Protection,2.5636,0.2238,0.315922,0.133145,0.327134,0.0,nomic-embed-text,3
+P3_midrange_moderate_user,Test Smartphone,PE,Performance Expectancy,2.5976,0.099946,0.375981,0.437313,0.0,0.08676,nomic-embed-text,3
+P3_midrange_moderate_user,Test Smartphone,BI,Behavioral Intention,2.9936,0.00821,0.189161,0.603437,0.199192,0.0,nomic-embed-text,3
+P3_midrange_moderate_user,Test Smartphone,EE,Effort Expectancy,2.7433,0.38282,0.0,0.297518,0.130423,0.189239,nomic-embed-text,3
+P3_midrange_moderate_user,Test Smartphone,HM,Hedonic Motivation,3.0166,0.027304,0.110047,0.681436,0.181212,0.0,nomic-embed-text,3
+P3_midrange_moderate_user,Test Smartphone,SI,Social Influence,3.159,0.0,0.128542,0.69352,0.06834,0.109598,nomic-embed-text,3
+P3_midrange_moderate_user,Test Smartphone,PP,Perceived Protection,2.8524,0.232613,0.282502,0.0,0.369611,0.115273,nomic-embed-text,3
+P4_budget_or_undisclosed_price,Test Smartphone,PE,Performance Expectancy,2.3299,0.152487,0.396504,0.435323,0.0,0.015686,nomic-embed-text,3
+P4_budget_or_undisclosed_price,Test Smartphone,BI,Behavioral Intention,3.2156,0.0,0.227683,0.439029,0.223247,0.110041,nomic-embed-text,3
+P4_budget_or_undisclosed_price,Test Smartphone,EE,Effort Expectancy,3.1559,0.26995,0.0,0.279596,0.205149,0.245305,nomic-embed-text,3
+P4_budget_or_undisclosed_price,Test Smartphone,HM,Hedonic Motivation,2.6524,0.112185,0.177091,0.65687,0.053854,0.0,nomic-embed-text,3
+P4_budget_or_undisclosed_price,Test Smartphone,SI,Social Influence,3.4968,0.053023,0.0,0.63059,0.029937,0.28645,nomic-embed-text,3
+P4_budget_or_undisclosed_price,Test Smartphone,PP,Perceived Protection,2.7254,0.176654,0.411723,0.0,0.332814,0.078809,nomic-embed-text,3

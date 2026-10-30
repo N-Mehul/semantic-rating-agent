@@ -1,0 +1,46 @@
+{
+  "A": {
+    "raw_alpha0": {
+      "exact_acc": 0.4564,
+      "ci_lo": 0.4304,
+      "ci_hi": 0.4817,
+      "n_test": 1501,
+      "n_fallback_to_prior": 0
+    },
+    "alpha0.5": {
+      "exact_acc": 0.4564,
+      "ci_lo": 0.4304,
+      "ci_hi": 0.4817,
+      "n_test": 1501,
+      "n_fallback_to_prior": 0
+    },
+    "prior_floor": {
+      "mode": 4,
+      "exact_acc": 0.2838,
+      "ci_lo": 0.2605,
+      "ci_hi": 0.3065
+    }
+  },
+  "B": {
+    "raw_alpha0": {
+      "exact_acc": 0.3645,
+      "ci_lo": 0.3434,
+      "ci_hi": 0.3857,
+      "n_test": 1797,
+      "n_fallback_to_prior": 1797
+    },
+    "alpha5.0": {
+      "exact_acc": 0.3645,
+      "ci_lo": 0.3434,
+      "ci_hi": 0.3857,
+      "n_test": 1797,
+      "n_fallback_to_prior": 1797
+    },
+    "prior_floor": {
+      "mode": 4,
+      "exact_acc": 0.3645,
+      "ci_lo": 0.3434,
+      "ci_hi": 0.3857
+    }
+  }
+}
