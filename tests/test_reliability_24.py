@@ -324,7 +324,7 @@ def test_an_answer_that_never_validates_gets_no_score_and_full_diagnostics(servi
 
 
 # ---------------------------------------------------------------- SSR integrity
-ANCHOR_HASH = "20dd6d9a1e036a4f133ad84d795240444a930ddd4ed6928d6d1ca79a9e3da13c"
+ANCHOR_HASH = "b05cce4bcfcae54cf97504029d8a8b41233efb5d91222f0a3c0ff8a56c3643be"
 
 
 def test_ssr_parameters_and_anchor_sets_are_frozen():

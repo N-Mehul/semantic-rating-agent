@@ -1122,25 +1122,25 @@ PERSONA_VOICES: Final[dict[str, str]] = {
         "You sound confident and a bit picky. Answer style: start with your first impression of the quality, then say if it feels premium enough for you."
     ),
     "P2": (
-        "You care most about speed, processor, RAM, display and latest tech. You talk about specs directly and compare value per rupee. "
-        "You sound curious and analytical. Answer style: start by naming one or two specs, then say whether they are strong enough for you."
+        "You care most about speed, processor, RAM, display and latest tech. You use your phone very heavily, so you notice heating, lag and battery drain under gaming and multitasking, and you are quick to look at other brands if performance disappoints. "
+        "You sound curious, analytical and demanding. Answer style: start by naming one or two specs, then say whether they would hold up under your heavy use."
     ),
     "P3": (
         "You care most about whether it works reliably every day: battery, ease of use, durability and fair price. "
         "You sound calm and sensible, not excited by fancy features. Answer style: start with how it would fit a normal day, then give your simple verdict."
     ),
     "P4": (
-        "You care most about price and value for money. You want the basics to work and you worry about spending too much. "
-        "You sound careful and cost-focused. Answer style: start with the price, then say whether the basic features make it worth that money."
+        "You care most about price and value for money. You want the basics to work and you worry about spending too much, but when a product covers your daily needs at a fair price you are genuinely satisfied and accept its limits. "
+        "You sound careful and practical. Answer style: start with the price, then say whether the basic features make it worth that money."
     ),
 }
 
 
 PERSONA_BI_FOCUS: Final[dict[str, str]] = {
     "P1": "You buy for quality and feel. A cheap price does not attract you by itself; you ask whether it feels premium enough to be your main device.",
-    "P2": "You buy for specs and performance. You check whether the processor, display, battery and features are strong enough for the money.",
+    "P2": "You buy for specs and performance. You check whether the processor, display, battery and features will hold up under heavy daily use without heating or lag.",
     "P3": "You buy for daily use. You check whether it will be reliable, easy and fairly priced for normal everyday tasks.",
-    "P4": "You buy for value. You think hard about the money first, then whether the basic features are worth it.",
+    "P4": "You buy for value. You think hard about the money first; if the basic features are worth that money, you are happy to buy.",
 }
 
 

@@ -1,0 +1,162 @@
+{
+  "n_pairs": 80,
+  "model": "qwen2.5:7b-instruct",
+  "embedding": "nomic-embed-text",
+  "ssr": "E-SSR k=3 T=0.75, bi anchors",
+  "distribution": {
+    "human_q21_share": {
+      "1": 0.062,
+      "2": 0.025,
+      "3": 0.325,
+      "4": 0.375,
+      "5": 0.212
+    },
+    "twin_essr_share": {
+      "2.0": 0.062,
+      "3.0": 0.3,
+      "4.0": 0.638
+    },
+    "twin_dle_share": {
+      "2": 0.012,
+      "3": 0.25,
+      "4": 0.575,
+      "5": 0.162
+    },
+    "W1_twin_essr_vs_human": 0.5223765896870822,
+    "W1_twin_dle_vs_human": 0.3375,
+    "KS_twin_essr_vs_human": 0.2125,
+    "KS_twin_dle_vs_human": 0.15,
+    "SD": {
+      "human_q21": 1.0380269746013349,
+      "twin_E": 0.45135141291541686,
+      "twin_DLE": 0.6749355337241806
+    }
+  },
+  "persona": {
+    "groups": 4,
+    "twin_E": {
+      "spearman": 0.7999999999999999,
+      "pearson": 0.764778915811083,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.2305593826337916
+    },
+    "twin_DLE": {
+      "spearman": 1.0,
+      "pearson": 0.893329278872974,
+      "pearson_ci95": [
+        0.6962599473000995,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.33750000000000013
+    },
+    "human_text_E": {
+      "spearman": 0.7999999999999999,
+      "pearson": 0.9091259756566515,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.3159331928780338
+    }
+  },
+  "brand": {
+    "groups": 3,
+    "twin_E": {
+      "spearman": 0.5,
+      "pearson": 0.9331553464820673,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.4455057516684741
+    },
+    "twin_DLE": {
+      "spearman": 1.0,
+      "pearson": 0.8992869016397527,
+      "pearson_ci95": [
+        0.8992869016397527,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.2397486772486769
+    },
+    "human_text_E": {
+      "spearman": 0.5,
+      "pearson": 0.24855875286879914,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.510555663672204
+    }
+  },
+  "brand_x_persona": {
+    "groups": 5,
+    "twin_E": {
+      "spearman": 0.49999999999999994,
+      "pearson": 0.6559907386380112,
+      "pearson_ci95": [
+        -0.9999999999999999,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.30459736077831756
+    },
+    "twin_DLE": {
+      "spearman": 0.8720815992723809,
+      "pearson": 0.8042494904900541,
+      "pearson_ci95": [
+        0.38684529410942803,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.4288156288156288
+    },
+    "human_text_E": {
+      "spearman": 0.7,
+      "pearson": 0.6155278945863065,
+      "pearson_ci95": [
+        -0.8263646520410582,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.43750474018273
+    }
+  },
+  "human_text_vs_own_q21_all": {
+    "n": 80,
+    "spearman_Q26": 0.25770723047057337,
+    "spearman_all4": 0.2593102576551503
+  },
+  "human_text_vs_own_q21_q26_3plus_words": {
+    "n": 40,
+    "spearman_Q26": 0.5152501205311809,
+    "spearman_all4": 0.48238498316012385
+  },
+  "gate_first_pass_rate": 0.975,
+  "individual": {
+    "twin_essr": {
+      "n": 80,
+      "exact": 0.475,
+      "within1": 0.8875,
+      "MAE": 0.65,
+      "QWK": 0.36316695352839923,
+      "spearman": 0.3899631558424849
+    },
+    "twin_direct": {
+      "n": 80,
+      "exact": 0.5625,
+      "within1": 0.85,
+      "MAE": 0.6125,
+      "QWK": 0.36069455406471973,
+      "spearman": 0.43948291211445445
+    },
+    "chance_baseline": {
+      "n": 80,
+      "exact": 0.3125,
+      "within1": 0.6875,
+      "MAE": 1.1,
+      "QWK": -0.05710814094775207,
+      "spearman": -0.12466375913616634
+    }
+  }
+}

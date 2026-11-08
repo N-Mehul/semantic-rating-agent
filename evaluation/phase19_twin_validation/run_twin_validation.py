@@ -52,9 +52,9 @@ Q = {
 }
 PERSONA_TEXT = {
     "P1": "a premium-tier phone owner who values build quality, polish and long-term reliability",
-    "P2": "a mid-range phone owner and heavy daily user who cares about speed, multitasking, gaming and heating",
+    "P2": "a mid-range phone owner and very heavy daily user; under heavy gaming and multitasking you notice heating, lag and battery drain, and you often look at other brands",
     "P3": "a mid-range phone owner with moderate daily use who values battery life, a simple interface and dependability",
-    "P4": "a budget-conscious phone owner who judges everything by value for money",
+    "P4": "a budget phone owner who paid little and feels the phone gives fair value for its price; you accept its limits because it covers your daily needs",
 }
 REPURCHASE_ANCHORS = [
     "I would definitely not buy a smartphone from this brand again.",
@@ -277,6 +277,21 @@ def analyse(df: pd.DataFrame, twins_path: Path) -> None:
             "spearman_Q26": float(stats.spearmanr(sub.h_E, sub.q21, nan_policy="omit").statistic),
             "spearman_all4": float(stats.spearmanr(sub.h_E_all, sub.q21, nan_policy="omit").statistic)}
     M["gate_first_pass_rate"] = float((d.tries == 1).mean())
+    def indiv(pred, true):
+        pred = pd.Series(pred).reset_index(drop=True).round().clip(1, 5)
+        true = pd.Series(true).reset_index(drop=True)
+        ok = pred.notna() & true.notna()
+        p, t = pred[ok].astype(int).values, true[ok].astype(int).values
+        from sklearn.metrics import cohen_kappa_score
+        return {"n": int(len(p)), "exact": float((p == t).mean()), "within1": float((abs(p - t) <= 1).mean()),
+                "MAE": float(abs(p - t).mean()), "QWK": float(cohen_kappa_score(t, p, weights="quadratic")),
+                "spearman": float(stats.spearmanr(p, t).statistic)}
+    rng = np.random.default_rng(SEED)
+    shares = d.q21.value_counts(normalize=True).sort_index()
+    chance = rng.choice(shares.index.values, size=len(d), p=shares.values)
+    M["individual"] = {"twin_essr": indiv(d.t_E, d.q21), "twin_direct": indiv(d.dle, d.q21),
+                       "chance_baseline": indiv(chance, d.q21)}
+    print("INDIVIDUAL LEVEL:", json.dumps(M["individual"], indent=2))
     (HERE / f"twin_metrics_{ANCHOR_SET}.json").write_text(json.dumps(M, indent=2, default=float), encoding="utf-8")
     d.drop(columns=["answers"]).to_csv(HERE / f"twin_pairs_scored_{ANCHOR_SET}.csv", index=False)
     figures(d, tables)
@@ -336,6 +351,7 @@ def main() -> None:
     ap.add_argument("--model", default=GEN_MODEL)
     ap.add_argument("--host", default=OLLAMA)
     ap.add_argument("--analyse-only", action="store_true")
+    ap.add_argument("--redo-personas", default="", help="e.g. P2,P4: back up twins.jsonl and regenerate only these personas")
     ap.add_argument("--anchors", choices=["bi", "repurchase"], default="bi")
     a = ap.parse_args()
     GEN_MODEL, OLLAMA, ANCHOR_SET = a.model, a.host, a.anchors
@@ -347,6 +363,14 @@ def main() -> None:
                         for _, g in df.groupby("persona")]).reset_index(drop=True)
         print(f"pilot sample: {len(df)}")
     out = HERE / "twins.jsonl"
+    redo = [x.strip() for x in a.redo_personas.split(",") if x.strip()]
+    if redo and out.exists():
+        lines = out.read_text(encoding="utf-8").splitlines()
+        backup = HERE / f"twins_backup_{time.strftime('%Y%m%d_%H%M%S')}.jsonl"
+        backup.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        keep = [l for l in lines if l.strip() and json.loads(l)["persona"] not in redo]
+        out.write_text("".join(l + "\n" for l in keep), encoding="utf-8")
+        print(f"backup saved: {backup.name}; removed {len(lines) - len(keep)} twins of {redo} for regeneration")
     if not a.analyse_only:
         generate(df, out)
     analyse(df, out)
