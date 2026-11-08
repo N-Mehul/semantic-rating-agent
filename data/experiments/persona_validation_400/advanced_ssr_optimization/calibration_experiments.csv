@@ -1,0 +1,5 @@
+Calibration_Method,Training_Protocol,Test_Set_Wasserstein_W1,Test_Set_KS_Statistic,Test_Set_Mean_Diff,Synthetic_Variance_SD,Human_Target_SD,Variance_Recovery_Ratio,PE_ANOVA_F,PE_ANOVA_p,PE_Eta_Squared,PE_P1_vs_P3_Hedges_g,Persona_Preservation_Verdict
+"Uncalibrated Baseline (Canonical k=3, T=1.0)",None (Original Model),0.4897,0.4144,-0.2312,0.6225,1.0931,0.5695,4.3475,0.007518,0.1693,1.0598,Preserved (Original Standard)
+Variance-Expanding Linear Rescaling,"Fitted on 50% Train, Evaluated on 50% Held-Out Test",0.3377,0.2737,0.0746,1.0515,1.0931,0.962,4.2794,0.008139,0.1671,1.0565,PERFECTLY PRESERVED (Linear order-preserving bijection)
+Quantile Matching (Empirical CDF Inversion),"Fitted on 50% Train, Evaluated on 50% Held-Out Test",0.1093,0.09,0.0923,1.0457,1.0931,0.9566,2.6397,0.056954,0.1101,0.7857,Partially Preserved (Step function compresses subtle contrasts)
+Temperature Optimization (T=0.5 Sharpened),Selected by Grid Minimization on Train W1,0.3677,0.2248,-0.0845,0.8626,1.0931,0.7891,2.5577,0.062856,0.1071,0.8185,Preserved (Expands variance within model weights)

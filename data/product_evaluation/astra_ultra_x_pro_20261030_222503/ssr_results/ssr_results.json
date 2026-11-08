@@ -1,0 +1,2014 @@
+{
+  "evaluation_id": "astra_ultra_x_pro_20261030_222503",
+  "product_name": "Astra Ultra X Pro",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-30T17:03:16.332190+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "primary_adoption_rating": 2.5916,
+      "primary_adoption_pmf": [
+        0.026667,
+        0.366515,
+        0.601097,
+        0.0,
+        0.005721
+      ],
+      "construct_scores": {
+        "PE": 3.0807,
+        "EE": 2.4976,
+        "HM": 4.2958,
+        "SI": 3.4186,
+        "PP": 3.4119,
+        "BI": 2.5916
+      },
+      "construct_responses": {
+        "PE": "This phone would be super useful for my studies and daily tasks. With its powerful AI and fast processor, I could manage my assignments and reminders easily. The AI personal assistant would definitely help with managing my schedule and staying on top of my classes.",
+        "EE": "Learning to use this phone might be a bit tricky since it's a different OS, but with the advanced AI assistant, I should be able to figure it out quickly. My current tech comfort level is decent, so I wouldn't find it too difficult to adapt.",
+        "HM": "Using this phone for gaming, social media, and entertainment would be a lot of fun. The advanced camera and AMOLED display would make my videos and photos look amazing. It's definitely a step up from my current phone, and I'd love to have all these features.",
+        "SI": "My friends and family would probably be excited to see such a high-end phone. They might even envy me, but they'd also be curious about the price. I think they'd support my choice as long as I stay within my budget.",
+        "PP": "I feel quite confident about the privacy and security features. The on-device AI processing would help keep my data safe, and the smart battery optimization would be a relief. I'd be happy to have those features, but I'd need to make sure the price isn't too steep.",
+        "BI": "While I love the features and performance, the price is a bit out of my league. I might consider it if there's a good discount, but for now, it's probably not going to happen. I'd rather stick to my current phone and save up for something more affordable.",
+        "OVERALL": "Overall, it's an impressive phone with a lot of useful features, but the price is a bit high for me. I'd love to have it, but I need to find a way to save up first."
+      },
+      "response_text": "Overall, it's an impressive phone with a lot of useful features, but the price is a bit high for me. I'd love to have it, but I need to find a way to save up first.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This phone would be super useful for my studies and daily tasks. With its powerful AI and fast processor, I could manage my assignments and reminders easily. The AI personal assistant would definitely help with managing my schedule and staying on top of my classes.",
+          "cosine_similarities": [
+            0.735005,
+            0.744514,
+            0.696599,
+            0.776846,
+            0.726776
+          ],
+          "min_similarity": 0.696599,
+          "pmf_probabilities": [
+            0.195207,
+            0.243539,
+            0.0,
+            0.407873,
+            0.153381
+          ],
+          "expected_rating": 3.0807,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Learning to use this phone might be a bit tricky since it's a different OS, but with the advanced AI assistant, I should be able to figure it out quickly. My current tech comfort level is decent, so I wouldn't find it too difficult to adapt.",
+          "cosine_similarities": [
+            0.766545,
+            0.681735,
+            0.696364,
+            0.704898,
+            0.715645
+          ],
+          "min_similarity": 0.681735,
+          "pmf_probabilities": [
+            0.54187,
+            0.0,
+            0.093472,
+            0.147996,
+            0.216662
+          ],
+          "expected_rating": 2.4976,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using this phone for gaming, social media, and entertainment would be a lot of fun. The advanced camera and AMOLED display would make my videos and photos look amazing. It's definitely a step up from my current phone, and I'd love to have all these features.",
+          "cosine_similarities": [
+            0.638314,
+            0.646022,
+            0.65967,
+            0.665436,
+            0.714136
+          ],
+          "min_similarity": 0.638314,
+          "pmf_probabilities": [
+            0.0,
+            0.058393,
+            0.161777,
+            0.20546,
+            0.57437
+          ],
+          "expected_rating": 4.2958,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and family would probably be excited to see such a high-end phone. They might even envy me, but they'd also be curious about the price. I think they'd support my choice as long as I stay within my budget.",
+          "cosine_similarities": [
+            0.668191,
+            0.62457,
+            0.681691,
+            0.680185,
+            0.685959
+          ],
+          "min_similarity": 0.62457,
+          "pmf_probabilities": [
+            0.200329,
+            0.0,
+            0.262329,
+            0.255411,
+            0.281931
+          ],
+          "expected_rating": 3.4186,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "I feel quite confident about the privacy and security features. The on-device AI processing would help keep my data safe, and the smart battery optimization would be a relief. I'd be happy to have those features, but I'd need to make sure the price isn't too steep.",
+          "cosine_similarities": [
+            0.623504,
+            0.606021,
+            0.55654,
+            0.665172,
+            0.661997
+          ],
+          "min_similarity": 0.55654,
+          "pmf_probabilities": [
+            0.202594,
+            0.149701,
+            0.0,
+            0.328655,
+            0.31905
+          ],
+          "expected_rating": 3.4119,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "While I love the features and performance, the price is a bit out of my league. I might consider it if there's a good discount, but for now, it's probably not going to happen. I'd rather stick to my current phone and save up for something more affordable.",
+          "cosine_similarities": [
+            0.617,
+            0.658002,
+            0.686303,
+            0.613783,
+            0.614473
+          ],
+          "min_similarity": 0.613783,
+          "pmf_probabilities": [
+            0.026667,
+            0.366515,
+            0.601097,
+            0.0,
+            0.005721
+          ],
+          "expected_rating": 2.5916,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "primary_adoption_rating": 2.5865,
+      "primary_adoption_pmf": [
+        0.065196,
+        0.337688,
+        0.569823,
+        0.0,
+        0.027293
+      ],
+      "construct_scores": {
+        "PE": 2.3156,
+        "EE": 2.7765,
+        "HM": 4.0001,
+        "SI": 3.5391,
+        "PP": 3.1314,
+        "BI": 2.5865
+      },
+      "construct_responses": {
+        "PE": "For my study and daily tasks, this phone would be super helpful. It has a lot of AI features like reminders and notifications, which would be great for my exams and assignments. But the price is a bit steep, so I might not consider it right now.",
+        "EE": "Learning and using a new phone like this would be a bit challenging, but I'm okay with that. Since I'm already comfortable with Android, I think I could pick it up easily. But the price is a concern, and I might wait for a more affordable option.",
+        "HM": "Using this phone for gaming and social media would be fun and engaging. The high-quality camera and fast processor would make it a joy to use, but the price is a bit high. I might look for something with similar features at a lower price.",
+        "SI": "My friends and family would probably be impressed by the advanced features and design. They might encourage me to get it, but the price is a big factor. I would need to convince them of the value for money.",
+        "PP": "I'm quite confident about the privacy and security of the phone. The on-device AI processing sounds like a good feature for protecting personal information. But the price is a bit too high for my budget right now.",
+        "BI": "I don't think I would consider purchasing it at this price. I might wait for a sale or a more affordable model with similar features. The advanced AI and camera are great, but the price is a dealbreaker for me.",
+        "OVERALL": "The phone has a lot of cool features, but the price is just too high for me. I might look for something similar at a lower price. The AI and camera are awesome, but not worth the money right now."
+      },
+      "response_text": "The phone has a lot of cool features, but the price is just too high for me. I might look for something similar at a lower price. The AI and camera are awesome, but not worth the money right now.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "For my study and daily tasks, this phone would be super helpful. It has a lot of AI features like reminders and notifications, which would be great for my exams and assignments. But the price is a bit steep, so I might not consider it right now.",
+          "cosine_similarities": [
+            0.731995,
+            0.74514,
+            0.702781,
+            0.721343,
+            0.674932
+          ],
+          "min_similarity": 0.674932,
+          "pmf_probabilities": [
+            0.283146,
+            0.348374,
+            0.138188,
+            0.230292,
+            0.0
+          ],
+          "expected_rating": 2.3156,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Learning and using a new phone like this would be a bit challenging, but I'm okay with that. Since I'm already comfortable with Android, I think I could pick it up easily. But the price is a concern, and I might wait for a more affordable option.",
+          "cosine_similarities": [
+            0.711944,
+            0.608324,
+            0.664872,
+            0.648263,
+            0.663447
+          ],
+          "min_similarity": 0.608324,
+          "pmf_probabilities": [
+            0.405986,
+            0.0,
+            0.221556,
+            0.156482,
+            0.215976
+          ],
+          "expected_rating": 2.7765,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using this phone for gaming and social media would be fun and engaging. The high-quality camera and fast processor would make it a joy to use, but the price is a bit high. I might look for something with similar features at a lower price.",
+          "cosine_similarities": [
+            0.622382,
+            0.633406,
+            0.646351,
+            0.640114,
+            0.668407
+          ],
+          "min_similarity": 0.622382,
+          "pmf_probabilities": [
+            0.0,
+            0.111639,
+            0.242724,
+            0.17956,
+            0.466077
+          ],
+          "expected_rating": 4.0001,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and family would probably be impressed by the advanced features and design. They might encourage me to get it, but the price is a big factor. I would need to convince them of the value for money.",
+          "cosine_similarities": [
+            0.534483,
+            0.551775,
+            0.60143,
+            0.570121,
+            0.566158
+          ],
+          "min_similarity": 0.534483,
+          "pmf_probabilities": [
+            0.0,
+            0.114103,
+            0.441741,
+            0.235155,
+            0.209001
+          ],
+          "expected_rating": 3.5391,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "I'm quite confident about the privacy and security of the phone. The on-device AI processing sounds like a good feature for protecting personal information. But the price is a bit too high for my budget right now.",
+          "cosine_similarities": [
+            0.724737,
+            0.697581,
+            0.648032,
+            0.742794,
+            0.721483
+          ],
+          "min_similarity": 0.648032,
+          "pmf_probabilities": [
+            0.260486,
+            0.168266,
+            0.0,
+            0.32181,
+            0.249438
+          ],
+          "expected_rating": 3.1314,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I don't think I would consider purchasing it at this price. I might wait for a sale or a more affordable model with similar features. The advanced AI and camera are great, but the price is a dealbreaker for me.",
+          "cosine_similarities": [
+            0.521518,
+            0.55976,
+            0.592339,
+            0.512368,
+            0.516199
+          ],
+          "min_similarity": 0.512368,
+          "pmf_probabilities": [
+            0.065196,
+            0.337688,
+            0.569823,
+            0.0,
+            0.027293
+          ],
+          "expected_rating": 2.5865,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "primary_adoption_rating": 3.1753,
+      "primary_adoption_pmf": [
+        0.0,
+        0.342775,
+        0.321584,
+        0.153169,
+        0.182471
+      ],
+      "construct_scores": {
+        "PE": 2.4633,
+        "EE": 3.0669,
+        "HM": 3.6513,
+        "SI": 2.7048,
+        "PP": 3.0137,
+        "BI": 3.1753
+      },
+      "construct_responses": {
+        "PE": "This phone seems quite useful for my study and daily tasks. The AI assistant could help with reminders and notifications, making my life a bit easier. But the price is a bit steep, so I might wait for a sale or something.",
+        "EE": "I think it would be easy to learn, but the interface might be a bit too complicated for my liking. The current Android is more user-friendly, and I'm not really comfortable with all these advanced features.",
+        "HM": "I'm not a big gamer, but the fast processor and smooth performance could be fun for casual games. For social media, the AMOLED display sounds good, but I wouldn't spend that much just for that.",
+        "SI": "My friends would probably be curious about it, but they might not understand why I'd spend so much. Some might think it's overkill, but others might envy it.",
+        "PP": "With all the features, privacy is a big concern. I'm not sure how well the local AI processing would protect my data, but it's better than nothing.",
+        "BI": "I doubt I'd buy it right away. It's a bit too expensive for my current budget, and I'd prefer something more affordable with similar features.",
+        "OVERALL": "This phone seems like a good choice for someone who needs all these features, but it doesn't fit my needs or budget. I might look for a more affordable option with similar capabilities."
+      },
+      "response_text": "This phone seems like a good choice for someone who needs all these features, but it doesn't fit my needs or budget. I might look for a more affordable option with similar capabilities.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This phone seems quite useful for my study and daily tasks. The AI assistant could help with reminders and notifications, making my life a bit easier. But the price is a bit steep, so I might wait for a sale or something.",
+          "cosine_similarities": [
+            0.700966,
+            0.727869,
+            0.685,
+            0.711534,
+            0.668263
+          ],
+          "min_similarity": 0.668263,
+          "pmf_probabilities": [
+            0.214706,
+            0.391328,
+            0.109882,
+            0.284084,
+            0.0
+          ],
+          "expected_rating": 2.4633,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "I think it would be easy to learn, but the interface might be a bit too complicated for my liking. The current Android is more user-friendly, and I'm not really comfortable with all these advanced features.",
+          "cosine_similarities": [
+            0.736896,
+            0.710896,
+            0.674118,
+            0.750281,
+            0.724777
+          ],
+          "min_similarity": 0.674118,
+          "pmf_probabilities": [
+            0.277315,
+            0.162463,
+            0.0,
+            0.336442,
+            0.22378
+          ],
+          "expected_rating": 3.0669,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "I'm not a big gamer, but the fast processor and smooth performance could be fun for casual games. For social media, the AMOLED display sounds good, but I wouldn't spend that much just for that.",
+          "cosine_similarities": [
+            0.541682,
+            0.575079,
+            0.558746,
+            0.590426,
+            0.578211
+          ],
+          "min_similarity": 0.541682,
+          "pmf_probabilities": [
+            0.0,
+            0.246046,
+            0.125717,
+            0.359116,
+            0.269121
+          ],
+          "expected_rating": 3.6513,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends would probably be curious about it, but they might not understand why I'd spend so much. Some might think it's overkill, but others might envy it.",
+          "cosine_similarities": [
+            0.556362,
+            0.544636,
+            0.601148,
+            0.550975,
+            0.538651
+          ],
+          "min_similarity": 0.538651,
+          "pmf_probabilities": [
+            0.179777,
+            0.060754,
+            0.634373,
+            0.125096,
+            0.0
+          ],
+          "expected_rating": 2.7048,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "With all the features, privacy is a big concern. I'm not sure how well the local AI processing would protect my data, but it's better than nothing.",
+          "cosine_similarities": [
+            0.657224,
+            0.647796,
+            0.588294,
+            0.676109,
+            0.644938
+          ],
+          "min_similarity": 0.588294,
+          "pmf_probabilities": [
+            0.252593,
+            0.218044,
+            0.0,
+            0.321795,
+            0.207569
+          ],
+          "expected_rating": 3.0137,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I doubt I'd buy it right away. It's a bit too expensive for my current budget, and I'd prefer something more affordable with similar features.",
+          "cosine_similarities": [
+            0.543087,
+            0.605466,
+            0.60161,
+            0.570961,
+            0.576294
+          ],
+          "min_similarity": 0.543087,
+          "pmf_probabilities": [
+            0.0,
+            0.342775,
+            0.321584,
+            0.153169,
+            0.182471
+          ],
+          "expected_rating": 3.1753,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "primary_adoption_rating": 3.0132,
+      "primary_adoption_pmf": [
+        0.0,
+        0.325371,
+        0.461063,
+        0.088584,
+        0.124982
+      ],
+      "construct_scores": {
+        "PE": 2.3654,
+        "EE": 3.0167,
+        "HM": 4.1422,
+        "SI": 3.7713,
+        "PP": 3.0135,
+        "BI": 3.0132
+      },
+      "construct_responses": {
+        "PE": "For my study tasks, this phone would be really helpful. With its advanced AI assistant, it could set reminders and help with research, which would save me a lot of time. But the price is a bit steep, so I'd need to compare it with other options.",
+        "EE": "Learning a new smartphone would take some time, but I think I could handle it. The AI assistant could guide me, and I already use an Android phone, so it wouldn't be too difficult. The tech comfort score of 3.7 means I might need some getting used to, but I'm willing to give it a try.",
+        "HM": "For gaming and entertainment, it would be really fun. The high refresh display and fast processor would make games look smoother, and the large storage would help with all my music and videos. It would be great for binge-watching and playing games, but the price might be a bit much for what I'm looking for.",
+        "SI": "My friends and family might be a bit surprised by the price, but they would be impressed by its features. They might encourage me to buy it if it really delivers on all the promises. For content creation, it could be useful, but they might question why I'm spending so much on a phone when I don't need all those features.",
+        "PP": "The on-device AI processing and privacy features sound good, but I'd be worried about the cost. With my budget, I'd need to be sure that the privacy is as good as they say and that the phone doesn't have any hidden costs or vulnerabilities.",
+        "BI": "Given the price, I don't think I'd consider it right now. I'd wait for a more affordable model with similar features. Maybe in a year or two when the price comes down, I might reconsider.",
+        "OVERALL": "Overall, the phone seems great for someone who needs all these features, but for my budget and needs, it's a bit out of reach. The AI and camera are impressive, but the price is a bit high for me."
+      },
+      "response_text": "Overall, the phone seems great for someone who needs all these features, but for my budget and needs, it's a bit out of reach. The AI and camera are impressive, but the price is a bit high for me.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "For my study tasks, this phone would be really helpful. With its advanced AI assistant, it could set reminders and help with research, which would save me a lot of time. But the price is a bit steep, so I'd need to compare it with other options.",
+          "cosine_similarities": [
+            0.690825,
+            0.709604,
+            0.706283,
+            0.680361,
+            0.66452
+          ],
+          "min_similarity": 0.66452,
+          "pmf_probabilities": [
+            0.203928,
+            0.349509,
+            0.323758,
+            0.122805,
+            0.0
+          ],
+          "expected_rating": 2.3654,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Learning a new smartphone would take some time, but I think I could handle it. The AI assistant could guide me, and I already use an Android phone, so it wouldn't be too difficult. The tech comfort score of 3.7 means I might need some getting used to, but I'm willing to give it a try.",
+          "cosine_similarities": [
+            0.76338,
+            0.664938,
+            0.702921,
+            0.737357,
+            0.729454
+          ],
+          "min_similarity": 0.664938,
+          "pmf_probabilities": [
+            0.360117,
+            0.0,
+            0.138948,
+            0.264923,
+            0.236012
+          ],
+          "expected_rating": 3.0167,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "For gaming and entertainment, it would be really fun. The high refresh display and fast processor would make games look smoother, and the large storage would help with all my music and videos. It would be great for binge-watching and playing games, but the price might be a bit much for what I'm looking for.",
+          "cosine_similarities": [
+            0.514419,
+            0.535905,
+            0.540484,
+            0.541302,
+            0.607249
+          ],
+          "min_similarity": 0.514419,
+          "pmf_probabilities": [
+            0.0,
+            0.128455,
+            0.155833,
+            0.160723,
+            0.554989
+          ],
+          "expected_rating": 4.1422,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and family might be a bit surprised by the price, but they would be impressed by its features. They might encourage me to buy it if it really delivers on all the promises. For content creation, it could be useful, but they might question why I'm spending so much on a phone when I don't need all those features.",
+          "cosine_similarities": [
+            0.636772,
+            0.626494,
+            0.673245,
+            0.661064,
+            0.672587
+          ],
+          "min_similarity": 0.626494,
+          "pmf_probabilities": [
+            0.074645,
+            0.0,
+            0.339537,
+            0.251066,
+            0.334753
+          ],
+          "expected_rating": 3.7713,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The on-device AI processing and privacy features sound good, but I'd be worried about the cost. With my budget, I'd need to be sure that the privacy is as good as they say and that the phone doesn't have any hidden costs or vulnerabilities.",
+          "cosine_similarities": [
+            0.643683,
+            0.632721,
+            0.577844,
+            0.661432,
+            0.631066
+          ],
+          "min_similarity": 0.577844,
+          "pmf_probabilities": [
+            0.255658,
+            0.213094,
+            0.0,
+            0.324581,
+            0.206667
+          ],
+          "expected_rating": 3.0135,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Given the price, I don't think I'd consider it right now. I'd wait for a more affordable model with similar features. Maybe in a year or two when the price comes down, I might reconsider.",
+          "cosine_similarities": [
+            0.584639,
+            0.642219,
+            0.666232,
+            0.600315,
+            0.606757
+          ],
+          "min_similarity": 0.584639,
+          "pmf_probabilities": [
+            0.0,
+            0.325371,
+            0.461063,
+            0.088584,
+            0.124982
+          ],
+          "expected_rating": 3.0132,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.735005,
+        0.744514,
+        0.696599,
+        0.776846,
+        0.726776
+      ],
+      "pmf_probabilities": [
+        0.195207,
+        0.243539,
+        0.0,
+        0.407873,
+        0.153381
+      ],
+      "expected_rating": 3.0807,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.766545,
+        0.681735,
+        0.696364,
+        0.704898,
+        0.715645
+      ],
+      "pmf_probabilities": [
+        0.54187,
+        0.0,
+        0.093472,
+        0.147996,
+        0.216662
+      ],
+      "expected_rating": 2.4976,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.638314,
+        0.646022,
+        0.65967,
+        0.665436,
+        0.714136
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.058393,
+        0.161777,
+        0.20546,
+        0.57437
+      ],
+      "expected_rating": 4.2958,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.668191,
+        0.62457,
+        0.681691,
+        0.680185,
+        0.685959
+      ],
+      "pmf_probabilities": [
+        0.200329,
+        0.0,
+        0.262329,
+        0.255411,
+        0.281931
+      ],
+      "expected_rating": 3.4186,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.623504,
+        0.606021,
+        0.55654,
+        0.665172,
+        0.661997
+      ],
+      "pmf_probabilities": [
+        0.202594,
+        0.149701,
+        0.0,
+        0.328655,
+        0.31905
+      ],
+      "expected_rating": 3.4119,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.617,
+        0.658002,
+        0.686303,
+        0.613783,
+        0.614473
+      ],
+      "pmf_probabilities": [
+        0.026667,
+        0.366515,
+        0.601097,
+        0.0,
+        0.005721
+      ],
+      "expected_rating": 2.5916,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.731995,
+        0.74514,
+        0.702781,
+        0.721343,
+        0.674932
+      ],
+      "pmf_probabilities": [
+        0.283146,
+        0.348374,
+        0.138188,
+        0.230292,
+        0.0
+      ],
+      "expected_rating": 2.3156,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.711944,
+        0.608324,
+        0.664872,
+        0.648263,
+        0.663447
+      ],
+      "pmf_probabilities": [
+        0.405986,
+        0.0,
+        0.221556,
+        0.156482,
+        0.215976
+      ],
+      "expected_rating": 2.7765,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.622382,
+        0.633406,
+        0.646351,
+        0.640114,
+        0.668407
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.111639,
+        0.242724,
+        0.17956,
+        0.466077
+      ],
+      "expected_rating": 4.0001,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.534483,
+        0.551775,
+        0.60143,
+        0.570121,
+        0.566158
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.114103,
+        0.441741,
+        0.235155,
+        0.209001
+      ],
+      "expected_rating": 3.5391,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.724737,
+        0.697581,
+        0.648032,
+        0.742794,
+        0.721483
+      ],
+      "pmf_probabilities": [
+        0.260486,
+        0.168266,
+        0.0,
+        0.32181,
+        0.249438
+      ],
+      "expected_rating": 3.1314,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.521518,
+        0.55976,
+        0.592339,
+        0.512368,
+        0.516199
+      ],
+      "pmf_probabilities": [
+        0.065196,
+        0.337688,
+        0.569823,
+        0.0,
+        0.027293
+      ],
+      "expected_rating": 2.5865,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.700966,
+        0.727869,
+        0.685,
+        0.711534,
+        0.668263
+      ],
+      "pmf_probabilities": [
+        0.214706,
+        0.391328,
+        0.109882,
+        0.284084,
+        0.0
+      ],
+      "expected_rating": 2.4633,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.736896,
+        0.710896,
+        0.674118,
+        0.750281,
+        0.724777
+      ],
+      "pmf_probabilities": [
+        0.277315,
+        0.162463,
+        0.0,
+        0.336442,
+        0.22378
+      ],
+      "expected_rating": 3.0669,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.541682,
+        0.575079,
+        0.558746,
+        0.590426,
+        0.578211
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.246046,
+        0.125717,
+        0.359116,
+        0.269121
+      ],
+      "expected_rating": 3.6513,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.556362,
+        0.544636,
+        0.601148,
+        0.550975,
+        0.538651
+      ],
+      "pmf_probabilities": [
+        0.179777,
+        0.060754,
+        0.634373,
+        0.125096,
+        0.0
+      ],
+      "expected_rating": 2.7048,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.657224,
+        0.647796,
+        0.588294,
+        0.676109,
+        0.644938
+      ],
+      "pmf_probabilities": [
+        0.252593,
+        0.218044,
+        0.0,
+        0.321795,
+        0.207569
+      ],
+      "expected_rating": 3.0137,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.543087,
+        0.605466,
+        0.60161,
+        0.570961,
+        0.576294
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.342775,
+        0.321584,
+        0.153169,
+        0.182471
+      ],
+      "expected_rating": 3.1753,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.690825,
+        0.709604,
+        0.706283,
+        0.680361,
+        0.66452
+      ],
+      "pmf_probabilities": [
+        0.203928,
+        0.349509,
+        0.323758,
+        0.122805,
+        0.0
+      ],
+      "expected_rating": 2.3654,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.76338,
+        0.664938,
+        0.702921,
+        0.737357,
+        0.729454
+      ],
+      "pmf_probabilities": [
+        0.360117,
+        0.0,
+        0.138948,
+        0.264923,
+        0.236012
+      ],
+      "expected_rating": 3.0167,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.514419,
+        0.535905,
+        0.540484,
+        0.541302,
+        0.607249
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.128455,
+        0.155833,
+        0.160723,
+        0.554989
+      ],
+      "expected_rating": 4.1422,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.636772,
+        0.626494,
+        0.673245,
+        0.661064,
+        0.672587
+      ],
+      "pmf_probabilities": [
+        0.074645,
+        0.0,
+        0.339537,
+        0.251066,
+        0.334753
+      ],
+      "expected_rating": 3.7713,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.643683,
+        0.632721,
+        0.577844,
+        0.661432,
+        0.631066
+      ],
+      "pmf_probabilities": [
+        0.255658,
+        0.213094,
+        0.0,
+        0.324581,
+        0.206667
+      ],
+      "expected_rating": 3.0135,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.584639,
+        0.642219,
+        0.666232,
+        0.600315,
+        0.606757
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.325371,
+        0.461063,
+        0.088584,
+        0.124982
+      ],
+      "expected_rating": 3.0132,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.735005,
+      "cos_sim_2": 0.744514,
+      "cos_sim_3": 0.696599,
+      "cos_sim_4": 0.776846,
+      "cos_sim_5": 0.726776,
+      "min_similarity": 0.696599,
+      "p1": 0.195207,
+      "p2": 0.243539,
+      "p3": 0.0,
+      "p4": 0.407873,
+      "p5": 0.153381,
+      "set_expected_rating": 3.0807,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.766545,
+      "cos_sim_2": 0.681735,
+      "cos_sim_3": 0.696364,
+      "cos_sim_4": 0.704898,
+      "cos_sim_5": 0.715645,
+      "min_similarity": 0.681735,
+      "p1": 0.54187,
+      "p2": 0.0,
+      "p3": 0.093472,
+      "p4": 0.147996,
+      "p5": 0.216662,
+      "set_expected_rating": 2.4976,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.638314,
+      "cos_sim_2": 0.646022,
+      "cos_sim_3": 0.65967,
+      "cos_sim_4": 0.665436,
+      "cos_sim_5": 0.714136,
+      "min_similarity": 0.638314,
+      "p1": 0.0,
+      "p2": 0.058393,
+      "p3": 0.161777,
+      "p4": 0.20546,
+      "p5": 0.57437,
+      "set_expected_rating": 4.2958,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.668191,
+      "cos_sim_2": 0.62457,
+      "cos_sim_3": 0.681691,
+      "cos_sim_4": 0.680185,
+      "cos_sim_5": 0.685959,
+      "min_similarity": 0.62457,
+      "p1": 0.200329,
+      "p2": 0.0,
+      "p3": 0.262329,
+      "p4": 0.255411,
+      "p5": 0.281931,
+      "set_expected_rating": 3.4186,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.623504,
+      "cos_sim_2": 0.606021,
+      "cos_sim_3": 0.55654,
+      "cos_sim_4": 0.665172,
+      "cos_sim_5": 0.661997,
+      "min_similarity": 0.55654,
+      "p1": 0.202594,
+      "p2": 0.149701,
+      "p3": 0.0,
+      "p4": 0.328655,
+      "p5": 0.31905,
+      "set_expected_rating": 3.4119,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.617,
+      "cos_sim_2": 0.658002,
+      "cos_sim_3": 0.686303,
+      "cos_sim_4": 0.613783,
+      "cos_sim_5": 0.614473,
+      "min_similarity": 0.613783,
+      "p1": 0.026667,
+      "p2": 0.366515,
+      "p3": 0.601097,
+      "p4": 0.0,
+      "p5": 0.005721,
+      "set_expected_rating": 2.5916,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.731995,
+      "cos_sim_2": 0.74514,
+      "cos_sim_3": 0.702781,
+      "cos_sim_4": 0.721343,
+      "cos_sim_5": 0.674932,
+      "min_similarity": 0.674932,
+      "p1": 0.283146,
+      "p2": 0.348374,
+      "p3": 0.138188,
+      "p4": 0.230292,
+      "p5": 0.0,
+      "set_expected_rating": 2.3156,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.711944,
+      "cos_sim_2": 0.608324,
+      "cos_sim_3": 0.664872,
+      "cos_sim_4": 0.648263,
+      "cos_sim_5": 0.663447,
+      "min_similarity": 0.608324,
+      "p1": 0.405986,
+      "p2": 0.0,
+      "p3": 0.221556,
+      "p4": 0.156482,
+      "p5": 0.215976,
+      "set_expected_rating": 2.7765,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.622382,
+      "cos_sim_2": 0.633406,
+      "cos_sim_3": 0.646351,
+      "cos_sim_4": 0.640114,
+      "cos_sim_5": 0.668407,
+      "min_similarity": 0.622382,
+      "p1": 0.0,
+      "p2": 0.111639,
+      "p3": 0.242724,
+      "p4": 0.17956,
+      "p5": 0.466077,
+      "set_expected_rating": 4.0001,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.534483,
+      "cos_sim_2": 0.551775,
+      "cos_sim_3": 0.60143,
+      "cos_sim_4": 0.570121,
+      "cos_sim_5": 0.566158,
+      "min_similarity": 0.534483,
+      "p1": 0.0,
+      "p2": 0.114103,
+      "p3": 0.441741,
+      "p4": 0.235155,
+      "p5": 0.209001,
+      "set_expected_rating": 3.5391,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.724737,
+      "cos_sim_2": 0.697581,
+      "cos_sim_3": 0.648032,
+      "cos_sim_4": 0.742794,
+      "cos_sim_5": 0.721483,
+      "min_similarity": 0.648032,
+      "p1": 0.260486,
+      "p2": 0.168266,
+      "p3": 0.0,
+      "p4": 0.32181,
+      "p5": 0.249438,
+      "set_expected_rating": 3.1314,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.521518,
+      "cos_sim_2": 0.55976,
+      "cos_sim_3": 0.592339,
+      "cos_sim_4": 0.512368,
+      "cos_sim_5": 0.516199,
+      "min_similarity": 0.512368,
+      "p1": 0.065196,
+      "p2": 0.337688,
+      "p3": 0.569823,
+      "p4": 0.0,
+      "p5": 0.027293,
+      "set_expected_rating": 2.5865,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.700966,
+      "cos_sim_2": 0.727869,
+      "cos_sim_3": 0.685,
+      "cos_sim_4": 0.711534,
+      "cos_sim_5": 0.668263,
+      "min_similarity": 0.668263,
+      "p1": 0.214706,
+      "p2": 0.391328,
+      "p3": 0.109882,
+      "p4": 0.284084,
+      "p5": 0.0,
+      "set_expected_rating": 2.4633,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.736896,
+      "cos_sim_2": 0.710896,
+      "cos_sim_3": 0.674118,
+      "cos_sim_4": 0.750281,
+      "cos_sim_5": 0.724777,
+      "min_similarity": 0.674118,
+      "p1": 0.277315,
+      "p2": 0.162463,
+      "p3": 0.0,
+      "p4": 0.336442,
+      "p5": 0.22378,
+      "set_expected_rating": 3.0669,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.541682,
+      "cos_sim_2": 0.575079,
+      "cos_sim_3": 0.558746,
+      "cos_sim_4": 0.590426,
+      "cos_sim_5": 0.578211,
+      "min_similarity": 0.541682,
+      "p1": 0.0,
+      "p2": 0.246046,
+      "p3": 0.125717,
+      "p4": 0.359116,
+      "p5": 0.269121,
+      "set_expected_rating": 3.6513,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.556362,
+      "cos_sim_2": 0.544636,
+      "cos_sim_3": 0.601148,
+      "cos_sim_4": 0.550975,
+      "cos_sim_5": 0.538651,
+      "min_similarity": 0.538651,
+      "p1": 0.179777,
+      "p2": 0.060754,
+      "p3": 0.634373,
+      "p4": 0.125096,
+      "p5": 0.0,
+      "set_expected_rating": 2.7048,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.657224,
+      "cos_sim_2": 0.647796,
+      "cos_sim_3": 0.588294,
+      "cos_sim_4": 0.676109,
+      "cos_sim_5": 0.644938,
+      "min_similarity": 0.588294,
+      "p1": 0.252593,
+      "p2": 0.218044,
+      "p3": 0.0,
+      "p4": 0.321795,
+      "p5": 0.207569,
+      "set_expected_rating": 3.0137,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.543087,
+      "cos_sim_2": 0.605466,
+      "cos_sim_3": 0.60161,
+      "cos_sim_4": 0.570961,
+      "cos_sim_5": 0.576294,
+      "min_similarity": 0.543087,
+      "p1": 0.0,
+      "p2": 0.342775,
+      "p3": 0.321584,
+      "p4": 0.153169,
+      "p5": 0.182471,
+      "set_expected_rating": 3.1753,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.690825,
+      "cos_sim_2": 0.709604,
+      "cos_sim_3": 0.706283,
+      "cos_sim_4": 0.680361,
+      "cos_sim_5": 0.66452,
+      "min_similarity": 0.66452,
+      "p1": 0.203928,
+      "p2": 0.349509,
+      "p3": 0.323758,
+      "p4": 0.122805,
+      "p5": 0.0,
+      "set_expected_rating": 2.3654,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.76338,
+      "cos_sim_2": 0.664938,
+      "cos_sim_3": 0.702921,
+      "cos_sim_4": 0.737357,
+      "cos_sim_5": 0.729454,
+      "min_similarity": 0.664938,
+      "p1": 0.360117,
+      "p2": 0.0,
+      "p3": 0.138948,
+      "p4": 0.264923,
+      "p5": 0.236012,
+      "set_expected_rating": 3.0167,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.514419,
+      "cos_sim_2": 0.535905,
+      "cos_sim_3": 0.540484,
+      "cos_sim_4": 0.541302,
+      "cos_sim_5": 0.607249,
+      "min_similarity": 0.514419,
+      "p1": 0.0,
+      "p2": 0.128455,
+      "p3": 0.155833,
+      "p4": 0.160723,
+      "p5": 0.554989,
+      "set_expected_rating": 4.1422,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.636772,
+      "cos_sim_2": 0.626494,
+      "cos_sim_3": 0.673245,
+      "cos_sim_4": 0.661064,
+      "cos_sim_5": 0.672587,
+      "min_similarity": 0.626494,
+      "p1": 0.074645,
+      "p2": 0.0,
+      "p3": 0.339537,
+      "p4": 0.251066,
+      "p5": 0.334753,
+      "set_expected_rating": 3.7713,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.643683,
+      "cos_sim_2": 0.632721,
+      "cos_sim_3": 0.577844,
+      "cos_sim_4": 0.661432,
+      "cos_sim_5": 0.631066,
+      "min_similarity": 0.577844,
+      "p1": 0.255658,
+      "p2": 0.213094,
+      "p3": 0.0,
+      "p4": 0.324581,
+      "p5": 0.206667,
+      "set_expected_rating": 3.0135,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Astra Ultra X Pro",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.584639,
+      "cos_sim_2": 0.642219,
+      "cos_sim_3": 0.666232,
+      "cos_sim_4": 0.600315,
+      "cos_sim_5": 0.606757,
+      "min_similarity": 0.584639,
+      "p1": 0.0,
+      "p2": 0.325371,
+      "p3": 0.461063,
+      "p4": 0.088584,
+      "p5": 0.124982,
+      "set_expected_rating": 3.0132,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,Aura Pro AI Phone,PE,Performance Expectancy,False,2.6145,0.136453,0.352342,0.39132,0.0,0.119884,nomic-embed-text
+P1_premium_tier_owner,Aura Pro AI Phone,EE,Effort Expectancy,False,3.2135,0.193684,0.0,0.448426,0.11495,0.242941,nomic-embed-text
+P1_premium_tier_owner,Aura Pro AI Phone,HM,Hedonic Motivation,False,2.3535,0.269962,0.236999,0.362625,0.130414,0.0,nomic-embed-text
+P1_premium_tier_owner,Aura Pro AI Phone,SI,Social Influence,False,2.9681,0.047702,0.058504,0.832774,0.0,0.06102,nomic-embed-text
+P1_premium_tier_owner,Aura Pro AI Phone,PP,Perceived Protection,False,2.9646,0.202768,0.296871,0.0,0.333688,0.166673,nomic-embed-text
+P1_premium_tier_owner,Aura Pro AI Phone,BI,Behavioral Intention,True,3.0915,0.0,0.210707,0.551948,0.172518,0.064826,nomic-embed-text
+P2_midrange_heavy_user,Aura Pro AI Phone,PE,Performance Expectancy,False,2.6317,0.140509,0.324352,0.416598,0.0,0.118541,nomic-embed-text
+P2_midrange_heavy_user,Aura Pro AI Phone,EE,Effort Expectancy,False,3.3802,0.20556,0.0,0.308577,0.18044,0.305423,nomic-embed-text
+P2_midrange_heavy_user,Aura Pro AI Phone,HM,Hedonic Motivation,False,2.7469,0.03144,0.350591,0.457606,0.160363,0.0,nomic-embed-text
+P2_midrange_heavy_user,Aura Pro AI Phone,SI,Social Influence,False,3.077,0.0,0.148005,0.697568,0.083881,0.070546,nomic-embed-text
+P2_midrange_heavy_user,Aura Pro AI Phone,PP,Perceived Protection,False,2.9595,0.276683,0.215719,0.0,0.286605,0.220993,nomic-embed-text
+P2_midrange_heavy_user,Aura Pro AI Phone,BI,Behavioral Intention,True,2.9512,0.0,0.235641,0.598491,0.144854,0.021014,nomic-embed-text
+P3_midrange_moderate_user,Aura Pro AI Phone,PE,Performance Expectancy,False,3.4334,0.0,0.318955,0.19241,0.224964,0.263671,nomic-embed-text
+P3_midrange_moderate_user,Aura Pro AI Phone,EE,Effort Expectancy,False,3.2663,0.264483,0.0,0.249947,0.175825,0.309745,nomic-embed-text
+P3_midrange_moderate_user,Aura Pro AI Phone,HM,Hedonic Motivation,False,3.6261,0.148354,0.0,0.234175,0.312185,0.305286,nomic-embed-text
+P3_midrange_moderate_user,Aura Pro AI Phone,SI,Social Influence,False,3.6427,0.048413,0.0,0.507288,0.149034,0.295266,nomic-embed-text
+P3_midrange_moderate_user,Aura Pro AI Phone,PP,Perceived Protection,False,3.3417,0.160805,0.208787,0.0,0.388695,0.241713,nomic-embed-text
+P3_midrange_moderate_user,Aura Pro AI Phone,BI,Behavioral Intention,True,3.1464,0.0,0.224587,0.469519,0.24082,0.065074,nomic-embed-text
+P4_budget_or_undisclosed_price,Aura Pro AI Phone,PE,Performance Expectancy,False,2.238,0.228757,0.362247,0.380109,0.0,0.028887,nomic-embed-text
+P4_budget_or_undisclosed_price,Aura Pro AI Phone,EE,Effort Expectancy,False,3.1319,0.283918,0.0,0.295519,0.141362,0.279201,nomic-embed-text
+P4_budget_or_undisclosed_price,Aura Pro AI Phone,HM,Hedonic Motivation,False,2.4109,0.29455,0.231448,0.242519,0.231483,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,Aura Pro AI Phone,SI,Social Influence,False,2.9764,0.189255,0.046458,0.563617,0.0,0.20067,nomic-embed-text
+P4_budget_or_undisclosed_price,Aura Pro AI Phone,PP,Perceived Protection,False,2.5198,0.209264,0.396655,0.059092,0.334989,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,Aura Pro AI Phone,BI,Behavioral Intention,True,2.7697,0.056711,0.265316,0.529553,0.14842,0.0,nomic-embed-text

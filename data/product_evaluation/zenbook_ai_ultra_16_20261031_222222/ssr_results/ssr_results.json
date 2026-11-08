@@ -1,0 +1,545 @@
+{
+  "evaluation_id": "zenbook_ai_ultra_16_20261031_222222",
+  "product_name": "ZenBook AI Ultra 16",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-31T16:56:48.496874+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 1,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.9351,
+  "overall_adoption_average": 3.9351,
+  "primary_adoption_average": 3.9351,
+  "construct_averages": {
+    "PE": 3.7742,
+    "EE": 4.0208,
+    "HM": 4.0311,
+    "SI": 4.0907,
+    "PP": 3.731,
+    "BI": 3.9351
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 6,
+  "qualitative_constructs": [
+    "PV"
+  ],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "primary_adoption_rating": 3.9351,
+      "primary_adoption_pmf": [
+        0.0,
+        0.151691,
+        0.086704,
+        0.436401,
+        0.325204
+      ],
+      "construct_scores": {
+        "PE": 3.7742,
+        "EE": 4.0208,
+        "HM": 4.0311,
+        "SI": 4.0907,
+        "PP": 3.731,
+        "BI": 3.9351
+      },
+      "construct_responses": {
+        "PE": "The ZenBook AI Ultra 16's high-end processor and fast multitasking capabilities will significantly boost my productivity. With its advanced features, I am certain I will continue using this laptop as my primary computer; it's perfect for complex tasks and research projects.",
+        "EE": "Setting up the ZenBook AI Ultra 16 is straightforward, and the interface is clean and easy to navigate. The learning curve is minimal, making it a breeze to use even if you're not tech-savvy; I am certain I will continue using this laptop as my primary computer; the setup process is smooth and intuitive.",
+        "HM": "The display quality on this laptop is amazing; the 16-inch 3.2K OLED screen provides vibrant colors and sharp visuals, making media consumption a pleasure. The enjoyment factor is high, and I am certain I will continue using this laptop as my primary computer; the display is simply stunning and adds to the overall user experience.",
+        "SI": "My peers and colleagues will look up to me for advice on this laptop due to its premium build and advanced features. It will enhance my social standing as a tech-savvy individual; I am certain I will continue using this laptop as my primary computer; the social perception is great and aligns with my status as a tech-savvy student.",
+        "PP": "With its strong security features, I feel confident that my personal data is protected. The on-device security gives me peace of mind, and I am certain I will continue using this laptop as my primary computer; the privacy and security measures are top-notch and reliable.",
+        "BI": "I am certain I will continue using this laptop as my primary computer; the premium build quality, top performance, and advanced features match everything I need. The price fits comfortably within my budget, and I definitely intend to keep using it.",
+        "OVERALL": "The ZenBook AI Ultra 16 is a fantastic choice for anyone looking for a high-performance laptop with a premium build. It meets all my needs and fits within my budget, making it the perfect fit for my daily work and study tasks."
+      },
+      "response_text": "The ZenBook AI Ultra 16 is a fantastic choice for anyone looking for a high-performance laptop with a premium build. It meets all my needs and fits within my budget, making it the perfect fit for my daily work and study tasks.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The ZenBook AI Ultra 16's high-end processor and fast multitasking capabilities will significantly boost my productivity. With its advanced features, I am certain I will continue using this laptop as my primary computer; it's perfect for complex tasks and research projects.",
+          "cosine_similarities": [
+            0.57331,
+            0.586625,
+            0.562241,
+            0.640535,
+            0.608157
+          ],
+          "min_similarity": 0.562241,
+          "pmf_probabilities": [
+            0.069324,
+            0.152721,
+            0.0,
+            0.490372,
+            0.287584
+          ],
+          "expected_rating": 3.7742,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up the ZenBook AI Ultra 16 is straightforward, and the interface is clean and easy to navigate. The learning curve is minimal, making it a breeze to use even if you're not tech-savvy; I am certain I will continue using this laptop as my primary computer; the setup process is smooth and intuitive.",
+          "cosine_similarities": [
+            0.509436,
+            0.485869,
+            0.551873,
+            0.578625,
+            0.629335
+          ],
+          "min_similarity": 0.485869,
+          "pmf_probabilities": [
+            0.072336,
+            0.0,
+            0.202595,
+            0.284709,
+            0.44036
+          ],
+          "expected_rating": 4.0208,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The display quality on this laptop is amazing; the 16-inch 3.2K OLED screen provides vibrant colors and sharp visuals, making media consumption a pleasure. The enjoyment factor is high, and I am certain I will continue using this laptop as my primary computer; the display is simply stunning and adds to the overall user experience.",
+          "cosine_similarities": [
+            0.498331,
+            0.535011,
+            0.544239,
+            0.567048,
+            0.626279
+          ],
+          "min_similarity": 0.498331,
+          "pmf_probabilities": [
+            0.0,
+            0.131352,
+            0.164395,
+            0.246074,
+            0.458179
+          ],
+          "expected_rating": 4.0311,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers and colleagues will look up to me for advice on this laptop due to its premium build and advanced features. It will enhance my social standing as a tech-savvy individual; I am certain I will continue using this laptop as my primary computer; the social perception is great and aligns with my status as a tech-savvy student.",
+          "cosine_similarities": [
+            0.591207,
+            0.592002,
+            0.645457,
+            0.678179,
+            0.666791
+          ],
+          "min_similarity": 0.591207,
+          "pmf_probabilities": [
+            0.0,
+            0.003654,
+            0.249308,
+            0.399686,
+            0.347352
+          ],
+          "expected_rating": 4.0907,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "With its strong security features, I feel confident that my personal data is protected. The on-device security gives me peace of mind, and I am certain I will continue using this laptop as my primary computer; the privacy and security measures are top-notch and reliable.",
+          "cosine_similarities": [
+            0.723309,
+            0.663662,
+            0.65126,
+            0.76609,
+            0.798891
+          ],
+          "min_similarity": 0.65126,
+          "pmf_probabilities": [
+            0.207687,
+            0.03575,
+            0.0,
+            0.331006,
+            0.425557
+          ],
+          "expected_rating": 3.731,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this laptop as my primary computer; the premium build quality, top performance, and advanced features match everything I need. The price fits comfortably within my budget, and I definitely intend to keep using it.",
+          "cosine_similarities": [
+            0.523128,
+            0.562212,
+            0.545468,
+            0.635568,
+            0.606918
+          ],
+          "min_similarity": 0.523128,
+          "pmf_probabilities": [
+            0.0,
+            0.151691,
+            0.086704,
+            0.436401,
+            0.325204
+          ],
+          "expected_rating": 3.9351,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.57331,
+        0.586625,
+        0.562241,
+        0.640535,
+        0.608157
+      ],
+      "pmf_probabilities": [
+        0.069324,
+        0.152721,
+        0.0,
+        0.490372,
+        0.287584
+      ],
+      "expected_rating": 3.7742,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.509436,
+        0.485869,
+        0.551873,
+        0.578625,
+        0.629335
+      ],
+      "pmf_probabilities": [
+        0.072336,
+        0.0,
+        0.202595,
+        0.284709,
+        0.44036
+      ],
+      "expected_rating": 4.0208,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.498331,
+        0.535011,
+        0.544239,
+        0.567048,
+        0.626279
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.131352,
+        0.164395,
+        0.246074,
+        0.458179
+      ],
+      "expected_rating": 4.0311,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.591207,
+        0.592002,
+        0.645457,
+        0.678179,
+        0.666791
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.003654,
+        0.249308,
+        0.399686,
+        0.347352
+      ],
+      "expected_rating": 4.0907,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.723309,
+        0.663662,
+        0.65126,
+        0.76609,
+        0.798891
+      ],
+      "pmf_probabilities": [
+        0.207687,
+        0.03575,
+        0.0,
+        0.331006,
+        0.425557
+      ],
+      "expected_rating": 3.731,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.523128,
+        0.562212,
+        0.545468,
+        0.635568,
+        0.606918
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.151691,
+        0.086704,
+        0.436401,
+        0.325204
+      ],
+      "expected_rating": 3.9351,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.57331,
+      "cos_sim_2": 0.586625,
+      "cos_sim_3": 0.562241,
+      "cos_sim_4": 0.640535,
+      "cos_sim_5": 0.608157,
+      "min_similarity": 0.562241,
+      "p1": 0.069324,
+      "p2": 0.152721,
+      "p3": 0.0,
+      "p4": 0.490372,
+      "p5": 0.287584,
+      "set_expected_rating": 3.7742,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.509436,
+      "cos_sim_2": 0.485869,
+      "cos_sim_3": 0.551873,
+      "cos_sim_4": 0.578625,
+      "cos_sim_5": 0.629335,
+      "min_similarity": 0.485869,
+      "p1": 0.072336,
+      "p2": 0.0,
+      "p3": 0.202595,
+      "p4": 0.284709,
+      "p5": 0.44036,
+      "set_expected_rating": 4.0208,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.498331,
+      "cos_sim_2": 0.535011,
+      "cos_sim_3": 0.544239,
+      "cos_sim_4": 0.567048,
+      "cos_sim_5": 0.626279,
+      "min_similarity": 0.498331,
+      "p1": 0.0,
+      "p2": 0.131352,
+      "p3": 0.164395,
+      "p4": 0.246074,
+      "p5": 0.458179,
+      "set_expected_rating": 4.0311,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.591207,
+      "cos_sim_2": 0.592002,
+      "cos_sim_3": 0.645457,
+      "cos_sim_4": 0.678179,
+      "cos_sim_5": 0.666791,
+      "min_similarity": 0.591207,
+      "p1": 0.0,
+      "p2": 0.003654,
+      "p3": 0.249308,
+      "p4": 0.399686,
+      "p5": 0.347352,
+      "set_expected_rating": 4.0907,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.723309,
+      "cos_sim_2": 0.663662,
+      "cos_sim_3": 0.65126,
+      "cos_sim_4": 0.76609,
+      "cos_sim_5": 0.798891,
+      "min_similarity": 0.65126,
+      "p1": 0.207687,
+      "p2": 0.03575,
+      "p3": 0.0,
+      "p4": 0.331006,
+      "p5": 0.425557,
+      "set_expected_rating": 3.731,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ZenBook AI Ultra 16",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.523128,
+      "cos_sim_2": 0.562212,
+      "cos_sim_3": 0.545468,
+      "cos_sim_4": 0.635568,
+      "cos_sim_5": 0.606918,
+      "min_similarity": 0.523128,
+      "p1": 0.0,
+      "p2": 0.151691,
+      "p3": 0.086704,
+      "p4": 0.436401,
+      "p5": 0.325204,
+      "set_expected_rating": 3.9351,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

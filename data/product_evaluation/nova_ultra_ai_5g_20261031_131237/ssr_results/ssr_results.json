@@ -1,0 +1,2025 @@
+{
+  "evaluation_id": "nova_ultra_ai_5g_20261031_131237",
+  "product_name": "Nova Ultra AI 5G",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-31T07:50:10.001474+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.167,
+  "overall_adoption_average": 3.167,
+  "primary_adoption_average": 3.167,
+  "construct_averages": {
+    "PE": 3.2602,
+    "EE": 3.3806,
+    "HM": 3.5802,
+    "SI": 3.3864,
+    "PP": 2.9542,
+    "BI": 3.167
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "primary_adoption_rating": 2.3288,
+      "primary_adoption_pmf": [
+        0.26634,
+        0.348047,
+        0.280847,
+        0.0,
+        0.104766
+      ],
+      "construct_scores": {
+        "PE": 2.1209,
+        "EE": 1.9357,
+        "HM": 2.9323,
+        "SI": 2.8496,
+        "PP": 2.5218,
+        "BI": 2.3288
+      },
+      "construct_responses": {
+        "PE": "The phone seems to offer good performance for daily tasks, but I can't see myself using it for intensive work or studies. The 120Hz display should make multitasking smoother, but I doubt it would replace my current iPhone for speed and efficiency.",
+        "EE": "The interface sounds user-friendly, but the transition from iOS to Android might be tricky. I'd need to get used to the new ecosystem, which could be a hassle.",
+        "HM": "While the display and camera features are nice, I'm not a huge gamer or content creator, so the gaming and AI photo enhancements might not be as fun for me. The phone could be great for casual entertainment, though.",
+        "SI": "My friends might think I've downgraded, but considering the price, it's a fair trade-off. However, they might not recommend it to others who have a higher budget.",
+        "PP": "The privacy features are good, but I don't see how they would change my behavior since I already have similar protections on my current phone.",
+        "BI": "No, I wouldn't buy this phone. It's way below my price range, and I wouldn't switch from my current iPhone. Maybe someone looking for a budget phone would consider it, but not me.",
+        "OVERALL": "While the features sound nice, I don't think the price justifies it for me. I'd stick with my current phone and save up for something better."
+      },
+      "response_text": "While the features sound nice, I don't think the price justifies it for me. I'd stick with my current phone and save up for something better.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The phone seems to offer good performance for daily tasks, but I can't see myself using it for intensive work or studies. The 120Hz display should make multitasking smoother, but I doubt it would replace my current iPhone for speed and efficiency.",
+          "cosine_similarities": [
+            0.743366,
+            0.738171,
+            0.729371,
+            0.718063,
+            0.704312
+          ],
+          "min_similarity": 0.704312,
+          "pmf_probabilities": [
+            0.349562,
+            0.303063,
+            0.224296,
+            0.123078,
+            0.0
+          ],
+          "expected_rating": 2.1209,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The interface sounds user-friendly, but the transition from iOS to Android might be tricky. I'd need to get used to the new ecosystem, which could be a hassle.",
+          "cosine_similarities": [
+            0.656592,
+            0.611772,
+            0.616895,
+            0.601184,
+            0.585924
+          ],
+          "min_similarity": 0.585924,
+          "pmf_probabilities": [
+            0.495057,
+            0.181077,
+            0.216963,
+            0.106903,
+            0.0
+          ],
+          "expected_rating": 1.9357,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "While the display and camera features are nice, I'm not a huge gamer or content creator, so the gaming and AI photo enhancements might not be as fun for me. The phone could be great for casual entertainment, though.",
+          "cosine_similarities": [
+            0.696628,
+            0.717535,
+            0.706427,
+            0.70932,
+            0.699181
+          ],
+          "min_similarity": 0.696628,
+          "pmf_probabilities": [
+            0.0,
+            0.454984,
+            0.213248,
+            0.276208,
+            0.05556
+          ],
+          "expected_rating": 2.9323,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might think I've downgraded, but considering the price, it's a fair trade-off. However, they might not recommend it to others who have a higher budget.",
+          "cosine_similarities": [
+            0.485115,
+            0.573992,
+            0.571639,
+            0.544812,
+            0.480691
+          ],
+          "min_similarity": 0.480691,
+          "pmf_probabilities": [
+            0.017502,
+            0.369078,
+            0.35977,
+            0.253649,
+            0.0
+          ],
+          "expected_rating": 2.8496,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The privacy features are good, but I don't see how they would change my behavior since I already have similar protections on my current phone.",
+          "cosine_similarities": [
+            0.682612,
+            0.686504,
+            0.658898,
+            0.69309,
+            0.658353
+          ],
+          "min_similarity": 0.658353,
+          "pmf_probabilities": [
+            0.276638,
+            0.321019,
+            0.00622,
+            0.396124,
+            0.0
+          ],
+          "expected_rating": 2.5218,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "No, I wouldn't buy this phone. It's way below my price range, and I wouldn't switch from my current iPhone. Maybe someone looking for a budget phone would consider it, but not me.",
+          "cosine_similarities": [
+            0.685463,
+            0.705893,
+            0.689091,
+            0.61887,
+            0.645065
+          ],
+          "min_similarity": 0.61887,
+          "pmf_probabilities": [
+            0.26634,
+            0.348047,
+            0.280847,
+            0.0,
+            0.104766
+          ],
+          "expected_rating": 2.3288,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "primary_adoption_rating": 3.5978,
+      "primary_adoption_pmf": [
+        0.0,
+        0.156763,
+        0.295845,
+        0.340177,
+        0.207215
+      ],
+      "construct_scores": {
+        "PE": 3.6711,
+        "EE": 3.8939,
+        "HM": 3.8395,
+        "SI": 4.0415,
+        "PP": 3.0185,
+        "BI": 3.5978
+      },
+      "construct_responses": {
+        "PE": "This phone should handle heavy multitasking and gaming smoothly without any issues. The 12GB RAM and powerful processor will definitely boost productivity and gaming experience. The battery life seems impressive with 6500mAh, but I hope it doesn't suffer from thermal throttling during intense use.",
+        "EE": "The interface looks clean and user-friendly, which should be an easy transition from my current OnePlus. The 120Hz AMOLED display will make everything feel snappy, but I might need to get used to the new ecosystem and apps.",
+        "HM": "The 200MP camera and AI enhancements will be fun for taking selfies and reels. The fast charging feature will save a lot of time, and the AI personal assistant will make daily tasks easier. The 120Hz display will provide smooth gaming and video streaming experiences.",
+        "SI": "My friends and classmates will be jealous of this phone, and they would probably recommend it to others too. It seems like a status symbol and a great value for money.",
+        "PP": "The phone seems to offer good privacy features, but I would still be cautious about sharing personal data. The on-device AI processing will keep my data safe, which is a big plus.",
+        "BI": "Yes, I would definitely consider buying this phone. At ₹14,999, it's a great deal considering the features and performance. It's within my budget, and it's a step up from my current OnePlus.",
+        "OVERALL": "This phone looks like a solid choice for heavy users like me. The performance and features are impressive, and the price is just right. I'm excited to try it out and see how it performs in real life."
+      },
+      "response_text": "This phone looks like a solid choice for heavy users like me. The performance and features are impressive, and the price is just right. I'm excited to try it out and see how it performs in real life.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This phone should handle heavy multitasking and gaming smoothly without any issues. The 12GB RAM and powerful processor will definitely boost productivity and gaming experience. The battery life seems impressive with 6500mAh, but I hope it doesn't suffer from thermal throttling during intense use.",
+          "cosine_similarities": [
+            0.609804,
+            0.626675,
+            0.600152,
+            0.666789,
+            0.636412
+          ],
+          "min_similarity": 0.600152,
+          "pmf_probabilities": [
+            0.069407,
+            0.190715,
+            0.0,
+            0.479148,
+            0.26073
+          ],
+          "expected_rating": 3.6711,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The interface looks clean and user-friendly, which should be an easy transition from my current OnePlus. The 120Hz AMOLED display will make everything feel snappy, but I might need to get used to the new ecosystem and apps.",
+          "cosine_similarities": [
+            0.557143,
+            0.546998,
+            0.586928,
+            0.568539,
+            0.603744
+          ],
+          "min_similarity": 0.546998,
+          "pmf_probabilities": [
+            0.079037,
+            0.0,
+            0.311071,
+            0.167812,
+            0.442079
+          ],
+          "expected_rating": 3.8939,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The 200MP camera and AI enhancements will be fun for taking selfies and reels. The fast charging feature will save a lot of time, and the AI personal assistant will make daily tasks easier. The 120Hz display will provide smooth gaming and video streaming experiences.",
+          "cosine_similarities": [
+            0.47368,
+            0.528767,
+            0.518098,
+            0.541532,
+            0.583745
+          ],
+          "min_similarity": 0.47368,
+          "pmf_probabilities": [
+            0.0,
+            0.198568,
+            0.16011,
+            0.244582,
+            0.39674
+          ],
+          "expected_rating": 3.8395,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and classmates will be jealous of this phone, and they would probably recommend it to others too. It seems like a status symbol and a great value for money.",
+          "cosine_similarities": [
+            0.644129,
+            0.633697,
+            0.66696,
+            0.695613,
+            0.705619
+          ],
+          "min_similarity": 0.633697,
+          "pmf_probabilities": [
+            0.058765,
+            0.0,
+            0.187362,
+            0.348757,
+            0.405116
+          ],
+          "expected_rating": 4.0415,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The phone seems to offer good privacy features, but I would still be cautious about sharing personal data. The on-device AI processing will keep my data safe, which is a big plus.",
+          "cosine_similarities": [
+            0.768909,
+            0.749117,
+            0.682575,
+            0.796357,
+            0.748368
+          ],
+          "min_similarity": 0.682575,
+          "pmf_probabilities": [
+            0.25969,
+            0.200157,
+            0.0,
+            0.342251,
+            0.197903
+          ],
+          "expected_rating": 3.0185,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Yes, I would definitely consider buying this phone. At ₹14,999, it's a great deal considering the features and performance. It's within my budget, and it's a step up from my current OnePlus.",
+          "cosine_similarities": [
+            0.588609,
+            0.615284,
+            0.638949,
+            0.646493,
+            0.623868
+          ],
+          "min_similarity": 0.588609,
+          "pmf_probabilities": [
+            0.0,
+            0.156763,
+            0.295845,
+            0.340177,
+            0.207215
+          ],
+          "expected_rating": 3.5978,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "primary_adoption_rating": 3.6084,
+      "primary_adoption_pmf": [
+        0.0,
+        0.183921,
+        0.286266,
+        0.267277,
+        0.262536
+      ],
+      "construct_scores": {
+        "PE": 3.6258,
+        "EE": 3.9156,
+        "HM": 3.6459,
+        "SI": 3.1292,
+        "PP": 3.344,
+        "BI": 3.6084
+      },
+      "construct_responses": {
+        "PE": "It seems like the Nova Ultra AI 5G could be really useful for my studies and work with its fast processor and smooth performance. The 12GB RAM should handle multitasking pretty well, and the 120Hz AMOLED display will make scrolling through social media or reading notes a breeze.",
+        "EE": "The interface sounds simple and clean, which is good for someone like me who is not super tech-savvy. The AI personal assistant could be handy for daily tasks, but it might take some time to get used to the new OS compared to my Samsung.",
+        "HM": "The 200MP camera and 6500mAh battery are cool features, but I'm not a big gamer or content creator, so the gaming performance and video streaming won't be my top priorities. The AI enhancements for photos and videos could be fun, though.",
+        "SI": "My friends might be curious about the new phone, but they probably won't care too much about the social prestige. They might recommend it if they know I need a better battery and faster processor.",
+        "PP": "The privacy features are important, but I'm not too worried about it since I don't share much sensitive data on my phone. The on-device AI processing for privacy is a nice touch.",
+        "BI": "Considering the price is within my budget, I might consider buying the Nova Ultra AI 5G. It offers good value for money and could replace my current phone with its better battery and performance. I might need to save up a bit more, but it's definitely on my radar.",
+        "OVERALL": "The Nova Ultra AI 5G looks like a solid choice, especially for someone looking for a better battery and faster performance. It might be a bit too fancy for my needs, but the price is good, and it could help with my daily tasks."
+      },
+      "response_text": "The Nova Ultra AI 5G looks like a solid choice, especially for someone looking for a better battery and faster performance. It might be a bit too fancy for my needs, but the price is good, and it could help with my daily tasks.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It seems like the Nova Ultra AI 5G could be really useful for my studies and work with its fast processor and smooth performance. The 12GB RAM should handle multitasking pretty well, and the 120Hz AMOLED display will make scrolling through social media or reading notes a breeze.",
+          "cosine_similarities": [
+            0.593025,
+            0.610692,
+            0.597809,
+            0.64539,
+            0.601845
+          ],
+          "min_similarity": 0.593025,
+          "pmf_probabilities": [
+            0.0,
+            0.21124,
+            0.057201,
+            0.626097,
+            0.105461
+          ],
+          "expected_rating": 3.6258,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The interface sounds simple and clean, which is good for someone like me who is not super tech-savvy. The AI personal assistant could be handy for daily tasks, but it might take some time to get used to the new OS compared to my Samsung.",
+          "cosine_similarities": [
+            0.636923,
+            0.627232,
+            0.669762,
+            0.674899,
+            0.685494
+          ],
+          "min_similarity": 0.627232,
+          "pmf_probabilities": [
+            0.061277,
+            0.0,
+            0.268922,
+            0.301402,
+            0.368399
+          ],
+          "expected_rating": 3.9156,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The 200MP camera and 6500mAh battery are cool features, but I'm not a big gamer or content creator, so the gaming performance and video streaming won't be my top priorities. The AI enhancements for photos and videos could be fun, though.",
+          "cosine_similarities": [
+            0.492767,
+            0.532821,
+            0.524312,
+            0.536999,
+            0.544927
+          ],
+          "min_similarity": 0.492767,
+          "pmf_probabilities": [
+            0.0,
+            0.238428,
+            0.187777,
+            0.2633,
+            0.310495
+          ],
+          "expected_rating": 3.6459,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might be curious about the new phone, but they probably won't care too much about the social prestige. They might recommend it if they know I need a better battery and faster processor.",
+          "cosine_similarities": [
+            0.705791,
+            0.68897,
+            0.744019,
+            0.69963,
+            0.706956
+          ],
+          "min_similarity": 0.68897,
+          "pmf_probabilities": [
+            0.167347,
+            0.0,
+            0.54766,
+            0.106057,
+            0.178936
+          ],
+          "expected_rating": 3.1292,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The privacy features are important, but I'm not too worried about it since I don't share much sensitive data on my phone. The on-device AI processing for privacy is a nice touch.",
+          "cosine_similarities": [
+            0.715995,
+            0.703144,
+            0.671843,
+            0.763024,
+            0.723627
+          ],
+          "min_similarity": 0.671843,
+          "pmf_probabilities": [
+            0.202144,
+            0.143307,
+            0.0,
+            0.417463,
+            0.237086
+          ],
+          "expected_rating": 3.344,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Considering the price is within my budget, I might consider buying the Nova Ultra AI 5G. It offers good value for money and could replace my current phone with its better battery and performance. I might need to save up a bit more, but it's definitely on my radar.",
+          "cosine_similarities": [
+            0.573745,
+            0.614278,
+            0.636834,
+            0.632649,
+            0.631604
+          ],
+          "min_similarity": 0.573745,
+          "pmf_probabilities": [
+            0.0,
+            0.183921,
+            0.286266,
+            0.267277,
+            0.262536
+          ],
+          "expected_rating": 3.6084,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "primary_adoption_rating": 3.1329,
+      "primary_adoption_pmf": [
+        0.0,
+        0.282171,
+        0.407405,
+        0.205765,
+        0.104659
+      ],
+      "construct_scores": {
+        "PE": 3.6231,
+        "EE": 3.7771,
+        "HM": 3.903,
+        "SI": 3.5254,
+        "PP": 2.9325,
+        "BI": 3.1329
+      },
+      "construct_responses": {
+        "PE": "The Nova Ultra AI 5G seems really fast and can handle multitasking well. It might be a bit overkill for my current needs, but the performance speed could be useful when I start working on more complex projects in college.",
+        "EE": "Switching from my current Xiaomi to this would be a bit of a change, but the clean interface and AI suggestions might make it easier in the long run. The AI personal assistant and smart notifications sound handy, but I’d need to get used to it.",
+        "HM": "The 120Hz display and smooth performance in gaming and video streaming would definitely be fun. The camera features like AI photo editing and 200MP might be cool for content creation, but the price is a bit steep for my budget.",
+        "SI": "My friends might recommend it because of the advanced features, but they usually prefer cheaper phones too. They might think it’s a bit expensive, but they might still say it’s worth the extra if you really want those features.",
+        "PP": "The on-device AI processing and privacy features are good, but I’d be more concerned about the battery life and overall value for money. The phone seems secure, but I’d rather have a cheaper one that still keeps my data safe.",
+        "BI": "Considering the price, I might save up for it over a few months. I’d probably buy it if there’s a good discount or if I really need the performance for my studies. Otherwise, it’s a bit out of my budget.",
+        "OVERALL": "The phone sounds cool with all those features, but it’s a bit too expensive for me right now. I’d like to see it on sale or get it EMI-free before considering it."
+      },
+      "response_text": "The phone sounds cool with all those features, but it’s a bit too expensive for me right now. I’d like to see it on sale or get it EMI-free before considering it.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The Nova Ultra AI 5G seems really fast and can handle multitasking well. It might be a bit overkill for my current needs, but the performance speed could be useful when I start working on more complex projects in college.",
+          "cosine_similarities": [
+            0.620883,
+            0.631634,
+            0.631241,
+            0.658382,
+            0.627979
+          ],
+          "min_similarity": 0.620883,
+          "pmf_probabilities": [
+            0.0,
+            0.163622,
+            0.157644,
+            0.570737,
+            0.107996
+          ],
+          "expected_rating": 3.6231,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Switching from my current Xiaomi to this would be a bit of a change, but the clean interface and AI suggestions might make it easier in the long run. The AI personal assistant and smart notifications sound handy, but I’d need to get used to it.",
+          "cosine_similarities": [
+            0.580801,
+            0.569795,
+            0.599264,
+            0.600667,
+            0.607887
+          ],
+          "min_similarity": 0.569795,
+          "pmf_probabilities": [
+            0.100566,
+            0.0,
+            0.269276,
+            0.282093,
+            0.348065
+          ],
+          "expected_rating": 3.7771,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The 120Hz display and smooth performance in gaming and video streaming would definitely be fun. The camera features like AI photo editing and 200MP might be cool for content creation, but the price is a bit steep for my budget.",
+          "cosine_similarities": [
+            0.449707,
+            0.477645,
+            0.483176,
+            0.497176,
+            0.521522
+          ],
+          "min_similarity": 0.449707,
+          "pmf_probabilities": [
+            0.0,
+            0.154618,
+            0.185231,
+            0.262707,
+            0.397444
+          ],
+          "expected_rating": 3.903,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might recommend it because of the advanced features, but they usually prefer cheaper phones too. They might think it’s a bit expensive, but they might still say it’s worth the extra if you really want those features.",
+          "cosine_similarities": [
+            0.625768,
+            0.625733,
+            0.70255,
+            0.639281,
+            0.648802
+          ],
+          "min_similarity": 0.625733,
+          "pmf_probabilities": [
+            0.000311,
+            0.0,
+            0.676982,
+            0.119398,
+            0.203309
+          ],
+          "expected_rating": 3.5254,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The on-device AI processing and privacy features are good, but I’d be more concerned about the battery life and overall value for money. The phone seems secure, but I’d rather have a cheaper one that still keeps my data safe.",
+          "cosine_similarities": [
+            0.657084,
+            0.653042,
+            0.590266,
+            0.667588,
+            0.641116
+          ],
+          "min_similarity": 0.590266,
+          "pmf_probabilities": [
+            0.259218,
+            0.243539,
+            0.0,
+            0.299971,
+            0.197272
+          ],
+          "expected_rating": 2.9325,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Considering the price, I might save up for it over a few months. I’d probably buy it if there’s a good discount or if I really need the performance for my studies. Otherwise, it’s a bit out of my budget.",
+          "cosine_similarities": [
+            0.482034,
+            0.54319,
+            0.570332,
+            0.52663,
+            0.504717
+          ],
+          "min_similarity": 0.482034,
+          "pmf_probabilities": [
+            0.0,
+            0.282171,
+            0.407405,
+            0.205765,
+            0.104659
+          ],
+          "expected_rating": 3.1329,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.743366,
+        0.738171,
+        0.729371,
+        0.718063,
+        0.704312
+      ],
+      "pmf_probabilities": [
+        0.349562,
+        0.303063,
+        0.224296,
+        0.123078,
+        0.0
+      ],
+      "expected_rating": 2.1209,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.656592,
+        0.611772,
+        0.616895,
+        0.601184,
+        0.585924
+      ],
+      "pmf_probabilities": [
+        0.495057,
+        0.181077,
+        0.216963,
+        0.106903,
+        0.0
+      ],
+      "expected_rating": 1.9357,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.696628,
+        0.717535,
+        0.706427,
+        0.70932,
+        0.699181
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.454984,
+        0.213248,
+        0.276208,
+        0.05556
+      ],
+      "expected_rating": 2.9323,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.485115,
+        0.573992,
+        0.571639,
+        0.544812,
+        0.480691
+      ],
+      "pmf_probabilities": [
+        0.017502,
+        0.369078,
+        0.35977,
+        0.253649,
+        0.0
+      ],
+      "expected_rating": 2.8496,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.682612,
+        0.686504,
+        0.658898,
+        0.69309,
+        0.658353
+      ],
+      "pmf_probabilities": [
+        0.276638,
+        0.321019,
+        0.00622,
+        0.396124,
+        0.0
+      ],
+      "expected_rating": 2.5218,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.685463,
+        0.705893,
+        0.689091,
+        0.61887,
+        0.645065
+      ],
+      "pmf_probabilities": [
+        0.26634,
+        0.348047,
+        0.280847,
+        0.0,
+        0.104766
+      ],
+      "expected_rating": 2.3288,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.609804,
+        0.626675,
+        0.600152,
+        0.666789,
+        0.636412
+      ],
+      "pmf_probabilities": [
+        0.069407,
+        0.190715,
+        0.0,
+        0.479148,
+        0.26073
+      ],
+      "expected_rating": 3.6711,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.557143,
+        0.546998,
+        0.586928,
+        0.568539,
+        0.603744
+      ],
+      "pmf_probabilities": [
+        0.079037,
+        0.0,
+        0.311071,
+        0.167812,
+        0.442079
+      ],
+      "expected_rating": 3.8939,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.47368,
+        0.528767,
+        0.518098,
+        0.541532,
+        0.583745
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.198568,
+        0.16011,
+        0.244582,
+        0.39674
+      ],
+      "expected_rating": 3.8395,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.644129,
+        0.633697,
+        0.66696,
+        0.695613,
+        0.705619
+      ],
+      "pmf_probabilities": [
+        0.058765,
+        0.0,
+        0.187362,
+        0.348757,
+        0.405116
+      ],
+      "expected_rating": 4.0415,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.768909,
+        0.749117,
+        0.682575,
+        0.796357,
+        0.748368
+      ],
+      "pmf_probabilities": [
+        0.25969,
+        0.200157,
+        0.0,
+        0.342251,
+        0.197903
+      ],
+      "expected_rating": 3.0185,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.588609,
+        0.615284,
+        0.638949,
+        0.646493,
+        0.623868
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.156763,
+        0.295845,
+        0.340177,
+        0.207215
+      ],
+      "expected_rating": 3.5978,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.593025,
+        0.610692,
+        0.597809,
+        0.64539,
+        0.601845
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.21124,
+        0.057201,
+        0.626097,
+        0.105461
+      ],
+      "expected_rating": 3.6258,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.636923,
+        0.627232,
+        0.669762,
+        0.674899,
+        0.685494
+      ],
+      "pmf_probabilities": [
+        0.061277,
+        0.0,
+        0.268922,
+        0.301402,
+        0.368399
+      ],
+      "expected_rating": 3.9156,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.492767,
+        0.532821,
+        0.524312,
+        0.536999,
+        0.544927
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.238428,
+        0.187777,
+        0.2633,
+        0.310495
+      ],
+      "expected_rating": 3.6459,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.705791,
+        0.68897,
+        0.744019,
+        0.69963,
+        0.706956
+      ],
+      "pmf_probabilities": [
+        0.167347,
+        0.0,
+        0.54766,
+        0.106057,
+        0.178936
+      ],
+      "expected_rating": 3.1292,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.715995,
+        0.703144,
+        0.671843,
+        0.763024,
+        0.723627
+      ],
+      "pmf_probabilities": [
+        0.202144,
+        0.143307,
+        0.0,
+        0.417463,
+        0.237086
+      ],
+      "expected_rating": 3.344,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.573745,
+        0.614278,
+        0.636834,
+        0.632649,
+        0.631604
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.183921,
+        0.286266,
+        0.267277,
+        0.262536
+      ],
+      "expected_rating": 3.6084,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.620883,
+        0.631634,
+        0.631241,
+        0.658382,
+        0.627979
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.163622,
+        0.157644,
+        0.570737,
+        0.107996
+      ],
+      "expected_rating": 3.6231,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.580801,
+        0.569795,
+        0.599264,
+        0.600667,
+        0.607887
+      ],
+      "pmf_probabilities": [
+        0.100566,
+        0.0,
+        0.269276,
+        0.282093,
+        0.348065
+      ],
+      "expected_rating": 3.7771,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.449707,
+        0.477645,
+        0.483176,
+        0.497176,
+        0.521522
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.154618,
+        0.185231,
+        0.262707,
+        0.397444
+      ],
+      "expected_rating": 3.903,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.625768,
+        0.625733,
+        0.70255,
+        0.639281,
+        0.648802
+      ],
+      "pmf_probabilities": [
+        0.000311,
+        0.0,
+        0.676982,
+        0.119398,
+        0.203309
+      ],
+      "expected_rating": 3.5254,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.657084,
+        0.653042,
+        0.590266,
+        0.667588,
+        0.641116
+      ],
+      "pmf_probabilities": [
+        0.259218,
+        0.243539,
+        0.0,
+        0.299971,
+        0.197272
+      ],
+      "expected_rating": 2.9325,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.482034,
+        0.54319,
+        0.570332,
+        0.52663,
+        0.504717
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.282171,
+        0.407405,
+        0.205765,
+        0.104659
+      ],
+      "expected_rating": 3.1329,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.743366,
+      "cos_sim_2": 0.738171,
+      "cos_sim_3": 0.729371,
+      "cos_sim_4": 0.718063,
+      "cos_sim_5": 0.704312,
+      "min_similarity": 0.704312,
+      "p1": 0.349562,
+      "p2": 0.303063,
+      "p3": 0.224296,
+      "p4": 0.123078,
+      "p5": 0.0,
+      "set_expected_rating": 2.1209,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.656592,
+      "cos_sim_2": 0.611772,
+      "cos_sim_3": 0.616895,
+      "cos_sim_4": 0.601184,
+      "cos_sim_5": 0.585924,
+      "min_similarity": 0.585924,
+      "p1": 0.495057,
+      "p2": 0.181077,
+      "p3": 0.216963,
+      "p4": 0.106903,
+      "p5": 0.0,
+      "set_expected_rating": 1.9357,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.696628,
+      "cos_sim_2": 0.717535,
+      "cos_sim_3": 0.706427,
+      "cos_sim_4": 0.70932,
+      "cos_sim_5": 0.699181,
+      "min_similarity": 0.696628,
+      "p1": 0.0,
+      "p2": 0.454984,
+      "p3": 0.213248,
+      "p4": 0.276208,
+      "p5": 0.05556,
+      "set_expected_rating": 2.9323,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.485115,
+      "cos_sim_2": 0.573992,
+      "cos_sim_3": 0.571639,
+      "cos_sim_4": 0.544812,
+      "cos_sim_5": 0.480691,
+      "min_similarity": 0.480691,
+      "p1": 0.017502,
+      "p2": 0.369078,
+      "p3": 0.35977,
+      "p4": 0.253649,
+      "p5": 0.0,
+      "set_expected_rating": 2.8496,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.682612,
+      "cos_sim_2": 0.686504,
+      "cos_sim_3": 0.658898,
+      "cos_sim_4": 0.69309,
+      "cos_sim_5": 0.658353,
+      "min_similarity": 0.658353,
+      "p1": 0.276638,
+      "p2": 0.321019,
+      "p3": 0.00622,
+      "p4": 0.396124,
+      "p5": 0.0,
+      "set_expected_rating": 2.5218,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.685463,
+      "cos_sim_2": 0.705893,
+      "cos_sim_3": 0.689091,
+      "cos_sim_4": 0.61887,
+      "cos_sim_5": 0.645065,
+      "min_similarity": 0.61887,
+      "p1": 0.26634,
+      "p2": 0.348047,
+      "p3": 0.280847,
+      "p4": 0.0,
+      "p5": 0.104766,
+      "set_expected_rating": 2.3288,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.609804,
+      "cos_sim_2": 0.626675,
+      "cos_sim_3": 0.600152,
+      "cos_sim_4": 0.666789,
+      "cos_sim_5": 0.636412,
+      "min_similarity": 0.600152,
+      "p1": 0.069407,
+      "p2": 0.190715,
+      "p3": 0.0,
+      "p4": 0.479148,
+      "p5": 0.26073,
+      "set_expected_rating": 3.6711,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.557143,
+      "cos_sim_2": 0.546998,
+      "cos_sim_3": 0.586928,
+      "cos_sim_4": 0.568539,
+      "cos_sim_5": 0.603744,
+      "min_similarity": 0.546998,
+      "p1": 0.079037,
+      "p2": 0.0,
+      "p3": 0.311071,
+      "p4": 0.167812,
+      "p5": 0.442079,
+      "set_expected_rating": 3.8939,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.47368,
+      "cos_sim_2": 0.528767,
+      "cos_sim_3": 0.518098,
+      "cos_sim_4": 0.541532,
+      "cos_sim_5": 0.583745,
+      "min_similarity": 0.47368,
+      "p1": 0.0,
+      "p2": 0.198568,
+      "p3": 0.16011,
+      "p4": 0.244582,
+      "p5": 0.39674,
+      "set_expected_rating": 3.8395,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.644129,
+      "cos_sim_2": 0.633697,
+      "cos_sim_3": 0.66696,
+      "cos_sim_4": 0.695613,
+      "cos_sim_5": 0.705619,
+      "min_similarity": 0.633697,
+      "p1": 0.058765,
+      "p2": 0.0,
+      "p3": 0.187362,
+      "p4": 0.348757,
+      "p5": 0.405116,
+      "set_expected_rating": 4.0415,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.768909,
+      "cos_sim_2": 0.749117,
+      "cos_sim_3": 0.682575,
+      "cos_sim_4": 0.796357,
+      "cos_sim_5": 0.748368,
+      "min_similarity": 0.682575,
+      "p1": 0.25969,
+      "p2": 0.200157,
+      "p3": 0.0,
+      "p4": 0.342251,
+      "p5": 0.197903,
+      "set_expected_rating": 3.0185,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.588609,
+      "cos_sim_2": 0.615284,
+      "cos_sim_3": 0.638949,
+      "cos_sim_4": 0.646493,
+      "cos_sim_5": 0.623868,
+      "min_similarity": 0.588609,
+      "p1": 0.0,
+      "p2": 0.156763,
+      "p3": 0.295845,
+      "p4": 0.340177,
+      "p5": 0.207215,
+      "set_expected_rating": 3.5978,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.593025,
+      "cos_sim_2": 0.610692,
+      "cos_sim_3": 0.597809,
+      "cos_sim_4": 0.64539,
+      "cos_sim_5": 0.601845,
+      "min_similarity": 0.593025,
+      "p1": 0.0,
+      "p2": 0.21124,
+      "p3": 0.057201,
+      "p4": 0.626097,
+      "p5": 0.105461,
+      "set_expected_rating": 3.6258,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.636923,
+      "cos_sim_2": 0.627232,
+      "cos_sim_3": 0.669762,
+      "cos_sim_4": 0.674899,
+      "cos_sim_5": 0.685494,
+      "min_similarity": 0.627232,
+      "p1": 0.061277,
+      "p2": 0.0,
+      "p3": 0.268922,
+      "p4": 0.301402,
+      "p5": 0.368399,
+      "set_expected_rating": 3.9156,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.492767,
+      "cos_sim_2": 0.532821,
+      "cos_sim_3": 0.524312,
+      "cos_sim_4": 0.536999,
+      "cos_sim_5": 0.544927,
+      "min_similarity": 0.492767,
+      "p1": 0.0,
+      "p2": 0.238428,
+      "p3": 0.187777,
+      "p4": 0.2633,
+      "p5": 0.310495,
+      "set_expected_rating": 3.6459,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.705791,
+      "cos_sim_2": 0.68897,
+      "cos_sim_3": 0.744019,
+      "cos_sim_4": 0.69963,
+      "cos_sim_5": 0.706956,
+      "min_similarity": 0.68897,
+      "p1": 0.167347,
+      "p2": 0.0,
+      "p3": 0.54766,
+      "p4": 0.106057,
+      "p5": 0.178936,
+      "set_expected_rating": 3.1292,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.715995,
+      "cos_sim_2": 0.703144,
+      "cos_sim_3": 0.671843,
+      "cos_sim_4": 0.763024,
+      "cos_sim_5": 0.723627,
+      "min_similarity": 0.671843,
+      "p1": 0.202144,
+      "p2": 0.143307,
+      "p3": 0.0,
+      "p4": 0.417463,
+      "p5": 0.237086,
+      "set_expected_rating": 3.344,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.573745,
+      "cos_sim_2": 0.614278,
+      "cos_sim_3": 0.636834,
+      "cos_sim_4": 0.632649,
+      "cos_sim_5": 0.631604,
+      "min_similarity": 0.573745,
+      "p1": 0.0,
+      "p2": 0.183921,
+      "p3": 0.286266,
+      "p4": 0.267277,
+      "p5": 0.262536,
+      "set_expected_rating": 3.6084,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.620883,
+      "cos_sim_2": 0.631634,
+      "cos_sim_3": 0.631241,
+      "cos_sim_4": 0.658382,
+      "cos_sim_5": 0.627979,
+      "min_similarity": 0.620883,
+      "p1": 0.0,
+      "p2": 0.163622,
+      "p3": 0.157644,
+      "p4": 0.570737,
+      "p5": 0.107996,
+      "set_expected_rating": 3.6231,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.580801,
+      "cos_sim_2": 0.569795,
+      "cos_sim_3": 0.599264,
+      "cos_sim_4": 0.600667,
+      "cos_sim_5": 0.607887,
+      "min_similarity": 0.569795,
+      "p1": 0.100566,
+      "p2": 0.0,
+      "p3": 0.269276,
+      "p4": 0.282093,
+      "p5": 0.348065,
+      "set_expected_rating": 3.7771,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.449707,
+      "cos_sim_2": 0.477645,
+      "cos_sim_3": 0.483176,
+      "cos_sim_4": 0.497176,
+      "cos_sim_5": 0.521522,
+      "min_similarity": 0.449707,
+      "p1": 0.0,
+      "p2": 0.154618,
+      "p3": 0.185231,
+      "p4": 0.262707,
+      "p5": 0.397444,
+      "set_expected_rating": 3.903,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.625768,
+      "cos_sim_2": 0.625733,
+      "cos_sim_3": 0.70255,
+      "cos_sim_4": 0.639281,
+      "cos_sim_5": 0.648802,
+      "min_similarity": 0.625733,
+      "p1": 0.000311,
+      "p2": 0.0,
+      "p3": 0.676982,
+      "p4": 0.119398,
+      "p5": 0.203309,
+      "set_expected_rating": 3.5254,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.657084,
+      "cos_sim_2": 0.653042,
+      "cos_sim_3": 0.590266,
+      "cos_sim_4": 0.667588,
+      "cos_sim_5": 0.641116,
+      "min_similarity": 0.590266,
+      "p1": 0.259218,
+      "p2": 0.243539,
+      "p3": 0.0,
+      "p4": 0.299971,
+      "p5": 0.197272,
+      "set_expected_rating": 2.9325,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Ultra AI 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.482034,
+      "cos_sim_2": 0.54319,
+      "cos_sim_3": 0.570332,
+      "cos_sim_4": 0.52663,
+      "cos_sim_5": 0.504717,
+      "min_similarity": 0.482034,
+      "p1": 0.0,
+      "p2": 0.282171,
+      "p3": 0.407405,
+      "p4": 0.205765,
+      "p5": 0.104659,
+      "set_expected_rating": 3.1329,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

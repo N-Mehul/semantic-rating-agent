@@ -1,0 +1,65 @@
+{
+  "name": "samsung 1",
+  "category": "Smartphone",
+  "description": "A mid-range smartphone designed for students and young professionals, with AI-powered features.",
+  "price_inr": 25000.0,
+  "target_group": "Students & young professionals",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Android",
+  "features": [
+    {
+      "name": "AI Personal Assistant",
+      "explanation": "Daily tasks, study reminders, and smart notifications.",
+      "category": null
+    },
+    {
+      "name": "AI Camera Enhancement",
+      "explanation": "Automated low-light and portrait enhancement for photos and reels.",
+      "category": null
+    },
+    {
+      "name": "Smart Battery Optimisation",
+      "explanation": "Adapts power consumption to daily routine usage patterns.",
+      "category": null
+    },
+    {
+      "name": "On-Device AI Processing",
+      "explanation": "Selected AI tasks run locally on-device for enhanced personal privacy.",
+      "category": null
+    },
+    {
+      "name": "Smooth Performance",
+      "explanation": "High refresh display and fast processor for multitasking and casual gaming.",
+      "category": null
+    },
+    {
+      "name": "Simple Interface",
+      "explanation": "Clean layout with optional contextual AI suggestions.",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "ssr_method": "improved",
+  "ssr_method_label": "Improved SSR (Experimental, k=3, T=0.75)",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Smartphone",
+    "product_noun": "smartphone",
+    "usage_role": "primary phone",
+    "brand_or_ecosystem": "Android",
+    "features_count": 6,
+    "conflict_resolved": "Category conflict detected: 'Technology Product' contradicted product 'samsung 1'. Corrected to 'Smartphone'.",
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-05T11:59:38.304483+00:00"
+}

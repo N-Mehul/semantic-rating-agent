@@ -1,0 +1,560 @@
+{
+  "label": "Phase 14 EXPERIMENTAL calibrated SSR vs original SSR on HUMAN Q21; 142 meaningful Q26 responses; 20 stratified 50/50 splits",
+  "n": 142,
+  "class_counts": {
+    "1": 15,
+    "2": 4,
+    "3": 45,
+    "4": 48,
+    "5": 30
+  },
+  "test_set_size": 71,
+  "seeds": [
+    20261105,
+    20261106,
+    20261107,
+    20261108,
+    20261109,
+    20261110,
+    20261111,
+    20261112,
+    20261113,
+    20261114,
+    20261115,
+    20261116,
+    20261117,
+    20261118,
+    20261119,
+    20261120,
+    20261121,
+    20261122,
+    20261123,
+    20261124
+  ],
+  "summary_mean_sd": {
+    "A_baseline_rounded_E (original SSR)": {
+      "exact": [
+        0.3761,
+        0.0247
+      ],
+      "within1": [
+        0.8852,
+        0.0201
+      ],
+      "MAE": [
+        0.7739,
+        0.0437
+      ],
+      "RMSE": [
+        1.0683,
+        0.0572
+      ],
+      "spearman": [
+        0.4028,
+        0.064
+      ],
+      "qwk": [
+        0.3288,
+        0.0647
+      ],
+      "lwk": [
+        0.1978,
+        0.0431
+      ],
+      "macro_P": [
+        0.1933,
+        0.0277
+      ],
+      "macro_R": [
+        0.2806,
+        0.0465
+      ],
+      "macro_F1": [
+        0.2095,
+        0.0332
+      ],
+      "weighted_P": [
+        0.2705,
+        0.0224
+      ],
+      "weighted_R": [
+        0.3761,
+        0.0247
+      ],
+      "weighted_F1": [
+        0.2872,
+        0.0242
+      ],
+      "R1": [
+        0.0,
+        0.0
+      ],
+      "R2": [
+        0.3,
+        0.2513
+      ],
+      "R3": [
+        0.2736,
+        0.0639
+      ],
+      "R4": [
+        0.8292,
+        0.0486
+      ],
+      "R5": [
+        0.0,
+        0.0
+      ],
+      "mean_bias_pred_minus_true": [
+        0.157,
+        0.052
+      ]
+    },
+    "B_phase7_QWK_cutpoints (fit on train)": {
+      "exact": [
+        0.3458,
+        0.0381
+      ],
+      "within1": [
+        0.812,
+        0.0327
+      ],
+      "MAE": [
+        0.888,
+        0.0612
+      ],
+      "RMSE": [
+        1.2015,
+        0.0728
+      ],
+      "spearman": [
+        0.451,
+        0.0555
+      ],
+      "qwk": [
+        0.4395,
+        0.0631
+      ],
+      "lwk": [
+        0.2844,
+        0.055
+      ],
+      "macro_P": [
+        0.3394,
+        0.0811
+      ],
+      "macro_R": [
+        0.3364,
+        0.0763
+      ],
+      "macro_F1": [
+        0.2677,
+        0.0337
+      ],
+      "weighted_P": [
+        0.3937,
+        0.0884
+      ],
+      "weighted_R": [
+        0.3458,
+        0.0381
+      ],
+      "weighted_F1": [
+        0.326,
+        0.0456
+      ],
+      "R1": [
+        0.1652,
+        0.1339
+      ],
+      "R2": [
+        0.45,
+        0.4261
+      ],
+      "R3": [
+        0.1484,
+        0.1421
+      ],
+      "R4": [
+        0.5917,
+        0.084
+      ],
+      "R5": [
+        0.3267,
+        0.1142
+      ],
+      "mean_bias_pred_minus_true": [
+        -0.0697,
+        0.1833
+      ]
+    },
+    "C_quantile_matched_thresholds (fit on train)": {
+      "exact": [
+        0.3746,
+        0.0577
+      ],
+      "within1": [
+        0.7458,
+        0.0444
+      ],
+      "MAE": [
+        0.9183,
+        0.0869
+      ],
+      "RMSE": [
+        1.2573,
+        0.0916
+      ],
+      "spearman": [
+        0.4354,
+        0.0776
+      ],
+      "qwk": [
+        0.4323,
+        0.0831
+      ],
+      "lwk": [
+        0.2753,
+        0.0837
+      ],
+      "macro_P": [
+        0.3076,
+        0.0673
+      ],
+      "macro_R": [
+        0.3087,
+        0.0749
+      ],
+      "macro_F1": [
+        0.297,
+        0.0634
+      ],
+      "weighted_P": [
+        0.3841,
+        0.0668
+      ],
+      "weighted_R": [
+        0.3746,
+        0.0577
+      ],
+      "weighted_F1": [
+        0.3692,
+        0.0589
+      ],
+      "R1": [
+        0.3107,
+        0.2702
+      ],
+      "R2": [
+        0.05,
+        0.1539
+      ],
+      "R3": [
+        0.3448,
+        0.1013
+      ],
+      "R4": [
+        0.4312,
+        0.1133
+      ],
+      "R5": [
+        0.4067,
+        0.0777
+      ],
+      "mean_bias_pred_minus_true": [
+        -0.0183,
+        0.2348
+      ]
+    }
+  },
+  "paired_vs_baseline": {
+    "B_phase7_QWK_cutpoints (fit on train)": {
+      "exact": {
+        "mean_diff": -0.030281690140845075,
+        "sd": 0.043657189053906066,
+        "splits_better": 5,
+        "splits_worse": 14
+      },
+      "qwk": {
+        "mean_diff": 0.11068247972200285,
+        "sd": 0.03573545626137611,
+        "splits_better": 20,
+        "splits_worse": 0
+      },
+      "macro_F1": {
+        "mean_diff": 0.058210859390752025,
+        "sd": 0.05100413957077749,
+        "splits_better": 17,
+        "splits_worse": 3
+      },
+      "macro_R": {
+        "mean_diff": 0.05582952192734801,
+        "sd": 0.09195578986613881,
+        "splits_better": 13,
+        "splits_worse": 7
+      },
+      "MAE": {
+        "mean_diff": 0.11408450704225348,
+        "sd": 0.06112023549805346,
+        "splits_better": 0,
+        "splits_worse": 20
+      },
+      "R1": {
+        "mean_diff": 0.1651785714285714,
+        "sd": 0.1338659001235822,
+        "splits_better": 16,
+        "splits_worse": 0
+      },
+      "R5": {
+        "mean_diff": 0.3266666666666667,
+        "sd": 0.11424811411549589,
+        "splits_better": 20,
+        "splits_worse": 0
+      },
+      "spearman": {
+        "mean_diff": 0.048149219221395555,
+        "sd": 0.03202915401129586,
+        "splits_better": 19,
+        "splits_worse": 1
+      }
+    },
+    "C_quantile_matched_thresholds (fit on train)": {
+      "exact": {
+        "mean_diff": -0.0014084507042253502,
+        "sd": 0.055195985842925274,
+        "splits_better": 6,
+        "splits_worse": 10
+      },
+      "qwk": {
+        "mean_diff": 0.10344913682082799,
+        "sd": 0.055865902566570716,
+        "splits_better": 19,
+        "splits_worse": 1
+      },
+      "macro_F1": {
+        "mean_diff": 0.08749062950315944,
+        "sd": 0.0758214943983054,
+        "splits_better": 17,
+        "splits_worse": 3
+      },
+      "macro_R": {
+        "mean_diff": 0.028122106154714853,
+        "sd": 0.08744811200426184,
+        "splits_better": 12,
+        "splits_worse": 8
+      },
+      "MAE": {
+        "mean_diff": 0.14436619718309857,
+        "sd": 0.0679130335281194,
+        "splits_better": 1,
+        "splits_worse": 19
+      },
+      "R1": {
+        "mean_diff": 0.3107142857142857,
+        "sd": 0.27015927990700433,
+        "splits_better": 19,
+        "splits_worse": 0
+      },
+      "R5": {
+        "mean_diff": 0.4066666666666666,
+        "sd": 0.07768582701689059,
+        "splits_better": 20,
+        "splits_worse": 0
+      },
+      "spearman": {
+        "mean_diff": 0.03259188643145037,
+        "sd": 0.05335478720134998,
+        "splits_better": 15,
+        "splits_worse": 5
+      }
+    }
+  },
+  "pooled_test_confusion_rows_true_cols_pred": {
+    "A_baseline_rounded_E (original SSR)": [
+      [
+        0,
+        30,
+        67,
+        50,
+        0
+      ],
+      [
+        0,
+        12,
+        18,
+        10,
+        0
+      ],
+      [
+        0,
+        20,
+        124,
+        309,
+        0
+      ],
+      [
+        0,
+        19,
+        63,
+        398,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        283,
+        0
+      ]
+    ],
+    "B_phase7_QWK_cutpoints (fit on train)": [
+      [
+        24,
+        56,
+        39,
+        28,
+        0
+      ],
+      [
+        8,
+        18,
+        4,
+        10,
+        0
+      ],
+      [
+        22,
+        128,
+        67,
+        191,
+        45
+      ],
+      [
+        17,
+        73,
+        48,
+        284,
+        58
+      ],
+      [
+        1,
+        18,
+        14,
+        169,
+        98
+      ]
+    ],
+    "C_quantile_matched_thresholds (fit on train)": [
+      [
+        45,
+        11,
+        81,
+        10,
+        0
+      ],
+      [
+        12,
+        2,
+        17,
+        9,
+        0
+      ],
+      [
+        80,
+        9,
+        156,
+        128,
+        80
+      ],
+      [
+        31,
+        6,
+        123,
+        207,
+        113
+      ],
+      [
+        5,
+        4,
+        55,
+        114,
+        122
+      ]
+    ]
+  },
+  "pooled_test_pred_distribution": {
+    "A_baseline_rounded_E (original SSR)": [
+      0,
+      81,
+      289,
+      1050,
+      0
+    ],
+    "B_phase7_QWK_cutpoints (fit on train)": [
+      72,
+      293,
+      172,
+      682,
+      201
+    ],
+    "C_quantile_matched_thresholds (fit on train)": [
+      173,
+      32,
+      432,
+      468,
+      315
+    ]
+  },
+  "true_distribution_pooled_test": [
+    147,
+    40,
+    453,
+    480,
+    300
+  ],
+  "thresholds_mean_sd": {
+    "A_baseline_rounded_E (original SSR)": [
+      [
+        1.5,
+        2.5,
+        3.5,
+        4.5
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "B_phase7_QWK_cutpoints (fit on train)": [
+      [
+        2.396,
+        3.471,
+        3.761,
+        4.216
+      ],
+      [
+        0.38,
+        0.364,
+        0.042,
+        0.05
+      ]
+    ],
+    "C_quantile_matched_thresholds (fit on train)": [
+      [
+        3.155,
+        3.249,
+        3.82,
+        4.111
+      ],
+      [
+        0.133,
+        0.102,
+        0.041,
+        0.045
+      ]
+    ]
+  },
+  "spearman_note": "computed on discrete predictions (calibration is monotone, so continuous E[r] Spearman is unchanged by design)"
+}

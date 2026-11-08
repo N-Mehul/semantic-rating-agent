@@ -1,0 +1,55 @@
+{
+  "name": "Samsung Galaxy M35 5G",
+  "category": "Smartphone",
+  "description": "The Samsung Galaxy M35 5G is a mid-range smartphone designed for users who need a balance of performance, entertainment, communication, and everyday productivity. It supports daily activities such as browsing the internet, using social media, attending online classes, watching videos, taking photographs, and running multiple applications. The phone is suitable for students, working professionals, technology enthusiasts, and budget-conscious consumers. Users may evaluate its performance, convenience, reliability, entertainment experience, and overall suitability for their needs.",
+  "price_inr": 19999.0,
+  "target_group": "Technology consumers",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Android",
+  "features": [
+    {
+      "name": "Everyday Productivity",
+      "explanation": "everyday productivity",
+      "category": null
+    },
+    {
+      "name": "Running Multiple Applications",
+      "explanation": "running multiple applications",
+      "category": null
+    },
+    {
+      "name": "Budget-Conscious Consumers",
+      "explanation": "budget-conscious consumers",
+      "category": null
+    },
+    {
+      "name": "Overall Suitability For Their Needs",
+      "explanation": "overall suitability for their needs",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "ssr_method": "improved",
+  "ssr_method_label": "Improved SSR (Experimental, k=3, T=0.75)",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Smartphone",
+    "product_noun": "smartphone",
+    "usage_role": "primary phone",
+    "brand_or_ecosystem": "Android",
+    "features_count": 4,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-05T18:12:17.281740+00:00"
+}

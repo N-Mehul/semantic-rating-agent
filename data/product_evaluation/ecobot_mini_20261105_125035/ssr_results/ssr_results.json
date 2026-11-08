@@ -1,0 +1,2675 @@
+{
+  "evaluation_id": "ecobot_mini_20261105_125035",
+  "product_name": "EcoBot Mini",
+  "ssr_method": "improved",
+  "ssr_method_label": "Improved SSR (Experimental, k=3, T=0.75)",
+  "k_truncation": 3,
+  "temperature": 0.75,
+  "comparison_summary": {
+    "active_ssr_method": "improved",
+    "active_ssr_label": "Improved SSR (Experimental, k=3, T=0.75)",
+    "is_comparison_mode": false,
+    "canonical": {
+      "method": "Canonical SSR (Original Reference Baseline)",
+      "k_truncation": 5,
+      "temperature": 1.0,
+      "primary_adoption_average": 2.6297,
+      "construct_averages": {
+        "PE": 2.2393,
+        "EE": 2.7161,
+        "HM": 2.3392,
+        "SI": 2.7961,
+        "PP": 2.2989,
+        "BI": 2.6297
+      }
+    },
+    "improved": {
+      "method": "Improved SSR (Experimental)",
+      "k_truncation": 3,
+      "temperature": 0.75,
+      "primary_adoption_average": 2.6919,
+      "construct_averages": {
+        "PE": 2.0633,
+        "EE": 2.6248,
+        "HM": 2.1721,
+        "SI": 2.8945,
+        "PP": 2.008,
+        "BI": 2.6919
+      }
+    },
+    "deltas": {
+      "primary_adoption_delta": 0.0622,
+      "construct_deltas": {
+        "PE": -0.176,
+        "EE": -0.0913,
+        "HM": -0.1671,
+        "SI": 0.0984,
+        "PP": -0.2909,
+        "BI": 0.0622
+      }
+    },
+    "persona_comparison": [
+      {
+        "persona_id": "P1_premium_tier_owner",
+        "canonical_adoption_rating": 2.3868,
+        "improved_adoption_rating": 2.3337,
+        "delta": -0.0531
+      },
+      {
+        "persona_id": "P2_midrange_heavy_user",
+        "canonical_adoption_rating": 2.9259,
+        "improved_adoption_rating": 2.9314,
+        "delta": 0.0055
+      },
+      {
+        "persona_id": "P3_midrange_moderate_user",
+        "canonical_adoption_rating": 2.6025,
+        "improved_adoption_rating": 2.713,
+        "delta": 0.1105
+      },
+      {
+        "persona_id": "P4_budget_or_undisclosed_price",
+        "canonical_adoption_rating": 2.6036,
+        "improved_adoption_rating": 2.7895,
+        "delta": 0.1859
+      }
+    ]
+  },
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Improved SSR (Experimental, k=3, T=0.75))",
+  "timestamp_utc": "2026-11-05T07:32:54.103777+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 2.6919,
+  "overall_adoption_average": 2.6919,
+  "primary_adoption_average": 2.6919,
+  "construct_averages": {
+    "PE": 2.0633,
+    "EE": 2.6248,
+    "HM": 2.1721,
+    "SI": 2.8945,
+    "PP": 2.008,
+    "BI": 2.6919
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "primary_adoption_rating": 2.3337,
+      "primary_adoption_pmf": [
+        0.022577,
+        0.621141,
+        0.356282,
+        0.0,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 2.2432,
+        "EE": 2.287,
+        "HM": 2.1515,
+        "SI": 3.0056,
+        "PP": 1.9085,
+        "BI": 2.3337
+      },
+      "construct_responses": {
+        "PE": "The processor and display are decent for handling smart home tasks, but the limited practical benefits and frequent malfunctions might make it less effective in the long run.",
+        "EE": "Setting up and navigating the interface would be straightforward, but the frequent malfunctions could make it frustrating to use.",
+        "HM": "Using it for daily tasks would be fine, but the lack of practical benefits and occasional issues might reduce the overall satisfaction.",
+        "SI": "My peers might find it interesting, but they would likely prefer more reliable and feature-rich alternatives.",
+        "PP": "The build quality seems solid, but the frequent malfunctions and limited benefits might affect its durability over time.",
+        "BI": "I am hesitant to continue using this smart home robot as my primary smart home robot due to its limited practical benefits and frequent malfunctions, especially at this price.",
+        "OVERALL": "While the build quality is good, the smart home robot's limited benefits and frequent malfunctions make it less appealing, especially for such a high price."
+      },
+      "response_text": "While the build quality is good, the smart home robot's limited benefits and frequent malfunctions make it less appealing, especially for such a high price.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The processor and display are decent for handling smart home tasks, but the limited practical benefits and frequent malfunctions might make it less effective in the long run.",
+          "cosine_similarities": [
+            0.662258,
+            0.677533,
+            0.673393,
+            0.652609,
+            0.654853
+          ],
+          "min_similarity": 0.652609,
+          "pmf_probabilities": [
+            0.136508,
+            0.483773,
+            0.379719,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 2.2432,
+          "canonical": {
+            "pmf_probabilities": [
+              0.167522,
+              0.432697,
+              0.360827,
+              0.0,
+              0.038954
+            ],
+            "expected_rating": 2.3102
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.136508,
+              0.483773,
+              0.379719,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 2.2432
+          },
+          "delta_improved_minus_canonical": -0.067,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and navigating the interface would be straightforward, but the frequent malfunctions could make it frustrating to use.",
+          "cosine_similarities": [
+            0.535424,
+            0.590613,
+            0.554474,
+            0.537316,
+            0.531201
+          ],
+          "min_similarity": 0.531201,
+          "pmf_probabilities": [
+            0.0,
+            0.749151,
+            0.214718,
+            0.03613,
+            0.0
+          ],
+          "expected_rating": 2.287,
+          "canonical": {
+            "pmf_probabilities": [
+              0.045399,
+              0.638686,
+              0.250185,
+              0.06573,
+              0.0
+            ],
+            "expected_rating": 2.3362
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.749151,
+              0.214718,
+              0.03613,
+              0.0
+            ],
+            "expected_rating": 2.287
+          },
+          "delta_improved_minus_canonical": -0.0493,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using it for daily tasks would be fine, but the lack of practical benefits and occasional issues might reduce the overall satisfaction.",
+          "cosine_similarities": [
+            0.560902,
+            0.57542,
+            0.588182,
+            0.553395,
+            0.495334
+          ],
+          "min_similarity": 0.495334,
+          "pmf_probabilities": [
+            0.256689,
+            0.335136,
+            0.408175,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 2.1515,
+          "canonical": {
+            "pmf_probabilities": [
+              0.221094,
+              0.270046,
+              0.313081,
+              0.195779,
+              0.0
+            ],
+            "expected_rating": 2.4835
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.256689,
+              0.335136,
+              0.408175,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 2.1515
+          },
+          "delta_improved_minus_canonical": -0.3321,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers might find it interesting, but they would likely prefer more reliable and feature-rich alternatives.",
+          "cosine_similarities": [
+            0.547176,
+            0.552703,
+            0.592024,
+            0.553252,
+            0.530839
+          ],
+          "min_similarity": 0.530839,
+          "pmf_probabilities": [
+            0.0,
+            0.167306,
+            0.659764,
+            0.17293,
+            0.0
+          ],
+          "expected_rating": 3.0056,
+          "canonical": {
+            "pmf_probabilities": [
+              0.134128,
+              0.179511,
+              0.502342,
+              0.184019,
+              0.0
+            ],
+            "expected_rating": 2.7363
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.167306,
+              0.659764,
+              0.17293,
+              0.0
+            ],
+            "expected_rating": 3.0056
+          },
+          "delta_improved_minus_canonical": 0.2694,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality seems solid, but the frequent malfunctions and limited benefits might affect its durability over time.",
+          "cosine_similarities": [
+            0.426324,
+            0.465638,
+            0.417365,
+            0.414543,
+            0.40362
+          ],
+          "min_similarity": 0.40362,
+          "pmf_probabilities": [
+            0.187595,
+            0.716329,
+            0.096076,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 1.9085,
+          "canonical": {
+            "pmf_probabilities": [
+              0.20755,
+              0.566947,
+              0.125652,
+              0.099851,
+              0.0
+            ],
+            "expected_rating": 2.1178
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.187595,
+              0.716329,
+              0.096076,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 1.9085
+          },
+          "delta_improved_minus_canonical": -0.2093,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am hesitant to continue using this smart home robot as my primary smart home robot due to its limited practical benefits and frequent malfunctions, especially at this price.",
+          "cosine_similarities": [
+            0.56474,
+            0.618153,
+            0.598291,
+            0.563433,
+            0.55989
+          ],
+          "min_similarity": 0.55989,
+          "pmf_probabilities": [
+            0.022577,
+            0.621141,
+            0.356282,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 2.3337,
+          "canonical": {
+            "pmf_probabilities": [
+              0.046165,
+              0.554581,
+              0.365525,
+              0.033729,
+              0.0
+            ],
+            "expected_rating": 2.3868
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.022577,
+              0.621141,
+              0.356282,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 2.3337
+          },
+          "delta_improved_minus_canonical": -0.0531,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "primary_adoption_rating": 2.9314,
+      "primary_adoption_pmf": [
+        0.0,
+        0.187661,
+        0.693249,
+        0.119091,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 1.9954,
+        "EE": 3.1391,
+        "HM": 2.2352,
+        "SI": 2.8308,
+        "PP": 1.8876,
+        "BI": 2.9314
+      },
+      "construct_responses": {
+        "PE": "The processor and battery might handle daily tasks, but with limited practical benefits, it may struggle with continuous multitasking and heavy daily workloads. Given the higher price, I would need more from the smart home robot to justify its use.",
+        "EE": "Setting up and operating the smart home robot might be straightforward, but the limited practical benefits and high price make it seem less appealing for everyday use.",
+        "HM": "Using the smart home robot for daily tasks and media viewing might be pleasant, but the lack of specific features for entertainment makes it less enjoyable compared to other devices.",
+        "SI": "My peers might see this as a premium smart home robot, but its limited practical benefits and high price tag might not be seen as a wise investment for most users.",
+        "PP": "The smart home robot's build quality and hardware reliability could be good, but the lack of specific features for security or entertainment makes it less attractive. Its high price is a major deterrent.",
+        "BI": "I am uncertain about adopting this smart home robot. Given its higher price and limited practical benefits, I would need to see more value in its features before committing.",
+        "OVERALL": "The smart home robot offers limited benefits and comes with a high price tag, making it less attractive for everyday use. More features and better value would be needed for a positive adoption."
+      },
+      "response_text": "The smart home robot offers limited benefits and comes with a high price tag, making it less attractive for everyday use. More features and better value would be needed for a positive adoption.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The processor and battery might handle daily tasks, but with limited practical benefits, it may struggle with continuous multitasking and heavy daily workloads. Given the higher price, I would need more from the smart home robot to justify its use.",
+          "cosine_similarities": [
+            0.654381,
+            0.673423,
+            0.653877,
+            0.638305,
+            0.614216
+          ],
+          "min_similarity": 0.614216,
+          "pmf_probabilities": [
+            0.273155,
+            0.458255,
+            0.26859,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 1.9954,
+          "canonical": {
+            "pmf_probabilities": [
+              0.246228,
+              0.362961,
+              0.243135,
+              0.147676,
+              0.0
+            ],
+            "expected_rating": 2.2923
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.273155,
+              0.458255,
+              0.26859,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 1.9954
+          },
+          "delta_improved_minus_canonical": -0.2968,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and operating the smart home robot might be straightforward, but the limited practical benefits and high price make it seem less appealing for everyday use.",
+          "cosine_similarities": [
+            0.525515,
+            0.513381,
+            0.56228,
+            0.521182,
+            0.530875
+          ],
+          "min_similarity": 0.513381,
+          "pmf_probabilities": [
+            0.110603,
+            0.0,
+            0.709259,
+            0.0,
+            0.180138
+          ],
+          "expected_rating": 3.1391,
+          "canonical": {
+            "pmf_probabilities": [
+              0.140561,
+              0.0,
+              0.566426,
+              0.090364,
+              0.202649
+            ],
+            "expected_rating": 3.2145
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.110603,
+              0.0,
+              0.709259,
+              0.0,
+              0.180138
+            ],
+            "expected_rating": 3.1391
+          },
+          "delta_improved_minus_canonical": -0.0755,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the smart home robot for daily tasks and media viewing might be pleasant, but the lack of specific features for entertainment makes it less enjoyable compared to other devices.",
+          "cosine_similarities": [
+            0.622999,
+            0.652855,
+            0.64496,
+            0.60981,
+            0.602379
+          ],
+          "min_similarity": 0.602379,
+          "pmf_probabilities": [
+            0.14433,
+            0.47614,
+            0.379531,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 2.2352,
+          "canonical": {
+            "pmf_probabilities": [
+              0.170264,
+              0.416781,
+              0.351594,
+              0.061361,
+              0.0
+            ],
+            "expected_rating": 2.3041
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.14433,
+              0.47614,
+              0.379531,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 2.2352
+          },
+          "delta_improved_minus_canonical": -0.0689,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers might see this as a premium smart home robot, but its limited practical benefits and high price tag might not be seen as a wise investment for most users.",
+          "cosine_similarities": [
+            0.518528,
+            0.577569,
+            0.618563,
+            0.548891,
+            0.517493
+          ],
+          "min_similarity": 0.517493,
+          "pmf_probabilities": [
+            0.0,
+            0.292233,
+            0.584739,
+            0.123028,
+            0.0
+          ],
+          "expected_rating": 2.8308,
+          "canonical": {
+            "pmf_probabilities": [
+              0.005347,
+              0.310342,
+              0.522113,
+              0.162198,
+              0.0
+            ],
+            "expected_rating": 2.8412
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.292233,
+              0.584739,
+              0.123028,
+              0.0
+            ],
+            "expected_rating": 2.8308
+          },
+          "delta_improved_minus_canonical": -0.0104,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The smart home robot's build quality and hardware reliability could be good, but the lack of specific features for security or entertainment makes it less attractive. Its high price is a major deterrent.",
+          "cosine_similarities": [
+            0.507031,
+            0.527358,
+            0.471907,
+            0.486933,
+            0.473591
+          ],
+          "min_similarity": 0.471907,
+          "pmf_probabilities": [
+            0.316398,
+            0.581612,
+            0.0,
+            0.10199,
+            0.0
+          ],
+          "expected_rating": 1.8876,
+          "canonical": {
+            "pmf_probabilities": [
+              0.327393,
+              0.516855,
+              0.0,
+              0.140059,
+              0.015693
+            ],
+            "expected_rating": 1.9998
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.316398,
+              0.581612,
+              0.0,
+              0.10199,
+              0.0
+            ],
+            "expected_rating": 1.8876
+          },
+          "delta_improved_minus_canonical": -0.1122,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am uncertain about adopting this smart home robot. Given its higher price and limited practical benefits, I would need to see more value in its features before committing.",
+          "cosine_similarities": [
+            0.533079,
+            0.57105,
+            0.635443,
+            0.559871,
+            0.532367
+          ],
+          "min_similarity": 0.532367,
+          "pmf_probabilities": [
+            0.0,
+            0.187661,
+            0.693249,
+            0.119091,
+            0.0
+          ],
+          "expected_rating": 2.9314,
+          "canonical": {
+            "pmf_probabilities": [
+              0.004189,
+              0.22758,
+              0.606418,
+              0.161813,
+              0.0
+            ],
+            "expected_rating": 2.9259
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.187661,
+              0.693249,
+              0.119091,
+              0.0
+            ],
+            "expected_rating": 2.9314
+          },
+          "delta_improved_minus_canonical": 0.0056,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "primary_adoption_rating": 2.713,
+      "primary_adoption_pmf": [
+        0.0,
+        0.35475,
+        0.577479,
+        0.067771,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 2.1059,
+        "EE": 2.3535,
+        "HM": 2.1736,
+        "SI": 2.9963,
+        "PP": 2.078,
+        "BI": 2.713
+      },
+      "construct_responses": {
+        "PE": "The smart home robot offers limited practical benefits, making it less effective for everyday tasks. Given its high price, it seems overpriced for its basic functionalities.",
+        "EE": "Setting up and operating the smart home robot might be complicated due to its limited features. The interface could be confusing for daily use.",
+        "HM": "Using the smart home robot for daily tasks and media viewing would not be very enjoyable due to its basic features. It lacks the entertainment value that comes with more advanced devices.",
+        "SI": "My peers might not find this smart home robot impressive. It seems more suitable for basic needs rather than advanced requirements.",
+        "PP": "The smart home robot’s build quality is not discussed, so we cannot gauge its durability. However, the high price might deter potential users looking for a reliable long-term solution.",
+        "BI": "I am hesitant to continue using this smart home robot as my primary smart home robot due to its limited features and high price. I would prefer more advanced options that offer better value for money.",
+        "OVERALL": "The smart home robot seems more suited for basic needs rather than advanced functionalities. Its high price makes it less attractive compared to other options available in the market."
+      },
+      "response_text": "The smart home robot seems more suited for basic needs rather than advanced functionalities. Its high price makes it less attractive compared to other options available in the market.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The smart home robot offers limited practical benefits, making it less effective for everyday tasks. Given its high price, it seems overpriced for its basic functionalities.",
+          "cosine_similarities": [
+            0.596031,
+            0.612343,
+            0.605722,
+            0.576248,
+            0.565693
+          ],
+          "min_similarity": 0.565693,
+          "pmf_probabilities": [
+            0.236858,
+            0.420374,
+            0.342767,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 2.1059,
+          "canonical": {
+            "pmf_probabilities": [
+              0.237812,
+              0.365674,
+              0.313774,
+              0.08274,
+              0.0
+            ],
+            "expected_rating": 2.2414
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.236858,
+              0.420374,
+              0.342767,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 2.1059
+          },
+          "delta_improved_minus_canonical": -0.1355,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and operating the smart home robot might be complicated due to its limited features. The interface could be confusing for daily use.",
+          "cosine_similarities": [
+            0.587674,
+            0.602561,
+            0.620171,
+            0.563713,
+            0.583914
+          ],
+          "min_similarity": 0.563713,
+          "pmf_probabilities": [
+            0.16556,
+            0.315339,
+            0.519101,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 2.3535,
+          "canonical": {
+            "pmf_probabilities": [
+              0.171802,
+              0.278545,
+              0.40481,
+              0.0,
+              0.144842
+            ],
+            "expected_rating": 2.6675
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.16556,
+              0.315339,
+              0.519101,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 2.3535
+          },
+          "delta_improved_minus_canonical": -0.314,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the smart home robot for daily tasks and media viewing would not be very enjoyable due to its basic features. It lacks the entertainment value that comes with more advanced devices.",
+          "cosine_similarities": [
+            0.613651,
+            0.63761,
+            0.639432,
+            0.582545,
+            0.566129
+          ],
+          "min_similarity": 0.566129,
+          "pmf_probabilities": [
+            0.221945,
+            0.382499,
+            0.395556,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 2.1736,
+          "canonical": {
+            "pmf_probabilities": [
+              0.227683,
+              0.342467,
+              0.351198,
+              0.078653,
+              0.0
+            ],
+            "expected_rating": 2.2808
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.221945,
+              0.382499,
+              0.395556,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 2.1736
+          },
+          "delta_improved_minus_canonical": -0.1072,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers might not find this smart home robot impressive. It seems more suitable for basic needs rather than advanced requirements.",
+          "cosine_similarities": [
+            0.52558,
+            0.539249,
+            0.585976,
+            0.538891,
+            0.523716
+          ],
+          "min_similarity": 0.523716,
+          "pmf_probabilities": [
+            0.0,
+            0.119955,
+            0.763763,
+            0.116282,
+            0.0
+          ],
+          "expected_rating": 2.9963,
+          "canonical": {
+            "pmf_probabilities": [
+              0.01965,
+              0.163796,
+              0.656535,
+              0.160019,
+              0.0
+            ],
+            "expected_rating": 2.9569
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.119955,
+              0.763763,
+              0.116282,
+              0.0
+            ],
+            "expected_rating": 2.9963
+          },
+          "delta_improved_minus_canonical": 0.0394,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The smart home robot’s build quality is not discussed, so we cannot gauge its durability. However, the high price might deter potential users looking for a reliable long-term solution.",
+          "cosine_similarities": [
+            0.496739,
+            0.498298,
+            0.435367,
+            0.477354,
+            0.464969
+          ],
+          "min_similarity": 0.435367,
+          "pmf_probabilities": [
+            0.379242,
+            0.392142,
+            0.0,
+            0.228616,
+            0.0
+          ],
+          "expected_rating": 2.078,
+          "canonical": {
+            "pmf_probabilities": [
+              0.313294,
+              0.321254,
+              0.0,
+              0.214336,
+              0.151116
+            ],
+            "expected_rating": 2.5687
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.379242,
+              0.392142,
+              0.0,
+              0.228616,
+              0.0
+            ],
+            "expected_rating": 2.078
+          },
+          "delta_improved_minus_canonical": -0.4907,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am hesitant to continue using this smart home robot as my primary smart home robot due to its limited features and high price. I would prefer more advanced options that offer better value for money.",
+          "cosine_similarities": [
+            0.545064,
+            0.579695,
+            0.599626,
+            0.547572,
+            0.534518
+          ],
+          "min_similarity": 0.534518,
+          "pmf_probabilities": [
+            0.0,
+            0.35475,
+            0.577479,
+            0.067771,
+            0.0
+          ],
+          "expected_rating": 2.713,
+          "canonical": {
+            "pmf_probabilities": [
+              0.078773,
+              0.337431,
+              0.486291,
+              0.097505,
+              0.0
+            ],
+            "expected_rating": 2.6025
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.35475,
+              0.577479,
+              0.067771,
+              0.0
+            ],
+            "expected_rating": 2.713
+          },
+          "delta_improved_minus_canonical": 0.1105,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "primary_adoption_rating": 2.7895,
+      "primary_adoption_pmf": [
+        0.0,
+        0.302668,
+        0.605116,
+        0.092216,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 1.9088,
+        "EE": 2.7194,
+        "HM": 2.1282,
+        "SI": 2.7453,
+        "PP": 2.1578,
+        "BI": 2.7895
+      },
+      "construct_responses": {
+        "PE": "The smart home robot seems to struggle with its primary tasks given its limited practical benefits. It's not expected to handle daily household chores effectively.",
+        "EE": "Setting up and operating the robot might be cumbersome due to its limited features and interface, which could make it less user-friendly.",
+        "HM": "Using the smart home robot for daily tasks would be disappointing due to its limited practical benefits, making it less enjoyable.",
+        "SI": "My peers might not recommend this robot due to its limited features and high price, making it seem like an overpriced option.",
+        "PP": "The robot's build quality and durability are unknown, but given its high price, it's expected to last longer than cheaper options.",
+        "BI": "I am hesitant to adopt this smart home robot given its high price and limited practical benefits. I would prefer a simpler, more accessible option for essential tasks.",
+        "OVERALL": "The smart home robot appears to be overpriced for its limited functionality, making it a less attractive choice compared to more affordable alternatives."
+      },
+      "response_text": "The smart home robot appears to be overpriced for its limited functionality, making it a less attractive choice compared to more affordable alternatives.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The smart home robot seems to struggle with its primary tasks given its limited practical benefits. It's not expected to handle daily household chores effectively.",
+          "cosine_similarities": [
+            0.668463,
+            0.677215,
+            0.657628,
+            0.631864,
+            0.61697
+          ],
+          "min_similarity": 0.61697,
+          "pmf_probabilities": [
+            0.33754,
+            0.41613,
+            0.246329,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 1.9088,
+          "canonical": {
+            "pmf_probabilities": [
+              0.307808,
+              0.360128,
+              0.243037,
+              0.089028,
+              0.0
+            ],
+            "expected_rating": 2.1133
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.33754,
+              0.41613,
+              0.246329,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 1.9088
+          },
+          "delta_improved_minus_canonical": -0.2045,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and operating the robot might be cumbersome due to its limited features and interface, which could make it less user-friendly.",
+          "cosine_similarities": [
+            0.569912,
+            0.579023,
+            0.619992,
+            0.564915,
+            0.561231
+          ],
+          "min_similarity": 0.561231,
+          "pmf_probabilities": [
+            0.060946,
+            0.158671,
+            0.780383,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 2.7194,
+          "canonical": {
+            "pmf_probabilities": [
+              0.097628,
+              0.200098,
+              0.660844,
+              0.041431,
+              0.0
+            ],
+            "expected_rating": 2.6461
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.060946,
+              0.158671,
+              0.780383,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 2.7194
+          },
+          "delta_improved_minus_canonical": 0.0734,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the smart home robot for daily tasks would be disappointing due to its limited practical benefits, making it less enjoyable.",
+          "cosine_similarities": [
+            0.580033,
+            0.5968,
+            0.602559,
+            0.541824,
+            0.515965
+          ],
+          "min_similarity": 0.515965,
+          "pmf_probabilities": [
+            0.25922,
+            0.353407,
+            0.387373,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 2.1282,
+          "canonical": {
+            "pmf_probabilities": [
+              0.248948,
+              0.314096,
+              0.336476,
+              0.10048,
+              0.0
+            ],
+            "expected_rating": 2.2885
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.25922,
+              0.353407,
+              0.387373,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 2.1282
+          },
+          "delta_improved_minus_canonical": -0.1603,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers might not recommend this robot due to its limited features and high price, making it seem like an overpriced option.",
+          "cosine_similarities": [
+            0.488813,
+            0.551078,
+            0.583679,
+            0.50173,
+            0.471839
+          ],
+          "min_similarity": 0.471839,
+          "pmf_probabilities": [
+            0.0,
+            0.350164,
+            0.554396,
+            0.095441,
+            0.0
+          ],
+          "expected_rating": 2.7453,
+          "canonical": {
+            "pmf_probabilities": [
+              0.071335,
+              0.333015,
+              0.47003,
+              0.125621,
+              0.0
+            ],
+            "expected_rating": 2.6499
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.350164,
+              0.554396,
+              0.095441,
+              0.0
+            ],
+            "expected_rating": 2.7453
+          },
+          "delta_improved_minus_canonical": 0.0953,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The robot's build quality and durability are unknown, but given its high price, it's expected to last longer than cheaper options.",
+          "cosine_similarities": [
+            0.419701,
+            0.43572,
+            0.393538,
+            0.415472,
+            0.404888
+          ],
+          "min_similarity": 0.393538,
+          "pmf_probabilities": [
+            0.271662,
+            0.513589,
+            0.0,
+            0.214749,
+            0.0
+          ],
+          "expected_rating": 2.1578,
+          "canonical": {
+            "pmf_probabilities": [
+              0.257437,
+              0.415059,
+              0.0,
+              0.215822,
+              0.111682
+            ],
+            "expected_rating": 2.5093
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.271662,
+              0.513589,
+              0.0,
+              0.214749,
+              0.0
+            ],
+            "expected_rating": 2.1578
+          },
+          "delta_improved_minus_canonical": -0.3514,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am hesitant to adopt this smart home robot given its high price and limited practical benefits. I would prefer a simpler, more accessible option for essential tasks.",
+          "cosine_similarities": [
+            0.541275,
+            0.567822,
+            0.59778,
+            0.541884,
+            0.523852
+          ],
+          "min_similarity": 0.523852,
+          "pmf_probabilities": [
+            0.0,
+            0.302668,
+            0.605116,
+            0.092216,
+            0.0
+          ],
+          "expected_rating": 2.7895,
+          "canonical": {
+            "pmf_probabilities": [
+              0.113613,
+              0.286724,
+              0.48208,
+              0.117583,
+              0.0
+            ],
+            "expected_rating": 2.6036
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.302668,
+              0.605116,
+              0.092216,
+              0.0
+            ],
+            "expected_rating": 2.7895
+          },
+          "delta_improved_minus_canonical": 0.1859,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.662258,
+        0.677533,
+        0.673393,
+        0.652609,
+        0.654853
+      ],
+      "pmf_probabilities": [
+        0.136508,
+        0.483773,
+        0.379719,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 2.2432,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.535424,
+        0.590613,
+        0.554474,
+        0.537316,
+        0.531201
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.749151,
+        0.214718,
+        0.03613,
+        0.0
+      ],
+      "expected_rating": 2.287,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.560902,
+        0.57542,
+        0.588182,
+        0.553395,
+        0.495334
+      ],
+      "pmf_probabilities": [
+        0.256689,
+        0.335136,
+        0.408175,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 2.1515,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.547176,
+        0.552703,
+        0.592024,
+        0.553252,
+        0.530839
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.167306,
+        0.659764,
+        0.17293,
+        0.0
+      ],
+      "expected_rating": 3.0056,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.426324,
+        0.465638,
+        0.417365,
+        0.414543,
+        0.40362
+      ],
+      "pmf_probabilities": [
+        0.187595,
+        0.716329,
+        0.096076,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 1.9085,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.56474,
+        0.618153,
+        0.598291,
+        0.563433,
+        0.55989
+      ],
+      "pmf_probabilities": [
+        0.022577,
+        0.621141,
+        0.356282,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 2.3337,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.654381,
+        0.673423,
+        0.653877,
+        0.638305,
+        0.614216
+      ],
+      "pmf_probabilities": [
+        0.273155,
+        0.458255,
+        0.26859,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 1.9954,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.525515,
+        0.513381,
+        0.56228,
+        0.521182,
+        0.530875
+      ],
+      "pmf_probabilities": [
+        0.110603,
+        0.0,
+        0.709259,
+        0.0,
+        0.180138
+      ],
+      "expected_rating": 3.1391,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.622999,
+        0.652855,
+        0.64496,
+        0.60981,
+        0.602379
+      ],
+      "pmf_probabilities": [
+        0.14433,
+        0.47614,
+        0.379531,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 2.2352,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.518528,
+        0.577569,
+        0.618563,
+        0.548891,
+        0.517493
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.292233,
+        0.584739,
+        0.123028,
+        0.0
+      ],
+      "expected_rating": 2.8308,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.507031,
+        0.527358,
+        0.471907,
+        0.486933,
+        0.473591
+      ],
+      "pmf_probabilities": [
+        0.316398,
+        0.581612,
+        0.0,
+        0.10199,
+        0.0
+      ],
+      "expected_rating": 1.8876,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.533079,
+        0.57105,
+        0.635443,
+        0.559871,
+        0.532367
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.187661,
+        0.693249,
+        0.119091,
+        0.0
+      ],
+      "expected_rating": 2.9314,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.596031,
+        0.612343,
+        0.605722,
+        0.576248,
+        0.565693
+      ],
+      "pmf_probabilities": [
+        0.236858,
+        0.420374,
+        0.342767,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 2.1059,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.587674,
+        0.602561,
+        0.620171,
+        0.563713,
+        0.583914
+      ],
+      "pmf_probabilities": [
+        0.16556,
+        0.315339,
+        0.519101,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 2.3535,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.613651,
+        0.63761,
+        0.639432,
+        0.582545,
+        0.566129
+      ],
+      "pmf_probabilities": [
+        0.221945,
+        0.382499,
+        0.395556,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 2.1736,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.52558,
+        0.539249,
+        0.585976,
+        0.538891,
+        0.523716
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.119955,
+        0.763763,
+        0.116282,
+        0.0
+      ],
+      "expected_rating": 2.9963,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.496739,
+        0.498298,
+        0.435367,
+        0.477354,
+        0.464969
+      ],
+      "pmf_probabilities": [
+        0.379242,
+        0.392142,
+        0.0,
+        0.228616,
+        0.0
+      ],
+      "expected_rating": 2.078,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.545064,
+        0.579695,
+        0.599626,
+        0.547572,
+        0.534518
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.35475,
+        0.577479,
+        0.067771,
+        0.0
+      ],
+      "expected_rating": 2.713,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.668463,
+        0.677215,
+        0.657628,
+        0.631864,
+        0.61697
+      ],
+      "pmf_probabilities": [
+        0.33754,
+        0.41613,
+        0.246329,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 1.9088,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.569912,
+        0.579023,
+        0.619992,
+        0.564915,
+        0.561231
+      ],
+      "pmf_probabilities": [
+        0.060946,
+        0.158671,
+        0.780383,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 2.7194,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.580033,
+        0.5968,
+        0.602559,
+        0.541824,
+        0.515965
+      ],
+      "pmf_probabilities": [
+        0.25922,
+        0.353407,
+        0.387373,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 2.1282,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.488813,
+        0.551078,
+        0.583679,
+        0.50173,
+        0.471839
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.350164,
+        0.554396,
+        0.095441,
+        0.0
+      ],
+      "expected_rating": 2.7453,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.419701,
+        0.43572,
+        0.393538,
+        0.415472,
+        0.404888
+      ],
+      "pmf_probabilities": [
+        0.271662,
+        0.513589,
+        0.0,
+        0.214749,
+        0.0
+      ],
+      "expected_rating": 2.1578,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.541275,
+        0.567822,
+        0.59778,
+        0.541884,
+        0.523852
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.302668,
+        0.605116,
+        0.092216,
+        0.0
+      ],
+      "expected_rating": 2.7895,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.662258,
+      "cos_sim_2": 0.677533,
+      "cos_sim_3": 0.673393,
+      "cos_sim_4": 0.652609,
+      "cos_sim_5": 0.654853,
+      "min_similarity": 0.652609,
+      "p1": 0.136508,
+      "p2": 0.483773,
+      "p3": 0.379719,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 2.2432,
+      "canonical_expected_rating": 2.3102,
+      "improved_expected_rating": 2.2432,
+      "delta": -0.067,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.535424,
+      "cos_sim_2": 0.590613,
+      "cos_sim_3": 0.554474,
+      "cos_sim_4": 0.537316,
+      "cos_sim_5": 0.531201,
+      "min_similarity": 0.531201,
+      "p1": 0.0,
+      "p2": 0.749151,
+      "p3": 0.214718,
+      "p4": 0.03613,
+      "p5": 0.0,
+      "set_expected_rating": 2.287,
+      "canonical_expected_rating": 2.3362,
+      "improved_expected_rating": 2.287,
+      "delta": -0.0493,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.560902,
+      "cos_sim_2": 0.57542,
+      "cos_sim_3": 0.588182,
+      "cos_sim_4": 0.553395,
+      "cos_sim_5": 0.495334,
+      "min_similarity": 0.495334,
+      "p1": 0.256689,
+      "p2": 0.335136,
+      "p3": 0.408175,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 2.1515,
+      "canonical_expected_rating": 2.4835,
+      "improved_expected_rating": 2.1515,
+      "delta": -0.3321,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.547176,
+      "cos_sim_2": 0.552703,
+      "cos_sim_3": 0.592024,
+      "cos_sim_4": 0.553252,
+      "cos_sim_5": 0.530839,
+      "min_similarity": 0.530839,
+      "p1": 0.0,
+      "p2": 0.167306,
+      "p3": 0.659764,
+      "p4": 0.17293,
+      "p5": 0.0,
+      "set_expected_rating": 3.0056,
+      "canonical_expected_rating": 2.7363,
+      "improved_expected_rating": 3.0056,
+      "delta": 0.2694,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.426324,
+      "cos_sim_2": 0.465638,
+      "cos_sim_3": 0.417365,
+      "cos_sim_4": 0.414543,
+      "cos_sim_5": 0.40362,
+      "min_similarity": 0.40362,
+      "p1": 0.187595,
+      "p2": 0.716329,
+      "p3": 0.096076,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 1.9085,
+      "canonical_expected_rating": 2.1178,
+      "improved_expected_rating": 1.9085,
+      "delta": -0.2093,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.56474,
+      "cos_sim_2": 0.618153,
+      "cos_sim_3": 0.598291,
+      "cos_sim_4": 0.563433,
+      "cos_sim_5": 0.55989,
+      "min_similarity": 0.55989,
+      "p1": 0.022577,
+      "p2": 0.621141,
+      "p3": 0.356282,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 2.3337,
+      "canonical_expected_rating": 2.3868,
+      "improved_expected_rating": 2.3337,
+      "delta": -0.0531,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.654381,
+      "cos_sim_2": 0.673423,
+      "cos_sim_3": 0.653877,
+      "cos_sim_4": 0.638305,
+      "cos_sim_5": 0.614216,
+      "min_similarity": 0.614216,
+      "p1": 0.273155,
+      "p2": 0.458255,
+      "p3": 0.26859,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 1.9954,
+      "canonical_expected_rating": 2.2923,
+      "improved_expected_rating": 1.9954,
+      "delta": -0.2968,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.525515,
+      "cos_sim_2": 0.513381,
+      "cos_sim_3": 0.56228,
+      "cos_sim_4": 0.521182,
+      "cos_sim_5": 0.530875,
+      "min_similarity": 0.513381,
+      "p1": 0.110603,
+      "p2": 0.0,
+      "p3": 0.709259,
+      "p4": 0.0,
+      "p5": 0.180138,
+      "set_expected_rating": 3.1391,
+      "canonical_expected_rating": 3.2145,
+      "improved_expected_rating": 3.1391,
+      "delta": -0.0755,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.622999,
+      "cos_sim_2": 0.652855,
+      "cos_sim_3": 0.64496,
+      "cos_sim_4": 0.60981,
+      "cos_sim_5": 0.602379,
+      "min_similarity": 0.602379,
+      "p1": 0.14433,
+      "p2": 0.47614,
+      "p3": 0.379531,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 2.2352,
+      "canonical_expected_rating": 2.3041,
+      "improved_expected_rating": 2.2352,
+      "delta": -0.0689,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.518528,
+      "cos_sim_2": 0.577569,
+      "cos_sim_3": 0.618563,
+      "cos_sim_4": 0.548891,
+      "cos_sim_5": 0.517493,
+      "min_similarity": 0.517493,
+      "p1": 0.0,
+      "p2": 0.292233,
+      "p3": 0.584739,
+      "p4": 0.123028,
+      "p5": 0.0,
+      "set_expected_rating": 2.8308,
+      "canonical_expected_rating": 2.8412,
+      "improved_expected_rating": 2.8308,
+      "delta": -0.0104,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.507031,
+      "cos_sim_2": 0.527358,
+      "cos_sim_3": 0.471907,
+      "cos_sim_4": 0.486933,
+      "cos_sim_5": 0.473591,
+      "min_similarity": 0.471907,
+      "p1": 0.316398,
+      "p2": 0.581612,
+      "p3": 0.0,
+      "p4": 0.10199,
+      "p5": 0.0,
+      "set_expected_rating": 1.8876,
+      "canonical_expected_rating": 1.9998,
+      "improved_expected_rating": 1.8876,
+      "delta": -0.1122,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.533079,
+      "cos_sim_2": 0.57105,
+      "cos_sim_3": 0.635443,
+      "cos_sim_4": 0.559871,
+      "cos_sim_5": 0.532367,
+      "min_similarity": 0.532367,
+      "p1": 0.0,
+      "p2": 0.187661,
+      "p3": 0.693249,
+      "p4": 0.119091,
+      "p5": 0.0,
+      "set_expected_rating": 2.9314,
+      "canonical_expected_rating": 2.9259,
+      "improved_expected_rating": 2.9314,
+      "delta": 0.0056,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.596031,
+      "cos_sim_2": 0.612343,
+      "cos_sim_3": 0.605722,
+      "cos_sim_4": 0.576248,
+      "cos_sim_5": 0.565693,
+      "min_similarity": 0.565693,
+      "p1": 0.236858,
+      "p2": 0.420374,
+      "p3": 0.342767,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 2.1059,
+      "canonical_expected_rating": 2.2414,
+      "improved_expected_rating": 2.1059,
+      "delta": -0.1355,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.587674,
+      "cos_sim_2": 0.602561,
+      "cos_sim_3": 0.620171,
+      "cos_sim_4": 0.563713,
+      "cos_sim_5": 0.583914,
+      "min_similarity": 0.563713,
+      "p1": 0.16556,
+      "p2": 0.315339,
+      "p3": 0.519101,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 2.3535,
+      "canonical_expected_rating": 2.6675,
+      "improved_expected_rating": 2.3535,
+      "delta": -0.314,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.613651,
+      "cos_sim_2": 0.63761,
+      "cos_sim_3": 0.639432,
+      "cos_sim_4": 0.582545,
+      "cos_sim_5": 0.566129,
+      "min_similarity": 0.566129,
+      "p1": 0.221945,
+      "p2": 0.382499,
+      "p3": 0.395556,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 2.1736,
+      "canonical_expected_rating": 2.2808,
+      "improved_expected_rating": 2.1736,
+      "delta": -0.1072,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.52558,
+      "cos_sim_2": 0.539249,
+      "cos_sim_3": 0.585976,
+      "cos_sim_4": 0.538891,
+      "cos_sim_5": 0.523716,
+      "min_similarity": 0.523716,
+      "p1": 0.0,
+      "p2": 0.119955,
+      "p3": 0.763763,
+      "p4": 0.116282,
+      "p5": 0.0,
+      "set_expected_rating": 2.9963,
+      "canonical_expected_rating": 2.9569,
+      "improved_expected_rating": 2.9963,
+      "delta": 0.0394,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.496739,
+      "cos_sim_2": 0.498298,
+      "cos_sim_3": 0.435367,
+      "cos_sim_4": 0.477354,
+      "cos_sim_5": 0.464969,
+      "min_similarity": 0.435367,
+      "p1": 0.379242,
+      "p2": 0.392142,
+      "p3": 0.0,
+      "p4": 0.228616,
+      "p5": 0.0,
+      "set_expected_rating": 2.078,
+      "canonical_expected_rating": 2.5687,
+      "improved_expected_rating": 2.078,
+      "delta": -0.4907,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.545064,
+      "cos_sim_2": 0.579695,
+      "cos_sim_3": 0.599626,
+      "cos_sim_4": 0.547572,
+      "cos_sim_5": 0.534518,
+      "min_similarity": 0.534518,
+      "p1": 0.0,
+      "p2": 0.35475,
+      "p3": 0.577479,
+      "p4": 0.067771,
+      "p5": 0.0,
+      "set_expected_rating": 2.713,
+      "canonical_expected_rating": 2.6025,
+      "improved_expected_rating": 2.713,
+      "delta": 0.1105,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.668463,
+      "cos_sim_2": 0.677215,
+      "cos_sim_3": 0.657628,
+      "cos_sim_4": 0.631864,
+      "cos_sim_5": 0.61697,
+      "min_similarity": 0.61697,
+      "p1": 0.33754,
+      "p2": 0.41613,
+      "p3": 0.246329,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 1.9088,
+      "canonical_expected_rating": 2.1133,
+      "improved_expected_rating": 1.9088,
+      "delta": -0.2045,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.569912,
+      "cos_sim_2": 0.579023,
+      "cos_sim_3": 0.619992,
+      "cos_sim_4": 0.564915,
+      "cos_sim_5": 0.561231,
+      "min_similarity": 0.561231,
+      "p1": 0.060946,
+      "p2": 0.158671,
+      "p3": 0.780383,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 2.7194,
+      "canonical_expected_rating": 2.6461,
+      "improved_expected_rating": 2.7194,
+      "delta": 0.0734,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.580033,
+      "cos_sim_2": 0.5968,
+      "cos_sim_3": 0.602559,
+      "cos_sim_4": 0.541824,
+      "cos_sim_5": 0.515965,
+      "min_similarity": 0.515965,
+      "p1": 0.25922,
+      "p2": 0.353407,
+      "p3": 0.387373,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 2.1282,
+      "canonical_expected_rating": 2.2885,
+      "improved_expected_rating": 2.1282,
+      "delta": -0.1603,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.488813,
+      "cos_sim_2": 0.551078,
+      "cos_sim_3": 0.583679,
+      "cos_sim_4": 0.50173,
+      "cos_sim_5": 0.471839,
+      "min_similarity": 0.471839,
+      "p1": 0.0,
+      "p2": 0.350164,
+      "p3": 0.554396,
+      "p4": 0.095441,
+      "p5": 0.0,
+      "set_expected_rating": 2.7453,
+      "canonical_expected_rating": 2.6499,
+      "improved_expected_rating": 2.7453,
+      "delta": 0.0953,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.419701,
+      "cos_sim_2": 0.43572,
+      "cos_sim_3": 0.393538,
+      "cos_sim_4": 0.415472,
+      "cos_sim_5": 0.404888,
+      "min_similarity": 0.393538,
+      "p1": 0.271662,
+      "p2": 0.513589,
+      "p3": 0.0,
+      "p4": 0.214749,
+      "p5": 0.0,
+      "set_expected_rating": 2.1578,
+      "canonical_expected_rating": 2.5093,
+      "improved_expected_rating": 2.1578,
+      "delta": -0.3514,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "EcoBot Mini",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.541275,
+      "cos_sim_2": 0.567822,
+      "cos_sim_3": 0.59778,
+      "cos_sim_4": 0.541884,
+      "cos_sim_5": 0.523852,
+      "min_similarity": 0.523852,
+      "p1": 0.0,
+      "p2": 0.302668,
+      "p3": 0.605116,
+      "p4": 0.092216,
+      "p5": 0.0,
+      "set_expected_rating": 2.7895,
+      "canonical_expected_rating": 2.6036,
+      "improved_expected_rating": 2.7895,
+      "delta": 0.1859,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

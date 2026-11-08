@@ -1,0 +1,78 @@
+{
+  "label": "PHASE 2 DIAGNOSTIC PILOT - not part of the 24-response experiment; no SSR computed",
+  "timestamp_utc": "2026-11-04T15:20:02.936699+00:00",
+  "model": "qwen2.5:7b-instruct",
+  "temperature": 0.7,
+  "prompt_version": "product_eval_v2_2026-11-04",
+  "persona_id": "P2_midrange_heavy_user",
+  "respondent_spec_id": "P2_S08",
+  "constructs": [
+    "PP"
+  ],
+  "product": "Nova AI Smartphone",
+  "elapsed_seconds": 63.3,
+  "error": null,
+  "prompt": {
+    "system": "You are one respondent in an Indian consumer survey about smartphones. Write the way an ordinary person writes in a survey: simple, natural Indian English, first person, honest.\nRules:\n1. Use only the product facts given. Do not invent features, specifications, incidents, repairs or long usage history.\n2. Take your own honest position. It can be positive, mixed or negative; mention a real concern when you have one.\n3. Answer each construct only about that construct.\n4. Write words only: no numbers as ratings, no scores, stars or percentages. Do not name other brands.\n5. Return valid JSON only.",
+    "user": "PERSONA (from survey data)\n- Segment: Mid-range, heavy-use segment: your phones have usually cost ₹10,000-₹35,000 and you use them intensively.\n- You: Male, 20, Student, Town or rural area\n- Price you paid for your last phone: ₹10,000–₹20,000\n- Monthly spending: Less than ₹10,000\n- Daily phone use: More than 8 hours\n- Main uses: Photography and videos; Watching videos or streaming\n- Comfort with new technology (survey answer): 5\n- Usually replaces phone: Every 3–4 years\n- Learns about phones from: Friends or family\n- What people in your segment talk about most: positive general, negative issue, camera\n\nPRODUCT: Nova AI Smartphone - A hypothetical mid-range smartphone designed for students and young professionals, with AI-powered features. (Hypothetical test concept; not an existing market product).\nPrice: ₹24,999\n- AI Personal Assistant: Daily tasks, schedule reminders, smart notifications, and study support.\n- AI Camera Enhancement: Automated low-light and portrait enhancement for photos and short-form videos.\n- AI Battery Optimisation: Smart power management that adapts background consumption to daily usage patterns.\n- On-Device AI Processing: Selected AI tasks processed locally on device to reduce the need to transmit personal data to cloud services.\n- Smooth Performance: Optimized processor and high-refresh display for multitasking, casual gaming, and entertainment.\n- Simple Interface with AI Suggestions: Clean UI with contextual shortcuts and suggestions based on time and location.\n\nSCENARIO: The survey asks about \"your current smartphone\". Answer as if the Nova AI Smartphone described above were your current smartphone. This is a hypothetical: judge it from its listed features and price and your own profile; do not describe events that did not happen.\n\nCONSTRUCTS (answer each separately; the survey statements use the scale 1 Strongly disagree · 2 Disagree · 3 Neither agree nor disagree · 4 Agree · 5 Strongly agree)\n\n[PP] Perceived Protection\nDefinition: How well the phone protects your personal information and accounts from unauthorized access and misuse, and how much control its privacy and security controls give you.\nSurvey statements: My current smartphone protects my personal information from unauthorized access.; I feel that my personal data are protected when I use my current smartphone.; The privacy and security controls on my current smartphone give me control over my information.; I feel safe using my current smartphone for activities involving personal information.\nWrite about: privacy and data protection: personal data sent to the cloud versus processed on the device, location-based suggestions, account and payment safety, control over your information.\nDo not write about: physical durability, build quality or hardware reliability (not part of this construct).\n\nTASK: For each construct, write 2-4 sentences in your own voice that show how strongly you would agree or disagree with its survey statements, and why, referring to the Nova AI Smartphone by name or as \"this phone\". Return a JSON object with exactly these keys: \"PP\"."
+  },
+  "context": {
+    "prompt_tokens_estimate": 1153,
+    "max_output_tokens": 150,
+    "num_ctx": 2048,
+    "generation_token_budget": 895,
+    "required_with_margin": 1498,
+    "truncation_likely": false,
+    "prompt_tokens_actual": 788,
+    "generation_token_budget_actual": 1260,
+    "output_tokens_actual": 61
+  },
+  "finish_reason": "STOP",
+  "raw_output": "{\n  \"PP\": \"3 Neither agree nor disagree · This phone claims to process selected AI tasks locally, which sounds good for privacy, but I'm not sure if it's enough. The location-based suggestions could be a bit invasive, and I'm still concerned about who gets my data.\"\n}",
+  "parsed": {
+    "responses": {
+      "PP": "3 Neither agree nor disagree · This phone claims to process selected AI tasks locally, which sounds good for privacy, but I'm not sure if it's enough. The location-based suggestions could be a bit invasive, and I'm still concerned about who gets my data."
+    },
+    "missing": [],
+    "rating_leak": [],
+    "parse_ok": true
+  },
+  "checks": {
+    "parse_ok": true,
+    "pp_present": true,
+    "privacy_terms": [
+      "data",
+      "locally",
+      "location",
+      "privacy"
+    ],
+    "durability_terms": [],
+    "refers_to_product": true,
+    "mentions_generic_other_device": false,
+    "rating_leak": [],
+    "sentences": 2,
+    "words": 44,
+    "invented_events": false
+  },
+  "post_hoc_review": {
+    "verdict": "PARTIAL FAIL",
+    "passed": [
+      "no truncation: 788 actual prompt tokens in num_ctx 2048 (1,260 tokens spare)",
+      "PP discusses privacy/data protection (on-device processing, location suggestions, who gets my data); no durability content",
+      "refers to 'this phone' / Nova context; no other device; no invented events",
+      "natural, 2 sentences, honest mixed stance",
+      "finish_reason STOP, valid JSON"
+    ],
+    "failed": [
+      "response begins with '3 Neither agree nor disagree ·' = a direct Likert rating; caused by the scale labels shown in the prompt",
+      "the pilot's built-in rating_leak check missed it (regex had no rule for a leading scale point or scale labels)"
+    ],
+    "corrections_made_without_rerun": [
+      "scale labels removed from the prompt",
+      "system rule 4 now forbids stating an answer option, scale point or label",
+      "task line asks for 'own everyday words (not an answer option or scale label)'",
+      "RATING_LEAK now flags a leading 1-5 and verbatim scale labels; re-parsing this pilot output flags PP: ['PP']"
+    ],
+    "status": "corrected prompt NOT yet verified by a generation call (one-call limit respected); verify on the first Phase 3 call"
+  }
+}

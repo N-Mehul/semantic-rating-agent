@@ -1,0 +1,25 @@
+persona_id,product_name,anchor_set_code,anchor_set_name,cos_sim_1,cos_sim_2,cos_sim_3,cos_sim_4,cos_sim_5,min_similarity,p1,p2,p3,p4,p5,set_expected_rating,canonical_expected_rating,improved_expected_rating,delta,embedding_model
+P1_premium_tier_owner,EcoBot Mini,PE,Performance Expectancy,0.662258,0.677533,0.673393,0.652609,0.654853,0.652609,0.136508,0.483773,0.379719,0.0,0.0,2.2432,2.3102,2.2432,-0.067,nomic-embed-text
+P1_premium_tier_owner,EcoBot Mini,EE,Effort Expectancy,0.535424,0.590613,0.554474,0.537316,0.531201,0.531201,0.0,0.749151,0.214718,0.03613,0.0,2.287,2.3362,2.287,-0.0493,nomic-embed-text
+P1_premium_tier_owner,EcoBot Mini,HM,Hedonic Motivation,0.560902,0.57542,0.588182,0.553395,0.495334,0.495334,0.256689,0.335136,0.408175,0.0,0.0,2.1515,2.4835,2.1515,-0.3321,nomic-embed-text
+P1_premium_tier_owner,EcoBot Mini,SI,Social Influence,0.547176,0.552703,0.592024,0.553252,0.530839,0.530839,0.0,0.167306,0.659764,0.17293,0.0,3.0056,2.7363,3.0056,0.2694,nomic-embed-text
+P1_premium_tier_owner,EcoBot Mini,PP,Perceived Protection,0.426324,0.465638,0.417365,0.414543,0.40362,0.40362,0.187595,0.716329,0.096076,0.0,0.0,1.9085,2.1178,1.9085,-0.2093,nomic-embed-text
+P1_premium_tier_owner,EcoBot Mini,BI,Behavioral Intention,0.56474,0.618153,0.598291,0.563433,0.55989,0.55989,0.022577,0.621141,0.356282,0.0,0.0,2.3337,2.3868,2.3337,-0.0531,nomic-embed-text
+P2_midrange_heavy_user,EcoBot Mini,PE,Performance Expectancy,0.654381,0.673423,0.653877,0.638305,0.614216,0.614216,0.273155,0.458255,0.26859,0.0,0.0,1.9954,2.2923,1.9954,-0.2968,nomic-embed-text
+P2_midrange_heavy_user,EcoBot Mini,EE,Effort Expectancy,0.525515,0.513381,0.56228,0.521182,0.530875,0.513381,0.110603,0.0,0.709259,0.0,0.180138,3.1391,3.2145,3.1391,-0.0755,nomic-embed-text
+P2_midrange_heavy_user,EcoBot Mini,HM,Hedonic Motivation,0.622999,0.652855,0.64496,0.60981,0.602379,0.602379,0.14433,0.47614,0.379531,0.0,0.0,2.2352,2.3041,2.2352,-0.0689,nomic-embed-text
+P2_midrange_heavy_user,EcoBot Mini,SI,Social Influence,0.518528,0.577569,0.618563,0.548891,0.517493,0.517493,0.0,0.292233,0.584739,0.123028,0.0,2.8308,2.8412,2.8308,-0.0104,nomic-embed-text
+P2_midrange_heavy_user,EcoBot Mini,PP,Perceived Protection,0.507031,0.527358,0.471907,0.486933,0.473591,0.471907,0.316398,0.581612,0.0,0.10199,0.0,1.8876,1.9998,1.8876,-0.1122,nomic-embed-text
+P2_midrange_heavy_user,EcoBot Mini,BI,Behavioral Intention,0.533079,0.57105,0.635443,0.559871,0.532367,0.532367,0.0,0.187661,0.693249,0.119091,0.0,2.9314,2.9259,2.9314,0.0056,nomic-embed-text
+P3_midrange_moderate_user,EcoBot Mini,PE,Performance Expectancy,0.596031,0.612343,0.605722,0.576248,0.565693,0.565693,0.236858,0.420374,0.342767,0.0,0.0,2.1059,2.2414,2.1059,-0.1355,nomic-embed-text
+P3_midrange_moderate_user,EcoBot Mini,EE,Effort Expectancy,0.587674,0.602561,0.620171,0.563713,0.583914,0.563713,0.16556,0.315339,0.519101,0.0,0.0,2.3535,2.6675,2.3535,-0.314,nomic-embed-text
+P3_midrange_moderate_user,EcoBot Mini,HM,Hedonic Motivation,0.613651,0.63761,0.639432,0.582545,0.566129,0.566129,0.221945,0.382499,0.395556,0.0,0.0,2.1736,2.2808,2.1736,-0.1072,nomic-embed-text
+P3_midrange_moderate_user,EcoBot Mini,SI,Social Influence,0.52558,0.539249,0.585976,0.538891,0.523716,0.523716,0.0,0.119955,0.763763,0.116282,0.0,2.9963,2.9569,2.9963,0.0394,nomic-embed-text
+P3_midrange_moderate_user,EcoBot Mini,PP,Perceived Protection,0.496739,0.498298,0.435367,0.477354,0.464969,0.435367,0.379242,0.392142,0.0,0.228616,0.0,2.078,2.5687,2.078,-0.4907,nomic-embed-text
+P3_midrange_moderate_user,EcoBot Mini,BI,Behavioral Intention,0.545064,0.579695,0.599626,0.547572,0.534518,0.534518,0.0,0.35475,0.577479,0.067771,0.0,2.713,2.6025,2.713,0.1105,nomic-embed-text
+P4_budget_or_undisclosed_price,EcoBot Mini,PE,Performance Expectancy,0.668463,0.677215,0.657628,0.631864,0.61697,0.61697,0.33754,0.41613,0.246329,0.0,0.0,1.9088,2.1133,1.9088,-0.2045,nomic-embed-text
+P4_budget_or_undisclosed_price,EcoBot Mini,EE,Effort Expectancy,0.569912,0.579023,0.619992,0.564915,0.561231,0.561231,0.060946,0.158671,0.780383,0.0,0.0,2.7194,2.6461,2.7194,0.0734,nomic-embed-text
+P4_budget_or_undisclosed_price,EcoBot Mini,HM,Hedonic Motivation,0.580033,0.5968,0.602559,0.541824,0.515965,0.515965,0.25922,0.353407,0.387373,0.0,0.0,2.1282,2.2885,2.1282,-0.1603,nomic-embed-text
+P4_budget_or_undisclosed_price,EcoBot Mini,SI,Social Influence,0.488813,0.551078,0.583679,0.50173,0.471839,0.471839,0.0,0.350164,0.554396,0.095441,0.0,2.7453,2.6499,2.7453,0.0953,nomic-embed-text
+P4_budget_or_undisclosed_price,EcoBot Mini,PP,Perceived Protection,0.419701,0.43572,0.393538,0.415472,0.404888,0.393538,0.271662,0.513589,0.0,0.214749,0.0,2.1578,2.5093,2.1578,-0.3514,nomic-embed-text
+P4_budget_or_undisclosed_price,EcoBot Mini,BI,Behavioral Intention,0.541275,0.567822,0.59778,0.541884,0.523852,0.523852,0.0,0.302668,0.605116,0.092216,0.0,2.7895,2.6036,2.7895,0.1859,nomic-embed-text

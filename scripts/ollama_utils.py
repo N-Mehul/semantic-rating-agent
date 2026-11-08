@@ -19,7 +19,7 @@ DEFAULT_HOST = "http://localhost:11434"
 DEFAULT_MODEL = "qwen2.5:0.5b"
 PROBE_TIMEOUT_S = 2
 CHAT_TIMEOUT_S = 120
-SETTINGS = {"temperature": 1.0, "num_predict": 512}
+SETTINGS = {"temperature": 1.0, "num_predict": 512, "num_ctx": 2048}
 
 
 def host(env=None) -> str:
@@ -66,7 +66,7 @@ def generate(model_name: str, prompt: dict, env=None, timeout: float = CHAT_TIME
     """POST /api/chat (non-streaming). Returns (record, None) or (None, error) in the same shape as the other providers."""
     payload = {"model": model_name, "stream": False,
                "messages": [{"role": "system", "content": prompt["system"]}, {"role": "user", "content": prompt["user"]}],
-               "options": {"temperature": SETTINGS["temperature"], "num_predict": int(min(prompt.get("max_output_tokens") or SETTINGS["num_predict"], 4096))}}
+               "options": {"temperature": SETTINGS["temperature"], "num_predict": int(min(prompt.get("max_output_tokens") or SETTINGS["num_predict"], 4096)), "num_ctx": int(prompt.get("num_ctx") or SETTINGS.get("num_ctx", 2048))}}
     timeout = float(prompt.get("timeout_s") or timeout)      # e.g. the long analyst report on a CPU-only machine
     if prompt.get("json"):
         payload["format"] = "json"          # Ollama JSON mode for structured outputs (summary, report); never used for the scored response

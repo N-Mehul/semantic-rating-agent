@@ -1,0 +1,2761 @@
+{
+  "evaluation_id": "samsung_galaxy_m35_5g_20261106_100252",
+  "product_name": "Samsung Galaxy M35 5G",
+  "ssr_method": "improved",
+  "ssr_method_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+  "k_truncation": 3,
+  "temperature": 0.75,
+  "comparison_summary": {
+    "active_ssr_method": "improved",
+    "active_ssr_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+    "is_comparison_mode": false,
+    "canonical": {
+      "method": "Canonical Semantic Similarity Rating (Canonical SSR) — Baseline method",
+      "k_truncation": 5,
+      "temperature": 1.0,
+      "primary_adoption_average": 3.0518,
+      "construct_averages": {
+        "PE": 3.2632,
+        "EE": 3.7527,
+        "HM": 3.5719,
+        "SI": 3.18,
+        "PP": 2.431,
+        "BI": 3.0518
+      }
+    },
+    "improved": {
+      "method": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+      "k_truncation": 3,
+      "temperature": 0.75,
+      "primary_adoption_average": 3.2212,
+      "construct_averages": {
+        "PE": 3.3716,
+        "EE": 3.8983,
+        "HM": 3.7648,
+        "SI": 3.2594,
+        "PP": 2.337,
+        "BI": 3.2212
+      }
+    },
+    "deltas": {
+      "primary_adoption_delta": 0.1694,
+      "construct_deltas": {
+        "PE": 0.1084,
+        "EE": 0.1456,
+        "HM": 0.1929,
+        "SI": 0.0794,
+        "PP": -0.094,
+        "BI": 0.1694
+      }
+    },
+    "persona_comparison": [
+      {
+        "persona_id": "P1_premium_tier_owner",
+        "canonical_adoption_rating": 3.6091,
+        "improved_adoption_rating": 3.9327,
+        "delta": 0.3236
+      },
+      {
+        "persona_id": "P2_midrange_heavy_user",
+        "canonical_adoption_rating": 2.4945,
+        "improved_adoption_rating": 2.5097,
+        "delta": 0.0152
+      },
+      {
+        "persona_id": "P3_midrange_moderate_user",
+        "canonical_adoption_rating": 0.0,
+        "improved_adoption_rating": 0.0,
+        "delta": 0.0
+      },
+      {
+        "persona_id": "P4_budget_or_undisclosed_price",
+        "canonical_adoption_rating": 0.0,
+        "improved_adoption_rating": 0.0,
+        "delta": 0.0
+      }
+    ]
+  },
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Enhanced Semantic Similarity Rating (E-SSR) — Primary method)",
+  "timestamp_utc": "2026-11-06T04:49:13.500487+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.2212,
+  "overall_adoption_average": 3.2212,
+  "primary_adoption_average": 3.2212,
+  "construct_averages": {
+    "PE": 3.3716,
+    "EE": 3.8983,
+    "HM": 3.7648,
+    "SI": 3.2594,
+    "PP": 2.337,
+    "BI": 3.2212
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 22,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "primary_adoption_rating": 3.9327,
+      "primary_adoption_pmf": [
+        0.0,
+        0.0,
+        0.2597,
+        0.547875,
+        0.192424
+      ],
+      "construct_scores": {
+        "PE": 2.9186,
+        "EE": 4.3628,
+        "HM": 4.0836,
+        "SI": 3.0819,
+        "PP": 1.7393,
+        "BI": 3.9327
+      },
+      "construct_responses": {
+        "PE": "Opens apps quickly, good for daily tasks.",
+        "EE": "Good security features like fingerprint unlock.",
+        "HM": "Likes the camera and speed, but unsure about security.",
+        "SI": "Maybe, friends who love photography might think it’s great for pics.",
+        "PP": "It doesn't mention any security features like face or fingerprint unlock.",
+        "BI": "Yes, good speed and features for ₹20,000.",
+        "OVERALL": "Good for daily use, secure and fast."
+      },
+      "response_text": "Good for daily use, secure and fast.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "Opens apps quickly, good for daily tasks.",
+          "cosine_similarities": [
+            0.65275,
+            0.642912,
+            0.60381,
+            0.698292,
+            0.604132
+          ],
+          "min_similarity": 0.60381,
+          "pmf_probabilities": [
+            0.241239,
+            0.17885,
+            0.0,
+            0.579911,
+            0.0
+          ],
+          "expected_rating": 2.9186,
+          "canonical": {
+            "pmf_probabilities": [
+              0.267657,
+              0.21385,
+              0.0,
+              0.51673,
+              0.001763
+            ],
+            "expected_rating": 2.7711
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.241239,
+              0.17885,
+              0.0,
+              0.579911,
+              0.0
+            ],
+            "expected_rating": 2.9186
+          },
+          "delta_improved_minus_canonical": 0.1475,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Good security features like fingerprint unlock.",
+          "cosine_similarities": [
+            0.445611,
+            0.484607,
+            0.478907,
+            0.502747,
+            0.569216
+          ],
+          "min_similarity": 0.445611,
+          "pmf_probabilities": [
+            0.0,
+            0.136608,
+            0.0,
+            0.227334,
+            0.636058
+          ],
+          "expected_rating": 4.3628,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.154114,
+              0.131588,
+              0.225805,
+              0.488493
+            ],
+            "expected_rating": 4.0487
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.136608,
+              0.0,
+              0.227334,
+              0.636058
+            ],
+            "expected_rating": 4.3628
+          },
+          "delta_improved_minus_canonical": 0.3142,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Likes the camera and speed, but unsure about security.",
+          "cosine_similarities": [
+            0.494878,
+            0.471863,
+            0.497914,
+            0.54258,
+            0.507663
+          ],
+          "min_similarity": 0.471863,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.158363,
+            0.599682,
+            0.241955
+          ],
+          "expected_rating": 4.0836,
+          "canonical": {
+            "pmf_probabilities": [
+              0.147929,
+              0.0,
+              0.167441,
+              0.454528,
+              0.230102
+            ],
+            "expected_rating": 3.6189
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.158363,
+              0.599682,
+              0.241955
+            ],
+            "expected_rating": 4.0836
+          },
+          "delta_improved_minus_canonical": 0.4647,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Maybe, friends who love photography might think it’s great for pics.",
+          "cosine_similarities": [
+            0.540309,
+            0.543181,
+            0.587915,
+            0.533324,
+            0.54305
+          ],
+          "min_similarity": 0.533324,
+          "pmf_probabilities": [
+            0.0,
+            0.084887,
+            0.831724,
+            0.0,
+            0.083388
+          ],
+          "expected_rating": 3.0819,
+          "canonical": {
+            "pmf_probabilities": [
+              0.086064,
+              0.121458,
+              0.672633,
+              0.0,
+              0.119846
+            ],
+            "expected_rating": 2.9461
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.084887,
+              0.831724,
+              0.0,
+              0.083388
+            ],
+            "expected_rating": 3.0819
+          },
+          "delta_improved_minus_canonical": 0.1358,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "It doesn't mention any security features like face or fingerprint unlock.",
+          "cosine_similarities": [
+            0.582038,
+            0.596462,
+            0.550428,
+            0.545117,
+            0.528716
+          ],
+          "min_similarity": 0.528716,
+          "pmf_probabilities": [
+            0.373435,
+            0.513868,
+            0.112698,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 1.7393,
+          "canonical": {
+            "pmf_probabilities": [
+              0.334979,
+              0.425594,
+              0.136394,
+              0.103033,
+              0.0
+            ],
+            "expected_rating": 2.0075
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.373435,
+              0.513868,
+              0.112698,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 1.7393
+          },
+          "delta_improved_minus_canonical": -0.2682,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Yes, good speed and features for ₹20,000.",
+          "cosine_similarities": [
+            0.440449,
+            0.457992,
+            0.464255,
+            0.482121,
+            0.459461
+          ],
+          "min_similarity": 0.440449,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.2597,
+            0.547875,
+            0.192424
+          ],
+          "expected_rating": 3.9327,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.171938,
+              0.233316,
+              0.408415,
+              0.186331
+            ],
+            "expected_rating": 3.6091
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.2597,
+              0.547875,
+              0.192424
+            ],
+            "expected_rating": 3.9327
+          },
+          "delta_improved_minus_canonical": 0.3236,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Maybe, depends on friends' experiences.",
+              "issues": [
+                "too short; add one short natural reason and keep the same opinion"
+              ]
+            }
+          ]
+        },
+        "PP": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Yes, secure enough for personal info.",
+              "issues": [
+                "claims protection that the product information does not describe; say it isn't stated"
+              ]
+            }
+          ]
+        },
+        "BI": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        }
+      },
+      "flagged_constructs": [],
+      "alignment_flags": []
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "primary_adoption_rating": 2.5097,
+      "primary_adoption_pmf": [
+        0.0,
+        0.568623,
+        0.353018,
+        0.078359,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 3.4535,
+        "EE": 4.033,
+        "HM": 3.5591,
+        "SI": 2.8715,
+        "PP": 2.2198,
+        "BI": 2.5097
+      },
+      "construct_responses": {
+        "PE": "It handles tasks quickly, which saves time.",
+        "EE": "Easy to use, though fingerprint unlock is a bit slow.",
+        "HM": "Camera is good for photos, but battery is average.",
+        "SI": "My friends might think it's okay for everyday use, but not the best choice.",
+        "PP": "It only mentions fingerprint lock, no other security features, so I'm not sure it protects personal info well.",
+        "BI": "Maybe, at this price, I'd wait for a sale.",
+        "OVERALL": "It offers good performance, but the price is a bit on the higher side."
+      },
+      "response_text": "It offers good performance, but the price is a bit on the higher side.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It handles tasks quickly, which saves time.",
+          "cosine_similarities": [
+            0.609864,
+            0.598898,
+            0.619099,
+            0.642834,
+            0.601022
+          ],
+          "min_similarity": 0.598898,
+          "pmf_probabilities": [
+            0.103934,
+            0.0,
+            0.234702,
+            0.661364,
+            0.0
+          ],
+          "expected_rating": 3.4535,
+          "canonical": {
+            "pmf_probabilities": [
+              0.141999,
+              0.0,
+              0.261581,
+              0.568916,
+              0.027504
+            ],
+            "expected_rating": 3.3399
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.103934,
+              0.0,
+              0.234702,
+              0.661364,
+              0.0
+            ],
+            "expected_rating": 3.4535
+          },
+          "delta_improved_minus_canonical": 0.1136,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Easy to use, though fingerprint unlock is a bit slow.",
+          "cosine_similarities": [
+            0.55202,
+            0.565309,
+            0.637491,
+            0.607519,
+            0.643029
+          ],
+          "min_similarity": 0.55202,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.377416,
+            0.212217,
+            0.410368
+          ],
+          "expected_rating": 4.033,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.054184,
+              0.348479,
+              0.22628,
+              0.371058
+            ],
+            "expected_rating": 3.9142
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.377416,
+              0.212217,
+              0.410368
+            ],
+            "expected_rating": 4.033
+          },
+          "delta_improved_minus_canonical": 0.1187,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Camera is good for photos, but battery is average.",
+          "cosine_similarities": [
+            0.51921,
+            0.562476,
+            0.525275,
+            0.59928,
+            0.540428
+          ],
+          "min_similarity": 0.51921,
+          "pmf_probabilities": [
+            0.0,
+            0.273309,
+            0.0,
+            0.620998,
+            0.105693
+          ],
+          "expected_rating": 3.5591,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.287254,
+              0.040266,
+              0.531611,
+              0.140868
+            ],
+            "expected_rating": 3.5261
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.273309,
+              0.0,
+              0.620998,
+              0.105693
+            ],
+            "expected_rating": 3.5591
+          },
+          "delta_improved_minus_canonical": 0.033,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might think it's okay for everyday use, but not the best choice.",
+          "cosine_similarities": [
+            0.546888,
+            0.622576,
+            0.642011,
+            0.597963,
+            0.540659
+          ],
+          "min_similarity": 0.540659,
+          "pmf_probabilities": [
+            0.0,
+            0.339074,
+            0.450367,
+            0.21056,
+            0.0
+          ],
+          "expected_rating": 2.8715,
+          "canonical": {
+            "pmf_probabilities": [
+              0.025238,
+              0.331915,
+              0.410659,
+              0.232187,
+              0.0
+            ],
+            "expected_rating": 2.8498
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.339074,
+              0.450367,
+              0.21056,
+              0.0
+            ],
+            "expected_rating": 2.8715
+          },
+          "delta_improved_minus_canonical": 0.0217,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "It only mentions fingerprint lock, no other security features, so I'm not sure it protects personal info well.",
+          "cosine_similarities": [
+            0.720414,
+            0.713897,
+            0.624451,
+            0.705442,
+            0.647226
+          ],
+          "min_similarity": 0.624451,
+          "pmf_probabilities": [
+            0.369264,
+            0.336213,
+            0.0,
+            0.294523,
+            0.0
+          ],
+          "expected_rating": 2.2198,
+          "canonical": {
+            "pmf_probabilities": [
+              0.331849,
+              0.309314,
+              0.0,
+              0.280077,
+              0.07876
+            ],
+            "expected_rating": 2.4646
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.369264,
+              0.336213,
+              0.0,
+              0.294523,
+              0.0
+            ],
+            "expected_rating": 2.2198
+          },
+          "delta_improved_minus_canonical": -0.2448,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Maybe, at this price, I'd wait for a sale.",
+          "cosine_similarities": [
+            0.470286,
+            0.496437,
+            0.487364,
+            0.47308,
+            0.466254
+          ],
+          "min_similarity": 0.466254,
+          "pmf_probabilities": [
+            0.0,
+            0.568623,
+            0.353018,
+            0.078359,
+            0.0
+          ],
+          "expected_rating": 2.5097,
+          "canonical": {
+            "pmf_probabilities": [
+              0.064875,
+              0.485632,
+              0.339654,
+              0.109839,
+              0.0
+            ],
+            "expected_rating": 2.4945
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.568623,
+              0.353018,
+              0.078359,
+              0.0
+            ],
+            "expected_rating": 2.5097
+          },
+          "delta_improved_minus_canonical": 0.0153,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "It's good, but my friends prefer cheaper options.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            }
+          ]
+        },
+        "PP": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 2,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "It has fingerprint lock, so my data is safe.",
+              "issues": [
+                "claims protection that the product information does not describe; say it isn't stated"
+              ]
+            },
+            {
+              "text": "It has fingerprint lock, so I feel somewhat safe for personal info.",
+              "issues": [
+                "claims protection that the product information does not describe; say it isn't stated"
+              ]
+            }
+          ]
+        },
+        "BI": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        }
+      },
+      "flagged_constructs": [],
+      "alignment_flags": []
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "primary_adoption_rating": null,
+      "primary_adoption_pmf": null,
+      "construct_scores": {
+        "PE": 3.0128,
+        "EE": 4.11,
+        "HM": 4.1334,
+        "SI": 3.0519,
+        "PP": 2.8694
+      },
+      "construct_responses": {
+        "PE": "It handles my daily tasks quickly and efficiently.",
+        "EE": "It's easy to use and meets my basic needs.",
+        "HM": "It's user-friendly and fits my daily routine.",
+        "SI": "My friends might like it for videos, but not sure about family preferences.",
+        "PP": "It has fingerprint unlock, so it's okay for basic protection.",
+        "BI": "Maybe, need to check if 20,000 is fair for its features.",
+        "OVERALL": "It's a solid choice for daily use, but the price is a consideration."
+      },
+      "response_text": "It's a solid choice for daily use, but the price is a consideration.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It handles my daily tasks quickly and efficiently.",
+          "cosine_similarities": [
+            0.698032,
+            0.698359,
+            0.635486,
+            0.780622,
+            0.67203
+          ],
+          "min_similarity": 0.635486,
+          "pmf_probabilities": [
+            0.196888,
+            0.19826,
+            0.0,
+            0.604852,
+            0.0
+          ],
+          "expected_rating": 3.0128,
+          "canonical": {
+            "pmf_probabilities": [
+              0.203668,
+              0.204732,
+              0.0,
+              0.472602,
+              0.118997
+            ],
+            "expected_rating": 3.0985
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.196888,
+              0.19826,
+              0.0,
+              0.604852,
+              0.0
+            ],
+            "expected_rating": 3.0128
+          },
+          "delta_improved_minus_canonical": -0.0857,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "It's easy to use and meets my basic needs.",
+          "cosine_similarities": [
+            0.540184,
+            0.502453,
+            0.629339,
+            0.651479,
+            0.665779
+          ],
+          "min_similarity": 0.502453,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.274773,
+            0.340491,
+            0.384736
+          ],
+          "expected_rating": 4.11,
+          "canonical": {
+            "pmf_probabilities": [
+              0.079106,
+              0.0,
+              0.266025,
+              0.312444,
+              0.342425
+            ],
+            "expected_rating": 3.8391
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.274773,
+              0.340491,
+              0.384736
+            ],
+            "expected_rating": 4.11
+          },
+          "delta_improved_minus_canonical": 0.2709,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "It's user-friendly and fits my daily routine.",
+          "cosine_similarities": [
+            0.54095,
+            0.516772,
+            0.529569,
+            0.625163,
+            0.594613
+          ],
+          "min_similarity": 0.516772,
+          "pmf_probabilities": [
+            0.076072,
+            0.0,
+            0.0,
+            0.562301,
+            0.361627
+          ],
+          "expected_rating": 4.1334,
+          "canonical": {
+            "pmf_probabilities": [
+              0.108324,
+              0.0,
+              0.057333,
+              0.485604,
+              0.348739
+            ],
+            "expected_rating": 3.9664
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.076072,
+              0.0,
+              0.0,
+              0.562301,
+              0.361627
+            ],
+            "expected_rating": 4.1334
+          },
+          "delta_improved_minus_canonical": 0.167,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might like it for videos, but not sure about family preferences.",
+          "cosine_similarities": [
+            0.541903,
+            0.543922,
+            0.60501,
+            0.550117,
+            0.542985
+          ],
+          "min_similarity": 0.541903,
+          "pmf_probabilities": [
+            0.0,
+            0.009441,
+            0.929266,
+            0.061293,
+            0.0
+          ],
+          "expected_rating": 3.0519,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.027136,
+              0.84796,
+              0.110365,
+              0.014539
+            ],
+            "expected_rating": 3.1123
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.009441,
+              0.929266,
+              0.061293,
+              0.0
+            ],
+            "expected_rating": 3.0519
+          },
+          "delta_improved_minus_canonical": -0.0605,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "It has fingerprint unlock, so it's okay for basic protection.",
+          "cosine_similarities": [
+            0.602022,
+            0.6488,
+            0.657983,
+            0.627283,
+            0.574452
+          ],
+          "min_similarity": 0.574452,
+          "pmf_probabilities": [
+            0.0,
+            0.356877,
+            0.416827,
+            0.226296,
+            0.0
+          ],
+          "expected_rating": 2.8694,
+          "canonical": {
+            "pmf_probabilities": [
+              0.115703,
+              0.31202,
+              0.350559,
+              0.221718,
+              0.0
+            ],
+            "expected_rating": 2.6783
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.356877,
+              0.416827,
+              0.226296,
+              0.0
+            ],
+            "expected_rating": 2.8694
+          },
+          "delta_improved_minus_canonical": 0.1911,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 2,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "No specific security features mentioned, but fingerprint unlock is good.",
+              "issues": [
+                "does not talk about other people's influence; keep the social answer about others"
+              ]
+            },
+            {
+              "text": "My friends might think it's good for daily use and videos, but not sure if family would prefer a cheaper option.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            }
+          ]
+        },
+        "PP": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "It protects my info adequately with fingerprint unlock.",
+              "issues": [
+                "claims protection that the product information does not describe; say it isn't stated"
+              ]
+            }
+          ]
+        },
+        "BI": {
+          "status": "flagged",
+          "valid": false,
+          "retries": 2,
+          "issues": [
+            "opens with a hedge such as 'Maybe' like another answer; give your view or decision first"
+          ],
+          "previous_attempts": [
+            {
+              "text": "Maybe, as it fits my needs but the price is a bit on the higher side.",
+              "issues": [
+                "opens with a hedge such as 'Maybe' like another answer; give your view or decision first"
+              ]
+            },
+            {
+              "text": "No, the price is too high for its specs.",
+              "issues": [
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            }
+          ]
+        }
+      },
+      "flagged_constructs": [
+        "BI"
+      ],
+      "alignment_flags": []
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy M35 5G",
+      "primary_adoption_rating": null,
+      "primary_adoption_pmf": null,
+      "construct_scores": {
+        "PE": 4.1015,
+        "EE": 3.0875,
+        "HM": 3.283,
+        "SI": 4.0324,
+        "PP": 2.5194
+      },
+      "construct_responses": {
+        "PE": "It has a long battery life and fast app opening, which is handy.",
+        "EE": "The 5G connectivity is good, but it takes time to open apps sometimes.",
+        "HM": "I like the face unlock feature, but I don't use it much.",
+        "SI": "My friends might like the big screen and fast charging.",
+        "PP": "No, I'd feel safer with a device that has fingerprint unlock.",
+        "BI": "No, the price is a bit high for me.",
+        "OVERALL": "It's useful, but the price is a bit on the higher side."
+      },
+      "response_text": "It's useful, but the price is a bit on the higher side.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It has a long battery life and fast app opening, which is handy.",
+          "cosine_similarities": [
+            0.581591,
+            0.597302,
+            0.600017,
+            0.648844,
+            0.610944
+          ],
+          "min_similarity": 0.581591,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.117922,
+            0.662685,
+            0.219394
+          ],
+          "expected_rating": 4.1015,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.120166,
+              0.140932,
+              0.514393,
+              0.224509
+            ],
+            "expected_rating": 3.8432
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.117922,
+              0.662685,
+              0.219394
+            ],
+            "expected_rating": 4.1015
+          },
+          "delta_improved_minus_canonical": 0.2582,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The 5G connectivity is good, but it takes time to open apps sometimes.",
+          "cosine_similarities": [
+            0.595415,
+            0.619003,
+            0.685339,
+            0.608271,
+            0.61613
+          ],
+          "min_similarity": 0.595415,
+          "pmf_probabilities": [
+            0.0,
+            0.128262,
+            0.763868,
+            0.0,
+            0.10787
+          ],
+          "expected_rating": 3.0875,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.160371,
+              0.611387,
+              0.087402,
+              0.14084
+            ],
+            "expected_rating": 3.2087
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.128262,
+              0.763868,
+              0.0,
+              0.10787
+            ],
+            "expected_rating": 3.0875
+          },
+          "delta_improved_minus_canonical": -0.1212,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "I like the face unlock feature, but I don't use it much.",
+          "cosine_similarities": [
+            0.532674,
+            0.558024,
+            0.526281,
+            0.582942,
+            0.52878
+          ],
+          "min_similarity": 0.526281,
+          "pmf_probabilities": [
+            0.035955,
+            0.304566,
+            0.0,
+            0.659478,
+            0.0
+          ],
+          "expected_rating": 3.283,
+          "canonical": {
+            "pmf_probabilities": [
+              0.065707,
+              0.32625,
+              0.0,
+              0.582358,
+              0.025684
+            ],
+            "expected_rating": 3.1761
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.035955,
+              0.304566,
+              0.0,
+              0.659478,
+              0.0
+            ],
+            "expected_rating": 3.283
+          },
+          "delta_improved_minus_canonical": 0.1069,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might like the big screen and fast charging.",
+          "cosine_similarities": [
+            0.600772,
+            0.593448,
+            0.627232,
+            0.620828,
+            0.629546
+          ],
+          "min_similarity": 0.593448,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.351127,
+            0.265314,
+            0.383558
+          ],
+          "expected_rating": 4.0324,
+          "canonical": {
+            "pmf_probabilities": [
+              0.070027,
+              0.0,
+              0.323025,
+              0.261794,
+              0.345153
+            ],
+            "expected_rating": 3.812
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.351127,
+              0.265314,
+              0.383558
+            ],
+            "expected_rating": 4.0324
+          },
+          "delta_improved_minus_canonical": 0.2204,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "No, I'd feel safer with a device that has fingerprint unlock.",
+          "cosine_similarities": [
+            0.710757,
+            0.681694,
+            0.729315,
+            0.69629,
+            0.683598
+          ],
+          "min_similarity": 0.681694,
+          "pmf_probabilities": [
+            0.300221,
+            0.0,
+            0.579928,
+            0.119851,
+            0.0
+          ],
+          "expected_rating": 2.5194,
+          "canonical": {
+            "pmf_probabilities": [
+              0.311889,
+              0.0,
+              0.511034,
+              0.15664,
+              0.020437
+            ],
+            "expected_rating": 2.5737
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.300221,
+              0.0,
+              0.579928,
+              0.119851,
+              0.0
+            ],
+            "expected_rating": 2.5194
+          },
+          "delta_improved_minus_canonical": -0.0543,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Not sure, no specific mention of security features.",
+              "issues": [
+                "opens with a hedge such as 'Maybe' like another answer; give your view or decision first",
+                "does not talk about other people's influence; keep the social answer about others"
+              ]
+            }
+          ]
+        },
+        "PP": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "BI": {
+          "status": "flagged",
+          "valid": false,
+          "retries": 2,
+          "issues": [
+            "your assessment was unsure; say what you still need to check before deciding"
+          ],
+          "previous_attempts": [
+            {
+              "text": "No, it's a bit pricey for me at ₹20,000.",
+              "issues": [
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            },
+            {
+              "text": "No, 8GB RAM seems standard, but price is high.",
+              "issues": [
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            }
+          ]
+        }
+      },
+      "flagged_constructs": [
+        "BI"
+      ],
+      "alignment_flags": []
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.65275,
+        0.642912,
+        0.60381,
+        0.698292,
+        0.604132
+      ],
+      "pmf_probabilities": [
+        0.241239,
+        0.17885,
+        0.0,
+        0.579911,
+        0.0
+      ],
+      "expected_rating": 2.9186,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.445611,
+        0.484607,
+        0.478907,
+        0.502747,
+        0.569216
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.136608,
+        0.0,
+        0.227334,
+        0.636058
+      ],
+      "expected_rating": 4.3628,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.494878,
+        0.471863,
+        0.497914,
+        0.54258,
+        0.507663
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.158363,
+        0.599682,
+        0.241955
+      ],
+      "expected_rating": 4.0836,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.540309,
+        0.543181,
+        0.587915,
+        0.533324,
+        0.54305
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.084887,
+        0.831724,
+        0.0,
+        0.083388
+      ],
+      "expected_rating": 3.0819,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.582038,
+        0.596462,
+        0.550428,
+        0.545117,
+        0.528716
+      ],
+      "pmf_probabilities": [
+        0.373435,
+        0.513868,
+        0.112698,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 1.7393,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.440449,
+        0.457992,
+        0.464255,
+        0.482121,
+        0.459461
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.2597,
+        0.547875,
+        0.192424
+      ],
+      "expected_rating": 3.9327,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.609864,
+        0.598898,
+        0.619099,
+        0.642834,
+        0.601022
+      ],
+      "pmf_probabilities": [
+        0.103934,
+        0.0,
+        0.234702,
+        0.661364,
+        0.0
+      ],
+      "expected_rating": 3.4535,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.55202,
+        0.565309,
+        0.637491,
+        0.607519,
+        0.643029
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.377416,
+        0.212217,
+        0.410368
+      ],
+      "expected_rating": 4.033,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.51921,
+        0.562476,
+        0.525275,
+        0.59928,
+        0.540428
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.273309,
+        0.0,
+        0.620998,
+        0.105693
+      ],
+      "expected_rating": 3.5591,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.546888,
+        0.622576,
+        0.642011,
+        0.597963,
+        0.540659
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.339074,
+        0.450367,
+        0.21056,
+        0.0
+      ],
+      "expected_rating": 2.8715,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.720414,
+        0.713897,
+        0.624451,
+        0.705442,
+        0.647226
+      ],
+      "pmf_probabilities": [
+        0.369264,
+        0.336213,
+        0.0,
+        0.294523,
+        0.0
+      ],
+      "expected_rating": 2.2198,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.470286,
+        0.496437,
+        0.487364,
+        0.47308,
+        0.466254
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.568623,
+        0.353018,
+        0.078359,
+        0.0
+      ],
+      "expected_rating": 2.5097,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.698032,
+        0.698359,
+        0.635486,
+        0.780622,
+        0.67203
+      ],
+      "pmf_probabilities": [
+        0.196888,
+        0.19826,
+        0.0,
+        0.604852,
+        0.0
+      ],
+      "expected_rating": 3.0128,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.540184,
+        0.502453,
+        0.629339,
+        0.651479,
+        0.665779
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.274773,
+        0.340491,
+        0.384736
+      ],
+      "expected_rating": 4.11,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.54095,
+        0.516772,
+        0.529569,
+        0.625163,
+        0.594613
+      ],
+      "pmf_probabilities": [
+        0.076072,
+        0.0,
+        0.0,
+        0.562301,
+        0.361627
+      ],
+      "expected_rating": 4.1334,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.541903,
+        0.543922,
+        0.60501,
+        0.550117,
+        0.542985
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.009441,
+        0.929266,
+        0.061293,
+        0.0
+      ],
+      "expected_rating": 3.0519,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.602022,
+        0.6488,
+        0.657983,
+        0.627283,
+        0.574452
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.356877,
+        0.416827,
+        0.226296,
+        0.0
+      ],
+      "expected_rating": 2.8694,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.581591,
+        0.597302,
+        0.600017,
+        0.648844,
+        0.610944
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.117922,
+        0.662685,
+        0.219394
+      ],
+      "expected_rating": 4.1015,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.595415,
+        0.619003,
+        0.685339,
+        0.608271,
+        0.61613
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.128262,
+        0.763868,
+        0.0,
+        0.10787
+      ],
+      "expected_rating": 3.0875,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.532674,
+        0.558024,
+        0.526281,
+        0.582942,
+        0.52878
+      ],
+      "pmf_probabilities": [
+        0.035955,
+        0.304566,
+        0.0,
+        0.659478,
+        0.0
+      ],
+      "expected_rating": 3.283,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.600772,
+        0.593448,
+        0.627232,
+        0.620828,
+        0.629546
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.351127,
+        0.265314,
+        0.383558
+      ],
+      "expected_rating": 4.0324,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy M35 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.710757,
+        0.681694,
+        0.729315,
+        0.69629,
+        0.683598
+      ],
+      "pmf_probabilities": [
+        0.300221,
+        0.0,
+        0.579928,
+        0.119851,
+        0.0
+      ],
+      "expected_rating": 2.5194,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.65275,
+      "cos_sim_2": 0.642912,
+      "cos_sim_3": 0.60381,
+      "cos_sim_4": 0.698292,
+      "cos_sim_5": 0.604132,
+      "min_similarity": 0.60381,
+      "p1": 0.241239,
+      "p2": 0.17885,
+      "p3": 0.0,
+      "p4": 0.579911,
+      "p5": 0.0,
+      "set_expected_rating": 2.9186,
+      "canonical_expected_rating": 2.7711,
+      "improved_expected_rating": 2.9186,
+      "delta": 0.1475,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.445611,
+      "cos_sim_2": 0.484607,
+      "cos_sim_3": 0.478907,
+      "cos_sim_4": 0.502747,
+      "cos_sim_5": 0.569216,
+      "min_similarity": 0.445611,
+      "p1": 0.0,
+      "p2": 0.136608,
+      "p3": 0.0,
+      "p4": 0.227334,
+      "p5": 0.636058,
+      "set_expected_rating": 4.3628,
+      "canonical_expected_rating": 4.0487,
+      "improved_expected_rating": 4.3628,
+      "delta": 0.3142,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.494878,
+      "cos_sim_2": 0.471863,
+      "cos_sim_3": 0.497914,
+      "cos_sim_4": 0.54258,
+      "cos_sim_5": 0.507663,
+      "min_similarity": 0.471863,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.158363,
+      "p4": 0.599682,
+      "p5": 0.241955,
+      "set_expected_rating": 4.0836,
+      "canonical_expected_rating": 3.6189,
+      "improved_expected_rating": 4.0836,
+      "delta": 0.4647,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.540309,
+      "cos_sim_2": 0.543181,
+      "cos_sim_3": 0.587915,
+      "cos_sim_4": 0.533324,
+      "cos_sim_5": 0.54305,
+      "min_similarity": 0.533324,
+      "p1": 0.0,
+      "p2": 0.084887,
+      "p3": 0.831724,
+      "p4": 0.0,
+      "p5": 0.083388,
+      "set_expected_rating": 3.0819,
+      "canonical_expected_rating": 2.9461,
+      "improved_expected_rating": 3.0819,
+      "delta": 0.1358,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.582038,
+      "cos_sim_2": 0.596462,
+      "cos_sim_3": 0.550428,
+      "cos_sim_4": 0.545117,
+      "cos_sim_5": 0.528716,
+      "min_similarity": 0.528716,
+      "p1": 0.373435,
+      "p2": 0.513868,
+      "p3": 0.112698,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 1.7393,
+      "canonical_expected_rating": 2.0075,
+      "improved_expected_rating": 1.7393,
+      "delta": -0.2682,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.440449,
+      "cos_sim_2": 0.457992,
+      "cos_sim_3": 0.464255,
+      "cos_sim_4": 0.482121,
+      "cos_sim_5": 0.459461,
+      "min_similarity": 0.440449,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.2597,
+      "p4": 0.547875,
+      "p5": 0.192424,
+      "set_expected_rating": 3.9327,
+      "canonical_expected_rating": 3.6091,
+      "improved_expected_rating": 3.9327,
+      "delta": 0.3236,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.609864,
+      "cos_sim_2": 0.598898,
+      "cos_sim_3": 0.619099,
+      "cos_sim_4": 0.642834,
+      "cos_sim_5": 0.601022,
+      "min_similarity": 0.598898,
+      "p1": 0.103934,
+      "p2": 0.0,
+      "p3": 0.234702,
+      "p4": 0.661364,
+      "p5": 0.0,
+      "set_expected_rating": 3.4535,
+      "canonical_expected_rating": 3.3399,
+      "improved_expected_rating": 3.4535,
+      "delta": 0.1136,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.55202,
+      "cos_sim_2": 0.565309,
+      "cos_sim_3": 0.637491,
+      "cos_sim_4": 0.607519,
+      "cos_sim_5": 0.643029,
+      "min_similarity": 0.55202,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.377416,
+      "p4": 0.212217,
+      "p5": 0.410368,
+      "set_expected_rating": 4.033,
+      "canonical_expected_rating": 3.9142,
+      "improved_expected_rating": 4.033,
+      "delta": 0.1187,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.51921,
+      "cos_sim_2": 0.562476,
+      "cos_sim_3": 0.525275,
+      "cos_sim_4": 0.59928,
+      "cos_sim_5": 0.540428,
+      "min_similarity": 0.51921,
+      "p1": 0.0,
+      "p2": 0.273309,
+      "p3": 0.0,
+      "p4": 0.620998,
+      "p5": 0.105693,
+      "set_expected_rating": 3.5591,
+      "canonical_expected_rating": 3.5261,
+      "improved_expected_rating": 3.5591,
+      "delta": 0.033,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.546888,
+      "cos_sim_2": 0.622576,
+      "cos_sim_3": 0.642011,
+      "cos_sim_4": 0.597963,
+      "cos_sim_5": 0.540659,
+      "min_similarity": 0.540659,
+      "p1": 0.0,
+      "p2": 0.339074,
+      "p3": 0.450367,
+      "p4": 0.21056,
+      "p5": 0.0,
+      "set_expected_rating": 2.8715,
+      "canonical_expected_rating": 2.8498,
+      "improved_expected_rating": 2.8715,
+      "delta": 0.0217,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.720414,
+      "cos_sim_2": 0.713897,
+      "cos_sim_3": 0.624451,
+      "cos_sim_4": 0.705442,
+      "cos_sim_5": 0.647226,
+      "min_similarity": 0.624451,
+      "p1": 0.369264,
+      "p2": 0.336213,
+      "p3": 0.0,
+      "p4": 0.294523,
+      "p5": 0.0,
+      "set_expected_rating": 2.2198,
+      "canonical_expected_rating": 2.4646,
+      "improved_expected_rating": 2.2198,
+      "delta": -0.2448,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.470286,
+      "cos_sim_2": 0.496437,
+      "cos_sim_3": 0.487364,
+      "cos_sim_4": 0.47308,
+      "cos_sim_5": 0.466254,
+      "min_similarity": 0.466254,
+      "p1": 0.0,
+      "p2": 0.568623,
+      "p3": 0.353018,
+      "p4": 0.078359,
+      "p5": 0.0,
+      "set_expected_rating": 2.5097,
+      "canonical_expected_rating": 2.4945,
+      "improved_expected_rating": 2.5097,
+      "delta": 0.0153,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.698032,
+      "cos_sim_2": 0.698359,
+      "cos_sim_3": 0.635486,
+      "cos_sim_4": 0.780622,
+      "cos_sim_5": 0.67203,
+      "min_similarity": 0.635486,
+      "p1": 0.196888,
+      "p2": 0.19826,
+      "p3": 0.0,
+      "p4": 0.604852,
+      "p5": 0.0,
+      "set_expected_rating": 3.0128,
+      "canonical_expected_rating": 3.0985,
+      "improved_expected_rating": 3.0128,
+      "delta": -0.0857,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.540184,
+      "cos_sim_2": 0.502453,
+      "cos_sim_3": 0.629339,
+      "cos_sim_4": 0.651479,
+      "cos_sim_5": 0.665779,
+      "min_similarity": 0.502453,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.274773,
+      "p4": 0.340491,
+      "p5": 0.384736,
+      "set_expected_rating": 4.11,
+      "canonical_expected_rating": 3.8391,
+      "improved_expected_rating": 4.11,
+      "delta": 0.2709,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.54095,
+      "cos_sim_2": 0.516772,
+      "cos_sim_3": 0.529569,
+      "cos_sim_4": 0.625163,
+      "cos_sim_5": 0.594613,
+      "min_similarity": 0.516772,
+      "p1": 0.076072,
+      "p2": 0.0,
+      "p3": 0.0,
+      "p4": 0.562301,
+      "p5": 0.361627,
+      "set_expected_rating": 4.1334,
+      "canonical_expected_rating": 3.9664,
+      "improved_expected_rating": 4.1334,
+      "delta": 0.167,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.541903,
+      "cos_sim_2": 0.543922,
+      "cos_sim_3": 0.60501,
+      "cos_sim_4": 0.550117,
+      "cos_sim_5": 0.542985,
+      "min_similarity": 0.541903,
+      "p1": 0.0,
+      "p2": 0.009441,
+      "p3": 0.929266,
+      "p4": 0.061293,
+      "p5": 0.0,
+      "set_expected_rating": 3.0519,
+      "canonical_expected_rating": 3.1123,
+      "improved_expected_rating": 3.0519,
+      "delta": -0.0605,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.602022,
+      "cos_sim_2": 0.6488,
+      "cos_sim_3": 0.657983,
+      "cos_sim_4": 0.627283,
+      "cos_sim_5": 0.574452,
+      "min_similarity": 0.574452,
+      "p1": 0.0,
+      "p2": 0.356877,
+      "p3": 0.416827,
+      "p4": 0.226296,
+      "p5": 0.0,
+      "set_expected_rating": 2.8694,
+      "canonical_expected_rating": 2.6783,
+      "improved_expected_rating": 2.8694,
+      "delta": 0.1911,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.581591,
+      "cos_sim_2": 0.597302,
+      "cos_sim_3": 0.600017,
+      "cos_sim_4": 0.648844,
+      "cos_sim_5": 0.610944,
+      "min_similarity": 0.581591,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.117922,
+      "p4": 0.662685,
+      "p5": 0.219394,
+      "set_expected_rating": 4.1015,
+      "canonical_expected_rating": 3.8432,
+      "improved_expected_rating": 4.1015,
+      "delta": 0.2582,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.595415,
+      "cos_sim_2": 0.619003,
+      "cos_sim_3": 0.685339,
+      "cos_sim_4": 0.608271,
+      "cos_sim_5": 0.61613,
+      "min_similarity": 0.595415,
+      "p1": 0.0,
+      "p2": 0.128262,
+      "p3": 0.763868,
+      "p4": 0.0,
+      "p5": 0.10787,
+      "set_expected_rating": 3.0875,
+      "canonical_expected_rating": 3.2087,
+      "improved_expected_rating": 3.0875,
+      "delta": -0.1212,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.532674,
+      "cos_sim_2": 0.558024,
+      "cos_sim_3": 0.526281,
+      "cos_sim_4": 0.582942,
+      "cos_sim_5": 0.52878,
+      "min_similarity": 0.526281,
+      "p1": 0.035955,
+      "p2": 0.304566,
+      "p3": 0.0,
+      "p4": 0.659478,
+      "p5": 0.0,
+      "set_expected_rating": 3.283,
+      "canonical_expected_rating": 3.1761,
+      "improved_expected_rating": 3.283,
+      "delta": 0.1069,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.600772,
+      "cos_sim_2": 0.593448,
+      "cos_sim_3": 0.627232,
+      "cos_sim_4": 0.620828,
+      "cos_sim_5": 0.629546,
+      "min_similarity": 0.593448,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.351127,
+      "p4": 0.265314,
+      "p5": 0.383558,
+      "set_expected_rating": 4.0324,
+      "canonical_expected_rating": 3.812,
+      "improved_expected_rating": 4.0324,
+      "delta": 0.2204,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy M35 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.710757,
+      "cos_sim_2": 0.681694,
+      "cos_sim_3": 0.729315,
+      "cos_sim_4": 0.69629,
+      "cos_sim_5": 0.683598,
+      "min_similarity": 0.681694,
+      "p1": 0.300221,
+      "p2": 0.0,
+      "p3": 0.579928,
+      "p4": 0.119851,
+      "p5": 0.0,
+      "set_expected_rating": 2.5194,
+      "canonical_expected_rating": 2.5737,
+      "improved_expected_rating": 2.5194,
+      "delta": -0.0543,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

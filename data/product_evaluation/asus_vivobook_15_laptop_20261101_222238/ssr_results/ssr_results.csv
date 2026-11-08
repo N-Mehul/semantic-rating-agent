@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,ASUS Vivobook 15 Laptop,PE,Performance Expectancy,False,3.6606,0.112389,0.142646,0.0,0.461947,0.283018,nomic-embed-text
+P1_premium_tier_owner,ASUS Vivobook 15 Laptop,EE,Effort Expectancy,False,4.1313,0.0,0.022706,0.242863,0.31486,0.419571,nomic-embed-text
+P1_premium_tier_owner,ASUS Vivobook 15 Laptop,HM,Hedonic Motivation,False,4.1763,0.0,0.087593,0.114031,0.332815,0.465562,nomic-embed-text
+P1_premium_tier_owner,ASUS Vivobook 15 Laptop,SI,Social Influence,False,3.8908,0.0,0.106085,0.185099,0.420768,0.288048,nomic-embed-text
+P1_premium_tier_owner,ASUS Vivobook 15 Laptop,PP,Perceived Protection,False,3.6653,0.173441,0.099738,0.0,0.341737,0.385083,nomic-embed-text
+P1_premium_tier_owner,ASUS Vivobook 15 Laptop,BI,Behavioral Intention,True,3.7697,0.0,0.172856,0.146351,0.419024,0.26177,nomic-embed-text
+P2_midrange_heavy_user,ASUS Vivobook 15 Laptop,PE,Performance Expectancy,False,3.3111,0.147717,0.190823,0.0,0.525542,0.135918,nomic-embed-text
+P2_midrange_heavy_user,ASUS Vivobook 15 Laptop,EE,Effort Expectancy,False,3.3276,0.277222,0.0,0.172112,0.219278,0.331388,nomic-embed-text
+P2_midrange_heavy_user,ASUS Vivobook 15 Laptop,HM,Hedonic Motivation,False,4.1246,0.022563,0.033076,0.0,0.68589,0.258471,nomic-embed-text
+P2_midrange_heavy_user,ASUS Vivobook 15 Laptop,SI,Social Influence,False,4.0187,0.030665,0.0,0.227731,0.403175,0.338429,nomic-embed-text
+P2_midrange_heavy_user,ASUS Vivobook 15 Laptop,PP,Perceived Protection,False,2.9925,0.377201,0.067057,0.0,0.297478,0.258265,nomic-embed-text
+P2_midrange_heavy_user,ASUS Vivobook 15 Laptop,BI,Behavioral Intention,True,3.927,0.0,0.173114,0.058682,0.436306,0.331899,nomic-embed-text
+P3_midrange_moderate_user,ASUS Vivobook 15 Laptop,PE,Performance Expectancy,False,3.1098,0.187063,0.216485,0.0,0.492533,0.103919,nomic-embed-text
+P3_midrange_moderate_user,ASUS Vivobook 15 Laptop,EE,Effort Expectancy,False,3.9166,0.0,0.105643,0.239466,0.287575,0.367315,nomic-embed-text
+P3_midrange_moderate_user,ASUS Vivobook 15 Laptop,HM,Hedonic Motivation,False,2.6693,0.100461,0.382044,0.265277,0.252218,0.0,nomic-embed-text
+P3_midrange_moderate_user,ASUS Vivobook 15 Laptop,SI,Social Influence,False,3.8065,0.0,0.066992,0.307698,0.37715,0.24816,nomic-embed-text
+P3_midrange_moderate_user,ASUS Vivobook 15 Laptop,PP,Perceived Protection,False,2.8508,0.02352,0.374335,0.329997,0.272148,0.0,nomic-embed-text
+P3_midrange_moderate_user,ASUS Vivobook 15 Laptop,BI,Behavioral Intention,True,3.7936,0.0,0.1739,0.148288,0.388172,0.28964,nomic-embed-text
+P4_budget_or_undisclosed_price,ASUS Vivobook 15 Laptop,PE,Performance Expectancy,False,3.2811,0.128481,0.190366,0.0,0.633857,0.047296,nomic-embed-text
+P4_budget_or_undisclosed_price,ASUS Vivobook 15 Laptop,EE,Effort Expectancy,False,4.171,0.022116,0.0,0.21453,0.311436,0.451918,nomic-embed-text
+P4_budget_or_undisclosed_price,ASUS Vivobook 15 Laptop,HM,Hedonic Motivation,False,3.6652,0.0,0.18737,0.21111,0.350446,0.251074,nomic-embed-text
+P4_budget_or_undisclosed_price,ASUS Vivobook 15 Laptop,SI,Social Influence,False,4.0345,0.0,0.018084,0.269653,0.371958,0.340304,nomic-embed-text
+P4_budget_or_undisclosed_price,ASUS Vivobook 15 Laptop,PP,Perceived Protection,False,3.6059,0.037045,0.312308,0.0,0.309026,0.341621,nomic-embed-text
+P4_budget_or_undisclosed_price,ASUS Vivobook 15 Laptop,BI,Behavioral Intention,True,3.845,0.0,0.136791,0.177457,0.389726,0.296027,nomic-embed-text

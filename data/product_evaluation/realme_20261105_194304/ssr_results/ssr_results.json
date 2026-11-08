@@ -1,0 +1,2675 @@
+{
+  "evaluation_id": "realme_20261105_194304",
+  "product_name": "realme",
+  "ssr_method": "improved",
+  "ssr_method_label": "Improved SSR (Experimental, k=3, T=0.75)",
+  "k_truncation": 3,
+  "temperature": 0.75,
+  "comparison_summary": {
+    "active_ssr_method": "improved",
+    "active_ssr_label": "Improved SSR (Experimental, k=3, T=0.75)",
+    "is_comparison_mode": false,
+    "canonical": {
+      "method": "Canonical SSR (Original Reference Baseline)",
+      "k_truncation": 5,
+      "temperature": 1.0,
+      "primary_adoption_average": 3.2864,
+      "construct_averages": {
+        "PE": 3.1071,
+        "EE": 3.883,
+        "HM": 3.5891,
+        "SI": 3.2473,
+        "PP": 3.684,
+        "BI": 3.2864
+      }
+    },
+    "improved": {
+      "method": "Improved SSR (Experimental)",
+      "k_truncation": 3,
+      "temperature": 0.75,
+      "primary_adoption_average": 3.429,
+      "construct_averages": {
+        "PE": 3.3403,
+        "EE": 3.9395,
+        "HM": 3.7241,
+        "SI": 3.2694,
+        "PP": 3.8695,
+        "BI": 3.429
+      }
+    },
+    "deltas": {
+      "primary_adoption_delta": 0.1426,
+      "construct_deltas": {
+        "PE": 0.2332,
+        "EE": 0.0565,
+        "HM": 0.135,
+        "SI": 0.0221,
+        "PP": 0.1855,
+        "BI": 0.1426
+      }
+    },
+    "persona_comparison": [
+      {
+        "persona_id": "P1_premium_tier_owner",
+        "canonical_adoption_rating": 3.351,
+        "improved_adoption_rating": 3.2975,
+        "delta": -0.0535
+      },
+      {
+        "persona_id": "P2_midrange_heavy_user",
+        "canonical_adoption_rating": 3.4453,
+        "improved_adoption_rating": 3.6387,
+        "delta": 0.1934
+      },
+      {
+        "persona_id": "P3_midrange_moderate_user",
+        "canonical_adoption_rating": 3.5695,
+        "improved_adoption_rating": 3.7555,
+        "delta": 0.186
+      },
+      {
+        "persona_id": "P4_budget_or_undisclosed_price",
+        "canonical_adoption_rating": 2.78,
+        "improved_adoption_rating": 3.0244,
+        "delta": 0.2444
+      }
+    ]
+  },
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Improved SSR (Experimental, k=3, T=0.75))",
+  "timestamp_utc": "2026-11-05T14:22:27.824181+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.429,
+  "overall_adoption_average": 3.429,
+  "primary_adoption_average": 3.429,
+  "construct_averages": {
+    "PE": 3.3403,
+    "EE": 3.9395,
+    "HM": 3.7241,
+    "SI": 3.2694,
+    "PP": 3.8695,
+    "BI": 3.429
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "primary_adoption_rating": 3.2975,
+      "primary_adoption_pmf": [
+        0.0,
+        0.220838,
+        0.520016,
+        0.0,
+        0.259147
+      ],
+      "construct_scores": {
+        "PE": 3.3182,
+        "EE": 3.4274,
+        "HM": 3.0053,
+        "SI": 3.0064,
+        "PP": 3.0129,
+        "BI": 3.2975
+      },
+      "construct_responses": {
+        "PE": "It seems capable for everyday tasks, but the performance might not be as smooth as some premium flagships. The core specifications appear solid for most users, though.",
+        "EE": "Setting it up and navigating it should be straightforward, but the interface might lack some intuitive design elements found in more premium devices.",
+        "HM": "It should provide a pleasant experience for daily tasks and media viewing, but the build quality might not match the visual appeal of higher-tier products.",
+        "SI": "Colleagues might find it useful for work, but it may not stand out as much compared to premium models in terms of features and design.",
+        "PP": "The build quality feels solid, but the mid-range materials might not offer the same durability as more expensive options. Data security seems decent, but nothing exceptional.",
+        "BI": "While it seems like a good value for the price, I would be hesitant to adopt it as a premium alternative, given the mid-range tier and the need for exceptional craftsmanship and refinement.",
+        "OVERALL": "The product looks promising for general use, but its mid-range build and features might not fully justify the premium price for a flagship experience. It could be a solid choice, but I would need to see more to consider it truly premium."
+      },
+      "response_text": "The product looks promising for general use, but its mid-range build and features might not fully justify the premium price for a flagship experience. It could be a solid choice, but I would need to see more to consider it truly premium.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It seems capable for everyday tasks, but the performance might not be as smooth as some premium flagships. The core specifications appear solid for most users, though.",
+          "cosine_similarities": [
+            0.621774,
+            0.636213,
+            0.625182,
+            0.651224,
+            0.615989
+          ],
+          "min_similarity": 0.615989,
+          "pmf_probabilities": [
+            0.0,
+            0.290192,
+            0.101423,
+            0.608385,
+            0.0
+          ],
+          "expected_rating": 3.3182,
+          "canonical": {
+            "pmf_probabilities": [
+              0.082129,
+              0.287118,
+              0.130511,
+              0.500242,
+              0.0
+            ],
+            "expected_rating": 3.0489
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.290192,
+              0.101423,
+              0.608385,
+              0.0
+            ],
+            "expected_rating": 3.3182
+          },
+          "delta_improved_minus_canonical": 0.2693,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting it up and navigating it should be straightforward, but the interface might lack some intuitive design elements found in more premium devices.",
+          "cosine_similarities": [
+            0.602038,
+            0.625571,
+            0.616709,
+            0.615257,
+            0.626489
+          ],
+          "min_similarity": 0.602038,
+          "pmf_probabilities": [
+            0.0,
+            0.38686,
+            0.206024,
+            0.0,
+            0.407116
+          ],
+          "expected_rating": 3.4274,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.310161,
+              0.193357,
+              0.17422,
+              0.322263
+            ],
+            "expected_rating": 3.5086
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.38686,
+              0.206024,
+              0.0,
+              0.407116
+            ],
+            "expected_rating": 3.4274
+          },
+          "delta_improved_minus_canonical": -0.0812,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "It should provide a pleasant experience for daily tasks and media viewing, but the build quality might not match the visual appeal of higher-tier products.",
+          "cosine_similarities": [
+            0.541441,
+            0.56596,
+            0.576074,
+            0.566333,
+            0.539483
+          ],
+          "min_similarity": 0.539483,
+          "pmf_probabilities": [
+            0.0,
+            0.281037,
+            0.432628,
+            0.286336,
+            0.0
+          ],
+          "expected_rating": 3.0053,
+          "canonical": {
+            "pmf_probabilities": [
+              0.021306,
+              0.288179,
+              0.398269,
+              0.292245,
+              0.0
+            ],
+            "expected_rating": 2.9615
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.281037,
+              0.432628,
+              0.286336,
+              0.0
+            ],
+            "expected_rating": 3.0053
+          },
+          "delta_improved_minus_canonical": 0.0438,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Colleagues might find it useful for work, but it may not stand out as much compared to premium models in terms of features and design.",
+          "cosine_similarities": [
+            0.514022,
+            0.521288,
+            0.577364,
+            0.521985,
+            0.509652
+          ],
+          "min_similarity": 0.509652,
+          "pmf_probabilities": [
+            0.0,
+            0.079691,
+            0.834183,
+            0.086126,
+            0.0
+          ],
+          "expected_rating": 3.0064,
+          "canonical": {
+            "pmf_probabilities": [
+              0.045497,
+              0.121137,
+              0.704964,
+              0.128402,
+              0.0
+            ],
+            "expected_rating": 2.9163
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.079691,
+              0.834183,
+              0.086126,
+              0.0
+            ],
+            "expected_rating": 3.0064
+          },
+          "delta_improved_minus_canonical": 0.0902,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality feels solid, but the mid-range materials might not offer the same durability as more expensive options. Data security seems decent, but nothing exceptional.",
+          "cosine_similarities": [
+            0.519195,
+            0.535342,
+            0.528963,
+            0.535756,
+            0.518515
+          ],
+          "min_similarity": 0.518515,
+          "pmf_probabilities": [
+            0.0,
+            0.390216,
+            0.206715,
+            0.403069,
+            0.0
+          ],
+          "expected_rating": 3.0129,
+          "canonical": {
+            "pmf_probabilities": [
+              0.015042,
+              0.372308,
+              0.231181,
+              0.381468,
+              0.0
+            ],
+            "expected_rating": 2.9791
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.390216,
+              0.206715,
+              0.403069,
+              0.0
+            ],
+            "expected_rating": 3.0129
+          },
+          "delta_improved_minus_canonical": 0.0338,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "While it seems like a good value for the price, I would be hesitant to adopt it as a premium alternative, given the mid-range tier and the need for exceptional craftsmanship and refinement.",
+          "cosine_similarities": [
+            0.41492,
+            0.458413,
+            0.497596,
+            0.425583,
+            0.463957
+          ],
+          "min_similarity": 0.41492,
+          "pmf_probabilities": [
+            0.0,
+            0.220838,
+            0.520016,
+            0.0,
+            0.259147
+          ],
+          "expected_rating": 3.2975,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.233998,
+              0.444806,
+              0.05737,
+              0.263826
+            ],
+            "expected_rating": 3.351
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.220838,
+              0.520016,
+              0.0,
+              0.259147
+            ],
+            "expected_rating": 3.2975
+          },
+          "delta_improved_minus_canonical": -0.0536,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "primary_adoption_rating": 3.6387,
+      "primary_adoption_pmf": [
+        0.0,
+        0.0,
+        0.533794,
+        0.293718,
+        0.172488
+      ],
+      "construct_scores": {
+        "PE": 3.4492,
+        "EE": 4.0655,
+        "HM": 4.1272,
+        "SI": 3.1067,
+        "PP": 4.1333,
+        "BI": 3.6387
+      },
+      "construct_responses": {
+        "PE": "The realme device offers impressive performance with its powerful processor and ample RAM, making it well-suited for intensive daily tasks. However, I'm concerned about its ability to handle extremely heavy workloads and multitasking without any throttling, especially at this price point.",
+        "EE": "Setting up and navigating the device is straightforward, with a user-friendly interface that simplifies most tasks. The controls are intuitive, but I hope the software remains responsive and doesn't feel clunky once I start using it extensively.",
+        "HM": "Using the device for daily tasks and media viewing is enjoyable, thanks to its vibrant display and decent battery life. The audio quality is good for casual use, but I would like to see better specs for those who need higher fidelity.",
+        "SI": "My friends who are into tech will likely view this as a solid choice, especially for those looking for a balance between performance and price. However, they might be hesitant if it doesn't quite match their needs or if they're expecting a top-of-the-line experience.",
+        "PP": "The build feels durable, and the hardware seems reliable enough for daily use. The device's security features are decent, but I would like to see more robust protection against potential vulnerabilities and data breaches.",
+        "BI": "Given the price, I'm on the fence. While the specifications are strong, I need more assurance that it can handle my daily tasks without any performance issues. If it delivers on all fronts, I would consider it a worthwhile investment, but I need to see some solid reviews and perhaps test it personally first.",
+        "OVERALL": "The realme device seems promising for everyday use, but its performance under heavy workloads and multitasking remains a concern. It offers a good balance of features and price, making it a potential buy for tech enthusiasts who want reliability and speed without breaking the bank."
+      },
+      "response_text": "The realme device seems promising for everyday use, but its performance under heavy workloads and multitasking remains a concern. It offers a good balance of features and price, making it a potential buy for tech enthusiasts who want reliability and speed without breaking the bank.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The realme device offers impressive performance with its powerful processor and ample RAM, making it well-suited for intensive daily tasks. However, I'm concerned about its ability to handle extremely heavy workloads and multitasking without any throttling, especially at this price point.",
+          "cosine_similarities": [
+            0.567554,
+            0.574355,
+            0.54987,
+            0.5704,
+            0.567669
+          ],
+          "min_similarity": 0.54987,
+          "pmf_probabilities": [
+            0.0,
+            0.409126,
+            0.0,
+            0.323462,
+            0.267412
+          ],
+          "expected_rating": 3.4492,
+          "canonical": {
+            "pmf_probabilities": [
+              0.219683,
+              0.304173,
+              0.0,
+              0.255032,
+              0.221112
+            ],
+            "expected_rating": 2.9537
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.409126,
+              0.0,
+              0.323462,
+              0.267412
+            ],
+            "expected_rating": 3.4492
+          },
+          "delta_improved_minus_canonical": 0.4954,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and navigating the device is straightforward, with a user-friendly interface that simplifies most tasks. The controls are intuitive, but I hope the software remains responsive and doesn't feel clunky once I start using it extensively.",
+          "cosine_similarities": [
+            0.579705,
+            0.586901,
+            0.674697,
+            0.673914,
+            0.689269
+          ],
+          "min_similarity": 0.579705,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.312636,
+            0.309202,
+            0.378162
+          ],
+          "expected_rating": 4.0655,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.023518,
+              0.310472,
+              0.307911,
+              0.358098
+            ],
+            "expected_rating": 4.0006
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.312636,
+              0.309202,
+              0.378162
+            ],
+            "expected_rating": 4.0655
+          },
+          "delta_improved_minus_canonical": 0.0649,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the device for daily tasks and media viewing is enjoyable, thanks to its vibrant display and decent battery life. The audio quality is good for casual use, but I would like to see better specs for those who need higher fidelity.",
+          "cosine_similarities": [
+            0.596491,
+            0.625214,
+            0.613923,
+            0.680537,
+            0.662738
+          ],
+          "min_similarity": 0.596491,
+          "pmf_probabilities": [
+            0.0,
+            0.121471,
+            0.0,
+            0.508377,
+            0.370152
+          ],
+          "expected_rating": 4.1272,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.146213,
+              0.088736,
+              0.427829,
+              0.337222
+            ],
+            "expected_rating": 3.9561
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.121471,
+              0.0,
+              0.508377,
+              0.370152
+            ],
+            "expected_rating": 4.1272
+          },
+          "delta_improved_minus_canonical": 0.1711,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends who are into tech will likely view this as a solid choice, especially for those looking for a balance between performance and price. However, they might be hesitant if it doesn't quite match their needs or if they're expecting a top-of-the-line experience.",
+          "cosine_similarities": [
+            0.516599,
+            0.568836,
+            0.641667,
+            0.591656,
+            0.53314
+          ],
+          "min_similarity": 0.516599,
+          "pmf_probabilities": [
+            0.0,
+            0.171694,
+            0.549929,
+            0.278377,
+            0.0
+          ],
+          "expected_rating": 3.1067,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.194261,
+              0.465103,
+              0.279122,
+              0.061513
+            ],
+            "expected_rating": 3.2079
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.171694,
+              0.549929,
+              0.278377,
+              0.0
+            ],
+            "expected_rating": 3.1067
+          },
+          "delta_improved_minus_canonical": -0.1012,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build feels durable, and the hardware seems reliable enough for daily use. The device's security features are decent, but I would like to see more robust protection against potential vulnerabilities and data breaches.",
+          "cosine_similarities": [
+            0.598442,
+            0.61562,
+            0.629904,
+            0.649671,
+            0.643242
+          ],
+          "min_similarity": 0.598442,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.221353,
+            0.424033,
+            0.354613
+          ],
+          "expected_rating": 4.1333,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.118738,
+              0.217474,
+              0.354113,
+              0.309676
+            ],
+            "expected_rating": 3.8547
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.221353,
+              0.424033,
+              0.354613
+            ],
+            "expected_rating": 4.1333
+          },
+          "delta_improved_minus_canonical": 0.2785,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Given the price, I'm on the fence. While the specifications are strong, I need more assurance that it can handle my daily tasks without any performance issues. If it delivers on all fronts, I would consider it a worthwhile investment, but I need to see some solid reviews and perhaps test it personally first.",
+          "cosine_similarities": [
+            0.429378,
+            0.481596,
+            0.560562,
+            0.513189,
+            0.485602
+          ],
+          "min_similarity": 0.429378,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.533794,
+            0.293718,
+            0.172488
+          ],
+          "expected_rating": 3.6387,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.161446,
+              0.405595,
+              0.259126,
+              0.173833
+            ],
+            "expected_rating": 3.4453
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.533794,
+              0.293718,
+              0.172488
+            ],
+            "expected_rating": 3.6387
+          },
+          "delta_improved_minus_canonical": 0.1933,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "primary_adoption_rating": 3.7555,
+      "primary_adoption_pmf": [
+        0.0,
+        0.0,
+        0.429525,
+        0.385486,
+        0.184989
+      ],
+      "construct_scores": {
+        "PE": 3.8607,
+        "EE": 4.2421,
+        "HM": 4.2453,
+        "SI": 4.1252,
+        "PP": 4.368,
+        "BI": 3.7555
+      },
+      "construct_responses": {
+        "PE": "The realme device seems quite capable for daily use with its fast processor and good battery life. However, its effectiveness might vary depending on specific tasks like complex multitasking or premium gaming.",
+        "EE": "Setting up and using the device is straightforward, thanks to its user-friendly interface. The controls are intuitive, making it easy to navigate through various functions.",
+        "HM": "For daily tasks, the device provides a pleasant experience with its decent display and reliable performance. The audio quality is satisfactory, making it a good choice for casual music listening.",
+        "SI": "Colleagues and friends might appreciate the device's modern features and sleek design. It's seen as a step up from more basic smartphones in terms of capabilities and aesthetics.",
+        "PP": "The physical build feels sturdy, with a good balance of durability and lightweight design. Data security is not explicitly mentioned, but the device’s general reliability gives a sense of safety.",
+        "BI": "Considering its price, the device offers practical features that meet everyday needs. While it may not be the best in every category, it strikes a good balance for everyday use, making it a sensible choice.",
+        "OVERALL": "The realme device seems reliable and well-suited for daily tasks, though it might not excel in every area. It’s a practical choice within its price range."
+      },
+      "response_text": "The realme device seems reliable and well-suited for daily tasks, though it might not excel in every area. It’s a practical choice within its price range.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The realme device seems quite capable for daily use with its fast processor and good battery life. However, its effectiveness might vary depending on specific tasks like complex multitasking or premium gaming.",
+          "cosine_similarities": [
+            0.627165,
+            0.641989,
+            0.637337,
+            0.672512,
+            0.642979
+          ],
+          "min_similarity": 0.627165,
+          "pmf_probabilities": [
+            0.0,
+            0.153127,
+            0.0,
+            0.679968,
+            0.166905
+          ],
+          "expected_rating": 3.8607,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.17206,
+              0.118067,
+              0.526328,
+              0.183545
+            ],
+            "expected_rating": 3.7214
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.153127,
+              0.0,
+              0.679968,
+              0.166905
+            ],
+            "expected_rating": 3.8607
+          },
+          "delta_improved_minus_canonical": 0.1393,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and using the device is straightforward, thanks to its user-friendly interface. The controls are intuitive, making it easy to navigate through various functions.",
+          "cosine_similarities": [
+            0.588904,
+            0.590249,
+            0.654665,
+            0.681453,
+            0.705373
+          ],
+          "min_similarity": 0.588904,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.211866,
+            0.334144,
+            0.45399
+          ],
+          "expected_rating": 4.2421,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.004872,
+              0.238158,
+              0.335173,
+              0.421797
+            ],
+            "expected_rating": 4.1739
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.211866,
+              0.334144,
+              0.45399
+            ],
+            "expected_rating": 4.2421
+          },
+          "delta_improved_minus_canonical": 0.0682,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "For daily tasks, the device provides a pleasant experience with its decent display and reliable performance. The audio quality is satisfactory, making it a good choice for casual music listening.",
+          "cosine_similarities": [
+            0.530252,
+            0.556469,
+            0.556664,
+            0.627136,
+            0.597681
+          ],
+          "min_similarity": 0.530252,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.098558,
+            0.557557,
+            0.343885
+          ],
+          "expected_rating": 4.2453,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.12085,
+              0.121748,
+              0.446589,
+              0.310814
+            ],
+            "expected_rating": 3.9474
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.098558,
+              0.557557,
+              0.343885
+            ],
+            "expected_rating": 4.2453
+          },
+          "delta_improved_minus_canonical": 0.298,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Colleagues and friends might appreciate the device's modern features and sleek design. It's seen as a step up from more basic smartphones in terms of capabilities and aesthetics.",
+          "cosine_similarities": [
+            0.645309,
+            0.630823,
+            0.67404,
+            0.689565,
+            0.689444
+          ],
+          "min_similarity": 0.630823,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.249551,
+            0.375739,
+            0.37471
+          ],
+          "expected_rating": 4.1252,
+          "canonical": {
+            "pmf_probabilities": [
+              0.082749,
+              0.0,
+              0.246859,
+              0.33554,
+              0.334851
+            ],
+            "expected_rating": 3.8397
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.249551,
+              0.375739,
+              0.37471
+            ],
+            "expected_rating": 4.1252
+          },
+          "delta_improved_minus_canonical": 0.2854,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The physical build feels sturdy, with a good balance of durability and lightweight design. Data security is not explicitly mentioned, but the device’s general reliability gives a sense of safety.",
+          "cosine_similarities": [
+            0.596991,
+            0.601921,
+            0.618068,
+            0.645013,
+            0.655601
+          ],
+          "min_similarity": 0.596991,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.126445,
+            0.3791,
+            0.494455
+          ],
+          "expected_rating": 4.368,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.037163,
+              0.158904,
+              0.362054,
+              0.441879
+            ],
+            "expected_rating": 4.2086
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.126445,
+              0.3791,
+              0.494455
+            ],
+            "expected_rating": 4.368
+          },
+          "delta_improved_minus_canonical": 0.1594,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Considering its price, the device offers practical features that meet everyday needs. While it may not be the best in every category, it strikes a good balance for everyday use, making it a sensible choice.",
+          "cosine_similarities": [
+            0.487278,
+            0.521865,
+            0.579593,
+            0.572399,
+            0.536357
+          ],
+          "min_similarity": 0.487278,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.429525,
+            0.385486,
+            0.184989
+          ],
+          "expected_rating": 3.7555,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.132465,
+              0.35356,
+              0.326008,
+              0.187967
+            ],
+            "expected_rating": 3.5695
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.429525,
+              0.385486,
+              0.184989
+            ],
+            "expected_rating": 3.7555
+          },
+          "delta_improved_minus_canonical": 0.186,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "primary_adoption_rating": 3.0244,
+      "primary_adoption_pmf": [
+        0.0,
+        0.24648,
+        0.618069,
+        0.0,
+        0.135451
+      ],
+      "construct_scores": {
+        "PE": 2.7331,
+        "EE": 4.0232,
+        "HM": 3.5187,
+        "SI": 2.8394,
+        "PP": 3.9636,
+        "BI": 3.0244
+      },
+      "construct_responses": {
+        "PE": "The realme device seems quite capable for daily use, with its powerful processor and large display. However, at ₹25,000, it might be a stretch for someone looking for essential features at a more affordable price.",
+        "EE": "Setting it up and navigating through the interface feels straightforward, but the price might make some users hesitant. It’s easy to use, but at this cost, it feels like a luxury.",
+        "HM": "Watching videos and browsing the web on the device is smooth, but the high price might make it feel less enjoyable. For someone who values entertainment, the display and battery life are good.",
+        "SI": "Peers might see it as a status symbol, but for budget-conscious users, it’s not a practical choice. It’s more for those who want the best in terms of build and features.",
+        "PP": "The device feels sturdy and well-built, with good protection from drops and dust.",
+        "BI": "Given the price, I find it hard to justify purchasing this device. It’s an expensive choice for a budget-conscious consumer, and the essential features are not enough to warrant the cost.",
+        "OVERALL": "While the realme device has many good features, its high price makes it a tough sell for someone prioritizing value for money. It’s better suited for those who don’t mind spending more on a premium device."
+      },
+      "response_text": "While the realme device has many good features, its high price makes it a tough sell for someone prioritizing value for money. It’s better suited for those who don’t mind spending more on a premium device.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The realme device seems quite capable for daily use, with its powerful processor and large display. However, at ₹25,000, it might be a stretch for someone looking for essential features at a more affordable price.",
+          "cosine_similarities": [
+            0.571371,
+            0.602482,
+            0.569096,
+            0.599964,
+            0.55371
+          ],
+          "min_similarity": 0.55371,
+          "pmf_probabilities": [
+            0.117862,
+            0.456651,
+            0.0,
+            0.425487,
+            0.0
+          ],
+          "expected_rating": 2.7331,
+          "canonical": {
+            "pmf_probabilities": [
+              0.137898,
+              0.380816,
+              0.120134,
+              0.361153,
+              0.0
+            ],
+            "expected_rating": 2.7045
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.117862,
+              0.456651,
+              0.0,
+              0.425487,
+              0.0
+            ],
+            "expected_rating": 2.7331
+          },
+          "delta_improved_minus_canonical": 0.0286,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting it up and navigating through the interface feels straightforward, but the price might make some users hesitant. It’s easy to use, but at this cost, it feels like a luxury.",
+          "cosine_similarities": [
+            0.549127,
+            0.537317,
+            0.616385,
+            0.576544,
+            0.619738
+          ],
+          "min_similarity": 0.537317,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.408219,
+            0.160323,
+            0.431459
+          ],
+          "expected_rating": 4.0232,
+          "canonical": {
+            "pmf_probabilities": [
+              0.055569,
+              0.0,
+              0.372041,
+              0.184573,
+              0.387816
+            ],
+            "expected_rating": 3.8491
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.408219,
+              0.160323,
+              0.431459
+            ],
+            "expected_rating": 4.0232
+          },
+          "delta_improved_minus_canonical": 0.1742,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Watching videos and browsing the web on the device is smooth, but the high price might make it feel less enjoyable. For someone who values entertainment, the display and battery life are good.",
+          "cosine_similarities": [
+            0.623569,
+            0.667895,
+            0.639269,
+            0.663209,
+            0.659125
+          ],
+          "min_similarity": 0.623569,
+          "pmf_probabilities": [
+            0.0,
+            0.383595,
+            0.0,
+            0.330502,
+            0.285903
+          ],
+          "expected_rating": 3.5187,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.327801,
+              0.116104,
+              0.293147,
+              0.262948
+            ],
+            "expected_rating": 3.4912
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.383595,
+              0.0,
+              0.330502,
+              0.285903
+            ],
+            "expected_rating": 3.5187
+          },
+          "delta_improved_minus_canonical": 0.0275,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers might see it as a status symbol, but for budget-conscious users, it’s not a practical choice. It’s more for those who want the best in terms of build and features.",
+          "cosine_similarities": [
+            0.566235,
+            0.603783,
+            0.63241,
+            0.586127,
+            0.576763
+          ],
+          "min_similarity": 0.566235,
+          "pmf_probabilities": [
+            0.0,
+            0.281093,
+            0.598415,
+            0.120492,
+            0.0
+          ],
+          "expected_rating": 2.8394,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.27991,
+              0.493324,
+              0.148286,
+              0.078481
+            ],
+            "expected_rating": 3.0253
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.281093,
+              0.598415,
+              0.120492,
+              0.0
+            ],
+            "expected_rating": 2.8394
+          },
+          "delta_improved_minus_canonical": -0.1859,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The device feels sturdy and well-built, with good protection from drops and dust.",
+          "cosine_similarities": [
+            0.598706,
+            0.638606,
+            0.6895,
+            0.664823,
+            0.683078
+          ],
+          "min_similarity": 0.598706,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.390325,
+            0.25572,
+            0.353955
+          ],
+          "expected_rating": 3.9636,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.141902,
+              0.3229,
+              0.235137,
+              0.300061
+            ],
+            "expected_rating": 3.6934
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.390325,
+              0.25572,
+              0.353955
+            ],
+            "expected_rating": 3.9636
+          },
+          "delta_improved_minus_canonical": 0.2703,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Given the price, I find it hard to justify purchasing this device. It’s an expensive choice for a budget-conscious consumer, and the essential features are not enough to warrant the cost.",
+          "cosine_similarities": [
+            0.534712,
+            0.5541,
+            0.602711,
+            0.505132,
+            0.536387
+          ],
+          "min_similarity": 0.505132,
+          "pmf_probabilities": [
+            0.0,
+            0.24648,
+            0.618069,
+            0.0,
+            0.135451
+          ],
+          "expected_rating": 3.0244,
+          "canonical": {
+            "pmf_probabilities": [
+              0.142636,
+              0.236126,
+              0.470528,
+              0.0,
+              0.150711
+            ],
+            "expected_rating": 2.78
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.24648,
+              0.618069,
+              0.0,
+              0.135451
+            ],
+            "expected_rating": 3.0244
+          },
+          "delta_improved_minus_canonical": 0.2444,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.621774,
+        0.636213,
+        0.625182,
+        0.651224,
+        0.615989
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.290192,
+        0.101423,
+        0.608385,
+        0.0
+      ],
+      "expected_rating": 3.3182,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.602038,
+        0.625571,
+        0.616709,
+        0.615257,
+        0.626489
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.38686,
+        0.206024,
+        0.0,
+        0.407116
+      ],
+      "expected_rating": 3.4274,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.541441,
+        0.56596,
+        0.576074,
+        0.566333,
+        0.539483
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.281037,
+        0.432628,
+        0.286336,
+        0.0
+      ],
+      "expected_rating": 3.0053,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.514022,
+        0.521288,
+        0.577364,
+        0.521985,
+        0.509652
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.079691,
+        0.834183,
+        0.086126,
+        0.0
+      ],
+      "expected_rating": 3.0064,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.519195,
+        0.535342,
+        0.528963,
+        0.535756,
+        0.518515
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.390216,
+        0.206715,
+        0.403069,
+        0.0
+      ],
+      "expected_rating": 3.0129,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.41492,
+        0.458413,
+        0.497596,
+        0.425583,
+        0.463957
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.220838,
+        0.520016,
+        0.0,
+        0.259147
+      ],
+      "expected_rating": 3.2975,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.567554,
+        0.574355,
+        0.54987,
+        0.5704,
+        0.567669
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.409126,
+        0.0,
+        0.323462,
+        0.267412
+      ],
+      "expected_rating": 3.4492,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.579705,
+        0.586901,
+        0.674697,
+        0.673914,
+        0.689269
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.312636,
+        0.309202,
+        0.378162
+      ],
+      "expected_rating": 4.0655,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.596491,
+        0.625214,
+        0.613923,
+        0.680537,
+        0.662738
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.121471,
+        0.0,
+        0.508377,
+        0.370152
+      ],
+      "expected_rating": 4.1272,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.516599,
+        0.568836,
+        0.641667,
+        0.591656,
+        0.53314
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.171694,
+        0.549929,
+        0.278377,
+        0.0
+      ],
+      "expected_rating": 3.1067,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.598442,
+        0.61562,
+        0.629904,
+        0.649671,
+        0.643242
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.221353,
+        0.424033,
+        0.354613
+      ],
+      "expected_rating": 4.1333,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.429378,
+        0.481596,
+        0.560562,
+        0.513189,
+        0.485602
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.533794,
+        0.293718,
+        0.172488
+      ],
+      "expected_rating": 3.6387,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.627165,
+        0.641989,
+        0.637337,
+        0.672512,
+        0.642979
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.153127,
+        0.0,
+        0.679968,
+        0.166905
+      ],
+      "expected_rating": 3.8607,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.588904,
+        0.590249,
+        0.654665,
+        0.681453,
+        0.705373
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.211866,
+        0.334144,
+        0.45399
+      ],
+      "expected_rating": 4.2421,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.530252,
+        0.556469,
+        0.556664,
+        0.627136,
+        0.597681
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.098558,
+        0.557557,
+        0.343885
+      ],
+      "expected_rating": 4.2453,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.645309,
+        0.630823,
+        0.67404,
+        0.689565,
+        0.689444
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.249551,
+        0.375739,
+        0.37471
+      ],
+      "expected_rating": 4.1252,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.596991,
+        0.601921,
+        0.618068,
+        0.645013,
+        0.655601
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.126445,
+        0.3791,
+        0.494455
+      ],
+      "expected_rating": 4.368,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.487278,
+        0.521865,
+        0.579593,
+        0.572399,
+        0.536357
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.429525,
+        0.385486,
+        0.184989
+      ],
+      "expected_rating": 3.7555,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.571371,
+        0.602482,
+        0.569096,
+        0.599964,
+        0.55371
+      ],
+      "pmf_probabilities": [
+        0.117862,
+        0.456651,
+        0.0,
+        0.425487,
+        0.0
+      ],
+      "expected_rating": 2.7331,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.549127,
+        0.537317,
+        0.616385,
+        0.576544,
+        0.619738
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.408219,
+        0.160323,
+        0.431459
+      ],
+      "expected_rating": 4.0232,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.623569,
+        0.667895,
+        0.639269,
+        0.663209,
+        0.659125
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.383595,
+        0.0,
+        0.330502,
+        0.285903
+      ],
+      "expected_rating": 3.5187,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.566235,
+        0.603783,
+        0.63241,
+        0.586127,
+        0.576763
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.281093,
+        0.598415,
+        0.120492,
+        0.0
+      ],
+      "expected_rating": 2.8394,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.598706,
+        0.638606,
+        0.6895,
+        0.664823,
+        0.683078
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.390325,
+        0.25572,
+        0.353955
+      ],
+      "expected_rating": 3.9636,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.534712,
+        0.5541,
+        0.602711,
+        0.505132,
+        0.536387
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.24648,
+        0.618069,
+        0.0,
+        0.135451
+      ],
+      "expected_rating": 3.0244,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.621774,
+      "cos_sim_2": 0.636213,
+      "cos_sim_3": 0.625182,
+      "cos_sim_4": 0.651224,
+      "cos_sim_5": 0.615989,
+      "min_similarity": 0.615989,
+      "p1": 0.0,
+      "p2": 0.290192,
+      "p3": 0.101423,
+      "p4": 0.608385,
+      "p5": 0.0,
+      "set_expected_rating": 3.3182,
+      "canonical_expected_rating": 3.0489,
+      "improved_expected_rating": 3.3182,
+      "delta": 0.2693,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.602038,
+      "cos_sim_2": 0.625571,
+      "cos_sim_3": 0.616709,
+      "cos_sim_4": 0.615257,
+      "cos_sim_5": 0.626489,
+      "min_similarity": 0.602038,
+      "p1": 0.0,
+      "p2": 0.38686,
+      "p3": 0.206024,
+      "p4": 0.0,
+      "p5": 0.407116,
+      "set_expected_rating": 3.4274,
+      "canonical_expected_rating": 3.5086,
+      "improved_expected_rating": 3.4274,
+      "delta": -0.0812,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.541441,
+      "cos_sim_2": 0.56596,
+      "cos_sim_3": 0.576074,
+      "cos_sim_4": 0.566333,
+      "cos_sim_5": 0.539483,
+      "min_similarity": 0.539483,
+      "p1": 0.0,
+      "p2": 0.281037,
+      "p3": 0.432628,
+      "p4": 0.286336,
+      "p5": 0.0,
+      "set_expected_rating": 3.0053,
+      "canonical_expected_rating": 2.9615,
+      "improved_expected_rating": 3.0053,
+      "delta": 0.0438,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.514022,
+      "cos_sim_2": 0.521288,
+      "cos_sim_3": 0.577364,
+      "cos_sim_4": 0.521985,
+      "cos_sim_5": 0.509652,
+      "min_similarity": 0.509652,
+      "p1": 0.0,
+      "p2": 0.079691,
+      "p3": 0.834183,
+      "p4": 0.086126,
+      "p5": 0.0,
+      "set_expected_rating": 3.0064,
+      "canonical_expected_rating": 2.9163,
+      "improved_expected_rating": 3.0064,
+      "delta": 0.0902,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.519195,
+      "cos_sim_2": 0.535342,
+      "cos_sim_3": 0.528963,
+      "cos_sim_4": 0.535756,
+      "cos_sim_5": 0.518515,
+      "min_similarity": 0.518515,
+      "p1": 0.0,
+      "p2": 0.390216,
+      "p3": 0.206715,
+      "p4": 0.403069,
+      "p5": 0.0,
+      "set_expected_rating": 3.0129,
+      "canonical_expected_rating": 2.9791,
+      "improved_expected_rating": 3.0129,
+      "delta": 0.0338,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "realme",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.41492,
+      "cos_sim_2": 0.458413,
+      "cos_sim_3": 0.497596,
+      "cos_sim_4": 0.425583,
+      "cos_sim_5": 0.463957,
+      "min_similarity": 0.41492,
+      "p1": 0.0,
+      "p2": 0.220838,
+      "p3": 0.520016,
+      "p4": 0.0,
+      "p5": 0.259147,
+      "set_expected_rating": 3.2975,
+      "canonical_expected_rating": 3.351,
+      "improved_expected_rating": 3.2975,
+      "delta": -0.0536,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.567554,
+      "cos_sim_2": 0.574355,
+      "cos_sim_3": 0.54987,
+      "cos_sim_4": 0.5704,
+      "cos_sim_5": 0.567669,
+      "min_similarity": 0.54987,
+      "p1": 0.0,
+      "p2": 0.409126,
+      "p3": 0.0,
+      "p4": 0.323462,
+      "p5": 0.267412,
+      "set_expected_rating": 3.4492,
+      "canonical_expected_rating": 2.9537,
+      "improved_expected_rating": 3.4492,
+      "delta": 0.4954,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.579705,
+      "cos_sim_2": 0.586901,
+      "cos_sim_3": 0.674697,
+      "cos_sim_4": 0.673914,
+      "cos_sim_5": 0.689269,
+      "min_similarity": 0.579705,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.312636,
+      "p4": 0.309202,
+      "p5": 0.378162,
+      "set_expected_rating": 4.0655,
+      "canonical_expected_rating": 4.0006,
+      "improved_expected_rating": 4.0655,
+      "delta": 0.0649,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.596491,
+      "cos_sim_2": 0.625214,
+      "cos_sim_3": 0.613923,
+      "cos_sim_4": 0.680537,
+      "cos_sim_5": 0.662738,
+      "min_similarity": 0.596491,
+      "p1": 0.0,
+      "p2": 0.121471,
+      "p3": 0.0,
+      "p4": 0.508377,
+      "p5": 0.370152,
+      "set_expected_rating": 4.1272,
+      "canonical_expected_rating": 3.9561,
+      "improved_expected_rating": 4.1272,
+      "delta": 0.1711,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.516599,
+      "cos_sim_2": 0.568836,
+      "cos_sim_3": 0.641667,
+      "cos_sim_4": 0.591656,
+      "cos_sim_5": 0.53314,
+      "min_similarity": 0.516599,
+      "p1": 0.0,
+      "p2": 0.171694,
+      "p3": 0.549929,
+      "p4": 0.278377,
+      "p5": 0.0,
+      "set_expected_rating": 3.1067,
+      "canonical_expected_rating": 3.2079,
+      "improved_expected_rating": 3.1067,
+      "delta": -0.1012,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.598442,
+      "cos_sim_2": 0.61562,
+      "cos_sim_3": 0.629904,
+      "cos_sim_4": 0.649671,
+      "cos_sim_5": 0.643242,
+      "min_similarity": 0.598442,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.221353,
+      "p4": 0.424033,
+      "p5": 0.354613,
+      "set_expected_rating": 4.1333,
+      "canonical_expected_rating": 3.8547,
+      "improved_expected_rating": 4.1333,
+      "delta": 0.2785,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "realme",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.429378,
+      "cos_sim_2": 0.481596,
+      "cos_sim_3": 0.560562,
+      "cos_sim_4": 0.513189,
+      "cos_sim_5": 0.485602,
+      "min_similarity": 0.429378,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.533794,
+      "p4": 0.293718,
+      "p5": 0.172488,
+      "set_expected_rating": 3.6387,
+      "canonical_expected_rating": 3.4453,
+      "improved_expected_rating": 3.6387,
+      "delta": 0.1933,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.627165,
+      "cos_sim_2": 0.641989,
+      "cos_sim_3": 0.637337,
+      "cos_sim_4": 0.672512,
+      "cos_sim_5": 0.642979,
+      "min_similarity": 0.627165,
+      "p1": 0.0,
+      "p2": 0.153127,
+      "p3": 0.0,
+      "p4": 0.679968,
+      "p5": 0.166905,
+      "set_expected_rating": 3.8607,
+      "canonical_expected_rating": 3.7214,
+      "improved_expected_rating": 3.8607,
+      "delta": 0.1393,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.588904,
+      "cos_sim_2": 0.590249,
+      "cos_sim_3": 0.654665,
+      "cos_sim_4": 0.681453,
+      "cos_sim_5": 0.705373,
+      "min_similarity": 0.588904,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.211866,
+      "p4": 0.334144,
+      "p5": 0.45399,
+      "set_expected_rating": 4.2421,
+      "canonical_expected_rating": 4.1739,
+      "improved_expected_rating": 4.2421,
+      "delta": 0.0682,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.530252,
+      "cos_sim_2": 0.556469,
+      "cos_sim_3": 0.556664,
+      "cos_sim_4": 0.627136,
+      "cos_sim_5": 0.597681,
+      "min_similarity": 0.530252,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.098558,
+      "p4": 0.557557,
+      "p5": 0.343885,
+      "set_expected_rating": 4.2453,
+      "canonical_expected_rating": 3.9474,
+      "improved_expected_rating": 4.2453,
+      "delta": 0.298,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.645309,
+      "cos_sim_2": 0.630823,
+      "cos_sim_3": 0.67404,
+      "cos_sim_4": 0.689565,
+      "cos_sim_5": 0.689444,
+      "min_similarity": 0.630823,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.249551,
+      "p4": 0.375739,
+      "p5": 0.37471,
+      "set_expected_rating": 4.1252,
+      "canonical_expected_rating": 3.8397,
+      "improved_expected_rating": 4.1252,
+      "delta": 0.2854,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.596991,
+      "cos_sim_2": 0.601921,
+      "cos_sim_3": 0.618068,
+      "cos_sim_4": 0.645013,
+      "cos_sim_5": 0.655601,
+      "min_similarity": 0.596991,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.126445,
+      "p4": 0.3791,
+      "p5": 0.494455,
+      "set_expected_rating": 4.368,
+      "canonical_expected_rating": 4.2086,
+      "improved_expected_rating": 4.368,
+      "delta": 0.1594,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "realme",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.487278,
+      "cos_sim_2": 0.521865,
+      "cos_sim_3": 0.579593,
+      "cos_sim_4": 0.572399,
+      "cos_sim_5": 0.536357,
+      "min_similarity": 0.487278,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.429525,
+      "p4": 0.385486,
+      "p5": 0.184989,
+      "set_expected_rating": 3.7555,
+      "canonical_expected_rating": 3.5695,
+      "improved_expected_rating": 3.7555,
+      "delta": 0.186,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.571371,
+      "cos_sim_2": 0.602482,
+      "cos_sim_3": 0.569096,
+      "cos_sim_4": 0.599964,
+      "cos_sim_5": 0.55371,
+      "min_similarity": 0.55371,
+      "p1": 0.117862,
+      "p2": 0.456651,
+      "p3": 0.0,
+      "p4": 0.425487,
+      "p5": 0.0,
+      "set_expected_rating": 2.7331,
+      "canonical_expected_rating": 2.7045,
+      "improved_expected_rating": 2.7331,
+      "delta": 0.0286,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.549127,
+      "cos_sim_2": 0.537317,
+      "cos_sim_3": 0.616385,
+      "cos_sim_4": 0.576544,
+      "cos_sim_5": 0.619738,
+      "min_similarity": 0.537317,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.408219,
+      "p4": 0.160323,
+      "p5": 0.431459,
+      "set_expected_rating": 4.0232,
+      "canonical_expected_rating": 3.8491,
+      "improved_expected_rating": 4.0232,
+      "delta": 0.1742,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.623569,
+      "cos_sim_2": 0.667895,
+      "cos_sim_3": 0.639269,
+      "cos_sim_4": 0.663209,
+      "cos_sim_5": 0.659125,
+      "min_similarity": 0.623569,
+      "p1": 0.0,
+      "p2": 0.383595,
+      "p3": 0.0,
+      "p4": 0.330502,
+      "p5": 0.285903,
+      "set_expected_rating": 3.5187,
+      "canonical_expected_rating": 3.4912,
+      "improved_expected_rating": 3.5187,
+      "delta": 0.0275,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.566235,
+      "cos_sim_2": 0.603783,
+      "cos_sim_3": 0.63241,
+      "cos_sim_4": 0.586127,
+      "cos_sim_5": 0.576763,
+      "min_similarity": 0.566235,
+      "p1": 0.0,
+      "p2": 0.281093,
+      "p3": 0.598415,
+      "p4": 0.120492,
+      "p5": 0.0,
+      "set_expected_rating": 2.8394,
+      "canonical_expected_rating": 3.0253,
+      "improved_expected_rating": 2.8394,
+      "delta": -0.1859,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.598706,
+      "cos_sim_2": 0.638606,
+      "cos_sim_3": 0.6895,
+      "cos_sim_4": 0.664823,
+      "cos_sim_5": 0.683078,
+      "min_similarity": 0.598706,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.390325,
+      "p4": 0.25572,
+      "p5": 0.353955,
+      "set_expected_rating": 3.9636,
+      "canonical_expected_rating": 3.6934,
+      "improved_expected_rating": 3.9636,
+      "delta": 0.2703,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "realme",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.534712,
+      "cos_sim_2": 0.5541,
+      "cos_sim_3": 0.602711,
+      "cos_sim_4": 0.505132,
+      "cos_sim_5": 0.536387,
+      "min_similarity": 0.505132,
+      "p1": 0.0,
+      "p2": 0.24648,
+      "p3": 0.618069,
+      "p4": 0.0,
+      "p5": 0.135451,
+      "set_expected_rating": 3.0244,
+      "canonical_expected_rating": 2.78,
+      "improved_expected_rating": 3.0244,
+      "delta": 0.2444,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

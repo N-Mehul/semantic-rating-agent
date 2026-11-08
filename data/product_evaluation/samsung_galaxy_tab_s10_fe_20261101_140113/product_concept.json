@@ -1,0 +1,48 @@
+{
+  "name": "Samsung Galaxy Tab S10 FE",
+  "category": "Tablet Computer",
+  "description": "Samsung Galaxy Tab S10 FE is a tablet designed for studying, working, and entertainment. It offers a large display, S Pen support for writing and drawing, multitasking capabilities, and a portable design. It is suitable for students, professionals, and people who want a convenient device for reading, taking notes, attending online classes, and watching videos.",
+  "price_inr": 40000.0,
+  "target_group": "all",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Tablet Platform",
+  "features": [
+    {
+      "name": "Processing Performance",
+      "explanation": "High-speed multi-core processing for demanding productivity and multitasking.",
+      "category": null
+    },
+    {
+      "name": "High-Resolution Display",
+      "explanation": "Crisp visual workspace with accurate color reproduction.",
+      "category": null
+    },
+    {
+      "name": "Versatile Connectivity",
+      "explanation": "Comprehensive ports for external displays, accessories, and fast transfers.",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Tablet Computer",
+    "product_noun": "tablet",
+    "usage_role": "primary tablet",
+    "brand_or_ecosystem": "Tablet Platform",
+    "features_count": 3,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-01T08:31:13.255758+00:00"
+}

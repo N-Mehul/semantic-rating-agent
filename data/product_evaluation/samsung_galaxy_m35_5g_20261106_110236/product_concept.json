@@ -1,0 +1,110 @@
+{
+  "name": "Samsung Galaxy M35 5G",
+  "category": "Smartphone",
+  "description": "Samsung Galaxy M35 5G is a mid-range smartphone featuring a 6.6-inch Super AMOLED display with a 120Hz refresh rate, Exynos 1380 processor, 50MP main camera with OIS, 6000mAh battery, 25W charging, and 5G connectivity. It runs on Samsung One UI and offers features for everyday smartphone use, entertainment, photography, and multitasking.",
+  "price_inr": 20000.0,
+  "target_group": "Technology consumers",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Android",
+  "features": [
+    {
+      "name": "6.6-inch Super AMOLED Display (120Hz)",
+      "explanation": "Smooth visual experience with deep contrast.",
+      "category": "Display"
+    },
+    {
+      "name": "Exynos 1380 Processor",
+      "explanation": "Octa-core performance for daily multitasking and apps.",
+      "category": "Performance"
+    },
+    {
+      "name": "50MP Triple Camera with OIS",
+      "explanation": "Stabilized high-resolution photos and video.",
+      "category": "Camera"
+    },
+    {
+      "name": "6000mAh Battery",
+      "explanation": "Extended battery life for heavy daily use.",
+      "category": "Battery"
+    },
+    {
+      "name": "25W Fast Charging",
+      "explanation": "Quick power replenishment when needed.",
+      "category": "Charging"
+    },
+    {
+      "name": "Samsung One UI",
+      "explanation": "Refined and intuitive operating system experience.",
+      "category": "Software"
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI",
+    "PV"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "ssr_method": "improved",
+  "ssr_method_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Smartphone",
+    "product_noun": "smartphone",
+    "usage_role": "primary phone",
+    "brand_or_ecosystem": "Android",
+    "features_count": 6,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-06T05:32:36.639515+00:00",
+  "pipeline_fingerprint": "d3d6bd62c5cb",
+  "product_context": {
+    "name": "Samsung Galaxy M35 5G",
+    "category": "Smartphone",
+    "noun": "smartphone",
+    "usage_role": "primary phone",
+    "ecosystem": "Android",
+    "price_inr": 20000.0,
+    "description": "Samsung Galaxy M35 5G is a mid-range smartphone featuring a 6.6-inch Super AMOLED display with a 120Hz refresh rate, Exynos 1380 processor, 50MP main camera with OIS, 6000mAh battery, 25W charging, and 5G connectivity. It runs on Samsung One UI and offers features for everyday smartphone use, entertainment, photography, and multitasking."
+  },
+  "response_validation_summary": {
+    "P1_premium_tier_owner": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "corrected",
+      "BI": "passed"
+    },
+    "P2_midrange_heavy_user": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "corrected",
+      "PP": "passed",
+      "BI": "passed"
+    },
+    "P3_midrange_moderate_user": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "passed",
+      "BI": "corrected"
+    },
+    "P4_budget_or_undisclosed_price": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "passed",
+      "BI": "passed"
+    }
+  }
+}

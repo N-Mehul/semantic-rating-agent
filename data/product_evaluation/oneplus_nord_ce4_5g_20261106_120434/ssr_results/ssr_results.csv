@@ -1,0 +1,23 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,canonical_expected_rating,improved_expected_rating,delta,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,OnePlus Nord CE4 5G,PE,Performance Expectancy,False,3.3308,3.5121,3.3308,-0.1814,0.0,0.179667,0.309886,0.510448,0.0,nomic-embed-text
+P1_premium_tier_owner,OnePlus Nord CE4 5G,EE,Effort Expectancy,False,3.7804,3.6387,3.7804,0.1417,0.229717,0.0,0.150369,0.0,0.619914,nomic-embed-text
+P1_premium_tier_owner,OnePlus Nord CE4 5G,HM,Hedonic Motivation,False,3.2112,3.39,3.2112,-0.1787,0.194377,0.0,0.205623,0.599999,0.0,nomic-embed-text
+P1_premium_tier_owner,OnePlus Nord CE4 5G,SI,Social Influence,False,3.2367,3.3947,3.2367,-0.158,0.0,0.263455,0.236399,0.500146,0.0,nomic-embed-text
+P1_premium_tier_owner,OnePlus Nord CE4 5G,BI,Behavioral Intention,True,2.8171,2.7459,2.8171,0.0712,0.002496,0.177926,0.819578,0.0,0.0,nomic-embed-text
+P2_midrange_heavy_user,OnePlus Nord CE4 5G,PE,Performance Expectancy,False,3.0141,3.0049,3.0141,0.0092,0.0,0.264304,0.457288,0.278408,0.0,nomic-embed-text
+P2_midrange_heavy_user,OnePlus Nord CE4 5G,EE,Effort Expectancy,False,4.1786,3.8412,4.1786,0.3375,0.0,0.0,0.335047,0.151272,0.51368,nomic-embed-text
+P2_midrange_heavy_user,OnePlus Nord CE4 5G,HM,Hedonic Motivation,False,4.2369,4.1388,4.2369,0.0981,0.0,0.0,0.103979,0.555115,0.340907,nomic-embed-text
+P2_midrange_heavy_user,OnePlus Nord CE4 5G,SI,Social Influence,False,3.9292,3.7433,3.9292,0.1859,0.0,0.0,0.395282,0.28028,0.324438,nomic-embed-text
+P2_midrange_heavy_user,OnePlus Nord CE4 5G,PP,Perceived Protection,False,2.0827,2.5648,2.0827,-0.4821,0.355489,0.425412,0.0,0.2191,0.0,nomic-embed-text
+P2_midrange_heavy_user,OnePlus Nord CE4 5G,BI,Behavioral Intention,True,3.004,3.0545,3.004,-0.0505,0.0,0.133977,0.797034,0.0,0.068989,nomic-embed-text
+P3_midrange_moderate_user,OnePlus Nord CE4 5G,PE,Performance Expectancy,False,2.5562,2.5782,2.5562,-0.022,0.25687,0.3366,0.0,0.40653,0.0,nomic-embed-text
+P3_midrange_moderate_user,OnePlus Nord CE4 5G,EE,Effort Expectancy,False,4.0314,3.8184,4.0314,0.213,0.0,0.0,0.347767,0.273071,0.379162,nomic-embed-text
+P3_midrange_moderate_user,OnePlus Nord CE4 5G,HM,Hedonic Motivation,False,4.5831,4.0826,4.5831,0.5005,0.0,0.0,0.137228,0.142489,0.720283,nomic-embed-text
+P3_midrange_moderate_user,OnePlus Nord CE4 5G,SI,Social Influence,False,2.7305,2.9702,2.7305,-0.2397,0.352819,0.0,0.429094,0.0,0.218088,nomic-embed-text
+P3_midrange_moderate_user,OnePlus Nord CE4 5G,PP,Perceived Protection,False,2.2307,2.5434,2.2307,-0.3127,0.396547,0.289832,0.0,0.313621,0.0,nomic-embed-text
+P3_midrange_moderate_user,OnePlus Nord CE4 5G,BI,Behavioral Intention,True,2.5156,2.4802,2.5156,0.0354,0.152799,0.17883,0.668371,0.0,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,OnePlus Nord CE4 5G,PE,Performance Expectancy,False,2.7379,2.669,2.7379,0.0689,0.195307,0.33808,0.0,0.466614,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,OnePlus Nord CE4 5G,HM,Hedonic Motivation,False,4.1388,3.6822,4.1388,0.4566,0.0,0.0,0.262957,0.335293,0.40175,nomic-embed-text
+P4_budget_or_undisclosed_price,OnePlus Nord CE4 5G,SI,Social Influence,False,2.7694,2.589,2.7694,0.1804,0.0,0.384572,0.461456,0.153973,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,OnePlus Nord CE4 5G,PP,Perceived Protection,False,2.604,2.5945,2.604,0.0095,0.182408,0.424388,0.0,0.393204,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,OnePlus Nord CE4 5G,BI,Behavioral Intention,True,3.0729,3.1654,3.0729,-0.0925,0.0,0.14036,0.753007,0.0,0.106633,nomic-embed-text

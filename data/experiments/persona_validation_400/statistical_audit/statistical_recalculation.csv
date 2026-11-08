@@ -1,0 +1,12 @@
+Model_Type,Factor,SS,DF,MS,F_or_H_Statistic,p_value,Effect_Size_EtaSq,Note
+Overall One-Way ANOVA (All Constructs Pooled),Persona,0.8973,3,0.2991,0.7114,0.545634,0.0054,Balanced across personas (n=100 each). Non-significant.
+Overall Kruskal-Wallis H-test (All Constructs Pooled),Persona,,3,,2.1093,0.550038,-0.0022,Non-parametric rank test. Non-significant.
+"Two-Way Factorial ANOVA (GLM Type III, Unbalanced-Aware)",Persona,0.8776,3,0.2925,0.6809,0.564166,0.0052,Controls for Construct and Persona x Construct interaction.
+"Two-Way Factorial ANOVA (GLM Type III, Unbalanced-Aware)",Construct,2.8518,5,0.5704,1.3276,0.251624,0.017,Controls for Persona and Interaction. Non-significant in Type III.
+"Two-Way Factorial ANOVA (GLM Type III, Unbalanced-Aware)",Persona x Construct Interaction,2.0,15,0.1333,0.3103,0.994336,0.0119,Interaction non-significant globally.
+Construct-Level ANOVA: PE,Persona within PE,2.3636,3,0.7879,4.3475,0.007518,0.1693,"N=68. Kruskal H=10.6004, p=0.014095. STATISTICALLY SIGNIFICANT."
+Construct-Level ANOVA: EE,Persona within EE,0.0156,3,0.0052,0.0146,0.997568,0.0007,"N=68. Kruskal H=1.0190, p=0.796665. Not significant."
+Construct-Level ANOVA: HM,Persona within HM,0.1885,3,0.0628,0.1188,0.94874,0.0058,"N=65. Kruskal H=1.7063, p=0.635528. Not significant."
+Construct-Level ANOVA: SI,Persona within SI,0.0114,3,0.0038,0.0083,0.998961,0.0003,"N=75. Kruskal H=0.0569, p=0.996451. Not significant."
+Construct-Level ANOVA: PP,Persona within PP,0.0997,3,0.0332,0.0518,0.984266,0.0029,"N=57. Kruskal H=0.4179, p=0.936525. Not significant."
+Construct-Level ANOVA: BI,Persona within BI,0.1621,3,0.054,0.1212,0.947274,0.0057,"N=67. Kruskal H=0.3031, p=0.959446. Not significant."

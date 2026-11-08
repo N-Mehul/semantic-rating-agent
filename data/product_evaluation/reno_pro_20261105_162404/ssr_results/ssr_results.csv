@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,canonical_expected_rating,improved_expected_rating,delta,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,reno pro,PE,Performance Expectancy,False,3.807,3.6884,3.807,0.1186,0.0,0.140962,0.0,0.770152,0.088886,nomic-embed-text
+P1_premium_tier_owner,reno pro,EE,Effort Expectancy,False,4.1744,3.9209,4.1744,0.2535,0.0,0.0,0.226427,0.372746,0.400828,nomic-embed-text
+P1_premium_tier_owner,reno pro,HM,Hedonic Motivation,False,4.3438,4.202,4.3438,0.1418,0.0,0.0,0.082529,0.491164,0.426307,nomic-embed-text
+P1_premium_tier_owner,reno pro,SI,Social Influence,False,4.0896,3.8667,4.0896,0.223,0.0,0.0,0.193591,0.523189,0.283221,nomic-embed-text
+P1_premium_tier_owner,reno pro,PP,Perceived Protection,False,4.0245,3.5024,4.0245,0.5221,0.0,0.16819,0.0,0.470944,0.360865,nomic-embed-text
+P1_premium_tier_owner,reno pro,BI,Behavioral Intention,True,3.9718,3.7731,3.9718,0.1987,0.0,0.174392,0.0,0.504979,0.320629,nomic-embed-text
+P2_midrange_heavy_user,reno pro,PE,Performance Expectancy,False,3.0222,3.1884,3.0222,-0.1662,0.156874,0.253571,0.0,0.589555,0.0,nomic-embed-text
+P2_midrange_heavy_user,reno pro,EE,Effort Expectancy,False,4.3001,4.1672,4.3001,0.1329,0.0,0.0,0.138834,0.422223,0.438943,nomic-embed-text
+P2_midrange_heavy_user,reno pro,HM,Hedonic Motivation,False,4.3585,4.2371,4.3585,0.1214,0.0,0.0,0.078691,0.48411,0.437199,nomic-embed-text
+P2_midrange_heavy_user,reno pro,SI,Social Influence,False,4.0762,3.8408,4.0762,0.2354,0.0,0.0,0.265103,0.393624,0.341273,nomic-embed-text
+P2_midrange_heavy_user,reno pro,PP,Perceived Protection,False,3.68,3.3824,3.68,0.2975,0.23478,0.0,0.0,0.380919,0.384301,nomic-embed-text
+P2_midrange_heavy_user,reno pro,BI,Behavioral Intention,True,4.0649,3.8969,4.0649,0.168,0.0,0.117997,0.0,0.581073,0.30093,nomic-embed-text
+P3_midrange_moderate_user,reno pro,PE,Performance Expectancy,False,3.3675,3.124,3.3675,0.2435,0.0,0.286938,0.058582,0.65448,0.0,nomic-embed-text
+P3_midrange_moderate_user,reno pro,EE,Effort Expectancy,False,4.1138,3.8869,4.1138,0.2269,0.0,0.0,0.264064,0.358075,0.377861,nomic-embed-text
+P3_midrange_moderate_user,reno pro,HM,Hedonic Motivation,False,2.3838,2.4798,2.3838,-0.096,0.158165,0.299864,0.541972,0.0,0.0,nomic-embed-text
+P3_midrange_moderate_user,reno pro,SI,Social Influence,False,3.2748,3.4967,3.2748,-0.2219,0.0,0.220185,0.2848,0.495014,0.0,nomic-embed-text
+P3_midrange_moderate_user,reno pro,PP,Perceived Protection,False,1.5341,1.6974,1.5341,-0.1634,0.535566,0.441226,0.0,0.0,0.023208,nomic-embed-text
+P3_midrange_moderate_user,reno pro,BI,Behavioral Intention,True,3.7135,3.5889,3.7135,0.1245,0.0,0.275485,0.0,0.460091,0.264424,nomic-embed-text
+P4_budget_or_undisclosed_price,reno pro,PE,Performance Expectancy,False,4.0027,3.8049,4.0027,0.1978,0.0,0.123164,0.0,0.627834,0.249002,nomic-embed-text
+P4_budget_or_undisclosed_price,reno pro,EE,Effort Expectancy,False,4.2032,4.0002,4.2032,0.203,0.0,0.0,0.238726,0.319388,0.441886,nomic-embed-text
+P4_budget_or_undisclosed_price,reno pro,HM,Hedonic Motivation,False,4.0494,3.8599,4.0494,0.1895,0.0,0.158107,0.0,0.476283,0.36561,nomic-embed-text
+P4_budget_or_undisclosed_price,reno pro,SI,Social Influence,False,4.0867,4.0041,4.0867,0.0826,0.0,0.0,0.192847,0.52764,0.279513,nomic-embed-text
+P4_budget_or_undisclosed_price,reno pro,PP,Perceived Protection,False,3.7284,3.4059,3.7284,0.3225,0.221136,0.0,0.0,0.387043,0.391821,nomic-embed-text
+P4_budget_or_undisclosed_price,reno pro,BI,Behavioral Intention,True,4.1139,3.9679,4.1139,0.146,0.0,0.111548,0.0,0.551462,0.33699,nomic-embed-text

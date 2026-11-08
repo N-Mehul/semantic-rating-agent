@@ -1,0 +1,543 @@
+{
+  "evaluation_id": "boat_airdopes_141_bluetooth_earbuds_20261101_134823",
+  "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-11-01T08:21:26.005067+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 1,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 4.0009,
+  "overall_adoption_average": 4.0009,
+  "primary_adoption_average": 4.0009,
+  "construct_averages": {
+    "PE": 3.1633,
+    "EE": 4.068,
+    "HM": 4.1455,
+    "SI": 3.9548,
+    "PP": 3.4547,
+    "BI": 4.0009
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 6,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "primary_adoption_rating": 4.0009,
+      "primary_adoption_pmf": [
+        0.0,
+        0.168822,
+        0.025435,
+        0.441815,
+        0.363929
+      ],
+      "construct_scores": {
+        "PE": 3.1633,
+        "EE": 4.068,
+        "HM": 4.1455,
+        "SI": 3.9548,
+        "PP": 3.4547,
+        "BI": 4.0009
+      },
+      "construct_responses": {
+        "PE": "These earbuds should provide clear and balanced audio for my daily music and calls. The 8mm drivers and ENx noise cancellation will ensure that I can enjoy my favorite songs without any background noise interruptions.",
+        "EE": "Pairing with my phone via Bluetooth is likely to be quick and simple, and the case provides easy access for charging on the go. The lightweight design ensures that I won't feel uncomfortable wearing them for long periods.",
+        "HM": "Listening to my favorite music and podcasts with these earbuds will be a great experience. The sound quality is expected to be punchy and crisp, making it fun to enjoy my music.",
+        "SI": "My friends and classmates who use earbuds in this price range often speak highly of them, so I assume these will be well-received and reliable.",
+        "PP": "The connection stability and privacy features will likely be reassuring, ensuring that my personal data is safe during use.",
+        "BI": "I am certain I will continue using these wireless earbuds as my daily earbuds because they offer clear sound quality, reliable battery life, and a comfortable fit that won't break my budget.",
+        "OVERALL": "These earbuds seem like a good choice for daily use with clear sound and a comfortable design, fitting well within my budget and expectations."
+      },
+      "response_text": "These earbuds seem like a good choice for daily use with clear sound and a comfortable design, fitting well within my budget and expectations.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "These earbuds should provide clear and balanced audio for my daily music and calls. The 8mm drivers and ENx noise cancellation will ensure that I can enjoy my favorite songs without any background noise interruptions.",
+          "cosine_similarities": [
+            0.50383,
+            0.524421,
+            0.481118,
+            0.571616,
+            0.494065
+          ],
+          "min_similarity": 0.481118,
+          "pmf_probabilities": [
+            0.134026,
+            0.255535,
+            0.0,
+            0.534034,
+            0.076405
+          ],
+          "expected_rating": 3.1633,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Pairing with my phone via Bluetooth is likely to be quick and simple, and the case provides easy access for charging on the go. The lightweight design ensures that I won't feel uncomfortable wearing them for long periods.",
+          "cosine_similarities": [
+            0.520901,
+            0.532717,
+            0.601277,
+            0.593789,
+            0.64453
+          ],
+          "min_similarity": 0.520901,
+          "pmf_probabilities": [
+            0.0,
+            0.040926,
+            0.278397,
+            0.252462,
+            0.428214
+          ],
+          "expected_rating": 4.068,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Listening to my favorite music and podcasts with these earbuds will be a great experience. The sound quality is expected to be punchy and crisp, making it fun to enjoy my music.",
+          "cosine_similarities": [
+            0.494416,
+            0.521673,
+            0.520384,
+            0.562284,
+            0.609226
+          ],
+          "min_similarity": 0.494416,
+          "pmf_probabilities": [
+            0.0,
+            0.115544,
+            0.110078,
+            0.287696,
+            0.486682
+          ],
+          "expected_rating": 4.1455,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and classmates who use earbuds in this price range often speak highly of them, so I assume these will be well-received and reliable.",
+          "cosine_similarities": [
+            0.494563,
+            0.480055,
+            0.502529,
+            0.569062,
+            0.537747
+          ],
+          "min_similarity": 0.480055,
+          "pmf_probabilities": [
+            0.078984,
+            0.0,
+            0.122352,
+            0.484575,
+            0.314089
+          ],
+          "expected_rating": 3.9548,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The connection stability and privacy features will likely be reassuring, ensuring that my personal data is safe during use.",
+          "cosine_similarities": [
+            0.670461,
+            0.651677,
+            0.598016,
+            0.715645,
+            0.722094
+          ],
+          "min_similarity": 0.598016,
+          "pmf_probabilities": [
+            0.196961,
+            0.145891,
+            0.0,
+            0.319807,
+            0.337341
+          ],
+          "expected_rating": 3.4547,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using these wireless earbuds as my daily earbuds because they offer clear sound quality, reliable battery life, and a comfortable fit that won't break my budget.",
+          "cosine_similarities": [
+            0.499161,
+            0.534536,
+            0.504491,
+            0.591739,
+            0.575419
+          ],
+          "min_similarity": 0.499161,
+          "pmf_probabilities": [
+            0.0,
+            0.168822,
+            0.025435,
+            0.441815,
+            0.363929
+          ],
+          "expected_rating": 4.0009,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.50383,
+        0.524421,
+        0.481118,
+        0.571616,
+        0.494065
+      ],
+      "pmf_probabilities": [
+        0.134026,
+        0.255535,
+        0.0,
+        0.534034,
+        0.076405
+      ],
+      "expected_rating": 3.1633,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.520901,
+        0.532717,
+        0.601277,
+        0.593789,
+        0.64453
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.040926,
+        0.278397,
+        0.252462,
+        0.428214
+      ],
+      "expected_rating": 4.068,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.494416,
+        0.521673,
+        0.520384,
+        0.562284,
+        0.609226
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.115544,
+        0.110078,
+        0.287696,
+        0.486682
+      ],
+      "expected_rating": 4.1455,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.494563,
+        0.480055,
+        0.502529,
+        0.569062,
+        0.537747
+      ],
+      "pmf_probabilities": [
+        0.078984,
+        0.0,
+        0.122352,
+        0.484575,
+        0.314089
+      ],
+      "expected_rating": 3.9548,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.670461,
+        0.651677,
+        0.598016,
+        0.715645,
+        0.722094
+      ],
+      "pmf_probabilities": [
+        0.196961,
+        0.145891,
+        0.0,
+        0.319807,
+        0.337341
+      ],
+      "expected_rating": 3.4547,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.499161,
+        0.534536,
+        0.504491,
+        0.591739,
+        0.575419
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.168822,
+        0.025435,
+        0.441815,
+        0.363929
+      ],
+      "expected_rating": 4.0009,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.50383,
+      "cos_sim_2": 0.524421,
+      "cos_sim_3": 0.481118,
+      "cos_sim_4": 0.571616,
+      "cos_sim_5": 0.494065,
+      "min_similarity": 0.481118,
+      "p1": 0.134026,
+      "p2": 0.255535,
+      "p3": 0.0,
+      "p4": 0.534034,
+      "p5": 0.076405,
+      "set_expected_rating": 3.1633,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.520901,
+      "cos_sim_2": 0.532717,
+      "cos_sim_3": 0.601277,
+      "cos_sim_4": 0.593789,
+      "cos_sim_5": 0.64453,
+      "min_similarity": 0.520901,
+      "p1": 0.0,
+      "p2": 0.040926,
+      "p3": 0.278397,
+      "p4": 0.252462,
+      "p5": 0.428214,
+      "set_expected_rating": 4.068,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.494416,
+      "cos_sim_2": 0.521673,
+      "cos_sim_3": 0.520384,
+      "cos_sim_4": 0.562284,
+      "cos_sim_5": 0.609226,
+      "min_similarity": 0.494416,
+      "p1": 0.0,
+      "p2": 0.115544,
+      "p3": 0.110078,
+      "p4": 0.287696,
+      "p5": 0.486682,
+      "set_expected_rating": 4.1455,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.494563,
+      "cos_sim_2": 0.480055,
+      "cos_sim_3": 0.502529,
+      "cos_sim_4": 0.569062,
+      "cos_sim_5": 0.537747,
+      "min_similarity": 0.480055,
+      "p1": 0.078984,
+      "p2": 0.0,
+      "p3": 0.122352,
+      "p4": 0.484575,
+      "p5": 0.314089,
+      "set_expected_rating": 3.9548,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.670461,
+      "cos_sim_2": 0.651677,
+      "cos_sim_3": 0.598016,
+      "cos_sim_4": 0.715645,
+      "cos_sim_5": 0.722094,
+      "min_similarity": 0.598016,
+      "p1": 0.196961,
+      "p2": 0.145891,
+      "p3": 0.0,
+      "p4": 0.319807,
+      "p5": 0.337341,
+      "set_expected_rating": 3.4547,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "boAt Airdopes 141 Bluetooth Earbuds",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.499161,
+      "cos_sim_2": 0.534536,
+      "cos_sim_3": 0.504491,
+      "cos_sim_4": 0.591739,
+      "cos_sim_5": 0.575419,
+      "min_similarity": 0.499161,
+      "p1": 0.0,
+      "p2": 0.168822,
+      "p3": 0.025435,
+      "p4": 0.441815,
+      "p5": 0.363929,
+      "set_expected_rating": 4.0009,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

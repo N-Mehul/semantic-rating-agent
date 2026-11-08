@@ -1,0 +1,13 @@
+Dataset,Persona,N,Canonical_Exact_Acc,Canonical_MAE,Phase6_Exact_Acc,Phase6_MAE
+"Phase 6 Improved Synthetic (Nova AI v3, n=24, Qwen Blind Judge)",P1_premium_tier_owner,6,0.6666666666666666,0.44974106815331355,0.8333333333333334,0.3112620243678799
+"Phase 6 Improved Synthetic (Nova AI v3, n=24, Qwen Blind Judge)",P2_midrange_heavy_user,6,0.8333333333333334,0.26633745590148666,1.0,0.24740018452586873
+"Phase 6 Improved Synthetic (Nova AI v3, n=24, Qwen Blind Judge)",P3_midrange_moderate_user,6,0.6666666666666666,0.4435050430523773,0.6666666666666666,0.39829189887001964
+"Phase 6 Improved Synthetic (Nova AI v3, n=24, Qwen Blind Judge)",P4_budget_or_undisclosed_price,6,0.6666666666666666,0.38065419170582143,0.6666666666666666,0.46546310324404283
+"Phase 6 Baseline Synthetic (Nova AI Baseline, n=24, Qwen Blind Judge)",P1_premium_tier_owner,6,0.8333333333333334,0.27445058760188634,0.8333333333333334,0.40908095531392125
+"Phase 6 Baseline Synthetic (Nova AI Baseline, n=24, Qwen Blind Judge)",P2_midrange_heavy_user,6,0.6666666666666666,0.4645263315318733,0.5,0.5472567527988197
+"Phase 6 Baseline Synthetic (Nova AI Baseline, n=24, Qwen Blind Judge)",P3_midrange_moderate_user,6,0.5,0.47533564401461187,0.6666666666666666,0.4849980344069864
+"Phase 6 Baseline Synthetic (Nova AI Baseline, n=24, Qwen Blind Judge)",P4_budget_or_undisclosed_price,6,0.5,0.499943377080202,0.6666666666666666,0.5001082657415098
+"Empirical Human Survey (Q26 text vs Q21 Ground Truth Likert, n=251)",P3 mid moderate,85,0.3411764705882353,0.9049406734816711,0.3411764705882353,0.9983871768929387
+"Empirical Human Survey (Q26 text vs Q21 Ground Truth Likert, n=251)",P1 premium,86,0.29069767441860467,0.8771201938286115,0.3023255813953488,0.8515559211359531
+"Empirical Human Survey (Q26 text vs Q21 Ground Truth Likert, n=251)",P2 mid heavy,51,0.3137254901960784,0.930904286249796,0.29411764705882354,0.995433990735452
+"Empirical Human Survey (Q26 text vs Q21 Ground Truth Likert, n=251)",P4 entry/undisclosed,29,0.4482758620689655,0.5997956848954441,0.4827586206896552,0.6240030847175156

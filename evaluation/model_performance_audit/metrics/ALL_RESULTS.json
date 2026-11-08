@@ -1,0 +1,674 @@
+{
+  "A_review": {
+    "data": {
+      "n_eval": 10003,
+      "unique_texts_eval": 110,
+      "n_train_source": 39996,
+      "unique_texts_train": 110,
+      "eval_rows_with_text_seen_in_train": 0.8423472958112567,
+      "eval_unique_texts_seen_in_train": 0.8181818181818182,
+      "rating_dist_eval": {
+        "1": 1320,
+        "2": 1989,
+        "3": 2412,
+        "4": 2785,
+        "5": 1497
+      },
+      "text_only_oracle_ceiling_exact_acc": 0.4703588923323003,
+      "text_only_oracle_ceiling_pm1": 0.9354193741877437,
+      "texts_with_multiple_distinct_ratings_eval": 1.0,
+      "eval_rows_missing_sentiment_after_merge": 0
+    },
+    "random_baseline_30_seeds": {
+      "exact_acc": [
+        0.21716485054483656,
+        0.004319749473361225
+      ],
+      "mae": [
+        1.4043453630577496,
+        0.012279213107553543
+      ],
+      "rmse": [
+        1.771274906751925,
+        0.011997378515536518
+      ],
+      "pearson": [
+        0.0023155132152315465,
+        0.011092036299184548
+      ]
+    },
+    "error_summary": {
+      "mean_signed_error": -0.0013060081975407385,
+      "sd_error": 0.7869674370333283,
+      "skew": 0.04938507530009772
+    },
+    "paired_vs_ssr_argmax": {
+      "Random (train prior)": {
+        "mae_diff": -0.7856842347295812,
+        "mae_diff_ci": [
+          -0.8236757203424655,
+          -0.7522575187859244
+        ],
+        "acc_diff": 0.21793461961411575,
+        "acc_diff_ci": [
+          0.20661210735667365,
+          0.22905301030247918
+        ]
+      },
+      "Majority class (train mode=4)": {
+        "mae_diff": -0.5550534239728081,
+        "mae_diff_ci": [
+          -0.6962773363239166,
+          -0.44382430328997097
+        ],
+        "acc_diff": 0.15275417374787564,
+        "acc_diff_ci": [
+          0.12228118510914765,
+          0.18838191780554625
+        ]
+      },
+      "Train-mean constant": {
+        "mae_diff": -0.42920206546896816,
+        "mae_diff_ci": [
+          -0.4798504153259493,
+          -0.38613313266313853
+        ],
+        "acc_diff": 0.19004298710386883,
+        "acc_diff_ci": [
+          0.16841816522163594,
+          0.212125004063194
+        ]
+      },
+      "Sentiment-label lookup (leaky label)": {
+        "mae_diff": 0.002548375014954756,
+        "mae_diff_ci": [
+          0.0001941897849546375,
+          0.004818460474041425
+        ],
+        "acc_diff": -0.003099070278916325,
+        "acc_diff_ci": [
+          -0.010285666115360343,
+          0.002988341553256291
+        ]
+      },
+      "TF-IDF+LogReg text-only (train->eval)": {
+        "mae_diff": 0.0007709885393544175,
+        "mae_diff_ci": [
+          -0.0009257120486913663,
+          0.002742083683932225
+        ],
+        "acc_diff": 0.0028991302609217237,
+        "acc_diff_ci": [
+          0.00027911310327946804,
+          0.00619546189391048
+        ]
+      }
+    },
+    "aspect_leakage": {
+      "spearman_mean_aspect_vs_rating": 0.9352593734816934,
+      "sentiment_label_vs_rating_cramers_note": "sentiment label is a near-deterministic function of rating (see crosstab in report)"
+    }
+  },
+  "B_human_q21": {
+    "n": 251,
+    "n_dev": 97,
+    "n_test": 97,
+    "q21_dist": {
+      "1": 23,
+      "2": 9,
+      "3": 85,
+      "4": 80,
+      "5": 54
+    },
+    "ground_truth_note": "Q21 = self-reported likelihood to rebuy same brand; SSR scores the free-text Q26 answer against ADAPTED BI anchors (proxy construct)",
+    "random_prior_baseline_100_seeds_mean_sd": {
+      "exact_acc": [
+        0.2693227091633466,
+        0.02617381307674397
+      ],
+      "mae": [
+        1.2319920318725102,
+        0.06212292483100658
+      ],
+      "pearson": [
+        -0.008050663422603766,
+        0.06706861405407434
+      ]
+    },
+    "tfidf_logreg_repeated_2fold_x10": {
+      "exact_acc": [
+        0.3163346613545817,
+        0.015139442231075686
+      ],
+      "pm1_acc": [
+        0.7721115537848606,
+        0.033983853565157145
+      ],
+      "mae": [
+        0.8909997921557652,
+        0.007007715492058667
+      ],
+      "rmse": [
+        1.1017364390271773,
+        0.011345668913547664
+      ],
+      "spearman": [
+        0.28395145004448163,
+        0.04928070250514681
+      ]
+    },
+    "tfidf_logreg_dev_to_test": {
+      "n": 97,
+      "exact_acc": 0.31958762886597936,
+      "pm1_acc": 0.8041237113402062,
+      "mae_int": 0.8969072164948454,
+      "mse_int": 1.3711340206185567,
+      "mae": 0.8709203233942456,
+      "mse": 1.1243754183202672,
+      "rmse": 1.0603657002752715,
+      "rmse_int": 1.1709543204662411,
+      "bias_mean_error": 0.010864982620569,
+      "pearson": 0.3897310655478988,
+      "spearman": 0.3512004311064723,
+      "r2": 0.07749840329827407,
+      "qw_kappa": 0.1054018445322793,
+      "macro_f1": 0.1792526314265445,
+      "pred_sd": 0.13001734857755393,
+      "true_sd": 1.1097428574322943
+    },
+    "lexicon_sentiment_baseline_full": {
+      "n": 251,
+      "exact_acc": 0.3426294820717131,
+      "pm1_acc": 0.7649402390438247,
+      "mae_int": 0.9362549800796812,
+      "mse_int": 1.5816733067729083,
+      "mae": 0.9601593625498008,
+      "mse": 1.5532868525896415,
+      "rmse": 1.2463092925071375,
+      "rmse_int": 1.2576459385585868,
+      "bias_mean_error": -0.11155378486055777,
+      "pearson": 0.05134614411518783,
+      "spearman": 0.024197675694283452,
+      "r2": -0.19400943166011864,
+      "qw_kappa": 0.008852462277569306,
+      "macro_f1": 0.1942794667898057,
+      "pred_sd": 0.5529943840986286,
+      "true_sd": 1.142848890123874
+    },
+    "lexicon_sentiment_baseline_frozen_test": {
+      "n": 97,
+      "exact_acc": 0.3402061855670103,
+      "pm1_acc": 0.8144329896907216,
+      "mae_int": 0.8865979381443299,
+      "mse_int": 1.422680412371134,
+      "mae": 0.9072164948453608,
+      "mse": 1.3608247422680413,
+      "rmse": 1.1665439307064442,
+      "rmse_int": 1.1927616745901648,
+      "bias_mean_error": -0.0979381443298969,
+      "pearson": 0.15906656303691866,
+      "spearman": 0.11932623115267722,
+      "r2": -0.11649808161841624,
+      "qw_kappa": 0.07234927234927235,
+      "macro_f1": 0.21714285714285717,
+      "pred_sd": 0.5826502505216914,
+      "true_sd": 1.1097428574322943
+    },
+    "paired_abs_error_improved_vs_majority_full": {
+      "mean_abs_err_diff(A-B)": -0.04914795725234106,
+      "ci": [
+        -0.11703713104170567,
+        0.01743453846317421
+      ],
+      "p_two_sided": 0.147
+    },
+    "paired_abs_error_improved_vs_lexicon_full": {
+      "mean_abs_err_diff(A-B)": -0.0411798297623012,
+      "ci": [
+        -0.13281071716381335,
+        0.051930286227617195
+      ],
+      "p_two_sided": 0.38
+    },
+    "paired_abs_error_improved_vs_canonical_full": {
+      "mean_abs_err_diff(A-B)": -0.01934699886662846,
+      "ci": [
+        -0.04429290375375349,
+        0.005045556398231231
+      ],
+      "p_two_sided": 0.124
+    },
+    "improved_ssr_50_random_half_splits": {
+      "exact_acc": [
+        0.30841269841269847,
+        0.01918009487214833
+      ],
+      "mae": [
+        0.9167842830074538,
+        0.0327663441166655
+      ],
+      "spearman": [
+        0.21899990716137283,
+        0.06909155272658507
+      ],
+      "pearson": [
+        0.2297426057819054,
+        0.06518213729839221
+      ]
+    },
+    "calibration_canonical": {
+      "model": "canonical",
+      "ECE_top1": 0.160259730846997,
+      "brier": 0.8165645525308979,
+      "nll_eps1e-3": 1.9268438809887045,
+      "set_coverage_at_nominal": {
+        "0.5": 0.5179282868525896,
+        "0.7": 0.6095617529880478,
+        "0.8": 0.7649402390438247,
+        "0.9": 0.8406374501992032
+      },
+      "mean_entropy_bits": 1.7349750969455224,
+      "uniform_nll_ref": 1.6094379124341003,
+      "pmf_zero_mass_share": 0.2,
+      "reliability_bins": [
+        [
+          0.34445468057497985,
+          0.19230769230769232,
+          26
+        ],
+        [
+          0.41459209880565046,
+          0.3445378151260504,
+          119
+        ],
+        [
+          0.5086866617398409,
+          0.33962264150943394,
+          53
+        ],
+        [
+          0.5976047796821686,
+          0.25,
+          36
+        ],
+        [
+          0.6740438734708661,
+          0.29411764705882354,
+          17
+        ]
+      ],
+      "conf_vs_correct_spearman": -0.0010184746299993352,
+      "conf_vs_abs_err_spearman": 0.0514844377583524
+    },
+    "calibration_improved": {
+      "model": "improved k3 T.75",
+      "ECE_top1": 0.27041972594812635,
+      "brier": 0.8821808933234921,
+      "nll_eps1e-3": 2.438967222062811,
+      "set_coverage_at_nominal": {
+        "0.5": 0.46215139442231074,
+        "0.7": 0.549800796812749,
+        "0.8": 0.5976095617529881,
+        "0.9": 0.7689243027888446
+      },
+      "mean_entropy_bits": 1.3164088222108528,
+      "uniform_nll_ref": 1.6094379124341003,
+      "pmf_zero_mass_share": 0.4,
+      "reliability_bins": [
+        [
+          0.4405867360680583,
+          0.2571428571428571,
+          35
+        ],
+        [
+          0.4995457052150933,
+          0.2967032967032967,
+          91
+        ],
+        [
+          0.626043604412309,
+          0.3870967741935484,
+          62
+        ],
+        [
+          0.7134392414534116,
+          0.2708333333333333,
+          48
+        ],
+        [
+          0.795757947513151,
+          0.3333333333333333,
+          15
+        ]
+      ],
+      "conf_vs_correct_spearman": 0.016714965986459676,
+      "conf_vs_abs_err_spearman": 0.038691453413997004
+    },
+    "calibration_prior_reference": {
+      "model": "constant prior PMF",
+      "ECE_top1": 0.0,
+      "brier": 0.7277662259329216,
+      "nll_eps1e-3": 1.4000186194008886,
+      "set_coverage_at_nominal": {
+        "0.5": 0.6573705179282868,
+        "0.7": 0.8725099601593626,
+        "0.8": 0.8725099601593626,
+        "0.9": 0.9641434262948207
+      },
+      "mean_entropy_bits": 2.019799919361876,
+      "uniform_nll_ref": 1.6094379124341003,
+      "pmf_zero_mass_share": 0.0,
+      "reliability_bins": [
+        [
+          0.3386454183266932,
+          0.3386454183266932,
+          251
+        ]
+      ],
+      "conf_vs_correct_spearman": NaN,
+      "conf_vs_abs_err_spearman": NaN
+    }
+  },
+  "C_synthetic": {
+    "n": 400,
+    "per_persona_n": {
+      "P1": 100,
+      "P2": 100,
+      "P3": 100,
+      "P4": 100
+    },
+    "per_construct_n": {
+      "SI": 75,
+      "PE": 68,
+      "EE": 68,
+      "BI": 67,
+      "HM": 65,
+      "PP": 57
+    },
+    "reproduction_check": {
+      "canonical_E_max_abs_diff_vs_saved": 4.999999999988347e-05,
+      "improved_E_max_abs_diff_vs_saved": 4.9983494923910854e-05
+    },
+    "pmf_canonical": {
+      "model": "canonical",
+      "pmf_valid": true,
+      "E_mean": 3.3246813978188077,
+      "E_sd": 0.6477267703620454,
+      "E_min": 1.5803848541278704,
+      "E_max": 4.317753001715268,
+      "share_E_ge_4.5": 0.0,
+      "share_E_le_1.5": 0.0,
+      "mean_within_pmf_sd": 1.1306391687892694,
+      "mean_entropy_bits": 1.7780664458503015,
+      "share_zero_prob_cells": 0.2005,
+      "argmax_dist": {
+        "1": 0.0325,
+        "2": 0.2,
+        "3": 0.175,
+        "4": 0.2725,
+        "5": 0.32
+      },
+      "share_argmax_endpoints": 0.3525,
+      "pmf_mean": [
+        0.09484603063988802,
+        0.2322287208285177,
+        0.17684807847176834,
+        0.24555216019255027,
+        0.25052500986727566
+      ]
+    },
+    "pmf_improved": {
+      "model": "improved k3 T.75",
+      "pmf_valid": true,
+      "E_mean": 3.4104311480363005,
+      "E_sd": 0.8201905439066567,
+      "E_min": 1.4639998498243383,
+      "E_max": 4.560265638562042,
+      "share_E_ge_4.5": 0.0025,
+      "share_E_le_1.5": 0.0025,
+      "mean_within_pmf_sd": 0.9736595470446381,
+      "mean_entropy_bits": 1.4429200732811547,
+      "share_zero_prob_cells": 0.4,
+      "argmax_dist": {
+        "1": 0.0325,
+        "2": 0.2,
+        "3": 0.175,
+        "4": 0.2725,
+        "5": 0.32
+      },
+      "share_argmax_endpoints": 0.3525,
+      "pmf_mean": [
+        0.07862963603289078,
+        0.2278140779361029,
+        0.16404780012616949,
+        0.2635124737714891,
+        0.26599601213334756
+      ]
+    },
+    "human_pooled_q20_q21": {
+      "n": 550,
+      "mean": 3.630909090909091,
+      "sd": 1.0712967691899231,
+      "share_endpoints": 0.28363636363636363
+    },
+    "variance_ratio_synthetic_to_human": {
+      "canonical": 0.6046193631777995,
+      "improved": 0.765605355579347
+    },
+    "persona_identifiability_from_text": {
+      "cv_acc_mean": 0.629,
+      "cv_acc_sd": 0.008455767262643892,
+      "chance": 0.25,
+      "perm_null_mean": 0.253475,
+      "perm_p": 0.009900990099009901
+    },
+    "persona_x_construct_counts": {
+      "BI": {
+        "P1": 16,
+        "P2": 17,
+        "P3": 17,
+        "P4": 17
+      },
+      "EE": {
+        "P1": 17,
+        "P2": 17,
+        "P3": 17,
+        "P4": 17
+      },
+      "HM": {
+        "P1": 17,
+        "P2": 16,
+        "P3": 16,
+        "P4": 16
+      },
+      "PE": {
+        "P1": 17,
+        "P2": 17,
+        "P3": 17,
+        "P4": 17
+      },
+      "PP": {
+        "P1": 9,
+        "P2": 16,
+        "P3": 16,
+        "P4": 16
+      },
+      "SI": {
+        "P1": 24,
+        "P2": 17,
+        "P3": 17,
+        "P4": 17
+      }
+    },
+    "construct_persona_chi2_p": 0.99482335023362,
+    "construct_alignment_nearest_anchor_set_acc": 0.72,
+    "construct_alignment_chance": 0.16666666666666666,
+    "construct_alignment_by_construct": {
+      "BI": 0.7910447761194029,
+      "EE": 0.8382352941176471,
+      "HM": 0.8923076923076924,
+      "PE": 0.8382352941176471,
+      "PP": 0.0,
+      "SI": 0.84
+    },
+    "diversity": {
+      "unique_texts": 400,
+      "distinct_1": 0.19597989949748743,
+      "distinct_2": 0.6551684751570531,
+      "distinct_3": 0.8464640561075395,
+      "mean_pairwise_cosine": 0.39948705175290206,
+      "pairs_cos_gt_0.90": 26,
+      "pairs_cos_gt_0.95": 5,
+      "mean_cos_same_persona": 0.42239383971332733,
+      "mean_cos_diff_persona": 0.39192781172596164,
+      "mean_cos_same_construct": 0.5373997499552496,
+      "mean_cos_diff_construct": 0.3721083301038282,
+      "top_repeated_openings_3words": {
+        "i plan to": 11,
+        "i will continue": 8,
+        "the combination of": 6,
+        "i will keep": 6,
+        "the inclusion of": 4,
+        "the phone handles": 4,
+        "the outstanding battery": 4,
+        "the user interface": 4
+      },
+      "mean_words": 44.775,
+      "mean_sentences": 3.0,
+      "sentence_dup_rate": 0.023333333333333317
+    },
+    "near_duplicate_examples": [
+      {
+        "a": "SYN_P2_BI_087",
+        "b": "SYN_P4_BI_087",
+        "cos": 0.9468571781232149,
+        "text_a": "This device has proven so dependable during long workdays that I will definitely stick with this product series when the time comes to upgrade. The fast charging and smooth interface have completely won me over for my daily computing needs. I regularly urge friends who need reliable battery life to purchase this phone.",
+        "text_b": "This device has proven so dependable during busy semester exam periods that I will definitely stick with this product series when the time comes to upgrade. The long battery backup and smooth interface have completely won my trust for everyday utility. I regularly urge friends who need reliable battery life to purchase this phone."
+      },
+      {
+        "a": "SYN_P2_BI_088",
+        "b": "SYN_P3_BI_088",
+        "cos": 0.9342611641980114,
+        "text_a": "I plan to hold onto this phone until its performance noticeably slows down, which will probably be another year or two. I do not feel strongly loyal to the brand, but it gets the job done without serious drama. Future purchase decisions will depend entirely on what brand offers the best value when I need a replacement.",
+        "text_b": "I will hold onto this phone until it completely stops working, which I hope will be at least another two years. I do not have any special loyalty to the company, but it fulfills basic needs adequately for now. Future buying decisions will depend entirely on which brand offers the best practical price at that time."
+      },
+      {
+        "a": "SYN_P2_BI_091",
+        "b": "SYN_P4_BI_091",
+        "cos": 0.9558421487920252,
+        "text_a": "I will continue using it for daily communication and navigation, but I doubt I will automatically purchase from this brand next time. The phone is acceptable for the present, but rapid advancements by rival manufacturers make brand switching very likely. My repurchase intention remains entirely neutral.",
+        "text_b": "I will continue using it for everyday calls and social media, but I doubt I will automatically purchase from this brand next time. The phone is acceptable for the present, but rapid advancements by rival manufacturers make brand switching very likely. My repurchase intention remains entirely neutral."
+      },
+      {
+        "a": "SYN_P2_BI_094",
+        "b": "SYN_P3_BI_094",
+        "cos": 0.9448515288797766,
+        "text_a": "I will keep using the phone for another year since it functions reasonably well for routine calls and browsing, but I am not passionate about it. When replacement time arrives, I will compare all available options on price and specs without any brand bias. My future loyalty is completely open-ended.",
+        "text_b": "I will continue using the phone for another year or two because it functions adequately for routine calls, but I have no emotional attachment to it. When replacement time arrives, I will compare all available budget options without any brand bias. My loyalty to this brand remains strictly pragmatic."
+      },
+      {
+        "a": "SYN_P2_BI_096",
+        "b": "SYN_P4_BI_096",
+        "cos": 0.9547578633076579,
+        "text_a": "I plan to continue using this device enthusiastically and will purchase another device from the same series whenever an upgrade becomes necessary. The fast charging speed alone has transformed how comfortably I navigate demanding schedules. I regularly recommend this phone to peers who need dependable battery performance.",
+        "text_b": "I plan to continue using this device enthusiastically and will purchase another device from the same series whenever an upgrade becomes necessary. The fast charging speed and long battery life have transformed how comfortably I navigate college days. I regularly recommend this phone to peers who need dependable battery performance."
+      }
+    ],
+    "direct_numeric_rating_in_text": {
+      "regex_hits": 0,
+      "any_digit_responses": 10,
+      "star_or_rating_words": 3,
+      "digit_examples": [
+        "Fluid 120Hz scrolling combined with tactile micro-vibrations makes casual web browsing and photo editing thoroughly satisfying. Streaming Dolby Vision video content looks breathtaking with lifelike color dynamics. It is genuinely fun and engaging to use for daily relaxation.",
+        "The stunning display clarity and wide color gamut make reviewing high-res photography and 4K footage intensely pleasurable. Paired with high-end wireless earphones, the audio spatial processing is genuinely mesmerizing. It turns personal leisure time into a sophisticated luxury experience.",
+        "High-speed 5G network latching and seamless Wi-Fi roaming ensure that uninterrupted data transfers keep up with demanding daily routines. The phone handles multi-app split screens and continuous background audio streaming without missing a beat. It offers solid, dependable computing power for active users.",
+        "The smooth 120Hz display makes browsing photo feeds, reading digital comics, and playing casual puzzle games feel delightfully responsive. Rich dynamic range in supported HDR streaming apps brings movies to life with lifelike color punch. It is genuinely exciting and fun to use for personal downtime.",
+        "Getting flagship-level processor speed, a bright 120Hz display, and a massive battery at this price point represents unbeatable value for money. It delivers ninety percent of what expensive flagships offer without burning a hole in your pocket. For a heavy everyday user, the return on investment is absolutely phenomenal."
+      ]
+    },
+    "contradiction_screen": {
+      "mixed_polarity_share": 0.0575,
+      "note": "lexical screen only; mixed polarity is often legitimate nuance, not contradiction"
+    },
+    "mixed_polarity_examples": [
+      "The display calibration and fast processor make reading technical documents and managing presentations a breeze. Multitasking with split-screen apps works without any lag or memory reloads. It delivers exactly the dependable performance needed for demanding work.",
+      "For anyone who demands flawless color calibration, enterprise-grade data security, and zero lag, the value proposition is rock solid. The premium paid translates directly into peace of mind and fluid productivity without frustrating interruptions. It stands out as one of the few high-end tech purchases that feels completely worth every rupee.",
+      "I have already decided against buying another smartphone from this brand after dealing with recurring micro-stutters and overpriced repairs. I cannot in good conscience recommend this hardware to colleagues seeking dependable professional tools. My next smartphone purchase will definitely be from a competing brand.",
+      "Daily app switching and document editing feel reasonably smooth, though the phone does begin to warm up after about an hour of continuous usage. Battery drain accelerates noticeably during video calls, requiring a top-up by late afternoon. It handles a heavy workload adequately, but requires careful battery management."
+    ],
+    "persona_keyword_rates_per_response": {
+      "prem_kw": {
+        "P1": 0.47,
+        "P2": 0.19,
+        "P3": 0.22,
+        "P4": 0.16
+      },
+      "bud_kw": {
+        "P1": 0.3,
+        "P2": 0.49,
+        "P3": 0.7,
+        "P4": 0.89
+      }
+    },
+    "budget_keyword_persona_kruskal_p": 0.0005647861470141305,
+    "convergent_validity_E_vs_lexicon_spearman": {
+      "canonical": 0.35085480281771986,
+      "improved": 0.3599503712905696,
+      "note": "agreement between two automatic scorers; NOT accuracy against humans"
+    },
+    "rating_bin_share": {
+      "canonical": {
+        "[1,1.5)": 0.0,
+        "[1.5,2.5)": 0.1675,
+        "[2.5,3.5)": 0.3225,
+        "[3.5,4.5)": 0.51,
+        "[4.5,5.01)": 0.0
+      },
+      "improved": {
+        "[1,1.5)": 0.0025,
+        "[1.5,2.5)": 0.2,
+        "[2.5,3.5)": 0.235,
+        "[3.5,4.5)": 0.56,
+        "[4.5,5.01)": 0.0025
+      }
+    }
+  },
+  "D_product_eval": {
+    "runs": 57,
+    "responses": 1131,
+    "categories": {
+      "Mid-Range Smartphone": 412,
+      "All-Rounder Student 5G Smartphone": 127,
+      "AI Smart Glasses / Wearable Technology": 96,
+      "Audio Device": 72,
+      "Laptop Computer": 64,
+      "Smartphone": 64,
+      "Flagship Smartphone": 56,
+      "": 48
+    },
+    "mean_cos_own": 0.44124079331371713,
+    "mean_cos_random": 0.3370615075942448,
+    "wilcoxon_own_vs_random_p": 4.1955178578780563e-75,
+    "product_name_mention_rate": 0.09106984969053934,
+    "smartphone_word_in_non_phone_product_rate": 0.16037735849056603,
+    "examples_smartphone_text_for_non_phone": [
+      {
+        "product": "boAt Airdopes 141 Bluetooth Earbuds",
+        "text": "These earbuds should work well for basic music listening and calls. The ergonomic fit might make them comfortable for extended use, but I'm not sure they'll match the performance of my current flagship smartphone."
+      },
+      {
+        "product": "boAt Airdopes 141 Bluetooth Earbuds",
+        "text": "Setting them up was easy, just paired them with my phone and they worked fine. The touch controls are intuitive and straightforward, making it simple to use them on the go."
+      },
+      {
+        "product": "boAt Airdopes 141 Bluetooth Earbuds",
+        "text": "Pairing with my phone via Bluetooth is likely to be quick and simple, and the case provides easy access for charging on the go. The lightweight design ensures that I won't feel uncomfortable wearing them for long periods."
+      },
+      {
+        "product": "Echo Vision Smart Glasses",
+        "text": "The smartphone is a solid choice for everyday use, offering reliable performance and build quality at a reasonable price, though some features could be better for a more premium experience."
+      }
+    ],
+    "unique_text_share": 0.8576480990274093
+  }
+}

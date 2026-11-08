@@ -1,0 +1,11 @@
+Batch_ID,Persona_ID,Sample_Range,Response_Count,Status,Retries,Notes
+Batch_1,P1,SYN_P1_PE_001 to SYN_P1_EE_025,25,SUCCESS,0,Initial batch for P1 covering PE and EE
+Batch_2,P1,SYN_P1_EE_026 to SYN_P1_HM_050,25,SUCCESS,0,Second batch for P1 covering EE and HM
+Batch_3,P1,SYN_P1_HM_051 to SYN_P1_SI_075,25,SUCCESS,0,Third batch for P1 covering HM and SI
+Batch_4,P1,SYN_P1_PP_076 to SYN_P1_BI_100,25,SUCCESS,0,Fourth batch completing P1 with PP and BI (100 total)
+Batch_5,P2,SYN_P2_PE_001 to SYN_P2_HM_050,50,SUCCESS,0,"First batch for P2 covering PE, EE, and HM (50 total)"
+Batch_6,P2,SYN_P2_SI_051 to SYN_P2_BI_100,50,SUCCESS,0,"Second batch completing P2 with SI, PP, and BI (100 total)"
+Batch_7,P3,SYN_P3_PE_001 to SYN_P3_HM_050,50,SUCCESS,0,"First batch for P3 covering PE, EE, and HM (50 total)"
+Batch_8,P3,SYN_P3_SI_051 to SYN_P3_BI_100,50,SUCCESS,0,"Second batch completing P3 with SI, PP, and BI (100 total)"
+Batch_9,P4,SYN_P4_PE_001 to SYN_P4_HM_050,50,SUCCESS,0,"First batch for P4 covering PE, EE, and HM (50 total)"
+Batch_10,P4,SYN_P4_SI_051 to SYN_P4_BI_100,50,SUCCESS,0,Final batch completing P4 and reaching 400 responses total

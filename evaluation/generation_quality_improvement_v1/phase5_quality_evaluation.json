@@ -1,0 +1,359 @@
+{
+  "baseline_run": "data\\product_evaluation\\nova_ai_smartphone_20261103_132323",
+  "improved_run": "data\\product_evaluation\\nova_ai_smartphone_v3_improved_20261104_211250",
+  "deterministic": {
+    "baseline": {
+      "n": 24,
+      "empty": 0,
+      "mean_words": 28.208333333333332,
+      "starts_this_phone_or_smartphone": 4,
+      "distinct_3word_openings": 14,
+      "distinct_2": 0.695906432748538,
+      "cross_persona_same_construct_cosine_mean": 0.7728827595710754,
+      "persona_differentiation_score_1_minus_cos": 0.22711724042892456,
+      "shared_5grams_per_pair_mean": 2.5555555555555554,
+      "pairs_with_shared_5gram": 15,
+      "pairs": 36,
+      "HM_same_4word_opening_max_count": 4,
+      "HM_openings": [
+        "using the smartphone is a pleasant",
+        "using this smartphone for daily tasks",
+        "it provides a pleasant experience for",
+        "for daily tasks and watching videos"
+      ],
+      "nearest_anchor_set_matches_construct": 15,
+      "lexicon_construct_aligned": 22,
+      "off_construct_content": 4,
+      "possible_contamination": 0,
+      "rating_leak": 0,
+      "refers_to_product_or_feature": 23,
+      "names_product": 0,
+      "unsupported_claims": 0,
+      "other_brand_or_device": 0,
+      "invented_history_or_contradiction": 0,
+      "responses_with_hedge_or_mixed_view": 5,
+      "lexical_polarity_sd": 0.7993052538854533,
+      "share_purely_positive": 0.5416666666666666,
+      "responses_with_any_flag": 15,
+      "issue_counts": {
+        "same_opening_as_other_persona": 13,
+        "repeated_phrasing_across_personas": 14,
+        "off_construct_content": 4,
+        "construct_not_addressed": 2,
+        "not_about_product": 1
+      },
+      "per_construct": {
+        "PE": {
+          "nearest_anchor_matches": 4,
+          "lexicon_aligned": 3,
+          "off_construct": 0,
+          "contamination": []
+        },
+        "EE": {
+          "nearest_anchor_matches": 4,
+          "lexicon_aligned": 4,
+          "off_construct": 0,
+          "contamination": []
+        },
+        "HM": {
+          "nearest_anchor_matches": 0,
+          "lexicon_aligned": 4,
+          "off_construct": 0,
+          "contamination": []
+        },
+        "SI": {
+          "nearest_anchor_matches": 0,
+          "lexicon_aligned": 4,
+          "off_construct": 0,
+          "contamination": []
+        },
+        "PP": {
+          "nearest_anchor_matches": 3,
+          "lexicon_aligned": 3,
+          "off_construct": 4,
+          "contamination": []
+        },
+        "BI": {
+          "nearest_anchor_matches": 4,
+          "lexicon_aligned": 4,
+          "off_construct": 0,
+          "contamination": []
+        }
+      }
+    },
+    "improved": {
+      "n": 24,
+      "empty": 0,
+      "mean_words": 55.5,
+      "starts_this_phone_or_smartphone": 18,
+      "distinct_3word_openings": 13,
+      "distinct_2": 0.6629464285714286,
+      "cross_persona_same_construct_cosine_mean": 0.8426603294081159,
+      "persona_differentiation_score_1_minus_cos": 0.15733967059188414,
+      "shared_5grams_per_pair_mean": 2.3333333333333335,
+      "pairs_with_shared_5gram": 18,
+      "pairs": 36,
+      "HM_same_4word_opening_max_count": 8,
+      "HM_openings": [
+        "this phone is really fun to",
+        "this phone is really fun to",
+        "this phone is really fun to",
+        "this phone is pretty fun to"
+      ],
+      "nearest_anchor_set_matches_construct": 20,
+      "lexicon_construct_aligned": 24,
+      "off_construct_content": 0,
+      "possible_contamination": 1,
+      "rating_leak": 0,
+      "refers_to_product_or_feature": 23,
+      "names_product": 1,
+      "unsupported_claims": 0,
+      "other_brand_or_device": 0,
+      "invented_history_or_contradiction": 0,
+      "responses_with_hedge_or_mixed_view": 12,
+      "lexical_polarity_sd": 1.8911342863183696,
+      "share_purely_positive": 0.3333333333333333,
+      "responses_with_any_flag": 17,
+      "issue_counts": {
+        "same_opening_as_other_persona": 5,
+        "repeated_phrasing_across_personas": 16,
+        "possible_contamination:BI": 1,
+        "not_about_product": 1
+      },
+      "per_construct": {
+        "PE": {
+          "nearest_anchor_matches": 4,
+          "lexicon_aligned": 4,
+          "off_construct": 0,
+          "contamination": []
+        },
+        "EE": {
+          "nearest_anchor_matches": 4,
+          "lexicon_aligned": 4,
+          "off_construct": 0,
+          "contamination": []
+        },
+        "HM": {
+          "nearest_anchor_matches": 3,
+          "lexicon_aligned": 4,
+          "off_construct": 0,
+          "contamination": []
+        },
+        "SI": {
+          "nearest_anchor_matches": 4,
+          "lexicon_aligned": 4,
+          "off_construct": 0,
+          "contamination": [
+            "BI"
+          ]
+        },
+        "PP": {
+          "nearest_anchor_matches": 4,
+          "lexicon_aligned": 4,
+          "off_construct": 0,
+          "contamination": []
+        },
+        "BI": {
+          "nearest_anchor_matches": 1,
+          "lexicon_aligned": 4,
+          "off_construct": 0,
+          "contamination": []
+        }
+      }
+    }
+  },
+  "llm_judge_improved_only": {
+    "judge": "qwen2.5:7b-instruct (temperature 0) - SAME model family as the generator; LLM-judge bias; NOT human ground truth",
+    "n": 24,
+    "dimension_means_1to5": {
+      "construct_relevance": 3.5833333333333335,
+      "construct_isolation": 4.583333333333333,
+      "persona_consistency": 4.416666666666667,
+      "naturalness": 4.375,
+      "product_relevance": 3.4583333333333335,
+      "nuance": 3.5
+    },
+    "overall_mean_1to5": 3.9861111111111107,
+    "by_construct": {
+      "PE": {
+        "construct_relevance": 3.75,
+        "construct_isolation": 4.75,
+        "persona_consistency": 4.75,
+        "naturalness": 4.5,
+        "product_relevance": 3.75,
+        "nuance": 3.5
+      },
+      "EE": {
+        "construct_relevance": 3.75,
+        "construct_isolation": 4.75,
+        "persona_consistency": 4.5,
+        "naturalness": 4.25,
+        "product_relevance": 3.75,
+        "nuance": 2.75
+      },
+      "HM": {
+        "construct_relevance": 3.5,
+        "construct_isolation": 4.5,
+        "persona_consistency": 4.25,
+        "naturalness": 4.25,
+        "product_relevance": 3.5,
+        "nuance": 2.5
+      },
+      "SI": {
+        "construct_relevance": 3.75,
+        "construct_isolation": 4.75,
+        "persona_consistency": 4.5,
+        "naturalness": 4.25,
+        "product_relevance": 3.0,
+        "nuance": 4.0
+      },
+      "PP": {
+        "construct_relevance": 3.25,
+        "construct_isolation": 4.25,
+        "persona_consistency": 4.25,
+        "naturalness": 4.5,
+        "product_relevance": 3.25,
+        "nuance": 4.0
+      },
+      "BI": {
+        "construct_relevance": 3.5,
+        "construct_isolation": 4.5,
+        "persona_consistency": 4.25,
+        "naturalness": 4.5,
+        "product_relevance": 3.5,
+        "nuance": 4.25
+      }
+    },
+    "by_persona": {
+      "P1_premium_tier_owner": 4.25,
+      "P2_midrange_heavy_user": 4.111111111111111,
+      "P3_midrange_moderate_user": 3.8055555555555554,
+      "P4_budget_or_undisclosed_price": 3.7777777777777777
+    },
+    "unsupported_claims_true": 0,
+    "responses_with_judge_issues": 24,
+    "low_scores_le2": [
+      {
+        "persona": "P3_midrange_moderate_user",
+        "construct": "EE",
+        "dims": [
+          "nuance"
+        ]
+      },
+      {
+        "persona": "P3_midrange_moderate_user",
+        "construct": "HM",
+        "dims": [
+          "nuance"
+        ]
+      },
+      {
+        "persona": "P4_budget_or_undisclosed_price",
+        "construct": "HM",
+        "dims": [
+          "nuance"
+        ]
+      }
+    ],
+    "issues_examples": [
+      {
+        "persona": "P1_premium_tier_owner",
+        "construct": "PE",
+        "issues": [
+          "The respondent's last phone cost more than ₹60,000, which is higher than the premium segment's typical cost. This might slightly affect the persona consistency."
+        ],
+        "invented": []
+      },
+      {
+        "persona": "P1_premium_tier_owner",
+        "construct": "EE",
+        "issues": [
+          "Overstates the ease of use given the price discrepancy",
+          "Lacks specific mention of AI Camera Enhancement and Battery Optimisation"
+        ],
+        "invented": []
+      },
+      {
+        "persona": "P1_premium_tier_owner",
+        "construct": "HM",
+        "issues": [
+          "Overly positive, lacks reservations or criticisms"
+        ],
+        "invented": []
+      },
+      {
+        "persona": "P1_premium_tier_owner",
+        "construct": "SI",
+        "issues": [
+          "The respondent's current phone is not explicitly mentioned as being expensive, which might not fully support their willingness to switch to a cheaper phone."
+        ],
+        "invented": []
+      },
+      {
+        "persona": "P1_premium_tier_owner",
+        "construct": "PP",
+        "issues": [
+          "The respondent's last phone cost more than ₹60,000, which is not directly related to the construct of PP Perceived Protection."
+        ],
+        "invented": []
+      },
+      {
+        "persona": "P1_premium_tier_owner",
+        "construct": "BI",
+        "issues": [
+          "The respondent mentions 'smooth performance' which is not a feature of the product description."
+        ],
+        "invented": []
+      },
+      {
+        "persona": "P2_midrange_heavy_user",
+        "construct": "PE",
+        "issues": [
+          "Overstates the AI camera enhancement benefits without specific examples."
+        ],
+        "invented": []
+      },
+      {
+        "persona": "P2_midrange_heavy_user",
+        "construct": "EE",
+        "issues": [
+          "The respondent's comfort with new technology is very high, but the phone's price is higher than their last purchase, which might introduce some reservations not fully addressed."
+        ],
+        "invented": []
+      },
+      {
+        "persona": "P2_midrange_heavy_user",
+        "construct": "HM",
+        "issues": [
+          "The statement does not address the AI personal assistant, battery optimization, or on-device AI processing features of the phone."
+        ],
+        "invented": []
+      },
+      {
+        "persona": "P2_midrange_heavy_user",
+        "construct": "SI",
+        "issues": [
+          "The statement about family support is vague and does not align with the persona's profile, which suggests family influence is minimal."
+        ],
+        "invented": []
+      },
+      {
+        "persona": "P2_midrange_heavy_user",
+        "construct": "PP",
+        "issues": [
+          "The answer mentions 'location-based suggestions' which are not a feature of the phone described."
+        ],
+        "invented": []
+      },
+      {
+        "persona": "P2_midrange_heavy_user",
+        "construct": "BI",
+        "issues": [
+          "The respondent's price position (₹10,000-₹20,000) and replacement frequency (3-4 years) are consistent, but the answer suggests a higher willingness to spend than indicated."
+        ],
+        "invented": []
+      }
+    ],
+    "score_variance_note": "distinct overall scores: [np.float64(3.17), np.float64(3.33), np.float64(3.5), np.float64(3.67), np.float64(3.83), np.float64(4.0), np.float64(4.17), np.float64(4.33), np.float64(4.5), np.float64(4.67)]"
+  }
+}

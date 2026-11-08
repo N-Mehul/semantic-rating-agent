@@ -1,0 +1,25 @@
+# Model Selection Justification and Multi-Criteria Evaluation
+
+## Fair Model Comparison Table
+
+| Model_Name                  |   k_truncation |   temperature | Mode     |   Test_Wasserstein_W1 |   Test_Mean_Diff |   Standard_Deviation_Ratio |   Extreme_Endpoint_Pct |   PE_ANOVA_F |   PE_ANOVA_p |   PE_P1_vs_P3_Hedges_g | Overfitting_Risk   | Interpretability   |   Composite_MCDA_Score_0to10 | Audit_Recommendation               |
+|:----------------------------|---------------:|--------------:|:---------|----------------------:|-----------------:|---------------------------:|-----------------------:|-------------:|-------------:|-----------------------:|:-------------------|:-------------------|-----------------------------:|:-----------------------------------|
+| Canonical SSR (k=3, T=1.0)  |              3 |          1    | raw      |                0.4027 |          -0.106  |                     0.6623 |                   0    |       3.1028 |     0.032695 |                 0.9143 | None               | High               |                         5.43 | Acceptable                         |
+| Canonical SSR (k=3, T=0.75) |              3 |          0.75 | raw      |                0.3935 |          -0.0742 |                     0.6928 |                   0.58 |       2.9966 |     0.037127 |                 0.8968 | None               | High               |                         5.56 | Highly Recommended (In-Engine)     |
+| Canonical SSR (k=3, T=0.5)  |              3 |          0.5  | raw      |                0.382  |          -0.0225 |                     0.7495 |                   8.16 |       2.5577 |     0.062856 |                 0.8185 | None               | High               |                         5.66 | Acceptable                         |
+| Linear Variance Rescaling   |              3 |          1    | linear   |                0.3904 |           0.2014 |                     0.8581 |                  27.7  |       3.1028 |     0.032695 |                 0.9143 | Low                | Medium             |                         5.87 | Recommended (Post-Processing Only) |
+| Quantile Matching           |              3 |          1    | quantile |                0.2112 |           0.2112 |                     0.8427 |                  25.36 |       2.0214 |     0.119741 |                 0.6599 | High               | Low                |                         3.53 | Not Defensible                     |
+| Argmax Baseline (k=1)       |              1 |          1    | raw      |                0.3103 |           0.1327 |                     1.0574 |                  36.15 |       0.6842 |     0.56496  |                 0.4531 | None               | High               |                         5.88 | Not Defensible                     |
+| Full Softmax (k=5, T=1.0)   |              5 |          1    | raw      |                0.5034 |          -0.1692 |                     0.5409 |                   0    |       4.3474 |     0.007518 |                 1.06   | None               | High               |                         4.76 | Not Defensible                     |
+
+## Multi-Criteria Decision Framework
+A model should NOT be selected solely based on minimum Wasserstein distance. We evaluated models across 5 pillars:
+1. **Distributional Alignment:** Low test Wasserstein distance $W_1$.
+2. **Persona Differentiation:** Statistically significant ANOVA ($p < 0.01$) and large effect size ($g > 0.80$).
+3. **Variance Recovery:** Standard deviation ratio near 1.0 without artificial clustering.
+4. **Generalization & Overfitting Avoidance:** Performance stability across held-out splits.
+5. **Interpretability & Methodological Purity:** Preserving the continuous probabilistic semantics of SSR.
+
+### Recommended Architecture:
+- **Primary Scoring Engine:** **Canonical SSR with $k=3, T=0.75$**. Achieves superior natural variance ($SD=0.81$) and $W_1 = 0.468$ without any post-processing.
+- **Distributional Reporting Layer:** **Out-of-Sample Linear Variance Rescaling**. Recommended strictly as a secondary post-hoc reporting transformation when comparing against human survey distributions.

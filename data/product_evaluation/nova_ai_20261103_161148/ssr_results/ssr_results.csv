@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,canonical_expected_rating,improved_expected_rating,delta,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,Nova AI,PE,Performance Expectancy,False,3.7447,3.4803,3.7447,0.2645,0.0,0.19489,0.0,0.670603,0.134507,nomic-embed-text
+P1_premium_tier_owner,Nova AI,EE,Effort Expectancy,False,4.0361,3.8049,4.0361,0.2312,0.0,0.0,0.271772,0.420349,0.307879,nomic-embed-text
+P1_premium_tier_owner,Nova AI,HM,Hedonic Motivation,False,4.4329,4.1061,4.4329,0.3268,0.0,0.0,0.119351,0.328376,0.552273,nomic-embed-text
+P1_premium_tier_owner,Nova AI,SI,Social Influence,False,3.9209,3.9087,3.9209,0.0122,0.0,0.0,0.299835,0.479424,0.220742,nomic-embed-text
+P1_premium_tier_owner,Nova AI,PP,Perceived Protection,False,3.6937,3.14,3.6937,0.5536,0.0,0.306174,0.0,0.387817,0.306008,nomic-embed-text
+P1_premium_tier_owner,Nova AI,BI,Behavioral Intention,True,3.7501,3.4757,3.7501,0.2743,0.0,0.0,0.450025,0.3499,0.200075,nomic-embed-text
+P2_midrange_heavy_user,Nova AI,PE,Performance Expectancy,False,3.9706,3.6049,3.9706,0.3657,0.0,0.143731,0.0,0.59818,0.258089,nomic-embed-text
+P2_midrange_heavy_user,Nova AI,EE,Effort Expectancy,False,4.1936,4.0305,4.1936,0.1631,0.0,0.0,0.240273,0.325837,0.43389,nomic-embed-text
+P2_midrange_heavy_user,Nova AI,HM,Hedonic Motivation,False,4.3165,4.1478,4.3165,0.1687,0.0,0.0,0.126633,0.430207,0.44316,nomic-embed-text
+P2_midrange_heavy_user,Nova AI,SI,Social Influence,False,3.7846,3.7779,3.7846,0.0067,0.0,0.0,0.414103,0.387177,0.19872,nomic-embed-text
+P2_midrange_heavy_user,Nova AI,PP,Perceived Protection,False,3.8149,3.1979,3.8149,0.617,0.0,0.255372,0.0,0.418965,0.325663,nomic-embed-text
+P2_midrange_heavy_user,Nova AI,BI,Behavioral Intention,True,4.1544,3.9787,4.1544,0.1757,0.0,0.114485,0.0,0.502135,0.38338,nomic-embed-text
+P3_midrange_moderate_user,Nova AI,PE,Performance Expectancy,False,3.7604,3.3377,3.7604,0.4227,0.0,0.205285,0.0,0.623733,0.170983,nomic-embed-text
+P3_midrange_moderate_user,Nova AI,EE,Effort Expectancy,False,4.1009,3.9311,4.1009,0.1698,0.0,0.0,0.260628,0.377871,0.361502,nomic-embed-text
+P3_midrange_moderate_user,Nova AI,HM,Hedonic Motivation,False,4.4338,4.2385,4.4338,0.1953,0.0,0.0,0.062293,0.441606,0.496101,nomic-embed-text
+P3_midrange_moderate_user,Nova AI,SI,Social Influence,False,3.8921,3.6229,3.8921,0.2692,0.0,0.0,0.31118,0.485582,0.203238,nomic-embed-text
+P3_midrange_moderate_user,Nova AI,PP,Perceived Protection,False,3.9094,3.7172,3.9094,0.1922,0.190409,0.0,0.0,0.328966,0.480625,nomic-embed-text
+P3_midrange_moderate_user,Nova AI,BI,Behavioral Intention,True,4.1151,3.9398,4.1151,0.1753,0.0,0.135514,0.0,0.478355,0.386131,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova AI,PE,Performance Expectancy,False,3.0943,2.9948,3.0943,0.0996,0.141257,0.240951,0.0,0.617792,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova AI,EE,Effort Expectancy,False,4.179,4.0014,4.179,0.1777,0.0,0.0,0.221481,0.377994,0.400525,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova AI,HM,Hedonic Motivation,False,4.4107,4.1866,4.4107,0.2241,0.0,0.0,0.08791,0.413458,0.498632,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova AI,SI,Social Influence,False,3.9936,3.927,3.9936,0.0666,0.0,0.0,0.28745,0.431519,0.281031,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova AI,PP,Perceived Protection,False,3.7854,3.6317,3.7854,0.1537,0.0,0.191072,0.0,0.641356,0.167572,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova AI,BI,Behavioral Intention,True,3.3096,3.5329,3.3096,-0.2233,0.0,0.21899,0.252403,0.528607,0.0,nomic-embed-text

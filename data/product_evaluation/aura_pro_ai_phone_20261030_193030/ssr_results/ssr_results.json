@@ -1,0 +1,1950 @@
+{
+  "evaluation_id": "aura_pro_ai_phone_20261030_193030",
+  "product_name": "Aura Pro AI Phone",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-30T14:05:08.559857+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "primary_adoption_rating": 3.0915,
+      "primary_adoption_pmf": [
+        0.0,
+        0.210707,
+        0.551948,
+        0.172518,
+        0.064826
+      ],
+      "construct_scores": {
+        "PE": 2.6145,
+        "EE": 3.2135,
+        "HM": 2.3535,
+        "SI": 2.9681,
+        "PP": 2.9646,
+        "BI": 3.0915
+      },
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "cosine_similarities": [
+            0.588942,
+            0.606238,
+            0.60936,
+            0.578009,
+            0.587614
+          ],
+          "min_similarity": 0.578009,
+          "pmf_probabilities": [
+            0.136453,
+            0.352342,
+            0.39132,
+            0.0,
+            0.119884
+          ],
+          "expected_rating": 2.6145,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "cosine_similarities": [
+            0.541583,
+            0.510977,
+            0.581839,
+            0.529141,
+            0.549367
+          ],
+          "min_similarity": 0.510977,
+          "pmf_probabilities": [
+            0.193684,
+            0.0,
+            0.448426,
+            0.11495,
+            0.242941
+          ],
+          "expected_rating": 3.2135,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "cosine_similarities": [
+            0.529235,
+            0.52623,
+            0.537683,
+            0.516514,
+            0.504625
+          ],
+          "min_similarity": 0.504625,
+          "pmf_probabilities": [
+            0.269962,
+            0.236999,
+            0.362625,
+            0.130414,
+            0.0
+          ],
+          "expected_rating": 2.3535,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "cosine_similarities": [
+            0.523145,
+            0.524183,
+            0.59863,
+            0.518558,
+            0.524425
+          ],
+          "min_similarity": 0.518558,
+          "pmf_probabilities": [
+            0.047702,
+            0.058504,
+            0.832774,
+            0.0,
+            0.06102
+          ],
+          "expected_rating": 2.9681,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "cosine_similarities": [
+            0.52673,
+            0.542216,
+            0.493362,
+            0.548274,
+            0.52079
+          ],
+          "min_similarity": 0.493362,
+          "pmf_probabilities": [
+            0.202768,
+            0.296871,
+            0.0,
+            0.333688,
+            0.166673
+          ],
+          "expected_rating": 2.9646,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "cosine_similarities": [
+            0.522062,
+            0.558551,
+            0.617647,
+            0.551938,
+            0.533288
+          ],
+          "min_similarity": 0.522062,
+          "pmf_probabilities": [
+            0.0,
+            0.210707,
+            0.551948,
+            0.172518,
+            0.064826
+          ],
+          "expected_rating": 3.0915,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "primary_adoption_rating": 2.9512,
+      "primary_adoption_pmf": [
+        0.0,
+        0.235641,
+        0.598491,
+        0.144854,
+        0.021014
+      ],
+      "construct_scores": {
+        "PE": 2.6317,
+        "EE": 3.3802,
+        "HM": 2.7469,
+        "SI": 3.077,
+        "PP": 2.9595,
+        "BI": 2.9512
+      },
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "cosine_similarities": [
+            0.525553,
+            0.541904,
+            0.550108,
+            0.513056,
+            0.523599
+          ],
+          "min_similarity": 0.513056,
+          "pmf_probabilities": [
+            0.140509,
+            0.324352,
+            0.416598,
+            0.0,
+            0.118541
+          ],
+          "expected_rating": 2.6317,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "cosine_similarities": [
+            0.490249,
+            0.455838,
+            0.507495,
+            0.486044,
+            0.506967
+          ],
+          "min_similarity": 0.455838,
+          "pmf_probabilities": [
+            0.20556,
+            0.0,
+            0.308577,
+            0.18044,
+            0.305423
+          ],
+          "expected_rating": 3.3802,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "cosine_similarities": [
+            0.478115,
+            0.493937,
+            0.499242,
+            0.484507,
+            0.476557
+          ],
+          "min_similarity": 0.476557,
+          "pmf_probabilities": [
+            0.03144,
+            0.350591,
+            0.457606,
+            0.160363,
+            0.0
+          ],
+          "expected_rating": 2.7469,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "cosine_similarities": [
+            0.503675,
+            0.520398,
+            0.582494,
+            0.513153,
+            0.511646
+          ],
+          "min_similarity": 0.503675,
+          "pmf_probabilities": [
+            0.0,
+            0.148005,
+            0.697568,
+            0.083881,
+            0.070546
+          ],
+          "expected_rating": 3.077,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "cosine_similarities": [
+            0.485489,
+            0.474433,
+            0.435309,
+            0.487289,
+            0.475389
+          ],
+          "min_similarity": 0.435309,
+          "pmf_probabilities": [
+            0.276683,
+            0.215719,
+            0.0,
+            0.286605,
+            0.220993
+          ],
+          "expected_rating": 2.9595,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "cosine_similarities": [
+            0.505146,
+            0.54351,
+            0.602585,
+            0.528729,
+            0.508567
+          ],
+          "min_similarity": 0.505146,
+          "pmf_probabilities": [
+            0.0,
+            0.235641,
+            0.598491,
+            0.144854,
+            0.021014
+          ],
+          "expected_rating": 2.9512,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "primary_adoption_rating": 3.1464,
+      "primary_adoption_pmf": [
+        0.0,
+        0.224587,
+        0.469519,
+        0.24082,
+        0.065074
+      ],
+      "construct_scores": {
+        "PE": 3.4334,
+        "EE": 3.2663,
+        "HM": 3.6261,
+        "SI": 3.6427,
+        "PP": 3.3417,
+        "BI": 3.1464
+      },
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "cosine_similarities": [
+            0.592496,
+            0.611623,
+            0.604035,
+            0.605987,
+            0.608308
+          ],
+          "min_similarity": 0.592496,
+          "pmf_probabilities": [
+            0.0,
+            0.318955,
+            0.19241,
+            0.224964,
+            0.263671
+          ],
+          "expected_rating": 3.4334,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "cosine_similarities": [
+            0.598292,
+            0.53962,
+            0.595067,
+            0.578624,
+            0.608332
+          ],
+          "min_similarity": 0.53962,
+          "pmf_probabilities": [
+            0.264483,
+            0.0,
+            0.249947,
+            0.175825,
+            0.309745
+          ],
+          "expected_rating": 3.2663,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "cosine_similarities": [
+            0.564374,
+            0.554148,
+            0.570289,
+            0.575666,
+            0.57519
+          ],
+          "min_similarity": 0.554148,
+          "pmf_probabilities": [
+            0.148354,
+            0.0,
+            0.234175,
+            0.312185,
+            0.305286
+          ],
+          "expected_rating": 3.6261,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "cosine_similarities": [
+            0.556673,
+            0.549208,
+            0.627429,
+            0.572188,
+            0.594736
+          ],
+          "min_similarity": 0.549208,
+          "pmf_probabilities": [
+            0.048413,
+            0.0,
+            0.507288,
+            0.149034,
+            0.295266
+          ],
+          "expected_rating": 3.6427,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "cosine_similarities": [
+            0.537814,
+            0.543295,
+            0.519444,
+            0.563848,
+            0.547057
+          ],
+          "min_similarity": 0.519444,
+          "pmf_probabilities": [
+            0.160805,
+            0.208787,
+            0.0,
+            0.388695,
+            0.241713
+          ],
+          "expected_rating": 3.3417,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "cosine_similarities": [
+            0.556712,
+            0.603344,
+            0.6542,
+            0.606715,
+            0.570224
+          ],
+          "min_similarity": 0.556712,
+          "pmf_probabilities": [
+            0.0,
+            0.224587,
+            0.469519,
+            0.24082,
+            0.065074
+          ],
+          "expected_rating": 3.1464,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "primary_adoption_rating": 2.7697,
+      "primary_adoption_pmf": [
+        0.056711,
+        0.265316,
+        0.529553,
+        0.14842,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 2.238,
+        "EE": 3.1319,
+        "HM": 2.4109,
+        "SI": 2.9764,
+        "PP": 2.5198,
+        "BI": 2.7697
+      },
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "cosine_similarities": [
+            0.615004,
+            0.62893,
+            0.630794,
+            0.59114,
+            0.594154
+          ],
+          "min_similarity": 0.59114,
+          "pmf_probabilities": [
+            0.228757,
+            0.362247,
+            0.380109,
+            0.0,
+            0.028887
+          ],
+          "expected_rating": 2.238,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "cosine_similarities": [
+            0.605456,
+            0.568821,
+            0.606953,
+            0.587062,
+            0.604847
+          ],
+          "min_similarity": 0.568821,
+          "pmf_probabilities": [
+            0.283918,
+            0.0,
+            0.295519,
+            0.141362,
+            0.279201
+          ],
+          "expected_rating": 3.1319,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "cosine_similarities": [
+            0.585,
+            0.576032,
+            0.577605,
+            0.576037,
+            0.54314
+          ],
+          "min_similarity": 0.54314,
+          "pmf_probabilities": [
+            0.29455,
+            0.231448,
+            0.242519,
+            0.231483,
+            0.0
+          ],
+          "expected_rating": 2.4109,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "cosine_similarities": [
+            0.576138,
+            0.559697,
+            0.619241,
+            0.554348,
+            0.577452
+          ],
+          "min_similarity": 0.554348,
+          "pmf_probabilities": [
+            0.189255,
+            0.046458,
+            0.563617,
+            0.0,
+            0.20067
+          ],
+          "expected_rating": 2.9764,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "cosine_similarities": [
+            0.549649,
+            0.570134,
+            0.533233,
+            0.563393,
+            0.526773
+          ],
+          "min_similarity": 0.526773,
+          "pmf_probabilities": [
+            0.209264,
+            0.396655,
+            0.059092,
+            0.334989,
+            0.0
+          ],
+          "expected_rating": 2.5198,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "cosine_similarities": [
+            0.550925,
+            0.583537,
+            0.624847,
+            0.565262,
+            0.542059
+          ],
+          "min_similarity": 0.542059,
+          "pmf_probabilities": [
+            0.056711,
+            0.265316,
+            0.529553,
+            0.14842,
+            0.0
+          ],
+          "expected_rating": 2.7697,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.588942,
+        0.606238,
+        0.60936,
+        0.578009,
+        0.587614
+      ],
+      "pmf_probabilities": [
+        0.136453,
+        0.352342,
+        0.39132,
+        0.0,
+        0.119884
+      ],
+      "expected_rating": 2.6145,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.541583,
+        0.510977,
+        0.581839,
+        0.529141,
+        0.549367
+      ],
+      "pmf_probabilities": [
+        0.193684,
+        0.0,
+        0.448426,
+        0.11495,
+        0.242941
+      ],
+      "expected_rating": 3.2135,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.529235,
+        0.52623,
+        0.537683,
+        0.516514,
+        0.504625
+      ],
+      "pmf_probabilities": [
+        0.269962,
+        0.236999,
+        0.362625,
+        0.130414,
+        0.0
+      ],
+      "expected_rating": 2.3535,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.523145,
+        0.524183,
+        0.59863,
+        0.518558,
+        0.524425
+      ],
+      "pmf_probabilities": [
+        0.047702,
+        0.058504,
+        0.832774,
+        0.0,
+        0.06102
+      ],
+      "expected_rating": 2.9681,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.52673,
+        0.542216,
+        0.493362,
+        0.548274,
+        0.52079
+      ],
+      "pmf_probabilities": [
+        0.202768,
+        0.296871,
+        0.0,
+        0.333688,
+        0.166673
+      ],
+      "expected_rating": 2.9646,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.522062,
+        0.558551,
+        0.617647,
+        0.551938,
+        0.533288
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.210707,
+        0.551948,
+        0.172518,
+        0.064826
+      ],
+      "expected_rating": 3.0915,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.525553,
+        0.541904,
+        0.550108,
+        0.513056,
+        0.523599
+      ],
+      "pmf_probabilities": [
+        0.140509,
+        0.324352,
+        0.416598,
+        0.0,
+        0.118541
+      ],
+      "expected_rating": 2.6317,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.490249,
+        0.455838,
+        0.507495,
+        0.486044,
+        0.506967
+      ],
+      "pmf_probabilities": [
+        0.20556,
+        0.0,
+        0.308577,
+        0.18044,
+        0.305423
+      ],
+      "expected_rating": 3.3802,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.478115,
+        0.493937,
+        0.499242,
+        0.484507,
+        0.476557
+      ],
+      "pmf_probabilities": [
+        0.03144,
+        0.350591,
+        0.457606,
+        0.160363,
+        0.0
+      ],
+      "expected_rating": 2.7469,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.503675,
+        0.520398,
+        0.582494,
+        0.513153,
+        0.511646
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.148005,
+        0.697568,
+        0.083881,
+        0.070546
+      ],
+      "expected_rating": 3.077,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.485489,
+        0.474433,
+        0.435309,
+        0.487289,
+        0.475389
+      ],
+      "pmf_probabilities": [
+        0.276683,
+        0.215719,
+        0.0,
+        0.286605,
+        0.220993
+      ],
+      "expected_rating": 2.9595,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.505146,
+        0.54351,
+        0.602585,
+        0.528729,
+        0.508567
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.235641,
+        0.598491,
+        0.144854,
+        0.021014
+      ],
+      "expected_rating": 2.9512,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.592496,
+        0.611623,
+        0.604035,
+        0.605987,
+        0.608308
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.318955,
+        0.19241,
+        0.224964,
+        0.263671
+      ],
+      "expected_rating": 3.4334,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.598292,
+        0.53962,
+        0.595067,
+        0.578624,
+        0.608332
+      ],
+      "pmf_probabilities": [
+        0.264483,
+        0.0,
+        0.249947,
+        0.175825,
+        0.309745
+      ],
+      "expected_rating": 3.2663,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.564374,
+        0.554148,
+        0.570289,
+        0.575666,
+        0.57519
+      ],
+      "pmf_probabilities": [
+        0.148354,
+        0.0,
+        0.234175,
+        0.312185,
+        0.305286
+      ],
+      "expected_rating": 3.6261,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.556673,
+        0.549208,
+        0.627429,
+        0.572188,
+        0.594736
+      ],
+      "pmf_probabilities": [
+        0.048413,
+        0.0,
+        0.507288,
+        0.149034,
+        0.295266
+      ],
+      "expected_rating": 3.6427,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.537814,
+        0.543295,
+        0.519444,
+        0.563848,
+        0.547057
+      ],
+      "pmf_probabilities": [
+        0.160805,
+        0.208787,
+        0.0,
+        0.388695,
+        0.241713
+      ],
+      "expected_rating": 3.3417,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.556712,
+        0.603344,
+        0.6542,
+        0.606715,
+        0.570224
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.224587,
+        0.469519,
+        0.24082,
+        0.065074
+      ],
+      "expected_rating": 3.1464,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.615004,
+        0.62893,
+        0.630794,
+        0.59114,
+        0.594154
+      ],
+      "pmf_probabilities": [
+        0.228757,
+        0.362247,
+        0.380109,
+        0.0,
+        0.028887
+      ],
+      "expected_rating": 2.238,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.605456,
+        0.568821,
+        0.606953,
+        0.587062,
+        0.604847
+      ],
+      "pmf_probabilities": [
+        0.283918,
+        0.0,
+        0.295519,
+        0.141362,
+        0.279201
+      ],
+      "expected_rating": 3.1319,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.585,
+        0.576032,
+        0.577605,
+        0.576037,
+        0.54314
+      ],
+      "pmf_probabilities": [
+        0.29455,
+        0.231448,
+        0.242519,
+        0.231483,
+        0.0
+      ],
+      "expected_rating": 2.4109,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.576138,
+        0.559697,
+        0.619241,
+        0.554348,
+        0.577452
+      ],
+      "pmf_probabilities": [
+        0.189255,
+        0.046458,
+        0.563617,
+        0.0,
+        0.20067
+      ],
+      "expected_rating": 2.9764,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.549649,
+        0.570134,
+        0.533233,
+        0.563393,
+        0.526773
+      ],
+      "pmf_probabilities": [
+        0.209264,
+        0.396655,
+        0.059092,
+        0.334989,
+        0.0
+      ],
+      "expected_rating": 2.5198,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.550925,
+        0.583537,
+        0.624847,
+        0.565262,
+        0.542059
+      ],
+      "pmf_probabilities": [
+        0.056711,
+        0.265316,
+        0.529553,
+        0.14842,
+        0.0
+      ],
+      "expected_rating": 2.7697,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.588942,
+      "cos_sim_2": 0.606238,
+      "cos_sim_3": 0.60936,
+      "cos_sim_4": 0.578009,
+      "cos_sim_5": 0.587614,
+      "min_similarity": 0.578009,
+      "p1": 0.136453,
+      "p2": 0.352342,
+      "p3": 0.39132,
+      "p4": 0.0,
+      "p5": 0.119884,
+      "set_expected_rating": 2.6145,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.541583,
+      "cos_sim_2": 0.510977,
+      "cos_sim_3": 0.581839,
+      "cos_sim_4": 0.529141,
+      "cos_sim_5": 0.549367,
+      "min_similarity": 0.510977,
+      "p1": 0.193684,
+      "p2": 0.0,
+      "p3": 0.448426,
+      "p4": 0.11495,
+      "p5": 0.242941,
+      "set_expected_rating": 3.2135,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.529235,
+      "cos_sim_2": 0.52623,
+      "cos_sim_3": 0.537683,
+      "cos_sim_4": 0.516514,
+      "cos_sim_5": 0.504625,
+      "min_similarity": 0.504625,
+      "p1": 0.269962,
+      "p2": 0.236999,
+      "p3": 0.362625,
+      "p4": 0.130414,
+      "p5": 0.0,
+      "set_expected_rating": 2.3535,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.523145,
+      "cos_sim_2": 0.524183,
+      "cos_sim_3": 0.59863,
+      "cos_sim_4": 0.518558,
+      "cos_sim_5": 0.524425,
+      "min_similarity": 0.518558,
+      "p1": 0.047702,
+      "p2": 0.058504,
+      "p3": 0.832774,
+      "p4": 0.0,
+      "p5": 0.06102,
+      "set_expected_rating": 2.9681,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.52673,
+      "cos_sim_2": 0.542216,
+      "cos_sim_3": 0.493362,
+      "cos_sim_4": 0.548274,
+      "cos_sim_5": 0.52079,
+      "min_similarity": 0.493362,
+      "p1": 0.202768,
+      "p2": 0.296871,
+      "p3": 0.0,
+      "p4": 0.333688,
+      "p5": 0.166673,
+      "set_expected_rating": 2.9646,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.522062,
+      "cos_sim_2": 0.558551,
+      "cos_sim_3": 0.617647,
+      "cos_sim_4": 0.551938,
+      "cos_sim_5": 0.533288,
+      "min_similarity": 0.522062,
+      "p1": 0.0,
+      "p2": 0.210707,
+      "p3": 0.551948,
+      "p4": 0.172518,
+      "p5": 0.064826,
+      "set_expected_rating": 3.0915,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.525553,
+      "cos_sim_2": 0.541904,
+      "cos_sim_3": 0.550108,
+      "cos_sim_4": 0.513056,
+      "cos_sim_5": 0.523599,
+      "min_similarity": 0.513056,
+      "p1": 0.140509,
+      "p2": 0.324352,
+      "p3": 0.416598,
+      "p4": 0.0,
+      "p5": 0.118541,
+      "set_expected_rating": 2.6317,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.490249,
+      "cos_sim_2": 0.455838,
+      "cos_sim_3": 0.507495,
+      "cos_sim_4": 0.486044,
+      "cos_sim_5": 0.506967,
+      "min_similarity": 0.455838,
+      "p1": 0.20556,
+      "p2": 0.0,
+      "p3": 0.308577,
+      "p4": 0.18044,
+      "p5": 0.305423,
+      "set_expected_rating": 3.3802,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.478115,
+      "cos_sim_2": 0.493937,
+      "cos_sim_3": 0.499242,
+      "cos_sim_4": 0.484507,
+      "cos_sim_5": 0.476557,
+      "min_similarity": 0.476557,
+      "p1": 0.03144,
+      "p2": 0.350591,
+      "p3": 0.457606,
+      "p4": 0.160363,
+      "p5": 0.0,
+      "set_expected_rating": 2.7469,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.503675,
+      "cos_sim_2": 0.520398,
+      "cos_sim_3": 0.582494,
+      "cos_sim_4": 0.513153,
+      "cos_sim_5": 0.511646,
+      "min_similarity": 0.503675,
+      "p1": 0.0,
+      "p2": 0.148005,
+      "p3": 0.697568,
+      "p4": 0.083881,
+      "p5": 0.070546,
+      "set_expected_rating": 3.077,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.485489,
+      "cos_sim_2": 0.474433,
+      "cos_sim_3": 0.435309,
+      "cos_sim_4": 0.487289,
+      "cos_sim_5": 0.475389,
+      "min_similarity": 0.435309,
+      "p1": 0.276683,
+      "p2": 0.215719,
+      "p3": 0.0,
+      "p4": 0.286605,
+      "p5": 0.220993,
+      "set_expected_rating": 2.9595,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.505146,
+      "cos_sim_2": 0.54351,
+      "cos_sim_3": 0.602585,
+      "cos_sim_4": 0.528729,
+      "cos_sim_5": 0.508567,
+      "min_similarity": 0.505146,
+      "p1": 0.0,
+      "p2": 0.235641,
+      "p3": 0.598491,
+      "p4": 0.144854,
+      "p5": 0.021014,
+      "set_expected_rating": 2.9512,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.592496,
+      "cos_sim_2": 0.611623,
+      "cos_sim_3": 0.604035,
+      "cos_sim_4": 0.605987,
+      "cos_sim_5": 0.608308,
+      "min_similarity": 0.592496,
+      "p1": 0.0,
+      "p2": 0.318955,
+      "p3": 0.19241,
+      "p4": 0.224964,
+      "p5": 0.263671,
+      "set_expected_rating": 3.4334,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.598292,
+      "cos_sim_2": 0.53962,
+      "cos_sim_3": 0.595067,
+      "cos_sim_4": 0.578624,
+      "cos_sim_5": 0.608332,
+      "min_similarity": 0.53962,
+      "p1": 0.264483,
+      "p2": 0.0,
+      "p3": 0.249947,
+      "p4": 0.175825,
+      "p5": 0.309745,
+      "set_expected_rating": 3.2663,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.564374,
+      "cos_sim_2": 0.554148,
+      "cos_sim_3": 0.570289,
+      "cos_sim_4": 0.575666,
+      "cos_sim_5": 0.57519,
+      "min_similarity": 0.554148,
+      "p1": 0.148354,
+      "p2": 0.0,
+      "p3": 0.234175,
+      "p4": 0.312185,
+      "p5": 0.305286,
+      "set_expected_rating": 3.6261,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.556673,
+      "cos_sim_2": 0.549208,
+      "cos_sim_3": 0.627429,
+      "cos_sim_4": 0.572188,
+      "cos_sim_5": 0.594736,
+      "min_similarity": 0.549208,
+      "p1": 0.048413,
+      "p2": 0.0,
+      "p3": 0.507288,
+      "p4": 0.149034,
+      "p5": 0.295266,
+      "set_expected_rating": 3.6427,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.537814,
+      "cos_sim_2": 0.543295,
+      "cos_sim_3": 0.519444,
+      "cos_sim_4": 0.563848,
+      "cos_sim_5": 0.547057,
+      "min_similarity": 0.519444,
+      "p1": 0.160805,
+      "p2": 0.208787,
+      "p3": 0.0,
+      "p4": 0.388695,
+      "p5": 0.241713,
+      "set_expected_rating": 3.3417,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.556712,
+      "cos_sim_2": 0.603344,
+      "cos_sim_3": 0.6542,
+      "cos_sim_4": 0.606715,
+      "cos_sim_5": 0.570224,
+      "min_similarity": 0.556712,
+      "p1": 0.0,
+      "p2": 0.224587,
+      "p3": 0.469519,
+      "p4": 0.24082,
+      "p5": 0.065074,
+      "set_expected_rating": 3.1464,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.615004,
+      "cos_sim_2": 0.62893,
+      "cos_sim_3": 0.630794,
+      "cos_sim_4": 0.59114,
+      "cos_sim_5": 0.594154,
+      "min_similarity": 0.59114,
+      "p1": 0.228757,
+      "p2": 0.362247,
+      "p3": 0.380109,
+      "p4": 0.0,
+      "p5": 0.028887,
+      "set_expected_rating": 2.238,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.605456,
+      "cos_sim_2": 0.568821,
+      "cos_sim_3": 0.606953,
+      "cos_sim_4": 0.587062,
+      "cos_sim_5": 0.604847,
+      "min_similarity": 0.568821,
+      "p1": 0.283918,
+      "p2": 0.0,
+      "p3": 0.295519,
+      "p4": 0.141362,
+      "p5": 0.279201,
+      "set_expected_rating": 3.1319,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.585,
+      "cos_sim_2": 0.576032,
+      "cos_sim_3": 0.577605,
+      "cos_sim_4": 0.576037,
+      "cos_sim_5": 0.54314,
+      "min_similarity": 0.54314,
+      "p1": 0.29455,
+      "p2": 0.231448,
+      "p3": 0.242519,
+      "p4": 0.231483,
+      "p5": 0.0,
+      "set_expected_rating": 2.4109,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.576138,
+      "cos_sim_2": 0.559697,
+      "cos_sim_3": 0.619241,
+      "cos_sim_4": 0.554348,
+      "cos_sim_5": 0.577452,
+      "min_similarity": 0.554348,
+      "p1": 0.189255,
+      "p2": 0.046458,
+      "p3": 0.563617,
+      "p4": 0.0,
+      "p5": 0.20067,
+      "set_expected_rating": 2.9764,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.549649,
+      "cos_sim_2": 0.570134,
+      "cos_sim_3": 0.533233,
+      "cos_sim_4": 0.563393,
+      "cos_sim_5": 0.526773,
+      "min_similarity": 0.526773,
+      "p1": 0.209264,
+      "p2": 0.396655,
+      "p3": 0.059092,
+      "p4": 0.334989,
+      "p5": 0.0,
+      "set_expected_rating": 2.5198,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pro AI Phone",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.550925,
+      "cos_sim_2": 0.583537,
+      "cos_sim_3": 0.624847,
+      "cos_sim_4": 0.565262,
+      "cos_sim_5": 0.542059,
+      "min_similarity": 0.542059,
+      "p1": 0.056711,
+      "p2": 0.265316,
+      "p3": 0.529553,
+      "p4": 0.14842,
+      "p5": 0.0,
+      "set_expected_rating": 2.7697,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

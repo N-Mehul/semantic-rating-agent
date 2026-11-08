@@ -1,0 +1,19 @@
+[
+  {
+    "persona_id": "P4_budget_or_undisclosed_price",
+    "product_name": "Sony PlayStation 5 Slim",
+    "response_text": "While the features seem interesting, the price is beyond my current budget. I need something more affordable for daily use.",
+    "construct_responses": {
+      "PE": "For daily study tasks, it might help with reminders and notifications, but it's too pricey for my needs. I need something more budget-friendly.",
+      "EE": "Setting it up and using it might be simple, but it's not something I can afford. It feels like a luxury product.",
+      "HM": "Using it for fun would be enjoyable, but I can't justify the cost. It's not something I can enjoy regularly.",
+      "SI": "Friends might think I'm cool for having one, but it's out of my budget. They would probably suggest getting a more affordable option.",
+      "PP": "I trust the device to be reliable, but the high price makes me feel uneasy about the value for money.",
+      "BI": "I cannot continue using this product as my primary daily driver. It's too expensive and I have more pressing needs.",
+      "OVERALL": "While the features seem interesting, the price is beyond my current budget. I need something more affordable for daily use."
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-11-01T05:48:31.143625+00:00"
+  }
+]

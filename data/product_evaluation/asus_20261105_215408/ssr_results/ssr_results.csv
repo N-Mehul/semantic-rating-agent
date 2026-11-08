@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,canonical_expected_rating,improved_expected_rating,delta,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,asus,PE,Performance Expectancy,False,2.444,2.6537,2.444,-0.2098,0.093995,0.368046,0.537959,0.0,0.0,nomic-embed-text
+P1_premium_tier_owner,asus,EE,Effort Expectancy,False,4.0675,3.8173,4.0675,0.2502,0.0,0.0,0.370071,0.192316,0.437613,nomic-embed-text
+P1_premium_tier_owner,asus,HM,Hedonic Motivation,False,3.0935,3.345,3.0935,-0.2514,0.0,0.323416,0.259663,0.416922,0.0,nomic-embed-text
+P1_premium_tier_owner,asus,SI,Social Influence,False,3.0305,3.0145,3.0305,0.016,0.0,0.226248,0.517011,0.256741,0.0,nomic-embed-text
+P1_premium_tier_owner,asus,PP,Perceived Protection,False,3.0215,3.3318,3.0215,-0.3103,0.0,0.235735,0.506987,0.257278,0.0,nomic-embed-text
+P1_premium_tier_owner,asus,BI,Behavioral Intention,True,3.3629,3.4676,3.3629,-0.1048,0.0,0.200916,0.517201,0.0,0.281883,nomic-embed-text
+P2_midrange_heavy_user,asus,PE,Performance Expectancy,False,4.1609,3.7058,4.1609,0.4551,0.0,0.0,0.224782,0.38952,0.385699,nomic-embed-text
+P2_midrange_heavy_user,asus,EE,Effort Expectancy,False,4.3002,3.9453,4.3002,0.3549,0.0,0.0,0.084848,0.530105,0.385047,nomic-embed-text
+P2_midrange_heavy_user,asus,HM,Hedonic Motivation,False,3.3194,3.4448,3.3194,-0.1254,0.0,0.20907,0.262471,0.52846,0.0,nomic-embed-text
+P2_midrange_heavy_user,asus,SI,Social Influence,False,3.8106,3.434,3.8106,0.3766,0.0,0.0,0.443205,0.30299,0.253804,nomic-embed-text
+P2_midrange_heavy_user,asus,PP,Perceived Protection,False,3.8244,3.5358,3.8244,0.2885,0.19905,0.0,0.0,0.379441,0.42151,nomic-embed-text
+P2_midrange_heavy_user,asus,BI,Behavioral Intention,True,3.0771,3.3683,3.0771,-0.2912,0.0,0.181228,0.560399,0.258373,0.0,nomic-embed-text
+P3_midrange_moderate_user,asus,PE,Performance Expectancy,False,2.2737,2.4186,2.2737,-0.1448,0.268166,0.460881,0.0,0.270953,0.0,nomic-embed-text
+P3_midrange_moderate_user,asus,EE,Effort Expectancy,False,4.0136,3.7801,4.0136,0.2334,0.0384,0.0,0.416412,0.0,0.545189,nomic-embed-text
+P3_midrange_moderate_user,asus,HM,Hedonic Motivation,False,3.523,3.3828,3.523,0.1402,0.0,0.030617,0.415798,0.553584,0.0,nomic-embed-text
+P3_midrange_moderate_user,asus,SI,Social Influence,False,3.0021,3.1423,3.0021,-0.1402,0.0,0.240088,0.517729,0.242182,0.0,nomic-embed-text
+P3_midrange_moderate_user,asus,PP,Perceived Protection,False,3.9054,3.8473,3.9054,0.0581,0.0,0.174626,0.0,0.570678,0.254696,nomic-embed-text
+P3_midrange_moderate_user,asus,BI,Behavioral Intention,True,2.7082,3.012,2.7082,-0.3038,0.0,0.410884,0.470081,0.119035,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,asus,PE,Performance Expectancy,False,2.6571,2.6381,2.6571,0.019,0.221606,0.339057,0.0,0.439337,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,asus,EE,Effort Expectancy,False,3.6962,3.484,3.6962,0.2122,0.0,0.0,0.536863,0.230083,0.233054,nomic-embed-text
+P4_budget_or_undisclosed_price,asus,HM,Hedonic Motivation,False,3.7987,3.6905,3.7987,0.1083,0.0,0.240358,0.0,0.480213,0.279429,nomic-embed-text
+P4_budget_or_undisclosed_price,asus,SI,Social Influence,False,4.1606,3.7723,4.1606,0.3884,0.0,0.0,0.171763,0.495826,0.332411,nomic-embed-text
+P4_budget_or_undisclosed_price,asus,PP,Perceived Protection,False,4.2531,4.1574,4.2531,0.0957,0.0,0.0,0.140627,0.465648,0.393725,nomic-embed-text
+P4_budget_or_undisclosed_price,asus,BI,Behavioral Intention,True,2.2323,2.6138,2.2323,-0.3814,0.1724,0.422857,0.404743,0.0,0.0,nomic-embed-text

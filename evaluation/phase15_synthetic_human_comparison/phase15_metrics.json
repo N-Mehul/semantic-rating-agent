@@ -1,0 +1,273 @@
+{
+  "label": "Phase 15: synthetic BI vs human Q21. Canonical = original Improved SSR rounded E (k=3,T=0.75). Calibrated = EXPERIMENTAL Phase 14 Method C thresholds (not refit).",
+  "calibration_thresholds_loaded": [
+    3.155,
+    3.249,
+    3.82,
+    4.111
+  ],
+  "human_n": 257,
+  "human": {
+    "n": 257,
+    "mean": 3.5136186770428015,
+    "sd": 1.1527859166600734,
+    "proportions_1to5": [
+      0.0934,
+      0.0428,
+      0.3346,
+      0.3152,
+      0.214
+    ],
+    "neg_1_2": 0.13618677042801558,
+    "neu_3": 0.3346303501945525,
+    "pos_4_5": 0.5291828793774319
+  },
+  "synthetic_BI_canonical": {
+    "n": 4,
+    "mean": 3.25,
+    "sd": 0.5,
+    "proportions_1to5": [
+      0.0,
+      0.0,
+      0.75,
+      0.25,
+      0.0
+    ],
+    "neg_1_2": 0.0,
+    "neu_3": 0.75,
+    "pos_4_5": 0.25,
+    "wasserstein_W1_vs_human": 0.7227626459143969,
+    "JSD_vs_human_base2": 0.23667814573972676,
+    "share_of_random_human_samples_with_W1_at_least_this": 0.3798,
+    "null_W1_median_same_n": 0.585603112840467
+  },
+  "synthetic_BI_calibrated": {
+    "n": 4,
+    "mean": 2.25,
+    "sd": 1.5,
+    "proportions_1to5": [
+      0.5,
+      0.0,
+      0.25,
+      0.25,
+      0.0
+    ],
+    "neg_1_2": 0.5,
+    "neu_3": 0.25,
+    "pos_4_5": 0.25,
+    "wasserstein_W1_vs_human": 1.2636186770428015,
+    "JSD_vs_human_base2": 0.24592604594483103,
+    "share_of_random_human_samples_with_W1_at_least_this": 0.0288,
+    "null_W1_median_same_n": 0.5447470817120622
+  },
+  "synthetic_BI_E": {
+    "values": [
+      3.894,
+      3.332,
+      3.006,
+      3.021
+    ],
+    "mean": 3.3132836534019265,
+    "sd": 0.41519839154305094
+  },
+  "SECONDARY_all24_not_comparable_to_Q21": {
+    "canonical": {
+      "n": 24,
+      "mean": 3.75,
+      "sd": 0.531609533071195,
+      "proportions_1to5": [
+        0.0,
+        0.0,
+        0.2917,
+        0.6667,
+        0.0417
+      ],
+      "neg_1_2": 0.0,
+      "neu_3": 0.2916666666666667,
+      "pos_4_5": 0.7083333333333333,
+      "wasserstein_W1_vs_human": 0.5810635538261997,
+      "JSD_vs_human_base2": 0.1614113078653539,
+      "share_of_random_human_samples_with_W1_at_least_this": 0.0118,
+      "null_W1_median_same_n": 0.23557068741893636
+    },
+    "calibrated_BI_thresholds_misapplied": {
+      "n": 24,
+      "mean": 3.5416666666666665,
+      "sd": 1.5597983890531346,
+      "proportions_1to5": [
+        0.2083,
+        0.0417,
+        0.125,
+        0.25,
+        0.375
+      ],
+      "neg_1_2": 0.25,
+      "neu_3": 0.125,
+      "pos_4_5": 0.625,
+      "wasserstein_W1_vs_human": 0.4855706874189365,
+      "JSD_vs_human_base2": 0.0707895726131362,
+      "share_of_random_human_samples_with_W1_at_least_this": 0.046,
+      "null_W1_median_same_n": 0.23638132295719838
+    },
+    "note": "non-BI constructs use other anchor sets; Q21 is not their human counterpart"
+  },
+  "persona": [
+    {
+      "persona": "P1",
+      "human_n": 87,
+      "human_mean": 4.011494252873563,
+      "human_sd": 1.0943220570295886,
+      "human_props": [
+        0.057,
+        0.011,
+        0.207,
+        0.31,
+        0.414
+      ],
+      "syn_BI_text": "I think I'll keep using this phone for a while. The AI features like the personal assistant and camera enhancement are pretty handy, especially for studying and social media. And the smooth performance is good for my daily tasks. Even though it's not as fancy as my last phone, it feels like it has enough power and AI features to meet my needs without breaking the bank.",
+      "syn_E": 3.893853689240306,
+      "syn_canonical": 4,
+      "syn_calibrated": 4,
+      "judge_ref_phase6": 4,
+      "human_pct_at_or_below_syn_calibrated": 0.5862068965517241,
+      "syn_all6_E_mean": 4.115879783755927
+    },
+    {
+      "persona": "P2",
+      "human_n": 52,
+      "human_mean": 3.0,
+      "human_sd": 1.066421540461737,
+      "human_props": [
+        0.154,
+        0.038,
+        0.519,
+        0.231,
+        0.058
+      ],
+      "syn_BI_text": "This phone has been really helpful for my photography and videos, and the AI camera enhancement is a game-changer. The smooth performance and on-device AI processing also make it easy to use without worrying about data privacy. But at ₹24,999, I'm not sure if the extra cost is worth it, considering I usually replace my phone every 3-4 years. I might keep it for now, but I'll probably go for something less expensive next time.",
+      "syn_E": 3.3320959746191443,
+      "syn_canonical": 3,
+      "syn_calibrated": 3,
+      "judge_ref_phase6": 3,
+      "human_pct_at_or_below_syn_calibrated": 0.7115384615384616,
+      "syn_all6_E_mean": 3.9669874908727962
+    },
+    {
+      "persona": "P3",
+      "human_n": 86,
+      "human_mean": 3.2674418604651163,
+      "human_sd": 1.078391161211936,
+      "human_props": [
+        0.105,
+        0.058,
+        0.407,
+        0.326,
+        0.105
+      ],
+      "syn_BI_text": "This phone is pretty handy for gaming and study, and the AI features are cool, but I'm not sure if it's worth the price. It stops working sometimes, and I've been there before where my previous phone just stopped working. The battery optimization sounds good, but I don't want to replace it too often.",
+      "syn_E": 3.00571725735045,
+      "syn_canonical": 3,
+      "syn_calibrated": 1,
+      "judge_ref_phase6": 3,
+      "human_pct_at_or_below_syn_calibrated": 0.10465116279069768,
+      "syn_all6_E_mean": 3.6910610962243537
+    },
+    {
+      "persona": "P4",
+      "human_n": 32,
+      "human_mean": 3.65625,
+      "human_sd": 1.1247759633553411,
+      "human_props": [
+        0.062,
+        0.094,
+        0.188,
+        0.438,
+        0.219
+      ],
+      "syn_BI_text": "This phone seems a bit pricey for what I need, but the AI features like the personal assistant and camera enhancement could be handy. I mainly use my phone for social media and studying, so the smooth performance and simple interface might work well for me. Still, I'm not sure if the price is worth it for me.",
+      "syn_E": 3.021467692397805,
+      "syn_canonical": 3,
+      "syn_calibrated": 1,
+      "judge_ref_phase6": 3,
+      "human_pct_at_or_below_syn_calibrated": 0.0625,
+      "syn_all6_E_mean": 3.4105331739889917
+    }
+  ],
+  "persona_rank_agreement": {
+    "human_mean_order": [
+      "P1",
+      "P4",
+      "P3",
+      "P2"
+    ],
+    "synthetic_E_order": [
+      "P1",
+      "P2",
+      "P4",
+      "P3"
+    ],
+    "spearman_n4": 0.39999999999999997,
+    "human_kruskal_p": 3.882582141258556e-08,
+    "human_P1_minus_P2": 1.0114942528735629,
+    "synthetic_P1_minus_P2_E": 0.5617577146211619
+  },
+  "text": {
+    "synthetic_BI": {
+      "n": 4,
+      "words_mean": 63.5,
+      "words_sd": 9.39858145324779,
+      "starts_this_phone": 3,
+      "distinct_3w_openings": 4,
+      "repeated_5grams": 7,
+      "openings": [
+        "i think i'll keep using this",
+        "this phone has been really helpful",
+        "this phone is pretty handy for",
+        "this phone seems a bit pricey"
+      ]
+    },
+    "synthetic_all24": {
+      "n": 24,
+      "words_mean": 56.041666666666664,
+      "words_sd": 11.047247017545443,
+      "starts_this_phone": 18,
+      "distinct_3w_openings": 13,
+      "repeated_5grams": 69,
+      "openings": [
+        "this phone really helps me get",
+        "learning to use this phone was",
+        "this phone is really fun to",
+        "people who are important to me",
+        "this phone feels safer because the",
+        "i think i'll keep using this",
+        "this phone really makes taking photos",
+        "this phone is really easy to",
+        "this phone is really fun to",
+        "people around me whose technology use",
+        "this phone feels like it gives",
+        "this phone has been really helpful",
+        "this phone helps me a lot",
+        "this phone is pretty easy to",
+        "this phone is really fun to",
+        "my friends and family would probably",
+        "this phone gives me some control",
+        "this phone is pretty handy for",
+        "this phone is pretty handy for",
+        "this phone has a simple interface",
+        "this phone is pretty fun to",
+        "my family would say it's a",
+        "this phone gives me some control",
+        "this phone seems a bit pricey"
+      ]
+    },
+    "human_Q26_words_mean_median": [
+      11.03968253968254,
+      5.0
+    ],
+    "human_Q26_starts_yes_no": [
+      169,
+      29
+    ],
+    "phase10_reference": "persona differentiation 0.157 (cross-persona same-construct mpnet cosine 0.843); see Phase 10"
+  }
+}

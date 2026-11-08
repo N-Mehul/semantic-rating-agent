@@ -1,0 +1,45 @@
+{
+  "name": "Samsung Galaxy M35",
+  "category": "Smartphone",
+  "description": "A smartphone designed for daily communication, entertainment, photography, and productivity.",
+  "price_inr": 19999.0,
+  "target_group": "all",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Android",
+  "features": [
+    {
+      "name": "A Smartphone Designed For",
+      "explanation": "A smartphone designed for daily communication, entertainment, photography,",
+      "category": null
+    },
+    {
+      "name": "Productivity",
+      "explanation": "productivity",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "ssr_method": "improved",
+  "ssr_method_label": "Improved SSR (Experimental, k=3, T=0.75)",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Smartphone",
+    "product_noun": "smartphone",
+    "usage_role": "primary phone",
+    "brand_or_ecosystem": "Android",
+    "features_count": 2,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-05T17:54:23.186961+00:00"
+}

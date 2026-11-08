@@ -1,0 +1,543 @@
+{
+  "evaluation_id": "zenith_vision_pro_5g_20261031_182828",
+  "product_name": "Zenith Vision Pro 5G",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-31T13:00:31.058190+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 1,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 4.0281,
+  "overall_adoption_average": 4.0281,
+  "primary_adoption_average": 4.0281,
+  "construct_averages": {
+    "PE": 3.2967,
+    "EE": 4.0247,
+    "HM": 4.0139,
+    "SI": 4.0081,
+    "PP": 3.7109,
+    "BI": 4.0281
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 6,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "primary_adoption_rating": 4.0281,
+      "primary_adoption_pmf": [
+        0.0,
+        0.122846,
+        0.087036,
+        0.429308,
+        0.36081
+      ],
+      "construct_scores": {
+        "PE": 3.2967,
+        "EE": 4.0247,
+        "HM": 4.0139,
+        "SI": 4.0081,
+        "PP": 3.7109,
+        "BI": 4.0281
+      },
+      "construct_responses": {
+        "PE": "The Zenith Vision Pro 5G has a top-of-the-line processor that will handle all my study and work tasks with ease. The 2K AMOLED display and fast performance will make multitasking a breeze, and the AI personal assistant will help with reminders and notifications, making my daily routine smoother.",
+        "EE": "The interface is clean and user-friendly, with optional AI suggestions that can be handy without being intrusive. The AI camera enhancement and smart battery optimization add a layer of convenience, but the initial learning curve might be a bit steep for those who are not tech-savvy.",
+        "HM": "The high-grade display and smooth performance will make gaming and video streaming a joy. The 180MP AI camera will capture stunning photos and videos, which is a definite plus for a content creator like me. The premium build quality and advanced features will make this phone a status symbol among my college peers.",
+        "SI": "My college friends and peers will be envious of the Zenith Vision Pro 5G's advanced features and premium design. It will definitely boost my social standing and make me the go-to guy for tech advice.",
+        "PP": "The on-device AI processing and advanced security features give me peace of mind, knowing that my data is safe and my privacy is protected. The 6 years of software updates ensure that the phone remains future-proof and secure.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone; it perfectly fits my daily needs and the budget I have. The advanced features and premium build quality justify the price and provide a seamless experience.",
+        "OVERALL": "Overall, the Zenith Vision Pro 5G is a premium smartphone that meets all my requirements for study, work, and entertainment. The advanced features and long-term support make it a worthwhile investment within my budget."
+      },
+      "response_text": "Overall, the Zenith Vision Pro 5G is a premium smartphone that meets all my requirements for study, work, and entertainment. The advanced features and long-term support make it a worthwhile investment within my budget.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The Zenith Vision Pro 5G has a top-of-the-line processor that will handle all my study and work tasks with ease. The 2K AMOLED display and fast performance will make multitasking a breeze, and the AI personal assistant will help with reminders and notifications, making my daily routine smoother.",
+          "cosine_similarities": [
+            0.651933,
+            0.660134,
+            0.623521,
+            0.705643,
+            0.655794
+          ],
+          "min_similarity": 0.623521,
+          "pmf_probabilities": [
+            0.158355,
+            0.204061,
+            0.0,
+            0.457709,
+            0.179875
+          ],
+          "expected_rating": 3.2967,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The interface is clean and user-friendly, with optional AI suggestions that can be handy without being intrusive. The AI camera enhancement and smart battery optimization add a layer of convenience, but the initial learning curve might be a bit steep for those who are not tech-savvy.",
+          "cosine_similarities": [
+            0.550346,
+            0.559113,
+            0.627127,
+            0.643685,
+            0.651587
+          ],
+          "min_similarity": 0.550346,
+          "pmf_probabilities": [
+            0.0,
+            0.031299,
+            0.274091,
+            0.333201,
+            0.361408
+          ],
+          "expected_rating": 4.0247,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The high-grade display and smooth performance will make gaming and video streaming a joy. The 180MP AI camera will capture stunning photos and videos, which is a definite plus for a content creator like me. The premium build quality and advanced features will make this phone a status symbol among my college peers.",
+          "cosine_similarities": [
+            0.528774,
+            0.560419,
+            0.567634,
+            0.59319,
+            0.63427
+          ],
+          "min_similarity": 0.528774,
+          "pmf_probabilities": [
+            0.0,
+            0.131624,
+            0.161636,
+            0.267933,
+            0.438806
+          ],
+          "expected_rating": 4.0139,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My college friends and peers will be envious of the Zenith Vision Pro 5G's advanced features and premium design. It will definitely boost my social standing and make me the go-to guy for tech advice.",
+          "cosine_similarities": [
+            0.609742,
+            0.589956,
+            0.633368,
+            0.652266,
+            0.694579
+          ],
+          "min_similarity": 0.589956,
+          "pmf_probabilities": [
+            0.085976,
+            0.0,
+            0.188639,
+            0.27076,
+            0.454625
+          ],
+          "expected_rating": 4.0081,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The on-device AI processing and advanced security features give me peace of mind, knowing that my data is safe and my privacy is protected. The 6 years of software updates ensure that the phone remains future-proof and secure.",
+          "cosine_similarities": [
+            0.724932,
+            0.681301,
+            0.670352,
+            0.748404,
+            0.782156
+          ],
+          "min_similarity": 0.670352,
+          "pmf_probabilities": [
+            0.213717,
+            0.042873,
+            0.0,
+            0.305626,
+            0.437784
+          ],
+          "expected_rating": 3.7109,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone; it perfectly fits my daily needs and the budget I have. The advanced features and premium build quality justify the price and provide a seamless experience.",
+          "cosine_similarities": [
+            0.653551,
+            0.681454,
+            0.673321,
+            0.751063,
+            0.735505
+          ],
+          "min_similarity": 0.653551,
+          "pmf_probabilities": [
+            0.0,
+            0.122846,
+            0.087036,
+            0.429308,
+            0.36081
+          ],
+          "expected_rating": 4.0281,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.651933,
+        0.660134,
+        0.623521,
+        0.705643,
+        0.655794
+      ],
+      "pmf_probabilities": [
+        0.158355,
+        0.204061,
+        0.0,
+        0.457709,
+        0.179875
+      ],
+      "expected_rating": 3.2967,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.550346,
+        0.559113,
+        0.627127,
+        0.643685,
+        0.651587
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.031299,
+        0.274091,
+        0.333201,
+        0.361408
+      ],
+      "expected_rating": 4.0247,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.528774,
+        0.560419,
+        0.567634,
+        0.59319,
+        0.63427
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.131624,
+        0.161636,
+        0.267933,
+        0.438806
+      ],
+      "expected_rating": 4.0139,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.609742,
+        0.589956,
+        0.633368,
+        0.652266,
+        0.694579
+      ],
+      "pmf_probabilities": [
+        0.085976,
+        0.0,
+        0.188639,
+        0.27076,
+        0.454625
+      ],
+      "expected_rating": 4.0081,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.724932,
+        0.681301,
+        0.670352,
+        0.748404,
+        0.782156
+      ],
+      "pmf_probabilities": [
+        0.213717,
+        0.042873,
+        0.0,
+        0.305626,
+        0.437784
+      ],
+      "expected_rating": 3.7109,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.653551,
+        0.681454,
+        0.673321,
+        0.751063,
+        0.735505
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.122846,
+        0.087036,
+        0.429308,
+        0.36081
+      ],
+      "expected_rating": 4.0281,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.651933,
+      "cos_sim_2": 0.660134,
+      "cos_sim_3": 0.623521,
+      "cos_sim_4": 0.705643,
+      "cos_sim_5": 0.655794,
+      "min_similarity": 0.623521,
+      "p1": 0.158355,
+      "p2": 0.204061,
+      "p3": 0.0,
+      "p4": 0.457709,
+      "p5": 0.179875,
+      "set_expected_rating": 3.2967,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.550346,
+      "cos_sim_2": 0.559113,
+      "cos_sim_3": 0.627127,
+      "cos_sim_4": 0.643685,
+      "cos_sim_5": 0.651587,
+      "min_similarity": 0.550346,
+      "p1": 0.0,
+      "p2": 0.031299,
+      "p3": 0.274091,
+      "p4": 0.333201,
+      "p5": 0.361408,
+      "set_expected_rating": 4.0247,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.528774,
+      "cos_sim_2": 0.560419,
+      "cos_sim_3": 0.567634,
+      "cos_sim_4": 0.59319,
+      "cos_sim_5": 0.63427,
+      "min_similarity": 0.528774,
+      "p1": 0.0,
+      "p2": 0.131624,
+      "p3": 0.161636,
+      "p4": 0.267933,
+      "p5": 0.438806,
+      "set_expected_rating": 4.0139,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.609742,
+      "cos_sim_2": 0.589956,
+      "cos_sim_3": 0.633368,
+      "cos_sim_4": 0.652266,
+      "cos_sim_5": 0.694579,
+      "min_similarity": 0.589956,
+      "p1": 0.085976,
+      "p2": 0.0,
+      "p3": 0.188639,
+      "p4": 0.27076,
+      "p5": 0.454625,
+      "set_expected_rating": 4.0081,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.724932,
+      "cos_sim_2": 0.681301,
+      "cos_sim_3": 0.670352,
+      "cos_sim_4": 0.748404,
+      "cos_sim_5": 0.782156,
+      "min_similarity": 0.670352,
+      "p1": 0.213717,
+      "p2": 0.042873,
+      "p3": 0.0,
+      "p4": 0.305626,
+      "p5": 0.437784,
+      "set_expected_rating": 3.7109,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Vision Pro 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.653551,
+      "cos_sim_2": 0.681454,
+      "cos_sim_3": 0.673321,
+      "cos_sim_4": 0.751063,
+      "cos_sim_5": 0.735505,
+      "min_similarity": 0.653551,
+      "p1": 0.0,
+      "p2": 0.122846,
+      "p3": 0.087036,
+      "p4": 0.429308,
+      "p5": 0.36081,
+      "set_expected_rating": 4.0281,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

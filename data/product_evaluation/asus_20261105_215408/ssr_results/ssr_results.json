@@ -1,0 +1,2675 @@
+{
+  "evaluation_id": "asus_20261105_215408",
+  "product_name": "asus",
+  "ssr_method": "improved",
+  "ssr_method_label": "Improved SSR (Experimental, k=3, T=0.75)",
+  "k_truncation": 3,
+  "temperature": 0.75,
+  "comparison_summary": {
+    "active_ssr_method": "improved",
+    "active_ssr_label": "Improved SSR (Experimental, k=3, T=0.75)",
+    "is_comparison_mode": false,
+    "canonical": {
+      "method": "Canonical SSR (Original Reference Baseline)",
+      "k_truncation": 5,
+      "temperature": 1.0,
+      "primary_adoption_average": 3.1154,
+      "construct_averages": {
+        "PE": 2.854,
+        "EE": 3.7567,
+        "HM": 3.4658,
+        "SI": 3.3408,
+        "PP": 3.7181,
+        "BI": 3.1154
+      }
+    },
+    "improved": {
+      "method": "Improved SSR (Experimental)",
+      "k_truncation": 3,
+      "temperature": 0.75,
+      "primary_adoption_average": 2.8451,
+      "construct_averages": {
+        "PE": 2.8839,
+        "EE": 4.0194,
+        "HM": 3.4337,
+        "SI": 3.5009,
+        "PP": 3.7511,
+        "BI": 2.8451
+      }
+    },
+    "deltas": {
+      "primary_adoption_delta": -0.2703,
+      "construct_deltas": {
+        "PE": 0.0299,
+        "EE": 0.2627,
+        "HM": -0.0321,
+        "SI": 0.1601,
+        "PP": 0.033,
+        "BI": -0.2703
+      }
+    },
+    "persona_comparison": [
+      {
+        "persona_id": "P1_premium_tier_owner",
+        "canonical_adoption_rating": 3.4676,
+        "improved_adoption_rating": 3.3629,
+        "delta": -0.1047
+      },
+      {
+        "persona_id": "P2_midrange_heavy_user",
+        "canonical_adoption_rating": 3.3683,
+        "improved_adoption_rating": 3.0771,
+        "delta": -0.2912
+      },
+      {
+        "persona_id": "P3_midrange_moderate_user",
+        "canonical_adoption_rating": 3.012,
+        "improved_adoption_rating": 2.7082,
+        "delta": -0.3038
+      },
+      {
+        "persona_id": "P4_budget_or_undisclosed_price",
+        "canonical_adoption_rating": 2.6138,
+        "improved_adoption_rating": 2.2323,
+        "delta": -0.3815
+      }
+    ]
+  },
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Improved SSR (Experimental, k=3, T=0.75))",
+  "timestamp_utc": "2026-11-05T16:31:06.777448+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 2.8451,
+  "overall_adoption_average": 2.8451,
+  "primary_adoption_average": 2.8451,
+  "construct_averages": {
+    "PE": 2.8839,
+    "EE": 4.0194,
+    "HM": 3.4337,
+    "SI": 3.5009,
+    "PP": 3.7511,
+    "BI": 2.8451
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "primary_adoption_rating": 3.3629,
+      "primary_adoption_pmf": [
+        0.0,
+        0.200916,
+        0.517201,
+        0.0,
+        0.281883
+      ],
+      "construct_scores": {
+        "PE": 2.444,
+        "EE": 4.0675,
+        "HM": 3.0935,
+        "SI": 3.0305,
+        "PP": 3.0215,
+        "BI": 3.3629
+      },
+      "construct_responses": {
+        "PE": "The device seems capable for its intended use, with good performance specs. However, for a premium tier product, it feels a bit underwhelming given its price point. It lacks some of the cutting-edge features that one would expect from a flagship device.",
+        "EE": "Setting it up is straightforward, but the user interface could be more intuitive. Some features might require more effort to navigate, especially for someone who is not tech-savvy.",
+        "HM": "It feels satisfying to use for daily tasks, but the audio quality is only average, which might not impress tech enthusiasts or audiophiles. The display is decent, but not outstanding.",
+        "SI": "Colleagues and friends might be intrigued by its design, but they might also question its value for the price. It's not as flashy as some premium flagships, but it's still a step up from mid-range options.",
+        "PP": "The build feels sturdy, and the hardware seems reliable. However, with mid-tier materials, it might not stand the test of time as well as a truly premium device. Data security features are basic, which is fine, but nothing too advanced.",
+        "BI": "Given its price, I'm hesitant to adopt it as a premium device. It lacks the distinctive craftsmanship and refined experience that I expect from a premium flagship. However, if it genuinely delivers exceptional quality and refinement, I might consider it as a mid-range alternative.",
+        "OVERALL": "While the device has some solid features, it feels like it's missing the mark for a premium flagship product. It's a solid choice, but not without some doubts about its true premium status."
+      },
+      "response_text": "While the device has some solid features, it feels like it's missing the mark for a premium flagship product. It's a solid choice, but not without some doubts about its true premium status.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The device seems capable for its intended use, with good performance specs. However, for a premium tier product, it feels a bit underwhelming given its price point. It lacks some of the cutting-edge features that one would expect from a flagship device.",
+          "cosine_similarities": [
+            0.576651,
+            0.609118,
+            0.625806,
+            0.558446,
+            0.575456
+          ],
+          "min_similarity": 0.558446,
+          "pmf_probabilities": [
+            0.093995,
+            0.368046,
+            0.537959,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 2.444,
+          "canonical": {
+            "pmf_probabilities": [
+              0.118791,
+              0.330658,
+              0.439556,
+              0.0,
+              0.110995
+            ],
+            "expected_rating": 2.6537
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.093995,
+              0.368046,
+              0.537959,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 2.444
+          },
+          "delta_improved_minus_canonical": -0.2098,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting it up is straightforward, but the user interface could be more intuitive. Some features might require more effort to navigate, especially for someone who is not tech-savvy.",
+          "cosine_similarities": [
+            0.628061,
+            0.619825,
+            0.656324,
+            0.642165,
+            0.661214
+          ],
+          "min_similarity": 0.619825,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.370071,
+            0.192316,
+            0.437613
+          ],
+          "expected_rating": 4.0675,
+          "canonical": {
+            "pmf_probabilities": [
+              0.07593,
+              0.0,
+              0.33651,
+              0.205966,
+              0.381594
+            ],
+            "expected_rating": 3.8173
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.370071,
+              0.192316,
+              0.437613
+            ],
+            "expected_rating": 4.0675
+          },
+          "delta_improved_minus_canonical": 0.2502,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "It feels satisfying to use for daily tasks, but the audio quality is only average, which might not impress tech enthusiasts or audiophiles. The display is decent, but not outstanding.",
+          "cosine_similarities": [
+            0.574469,
+            0.624756,
+            0.617121,
+            0.635307,
+            0.600145
+          ],
+          "min_similarity": 0.574469,
+          "pmf_probabilities": [
+            0.0,
+            0.323416,
+            0.259663,
+            0.416922,
+            0.0
+          ],
+          "expected_rating": 3.0935,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.280224,
+              0.237679,
+              0.33902,
+              0.143078
+            ],
+            "expected_rating": 3.345
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.323416,
+              0.259663,
+              0.416922,
+              0.0
+            ],
+            "expected_rating": 3.0935
+          },
+          "delta_improved_minus_canonical": -0.2514,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Colleagues and friends might be intrigued by its design, but they might also question its value for the price. It's not as flashy as some premium flagships, but it's still a step up from mid-range options.",
+          "cosine_similarities": [
+            0.53293,
+            0.581816,
+            0.624684,
+            0.586782,
+            0.531887
+          ],
+          "min_similarity": 0.531887,
+          "pmf_probabilities": [
+            0.0,
+            0.226248,
+            0.517011,
+            0.256741,
+            0.0
+          ],
+          "expected_rating": 3.0305,
+          "canonical": {
+            "pmf_probabilities": [
+              0.005249,
+              0.251323,
+              0.467108,
+              0.276321,
+              0.0
+            ],
+            "expected_rating": 3.0145
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.226248,
+              0.517011,
+              0.256741,
+              0.0
+            ],
+            "expected_rating": 3.0305
+          },
+          "delta_improved_minus_canonical": 0.016,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build feels sturdy, and the hardware seems reliable. However, with mid-tier materials, it might not stand the test of time as well as a truly premium device. Data security features are basic, which is fine, but nothing too advanced.",
+          "cosine_similarities": [
+            0.536869,
+            0.551168,
+            0.562263,
+            0.552137,
+            0.547221
+          ],
+          "min_similarity": 0.536869,
+          "pmf_probabilities": [
+            0.0,
+            0.235735,
+            0.506987,
+            0.257278,
+            0.0
+          ],
+          "expected_rating": 3.0215,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.218928,
+              0.388805,
+              0.233769,
+              0.158498
+            ],
+            "expected_rating": 3.3318
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.235735,
+              0.506987,
+              0.257278,
+              0.0
+            ],
+            "expected_rating": 3.0215
+          },
+          "delta_improved_minus_canonical": -0.3103,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Given its price, I'm hesitant to adopt it as a premium device. It lacks the distinctive craftsmanship and refined experience that I expect from a premium flagship. However, if it genuinely delivers exceptional quality and refinement, I might consider it as a mid-range alternative.",
+          "cosine_similarities": [
+            0.52197,
+            0.559081,
+            0.597389,
+            0.552827,
+            0.56981
+          ],
+          "min_similarity": 0.52197,
+          "pmf_probabilities": [
+            0.0,
+            0.200916,
+            0.517201,
+            0.0,
+            0.281883
+          ],
+          "expected_rating": 3.3629,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.194066,
+              0.394397,
+              0.161364,
+              0.250173
+            ],
+            "expected_rating": 3.4676
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.200916,
+              0.517201,
+              0.0,
+              0.281883
+            ],
+            "expected_rating": 3.3629
+          },
+          "delta_improved_minus_canonical": -0.1048,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "primary_adoption_rating": 3.0771,
+      "primary_adoption_pmf": [
+        0.0,
+        0.181228,
+        0.560399,
+        0.258373,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 4.1609,
+        "EE": 4.3002,
+        "HM": 3.3194,
+        "SI": 3.8106,
+        "PP": 3.8244,
+        "BI": 3.0771
+      },
+      "construct_responses": {
+        "PE": "The product seems quite powerful and well-suited for intensive daily tasks with its robust hardware and fast processors. However, I'm concerned about whether its specifications match the on the higher side price tag for a tech enthusiast who demands top-tier performance.",
+        "EE": "Setting up and navigating the device appears straightforward, but the interface could be more intuitive for beginners. The controls are responsive, but there's room for improvement in terms of user-friendliness.",
+        "HM": "Using the device for daily tasks and media viewing is likely to be pleasant, though the display quality and battery life could be better. The sound and visuals are decent, but not outstanding.",
+        "SI": "Peers and colleagues who are tech-savvy would likely appreciate the device's capabilities, but those who prioritize affordability might be hesitant. The product seems to offer a lot, so it could be well-received in professional circles.",
+        "PP": "The build quality feels solid and durable, and the hardware reliability is expected to be high. Data security features, if any, are not explicitly mentioned, but the device is likely to protect personal data adequately.",
+        "BI": "Given the price, I'm hesitant to fully commit. While the device seems capable, I need more assurance that it can handle heavy workloads without throttling. If it performs as advertised, I would consider adopting it for my daily needs, but I need to see more before making a decision.",
+        "OVERALL": "The device offers impressive specs and potential, but its high price makes me pause. If it delivers on its promises, it could be a great fit for my daily tasks, but I need to see more evidence of its performance."
+      },
+      "response_text": "The device offers impressive specs and potential, but its high price makes me pause. If it delivers on its promises, it could be a great fit for my daily tasks, but I need to see more evidence of its performance.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The product seems quite powerful and well-suited for intensive daily tasks with its robust hardware and fast processors. However, I'm concerned about whether its specifications match the on the higher side price tag for a tech enthusiast who demands top-tier performance.",
+          "cosine_similarities": [
+            0.475732,
+            0.49899,
+            0.499366,
+            0.511428,
+            0.511165
+          ],
+          "min_similarity": 0.475732,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.224782,
+            0.38952,
+            0.385699
+          ],
+          "expected_rating": 4.1609,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.197068,
+              0.200254,
+              0.302453,
+              0.300225
+            ],
+            "expected_rating": 3.7058
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.224782,
+              0.38952,
+              0.385699
+            ],
+            "expected_rating": 4.1609
+          },
+          "delta_improved_minus_canonical": 0.4551,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and navigating the device appears straightforward, but the interface could be more intuitive for beginners. The controls are responsive, but there's room for improvement in terms of user-friendliness.",
+          "cosine_similarities": [
+            0.60412,
+            0.590373,
+            0.606252,
+            0.653123,
+            0.639745
+          ],
+          "min_similarity": 0.590373,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.084848,
+            0.530105,
+            0.385047
+          ],
+          "expected_rating": 4.3002,
+          "canonical": {
+            "pmf_probabilities": [
+              0.09698,
+              0.0,
+              0.112023,
+              0.442689,
+              0.348307
+            ],
+            "expected_rating": 3.9453
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.084848,
+              0.530105,
+              0.385047
+            ],
+            "expected_rating": 4.3002
+          },
+          "delta_improved_minus_canonical": 0.3549,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the device for daily tasks and media viewing is likely to be pleasant, though the display quality and battery life could be better. The sound and visuals are decent, but not outstanding.",
+          "cosine_similarities": [
+            0.629377,
+            0.651492,
+            0.655606,
+            0.67371,
+            0.641598
+          ],
+          "min_similarity": 0.629377,
+          "pmf_probabilities": [
+            0.0,
+            0.20907,
+            0.262471,
+            0.52846,
+            0.0
+          ],
+          "expected_rating": 3.3194,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.210825,
+              0.250043,
+              0.422632,
+              0.1165
+            ],
+            "expected_rating": 3.4448
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.20907,
+              0.262471,
+              0.52846,
+              0.0
+            ],
+            "expected_rating": 3.3194
+          },
+          "delta_improved_minus_canonical": -0.1254,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers and colleagues who are tech-savvy would likely appreciate the device's capabilities, but those who prioritize affordability might be hesitant. The product seems to offer a lot, so it could be well-received in professional circles.",
+          "cosine_similarities": [
+            0.602615,
+            0.569193,
+            0.648761,
+            0.629015,
+            0.621572
+          ],
+          "min_similarity": 0.569193,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.443205,
+            0.30299,
+            0.253804
+          ],
+          "expected_rating": 3.8106,
+          "canonical": {
+            "pmf_probabilities": [
+              0.148416,
+              0.0,
+              0.353337,
+              0.265648,
+              0.2326
+            ],
+            "expected_rating": 3.434
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.443205,
+              0.30299,
+              0.253804
+            ],
+            "expected_rating": 3.8106
+          },
+          "delta_improved_minus_canonical": 0.3766,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality feels solid and durable, and the hardware reliability is expected to be high. Data security features, if any, are not explicitly mentioned, but the device is likely to protect personal data adequately.",
+          "cosine_similarities": [
+            0.618206,
+            0.589124,
+            0.558522,
+            0.655348,
+            0.663293
+          ],
+          "min_similarity": 0.558522,
+          "pmf_probabilities": [
+            0.19905,
+            0.0,
+            0.0,
+            0.379441,
+            0.42151
+          ],
+          "expected_rating": 3.8244,
+          "canonical": {
+            "pmf_probabilities": [
+              0.204478,
+              0.104845,
+              0.0,
+              0.331729,
+              0.358948
+            ],
+            "expected_rating": 3.5358
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.19905,
+              0.0,
+              0.0,
+              0.379441,
+              0.42151
+            ],
+            "expected_rating": 3.8244
+          },
+          "delta_improved_minus_canonical": 0.2885,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Given the price, I'm hesitant to fully commit. While the device seems capable, I need more assurance that it can handle heavy workloads without throttling. If it performs as advertised, I would consider adopting it for my daily needs, but I need to see more before making a decision.",
+          "cosine_similarities": [
+            0.539095,
+            0.582796,
+            0.641,
+            0.596112,
+            0.576672
+          ],
+          "min_similarity": 0.539095,
+          "pmf_probabilities": [
+            0.0,
+            0.181228,
+            0.560399,
+            0.258373,
+            0.0
+          ],
+          "expected_rating": 3.0771,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.181935,
+              0.424249,
+              0.237374,
+              0.156442
+            ],
+            "expected_rating": 3.3683
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.181228,
+              0.560399,
+              0.258373,
+              0.0
+            ],
+            "expected_rating": 3.0771
+          },
+          "delta_improved_minus_canonical": -0.2912,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "primary_adoption_rating": 2.7082,
+      "primary_adoption_pmf": [
+        0.0,
+        0.410884,
+        0.470081,
+        0.119035,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 2.2737,
+        "EE": 4.0136,
+        "HM": 3.523,
+        "SI": 3.0021,
+        "PP": 3.9054,
+        "BI": 2.7082
+      },
+      "construct_responses": {
+        "PE": "The laptop offers a powerful processor and ample RAM, which should handle most tasks smoothly. However, its price makes it hard to justify for everyday use when simpler options are available.",
+        "EE": "Setting up the laptop is straightforward, but with a price tag this high, it's worth noting that more expensive devices often come with premium support and customization options.",
+        "HM": "Using it for daily tasks would be pleasant due to its high-resolution display and fast performance, but the on the higher side price might make it less appealing compared to budget-friendly alternatives.",
+        "SI": "Peers might be impressed by its advanced features and performance, but many might prefer more affordable options that still get the job done effectively.",
+        "PP": "The build quality seems robust, with a durable design, but the high price might make it less attractive compared to more cost-effective, yet reliable options.",
+        "BI": "Given the price, I would hesitate to adopt this for routine tasks. Simple, more affordable laptops can easily meet everyday needs without the hefty cost.",
+        "OVERALL": "While the laptop has impressive specifications, its high price makes it difficult to recommend for everyday use. More affordable options would likely suffice for most tasks."
+      },
+      "response_text": "While the laptop has impressive specifications, its high price makes it difficult to recommend for everyday use. More affordable options would likely suffice for most tasks.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The laptop offers a powerful processor and ample RAM, which should handle most tasks smoothly. However, its price makes it hard to justify for everyday use when simpler options are available.",
+          "cosine_similarities": [
+            0.61558,
+            0.637201,
+            0.606052,
+            0.615916,
+            0.572427
+          ],
+          "min_similarity": 0.572427,
+          "pmf_probabilities": [
+            0.268166,
+            0.460881,
+            0.0,
+            0.270953,
+            0.0
+          ],
+          "expected_rating": 2.2737,
+          "canonical": {
+            "pmf_probabilities": [
+              0.233208,
+              0.350053,
+              0.181716,
+              0.235024,
+              0.0
+            ],
+            "expected_rating": 2.4186
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.268166,
+              0.460881,
+              0.0,
+              0.270953,
+              0.0
+            ],
+            "expected_rating": 2.2737
+          },
+          "delta_improved_minus_canonical": -0.1448,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up the laptop is straightforward, but with a price tag this high, it's worth noting that more expensive devices often come with premium support and customization options.",
+          "cosine_similarities": [
+            0.503999,
+            0.502688,
+            0.542701,
+            0.496221,
+            0.553111
+          ],
+          "min_similarity": 0.496221,
+          "pmf_probabilities": [
+            0.0384,
+            0.0,
+            0.416412,
+            0.0,
+            0.545189
+          ],
+          "expected_rating": 4.0136,
+          "canonical": {
+            "pmf_probabilities": [
+              0.066131,
+              0.054982,
+              0.39519,
+              0.0,
+              0.483697
+            ],
+            "expected_rating": 3.7801
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0384,
+              0.0,
+              0.416412,
+              0.0,
+              0.545189
+            ],
+            "expected_rating": 4.0136
+          },
+          "delta_improved_minus_canonical": 0.2334,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using it for daily tasks would be pleasant due to its high-resolution display and fast performance, but the on the higher side price might make it less appealing compared to budget-friendly alternatives.",
+          "cosine_similarities": [
+            0.521725,
+            0.523076,
+            0.541487,
+            0.546621,
+            0.520045
+          ],
+          "min_similarity": 0.520045,
+          "pmf_probabilities": [
+            0.0,
+            0.030617,
+            0.415798,
+            0.553584,
+            0.0
+          ],
+          "expected_rating": 3.523,
+          "canonical": {
+            "pmf_probabilities": [
+              0.031865,
+              0.057481,
+              0.406643,
+              0.50401,
+              0.0
+            ],
+            "expected_rating": 3.3828
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.030617,
+              0.415798,
+              0.553584,
+              0.0
+            ],
+            "expected_rating": 3.523
+          },
+          "delta_improved_minus_canonical": 0.1402,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers might be impressed by its advanced features and performance, but many might prefer more affordable options that still get the job done effectively.",
+          "cosine_similarities": [
+            0.511143,
+            0.56881,
+            0.613761,
+            0.569186,
+            0.527659
+          ],
+          "min_similarity": 0.511143,
+          "pmf_probabilities": [
+            0.0,
+            0.240088,
+            0.517729,
+            0.242182,
+            0.0
+          ],
+          "expected_rating": 3.0021,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.245553,
+              0.436962,
+              0.247157,
+              0.070328
+            ],
+            "expected_rating": 3.1423
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.240088,
+              0.517729,
+              0.242182,
+              0.0
+            ],
+            "expected_rating": 3.0021
+          },
+          "delta_improved_minus_canonical": -0.1402,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality seems robust, with a durable design, but the high price might make it less attractive compared to more cost-effective, yet reliable options.",
+          "cosine_similarities": [
+            0.387055,
+            0.397082,
+            0.38769,
+            0.411426,
+            0.400363
+          ],
+          "min_similarity": 0.387055,
+          "pmf_probabilities": [
+            0.0,
+            0.174626,
+            0.0,
+            0.570678,
+            0.254696
+          ],
+          "expected_rating": 3.9054,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.207422,
+              0.013132,
+              0.504157,
+              0.275289
+            ],
+            "expected_rating": 3.8473
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.174626,
+              0.0,
+              0.570678,
+              0.254696
+            ],
+            "expected_rating": 3.9054
+          },
+          "delta_improved_minus_canonical": 0.0581,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Given the price, I would hesitate to adopt this for routine tasks. Simple, more affordable laptops can easily meet everyday needs without the hefty cost.",
+          "cosine_similarities": [
+            0.501855,
+            0.537127,
+            0.540874,
+            0.515783,
+            0.513122
+          ],
+          "min_similarity": 0.501855,
+          "pmf_probabilities": [
+            0.0,
+            0.410884,
+            0.470081,
+            0.119035,
+            0.0
+          ],
+          "expected_rating": 2.7082,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.354543,
+              0.392201,
+              0.140003,
+              0.113253
+            ],
+            "expected_rating": 3.012
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.410884,
+              0.470081,
+              0.119035,
+              0.0
+            ],
+            "expected_rating": 2.7082
+          },
+          "delta_improved_minus_canonical": -0.3038,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "primary_adoption_rating": 2.2323,
+      "primary_adoption_pmf": [
+        0.1724,
+        0.422857,
+        0.404743,
+        0.0,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 2.6571,
+        "EE": 3.6962,
+        "HM": 3.7987,
+        "SI": 4.1606,
+        "PP": 4.2531,
+        "BI": 2.2323
+      },
+      "construct_responses": {
+        "PE": "The laptop is quite capable for daily work and study tasks, with a decent processor and enough RAM. However, it might struggle with more demanding applications or games.",
+        "EE": "Setting it up and navigating the interface is straightforward, but the touchpad responsiveness could be better. The keyboard is comfortable to type on, but the trackpad might feel a bit sluggish at times.",
+        "HM": "It provides a good viewing experience for watching movies and videos, but the display isn't the sharpest. The battery life is decent for most day-to-day activities, but it could use a bit more juice for longer sessions.",
+        "SI": "My friends who use similar laptops think highly of them, saying they are reliable and user-friendly. They appreciate the build quality and the overall performance.",
+        "PP": "The build quality is sturdy, and it feels durable. The security features are minimal, but the laptop is designed to protect sensitive data through its hardware and software.",
+        "BI": "At ₹28,000, this laptop is far too expensive for the price. I would have to seriously consider my financial situation before even thinking about buying it. It offers many features, but the price is a major barrier.",
+        "OVERALL": "While the laptop has many useful features, its high price makes it difficult to justify. I might look for more affordable options that still meet my needs."
+      },
+      "response_text": "While the laptop has many useful features, its high price makes it difficult to justify. I might look for more affordable options that still meet my needs.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The laptop is quite capable for daily work and study tasks, with a decent processor and enough RAM. However, it might struggle with more demanding applications or games.",
+          "cosine_similarities": [
+            0.669869,
+            0.682099,
+            0.658932,
+            0.691705,
+            0.637315
+          ],
+          "min_similarity": 0.637315,
+          "pmf_probabilities": [
+            0.221606,
+            0.339057,
+            0.0,
+            0.439337,
+            0.0
+          ],
+          "expected_rating": 2.6571,
+          "canonical": {
+            "pmf_probabilities": [
+              0.212293,
+              0.292048,
+              0.140969,
+              0.354689,
+              0.0
+            ],
+            "expected_rating": 2.6381
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.221606,
+              0.339057,
+              0.0,
+              0.439337,
+              0.0
+            ],
+            "expected_rating": 2.6571
+          },
+          "delta_improved_minus_canonical": 0.019,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting it up and navigating the interface is straightforward, but the touchpad responsiveness could be better. The keyboard is comfortable to type on, but the trackpad might feel a bit sluggish at times.",
+          "cosine_similarities": [
+            0.529164,
+            0.563039,
+            0.612921,
+            0.573529,
+            0.573958
+          ],
+          "min_similarity": 0.529164,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.536863,
+            0.230083,
+            0.233054
+          ],
+          "expected_rating": 3.6962,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.163811,
+              0.405035,
+              0.21454,
+              0.216614
+            ],
+            "expected_rating": 3.484
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.536863,
+              0.230083,
+              0.233054
+            ],
+            "expected_rating": 3.6962
+          },
+          "delta_improved_minus_canonical": 0.2122,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "It provides a good viewing experience for watching movies and videos, but the display isn't the sharpest. The battery life is decent for most day-to-day activities, but it could use a bit more juice for longer sessions.",
+          "cosine_similarities": [
+            0.565765,
+            0.595025,
+            0.578304,
+            0.614935,
+            0.598524
+          ],
+          "min_similarity": 0.565765,
+          "pmf_probabilities": [
+            0.0,
+            0.240358,
+            0.0,
+            0.480213,
+            0.279429
+          ],
+          "expected_rating": 3.7987,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.236486,
+              0.10134,
+              0.397407,
+              0.264767
+            ],
+            "expected_rating": 3.6905
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.240358,
+              0.0,
+              0.480213,
+              0.279429
+            ],
+            "expected_rating": 3.7987
+          },
+          "delta_improved_minus_canonical": 0.1083,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends who use similar laptops think highly of them, saying they are reliable and user-friendly. They appreciate the build quality and the overall performance.",
+          "cosine_similarities": [
+            0.519982,
+            0.578057,
+            0.578912,
+            0.65049,
+            0.616675
+          ],
+          "min_similarity": 0.519982,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.171763,
+            0.495826,
+            0.332411
+          ],
+          "expected_rating": 4.1606,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.168722,
+              0.171206,
+              0.379156,
+              0.280917
+            ],
+            "expected_rating": 3.7723
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.171763,
+              0.495826,
+              0.332411
+            ],
+            "expected_rating": 4.1606
+          },
+          "delta_improved_minus_canonical": 0.3884,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality is sturdy, and it feels durable. The security features are minimal, but the laptop is designed to protect sensitive data through its hardware and software.",
+          "cosine_similarities": [
+            0.585903,
+            0.587637,
+            0.599268,
+            0.61871,
+            0.614831
+          ],
+          "min_similarity": 0.585903,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.140627,
+            0.465648,
+            0.393725
+          ],
+          "expected_rating": 4.2531,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.022568,
+              0.173948,
+              0.426985,
+              0.376499
+            ],
+            "expected_rating": 4.1574
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.140627,
+              0.465648,
+              0.393725
+            ],
+            "expected_rating": 4.2531
+          },
+          "delta_improved_minus_canonical": 0.0957,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "At ₹28,000, this laptop is far too expensive for the price. I would have to seriously consider my financial situation before even thinking about buying it. It offers many features, but the price is a major barrier.",
+          "cosine_similarities": [
+            0.504435,
+            0.535556,
+            0.533503,
+            0.472015,
+            0.500331
+          ],
+          "min_similarity": 0.472015,
+          "pmf_probabilities": [
+            0.1724,
+            0.422857,
+            0.404743,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 2.2323,
+          "canonical": {
+            "pmf_probabilities": [
+              0.174521,
+              0.342051,
+              0.331002,
+              0.0,
+              0.152427
+            ],
+            "expected_rating": 2.6138
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.1724,
+              0.422857,
+              0.404743,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 2.2323
+          },
+          "delta_improved_minus_canonical": -0.3814,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.576651,
+        0.609118,
+        0.625806,
+        0.558446,
+        0.575456
+      ],
+      "pmf_probabilities": [
+        0.093995,
+        0.368046,
+        0.537959,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 2.444,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.628061,
+        0.619825,
+        0.656324,
+        0.642165,
+        0.661214
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.370071,
+        0.192316,
+        0.437613
+      ],
+      "expected_rating": 4.0675,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.574469,
+        0.624756,
+        0.617121,
+        0.635307,
+        0.600145
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.323416,
+        0.259663,
+        0.416922,
+        0.0
+      ],
+      "expected_rating": 3.0935,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.53293,
+        0.581816,
+        0.624684,
+        0.586782,
+        0.531887
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.226248,
+        0.517011,
+        0.256741,
+        0.0
+      ],
+      "expected_rating": 3.0305,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.536869,
+        0.551168,
+        0.562263,
+        0.552137,
+        0.547221
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.235735,
+        0.506987,
+        0.257278,
+        0.0
+      ],
+      "expected_rating": 3.0215,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.52197,
+        0.559081,
+        0.597389,
+        0.552827,
+        0.56981
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.200916,
+        0.517201,
+        0.0,
+        0.281883
+      ],
+      "expected_rating": 3.3629,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.475732,
+        0.49899,
+        0.499366,
+        0.511428,
+        0.511165
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.224782,
+        0.38952,
+        0.385699
+      ],
+      "expected_rating": 4.1609,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.60412,
+        0.590373,
+        0.606252,
+        0.653123,
+        0.639745
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.084848,
+        0.530105,
+        0.385047
+      ],
+      "expected_rating": 4.3002,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.629377,
+        0.651492,
+        0.655606,
+        0.67371,
+        0.641598
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.20907,
+        0.262471,
+        0.52846,
+        0.0
+      ],
+      "expected_rating": 3.3194,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.602615,
+        0.569193,
+        0.648761,
+        0.629015,
+        0.621572
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.443205,
+        0.30299,
+        0.253804
+      ],
+      "expected_rating": 3.8106,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.618206,
+        0.589124,
+        0.558522,
+        0.655348,
+        0.663293
+      ],
+      "pmf_probabilities": [
+        0.19905,
+        0.0,
+        0.0,
+        0.379441,
+        0.42151
+      ],
+      "expected_rating": 3.8244,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.539095,
+        0.582796,
+        0.641,
+        0.596112,
+        0.576672
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.181228,
+        0.560399,
+        0.258373,
+        0.0
+      ],
+      "expected_rating": 3.0771,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.61558,
+        0.637201,
+        0.606052,
+        0.615916,
+        0.572427
+      ],
+      "pmf_probabilities": [
+        0.268166,
+        0.460881,
+        0.0,
+        0.270953,
+        0.0
+      ],
+      "expected_rating": 2.2737,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.503999,
+        0.502688,
+        0.542701,
+        0.496221,
+        0.553111
+      ],
+      "pmf_probabilities": [
+        0.0384,
+        0.0,
+        0.416412,
+        0.0,
+        0.545189
+      ],
+      "expected_rating": 4.0136,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.521725,
+        0.523076,
+        0.541487,
+        0.546621,
+        0.520045
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.030617,
+        0.415798,
+        0.553584,
+        0.0
+      ],
+      "expected_rating": 3.523,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.511143,
+        0.56881,
+        0.613761,
+        0.569186,
+        0.527659
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.240088,
+        0.517729,
+        0.242182,
+        0.0
+      ],
+      "expected_rating": 3.0021,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.387055,
+        0.397082,
+        0.38769,
+        0.411426,
+        0.400363
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.174626,
+        0.0,
+        0.570678,
+        0.254696
+      ],
+      "expected_rating": 3.9054,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.501855,
+        0.537127,
+        0.540874,
+        0.515783,
+        0.513122
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.410884,
+        0.470081,
+        0.119035,
+        0.0
+      ],
+      "expected_rating": 2.7082,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.669869,
+        0.682099,
+        0.658932,
+        0.691705,
+        0.637315
+      ],
+      "pmf_probabilities": [
+        0.221606,
+        0.339057,
+        0.0,
+        0.439337,
+        0.0
+      ],
+      "expected_rating": 2.6571,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.529164,
+        0.563039,
+        0.612921,
+        0.573529,
+        0.573958
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.536863,
+        0.230083,
+        0.233054
+      ],
+      "expected_rating": 3.6962,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.565765,
+        0.595025,
+        0.578304,
+        0.614935,
+        0.598524
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.240358,
+        0.0,
+        0.480213,
+        0.279429
+      ],
+      "expected_rating": 3.7987,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.519982,
+        0.578057,
+        0.578912,
+        0.65049,
+        0.616675
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.171763,
+        0.495826,
+        0.332411
+      ],
+      "expected_rating": 4.1606,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.585903,
+        0.587637,
+        0.599268,
+        0.61871,
+        0.614831
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.140627,
+        0.465648,
+        0.393725
+      ],
+      "expected_rating": 4.2531,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.504435,
+        0.535556,
+        0.533503,
+        0.472015,
+        0.500331
+      ],
+      "pmf_probabilities": [
+        0.1724,
+        0.422857,
+        0.404743,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 2.2323,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.576651,
+      "cos_sim_2": 0.609118,
+      "cos_sim_3": 0.625806,
+      "cos_sim_4": 0.558446,
+      "cos_sim_5": 0.575456,
+      "min_similarity": 0.558446,
+      "p1": 0.093995,
+      "p2": 0.368046,
+      "p3": 0.537959,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 2.444,
+      "canonical_expected_rating": 2.6537,
+      "improved_expected_rating": 2.444,
+      "delta": -0.2098,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.628061,
+      "cos_sim_2": 0.619825,
+      "cos_sim_3": 0.656324,
+      "cos_sim_4": 0.642165,
+      "cos_sim_5": 0.661214,
+      "min_similarity": 0.619825,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.370071,
+      "p4": 0.192316,
+      "p5": 0.437613,
+      "set_expected_rating": 4.0675,
+      "canonical_expected_rating": 3.8173,
+      "improved_expected_rating": 4.0675,
+      "delta": 0.2502,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.574469,
+      "cos_sim_2": 0.624756,
+      "cos_sim_3": 0.617121,
+      "cos_sim_4": 0.635307,
+      "cos_sim_5": 0.600145,
+      "min_similarity": 0.574469,
+      "p1": 0.0,
+      "p2": 0.323416,
+      "p3": 0.259663,
+      "p4": 0.416922,
+      "p5": 0.0,
+      "set_expected_rating": 3.0935,
+      "canonical_expected_rating": 3.345,
+      "improved_expected_rating": 3.0935,
+      "delta": -0.2514,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.53293,
+      "cos_sim_2": 0.581816,
+      "cos_sim_3": 0.624684,
+      "cos_sim_4": 0.586782,
+      "cos_sim_5": 0.531887,
+      "min_similarity": 0.531887,
+      "p1": 0.0,
+      "p2": 0.226248,
+      "p3": 0.517011,
+      "p4": 0.256741,
+      "p5": 0.0,
+      "set_expected_rating": 3.0305,
+      "canonical_expected_rating": 3.0145,
+      "improved_expected_rating": 3.0305,
+      "delta": 0.016,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.536869,
+      "cos_sim_2": 0.551168,
+      "cos_sim_3": 0.562263,
+      "cos_sim_4": 0.552137,
+      "cos_sim_5": 0.547221,
+      "min_similarity": 0.536869,
+      "p1": 0.0,
+      "p2": 0.235735,
+      "p3": 0.506987,
+      "p4": 0.257278,
+      "p5": 0.0,
+      "set_expected_rating": 3.0215,
+      "canonical_expected_rating": 3.3318,
+      "improved_expected_rating": 3.0215,
+      "delta": -0.3103,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "asus",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.52197,
+      "cos_sim_2": 0.559081,
+      "cos_sim_3": 0.597389,
+      "cos_sim_4": 0.552827,
+      "cos_sim_5": 0.56981,
+      "min_similarity": 0.52197,
+      "p1": 0.0,
+      "p2": 0.200916,
+      "p3": 0.517201,
+      "p4": 0.0,
+      "p5": 0.281883,
+      "set_expected_rating": 3.3629,
+      "canonical_expected_rating": 3.4676,
+      "improved_expected_rating": 3.3629,
+      "delta": -0.1048,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.475732,
+      "cos_sim_2": 0.49899,
+      "cos_sim_3": 0.499366,
+      "cos_sim_4": 0.511428,
+      "cos_sim_5": 0.511165,
+      "min_similarity": 0.475732,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.224782,
+      "p4": 0.38952,
+      "p5": 0.385699,
+      "set_expected_rating": 4.1609,
+      "canonical_expected_rating": 3.7058,
+      "improved_expected_rating": 4.1609,
+      "delta": 0.4551,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.60412,
+      "cos_sim_2": 0.590373,
+      "cos_sim_3": 0.606252,
+      "cos_sim_4": 0.653123,
+      "cos_sim_5": 0.639745,
+      "min_similarity": 0.590373,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.084848,
+      "p4": 0.530105,
+      "p5": 0.385047,
+      "set_expected_rating": 4.3002,
+      "canonical_expected_rating": 3.9453,
+      "improved_expected_rating": 4.3002,
+      "delta": 0.3549,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.629377,
+      "cos_sim_2": 0.651492,
+      "cos_sim_3": 0.655606,
+      "cos_sim_4": 0.67371,
+      "cos_sim_5": 0.641598,
+      "min_similarity": 0.629377,
+      "p1": 0.0,
+      "p2": 0.20907,
+      "p3": 0.262471,
+      "p4": 0.52846,
+      "p5": 0.0,
+      "set_expected_rating": 3.3194,
+      "canonical_expected_rating": 3.4448,
+      "improved_expected_rating": 3.3194,
+      "delta": -0.1254,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.602615,
+      "cos_sim_2": 0.569193,
+      "cos_sim_3": 0.648761,
+      "cos_sim_4": 0.629015,
+      "cos_sim_5": 0.621572,
+      "min_similarity": 0.569193,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.443205,
+      "p4": 0.30299,
+      "p5": 0.253804,
+      "set_expected_rating": 3.8106,
+      "canonical_expected_rating": 3.434,
+      "improved_expected_rating": 3.8106,
+      "delta": 0.3766,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.618206,
+      "cos_sim_2": 0.589124,
+      "cos_sim_3": 0.558522,
+      "cos_sim_4": 0.655348,
+      "cos_sim_5": 0.663293,
+      "min_similarity": 0.558522,
+      "p1": 0.19905,
+      "p2": 0.0,
+      "p3": 0.0,
+      "p4": 0.379441,
+      "p5": 0.42151,
+      "set_expected_rating": 3.8244,
+      "canonical_expected_rating": 3.5358,
+      "improved_expected_rating": 3.8244,
+      "delta": 0.2885,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "asus",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.539095,
+      "cos_sim_2": 0.582796,
+      "cos_sim_3": 0.641,
+      "cos_sim_4": 0.596112,
+      "cos_sim_5": 0.576672,
+      "min_similarity": 0.539095,
+      "p1": 0.0,
+      "p2": 0.181228,
+      "p3": 0.560399,
+      "p4": 0.258373,
+      "p5": 0.0,
+      "set_expected_rating": 3.0771,
+      "canonical_expected_rating": 3.3683,
+      "improved_expected_rating": 3.0771,
+      "delta": -0.2912,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.61558,
+      "cos_sim_2": 0.637201,
+      "cos_sim_3": 0.606052,
+      "cos_sim_4": 0.615916,
+      "cos_sim_5": 0.572427,
+      "min_similarity": 0.572427,
+      "p1": 0.268166,
+      "p2": 0.460881,
+      "p3": 0.0,
+      "p4": 0.270953,
+      "p5": 0.0,
+      "set_expected_rating": 2.2737,
+      "canonical_expected_rating": 2.4186,
+      "improved_expected_rating": 2.2737,
+      "delta": -0.1448,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.503999,
+      "cos_sim_2": 0.502688,
+      "cos_sim_3": 0.542701,
+      "cos_sim_4": 0.496221,
+      "cos_sim_5": 0.553111,
+      "min_similarity": 0.496221,
+      "p1": 0.0384,
+      "p2": 0.0,
+      "p3": 0.416412,
+      "p4": 0.0,
+      "p5": 0.545189,
+      "set_expected_rating": 4.0136,
+      "canonical_expected_rating": 3.7801,
+      "improved_expected_rating": 4.0136,
+      "delta": 0.2334,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.521725,
+      "cos_sim_2": 0.523076,
+      "cos_sim_3": 0.541487,
+      "cos_sim_4": 0.546621,
+      "cos_sim_5": 0.520045,
+      "min_similarity": 0.520045,
+      "p1": 0.0,
+      "p2": 0.030617,
+      "p3": 0.415798,
+      "p4": 0.553584,
+      "p5": 0.0,
+      "set_expected_rating": 3.523,
+      "canonical_expected_rating": 3.3828,
+      "improved_expected_rating": 3.523,
+      "delta": 0.1402,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.511143,
+      "cos_sim_2": 0.56881,
+      "cos_sim_3": 0.613761,
+      "cos_sim_4": 0.569186,
+      "cos_sim_5": 0.527659,
+      "min_similarity": 0.511143,
+      "p1": 0.0,
+      "p2": 0.240088,
+      "p3": 0.517729,
+      "p4": 0.242182,
+      "p5": 0.0,
+      "set_expected_rating": 3.0021,
+      "canonical_expected_rating": 3.1423,
+      "improved_expected_rating": 3.0021,
+      "delta": -0.1402,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.387055,
+      "cos_sim_2": 0.397082,
+      "cos_sim_3": 0.38769,
+      "cos_sim_4": 0.411426,
+      "cos_sim_5": 0.400363,
+      "min_similarity": 0.387055,
+      "p1": 0.0,
+      "p2": 0.174626,
+      "p3": 0.0,
+      "p4": 0.570678,
+      "p5": 0.254696,
+      "set_expected_rating": 3.9054,
+      "canonical_expected_rating": 3.8473,
+      "improved_expected_rating": 3.9054,
+      "delta": 0.0581,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "asus",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.501855,
+      "cos_sim_2": 0.537127,
+      "cos_sim_3": 0.540874,
+      "cos_sim_4": 0.515783,
+      "cos_sim_5": 0.513122,
+      "min_similarity": 0.501855,
+      "p1": 0.0,
+      "p2": 0.410884,
+      "p3": 0.470081,
+      "p4": 0.119035,
+      "p5": 0.0,
+      "set_expected_rating": 2.7082,
+      "canonical_expected_rating": 3.012,
+      "improved_expected_rating": 2.7082,
+      "delta": -0.3038,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.669869,
+      "cos_sim_2": 0.682099,
+      "cos_sim_3": 0.658932,
+      "cos_sim_4": 0.691705,
+      "cos_sim_5": 0.637315,
+      "min_similarity": 0.637315,
+      "p1": 0.221606,
+      "p2": 0.339057,
+      "p3": 0.0,
+      "p4": 0.439337,
+      "p5": 0.0,
+      "set_expected_rating": 2.6571,
+      "canonical_expected_rating": 2.6381,
+      "improved_expected_rating": 2.6571,
+      "delta": 0.019,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.529164,
+      "cos_sim_2": 0.563039,
+      "cos_sim_3": 0.612921,
+      "cos_sim_4": 0.573529,
+      "cos_sim_5": 0.573958,
+      "min_similarity": 0.529164,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.536863,
+      "p4": 0.230083,
+      "p5": 0.233054,
+      "set_expected_rating": 3.6962,
+      "canonical_expected_rating": 3.484,
+      "improved_expected_rating": 3.6962,
+      "delta": 0.2122,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.565765,
+      "cos_sim_2": 0.595025,
+      "cos_sim_3": 0.578304,
+      "cos_sim_4": 0.614935,
+      "cos_sim_5": 0.598524,
+      "min_similarity": 0.565765,
+      "p1": 0.0,
+      "p2": 0.240358,
+      "p3": 0.0,
+      "p4": 0.480213,
+      "p5": 0.279429,
+      "set_expected_rating": 3.7987,
+      "canonical_expected_rating": 3.6905,
+      "improved_expected_rating": 3.7987,
+      "delta": 0.1083,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.519982,
+      "cos_sim_2": 0.578057,
+      "cos_sim_3": 0.578912,
+      "cos_sim_4": 0.65049,
+      "cos_sim_5": 0.616675,
+      "min_similarity": 0.519982,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.171763,
+      "p4": 0.495826,
+      "p5": 0.332411,
+      "set_expected_rating": 4.1606,
+      "canonical_expected_rating": 3.7723,
+      "improved_expected_rating": 4.1606,
+      "delta": 0.3884,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.585903,
+      "cos_sim_2": 0.587637,
+      "cos_sim_3": 0.599268,
+      "cos_sim_4": 0.61871,
+      "cos_sim_5": 0.614831,
+      "min_similarity": 0.585903,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.140627,
+      "p4": 0.465648,
+      "p5": 0.393725,
+      "set_expected_rating": 4.2531,
+      "canonical_expected_rating": 4.1574,
+      "improved_expected_rating": 4.2531,
+      "delta": 0.0957,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "asus",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.504435,
+      "cos_sim_2": 0.535556,
+      "cos_sim_3": 0.533503,
+      "cos_sim_4": 0.472015,
+      "cos_sim_5": 0.500331,
+      "min_similarity": 0.472015,
+      "p1": 0.1724,
+      "p2": 0.422857,
+      "p3": 0.404743,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 2.2323,
+      "canonical_expected_rating": 2.6138,
+      "improved_expected_rating": 2.2323,
+      "delta": -0.3814,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

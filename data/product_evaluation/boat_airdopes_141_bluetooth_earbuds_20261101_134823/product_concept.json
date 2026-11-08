@@ -1,0 +1,63 @@
+{
+  "name": "boAt Airdopes 141 Bluetooth Earbuds",
+  "category": "Audio Device",
+  "description": "Wireless Bluetooth earbuds with 42 hours playback, ENx noise cancellation for calls, 8mm drivers, and IPX4 sweat resistance.",
+  "price_inr": 1299.0,
+  "target_group": "Technology consumers",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Bluetooth / Smartphone Audio",
+  "features": [
+    {
+      "name": "Active Noise Cancellation",
+      "explanation": "Acoustic isolation that cuts out ambient background noise.",
+      "category": null
+    },
+    {
+      "name": "Clear Balanced Audio",
+      "explanation": "Crisp sound quality with punchy bass for songs, videos, and daily calls.",
+      "category": null
+    },
+    {
+      "name": "Extended Playback Time",
+      "explanation": "Long-lasting battery life with portable charging case for all-day use.",
+      "category": null
+    },
+    {
+      "name": "Comfortable Lightweight Fit",
+      "explanation": "Snug and lightweight design for easy listening without ear discomfort.",
+      "category": null
+    },
+    {
+      "name": "Seamless Bluetooth Pairing",
+      "explanation": "Fast, stable wireless connection with smartphones and tablets.",
+      "category": null
+    },
+    {
+      "name": "Clear Voice Calls",
+      "explanation": "Built-in microphone for hands-free calling and clear voice pickup.",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "P1_premium_tier_owner",
+  "target_construct": "all",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Audio Device",
+    "product_noun": "wireless earbuds",
+    "usage_role": "daily earbuds",
+    "brand_or_ecosystem": "Bluetooth / Smartphone Audio",
+    "features_count": 6,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-01T08:18:23.953926+00:00"
+}

@@ -41,7 +41,7 @@ STARTED_AT = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 GET_ROUTES = ["/api/overview", "/api/personas", "/api/responses", "/api/coverage", "/api/validation", "/api/limitations",
               "/api/workflow/options", "/api/response", "/api/health",
               "/api/survey/batches", "/api/survey/batch", "/api/survey/saved", "/api/survey/job", "/api/survey/export", "/api/simple/options", "/api/product/options",
-              "/api/evaluation/options", "/api/evaluation/saved", "/api/evaluation/export"]
+              "/api/evaluation/options", "/api/evaluation/saved", "/api/evaluation/export", "/api/evaluation/status", "/api/evaluation/active"]
 POST_ROUTES = ["/api/product/respond", "/api/product/report", "/api/simple/run", "/api/survey/generate", "/api/workflow/step/1", "/api/workflow/step/2", "/api/workflow/step/3", "/api/workflow/step/4", "/api/workflow/step/5", "/api/workflow/step/6", "/api/evaluation/run"]
 
 
@@ -67,6 +67,18 @@ def get_evaluation_service(dash: Dashboard):
         from evaluation_service import ProductEvaluationService
         _EVALUATION[key] = ProductEvaluationService(dash.root)
     return _EVALUATION[key]
+
+
+_JOBS = {}
+
+
+def get_evaluation_jobs(dash: Dashboard):
+    """One background-job manager per repository root, wrapping the shared evaluation service."""
+    key = str(dash.root)
+    if key not in _JOBS:
+        from evaluation_service import EvaluationJobs
+        _JOBS[key] = EvaluationJobs(get_evaluation_service(dash))
+    return _JOBS[key]
 
 
 def get_product(dash: Dashboard):
@@ -126,6 +138,15 @@ def route(dash: Dashboard, path: str, query: dict):
             return HTTPStatus.OK, get_evaluation_service(dash).options()
         except Exception as e:
             return HTTPStatus.OK, {"available": False, "error": f"Could not load evaluation options ({type(e).__name__})."}
+    if path == "/api/evaluation/active":
+        return HTTPStatus.OK, {"job": get_evaluation_jobs(dash).active()}
+    if path == "/api/evaluation/status" or path.startswith("/api/evaluation/status/"):
+        job_id = path[len("/api/evaluation/status/"):].strip("/") if path.startswith("/api/evaluation/status/") else (query.get("id") or [""])[0]
+        if not job_id:
+            return HTTPStatus.BAD_REQUEST, {"error": "Missing evaluation job id."}
+        job = get_evaluation_jobs(dash).status(job_id)
+        return (HTTPStatus.OK, job) if job else (HTTPStatus.NOT_FOUND, {"error": f"Evaluation job '{job_id}' not found. "
+                                                                                    "The server may have been restarted; check the saved evaluations."})
     if path == "/api/evaluation/saved":
         eid = (query.get("id") or ["nova_ai_smartphone"])[0]
         data = get_evaluation_service(dash).load_evaluation(eid)
@@ -251,10 +272,20 @@ def make_handler(dash: Dashboard):
                     raise ValueError("body must be a JSON object")
             except Exception:
                 return self._send(HTTPStatus.BAD_REQUEST, json.dumps({"ok": False, "error": "invalid JSON request"}).encode("utf-8"), "application/json; charset=utf-8")
+            if u.path == "/api/evaluation/run":
+                # Long Qwen evaluations run as a background job; this request only starts it and returns at once.
+                from evaluation_service import EvaluationJobBusy
+                try:
+                    status, payload = HTTPStatus.ACCEPTED, {"ok": True, "job": get_evaluation_jobs(dash).start(body)}
+                except EvaluationJobBusy as e:
+                    status, payload = HTTPStatus.CONFLICT, {"ok": False, "error": str(e), "job": e.job}
+                except ValueError as e:            # bad product input, including ProductContextError
+                    status, payload = HTTPStatus.BAD_REQUEST, {"ok": False, "error": f"{e} ({type(e).__name__})"}
+                except RuntimeError as e:          # Ollama not ready, or stale server code
+                    status, payload = HTTPStatus.SERVICE_UNAVAILABLE, {"ok": False, "error": f"{e} ({type(e).__name__})"}
+                return self._send(status, json.dumps(payload, allow_nan=False).encode("utf-8"), "application/json; charset=utf-8")
             try:
-                if u.path == "/api/evaluation/run":
-                    payload = get_evaluation_service(dash).run_evaluation(body)
-                elif u.path == "/api/product/respond":
+                if u.path == "/api/product/respond":
                     payload = get_product(dash).respond(body)
                 elif u.path == "/api/product/report":
                     payload = get_product(dash).report(body)

@@ -1,0 +1,25 @@
+{
+  "test_name": "ssr_pipeline_speed_and_functionality_test",
+  "sample_size": 10,
+  "seed": 20261102,
+  "selected_indices": [
+    22,
+    33,
+    62,
+    81,
+    193,
+    212,
+    290,
+    322,
+    328,
+    390
+  ],
+  "total_execution_time_seconds": 38.2541,
+  "adapter_initialization_seconds": 2.2454,
+  "anchor_embedding_seconds": 14.4712,
+  "average_inference_time_per_sample_seconds": 2.1519,
+  "min_inference_time_seconds": 2.1236,
+  "max_inference_time_seconds": 2.1825,
+  "all_pmf_sums_valid": true,
+  "errors": []
+}

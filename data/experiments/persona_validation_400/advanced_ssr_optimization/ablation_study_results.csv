@@ -1,0 +1,8 @@
+Ablation_Model,Description,k_parameter,T_temperature,Synthetic_Mean,Synthetic_Std,Synthetic_IQR,Pct_Extreme_Endpoints,Wasserstein_Distance,Mean_Difference,Cohens_d,PE_ANOVA_F,PE_ANOVA_p,PE_Eta_Squared,PE_P1_vs_P3_Hedges_g
+"Canonical Baseline (k=3, T=1.0)",Standard paper-derived baseline with level-3 tie-breaking,3,1.0,3.4057,0.7623,1.2391,0.0,0.3735,-0.2067,-0.2217,3.1028,0.032695,0.127,0.9143
+Ablation 1: Hard Argmax (k=1),Eliminates expectation averaging; forces single discrete winner,1,1.0,3.6443,1.2171,2.0,36.15,0.2483,0.0319,0.0278,0.6842,0.56496,0.0311,0.4531
+Ablation 2: Local 2-Anchor Interpolation (k=2),Restricts PMF to top-2 nearest anchors,2,1.0,3.5539,0.9888,1.8752,22.45,0.3664,-0.0585,-0.0566,1.4952,0.2243,0.0655,0.6763
+Ablation 3: 4-Anchor Truncation (k=4),"Retains 4 anchors, zeroing only the single lowest anchor",4,1.0,3.3424,0.6225,1.0545,0.0,0.4881,-0.27,-0.3071,4.3474,0.007518,0.1693,1.06
+Ablation 4: Full Softmax / No Truncation (k=5),Zero truncation; retains all 5 anchors across entire scale,5,1.0,3.3424,0.6225,1.0545,0.0,0.4881,-0.27,-0.3071,4.3474,0.007518,0.1693,1.06
+"Ablation 5: Sharpened Temperature (k=3, T=0.5)",Sharpens probability distribution toward dominant anchor,3,0.5,3.4891,0.8626,1.4474,8.16,0.3458,-0.1233,-0.1264,2.5577,0.062856,0.1071,0.8185
+"Ablation 6: Diffuse Temperature (k=3, T=1.5)",Flattens probability distribution toward uniform expectation,3,1.5,3.3702,0.7277,1.1764,0.0,0.4017,-0.2422,-0.2637,3.0333,0.035531,0.1245,0.8975

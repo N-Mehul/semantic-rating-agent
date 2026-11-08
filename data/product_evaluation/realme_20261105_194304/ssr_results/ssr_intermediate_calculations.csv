@@ -1,0 +1,25 @@
+persona_id,product_name,anchor_set_code,anchor_set_name,cos_sim_1,cos_sim_2,cos_sim_3,cos_sim_4,cos_sim_5,min_similarity,p1,p2,p3,p4,p5,set_expected_rating,canonical_expected_rating,improved_expected_rating,delta,embedding_model
+P1_premium_tier_owner,realme,PE,Performance Expectancy,0.621774,0.636213,0.625182,0.651224,0.615989,0.615989,0.0,0.290192,0.101423,0.608385,0.0,3.3182,3.0489,3.3182,0.2693,nomic-embed-text
+P1_premium_tier_owner,realme,EE,Effort Expectancy,0.602038,0.625571,0.616709,0.615257,0.626489,0.602038,0.0,0.38686,0.206024,0.0,0.407116,3.4274,3.5086,3.4274,-0.0812,nomic-embed-text
+P1_premium_tier_owner,realme,HM,Hedonic Motivation,0.541441,0.56596,0.576074,0.566333,0.539483,0.539483,0.0,0.281037,0.432628,0.286336,0.0,3.0053,2.9615,3.0053,0.0438,nomic-embed-text
+P1_premium_tier_owner,realme,SI,Social Influence,0.514022,0.521288,0.577364,0.521985,0.509652,0.509652,0.0,0.079691,0.834183,0.086126,0.0,3.0064,2.9163,3.0064,0.0902,nomic-embed-text
+P1_premium_tier_owner,realme,PP,Perceived Protection,0.519195,0.535342,0.528963,0.535756,0.518515,0.518515,0.0,0.390216,0.206715,0.403069,0.0,3.0129,2.9791,3.0129,0.0338,nomic-embed-text
+P1_premium_tier_owner,realme,BI,Behavioral Intention,0.41492,0.458413,0.497596,0.425583,0.463957,0.41492,0.0,0.220838,0.520016,0.0,0.259147,3.2975,3.351,3.2975,-0.0536,nomic-embed-text
+P2_midrange_heavy_user,realme,PE,Performance Expectancy,0.567554,0.574355,0.54987,0.5704,0.567669,0.54987,0.0,0.409126,0.0,0.323462,0.267412,3.4492,2.9537,3.4492,0.4954,nomic-embed-text
+P2_midrange_heavy_user,realme,EE,Effort Expectancy,0.579705,0.586901,0.674697,0.673914,0.689269,0.579705,0.0,0.0,0.312636,0.309202,0.378162,4.0655,4.0006,4.0655,0.0649,nomic-embed-text
+P2_midrange_heavy_user,realme,HM,Hedonic Motivation,0.596491,0.625214,0.613923,0.680537,0.662738,0.596491,0.0,0.121471,0.0,0.508377,0.370152,4.1272,3.9561,4.1272,0.1711,nomic-embed-text
+P2_midrange_heavy_user,realme,SI,Social Influence,0.516599,0.568836,0.641667,0.591656,0.53314,0.516599,0.0,0.171694,0.549929,0.278377,0.0,3.1067,3.2079,3.1067,-0.1012,nomic-embed-text
+P2_midrange_heavy_user,realme,PP,Perceived Protection,0.598442,0.61562,0.629904,0.649671,0.643242,0.598442,0.0,0.0,0.221353,0.424033,0.354613,4.1333,3.8547,4.1333,0.2785,nomic-embed-text
+P2_midrange_heavy_user,realme,BI,Behavioral Intention,0.429378,0.481596,0.560562,0.513189,0.485602,0.429378,0.0,0.0,0.533794,0.293718,0.172488,3.6387,3.4453,3.6387,0.1933,nomic-embed-text
+P3_midrange_moderate_user,realme,PE,Performance Expectancy,0.627165,0.641989,0.637337,0.672512,0.642979,0.627165,0.0,0.153127,0.0,0.679968,0.166905,3.8607,3.7214,3.8607,0.1393,nomic-embed-text
+P3_midrange_moderate_user,realme,EE,Effort Expectancy,0.588904,0.590249,0.654665,0.681453,0.705373,0.588904,0.0,0.0,0.211866,0.334144,0.45399,4.2421,4.1739,4.2421,0.0682,nomic-embed-text
+P3_midrange_moderate_user,realme,HM,Hedonic Motivation,0.530252,0.556469,0.556664,0.627136,0.597681,0.530252,0.0,0.0,0.098558,0.557557,0.343885,4.2453,3.9474,4.2453,0.298,nomic-embed-text
+P3_midrange_moderate_user,realme,SI,Social Influence,0.645309,0.630823,0.67404,0.689565,0.689444,0.630823,0.0,0.0,0.249551,0.375739,0.37471,4.1252,3.8397,4.1252,0.2854,nomic-embed-text
+P3_midrange_moderate_user,realme,PP,Perceived Protection,0.596991,0.601921,0.618068,0.645013,0.655601,0.596991,0.0,0.0,0.126445,0.3791,0.494455,4.368,4.2086,4.368,0.1594,nomic-embed-text
+P3_midrange_moderate_user,realme,BI,Behavioral Intention,0.487278,0.521865,0.579593,0.572399,0.536357,0.487278,0.0,0.0,0.429525,0.385486,0.184989,3.7555,3.5695,3.7555,0.186,nomic-embed-text
+P4_budget_or_undisclosed_price,realme,PE,Performance Expectancy,0.571371,0.602482,0.569096,0.599964,0.55371,0.55371,0.117862,0.456651,0.0,0.425487,0.0,2.7331,2.7045,2.7331,0.0286,nomic-embed-text
+P4_budget_or_undisclosed_price,realme,EE,Effort Expectancy,0.549127,0.537317,0.616385,0.576544,0.619738,0.537317,0.0,0.0,0.408219,0.160323,0.431459,4.0232,3.8491,4.0232,0.1742,nomic-embed-text
+P4_budget_or_undisclosed_price,realme,HM,Hedonic Motivation,0.623569,0.667895,0.639269,0.663209,0.659125,0.623569,0.0,0.383595,0.0,0.330502,0.285903,3.5187,3.4912,3.5187,0.0275,nomic-embed-text
+P4_budget_or_undisclosed_price,realme,SI,Social Influence,0.566235,0.603783,0.63241,0.586127,0.576763,0.566235,0.0,0.281093,0.598415,0.120492,0.0,2.8394,3.0253,2.8394,-0.1859,nomic-embed-text
+P4_budget_or_undisclosed_price,realme,PP,Perceived Protection,0.598706,0.638606,0.6895,0.664823,0.683078,0.598706,0.0,0.0,0.390325,0.25572,0.353955,3.9636,3.6934,3.9636,0.2703,nomic-embed-text
+P4_budget_or_undisclosed_price,realme,BI,Behavioral Intention,0.534712,0.5541,0.602711,0.505132,0.536387,0.505132,0.0,0.24648,0.618069,0.0,0.135451,3.0244,2.78,3.0244,0.2444,nomic-embed-text

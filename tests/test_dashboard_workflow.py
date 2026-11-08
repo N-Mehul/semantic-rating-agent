@@ -336,8 +336,8 @@ def test_server_workflow_endpoints_and_post_protection():
 def test_frontend_page_uses_the_product_endpoints_and_hardcodes_nothing():
     js = (ROOT / "dashboard/static/app.js").read_text(encoding="utf-8")
     html = (ROOT / "dashboard/static/index.html").read_text(encoding="utf-8")
-    assert "<title>Digital Persona — Synthetic Consumer Research</title>" in html
-    assert "/api/product/options" in js and "/api/product/respond" in js and "/api/product/report" in js
+    assert "<title>Digital Persona — Synthetic Consumer Research & Adoption Analytics</title>" in html
+    assert "/api/evaluation/options" in js and "/api/evaluation/run" in js and "/api/evaluation/saved" in js
     assert not re.search(r"P[1-4]_[a-z]", js) and not re.search(r"gemini-\d|gpt-\d|-flash\b", js.lower())
 
 def test_workflow_module_never_exposes_keys_or_imports_providers_at_load():

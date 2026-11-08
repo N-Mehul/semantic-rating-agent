@@ -1,0 +1,43 @@
+{
+  "name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+  "category": "Television",
+  "description": "The Samsung Crystal 4K UHD Smart TV is designed for home entertainment. It features a 55-inch 4K UHD display, smart TV functionality, and access to streaming applications such as YouTube and Netflix. It supports online content streaming, screen mirroring, and connectivity with compatible devices. Its large display provides an enjoyable viewing experience for movies, shows, sports, and everyday entertainment. It is suitable for households looking for a smart television for home use.",
+  "price_inr": 50000.0,
+  "target_group": "all",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Smart TV Platform",
+  "features": [
+    {
+      "name": "Vibrant 4K Display",
+      "explanation": "Ultra-high definition panel with HDR support for vivid contrast and colors.",
+      "category": null
+    },
+    {
+      "name": "Smart Streaming Hub",
+      "explanation": "Integrated operating system with popular streaming apps and easy navigation.",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Television",
+    "product_noun": "smart TV",
+    "usage_role": "primary television",
+    "brand_or_ecosystem": "Smart TV Platform",
+    "features_count": 2,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-01T17:47:48.208530+00:00"
+}

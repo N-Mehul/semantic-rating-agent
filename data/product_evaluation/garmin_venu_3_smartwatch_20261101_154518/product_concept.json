@@ -1,0 +1,43 @@
+{
+  "name": "Garmin Venu 3 Smartwatch",
+  "category": "Wearable Device",
+  "description": "The Garmin Venu 3 is a smartwatch designed for fitness tracking and everyday use. It offers heart rate monitoring, sleep tracking, GPS, workout tracking, health insights, and a bright AMOLED display. It is suitable for fitness enthusiasts and people interested in tracking their daily activity, workouts, and health information.",
+  "price_inr": 45000.0,
+  "target_group": "Students & young professionals",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Wearable Platform",
+  "features": [
+    {
+      "name": "Health & Fitness Tracking",
+      "explanation": "Comprehensive biometric monitoring including heart rate, sleep, and activity tracking.",
+      "category": null
+    },
+    {
+      "name": "High-Clarity Display",
+      "explanation": "Vibrant, high-contrast display designed for clear indoor and outdoor visibility.",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Wearable Device",
+    "product_noun": "smartwatch",
+    "usage_role": "daily smartwatch",
+    "brand_or_ecosystem": "Wearable Platform",
+    "features_count": 2,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-01T10:15:18.538410+00:00"
+}

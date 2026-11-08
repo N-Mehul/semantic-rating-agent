@@ -1,0 +1,23 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,canonical_expected_rating,improved_expected_rating,delta,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,Samsung Galaxy M35 5G,PE,Performance Expectancy,False,2.9186,2.7711,2.9186,0.1475,0.241239,0.17885,0.0,0.579911,0.0,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy M35 5G,EE,Effort Expectancy,False,4.3628,4.0487,4.3628,0.3142,0.0,0.136608,0.0,0.227334,0.636058,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy M35 5G,HM,Hedonic Motivation,False,4.0836,3.6189,4.0836,0.4647,0.0,0.0,0.158363,0.599682,0.241955,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy M35 5G,SI,Social Influence,False,3.0819,2.9461,3.0819,0.1358,0.0,0.084887,0.831724,0.0,0.083388,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy M35 5G,PP,Perceived Protection,False,1.7393,2.0075,1.7393,-0.2682,0.373435,0.513868,0.112698,0.0,0.0,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy M35 5G,BI,Behavioral Intention,True,3.9327,3.6091,3.9327,0.3236,0.0,0.0,0.2597,0.547875,0.192424,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy M35 5G,PE,Performance Expectancy,False,3.4535,3.3399,3.4535,0.1136,0.103934,0.0,0.234702,0.661364,0.0,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy M35 5G,EE,Effort Expectancy,False,4.033,3.9142,4.033,0.1187,0.0,0.0,0.377416,0.212217,0.410368,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy M35 5G,HM,Hedonic Motivation,False,3.5591,3.5261,3.5591,0.033,0.0,0.273309,0.0,0.620998,0.105693,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy M35 5G,SI,Social Influence,False,2.8715,2.8498,2.8715,0.0217,0.0,0.339074,0.450367,0.21056,0.0,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy M35 5G,PP,Perceived Protection,False,2.2198,2.4646,2.2198,-0.2448,0.369264,0.336213,0.0,0.294523,0.0,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy M35 5G,BI,Behavioral Intention,True,2.5097,2.4945,2.5097,0.0153,0.0,0.568623,0.353018,0.078359,0.0,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy M35 5G,PE,Performance Expectancy,False,3.0128,3.0985,3.0128,-0.0857,0.196888,0.19826,0.0,0.604852,0.0,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy M35 5G,EE,Effort Expectancy,False,4.11,3.8391,4.11,0.2709,0.0,0.0,0.274773,0.340491,0.384736,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy M35 5G,HM,Hedonic Motivation,False,4.1334,3.9664,4.1334,0.167,0.076072,0.0,0.0,0.562301,0.361627,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy M35 5G,SI,Social Influence,False,3.0519,3.1123,3.0519,-0.0605,0.0,0.009441,0.929266,0.061293,0.0,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy M35 5G,PP,Perceived Protection,False,2.8694,2.6783,2.8694,0.1911,0.0,0.356877,0.416827,0.226296,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy M35 5G,PE,Performance Expectancy,False,4.1015,3.8432,4.1015,0.2582,0.0,0.0,0.117922,0.662685,0.219394,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy M35 5G,EE,Effort Expectancy,False,3.0875,3.2087,3.0875,-0.1212,0.0,0.128262,0.763868,0.0,0.10787,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy M35 5G,HM,Hedonic Motivation,False,3.283,3.1761,3.283,0.1069,0.035955,0.304566,0.0,0.659478,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy M35 5G,SI,Social Influence,False,4.0324,3.812,4.0324,0.2204,0.0,0.0,0.351127,0.265314,0.383558,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy M35 5G,PP,Perceived Protection,False,2.5194,2.5737,2.5194,-0.0543,0.300221,0.0,0.579928,0.119851,0.0,nomic-embed-text

@@ -1,0 +1,543 @@
+{
+  "evaluation_id": "apple_ipad_air_11_inch_20261101_120319",
+  "product_name": "Apple iPad Air (11-inch)",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-11-01T06:35:43.669851+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 1,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.8647,
+  "overall_adoption_average": 3.8647,
+  "primary_adoption_average": 3.8647,
+  "construct_averages": {
+    "PE": 3.7486,
+    "EE": 3.8169,
+    "HM": 4.1684,
+    "SI": 3.7171,
+    "PP": 4.2567,
+    "BI": 3.8647
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 6,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "primary_adoption_rating": 3.8647,
+      "primary_adoption_pmf": [
+        0.0,
+        0.140248,
+        0.175906,
+        0.362696,
+        0.32115
+      ],
+      "construct_scores": {
+        "PE": 3.7486,
+        "EE": 3.8169,
+        "HM": 4.1684,
+        "SI": 3.7171,
+        "PP": 4.2567,
+        "BI": 3.8647
+      },
+      "construct_responses": {
+        "PE": "This tablet offers a high-quality display and smooth performance, making it very effective for studying and entertainment. It also supports multitasking and stylus usage, which are great for taking notes and drawing.",
+        "EE": "Setting it up and using it feels very simple. The multitasking feature and stylus compatibility make it user-friendly, though I might need some time to get used to all the options.",
+        "HM": "Using this tablet is very enjoyable and fun. The high-quality display and stylus make it a pleasure to use for entertainment and creative work. It's a lot of fun to draw and take notes on.",
+        "SI": "My friends and classmates would think it's a cool and useful device. It's a bit of a status symbol, and they might be envious of its quality and features.",
+        "PP": "The build quality seems very good, and the tablet feels durable. The security features are also a plus, ensuring my data is safe.",
+        "BI": "I am certain I will continue using this tablet as my primary tablet. Its premium quality and performance justify the price for someone like me who values a top-tier device.",
+        "OVERALL": "This tablet checks all the boxes for a student like me. It's high-quality, fun to use, and perfect for both study and entertainment. I can't wait to use it."
+      },
+      "response_text": "This tablet checks all the boxes for a student like me. It's high-quality, fun to use, and perfect for both study and entertainment. I can't wait to use it.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This tablet offers a high-quality display and smooth performance, making it very effective for studying and entertainment. It also supports multitasking and stylus usage, which are great for taking notes and drawing.",
+          "cosine_similarities": [
+            0.581309,
+            0.583637,
+            0.562303,
+            0.653985,
+            0.615433
+          ],
+          "min_similarity": 0.562303,
+          "pmf_probabilities": [
+            0.102648,
+            0.115221,
+            0.0,
+            0.495174,
+            0.286956
+          ],
+          "expected_rating": 3.7486,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting it up and using it feels very simple. The multitasking feature and stylus compatibility make it user-friendly, though I might need some time to get used to all the options.",
+          "cosine_similarities": [
+            0.590586,
+            0.570278,
+            0.662879,
+            0.657303,
+            0.669105
+          ],
+          "min_similarity": 0.570278,
+          "pmf_probabilities": [
+            0.067972,
+            0.0,
+            0.30995,
+            0.291286,
+            0.330792
+          ],
+          "expected_rating": 3.8169,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using this tablet is very enjoyable and fun. The high-quality display and stylus make it a pleasure to use for entertainment and creative work. It's a lot of fun to draw and take notes on.",
+          "cosine_similarities": [
+            0.630501,
+            0.664861,
+            0.668435,
+            0.681782,
+            0.783765
+          ],
+          "min_similarity": 0.630501,
+          "pmf_probabilities": [
+            0.0,
+            0.124115,
+            0.137028,
+            0.185238,
+            0.55362
+          ],
+          "expected_rating": 4.1684,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and classmates would think it's a cool and useful device. It's a bit of a status symbol, and they might be envious of its quality and features.",
+          "cosine_similarities": [
+            0.586678,
+            0.597318,
+            0.61699,
+            0.63632,
+            0.606916
+          ],
+          "min_similarity": 0.586678,
+          "pmf_probabilities": [
+            0.0,
+            0.095998,
+            0.273492,
+            0.447908,
+            0.182601
+          ],
+          "expected_rating": 3.7171,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality seems very good, and the tablet feels durable. The security features are also a plus, ensuring my data is safe.",
+          "cosine_similarities": [
+            0.617827,
+            0.608911,
+            0.615633,
+            0.673789,
+            0.681741
+          ],
+          "min_similarity": 0.608911,
+          "pmf_probabilities": [
+            0.058146,
+            0.0,
+            0.043839,
+            0.42308,
+            0.474936
+          ],
+          "expected_rating": 4.2567,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this tablet as my primary tablet. Its premium quality and performance justify the price for someone like me who values a top-tier device.",
+          "cosine_similarities": [
+            0.563372,
+            0.593554,
+            0.601227,
+            0.641425,
+            0.632484
+          ],
+          "min_similarity": 0.563372,
+          "pmf_probabilities": [
+            0.0,
+            0.140248,
+            0.175906,
+            0.362696,
+            0.32115
+          ],
+          "expected_rating": 3.8647,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.581309,
+        0.583637,
+        0.562303,
+        0.653985,
+        0.615433
+      ],
+      "pmf_probabilities": [
+        0.102648,
+        0.115221,
+        0.0,
+        0.495174,
+        0.286956
+      ],
+      "expected_rating": 3.7486,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.590586,
+        0.570278,
+        0.662879,
+        0.657303,
+        0.669105
+      ],
+      "pmf_probabilities": [
+        0.067972,
+        0.0,
+        0.30995,
+        0.291286,
+        0.330792
+      ],
+      "expected_rating": 3.8169,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.630501,
+        0.664861,
+        0.668435,
+        0.681782,
+        0.783765
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.124115,
+        0.137028,
+        0.185238,
+        0.55362
+      ],
+      "expected_rating": 4.1684,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.586678,
+        0.597318,
+        0.61699,
+        0.63632,
+        0.606916
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.095998,
+        0.273492,
+        0.447908,
+        0.182601
+      ],
+      "expected_rating": 3.7171,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.617827,
+        0.608911,
+        0.615633,
+        0.673789,
+        0.681741
+      ],
+      "pmf_probabilities": [
+        0.058146,
+        0.0,
+        0.043839,
+        0.42308,
+        0.474936
+      ],
+      "expected_rating": 4.2567,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.563372,
+        0.593554,
+        0.601227,
+        0.641425,
+        0.632484
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.140248,
+        0.175906,
+        0.362696,
+        0.32115
+      ],
+      "expected_rating": 3.8647,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.581309,
+      "cos_sim_2": 0.583637,
+      "cos_sim_3": 0.562303,
+      "cos_sim_4": 0.653985,
+      "cos_sim_5": 0.615433,
+      "min_similarity": 0.562303,
+      "p1": 0.102648,
+      "p2": 0.115221,
+      "p3": 0.0,
+      "p4": 0.495174,
+      "p5": 0.286956,
+      "set_expected_rating": 3.7486,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.590586,
+      "cos_sim_2": 0.570278,
+      "cos_sim_3": 0.662879,
+      "cos_sim_4": 0.657303,
+      "cos_sim_5": 0.669105,
+      "min_similarity": 0.570278,
+      "p1": 0.067972,
+      "p2": 0.0,
+      "p3": 0.30995,
+      "p4": 0.291286,
+      "p5": 0.330792,
+      "set_expected_rating": 3.8169,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.630501,
+      "cos_sim_2": 0.664861,
+      "cos_sim_3": 0.668435,
+      "cos_sim_4": 0.681782,
+      "cos_sim_5": 0.783765,
+      "min_similarity": 0.630501,
+      "p1": 0.0,
+      "p2": 0.124115,
+      "p3": 0.137028,
+      "p4": 0.185238,
+      "p5": 0.55362,
+      "set_expected_rating": 4.1684,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.586678,
+      "cos_sim_2": 0.597318,
+      "cos_sim_3": 0.61699,
+      "cos_sim_4": 0.63632,
+      "cos_sim_5": 0.606916,
+      "min_similarity": 0.586678,
+      "p1": 0.0,
+      "p2": 0.095998,
+      "p3": 0.273492,
+      "p4": 0.447908,
+      "p5": 0.182601,
+      "set_expected_rating": 3.7171,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.617827,
+      "cos_sim_2": 0.608911,
+      "cos_sim_3": 0.615633,
+      "cos_sim_4": 0.673789,
+      "cos_sim_5": 0.681741,
+      "min_similarity": 0.608911,
+      "p1": 0.058146,
+      "p2": 0.0,
+      "p3": 0.043839,
+      "p4": 0.42308,
+      "p5": 0.474936,
+      "set_expected_rating": 4.2567,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apple iPad Air (11-inch)",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.563372,
+      "cos_sim_2": 0.593554,
+      "cos_sim_3": 0.601227,
+      "cos_sim_4": 0.641425,
+      "cos_sim_5": 0.632484,
+      "min_similarity": 0.563372,
+      "p1": 0.0,
+      "p2": 0.140248,
+      "p3": 0.175906,
+      "p4": 0.362696,
+      "p5": 0.32115,
+      "set_expected_rating": 3.8647,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

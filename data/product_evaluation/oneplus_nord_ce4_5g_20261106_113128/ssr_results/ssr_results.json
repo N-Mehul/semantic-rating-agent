@@ -1,0 +1,2754 @@
+{
+  "evaluation_id": "oneplus_nord_ce4_5g_20261106_113128",
+  "product_name": "OnePlus Nord CE4 5G",
+  "ssr_method": "improved",
+  "ssr_method_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+  "k_truncation": 3,
+  "temperature": 0.75,
+  "comparison_summary": {
+    "active_ssr_method": "improved",
+    "active_ssr_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+    "is_comparison_mode": false,
+    "canonical": {
+      "method": "Canonical Semantic Similarity Rating (Canonical SSR) — Baseline method",
+      "k_truncation": 5,
+      "temperature": 1.0,
+      "primary_adoption_average": 3.2136,
+      "construct_averages": {
+        "PE": 3.649,
+        "EE": 3.8679,
+        "HM": 3.9245,
+        "SI": 3.05,
+        "PP": 2.7521,
+        "BI": 3.2136
+      }
+    },
+    "improved": {
+      "method": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+      "k_truncation": 3,
+      "temperature": 0.75,
+      "primary_adoption_average": 3.2612,
+      "construct_averages": {
+        "PE": 3.938,
+        "EE": 4.0126,
+        "HM": 4.1798,
+        "SI": 3.201,
+        "PP": 2.6139,
+        "BI": 3.2612
+      }
+    },
+    "deltas": {
+      "primary_adoption_delta": 0.0476,
+      "construct_deltas": {
+        "PE": 0.289,
+        "EE": 0.1447,
+        "HM": 0.2553,
+        "SI": 0.151,
+        "PP": -0.1382,
+        "BI": 0.0476
+      }
+    },
+    "persona_comparison": [
+      {
+        "persona_id": "P1_premium_tier_owner",
+        "canonical_adoption_rating": 3.4185,
+        "improved_adoption_rating": 3.2667,
+        "delta": -0.1518
+      },
+      {
+        "persona_id": "P2_midrange_heavy_user",
+        "canonical_adoption_rating": 3.041,
+        "improved_adoption_rating": 3.1259,
+        "delta": 0.0849
+      },
+      {
+        "persona_id": "P3_midrange_moderate_user",
+        "canonical_adoption_rating": 3.208,
+        "improved_adoption_rating": 3.3852,
+        "delta": 0.1772
+      },
+      {
+        "persona_id": "P4_budget_or_undisclosed_price",
+        "canonical_adoption_rating": 3.1869,
+        "improved_adoption_rating": 3.2672,
+        "delta": 0.0803
+      }
+    ]
+  },
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Enhanced Semantic Similarity Rating (E-SSR) — Primary method)",
+  "timestamp_utc": "2026-11-06T06:14:25.741734+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "generation_stats": {
+    "main_calls": 4,
+    "main_seconds": 542.77,
+    "main_prompt_tokens": 8808,
+    "main_output_tokens": 1427,
+    "correction_calls": 5,
+    "correction_seconds": 173.61,
+    "correction_prompt_tokens": 4176,
+    "correction_output_tokens": 241,
+    "generation_seconds": 720.6,
+    "scoring_seconds": 60.9,
+    "total_seconds": 781.5,
+    "qwen_calls": 9
+  },
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.2612,
+  "overall_adoption_average": 3.2612,
+  "primary_adoption_average": 3.2612,
+  "construct_averages": {
+    "PE": 3.938,
+    "EE": 4.0126,
+    "HM": 4.1798,
+    "SI": 3.201,
+    "PP": 2.6139,
+    "BI": 3.2612
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 22,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "primary_adoption_rating": 3.2667,
+      "primary_adoption_pmf": [
+        0.0,
+        0.346374,
+        0.347064,
+        0.0,
+        0.306561
+      ],
+      "construct_scores": {
+        "PE": 3.7865,
+        "EE": 4.2517,
+        "HM": 4.1986,
+        "SI": 3.3697,
+        "PP": 2.2117,
+        "BI": 3.2667
+      },
+      "construct_responses": {
+        "PE": "The 120Hz display and fast processor make everyday tasks smoother. The 5500mAh battery should help with long-day use, but heavy multitasking might drain it faster.",
+        "EE": "Setting up is simple, but some customization requires a bit of learning. The interface is familiar, making day-to-day use easy.",
+        "HM": "Using it feels enjoyable, especially with the vibrant display and fast charging. The camera and fast processor add to the fun of media consumption.",
+        "SI": "People around me might appreciate the camera and fast charging, but I wouldn't expect any specific recommendations or disapprovals.",
+        "PP": "It has in-display fingerprint, which seems secure, but no other specific security features are mentioned.",
+        "BI": "No, while the features are impressive, the 8GB RAM limits multitasking, and the 5500mAh battery might not last as long as expected. I would prefer more RAM for my needs.",
+        "OVERALL": "It has a lot of good features but falls short on RAM and battery life in real use."
+      },
+      "response_text": "It has a lot of good features but falls short on RAM and battery life in real use.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The 120Hz display and fast processor make everyday tasks smoother. The 5500mAh battery should help with long-day use, but heavy multitasking might drain it faster.",
+          "cosine_similarities": [
+            0.606342,
+            0.61686,
+            0.599213,
+            0.667135,
+            0.608274
+          ],
+          "min_similarity": 0.599213,
+          "pmf_probabilities": [
+            0.0,
+            0.134351,
+            0.0,
+            0.810409,
+            0.055239
+          ],
+          "expected_rating": 3.7865,
+          "canonical": {
+            "pmf_probabilities": [
+              0.070062,
+              0.173417,
+              0.0,
+              0.667479,
+              0.089042
+            ],
+            "expected_rating": 3.532
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.134351,
+              0.0,
+              0.810409,
+              0.055239
+            ],
+            "expected_rating": 3.7865
+          },
+          "delta_improved_minus_canonical": 0.2545,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up is simple, but some customization requires a bit of learning. The interface is familiar, making day-to-day use easy.",
+          "cosine_similarities": [
+            0.553629,
+            0.546121,
+            0.613229,
+            0.629885,
+            0.664233
+          ],
+          "min_similarity": 0.546121,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.223767,
+            0.300729,
+            0.475505
+          ],
+          "expected_rating": 4.2517,
+          "canonical": {
+            "pmf_probabilities": [
+              0.027155,
+              0.0,
+              0.242712,
+              0.302953,
+              0.42718
+            ],
+            "expected_rating": 4.103
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.223767,
+              0.300729,
+              0.475505
+            ],
+            "expected_rating": 4.2517
+          },
+          "delta_improved_minus_canonical": 0.1487,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using it feels enjoyable, especially with the vibrant display and fast charging. The camera and fast processor add to the fun of media consumption.",
+          "cosine_similarities": [
+            0.629018,
+            0.695548,
+            0.684639,
+            0.722647,
+            0.785741
+          ],
+          "min_similarity": 0.629018,
+          "pmf_probabilities": [
+            0.0,
+            0.175086,
+            0.0,
+            0.276128,
+            0.548787
+          ],
+          "expected_rating": 4.1986,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.178602,
+              0.149317,
+              0.251352,
+              0.420729
+            ],
+            "expected_rating": 3.9142
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.175086,
+              0.0,
+              0.276128,
+              0.548787
+            ],
+            "expected_rating": 4.1986
+          },
+          "delta_improved_minus_canonical": 0.2844,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "People around me might appreciate the camera and fast charging, but I wouldn't expect any specific recommendations or disapprovals.",
+          "cosine_similarities": [
+            0.650017,
+            0.652639,
+            0.669097,
+            0.676258,
+            0.639267
+          ],
+          "min_similarity": 0.639267,
+          "pmf_probabilities": [
+            0.0,
+            0.128241,
+            0.373781,
+            0.497977,
+            0.0
+          ],
+          "expected_rating": 3.3697,
+          "canonical": {
+            "pmf_probabilities": [
+              0.118202,
+              0.147042,
+              0.328007,
+              0.40675,
+              0.0
+            ],
+            "expected_rating": 3.0233
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.128241,
+              0.373781,
+              0.497977,
+              0.0
+            ],
+            "expected_rating": 3.3697
+          },
+          "delta_improved_minus_canonical": 0.3464,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "It has in-display fingerprint, which seems secure, but no other specific security features are mentioned.",
+          "cosine_similarities": [
+            0.612346,
+            0.602649,
+            0.565091,
+            0.603732,
+            0.585044
+          ],
+          "min_similarity": 0.565091,
+          "pmf_probabilities": [
+            0.399857,
+            0.294387,
+            0.0,
+            0.305756,
+            0.0
+          ],
+          "expected_rating": 2.2117,
+          "canonical": {
+            "pmf_probabilities": [
+              0.329515,
+              0.2619,
+              0.0,
+              0.26945,
+              0.139136
+            ],
+            "expected_rating": 2.6268
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.399857,
+              0.294387,
+              0.0,
+              0.305756,
+              0.0
+            ],
+            "expected_rating": 2.2117
+          },
+          "delta_improved_minus_canonical": -0.4151,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "No, while the features are impressive, the 8GB RAM limits multitasking, and the 5500mAh battery might not last as long as expected. I would prefer more RAM for my needs.",
+          "cosine_similarities": [
+            0.544783,
+            0.571503,
+            0.571543,
+            0.562905,
+            0.569165
+          ],
+          "min_similarity": 0.544783,
+          "pmf_probabilities": [
+            0.0,
+            0.346374,
+            0.347064,
+            0.0,
+            0.306561
+          ],
+          "expected_rating": 3.2667,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.27838,
+              0.278796,
+              0.188805,
+              0.254019
+            ],
+            "expected_rating": 3.4185
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.346374,
+              0.347064,
+              0.0,
+              0.306561
+            ],
+            "expected_rating": 3.2667
+          },
+          "delta_improved_minus_canonical": -0.1517,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "PP": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "BI": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        }
+      },
+      "flagged_constructs": [],
+      "alignment_flags": []
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "primary_adoption_rating": 3.1259,
+      "primary_adoption_pmf": [
+        0.0,
+        0.193968,
+        0.646123,
+        0.0,
+        0.159909
+      ],
+      "construct_scores": {
+        "PE": 4.0831,
+        "EE": 3.5733,
+        "HM": 4.3214,
+        "PP": 2.5868,
+        "BI": 3.1259
+      },
+      "construct_responses": {
+        "PE": "The 8GB RAM and 120Hz display make multitasking and scrolling smooth, but heavy apps can sometimes lag. The 5500mAh battery lasts well during normal use.",
+        "EE": "Setting up is straightforward, but some deep customization options are a bit confusing. Navigation is intuitive, but finding specific settings can be time-consuming.",
+        "HM": "The display and camera are fun to use, but the fingerprint sensor can be a bit slow to respond, making it less convenient. Overall, it's pleasant but not as fun as my current phone.",
+        "SI": "My friends might think it's a good everyday phone, but they could also suggest checking out other options with similar features at a lower price.",
+        "PP": "The in-display fingerprint sensor is a bit slow, which might be a security concern.",
+        "BI": "No, the price is a bit high for the specs I usually prefer, and I have better options in my current budget.",
+        "OVERALL": "It has good features but the price is a bit on the higher side for what I usually look for."
+      },
+      "response_text": "It has good features but the price is a bit on the higher side for what I usually look for.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The 8GB RAM and 120Hz display make multitasking and scrolling smooth, but heavy apps can sometimes lag. The 5500mAh battery lasts well during normal use.",
+          "cosine_similarities": [
+            0.572215,
+            0.592122,
+            0.599914,
+            0.640258,
+            0.609413
+          ],
+          "min_similarity": 0.572215,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.172528,
+            0.57185,
+            0.255623
+          ],
+          "expected_rating": 4.0831,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.13024,
+              0.181221,
+              0.44517,
+              0.243368
+            ],
+            "expected_rating": 3.8017
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.172528,
+              0.57185,
+              0.255623
+            ],
+            "expected_rating": 4.0831
+          },
+          "delta_improved_minus_canonical": 0.2814,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up is straightforward, but some deep customization options are a bit confusing. Navigation is intuitive, but finding specific settings can be time-consuming.",
+          "cosine_similarities": [
+            0.551394,
+            0.574338,
+            0.58014,
+            0.55455,
+            0.584727
+          ],
+          "min_similarity": 0.551394,
+          "pmf_probabilities": [
+            0.0,
+            0.250251,
+            0.337991,
+            0.0,
+            0.411758
+          ],
+          "expected_rating": 3.5733,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.260203,
+              0.325995,
+              0.035784,
+              0.378018
+            ],
+            "expected_rating": 3.5316
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.250251,
+              0.337991,
+              0.0,
+              0.411758
+            ],
+            "expected_rating": 3.5733
+          },
+          "delta_improved_minus_canonical": 0.0416,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The display and camera are fun to use, but the fingerprint sensor can be a bit slow to respond, making it less convenient. Overall, it's pleasant but not as fun as my current phone.",
+          "cosine_similarities": [
+            0.721524,
+            0.729782,
+            0.743633,
+            0.745114,
+            0.765002
+          ],
+          "min_similarity": 0.721524,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.219589,
+            0.239409,
+            0.541002
+          ],
+          "expected_rating": 4.3214,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.084758,
+              0.226913,
+              0.242107,
+              0.446222
+            ],
+            "expected_rating": 4.0498
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.219589,
+              0.239409,
+              0.541002
+            ],
+            "expected_rating": 4.3214
+          },
+          "delta_improved_minus_canonical": 0.2716,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The in-display fingerprint sensor is a bit slow, which might be a security concern.",
+          "cosine_similarities": [
+            0.548339,
+            0.557558,
+            0.545008,
+            0.564056,
+            0.516402
+          ],
+          "min_similarity": 0.516402,
+          "pmf_probabilities": [
+            0.243459,
+            0.34142,
+            0.0,
+            0.415121,
+            0.0
+          ],
+          "expected_rating": 2.5868,
+          "canonical": {
+            "pmf_probabilities": [
+              0.213833,
+              0.275564,
+              0.191531,
+              0.319071,
+              0.0
+            ],
+            "expected_rating": 2.6158
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.243459,
+              0.34142,
+              0.0,
+              0.415121,
+              0.0
+            ],
+            "expected_rating": 2.5868
+          },
+          "delta_improved_minus_canonical": -0.0291,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "No, the price is a bit high for the specs I usually prefer, and I have better options in my current budget.",
+          "cosine_similarities": [
+            0.548876,
+            0.573894,
+            0.624188,
+            0.53958,
+            0.569268
+          ],
+          "min_similarity": 0.53958,
+          "pmf_probabilities": [
+            0.0,
+            0.193968,
+            0.646123,
+            0.0,
+            0.159909
+          ],
+          "expected_rating": 3.1259,
+          "canonical": {
+            "pmf_probabilities": [
+              0.058875,
+              0.217306,
+              0.535809,
+              0.0,
+              0.188009
+            ],
+            "expected_rating": 3.041
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.193968,
+              0.646123,
+              0.0,
+              0.159909
+            ],
+            "expected_rating": 3.1259
+          },
+          "delta_improved_minus_canonical": 0.0849,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "flagged",
+          "valid": false,
+          "retries": 2,
+          "issues": [
+            "talks about price, which belongs only in the buying-intention answer"
+          ],
+          "previous_attempts": [
+            {
+              "text": "My friends might recommend it for its good specs, but they might also prefer more budget-friendly options. It seems to be a solid choice for most users.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            },
+            {
+              "text": "My friends might think it's a good choice for everyday use, but they could also suggest checking out more affordable options.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            }
+          ]
+        },
+        "PP": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "BI": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        }
+      },
+      "flagged_constructs": [
+        "SI"
+      ],
+      "alignment_flags": []
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "primary_adoption_rating": 3.3852,
+      "primary_adoption_pmf": [
+        0.229063,
+        0.0,
+        0.349259,
+        0.0,
+        0.421678
+      ],
+      "construct_scores": {
+        "PE": 3.8906,
+        "EE": 4.0923,
+        "HM": 3.9217,
+        "SI": 3.0324,
+        "PP": 3.2815,
+        "BI": 3.3852
+      },
+      "construct_responses": {
+        "PE": "The 120Hz display and fast charging make daily tasks smoother and quicker. The processor handles multitasking well, though heavy apps might slow down occasionally.",
+        "EE": "Setting up and using the phone feels intuitive. Navigation is smooth, but some customization requires a bit of exploration.",
+        "HM": "Using it is enjoyable for watching videos and browsing social media. The camera quality is good enough for casual use but not top-tier for photography.",
+        "SI": "Friends might approve of the brand and its features. It seems like a solid choice for everyday use, but not a game-changer.",
+        "PP": "It has a fingerprint sensor, which is good for security, but I'm not sure about other privacy features, so I'd feel moderately safe using it.",
+        "BI": "No, I would stick with my current phone as it meets my needs without the premium price.",
+        "OVERALL": "It's a decent smartphone, but not the one I'd buy right now."
+      },
+      "response_text": "It's a decent smartphone, but not the one I'd buy right now.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The 120Hz display and fast charging make daily tasks smoother and quicker. The processor handles multitasking well, though heavy apps might slow down occasionally.",
+          "cosine_similarities": [
+            0.607133,
+            0.610435,
+            0.596427,
+            0.667009,
+            0.608855
+          ],
+          "min_similarity": 0.596427,
+          "pmf_probabilities": [
+            0.0,
+            0.095321,
+            0.0,
+            0.823414,
+            0.081265
+          ],
+          "expected_rating": 3.8906,
+          "canonical": {
+            "pmf_probabilities": [
+              0.09938,
+              0.130035,
+              0.0,
+              0.655214,
+              0.115371
+            ],
+            "expected_rating": 3.5572
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.095321,
+              0.0,
+              0.823414,
+              0.081265
+            ],
+            "expected_rating": 3.8906
+          },
+          "delta_improved_minus_canonical": 0.3335,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and using the phone feels intuitive. Navigation is smooth, but some customization requires a bit of exploration.",
+          "cosine_similarities": [
+            0.710796,
+            0.721811,
+            0.750618,
+            0.722276,
+            0.757102
+          ],
+          "min_similarity": 0.710796,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.41438,
+            0.078918,
+            0.506701
+          ],
+          "expected_rating": 4.0923,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.101408,
+              0.366605,
+              0.105689,
+              0.426297
+            ],
+            "expected_rating": 3.8569
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.41438,
+              0.078918,
+              0.506701
+            ],
+            "expected_rating": 4.0923
+          },
+          "delta_improved_minus_canonical": 0.2354,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using it is enjoyable for watching videos and browsing social media. The camera quality is good enough for casual use but not top-tier for photography.",
+          "cosine_similarities": [
+            0.622756,
+            0.670844,
+            0.65194,
+            0.712395,
+            0.691662
+          ],
+          "min_similarity": 0.622756,
+          "pmf_probabilities": [
+            0.0,
+            0.203685,
+            0.0,
+            0.467274,
+            0.329041
+          ],
+          "expected_rating": 3.9217,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.203921,
+              0.123758,
+              0.380121,
+              0.2922
+            ],
+            "expected_rating": 3.7606
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.203685,
+              0.0,
+              0.467274,
+              0.329041
+            ],
+            "expected_rating": 3.9217
+          },
+          "delta_improved_minus_canonical": 0.1611,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Friends might approve of the brand and its features. It seems like a solid choice for everyday use, but not a game-changer.",
+          "cosine_similarities": [
+            0.536488,
+            0.592301,
+            0.610716,
+            0.597084,
+            0.54161
+          ],
+          "min_similarity": 0.536488,
+          "pmf_probabilities": [
+            0.0,
+            0.279455,
+            0.408717,
+            0.311828,
+            0.0
+          ],
+          "expected_rating": 3.0324,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.285112,
+              0.379182,
+              0.309541,
+              0.026165
+            ],
+            "expected_rating": 3.0768
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.279455,
+              0.408717,
+              0.311828,
+              0.0
+            ],
+            "expected_rating": 3.0324
+          },
+          "delta_improved_minus_canonical": -0.0444,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "It has a fingerprint sensor, which is good for security, but I'm not sure about other privacy features, so I'd feel moderately safe using it.",
+          "cosine_similarities": [
+            0.684419,
+            0.670011,
+            0.67456,
+            0.716563,
+            0.662651
+          ],
+          "min_similarity": 0.662651,
+          "pmf_probabilities": [
+            0.208407,
+            0.0,
+            0.093252,
+            0.698341,
+            0.0
+          ],
+          "expected_rating": 3.2815,
+          "canonical": {
+            "pmf_probabilities": [
+              0.229261,
+              0.077513,
+              0.125426,
+              0.5678,
+              0.0
+            ],
+            "expected_rating": 3.0318
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.208407,
+              0.0,
+              0.093252,
+              0.698341,
+              0.0
+            ],
+            "expected_rating": 3.2815
+          },
+          "delta_improved_minus_canonical": 0.2498,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "No, I would stick with my current phone as it meets my needs without the premium price.",
+          "cosine_similarities": [
+            0.771434,
+            0.754346,
+            0.780271,
+            0.747688,
+            0.785217
+          ],
+          "min_similarity": 0.747688,
+          "pmf_probabilities": [
+            0.229063,
+            0.0,
+            0.349259,
+            0.0,
+            0.421678
+          ],
+          "expected_rating": 3.3852,
+          "canonical": {
+            "pmf_probabilities": [
+              0.236243,
+              0.066238,
+              0.324157,
+              0.0,
+              0.373362
+            ],
+            "expected_rating": 3.208
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.229063,
+              0.0,
+              0.349259,
+              0.0,
+              0.421678
+            ],
+            "expected_rating": 3.3852
+          },
+          "delta_improved_minus_canonical": 0.1772,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "PP": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "It has decent security features, but I would prefer something with more robust privacy settings.",
+              "issues": [
+                "talks about physical build or durability; this question is about protecting your personal information",
+                "uses formal words (robust); use simple everyday words"
+              ]
+            }
+          ]
+        },
+        "BI": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        }
+      },
+      "flagged_constructs": [],
+      "alignment_flags": []
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "OnePlus Nord CE4 5G",
+      "primary_adoption_rating": 3.2672,
+      "primary_adoption_pmf": [
+        0.0,
+        0.168264,
+        0.614014,
+        0.0,
+        0.217722
+      ],
+      "construct_scores": {
+        "PE": 3.9916,
+        "EE": 4.1331,
+        "HM": 4.2776,
+        "PP": 2.3758,
+        "BI": 3.2672
+      },
+      "construct_responses": {
+        "PE": "It offers smooth performance for everyday tasks and multitasking, making it easier to switch between apps without lag.",
+        "EE": "Setting up is easy with the standard interface. Navigation is intuitive, but it might take a few days to get used to some custom settings.",
+        "HM": "The vibrant display and fast charging are fun, enhancing the overall entertainment and convenience of using the phone.",
+        "SI": "Friends might recommend it for its fast charging and good camera, but family might think it's a bit pricey for an otherwise decent phone.",
+        "PP": "The in-display fingerprint sensor provides basic security for personal information, though no other security features are mentioned.",
+        "BI": "No, I would look for a more affordable option that fits my needs better.",
+        "OVERALL": "It has good features but the price is a dealbreaker for me."
+      },
+      "response_text": "It has good features but the price is a dealbreaker for me.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It offers smooth performance for everyday tasks and multitasking, making it easier to switch between apps without lag.",
+          "cosine_similarities": [
+            0.645142,
+            0.646071,
+            0.635997,
+            0.707619,
+            0.652049
+          ],
+          "min_similarity": 0.635997,
+          "pmf_probabilities": [
+            0.0,
+            0.060492,
+            0.0,
+            0.826929,
+            0.112579
+          ],
+          "expected_rating": 3.9916,
+          "canonical": {
+            "pmf_probabilities": [
+              0.085549,
+              0.094247,
+              0.0,
+              0.670032,
+              0.150171
+            ],
+            "expected_rating": 3.705
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.060492,
+              0.0,
+              0.826929,
+              0.112579
+            ],
+            "expected_rating": 3.9916
+          },
+          "delta_improved_minus_canonical": 0.2866,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up is easy with the standard interface. Navigation is intuitive, but it might take a few days to get used to some custom settings.",
+          "cosine_similarities": [
+            0.565662,
+            0.555884,
+            0.630786,
+            0.628497,
+            0.655078
+          ],
+          "min_similarity": 0.555884,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.292931,
+            0.281058,
+            0.426011
+          ],
+          "expected_rating": 4.1331,
+          "canonical": {
+            "pmf_probabilities": [
+              0.038125,
+              0.0,
+              0.29203,
+              0.283106,
+              0.386739
+            ],
+            "expected_rating": 3.9803
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.292931,
+              0.281058,
+              0.426011
+            ],
+            "expected_rating": 4.1331
+          },
+          "delta_improved_minus_canonical": 0.1527,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The vibrant display and fast charging are fun, enhancing the overall entertainment and convenience of using the phone.",
+          "cosine_similarities": [
+            0.628487,
+            0.688138,
+            0.674464,
+            0.697527,
+            0.785019
+          ],
+          "min_similarity": 0.628487,
+          "pmf_probabilities": [
+            0.0,
+            0.17139,
+            0.0,
+            0.208269,
+            0.620341
+          ],
+          "expected_rating": 4.2776,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.180106,
+              0.13882,
+              0.208453,
+              0.472621
+            ],
+            "expected_rating": 3.9736
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.17139,
+              0.0,
+              0.208269,
+              0.620341
+            ],
+            "expected_rating": 4.2776
+          },
+          "delta_improved_minus_canonical": 0.304,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The in-display fingerprint sensor provides basic security for personal information, though no other security features are mentioned.",
+          "cosine_similarities": [
+            0.65608,
+            0.659737,
+            0.577684,
+            0.661478,
+            0.617421
+          ],
+          "min_similarity": 0.577684,
+          "pmf_probabilities": [
+            0.316907,
+            0.336764,
+            0.0,
+            0.346329,
+            0.0
+          ],
+          "expected_rating": 2.3758,
+          "canonical": {
+            "pmf_probabilities": [
+              0.276063,
+              0.288938,
+              0.0,
+              0.295071,
+              0.139927
+            ],
+            "expected_rating": 2.7339
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.316907,
+              0.336764,
+              0.0,
+              0.346329,
+              0.0
+            ],
+            "expected_rating": 2.3758
+          },
+          "delta_improved_minus_canonical": -0.3581,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "No, I would look for a more affordable option that fits my needs better.",
+          "cosine_similarities": [
+            0.543814,
+            0.564116,
+            0.607781,
+            0.537495,
+            0.569792
+          ],
+          "min_similarity": 0.537495,
+          "pmf_probabilities": [
+            0.0,
+            0.168264,
+            0.614014,
+            0.0,
+            0.217722
+          ],
+          "expected_rating": 3.2672,
+          "canonical": {
+            "pmf_probabilities": [
+              0.046629,
+              0.196433,
+              0.518626,
+              0.0,
+              0.238313
+            ],
+            "expected_rating": 3.1869
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.168264,
+              0.614014,
+              0.0,
+              0.217722
+            ],
+            "expected_rating": 3.2672
+          },
+          "delta_improved_minus_canonical": 0.0802,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "It offers smooth performance for everyday tasks and multitasking, but the price is a limitation. The 120Hz display helps in faster scrolling.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            }
+          ]
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "The display and camera are fun to use, making it pleasant for media consumption. However, the price might deter me from enjoying it fully.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            }
+          ]
+        },
+        "SI": {
+          "status": "flagged",
+          "valid": false,
+          "retries": 2,
+          "issues": [
+            "talks about price, which belongs only in the buying-intention answer"
+          ],
+          "previous_attempts": [
+            {
+              "text": "Friends might recommend it for its features, but I doubt they would approve of the price.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            },
+            {
+              "text": "Friends might recommend it for its features, but most would be indifferent about the price, focusing more on the performance.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            }
+          ]
+        },
+        "PP": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "It has in-display fingerprint, but no other security features are mentioned, so it provides basic security.",
+              "issues": [
+                "reuses the same sentence pattern as another answer ('it has in ...'); say it your own way"
+              ]
+            }
+          ]
+        },
+        "BI": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        }
+      },
+      "flagged_constructs": [
+        "SI"
+      ],
+      "alignment_flags": []
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.606342,
+        0.61686,
+        0.599213,
+        0.667135,
+        0.608274
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.134351,
+        0.0,
+        0.810409,
+        0.055239
+      ],
+      "expected_rating": 3.7865,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.553629,
+        0.546121,
+        0.613229,
+        0.629885,
+        0.664233
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.223767,
+        0.300729,
+        0.475505
+      ],
+      "expected_rating": 4.2517,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.629018,
+        0.695548,
+        0.684639,
+        0.722647,
+        0.785741
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.175086,
+        0.0,
+        0.276128,
+        0.548787
+      ],
+      "expected_rating": 4.1986,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.650017,
+        0.652639,
+        0.669097,
+        0.676258,
+        0.639267
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.128241,
+        0.373781,
+        0.497977,
+        0.0
+      ],
+      "expected_rating": 3.3697,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.612346,
+        0.602649,
+        0.565091,
+        0.603732,
+        0.585044
+      ],
+      "pmf_probabilities": [
+        0.399857,
+        0.294387,
+        0.0,
+        0.305756,
+        0.0
+      ],
+      "expected_rating": 2.2117,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.544783,
+        0.571503,
+        0.571543,
+        0.562905,
+        0.569165
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.346374,
+        0.347064,
+        0.0,
+        0.306561
+      ],
+      "expected_rating": 3.2667,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.572215,
+        0.592122,
+        0.599914,
+        0.640258,
+        0.609413
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.172528,
+        0.57185,
+        0.255623
+      ],
+      "expected_rating": 4.0831,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.551394,
+        0.574338,
+        0.58014,
+        0.55455,
+        0.584727
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.250251,
+        0.337991,
+        0.0,
+        0.411758
+      ],
+      "expected_rating": 3.5733,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.721524,
+        0.729782,
+        0.743633,
+        0.745114,
+        0.765002
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.219589,
+        0.239409,
+        0.541002
+      ],
+      "expected_rating": 4.3214,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.548339,
+        0.557558,
+        0.545008,
+        0.564056,
+        0.516402
+      ],
+      "pmf_probabilities": [
+        0.243459,
+        0.34142,
+        0.0,
+        0.415121,
+        0.0
+      ],
+      "expected_rating": 2.5868,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.548876,
+        0.573894,
+        0.624188,
+        0.53958,
+        0.569268
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.193968,
+        0.646123,
+        0.0,
+        0.159909
+      ],
+      "expected_rating": 3.1259,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.607133,
+        0.610435,
+        0.596427,
+        0.667009,
+        0.608855
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.095321,
+        0.0,
+        0.823414,
+        0.081265
+      ],
+      "expected_rating": 3.8906,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.710796,
+        0.721811,
+        0.750618,
+        0.722276,
+        0.757102
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.41438,
+        0.078918,
+        0.506701
+      ],
+      "expected_rating": 4.0923,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.622756,
+        0.670844,
+        0.65194,
+        0.712395,
+        0.691662
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.203685,
+        0.0,
+        0.467274,
+        0.329041
+      ],
+      "expected_rating": 3.9217,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.536488,
+        0.592301,
+        0.610716,
+        0.597084,
+        0.54161
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.279455,
+        0.408717,
+        0.311828,
+        0.0
+      ],
+      "expected_rating": 3.0324,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.684419,
+        0.670011,
+        0.67456,
+        0.716563,
+        0.662651
+      ],
+      "pmf_probabilities": [
+        0.208407,
+        0.0,
+        0.093252,
+        0.698341,
+        0.0
+      ],
+      "expected_rating": 3.2815,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.771434,
+        0.754346,
+        0.780271,
+        0.747688,
+        0.785217
+      ],
+      "pmf_probabilities": [
+        0.229063,
+        0.0,
+        0.349259,
+        0.0,
+        0.421678
+      ],
+      "expected_rating": 3.3852,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.645142,
+        0.646071,
+        0.635997,
+        0.707619,
+        0.652049
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.060492,
+        0.0,
+        0.826929,
+        0.112579
+      ],
+      "expected_rating": 3.9916,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.565662,
+        0.555884,
+        0.630786,
+        0.628497,
+        0.655078
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.292931,
+        0.281058,
+        0.426011
+      ],
+      "expected_rating": 4.1331,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.628487,
+        0.688138,
+        0.674464,
+        0.697527,
+        0.785019
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.17139,
+        0.0,
+        0.208269,
+        0.620341
+      ],
+      "expected_rating": 4.2776,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.65608,
+        0.659737,
+        0.577684,
+        0.661478,
+        0.617421
+      ],
+      "pmf_probabilities": [
+        0.316907,
+        0.336764,
+        0.0,
+        0.346329,
+        0.0
+      ],
+      "expected_rating": 2.3758,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "OnePlus Nord CE4 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.543814,
+        0.564116,
+        0.607781,
+        0.537495,
+        0.569792
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.168264,
+        0.614014,
+        0.0,
+        0.217722
+      ],
+      "expected_rating": 3.2672,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.606342,
+      "cos_sim_2": 0.61686,
+      "cos_sim_3": 0.599213,
+      "cos_sim_4": 0.667135,
+      "cos_sim_5": 0.608274,
+      "min_similarity": 0.599213,
+      "p1": 0.0,
+      "p2": 0.134351,
+      "p3": 0.0,
+      "p4": 0.810409,
+      "p5": 0.055239,
+      "set_expected_rating": 3.7865,
+      "canonical_expected_rating": 3.532,
+      "improved_expected_rating": 3.7865,
+      "delta": 0.2545,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.553629,
+      "cos_sim_2": 0.546121,
+      "cos_sim_3": 0.613229,
+      "cos_sim_4": 0.629885,
+      "cos_sim_5": 0.664233,
+      "min_similarity": 0.546121,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.223767,
+      "p4": 0.300729,
+      "p5": 0.475505,
+      "set_expected_rating": 4.2517,
+      "canonical_expected_rating": 4.103,
+      "improved_expected_rating": 4.2517,
+      "delta": 0.1487,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.629018,
+      "cos_sim_2": 0.695548,
+      "cos_sim_3": 0.684639,
+      "cos_sim_4": 0.722647,
+      "cos_sim_5": 0.785741,
+      "min_similarity": 0.629018,
+      "p1": 0.0,
+      "p2": 0.175086,
+      "p3": 0.0,
+      "p4": 0.276128,
+      "p5": 0.548787,
+      "set_expected_rating": 4.1986,
+      "canonical_expected_rating": 3.9142,
+      "improved_expected_rating": 4.1986,
+      "delta": 0.2844,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.650017,
+      "cos_sim_2": 0.652639,
+      "cos_sim_3": 0.669097,
+      "cos_sim_4": 0.676258,
+      "cos_sim_5": 0.639267,
+      "min_similarity": 0.639267,
+      "p1": 0.0,
+      "p2": 0.128241,
+      "p3": 0.373781,
+      "p4": 0.497977,
+      "p5": 0.0,
+      "set_expected_rating": 3.3697,
+      "canonical_expected_rating": 3.0233,
+      "improved_expected_rating": 3.3697,
+      "delta": 0.3464,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.612346,
+      "cos_sim_2": 0.602649,
+      "cos_sim_3": 0.565091,
+      "cos_sim_4": 0.603732,
+      "cos_sim_5": 0.585044,
+      "min_similarity": 0.565091,
+      "p1": 0.399857,
+      "p2": 0.294387,
+      "p3": 0.0,
+      "p4": 0.305756,
+      "p5": 0.0,
+      "set_expected_rating": 2.2117,
+      "canonical_expected_rating": 2.6268,
+      "improved_expected_rating": 2.2117,
+      "delta": -0.4151,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.544783,
+      "cos_sim_2": 0.571503,
+      "cos_sim_3": 0.571543,
+      "cos_sim_4": 0.562905,
+      "cos_sim_5": 0.569165,
+      "min_similarity": 0.544783,
+      "p1": 0.0,
+      "p2": 0.346374,
+      "p3": 0.347064,
+      "p4": 0.0,
+      "p5": 0.306561,
+      "set_expected_rating": 3.2667,
+      "canonical_expected_rating": 3.4185,
+      "improved_expected_rating": 3.2667,
+      "delta": -0.1517,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.572215,
+      "cos_sim_2": 0.592122,
+      "cos_sim_3": 0.599914,
+      "cos_sim_4": 0.640258,
+      "cos_sim_5": 0.609413,
+      "min_similarity": 0.572215,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.172528,
+      "p4": 0.57185,
+      "p5": 0.255623,
+      "set_expected_rating": 4.0831,
+      "canonical_expected_rating": 3.8017,
+      "improved_expected_rating": 4.0831,
+      "delta": 0.2814,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.551394,
+      "cos_sim_2": 0.574338,
+      "cos_sim_3": 0.58014,
+      "cos_sim_4": 0.55455,
+      "cos_sim_5": 0.584727,
+      "min_similarity": 0.551394,
+      "p1": 0.0,
+      "p2": 0.250251,
+      "p3": 0.337991,
+      "p4": 0.0,
+      "p5": 0.411758,
+      "set_expected_rating": 3.5733,
+      "canonical_expected_rating": 3.5316,
+      "improved_expected_rating": 3.5733,
+      "delta": 0.0416,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.721524,
+      "cos_sim_2": 0.729782,
+      "cos_sim_3": 0.743633,
+      "cos_sim_4": 0.745114,
+      "cos_sim_5": 0.765002,
+      "min_similarity": 0.721524,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.219589,
+      "p4": 0.239409,
+      "p5": 0.541002,
+      "set_expected_rating": 4.3214,
+      "canonical_expected_rating": 4.0498,
+      "improved_expected_rating": 4.3214,
+      "delta": 0.2716,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.548339,
+      "cos_sim_2": 0.557558,
+      "cos_sim_3": 0.545008,
+      "cos_sim_4": 0.564056,
+      "cos_sim_5": 0.516402,
+      "min_similarity": 0.516402,
+      "p1": 0.243459,
+      "p2": 0.34142,
+      "p3": 0.0,
+      "p4": 0.415121,
+      "p5": 0.0,
+      "set_expected_rating": 2.5868,
+      "canonical_expected_rating": 2.6158,
+      "improved_expected_rating": 2.5868,
+      "delta": -0.0291,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.548876,
+      "cos_sim_2": 0.573894,
+      "cos_sim_3": 0.624188,
+      "cos_sim_4": 0.53958,
+      "cos_sim_5": 0.569268,
+      "min_similarity": 0.53958,
+      "p1": 0.0,
+      "p2": 0.193968,
+      "p3": 0.646123,
+      "p4": 0.0,
+      "p5": 0.159909,
+      "set_expected_rating": 3.1259,
+      "canonical_expected_rating": 3.041,
+      "improved_expected_rating": 3.1259,
+      "delta": 0.0849,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.607133,
+      "cos_sim_2": 0.610435,
+      "cos_sim_3": 0.596427,
+      "cos_sim_4": 0.667009,
+      "cos_sim_5": 0.608855,
+      "min_similarity": 0.596427,
+      "p1": 0.0,
+      "p2": 0.095321,
+      "p3": 0.0,
+      "p4": 0.823414,
+      "p5": 0.081265,
+      "set_expected_rating": 3.8906,
+      "canonical_expected_rating": 3.5572,
+      "improved_expected_rating": 3.8906,
+      "delta": 0.3335,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.710796,
+      "cos_sim_2": 0.721811,
+      "cos_sim_3": 0.750618,
+      "cos_sim_4": 0.722276,
+      "cos_sim_5": 0.757102,
+      "min_similarity": 0.710796,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.41438,
+      "p4": 0.078918,
+      "p5": 0.506701,
+      "set_expected_rating": 4.0923,
+      "canonical_expected_rating": 3.8569,
+      "improved_expected_rating": 4.0923,
+      "delta": 0.2354,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.622756,
+      "cos_sim_2": 0.670844,
+      "cos_sim_3": 0.65194,
+      "cos_sim_4": 0.712395,
+      "cos_sim_5": 0.691662,
+      "min_similarity": 0.622756,
+      "p1": 0.0,
+      "p2": 0.203685,
+      "p3": 0.0,
+      "p4": 0.467274,
+      "p5": 0.329041,
+      "set_expected_rating": 3.9217,
+      "canonical_expected_rating": 3.7606,
+      "improved_expected_rating": 3.9217,
+      "delta": 0.1611,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.536488,
+      "cos_sim_2": 0.592301,
+      "cos_sim_3": 0.610716,
+      "cos_sim_4": 0.597084,
+      "cos_sim_5": 0.54161,
+      "min_similarity": 0.536488,
+      "p1": 0.0,
+      "p2": 0.279455,
+      "p3": 0.408717,
+      "p4": 0.311828,
+      "p5": 0.0,
+      "set_expected_rating": 3.0324,
+      "canonical_expected_rating": 3.0768,
+      "improved_expected_rating": 3.0324,
+      "delta": -0.0444,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.684419,
+      "cos_sim_2": 0.670011,
+      "cos_sim_3": 0.67456,
+      "cos_sim_4": 0.716563,
+      "cos_sim_5": 0.662651,
+      "min_similarity": 0.662651,
+      "p1": 0.208407,
+      "p2": 0.0,
+      "p3": 0.093252,
+      "p4": 0.698341,
+      "p5": 0.0,
+      "set_expected_rating": 3.2815,
+      "canonical_expected_rating": 3.0318,
+      "improved_expected_rating": 3.2815,
+      "delta": 0.2498,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.771434,
+      "cos_sim_2": 0.754346,
+      "cos_sim_3": 0.780271,
+      "cos_sim_4": 0.747688,
+      "cos_sim_5": 0.785217,
+      "min_similarity": 0.747688,
+      "p1": 0.229063,
+      "p2": 0.0,
+      "p3": 0.349259,
+      "p4": 0.0,
+      "p5": 0.421678,
+      "set_expected_rating": 3.3852,
+      "canonical_expected_rating": 3.208,
+      "improved_expected_rating": 3.3852,
+      "delta": 0.1772,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.645142,
+      "cos_sim_2": 0.646071,
+      "cos_sim_3": 0.635997,
+      "cos_sim_4": 0.707619,
+      "cos_sim_5": 0.652049,
+      "min_similarity": 0.635997,
+      "p1": 0.0,
+      "p2": 0.060492,
+      "p3": 0.0,
+      "p4": 0.826929,
+      "p5": 0.112579,
+      "set_expected_rating": 3.9916,
+      "canonical_expected_rating": 3.705,
+      "improved_expected_rating": 3.9916,
+      "delta": 0.2866,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.565662,
+      "cos_sim_2": 0.555884,
+      "cos_sim_3": 0.630786,
+      "cos_sim_4": 0.628497,
+      "cos_sim_5": 0.655078,
+      "min_similarity": 0.555884,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.292931,
+      "p4": 0.281058,
+      "p5": 0.426011,
+      "set_expected_rating": 4.1331,
+      "canonical_expected_rating": 3.9803,
+      "improved_expected_rating": 4.1331,
+      "delta": 0.1527,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.628487,
+      "cos_sim_2": 0.688138,
+      "cos_sim_3": 0.674464,
+      "cos_sim_4": 0.697527,
+      "cos_sim_5": 0.785019,
+      "min_similarity": 0.628487,
+      "p1": 0.0,
+      "p2": 0.17139,
+      "p3": 0.0,
+      "p4": 0.208269,
+      "p5": 0.620341,
+      "set_expected_rating": 4.2776,
+      "canonical_expected_rating": 3.9736,
+      "improved_expected_rating": 4.2776,
+      "delta": 0.304,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.65608,
+      "cos_sim_2": 0.659737,
+      "cos_sim_3": 0.577684,
+      "cos_sim_4": 0.661478,
+      "cos_sim_5": 0.617421,
+      "min_similarity": 0.577684,
+      "p1": 0.316907,
+      "p2": 0.336764,
+      "p3": 0.0,
+      "p4": 0.346329,
+      "p5": 0.0,
+      "set_expected_rating": 2.3758,
+      "canonical_expected_rating": 2.7339,
+      "improved_expected_rating": 2.3758,
+      "delta": -0.3581,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "OnePlus Nord CE4 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.543814,
+      "cos_sim_2": 0.564116,
+      "cos_sim_3": 0.607781,
+      "cos_sim_4": 0.537495,
+      "cos_sim_5": 0.569792,
+      "min_similarity": 0.537495,
+      "p1": 0.0,
+      "p2": 0.168264,
+      "p3": 0.614014,
+      "p4": 0.0,
+      "p5": 0.217722,
+      "set_expected_rating": 3.2672,
+      "canonical_expected_rating": 3.1869,
+      "improved_expected_rating": 3.2672,
+      "delta": 0.0802,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

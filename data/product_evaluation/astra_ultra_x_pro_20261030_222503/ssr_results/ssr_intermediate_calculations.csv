@@ -1,0 +1,25 @@
+persona_id,product_name,anchor_set_code,anchor_set_name,cos_sim_1,cos_sim_2,cos_sim_3,cos_sim_4,cos_sim_5,min_similarity,p1,p2,p3,p4,p5,set_expected_rating,embedding_model
+P1_premium_tier_owner,Astra Ultra X Pro,PE,Performance Expectancy,0.735005,0.744514,0.696599,0.776846,0.726776,0.696599,0.195207,0.243539,0.0,0.407873,0.153381,3.0807,nomic-embed-text
+P1_premium_tier_owner,Astra Ultra X Pro,EE,Effort Expectancy,0.766545,0.681735,0.696364,0.704898,0.715645,0.681735,0.54187,0.0,0.093472,0.147996,0.216662,2.4976,nomic-embed-text
+P1_premium_tier_owner,Astra Ultra X Pro,HM,Hedonic Motivation,0.638314,0.646022,0.65967,0.665436,0.714136,0.638314,0.0,0.058393,0.161777,0.20546,0.57437,4.2958,nomic-embed-text
+P1_premium_tier_owner,Astra Ultra X Pro,SI,Social Influence,0.668191,0.62457,0.681691,0.680185,0.685959,0.62457,0.200329,0.0,0.262329,0.255411,0.281931,3.4186,nomic-embed-text
+P1_premium_tier_owner,Astra Ultra X Pro,PP,Perceived Protection,0.623504,0.606021,0.55654,0.665172,0.661997,0.55654,0.202594,0.149701,0.0,0.328655,0.31905,3.4119,nomic-embed-text
+P1_premium_tier_owner,Astra Ultra X Pro,BI,Behavioral Intention,0.617,0.658002,0.686303,0.613783,0.614473,0.613783,0.026667,0.366515,0.601097,0.0,0.005721,2.5916,nomic-embed-text
+P2_midrange_heavy_user,Astra Ultra X Pro,PE,Performance Expectancy,0.731995,0.74514,0.702781,0.721343,0.674932,0.674932,0.283146,0.348374,0.138188,0.230292,0.0,2.3156,nomic-embed-text
+P2_midrange_heavy_user,Astra Ultra X Pro,EE,Effort Expectancy,0.711944,0.608324,0.664872,0.648263,0.663447,0.608324,0.405986,0.0,0.221556,0.156482,0.215976,2.7765,nomic-embed-text
+P2_midrange_heavy_user,Astra Ultra X Pro,HM,Hedonic Motivation,0.622382,0.633406,0.646351,0.640114,0.668407,0.622382,0.0,0.111639,0.242724,0.17956,0.466077,4.0001,nomic-embed-text
+P2_midrange_heavy_user,Astra Ultra X Pro,SI,Social Influence,0.534483,0.551775,0.60143,0.570121,0.566158,0.534483,0.0,0.114103,0.441741,0.235155,0.209001,3.5391,nomic-embed-text
+P2_midrange_heavy_user,Astra Ultra X Pro,PP,Perceived Protection,0.724737,0.697581,0.648032,0.742794,0.721483,0.648032,0.260486,0.168266,0.0,0.32181,0.249438,3.1314,nomic-embed-text
+P2_midrange_heavy_user,Astra Ultra X Pro,BI,Behavioral Intention,0.521518,0.55976,0.592339,0.512368,0.516199,0.512368,0.065196,0.337688,0.569823,0.0,0.027293,2.5865,nomic-embed-text
+P3_midrange_moderate_user,Astra Ultra X Pro,PE,Performance Expectancy,0.700966,0.727869,0.685,0.711534,0.668263,0.668263,0.214706,0.391328,0.109882,0.284084,0.0,2.4633,nomic-embed-text
+P3_midrange_moderate_user,Astra Ultra X Pro,EE,Effort Expectancy,0.736896,0.710896,0.674118,0.750281,0.724777,0.674118,0.277315,0.162463,0.0,0.336442,0.22378,3.0669,nomic-embed-text
+P3_midrange_moderate_user,Astra Ultra X Pro,HM,Hedonic Motivation,0.541682,0.575079,0.558746,0.590426,0.578211,0.541682,0.0,0.246046,0.125717,0.359116,0.269121,3.6513,nomic-embed-text
+P3_midrange_moderate_user,Astra Ultra X Pro,SI,Social Influence,0.556362,0.544636,0.601148,0.550975,0.538651,0.538651,0.179777,0.060754,0.634373,0.125096,0.0,2.7048,nomic-embed-text
+P3_midrange_moderate_user,Astra Ultra X Pro,PP,Perceived Protection,0.657224,0.647796,0.588294,0.676109,0.644938,0.588294,0.252593,0.218044,0.0,0.321795,0.207569,3.0137,nomic-embed-text
+P3_midrange_moderate_user,Astra Ultra X Pro,BI,Behavioral Intention,0.543087,0.605466,0.60161,0.570961,0.576294,0.543087,0.0,0.342775,0.321584,0.153169,0.182471,3.1753,nomic-embed-text
+P4_budget_or_undisclosed_price,Astra Ultra X Pro,PE,Performance Expectancy,0.690825,0.709604,0.706283,0.680361,0.66452,0.66452,0.203928,0.349509,0.323758,0.122805,0.0,2.3654,nomic-embed-text
+P4_budget_or_undisclosed_price,Astra Ultra X Pro,EE,Effort Expectancy,0.76338,0.664938,0.702921,0.737357,0.729454,0.664938,0.360117,0.0,0.138948,0.264923,0.236012,3.0167,nomic-embed-text
+P4_budget_or_undisclosed_price,Astra Ultra X Pro,HM,Hedonic Motivation,0.514419,0.535905,0.540484,0.541302,0.607249,0.514419,0.0,0.128455,0.155833,0.160723,0.554989,4.1422,nomic-embed-text
+P4_budget_or_undisclosed_price,Astra Ultra X Pro,SI,Social Influence,0.636772,0.626494,0.673245,0.661064,0.672587,0.626494,0.074645,0.0,0.339537,0.251066,0.334753,3.7713,nomic-embed-text
+P4_budget_or_undisclosed_price,Astra Ultra X Pro,PP,Perceived Protection,0.643683,0.632721,0.577844,0.661432,0.631066,0.577844,0.255658,0.213094,0.0,0.324581,0.206667,3.0135,nomic-embed-text
+P4_budget_or_undisclosed_price,Astra Ultra X Pro,BI,Behavioral Intention,0.584639,0.642219,0.666232,0.600315,0.606757,0.584639,0.0,0.325371,0.461063,0.088584,0.124982,3.0132,nomic-embed-text

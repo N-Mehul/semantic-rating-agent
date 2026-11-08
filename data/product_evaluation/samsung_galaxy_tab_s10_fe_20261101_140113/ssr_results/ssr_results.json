@@ -1,0 +1,2025 @@
+{
+  "evaluation_id": "samsung_galaxy_tab_s10_fe_20261101_140113",
+  "product_name": "Samsung Galaxy Tab S10 FE",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-11-01T08:38:00.110280+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.2834,
+  "overall_adoption_average": 3.2834,
+  "primary_adoption_average": 3.2834,
+  "construct_averages": {
+    "PE": 2.8961,
+    "EE": 3.5355,
+    "HM": 3.3072,
+    "SI": 3.4259,
+    "PP": 3.6432,
+    "BI": 3.2834
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "primary_adoption_rating": 3.9657,
+      "primary_adoption_pmf": [
+        0.0,
+        0.121383,
+        0.114031,
+        0.442078,
+        0.322508
+      ],
+      "construct_scores": {
+        "PE": 3.8435,
+        "EE": 4.0643,
+        "HM": 4.2253,
+        "SI": 4.1822,
+        "PP": 4.1266,
+        "BI": 3.9657
+      },
+      "construct_responses": {
+        "PE": "The high-speed multi-core processing and multitasking capabilities make it very effective for studying and working. The large display with accurate color reproduction is perfect for detailed work like design and video editing.",
+        "EE": "Setting up and understanding the tablet is straightforward, thanks to its comprehensive ports and user-friendly interface.",
+        "HM": "Using the tablet is enjoyable, especially for watching videos and attending online classes. The S Pen support adds a lot of fun for note-taking and drawing.",
+        "SI": "My classmates and colleagues would definitely be impressed by the tablet's premium features and performance. It's a status symbol in my circle.",
+        "PP": "The tablet feels sturdy and reliable, thanks to its high build quality and comprehensive ports. I trust it to handle all my needs without any issues.",
+        "BI": "I am certain I will continue using this tablet as my primary tablet. The premium features and performance justify the investment within my budget.",
+        "OVERALL": "This tablet offers everything I need for studying, working, and entertainment. Its performance and build quality make it a worthwhile purchase."
+      },
+      "response_text": "This tablet offers everything I need for studying, working, and entertainment. Its performance and build quality make it a worthwhile purchase.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The high-speed multi-core processing and multitasking capabilities make it very effective for studying and working. The large display with accurate color reproduction is perfect for detailed work like design and video editing.",
+          "cosine_similarities": [
+            0.54327,
+            0.542626,
+            0.529087,
+            0.607334,
+            0.574955
+          ],
+          "min_similarity": 0.529087,
+          "pmf_probabilities": [
+            0.093411,
+            0.089165,
+            0.0,
+            0.515335,
+            0.30209
+          ],
+          "expected_rating": 3.8435,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and understanding the tablet is straightforward, thanks to its comprehensive ports and user-friendly interface.",
+          "cosine_similarities": [
+            0.591862,
+            0.613133,
+            0.621818,
+            0.640381,
+            0.676198
+          ],
+          "min_similarity": 0.591862,
+          "pmf_probabilities": [
+            0.0,
+            0.115554,
+            0.162733,
+            0.263571,
+            0.458142
+          ],
+          "expected_rating": 4.0643,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the tablet is enjoyable, especially for watching videos and attending online classes. The S Pen support adds a lot of fun for note-taking and drawing.",
+          "cosine_similarities": [
+            0.623633,
+            0.644563,
+            0.645328,
+            0.67823,
+            0.733951
+          ],
+          "min_similarity": 0.623633,
+          "pmf_probabilities": [
+            0.0,
+            0.100848,
+            0.104534,
+            0.263066,
+            0.531552
+          ],
+          "expected_rating": 4.2253,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My classmates and colleagues would definitely be impressed by the tablet's premium features and performance. It's a status symbol in my circle.",
+          "cosine_similarities": [
+            0.591833,
+            0.588376,
+            0.617643,
+            0.688535,
+            0.666459
+          ],
+          "min_similarity": 0.588376,
+          "pmf_probabilities": [
+            0.016387,
+            0.0,
+            0.138728,
+            0.474764,
+            0.37012
+          ],
+          "expected_rating": 4.1822,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The tablet feels sturdy and reliable, thanks to its high build quality and comprehensive ports. I trust it to handle all my needs without any issues.",
+          "cosine_similarities": [
+            0.588078,
+            0.574468,
+            0.601299,
+            0.63632,
+            0.666767
+          ],
+          "min_similarity": 0.574468,
+          "pmf_probabilities": [
+            0.069939,
+            0.0,
+            0.137884,
+            0.317856,
+            0.474321
+          ],
+          "expected_rating": 4.1266,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this tablet as my primary tablet. The premium features and performance justify the investment within my budget.",
+          "cosine_similarities": [
+            0.592367,
+            0.61858,
+            0.616992,
+            0.687835,
+            0.662013
+          ],
+          "min_similarity": 0.592367,
+          "pmf_probabilities": [
+            0.0,
+            0.121383,
+            0.114031,
+            0.442078,
+            0.322508
+          ],
+          "expected_rating": 3.9657,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "primary_adoption_rating": 4.0392,
+      "primary_adoption_pmf": [
+        0.0,
+        0.122202,
+        0.041372,
+        0.511456,
+        0.32497
+      ],
+      "construct_scores": {
+        "PE": 3.1445,
+        "EE": 4.1289,
+        "HM": 4.3455,
+        "SI": 3.6329,
+        "PP": 3.9007,
+        "BI": 4.0392
+      },
+      "construct_responses": {
+        "PE": "It will handle my daily tasks like studying, note-taking, and online classes efficiently. The high-speed processor and multitasking capabilities make it perfect for a heavy user.",
+        "EE": "Setting it up is straightforward, and the user interface is intuitive. It doesn't take much effort to navigate through the settings or use the S Pen.",
+        "HM": "Using the tablet is enjoyable, especially for taking notes and browsing the internet. The large display makes everything easy to see and read.",
+        "SI": "My friends and classmates would appreciate having such a feature-rich tablet. They might be interested in getting one for themselves too.",
+        "PP": "The build quality seems sturdy, and the device feels reliable. The security features, like the fingerprint sensor, make it secure to use.",
+        "BI": "I am certain I will continue using this tablet as my primary tablet. The price fits nicely within my budget, and it provides all the features I need for my daily routine.",
+        "OVERALL": "It's a versatile and powerful tablet that suits my needs perfectly. The large display and S Pen support make it a great choice for both work and entertainment."
+      },
+      "response_text": "It's a versatile and powerful tablet that suits my needs perfectly. The large display and S Pen support make it a great choice for both work and entertainment.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It will handle my daily tasks like studying, note-taking, and online classes efficiently. The high-speed processor and multitasking capabilities make it perfect for a heavy user.",
+          "cosine_similarities": [
+            0.658247,
+            0.666599,
+            0.60304,
+            0.727058,
+            0.648866
+          ],
+          "min_similarity": 0.60304,
+          "pmf_probabilities": [
+            0.191286,
+            0.220224,
+            0.0,
+            0.429707,
+            0.158783
+          ],
+          "expected_rating": 3.1445,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting it up is straightforward, and the user interface is intuitive. It doesn't take much effort to navigate through the settings or use the S Pen.",
+          "cosine_similarities": [
+            0.521605,
+            0.52301,
+            0.613122,
+            0.606561,
+            0.656212
+          ],
+          "min_similarity": 0.521605,
+          "pmf_probabilities": [
+            0.0,
+            0.004497,
+            0.292869,
+            0.271873,
+            0.430761
+          ],
+          "expected_rating": 4.1289,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the tablet is enjoyable, especially for taking notes and browsing the internet. The large display makes everything easy to see and read.",
+          "cosine_similarities": [
+            0.639775,
+            0.648926,
+            0.656227,
+            0.70483,
+            0.740741
+          ],
+          "min_similarity": 0.639775,
+          "pmf_probabilities": [
+            0.0,
+            0.047758,
+            0.085857,
+            0.339489,
+            0.526895
+          ],
+          "expected_rating": 4.3455,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and classmates would appreciate having such a feature-rich tablet. They might be interested in getting one for themselves too.",
+          "cosine_similarities": [
+            0.586062,
+            0.532923,
+            0.591447,
+            0.609379,
+            0.641827
+          ],
+          "min_similarity": 0.532923,
+          "pmf_probabilities": [
+            0.178906,
+            0.0,
+            0.197034,
+            0.257408,
+            0.366652
+          ],
+          "expected_rating": 3.6329,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality seems sturdy, and the device feels reliable. The security features, like the fingerprint sensor, make it secure to use.",
+          "cosine_similarities": [
+            0.617817,
+            0.585562,
+            0.614042,
+            0.656371,
+            0.687615
+          ],
+          "min_similarity": 0.585562,
+          "pmf_probabilities": [
+            0.138079,
+            0.0,
+            0.121921,
+            0.303126,
+            0.436874
+          ],
+          "expected_rating": 3.9007,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this tablet as my primary tablet. The price fits nicely within my budget, and it provides all the features I need for my daily routine.",
+          "cosine_similarities": [
+            0.568327,
+            0.593423,
+            0.576824,
+            0.673362,
+            0.635065
+          ],
+          "min_similarity": 0.568327,
+          "pmf_probabilities": [
+            0.0,
+            0.122202,
+            0.041372,
+            0.511456,
+            0.32497
+          ],
+          "expected_rating": 4.0392,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "primary_adoption_rating": 2.4803,
+      "primary_adoption_pmf": [
+        0.087884,
+        0.383965,
+        0.50813,
+        0.0,
+        0.020021
+      ],
+      "construct_scores": {
+        "PE": 2.1738,
+        "EE": 3.3629,
+        "HM": 2.4801,
+        "SI": 3.3617,
+        "PP": 4.024,
+        "BI": 2.4803
+      },
+      "construct_responses": {
+        "PE": "This tablet seems quite useful for studying and taking notes, thanks to its large display and multitasking capabilities. However, the high price makes it less attractive for casual use like entertainment.",
+        "EE": "Setting it up and using it should be straightforward, but the steep price tag might deter some users from exploring all its features.",
+        "HM": "While the tablet looks fun for reading and taking notes, the high cost might make it less appealing for casual entertainment or gaming.",
+        "SI": "Friends and classmates might find it impressive, but the price might limit its adoption among students on a budget.",
+        "PP": "The build quality and portability are reassuring, but the high price might make some question its value for daily use.",
+        "BI": "I am not certain I will continue using this tablet as my primary tablet; the price feels too high for a mid-range user like me, and I already have a functional phone for most tasks.",
+        "OVERALL": "The tablet has good features for studying and work, but the price makes it less practical for daily use, especially with my current budget."
+      },
+      "response_text": "The tablet has good features for studying and work, but the price makes it less practical for daily use, especially with my current budget.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This tablet seems quite useful for studying and taking notes, thanks to its large display and multitasking capabilities. However, the high price makes it less attractive for casual use like entertainment.",
+          "cosine_similarities": [
+            0.604209,
+            0.614793,
+            0.58581,
+            0.592097,
+            0.5742
+          ],
+          "min_similarity": 0.5742,
+          "pmf_probabilities": [
+            0.299763,
+            0.405489,
+            0.115971,
+            0.178776,
+            0.0
+          ],
+          "expected_rating": 2.1738,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting it up and using it should be straightforward, but the steep price tag might deter some users from exploring all its features.",
+          "cosine_similarities": [
+            0.543343,
+            0.509374,
+            0.556209,
+            0.509076,
+            0.569233
+          ],
+          "min_similarity": 0.509076,
+          "pmf_probabilities": [
+            0.241565,
+            0.002098,
+            0.332262,
+            0.0,
+            0.424074
+          ],
+          "expected_rating": 3.3629,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "While the tablet looks fun for reading and taking notes, the high cost might make it less appealing for casual entertainment or gaming.",
+          "cosine_similarities": [
+            0.585423,
+            0.614656,
+            0.604774,
+            0.57401,
+            0.582111
+          ],
+          "min_similarity": 0.57401,
+          "pmf_probabilities": [
+            0.125523,
+            0.447031,
+            0.338351,
+            0.0,
+            0.089095
+          ],
+          "expected_rating": 2.4801,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Friends and classmates might find it impressive, but the price might limit its adoption among students on a budget.",
+          "cosine_similarities": [
+            0.48668,
+            0.503758,
+            0.538846,
+            0.523001,
+            0.498239
+          ],
+          "min_similarity": 0.48668,
+          "pmf_probabilities": [
+            0.0,
+            0.145815,
+            0.445385,
+            0.310104,
+            0.098696
+          ],
+          "expected_rating": 3.3617,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality and portability are reassuring, but the high price might make some question its value for daily use.",
+          "cosine_similarities": [
+            0.432381,
+            0.422734,
+            0.435099,
+            0.454987,
+            0.466388
+          ],
+          "min_similarity": 0.422734,
+          "pmf_probabilities": [
+            0.098525,
+            0.0,
+            0.126279,
+            0.329381,
+            0.445815
+          ],
+          "expected_rating": 4.024,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am not certain I will continue using this tablet as my primary tablet; the price feels too high for a mid-range user like me, and I already have a functional phone for most tasks.",
+          "cosine_similarities": [
+            0.668607,
+            0.702053,
+            0.716079,
+            0.65868,
+            0.660942
+          ],
+          "min_similarity": 0.65868,
+          "pmf_probabilities": [
+            0.087884,
+            0.383965,
+            0.50813,
+            0.0,
+            0.020021
+          ],
+          "expected_rating": 2.4803,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "primary_adoption_rating": 2.6485,
+      "primary_adoption_pmf": [
+        0.251328,
+        0.339558,
+        0.163777,
+        0.0,
+        0.245337
+      ],
+      "construct_scores": {
+        "PE": 2.4227,
+        "EE": 2.5859,
+        "HM": 2.1779,
+        "SI": 2.5267,
+        "PP": 2.5214,
+        "BI": 2.6485
+      },
+      "construct_responses": {
+        "PE": "It seems like a decent study and work tablet with a good display and S Pen support, but at ₹40,000, it's a bit too expensive for my budget. I need something more affordable.",
+        "EE": "Setting it up would be straightforward with its comprehensive ports, but it's still out of my price range for now.",
+        "HM": "While it looks fun to use with its multitasking capabilities, it's too pricey for me to consider right now. I would rather save my money for other necessities.",
+        "SI": "My friends might think it's a good tablet, but I can't justify the cost. They might suggest I buy it, but I won't have the means to do so.",
+        "PP": "The build seems solid and reliable, but the price is a deal-breaker. I'm not sure if it's worth the investment right now.",
+        "BI": "I cannot buy or continue using this tablet because it is simply too expensive for my student budget. I need something more affordable and within my means.",
+        "OVERALL": "It's a nice tablet with many features, but the price is too high for my budget. I will look for something more affordable."
+      },
+      "response_text": "It's a nice tablet with many features, but the price is too high for my budget. I will look for something more affordable.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It seems like a decent study and work tablet with a good display and S Pen support, but at ₹40,000, it's a bit too expensive for my budget. I need something more affordable.",
+          "cosine_similarities": [
+            0.566426,
+            0.591582,
+            0.559226,
+            0.570925,
+            0.541527
+          ],
+          "min_similarity": 0.541527,
+          "pmf_probabilities": [
+            0.204006,
+            0.410116,
+            0.145013,
+            0.240865,
+            0.0
+          ],
+          "expected_rating": 2.4227,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting it up would be straightforward with its comprehensive ports, but it's still out of my price range for now.",
+          "cosine_similarities": [
+            0.446753,
+            0.402237,
+            0.450701,
+            0.410281,
+            0.418456
+          ],
+          "min_similarity": 0.402237,
+          "pmf_probabilities": [
+            0.379687,
+            0.0,
+            0.413363,
+            0.068614,
+            0.138336
+          ],
+          "expected_rating": 2.5859,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "While it looks fun to use with its multitasking capabilities, it's too pricey for me to consider right now. I would rather save my money for other necessities.",
+          "cosine_similarities": [
+            0.576878,
+            0.572403,
+            0.597064,
+            0.535253,
+            0.53696
+          ],
+          "min_similarity": 0.535253,
+          "pmf_probabilities": [
+            0.292531,
+            0.261079,
+            0.434389,
+            0.0,
+            0.012002
+          ],
+          "expected_rating": 2.1779,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might think it's a good tablet, but I can't justify the cost. They might suggest I buy it, but I won't have the means to do so.",
+          "cosine_similarities": [
+            0.615588,
+            0.676959,
+            0.673873,
+            0.619871,
+            0.600826
+          ],
+          "min_similarity": 0.600826,
+          "pmf_probabilities": [
+            0.080673,
+            0.416055,
+            0.399191,
+            0.104081,
+            0.0
+          ],
+          "expected_rating": 2.5267,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build seems solid and reliable, but the price is a deal-breaker. I'm not sure if it's worth the investment right now.",
+          "cosine_similarities": [
+            0.402926,
+            0.374331,
+            0.360297,
+            0.382122,
+            0.376395
+          ],
+          "min_similarity": 0.360297,
+          "pmf_probabilities": [
+            0.450696,
+            0.148371,
+            0.0,
+            0.230746,
+            0.170187
+          ],
+          "expected_rating": 2.5214,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I cannot buy or continue using this tablet because it is simply too expensive for my student budget. I need something more affordable and within my means.",
+          "cosine_similarities": [
+            0.61171,
+            0.622752,
+            0.600752,
+            0.580255,
+            0.61096
+          ],
+          "min_similarity": 0.580255,
+          "pmf_probabilities": [
+            0.251328,
+            0.339558,
+            0.163777,
+            0.0,
+            0.245337
+          ],
+          "expected_rating": 2.6485,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.54327,
+        0.542626,
+        0.529087,
+        0.607334,
+        0.574955
+      ],
+      "pmf_probabilities": [
+        0.093411,
+        0.089165,
+        0.0,
+        0.515335,
+        0.30209
+      ],
+      "expected_rating": 3.8435,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.591862,
+        0.613133,
+        0.621818,
+        0.640381,
+        0.676198
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.115554,
+        0.162733,
+        0.263571,
+        0.458142
+      ],
+      "expected_rating": 4.0643,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.623633,
+        0.644563,
+        0.645328,
+        0.67823,
+        0.733951
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.100848,
+        0.104534,
+        0.263066,
+        0.531552
+      ],
+      "expected_rating": 4.2253,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.591833,
+        0.588376,
+        0.617643,
+        0.688535,
+        0.666459
+      ],
+      "pmf_probabilities": [
+        0.016387,
+        0.0,
+        0.138728,
+        0.474764,
+        0.37012
+      ],
+      "expected_rating": 4.1822,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.588078,
+        0.574468,
+        0.601299,
+        0.63632,
+        0.666767
+      ],
+      "pmf_probabilities": [
+        0.069939,
+        0.0,
+        0.137884,
+        0.317856,
+        0.474321
+      ],
+      "expected_rating": 4.1266,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.592367,
+        0.61858,
+        0.616992,
+        0.687835,
+        0.662013
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.121383,
+        0.114031,
+        0.442078,
+        0.322508
+      ],
+      "expected_rating": 3.9657,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.658247,
+        0.666599,
+        0.60304,
+        0.727058,
+        0.648866
+      ],
+      "pmf_probabilities": [
+        0.191286,
+        0.220224,
+        0.0,
+        0.429707,
+        0.158783
+      ],
+      "expected_rating": 3.1445,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.521605,
+        0.52301,
+        0.613122,
+        0.606561,
+        0.656212
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.004497,
+        0.292869,
+        0.271873,
+        0.430761
+      ],
+      "expected_rating": 4.1289,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.639775,
+        0.648926,
+        0.656227,
+        0.70483,
+        0.740741
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.047758,
+        0.085857,
+        0.339489,
+        0.526895
+      ],
+      "expected_rating": 4.3455,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.586062,
+        0.532923,
+        0.591447,
+        0.609379,
+        0.641827
+      ],
+      "pmf_probabilities": [
+        0.178906,
+        0.0,
+        0.197034,
+        0.257408,
+        0.366652
+      ],
+      "expected_rating": 3.6329,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.617817,
+        0.585562,
+        0.614042,
+        0.656371,
+        0.687615
+      ],
+      "pmf_probabilities": [
+        0.138079,
+        0.0,
+        0.121921,
+        0.303126,
+        0.436874
+      ],
+      "expected_rating": 3.9007,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.568327,
+        0.593423,
+        0.576824,
+        0.673362,
+        0.635065
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.122202,
+        0.041372,
+        0.511456,
+        0.32497
+      ],
+      "expected_rating": 4.0392,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.604209,
+        0.614793,
+        0.58581,
+        0.592097,
+        0.5742
+      ],
+      "pmf_probabilities": [
+        0.299763,
+        0.405489,
+        0.115971,
+        0.178776,
+        0.0
+      ],
+      "expected_rating": 2.1738,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.543343,
+        0.509374,
+        0.556209,
+        0.509076,
+        0.569233
+      ],
+      "pmf_probabilities": [
+        0.241565,
+        0.002098,
+        0.332262,
+        0.0,
+        0.424074
+      ],
+      "expected_rating": 3.3629,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.585423,
+        0.614656,
+        0.604774,
+        0.57401,
+        0.582111
+      ],
+      "pmf_probabilities": [
+        0.125523,
+        0.447031,
+        0.338351,
+        0.0,
+        0.089095
+      ],
+      "expected_rating": 2.4801,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.48668,
+        0.503758,
+        0.538846,
+        0.523001,
+        0.498239
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.145815,
+        0.445385,
+        0.310104,
+        0.098696
+      ],
+      "expected_rating": 3.3617,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.432381,
+        0.422734,
+        0.435099,
+        0.454987,
+        0.466388
+      ],
+      "pmf_probabilities": [
+        0.098525,
+        0.0,
+        0.126279,
+        0.329381,
+        0.445815
+      ],
+      "expected_rating": 4.024,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.668607,
+        0.702053,
+        0.716079,
+        0.65868,
+        0.660942
+      ],
+      "pmf_probabilities": [
+        0.087884,
+        0.383965,
+        0.50813,
+        0.0,
+        0.020021
+      ],
+      "expected_rating": 2.4803,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.566426,
+        0.591582,
+        0.559226,
+        0.570925,
+        0.541527
+      ],
+      "pmf_probabilities": [
+        0.204006,
+        0.410116,
+        0.145013,
+        0.240865,
+        0.0
+      ],
+      "expected_rating": 2.4227,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.446753,
+        0.402237,
+        0.450701,
+        0.410281,
+        0.418456
+      ],
+      "pmf_probabilities": [
+        0.379687,
+        0.0,
+        0.413363,
+        0.068614,
+        0.138336
+      ],
+      "expected_rating": 2.5859,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.576878,
+        0.572403,
+        0.597064,
+        0.535253,
+        0.53696
+      ],
+      "pmf_probabilities": [
+        0.292531,
+        0.261079,
+        0.434389,
+        0.0,
+        0.012002
+      ],
+      "expected_rating": 2.1779,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.615588,
+        0.676959,
+        0.673873,
+        0.619871,
+        0.600826
+      ],
+      "pmf_probabilities": [
+        0.080673,
+        0.416055,
+        0.399191,
+        0.104081,
+        0.0
+      ],
+      "expected_rating": 2.5267,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.402926,
+        0.374331,
+        0.360297,
+        0.382122,
+        0.376395
+      ],
+      "pmf_probabilities": [
+        0.450696,
+        0.148371,
+        0.0,
+        0.230746,
+        0.170187
+      ],
+      "expected_rating": 2.5214,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.61171,
+        0.622752,
+        0.600752,
+        0.580255,
+        0.61096
+      ],
+      "pmf_probabilities": [
+        0.251328,
+        0.339558,
+        0.163777,
+        0.0,
+        0.245337
+      ],
+      "expected_rating": 2.6485,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.54327,
+      "cos_sim_2": 0.542626,
+      "cos_sim_3": 0.529087,
+      "cos_sim_4": 0.607334,
+      "cos_sim_5": 0.574955,
+      "min_similarity": 0.529087,
+      "p1": 0.093411,
+      "p2": 0.089165,
+      "p3": 0.0,
+      "p4": 0.515335,
+      "p5": 0.30209,
+      "set_expected_rating": 3.8435,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.591862,
+      "cos_sim_2": 0.613133,
+      "cos_sim_3": 0.621818,
+      "cos_sim_4": 0.640381,
+      "cos_sim_5": 0.676198,
+      "min_similarity": 0.591862,
+      "p1": 0.0,
+      "p2": 0.115554,
+      "p3": 0.162733,
+      "p4": 0.263571,
+      "p5": 0.458142,
+      "set_expected_rating": 4.0643,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.623633,
+      "cos_sim_2": 0.644563,
+      "cos_sim_3": 0.645328,
+      "cos_sim_4": 0.67823,
+      "cos_sim_5": 0.733951,
+      "min_similarity": 0.623633,
+      "p1": 0.0,
+      "p2": 0.100848,
+      "p3": 0.104534,
+      "p4": 0.263066,
+      "p5": 0.531552,
+      "set_expected_rating": 4.2253,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.591833,
+      "cos_sim_2": 0.588376,
+      "cos_sim_3": 0.617643,
+      "cos_sim_4": 0.688535,
+      "cos_sim_5": 0.666459,
+      "min_similarity": 0.588376,
+      "p1": 0.016387,
+      "p2": 0.0,
+      "p3": 0.138728,
+      "p4": 0.474764,
+      "p5": 0.37012,
+      "set_expected_rating": 4.1822,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.588078,
+      "cos_sim_2": 0.574468,
+      "cos_sim_3": 0.601299,
+      "cos_sim_4": 0.63632,
+      "cos_sim_5": 0.666767,
+      "min_similarity": 0.574468,
+      "p1": 0.069939,
+      "p2": 0.0,
+      "p3": 0.137884,
+      "p4": 0.317856,
+      "p5": 0.474321,
+      "set_expected_rating": 4.1266,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.592367,
+      "cos_sim_2": 0.61858,
+      "cos_sim_3": 0.616992,
+      "cos_sim_4": 0.687835,
+      "cos_sim_5": 0.662013,
+      "min_similarity": 0.592367,
+      "p1": 0.0,
+      "p2": 0.121383,
+      "p3": 0.114031,
+      "p4": 0.442078,
+      "p5": 0.322508,
+      "set_expected_rating": 3.9657,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.658247,
+      "cos_sim_2": 0.666599,
+      "cos_sim_3": 0.60304,
+      "cos_sim_4": 0.727058,
+      "cos_sim_5": 0.648866,
+      "min_similarity": 0.60304,
+      "p1": 0.191286,
+      "p2": 0.220224,
+      "p3": 0.0,
+      "p4": 0.429707,
+      "p5": 0.158783,
+      "set_expected_rating": 3.1445,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.521605,
+      "cos_sim_2": 0.52301,
+      "cos_sim_3": 0.613122,
+      "cos_sim_4": 0.606561,
+      "cos_sim_5": 0.656212,
+      "min_similarity": 0.521605,
+      "p1": 0.0,
+      "p2": 0.004497,
+      "p3": 0.292869,
+      "p4": 0.271873,
+      "p5": 0.430761,
+      "set_expected_rating": 4.1289,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.639775,
+      "cos_sim_2": 0.648926,
+      "cos_sim_3": 0.656227,
+      "cos_sim_4": 0.70483,
+      "cos_sim_5": 0.740741,
+      "min_similarity": 0.639775,
+      "p1": 0.0,
+      "p2": 0.047758,
+      "p3": 0.085857,
+      "p4": 0.339489,
+      "p5": 0.526895,
+      "set_expected_rating": 4.3455,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.586062,
+      "cos_sim_2": 0.532923,
+      "cos_sim_3": 0.591447,
+      "cos_sim_4": 0.609379,
+      "cos_sim_5": 0.641827,
+      "min_similarity": 0.532923,
+      "p1": 0.178906,
+      "p2": 0.0,
+      "p3": 0.197034,
+      "p4": 0.257408,
+      "p5": 0.366652,
+      "set_expected_rating": 3.6329,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.617817,
+      "cos_sim_2": 0.585562,
+      "cos_sim_3": 0.614042,
+      "cos_sim_4": 0.656371,
+      "cos_sim_5": 0.687615,
+      "min_similarity": 0.585562,
+      "p1": 0.138079,
+      "p2": 0.0,
+      "p3": 0.121921,
+      "p4": 0.303126,
+      "p5": 0.436874,
+      "set_expected_rating": 3.9007,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.568327,
+      "cos_sim_2": 0.593423,
+      "cos_sim_3": 0.576824,
+      "cos_sim_4": 0.673362,
+      "cos_sim_5": 0.635065,
+      "min_similarity": 0.568327,
+      "p1": 0.0,
+      "p2": 0.122202,
+      "p3": 0.041372,
+      "p4": 0.511456,
+      "p5": 0.32497,
+      "set_expected_rating": 4.0392,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.604209,
+      "cos_sim_2": 0.614793,
+      "cos_sim_3": 0.58581,
+      "cos_sim_4": 0.592097,
+      "cos_sim_5": 0.5742,
+      "min_similarity": 0.5742,
+      "p1": 0.299763,
+      "p2": 0.405489,
+      "p3": 0.115971,
+      "p4": 0.178776,
+      "p5": 0.0,
+      "set_expected_rating": 2.1738,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.543343,
+      "cos_sim_2": 0.509374,
+      "cos_sim_3": 0.556209,
+      "cos_sim_4": 0.509076,
+      "cos_sim_5": 0.569233,
+      "min_similarity": 0.509076,
+      "p1": 0.241565,
+      "p2": 0.002098,
+      "p3": 0.332262,
+      "p4": 0.0,
+      "p5": 0.424074,
+      "set_expected_rating": 3.3629,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.585423,
+      "cos_sim_2": 0.614656,
+      "cos_sim_3": 0.604774,
+      "cos_sim_4": 0.57401,
+      "cos_sim_5": 0.582111,
+      "min_similarity": 0.57401,
+      "p1": 0.125523,
+      "p2": 0.447031,
+      "p3": 0.338351,
+      "p4": 0.0,
+      "p5": 0.089095,
+      "set_expected_rating": 2.4801,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.48668,
+      "cos_sim_2": 0.503758,
+      "cos_sim_3": 0.538846,
+      "cos_sim_4": 0.523001,
+      "cos_sim_5": 0.498239,
+      "min_similarity": 0.48668,
+      "p1": 0.0,
+      "p2": 0.145815,
+      "p3": 0.445385,
+      "p4": 0.310104,
+      "p5": 0.098696,
+      "set_expected_rating": 3.3617,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.432381,
+      "cos_sim_2": 0.422734,
+      "cos_sim_3": 0.435099,
+      "cos_sim_4": 0.454987,
+      "cos_sim_5": 0.466388,
+      "min_similarity": 0.422734,
+      "p1": 0.098525,
+      "p2": 0.0,
+      "p3": 0.126279,
+      "p4": 0.329381,
+      "p5": 0.445815,
+      "set_expected_rating": 4.024,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.668607,
+      "cos_sim_2": 0.702053,
+      "cos_sim_3": 0.716079,
+      "cos_sim_4": 0.65868,
+      "cos_sim_5": 0.660942,
+      "min_similarity": 0.65868,
+      "p1": 0.087884,
+      "p2": 0.383965,
+      "p3": 0.50813,
+      "p4": 0.0,
+      "p5": 0.020021,
+      "set_expected_rating": 2.4803,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.566426,
+      "cos_sim_2": 0.591582,
+      "cos_sim_3": 0.559226,
+      "cos_sim_4": 0.570925,
+      "cos_sim_5": 0.541527,
+      "min_similarity": 0.541527,
+      "p1": 0.204006,
+      "p2": 0.410116,
+      "p3": 0.145013,
+      "p4": 0.240865,
+      "p5": 0.0,
+      "set_expected_rating": 2.4227,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.446753,
+      "cos_sim_2": 0.402237,
+      "cos_sim_3": 0.450701,
+      "cos_sim_4": 0.410281,
+      "cos_sim_5": 0.418456,
+      "min_similarity": 0.402237,
+      "p1": 0.379687,
+      "p2": 0.0,
+      "p3": 0.413363,
+      "p4": 0.068614,
+      "p5": 0.138336,
+      "set_expected_rating": 2.5859,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.576878,
+      "cos_sim_2": 0.572403,
+      "cos_sim_3": 0.597064,
+      "cos_sim_4": 0.535253,
+      "cos_sim_5": 0.53696,
+      "min_similarity": 0.535253,
+      "p1": 0.292531,
+      "p2": 0.261079,
+      "p3": 0.434389,
+      "p4": 0.0,
+      "p5": 0.012002,
+      "set_expected_rating": 2.1779,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.615588,
+      "cos_sim_2": 0.676959,
+      "cos_sim_3": 0.673873,
+      "cos_sim_4": 0.619871,
+      "cos_sim_5": 0.600826,
+      "min_similarity": 0.600826,
+      "p1": 0.080673,
+      "p2": 0.416055,
+      "p3": 0.399191,
+      "p4": 0.104081,
+      "p5": 0.0,
+      "set_expected_rating": 2.5267,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.402926,
+      "cos_sim_2": 0.374331,
+      "cos_sim_3": 0.360297,
+      "cos_sim_4": 0.382122,
+      "cos_sim_5": 0.376395,
+      "min_similarity": 0.360297,
+      "p1": 0.450696,
+      "p2": 0.148371,
+      "p3": 0.0,
+      "p4": 0.230746,
+      "p5": 0.170187,
+      "set_expected_rating": 2.5214,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Tab S10 FE",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.61171,
+      "cos_sim_2": 0.622752,
+      "cos_sim_3": 0.600752,
+      "cos_sim_4": 0.580255,
+      "cos_sim_5": 0.61096,
+      "min_similarity": 0.580255,
+      "p1": 0.251328,
+      "p2": 0.339558,
+      "p3": 0.163777,
+      "p4": 0.0,
+      "p5": 0.245337,
+      "set_expected_rating": 2.6485,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

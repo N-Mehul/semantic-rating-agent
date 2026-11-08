@@ -1,0 +1,2972 @@
+{
+  "completeness": {
+    "expected_responses": 24,
+    "generated_responses": 24,
+    "validated_responses": 24,
+    "scored_responses": 24,
+    "not_scored": [],
+    "missing_combinations": [],
+    "passed_first_attempt": 16,
+    "corrected": 8,
+    "complete": true
+  },
+  "evaluation_id": "google_pixel_8a_20261106_125851",
+  "product_name": "Google Pixel 8a",
+  "ssr_method": "improved",
+  "ssr_method_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+  "k_truncation": 3,
+  "temperature": 0.75,
+  "comparison_summary": {
+    "active_ssr_method": "improved",
+    "active_ssr_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+    "is_comparison_mode": false,
+    "canonical": {
+      "method": "Canonical Semantic Similarity Rating (Canonical SSR) — Baseline method",
+      "k_truncation": 5,
+      "temperature": 1.0,
+      "primary_adoption_average": 3.3607,
+      "construct_averages": {
+        "PE": 3.3309,
+        "EE": 4.0932,
+        "HM": 3.7785,
+        "SI": 3.417,
+        "PP": 2.5648,
+        "BI": 3.3607
+      }
+    },
+    "improved": {
+      "method": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+      "k_truncation": 3,
+      "temperature": 0.75,
+      "primary_adoption_average": 3.1708,
+      "construct_averages": {
+        "PE": 3.3089,
+        "EE": 4.243,
+        "HM": 3.887,
+        "SI": 3.3011,
+        "PP": 2.5881,
+        "BI": 3.1708
+      }
+    },
+    "deltas": {
+      "primary_adoption_delta": -0.1899,
+      "construct_deltas": {
+        "PE": -0.022,
+        "EE": 0.1498,
+        "HM": 0.1085,
+        "SI": -0.1159,
+        "PP": 0.0233,
+        "BI": -0.1899
+      }
+    },
+    "persona_comparison": [
+      {
+        "persona_id": "P1_premium_tier_owner",
+        "canonical_adoption_rating": 3.3794,
+        "improved_adoption_rating": 3.1953,
+        "delta": -0.1841
+      },
+      {
+        "persona_id": "P2_midrange_heavy_user",
+        "canonical_adoption_rating": 3.3165,
+        "improved_adoption_rating": 3.0931,
+        "delta": -0.2234
+      },
+      {
+        "persona_id": "P3_midrange_moderate_user",
+        "canonical_adoption_rating": 3.4845,
+        "improved_adoption_rating": 3.4112,
+        "delta": -0.0733
+      },
+      {
+        "persona_id": "P4_budget_or_undisclosed_price",
+        "canonical_adoption_rating": 3.2623,
+        "improved_adoption_rating": 2.9835,
+        "delta": -0.2788
+      }
+    ]
+  },
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Enhanced Semantic Similarity Rating (E-SSR) — Primary method)",
+  "timestamp_utc": "2026-11-06T07:44:20.805847+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "generation_stats": {
+    "main_calls": 4,
+    "main_seconds": 526.54,
+    "main_prompt_tokens": 9578,
+    "main_output_tokens": 1585,
+    "correction_calls": 5,
+    "correction_seconds": 381.51,
+    "correction_prompt_tokens": 4989,
+    "correction_output_tokens": 462,
+    "embedding_seconds": 4.8,
+    "embedded_answers": 24,
+    "generation_seconds": 912.4,
+    "scoring_seconds": 20.9,
+    "total_seconds": 933.3,
+    "qwen_calls": 9
+  },
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.1708,
+  "overall_adoption_average": 3.1708,
+  "primary_adoption_average": 3.1708,
+  "construct_averages": {
+    "PE": 3.3089,
+    "EE": 4.243,
+    "HM": 3.887,
+    "SI": 3.3011,
+    "PP": 2.5881,
+    "BI": 3.1708
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "primary_adoption_rating": 3.1953,
+      "primary_adoption_pmf": [
+        0.0,
+        0.240433,
+        0.541717,
+        0.0,
+        0.21785
+      ],
+      "construct_scores": {
+        "PE": 3.5297,
+        "EE": 4.1669,
+        "HM": 4.1044,
+        "SI": 3.3269,
+        "PP": 2.2888,
+        "BI": 3.1953
+      },
+      "construct_responses": {
+        "PE": "The 120Hz display should make scrolling smoother. The Tensor G3 processor can handle multiple apps together. The 4492mAh battery helps with all-day use.",
+        "EE": "Setting up accounts is straightforward. Navigating menus feels intuitive, but some deep settings might take a few days to learn.",
+        "HM": "Using it is pleasant for media consumption and photography. The Pixel UI makes it easy to use, but the 5G might be overkill for daily use.",
+        "SI": "Friends might see me as tech-savvy for using this. They might notice the camera and Pixel UI. Their views might matter as they often recommend quality devices.",
+        "PP": "The Titan M2 security chip would stop others from unlocking it. But nothing shows how my accounts or data are fully protected.",
+        "BI": "Unsure, need to check more. The camera and software are good but battery life and long-term updates are unclear, and the price is on the higher side for mid-range.",
+        "OVERALL": "It seems like a good quality device, but I need to check more before buying."
+      },
+      "response_text": "It seems like a good quality device, but I need to check more before buying.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The 120Hz display should make scrolling smoother. The Tensor G3 processor can handle multiple apps together. The 4492mAh battery helps with all-day use.",
+          "cosine_similarities": [
+            0.583769,
+            0.602112,
+            0.594968,
+            0.63405,
+            0.589144
+          ],
+          "min_similarity": 0.583769,
+          "pmf_probabilities": [
+            0.0,
+            0.186772,
+            0.096734,
+            0.716494,
+            0.0
+          ],
+          "expected_rating": 3.5297,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.2153,
+              0.131446,
+              0.59016,
+              0.063094
+            ],
+            "expected_rating": 3.501
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.186772,
+              0.096734,
+              0.716494,
+              0.0
+            ],
+            "expected_rating": 3.5297
+          },
+          "delta_improved_minus_canonical": 0.0287,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up accounts is straightforward. Navigating menus feels intuitive, but some deep settings might take a few days to learn.",
+          "cosine_similarities": [
+            0.576777,
+            0.561765,
+            0.632093,
+            0.640881,
+            0.663457
+          ],
+          "min_similarity": 0.561765,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.262807,
+            0.307478,
+            0.429716
+          ],
+          "expected_rating": 4.1669,
+          "canonical": {
+            "pmf_probabilities": [
+              0.056405,
+              0.0,
+              0.264245,
+              0.297262,
+              0.382089
+            ],
+            "expected_rating": 3.9486
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.262807,
+              0.307478,
+              0.429716
+            ],
+            "expected_rating": 4.1669
+          },
+          "delta_improved_minus_canonical": 0.2183,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using it is pleasant for media consumption and photography. The Pixel UI makes it easy to use, but the 5G might be overkill for daily use.",
+          "cosine_similarities": [
+            0.654312,
+            0.674436,
+            0.670996,
+            0.72158,
+            0.699402
+          ],
+          "min_similarity": 0.654312,
+          "pmf_probabilities": [
+            0.0,
+            0.111987,
+            0.0,
+            0.559684,
+            0.328329
+          ],
+          "expected_rating": 4.1044,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.134913,
+              0.111853,
+              0.450955,
+              0.302279
+            ],
+            "expected_rating": 3.9206
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.111987,
+              0.0,
+              0.559684,
+              0.328329
+            ],
+            "expected_rating": 4.1044
+          },
+          "delta_improved_minus_canonical": 0.1838,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Friends might see me as tech-savvy for using this. They might notice the camera and Pixel UI. Their views might matter as they often recommend quality devices.",
+          "cosine_similarities": [
+            0.718894,
+            0.722751,
+            0.756081,
+            0.743664,
+            0.719009
+          ],
+          "min_similarity": 0.718894,
+          "pmf_probabilities": [
+            0.0,
+            0.029893,
+            0.61332,
+            0.356787,
+            0.0
+          ],
+          "expected_rating": 3.3269,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.058508,
+              0.564038,
+              0.375708,
+              0.001746
+            ],
+            "expected_rating": 3.3207
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.029893,
+              0.61332,
+              0.356787,
+              0.0
+            ],
+            "expected_rating": 3.3269
+          },
+          "delta_improved_minus_canonical": 0.0062,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The Titan M2 security chip would stop others from unlocking it. But nothing shows how my accounts or data are fully protected.",
+          "cosine_similarities": [
+            0.657157,
+            0.656818,
+            0.613646,
+            0.613211,
+            0.642447
+          ],
+          "min_similarity": 0.613211,
+          "pmf_probabilities": [
+            0.38903,
+            0.385037,
+            0.0,
+            0.0,
+            0.225933
+          ],
+          "expected_rating": 2.2888,
+          "canonical": {
+            "pmf_probabilities": [
+              0.374889,
+              0.371999,
+              0.003709,
+              0.0,
+              0.249402
+            ],
+            "expected_rating": 2.377
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.38903,
+              0.385037,
+              0.0,
+              0.0,
+              0.225933
+            ],
+            "expected_rating": 2.2888
+          },
+          "delta_improved_minus_canonical": -0.0883,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Unsure, need to check more. The camera and software are good but battery life and long-term updates are unclear, and the price is on the higher side for mid-range.",
+          "cosine_similarities": [
+            0.525414,
+            0.585986,
+            0.636806,
+            0.581263,
+            0.581666
+          ],
+          "min_similarity": 0.525414,
+          "pmf_probabilities": [
+            0.0,
+            0.240433,
+            0.541717,
+            0.0,
+            0.21785
+          ],
+          "expected_rating": 3.1953,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.213232,
+              0.392135,
+              0.196607,
+              0.198027
+            ],
+            "expected_rating": 3.3794
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.240433,
+              0.541717,
+              0.0,
+              0.21785
+            ],
+            "expected_rating": 3.1953
+          },
+          "delta_improved_minus_canonical": -0.1842,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "PP": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "BI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "No, the price feels a bit high for a mid-range device. I would need to check more before deciding.",
+              "issues": [
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            }
+          ]
+        }
+      },
+      "flagged_constructs": [],
+      "alignment_flags": []
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "primary_adoption_rating": 3.0931,
+      "primary_adoption_pmf": [
+        0.0,
+        0.141059,
+        0.62478,
+        0.234162,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 3.2304,
+        "EE": 4.2344,
+        "HM": 3.3139,
+        "SI": 3.0894,
+        "PP": 3.6738,
+        "BI": 3.0931
+      },
+      "construct_responses": {
+        "PE": "The 8GB RAM should allow running multiple apps smoothly. The 120Hz display makes scrolling fast. However, real-world photo quality and long-term battery performance are not shown.",
+        "EE": "Setting up seems straightforward with the familiar Pixel UI. Navigation is intuitive for daily use, but learning some deeper settings might take time. The 5G connectivity and fast charging are positives.",
+        "HM": "I would enjoy the camera for photography, smooth scrolling, and fast charging. The 120Hz display and Tensor G3 processor make it pleasant to use for everyday tasks. The information does not show gaming performance or long-term use.",
+        "SI": "My friends might approve of the Tensor G3 processor and 5G connectivity. They might notice the good camera and smooth performance. Their views would matter to me, but I have not heard their real opinions.",
+        "PP": "The Titan M2 security chip and fingerprint unlock are good. The information does not show how my accounts or personal data are fully protected, so I would not assume it is fully secure.",
+        "BI": "Unsure, need to check gaming performance and long-term use before deciding. It has good specs for photography and fast scrolling, but I'm not sure if the price is justified without knowing more about its real-world performance.",
+        "OVERALL": "The specs are strong, but I need to check gaming performance and long-term use before deciding."
+      },
+      "response_text": "The specs are strong, but I need to check gaming performance and long-term use before deciding.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The 8GB RAM should allow running multiple apps smoothly. The 120Hz display makes scrolling fast. However, real-world photo quality and long-term battery performance are not shown.",
+          "cosine_similarities": [
+            0.565307,
+            0.576966,
+            0.597153,
+            0.590147,
+            0.575366
+          ],
+          "min_similarity": 0.565307,
+          "pmf_probabilities": [
+            0.0,
+            0.132284,
+            0.505071,
+            0.362645,
+            0.0
+          ],
+          "expected_rating": 3.2304,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.148707,
+              0.406177,
+              0.316819,
+              0.128297
+            ],
+            "expected_rating": 3.4247
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.132284,
+              0.505071,
+              0.362645,
+              0.0
+            ],
+            "expected_rating": 3.2304
+          },
+          "delta_improved_minus_canonical": -0.1943,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up seems straightforward with the familiar Pixel UI. Navigation is intuitive for daily use, but learning some deeper settings might take time. The 5G connectivity and fast charging are positives.",
+          "cosine_similarities": [
+            0.607691,
+            0.600052,
+            0.660532,
+            0.64162,
+            0.693953
+          ],
+          "min_similarity": 0.600052,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.29374,
+            0.178168,
+            0.528092
+          ],
+          "expected_rating": 4.2344,
+          "canonical": {
+            "pmf_probabilities": [
+              0.037521,
+              0.0,
+              0.29707,
+              0.204178,
+              0.461232
+            ],
+            "expected_rating": 4.0516
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.29374,
+              0.178168,
+              0.528092
+            ],
+            "expected_rating": 4.2344
+          },
+          "delta_improved_minus_canonical": 0.1828,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "I would enjoy the camera for photography, smooth scrolling, and fast charging. The 120Hz display and Tensor G3 processor make it pleasant to use for everyday tasks. The information does not show gaming performance or long-term use.",
+          "cosine_similarities": [
+            0.591597,
+            0.621177,
+            0.613504,
+            0.645423,
+            0.601192
+          ],
+          "min_similarity": 0.591597,
+          "pmf_probabilities": [
+            0.0,
+            0.25696,
+            0.17218,
+            0.57086,
+            0.0
+          ],
+          "expected_rating": 3.3139,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.257421,
+              0.190648,
+              0.468427,
+              0.083504
+            ],
+            "expected_rating": 3.378
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.25696,
+              0.17218,
+              0.57086,
+              0.0
+            ],
+            "expected_rating": 3.3139
+          },
+          "delta_improved_minus_canonical": -0.0641,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might approve of the Tensor G3 processor and 5G connectivity. They might notice the good camera and smooth performance. Their views would matter to me, but I have not heard their real opinions.",
+          "cosine_similarities": [
+            0.596967,
+            0.667101,
+            0.704388,
+            0.685755,
+            0.625051
+          ],
+          "min_similarity": 0.596967,
+          "pmf_probabilities": [
+            0.0,
+            0.241834,
+            0.426971,
+            0.331195,
+            0.0
+          ],
+          "expected_rating": 3.0894,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.238205,
+              0.364848,
+              0.301562,
+              0.095385
+            ],
+            "expected_rating": 3.2541
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.241834,
+              0.426971,
+              0.331195,
+              0.0
+            ],
+            "expected_rating": 3.0894
+          },
+          "delta_improved_minus_canonical": -0.1648,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The Titan M2 security chip and fingerprint unlock are good. The information does not show how my accounts or personal data are fully protected, so I would not assume it is fully secure.",
+          "cosine_similarities": [
+            0.684332,
+            0.688308,
+            0.642222,
+            0.6955,
+            0.687049
+          ],
+          "min_similarity": 0.642222,
+          "pmf_probabilities": [
+            0.0,
+            0.314756,
+            0.0,
+            0.381898,
+            0.303346
+          ],
+          "expected_rating": 3.6738,
+          "canonical": {
+            "pmf_probabilities": [
+              0.226032,
+              0.247373,
+              0.0,
+              0.285978,
+              0.240617
+            ],
+            "expected_rating": 3.0678
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.314756,
+              0.0,
+              0.381898,
+              0.303346
+            ],
+            "expected_rating": 3.6738
+          },
+          "delta_improved_minus_canonical": 0.6061,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Unsure, need to check gaming performance and long-term use before deciding. It has good specs for photography and fast scrolling, but I'm not sure if the price is justified without knowing more about its real-world performance.",
+          "cosine_similarities": [
+            0.4772,
+            0.52017,
+            0.608392,
+            0.540042,
+            0.509953
+          ],
+          "min_similarity": 0.4772,
+          "pmf_probabilities": [
+            0.0,
+            0.141059,
+            0.62478,
+            0.234162,
+            0.0
+          ],
+          "expected_rating": 3.0931,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.159291,
+              0.486336,
+              0.232958,
+              0.121415
+            ],
+            "expected_rating": 3.3165
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.141059,
+              0.62478,
+              0.234162,
+              0.0
+            ],
+            "expected_rating": 3.0931
+          },
+          "delta_improved_minus_canonical": -0.2234,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "The 8GB RAM should allow me to run multiple apps without lag. The 120Hz display should make scrolling smoother. The 4492mAh battery and fast charging support long usage. The information does not show gaming performance or long-term use.",
+              "issues": [
+                "unsupported product claim (real-world performance: 'lag'); the specifications do not show this, so only describe what the listed specs support, or say real-world results are not shown"
+              ]
+            }
+          ]
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "PP": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "BI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 2,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "No, the Tensor G3 processor and 5G connectivity are strong, but my current phone covers my needs. I would not switch for this one.",
+              "issues": [
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            },
+            {
+              "text": "Unsure, needs checking. Strengths like 8GB RAM and 5G are good, but price and specific needs like photo quality and gaming are important to verify.",
+              "issues": [
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            }
+          ]
+        }
+      },
+      "flagged_constructs": [],
+      "alignment_flags": []
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "primary_adoption_rating": 3.4112,
+      "primary_adoption_pmf": [
+        0.0,
+        0.0,
+        0.719467,
+        0.149833,
+        0.1307
+      ],
+      "construct_scores": {
+        "PE": 3.2525,
+        "EE": 4.1373,
+        "HM": 3.9947,
+        "SI": 3.219,
+        "PP": 2.2956,
+        "BI": 3.4112
+      },
+      "construct_responses": {
+        "PE": "The 120Hz display should make scrolling smoother, and 8GB RAM helps keep multiple apps open. The 4492mAh battery is good for a full day. The information does not show how it handles heavy gaming or multitasking.",
+        "EE": "Setting up seems straightforward with the Pixel UI. Navigation is intuitive for daily use, though some custom settings might take a few days to learn.",
+        "HM": "Using it would be fun with its smooth display and easy navigation. The camera and display are nice for photos and videos, but nothing overly impressive for entertainment.",
+        "SI": "Friends might think I value photography and smooth performance. Their views would matter as they appreciate reliable gadgets. The info doesn't show much about gaming, so I’d want to test that.",
+        "PP": "The Titan M2 security chip is good, but the info doesn't show full data protection. I'd need to research more on that aspect.",
+        "BI": "Unsure, partly fits my needs. I need to check the gaming and heavy app usage performance before deciding.",
+        "OVERALL": "It seems like a practical choice for everyday use, but I need to check more before deciding."
+      },
+      "response_text": "It seems like a practical choice for everyday use, but I need to check more before deciding.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The 120Hz display should make scrolling smoother, and 8GB RAM helps keep multiple apps open. The 4492mAh battery is good for a full day. The information does not show how it handles heavy gaming or multitasking.",
+          "cosine_similarities": [
+            0.565571,
+            0.586379,
+            0.579544,
+            0.60298,
+            0.559625
+          ],
+          "min_similarity": 0.559625,
+          "pmf_probabilities": [
+            0.0,
+            0.279474,
+            0.18858,
+            0.531946,
+            0.0
+          ],
+          "expected_rating": 3.2525,
+          "canonical": {
+            "pmf_probabilities": [
+              0.061955,
+              0.278766,
+              0.207543,
+              0.451736,
+              0.0
+            ],
+            "expected_rating": 3.0491
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.279474,
+              0.18858,
+              0.531946,
+              0.0
+            ],
+            "expected_rating": 3.2525
+          },
+          "delta_improved_minus_canonical": 0.2034,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up seems straightforward with the Pixel UI. Navigation is intuitive for daily use, though some custom settings might take a few days to learn.",
+          "cosine_similarities": [
+            0.623373,
+            0.622676,
+            0.687528,
+            0.667818,
+            0.706883
+          ],
+          "min_similarity": 0.622676,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.329658,
+            0.203364,
+            0.466978
+          ],
+          "expected_rating": 4.1373,
+          "canonical": {
+            "pmf_probabilities": [
+              0.003577,
+              0.0,
+              0.332748,
+              0.231619,
+              0.432056
+            ],
+            "expected_rating": 4.0886
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.329658,
+              0.203364,
+              0.466978
+            ],
+            "expected_rating": 4.1373
+          },
+          "delta_improved_minus_canonical": 0.0487,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using it would be fun with its smooth display and easy navigation. The camera and display are nice for photos and videos, but nothing overly impressive for entertainment.",
+          "cosine_similarities": [
+            0.615687,
+            0.65017,
+            0.664076,
+            0.648045,
+            0.704651
+          ],
+          "min_similarity": 0.615687,
+          "pmf_probabilities": [
+            0.0,
+            0.163681,
+            0.257144,
+            0.0,
+            0.579175
+          ],
+          "expected_rating": 3.9947,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.168876,
+              0.236973,
+              0.158465,
+              0.435687
+            ],
+            "expected_rating": 3.861
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.163681,
+              0.257144,
+              0.0,
+              0.579175
+            ],
+            "expected_rating": 3.9947
+          },
+          "delta_improved_minus_canonical": 0.1337,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Friends might think I value photography and smooth performance. Their views would matter as they appreciate reliable gadgets. The info doesn't show much about gaming, so I’d want to test that.",
+          "cosine_similarities": [
+            0.632721,
+            0.649851,
+            0.670621,
+            0.665431,
+            0.647412
+          ],
+          "min_similarity": 0.632721,
+          "pmf_probabilities": [
+            0.0,
+            0.159947,
+            0.461129,
+            0.378925,
+            0.0
+          ],
+          "expected_rating": 3.219,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.167232,
+              0.370003,
+              0.31934,
+              0.143424
+            ],
+            "expected_rating": 3.439
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.159947,
+              0.461129,
+              0.378925,
+              0.0
+            ],
+            "expected_rating": 3.219
+          },
+          "delta_improved_minus_canonical": -0.22,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The Titan M2 security chip is good, but the info doesn't show full data protection. I'd need to research more on that aspect.",
+          "cosine_similarities": [
+            0.617873,
+            0.619964,
+            0.558233,
+            0.615246,
+            0.585072
+          ],
+          "min_similarity": 0.558233,
+          "pmf_probabilities": [
+            0.33459,
+            0.350325,
+            0.0,
+            0.315085,
+            0.0
+          ],
+          "expected_rating": 2.2956,
+          "canonical": {
+            "pmf_probabilities": [
+              0.29061,
+              0.300801,
+              0.0,
+              0.27781,
+              0.130778
+            ],
+            "expected_rating": 2.6573
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.33459,
+              0.350325,
+              0.0,
+              0.315085,
+              0.0
+            ],
+            "expected_rating": 2.2956
+          },
+          "delta_improved_minus_canonical": -0.3618,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Unsure, partly fits my needs. I need to check the gaming and heavy app usage performance before deciding.",
+          "cosine_similarities": [
+            0.533848,
+            0.54177,
+            0.656226,
+            0.571575,
+            0.5679
+          ],
+          "min_similarity": 0.533848,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.719467,
+            0.149833,
+            0.1307
+          ],
+          "expected_rating": 3.4112,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.039205,
+              0.605592,
+              0.186692,
+              0.168511
+            ],
+            "expected_rating": 3.4845
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.719467,
+              0.149833,
+              0.1307
+            ],
+            "expected_rating": 3.4112
+          },
+          "delta_improved_minus_canonical": -0.0733,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Friends might think it's a good choice for photography and smooth performance. The information does not show how well it protects personal data.",
+              "issues": [
+                "talks about privacy or data, which is not in the product description"
+              ]
+            }
+          ]
+        },
+        "PP": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "The security features like fingerprint unlock are good, but nothing shows how well it protects personal data beyond that.",
+              "issues": [
+                "too short; write 2 or 3 full sentences (about 35 to 55 words): your reasoning, the features that matter, what that means for you, and any real limitation"
+              ]
+            }
+          ]
+        },
+        "BI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "No, the balance of features and battery life seems good, but the price is a stretch for my usual needs.",
+              "issues": [
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            }
+          ]
+        }
+      },
+      "flagged_constructs": [],
+      "alignment_flags": []
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "primary_adoption_rating": 2.9835,
+      "primary_adoption_pmf": [
+        0.0,
+        0.154252,
+        0.708033,
+        0.137715,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 3.2232,
+        "EE": 4.4333,
+        "HM": 4.1351,
+        "SI": 3.5692,
+        "PP": 2.0942,
+        "BI": 2.9835
+      },
+      "construct_responses": {
+        "PE": "The 120Hz display should make scrolling smoother, and 8GB RAM allows multiple apps. The battery life is average, so long sessions might drain it.",
+        "EE": "Setting up and using it feels intuitive, but some custom settings might take a bit of time to learn. The Pixel UI is familiar and easy to navigate.",
+        "HM": "I would enjoy using it for its clear display and good camera. The fingerprint and face unlock are convenient, but the battery life might be an issue for long days.",
+        "SI": "My friends might think I’m tech-savvy for using a smartphone with good camera and fast processing. They might notice the 120Hz display, but I can’t be sure if it’s worth it. Their views might matter since they often share useful tips, but I haven't heard their specific thoughts.",
+        "PP": "The security features like fingerprint unlock are good, but the product doesn't detail full data protection, so I can't fully trust it with sensitive information.",
+        "BI": "Unsure. The strengths are good camera and fast processing, but I need to check the battery life and gaming performance. It fits my needs for basic tasks, but I'm not sure if it's worth the price for the features.",
+        "OVERALL": "It seems like a decent option, but the price is a bit on the higher side for what it offers."
+      },
+      "response_text": "It seems like a decent option, but the price is a bit on the higher side for what it offers.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The 120Hz display should make scrolling smoother, and 8GB RAM allows multiple apps. The battery life is average, so long sessions might drain it.",
+          "cosine_similarities": [
+            0.574839,
+            0.598762,
+            0.606635,
+            0.614991,
+            0.585253
+          ],
+          "min_similarity": 0.574839,
+          "pmf_probabilities": [
+            0.0,
+            0.224426,
+            0.327946,
+            0.447628,
+            0.0
+          ],
+          "expected_rating": 3.2232,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.225086,
+              0.299154,
+              0.377774,
+              0.097986
+            ],
+            "expected_rating": 3.3487
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.224426,
+              0.327946,
+              0.447628,
+              0.0
+            ],
+            "expected_rating": 3.2232
+          },
+          "delta_improved_minus_canonical": -0.1255,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and using it feels intuitive, but some custom settings might take a bit of time to learn. The Pixel UI is familiar and easy to navigate.",
+          "cosine_similarities": [
+            0.635629,
+            0.637865,
+            0.660675,
+            0.664668,
+            0.699181
+          ],
+          "min_similarity": 0.635629,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.176095,
+            0.214482,
+            0.609424
+          ],
+          "expected_rating": 4.4333,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.018654,
+              0.208942,
+              0.242247,
+              0.530158
+            ],
+            "expected_rating": 4.2839
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.176095,
+              0.214482,
+              0.609424
+            ],
+            "expected_rating": 4.4333
+          },
+          "delta_improved_minus_canonical": 0.1494,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "I would enjoy using it for its clear display and good camera. The fingerprint and face unlock are convenient, but the battery life might be an issue for long days.",
+          "cosine_similarities": [
+            0.568476,
+            0.584652,
+            0.584408,
+            0.637257,
+            0.610259
+          ],
+          "min_similarity": 0.568476,
+          "pmf_probabilities": [
+            0.0,
+            0.087468,
+            0.0,
+            0.602529,
+            0.310003
+          ],
+          "expected_rating": 4.1351,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.113378,
+              0.111669,
+              0.482088,
+              0.292865
+            ],
+            "expected_rating": 3.9544
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.087468,
+              0.0,
+              0.602529,
+              0.310003
+            ],
+            "expected_rating": 4.1351
+          },
+          "delta_improved_minus_canonical": 0.1806,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might think I’m tech-savvy for using a smartphone with good camera and fast processing. They might notice the 120Hz display, but I can’t be sure if it’s worth it. Their views might matter since they often share useful tips, but I haven't heard their specific thoughts.",
+          "cosine_similarities": [
+            0.66427,
+            0.663061,
+            0.733887,
+            0.681462,
+            0.695146
+          ],
+          "min_similarity": 0.663061,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.660635,
+            0.10952,
+            0.229845
+          ],
+          "expected_rating": 3.5692,
+          "canonical": {
+            "pmf_probabilities": [
+              0.00987,
+              0.0,
+              0.578072,
+              0.150186,
+              0.261871
+            ],
+            "expected_rating": 3.6542
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.660635,
+              0.10952,
+              0.229845
+            ],
+            "expected_rating": 3.5692
+          },
+          "delta_improved_minus_canonical": -0.085,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The security features like fingerprint unlock are good, but the product doesn't detail full data protection, so I can't fully trust it with sensitive information.",
+          "cosine_similarities": [
+            0.68152,
+            0.664194,
+            0.626381,
+            0.664107,
+            0.626211
+          ],
+          "min_similarity": 0.626211,
+          "pmf_probabilities": [
+            0.452506,
+            0.274166,
+            0.0,
+            0.273328,
+            0.0
+          ],
+          "expected_rating": 2.0942,
+          "canonical": {
+            "pmf_probabilities": [
+              0.421058,
+              0.289157,
+              0.001292,
+              0.288494,
+              0.0
+            ],
+            "expected_rating": 2.1572
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.452506,
+              0.274166,
+              0.0,
+              0.273328,
+              0.0
+            ],
+            "expected_rating": 2.0942
+          },
+          "delta_improved_minus_canonical": -0.0631,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Unsure. The strengths are good camera and fast processing, but I need to check the battery life and gaming performance. It fits my needs for basic tasks, but I'm not sure if it's worth the price for the features.",
+          "cosine_similarities": [
+            0.487196,
+            0.538245,
+            0.647281,
+            0.534083,
+            0.528533
+          ],
+          "min_similarity": 0.487196,
+          "pmf_probabilities": [
+            0.0,
+            0.154252,
+            0.708033,
+            0.137715,
+            0.0
+          ],
+          "expected_rating": 2.9835,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.170528,
+              0.534764,
+              0.156624,
+              0.138084
+            ],
+            "expected_rating": 3.2623
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.154252,
+              0.708033,
+              0.137715,
+              0.0
+            ],
+            "expected_rating": 2.9835
+          },
+          "delta_improved_minus_canonical": -0.2788,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Friends might see me as tech-savvy with a good camera phone, but the price might matter to them. It isn't a status symbol, just a practical choice.",
+              "issues": [
+                "price leakage: mentions price, cost, affordability, discounts or buying (price), which belong only in the buying-intention answer"
+              ]
+            }
+          ]
+        },
+        "PP": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "BI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "No, the price is a bit high for the features, especially since I can get similar performance from my current phone.",
+              "issues": [
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            }
+          ]
+        }
+      },
+      "flagged_constructs": [],
+      "alignment_flags": []
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.583769,
+        0.602112,
+        0.594968,
+        0.63405,
+        0.589144
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.186772,
+        0.096734,
+        0.716494,
+        0.0
+      ],
+      "expected_rating": 3.5297,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.576777,
+        0.561765,
+        0.632093,
+        0.640881,
+        0.663457
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.262807,
+        0.307478,
+        0.429716
+      ],
+      "expected_rating": 4.1669,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.654312,
+        0.674436,
+        0.670996,
+        0.72158,
+        0.699402
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.111987,
+        0.0,
+        0.559684,
+        0.328329
+      ],
+      "expected_rating": 4.1044,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.718894,
+        0.722751,
+        0.756081,
+        0.743664,
+        0.719009
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.029893,
+        0.61332,
+        0.356787,
+        0.0
+      ],
+      "expected_rating": 3.3269,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.657157,
+        0.656818,
+        0.613646,
+        0.613211,
+        0.642447
+      ],
+      "pmf_probabilities": [
+        0.38903,
+        0.385037,
+        0.0,
+        0.0,
+        0.225933
+      ],
+      "expected_rating": 2.2888,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.525414,
+        0.585986,
+        0.636806,
+        0.581263,
+        0.581666
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.240433,
+        0.541717,
+        0.0,
+        0.21785
+      ],
+      "expected_rating": 3.1953,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.565307,
+        0.576966,
+        0.597153,
+        0.590147,
+        0.575366
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.132284,
+        0.505071,
+        0.362645,
+        0.0
+      ],
+      "expected_rating": 3.2304,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.607691,
+        0.600052,
+        0.660532,
+        0.64162,
+        0.693953
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.29374,
+        0.178168,
+        0.528092
+      ],
+      "expected_rating": 4.2344,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.591597,
+        0.621177,
+        0.613504,
+        0.645423,
+        0.601192
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.25696,
+        0.17218,
+        0.57086,
+        0.0
+      ],
+      "expected_rating": 3.3139,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.596967,
+        0.667101,
+        0.704388,
+        0.685755,
+        0.625051
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.241834,
+        0.426971,
+        0.331195,
+        0.0
+      ],
+      "expected_rating": 3.0894,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.684332,
+        0.688308,
+        0.642222,
+        0.6955,
+        0.687049
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.314756,
+        0.0,
+        0.381898,
+        0.303346
+      ],
+      "expected_rating": 3.6738,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.4772,
+        0.52017,
+        0.608392,
+        0.540042,
+        0.509953
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.141059,
+        0.62478,
+        0.234162,
+        0.0
+      ],
+      "expected_rating": 3.0931,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.565571,
+        0.586379,
+        0.579544,
+        0.60298,
+        0.559625
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.279474,
+        0.18858,
+        0.531946,
+        0.0
+      ],
+      "expected_rating": 3.2525,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.623373,
+        0.622676,
+        0.687528,
+        0.667818,
+        0.706883
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.329658,
+        0.203364,
+        0.466978
+      ],
+      "expected_rating": 4.1373,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.615687,
+        0.65017,
+        0.664076,
+        0.648045,
+        0.704651
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.163681,
+        0.257144,
+        0.0,
+        0.579175
+      ],
+      "expected_rating": 3.9947,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.632721,
+        0.649851,
+        0.670621,
+        0.665431,
+        0.647412
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.159947,
+        0.461129,
+        0.378925,
+        0.0
+      ],
+      "expected_rating": 3.219,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.617873,
+        0.619964,
+        0.558233,
+        0.615246,
+        0.585072
+      ],
+      "pmf_probabilities": [
+        0.33459,
+        0.350325,
+        0.0,
+        0.315085,
+        0.0
+      ],
+      "expected_rating": 2.2956,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.533848,
+        0.54177,
+        0.656226,
+        0.571575,
+        0.5679
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.719467,
+        0.149833,
+        0.1307
+      ],
+      "expected_rating": 3.4112,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.574839,
+        0.598762,
+        0.606635,
+        0.614991,
+        0.585253
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.224426,
+        0.327946,
+        0.447628,
+        0.0
+      ],
+      "expected_rating": 3.2232,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.635629,
+        0.637865,
+        0.660675,
+        0.664668,
+        0.699181
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.176095,
+        0.214482,
+        0.609424
+      ],
+      "expected_rating": 4.4333,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.568476,
+        0.584652,
+        0.584408,
+        0.637257,
+        0.610259
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.087468,
+        0.0,
+        0.602529,
+        0.310003
+      ],
+      "expected_rating": 4.1351,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.66427,
+        0.663061,
+        0.733887,
+        0.681462,
+        0.695146
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.660635,
+        0.10952,
+        0.229845
+      ],
+      "expected_rating": 3.5692,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.68152,
+        0.664194,
+        0.626381,
+        0.664107,
+        0.626211
+      ],
+      "pmf_probabilities": [
+        0.452506,
+        0.274166,
+        0.0,
+        0.273328,
+        0.0
+      ],
+      "expected_rating": 2.0942,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.487196,
+        0.538245,
+        0.647281,
+        0.534083,
+        0.528533
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.154252,
+        0.708033,
+        0.137715,
+        0.0
+      ],
+      "expected_rating": 2.9835,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.583769,
+      "cos_sim_2": 0.602112,
+      "cos_sim_3": 0.594968,
+      "cos_sim_4": 0.63405,
+      "cos_sim_5": 0.589144,
+      "min_similarity": 0.583769,
+      "p1": 0.0,
+      "p2": 0.186772,
+      "p3": 0.096734,
+      "p4": 0.716494,
+      "p5": 0.0,
+      "set_expected_rating": 3.5297,
+      "canonical_expected_rating": 3.501,
+      "improved_expected_rating": 3.5297,
+      "delta": 0.0287,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.576777,
+      "cos_sim_2": 0.561765,
+      "cos_sim_3": 0.632093,
+      "cos_sim_4": 0.640881,
+      "cos_sim_5": 0.663457,
+      "min_similarity": 0.561765,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.262807,
+      "p4": 0.307478,
+      "p5": 0.429716,
+      "set_expected_rating": 4.1669,
+      "canonical_expected_rating": 3.9486,
+      "improved_expected_rating": 4.1669,
+      "delta": 0.2183,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.654312,
+      "cos_sim_2": 0.674436,
+      "cos_sim_3": 0.670996,
+      "cos_sim_4": 0.72158,
+      "cos_sim_5": 0.699402,
+      "min_similarity": 0.654312,
+      "p1": 0.0,
+      "p2": 0.111987,
+      "p3": 0.0,
+      "p4": 0.559684,
+      "p5": 0.328329,
+      "set_expected_rating": 4.1044,
+      "canonical_expected_rating": 3.9206,
+      "improved_expected_rating": 4.1044,
+      "delta": 0.1838,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.718894,
+      "cos_sim_2": 0.722751,
+      "cos_sim_3": 0.756081,
+      "cos_sim_4": 0.743664,
+      "cos_sim_5": 0.719009,
+      "min_similarity": 0.718894,
+      "p1": 0.0,
+      "p2": 0.029893,
+      "p3": 0.61332,
+      "p4": 0.356787,
+      "p5": 0.0,
+      "set_expected_rating": 3.3269,
+      "canonical_expected_rating": 3.3207,
+      "improved_expected_rating": 3.3269,
+      "delta": 0.0062,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.657157,
+      "cos_sim_2": 0.656818,
+      "cos_sim_3": 0.613646,
+      "cos_sim_4": 0.613211,
+      "cos_sim_5": 0.642447,
+      "min_similarity": 0.613211,
+      "p1": 0.38903,
+      "p2": 0.385037,
+      "p3": 0.0,
+      "p4": 0.0,
+      "p5": 0.225933,
+      "set_expected_rating": 2.2888,
+      "canonical_expected_rating": 2.377,
+      "improved_expected_rating": 2.2888,
+      "delta": -0.0883,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.525414,
+      "cos_sim_2": 0.585986,
+      "cos_sim_3": 0.636806,
+      "cos_sim_4": 0.581263,
+      "cos_sim_5": 0.581666,
+      "min_similarity": 0.525414,
+      "p1": 0.0,
+      "p2": 0.240433,
+      "p3": 0.541717,
+      "p4": 0.0,
+      "p5": 0.21785,
+      "set_expected_rating": 3.1953,
+      "canonical_expected_rating": 3.3794,
+      "improved_expected_rating": 3.1953,
+      "delta": -0.1842,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.565307,
+      "cos_sim_2": 0.576966,
+      "cos_sim_3": 0.597153,
+      "cos_sim_4": 0.590147,
+      "cos_sim_5": 0.575366,
+      "min_similarity": 0.565307,
+      "p1": 0.0,
+      "p2": 0.132284,
+      "p3": 0.505071,
+      "p4": 0.362645,
+      "p5": 0.0,
+      "set_expected_rating": 3.2304,
+      "canonical_expected_rating": 3.4247,
+      "improved_expected_rating": 3.2304,
+      "delta": -0.1943,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.607691,
+      "cos_sim_2": 0.600052,
+      "cos_sim_3": 0.660532,
+      "cos_sim_4": 0.64162,
+      "cos_sim_5": 0.693953,
+      "min_similarity": 0.600052,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.29374,
+      "p4": 0.178168,
+      "p5": 0.528092,
+      "set_expected_rating": 4.2344,
+      "canonical_expected_rating": 4.0516,
+      "improved_expected_rating": 4.2344,
+      "delta": 0.1828,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.591597,
+      "cos_sim_2": 0.621177,
+      "cos_sim_3": 0.613504,
+      "cos_sim_4": 0.645423,
+      "cos_sim_5": 0.601192,
+      "min_similarity": 0.591597,
+      "p1": 0.0,
+      "p2": 0.25696,
+      "p3": 0.17218,
+      "p4": 0.57086,
+      "p5": 0.0,
+      "set_expected_rating": 3.3139,
+      "canonical_expected_rating": 3.378,
+      "improved_expected_rating": 3.3139,
+      "delta": -0.0641,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.596967,
+      "cos_sim_2": 0.667101,
+      "cos_sim_3": 0.704388,
+      "cos_sim_4": 0.685755,
+      "cos_sim_5": 0.625051,
+      "min_similarity": 0.596967,
+      "p1": 0.0,
+      "p2": 0.241834,
+      "p3": 0.426971,
+      "p4": 0.331195,
+      "p5": 0.0,
+      "set_expected_rating": 3.0894,
+      "canonical_expected_rating": 3.2541,
+      "improved_expected_rating": 3.0894,
+      "delta": -0.1648,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.684332,
+      "cos_sim_2": 0.688308,
+      "cos_sim_3": 0.642222,
+      "cos_sim_4": 0.6955,
+      "cos_sim_5": 0.687049,
+      "min_similarity": 0.642222,
+      "p1": 0.0,
+      "p2": 0.314756,
+      "p3": 0.0,
+      "p4": 0.381898,
+      "p5": 0.303346,
+      "set_expected_rating": 3.6738,
+      "canonical_expected_rating": 3.0678,
+      "improved_expected_rating": 3.6738,
+      "delta": 0.6061,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.4772,
+      "cos_sim_2": 0.52017,
+      "cos_sim_3": 0.608392,
+      "cos_sim_4": 0.540042,
+      "cos_sim_5": 0.509953,
+      "min_similarity": 0.4772,
+      "p1": 0.0,
+      "p2": 0.141059,
+      "p3": 0.62478,
+      "p4": 0.234162,
+      "p5": 0.0,
+      "set_expected_rating": 3.0931,
+      "canonical_expected_rating": 3.3165,
+      "improved_expected_rating": 3.0931,
+      "delta": -0.2234,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.565571,
+      "cos_sim_2": 0.586379,
+      "cos_sim_3": 0.579544,
+      "cos_sim_4": 0.60298,
+      "cos_sim_5": 0.559625,
+      "min_similarity": 0.559625,
+      "p1": 0.0,
+      "p2": 0.279474,
+      "p3": 0.18858,
+      "p4": 0.531946,
+      "p5": 0.0,
+      "set_expected_rating": 3.2525,
+      "canonical_expected_rating": 3.0491,
+      "improved_expected_rating": 3.2525,
+      "delta": 0.2034,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.623373,
+      "cos_sim_2": 0.622676,
+      "cos_sim_3": 0.687528,
+      "cos_sim_4": 0.667818,
+      "cos_sim_5": 0.706883,
+      "min_similarity": 0.622676,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.329658,
+      "p4": 0.203364,
+      "p5": 0.466978,
+      "set_expected_rating": 4.1373,
+      "canonical_expected_rating": 4.0886,
+      "improved_expected_rating": 4.1373,
+      "delta": 0.0487,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.615687,
+      "cos_sim_2": 0.65017,
+      "cos_sim_3": 0.664076,
+      "cos_sim_4": 0.648045,
+      "cos_sim_5": 0.704651,
+      "min_similarity": 0.615687,
+      "p1": 0.0,
+      "p2": 0.163681,
+      "p3": 0.257144,
+      "p4": 0.0,
+      "p5": 0.579175,
+      "set_expected_rating": 3.9947,
+      "canonical_expected_rating": 3.861,
+      "improved_expected_rating": 3.9947,
+      "delta": 0.1337,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.632721,
+      "cos_sim_2": 0.649851,
+      "cos_sim_3": 0.670621,
+      "cos_sim_4": 0.665431,
+      "cos_sim_5": 0.647412,
+      "min_similarity": 0.632721,
+      "p1": 0.0,
+      "p2": 0.159947,
+      "p3": 0.461129,
+      "p4": 0.378925,
+      "p5": 0.0,
+      "set_expected_rating": 3.219,
+      "canonical_expected_rating": 3.439,
+      "improved_expected_rating": 3.219,
+      "delta": -0.22,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.617873,
+      "cos_sim_2": 0.619964,
+      "cos_sim_3": 0.558233,
+      "cos_sim_4": 0.615246,
+      "cos_sim_5": 0.585072,
+      "min_similarity": 0.558233,
+      "p1": 0.33459,
+      "p2": 0.350325,
+      "p3": 0.0,
+      "p4": 0.315085,
+      "p5": 0.0,
+      "set_expected_rating": 2.2956,
+      "canonical_expected_rating": 2.6573,
+      "improved_expected_rating": 2.2956,
+      "delta": -0.3618,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.533848,
+      "cos_sim_2": 0.54177,
+      "cos_sim_3": 0.656226,
+      "cos_sim_4": 0.571575,
+      "cos_sim_5": 0.5679,
+      "min_similarity": 0.533848,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.719467,
+      "p4": 0.149833,
+      "p5": 0.1307,
+      "set_expected_rating": 3.4112,
+      "canonical_expected_rating": 3.4845,
+      "improved_expected_rating": 3.4112,
+      "delta": -0.0733,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.574839,
+      "cos_sim_2": 0.598762,
+      "cos_sim_3": 0.606635,
+      "cos_sim_4": 0.614991,
+      "cos_sim_5": 0.585253,
+      "min_similarity": 0.574839,
+      "p1": 0.0,
+      "p2": 0.224426,
+      "p3": 0.327946,
+      "p4": 0.447628,
+      "p5": 0.0,
+      "set_expected_rating": 3.2232,
+      "canonical_expected_rating": 3.3487,
+      "improved_expected_rating": 3.2232,
+      "delta": -0.1255,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.635629,
+      "cos_sim_2": 0.637865,
+      "cos_sim_3": 0.660675,
+      "cos_sim_4": 0.664668,
+      "cos_sim_5": 0.699181,
+      "min_similarity": 0.635629,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.176095,
+      "p4": 0.214482,
+      "p5": 0.609424,
+      "set_expected_rating": 4.4333,
+      "canonical_expected_rating": 4.2839,
+      "improved_expected_rating": 4.4333,
+      "delta": 0.1494,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.568476,
+      "cos_sim_2": 0.584652,
+      "cos_sim_3": 0.584408,
+      "cos_sim_4": 0.637257,
+      "cos_sim_5": 0.610259,
+      "min_similarity": 0.568476,
+      "p1": 0.0,
+      "p2": 0.087468,
+      "p3": 0.0,
+      "p4": 0.602529,
+      "p5": 0.310003,
+      "set_expected_rating": 4.1351,
+      "canonical_expected_rating": 3.9544,
+      "improved_expected_rating": 4.1351,
+      "delta": 0.1806,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.66427,
+      "cos_sim_2": 0.663061,
+      "cos_sim_3": 0.733887,
+      "cos_sim_4": 0.681462,
+      "cos_sim_5": 0.695146,
+      "min_similarity": 0.663061,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.660635,
+      "p4": 0.10952,
+      "p5": 0.229845,
+      "set_expected_rating": 3.5692,
+      "canonical_expected_rating": 3.6542,
+      "improved_expected_rating": 3.5692,
+      "delta": -0.085,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.68152,
+      "cos_sim_2": 0.664194,
+      "cos_sim_3": 0.626381,
+      "cos_sim_4": 0.664107,
+      "cos_sim_5": 0.626211,
+      "min_similarity": 0.626211,
+      "p1": 0.452506,
+      "p2": 0.274166,
+      "p3": 0.0,
+      "p4": 0.273328,
+      "p5": 0.0,
+      "set_expected_rating": 2.0942,
+      "canonical_expected_rating": 2.1572,
+      "improved_expected_rating": 2.0942,
+      "delta": -0.0631,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Google Pixel 8a",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.487196,
+      "cos_sim_2": 0.538245,
+      "cos_sim_3": 0.647281,
+      "cos_sim_4": 0.534083,
+      "cos_sim_5": 0.528533,
+      "min_similarity": 0.487196,
+      "p1": 0.0,
+      "p2": 0.154252,
+      "p3": 0.708033,
+      "p4": 0.137715,
+      "p5": 0.0,
+      "set_expected_rating": 2.9835,
+      "canonical_expected_rating": 3.2623,
+      "improved_expected_rating": 2.9835,
+      "delta": -0.2788,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

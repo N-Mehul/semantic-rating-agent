@@ -16,6 +16,23 @@ Human survey (Google Forms export, 215 submissions)
 ```
 The LLM writes natural-language answers only; it never outputs a rating. Ratings come from `canonical_ssr.py` (unmodified) applied to the approved Behavioral Intention anchor set.
 
+### Scoring methods (dashboard product evaluation)
+| Method | Role | Configuration | Code |
+|---|---|---|---|
+| **Enhanced Semantic Similarity Rating (E-SSR)** | Primary method (default) | Keep the 3 most similar anchors (k=3), temperature T=0.75 | `improved_ssr.py` (internal id `improved`) |
+| **Canonical Semantic Similarity Rating (Canonical SSR)** | Baseline method | Paper minimum-subtraction, T=1.0 | `canonical_ssr.py` (unchanged) |
+
+Pipeline: response text → `nomic-embed-text` embedding → cosine similarity to the 5 construct anchors → PMF → expected rating E[r] → rounded 1–5 prediction.
+
+Benchmark: E-SSR scores **79.17% exact (19/24)** on 24 synthetic product-evaluation responses (4 personas × 6 constructs), using Qwen 2.5 7B blind-judge ratings as the reference labels. These labels are an LLM judgement, not human ratings, so this is **not** human-validated or real-world accuracy. The judge used only ratings 3, 4 and 5 (5 / 15 / 4 responses). The result is reproducible from the saved cosine similarities of those 24 responses, without new generation or embedding calls.
+
+### Response reliability (dashboard product evaluation, 2026-11-06)
+Every persona x construct answer is validated before scoring and corrected at most twice with a short targeted prompt; an answer that still fails is saved with its real issues and is **not scored** (no default or substituted rating). The SSR mathematics, anchors, `nomic-embed-text` (768 dims), k = 3, T = 0.75 and epsilon = 0 are unchanged; the 79.17% benchmark above is unaffected.
+- Validation adds: price/purchase leakage outside BI (incl. discounts, budget, purchase decisions), unsupported real-world claims (lag, battery hours, photo quality, fingerprint speed, weight, benchmarks) unless the answer says the specs do not show it, PP authentication-vs-privacy distinction and invented security mechanisms, contradictory BI openings ("No, unsure"), and a 20-word floor (BI 15; the prompt targets 35-55 / 25-40).
+- Speed: the four main prompts share everything up to the persona section (Ollama prompt-cache reuse), all main calls run before any correction, and all answers are embedded in one batch request (identical vectors, 4 s instead of 51 s).
+- Each saved `ssr_results.json` has a `completeness` block (expected / generated / validated / scored, not-scored reasons) shown on the dashboard.
+- Measured real run (OnePlus Nord CE4 5G, CPU-only, Qwen 2.5 7B): 24/24 scored, 7 Qwen calls (3 corrections), 695 s total. About 5 minutes is not reachable on this hardware: generation runs at ~8 tokens/s, so the four main calls alone take ~460 s.
+
 ### Setup (Windows CMD)
 ```bat
 python -m venv .venv

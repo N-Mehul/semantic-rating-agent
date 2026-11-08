@@ -1,0 +1,50 @@
+{
+  "name": "tierphone",
+  "category": "Technology Product",
+  "description": "A mid-range smartphone designed for students and young professionals, with AI-powered features.",
+  "price_inr": 30000.0,
+  "target_group": "all",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Technology Platform",
+  "features": [
+    {
+      "name": "A Mid-Range Smartphone Designed",
+      "explanation": "A mid-range smartphone designed for students",
+      "category": null
+    },
+    {
+      "name": "Young Professionals",
+      "explanation": "young professionals,",
+      "category": null
+    },
+    {
+      "name": "Ai-Powered Features",
+      "explanation": "AI-powered features",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "ssr_method": "improved",
+  "ssr_method_label": "Improved SSR (Experimental, k=3, T=0.75)",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Technology Product",
+    "product_noun": "technology product",
+    "usage_role": "daily device",
+    "brand_or_ecosystem": "Technology Platform",
+    "features_count": 3,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-05T15:17:30.780584+00:00"
+}

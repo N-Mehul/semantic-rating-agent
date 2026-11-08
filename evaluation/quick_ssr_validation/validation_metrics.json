@@ -1,0 +1,219 @@
+{
+  "label": "Agreement with LLM-JUDGE REFERENCE ratings (NOT human ground truth)",
+  "n_responses": 24,
+  "product": "Echo Vision Smart Glasses",
+  "generation_run": "data/product_evaluation/echo_vision_smart_glasses_20261104_194521",
+  "generator": "qwen2.5:7b-instruct (existing pipeline)",
+  "judge": "qwen2.5:7b-instruct temperature 0, blind to SSR",
+  "judge_independence_caveat": "judge is the same model family as the generator (OpenAI unavailable: no credits)",
+  "improved_ssr_rounded_E": {
+    "exact_agreement_pct": 75.0,
+    "within_1_pct": 100.0,
+    "MAE": 0.3890375,
+    "RMSE": 0.571093836787499,
+    "spearman_rho": 0.1787638714593372,
+    "spearman_p": 0.4032829701211431,
+    "quadratic_weighted_kappa": 0.4,
+    "linear_weighted_kappa": 0.4,
+    "mean_signed_error_pred_minus_judge": 0.1776208333333333
+  },
+  "improved_ssr_argmax": {
+    "exact_agreement_pct": 62.5,
+    "within_1_pct": 87.5,
+    "MAE": 0.3890375,
+    "RMSE": 0.571093836787499,
+    "spearman_rho": 0.1787638714593372,
+    "spearman_p": 0.4032829701211431,
+    "quadratic_weighted_kappa": 0.03571428571428581,
+    "linear_weighted_kappa": 0.18181818181818188,
+    "mean_signed_error_pred_minus_judge": 0.1776208333333333
+  },
+  "canonical_ssr_rounded_E": {
+    "exact_agreement_pct": 79.16666666666666,
+    "within_1_pct": 100.0,
+    "MAE": 0.32987083333333334,
+    "RMSE": 0.45613344767001385,
+    "spearman_rho": 0.2298392633048621,
+    "spearman_p": 0.2799571846702922,
+    "quadratic_weighted_kappa": 0.48275862068965514,
+    "linear_weighted_kappa": 0.48275862068965514,
+    "mean_signed_error_pred_minus_judge": 0.043095833333333354
+  },
+  "constant_baseline_judge_mode": {
+    "exact_agreement_pct": 66.66666666666666
+  },
+  "distribution": {
+    "judge": {
+      "1": 0,
+      "2": 0,
+      "3": 8,
+      "4": 16,
+      "5": 0
+    },
+    "improved_rounded": {
+      "1": 0,
+      "2": 0,
+      "3": 6,
+      "4": 18,
+      "5": 0
+    }
+  },
+  "spread": {
+    "judge_sd": 0.48154341234307685,
+    "improved_E_sd": 0.46165312153126964,
+    "improved_E_range": [
+      2.9807,
+      4.3706
+    ]
+  },
+  "confusion_matrix_rows_judge_cols_improved_rounded": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      4,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      14,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "per_construct": {
+    "BI": {
+      "judge_mean": 3.75,
+      "ssr_mean": 4.10455,
+      "MAE": 0.3545499999999999,
+      "exact_pct": 75.0
+    },
+    "EE": {
+      "judge_mean": 4.0,
+      "ssr_mean": 4.1632,
+      "MAE": 0.17005000000000003,
+      "exact_pct": 100.0
+    },
+    "HM": {
+      "judge_mean": 4.0,
+      "ssr_mean": 3.854375,
+      "MAE": 0.41657500000000003,
+      "exact_pct": 75.0
+    },
+    "PE": {
+      "judge_mean": 3.5,
+      "ssr_mean": 3.471575,
+      "MAE": 0.13122500000000004,
+      "exact_pct": 100.0
+    },
+    "PP": {
+      "judge_mean": 3.0,
+      "ssr_mean": 3.951575,
+      "MAE": 0.9612249999999999,
+      "exact_pct": 25.0
+    },
+    "SI": {
+      "judge_mean": 3.75,
+      "ssr_mean": 3.5204500000000003,
+      "MAE": 0.30059999999999987,
+      "exact_pct": 75.0
+    }
+  },
+  "persona_differentiation": {
+    "improved_E": {
+      "persona_means": {
+        "P1_premium_tier_owner": 4.196916666666667,
+        "P2_midrange_heavy_user": 3.5247499999999996,
+        "P3_midrange_moderate_user": 3.8529999999999998,
+        "P4_budget_or_undisclosed_price": 3.802483333333333
+      },
+      "kruskal_H": 5.786666666666662,
+      "kruskal_p": 0.12246343708253808,
+      "range_of_persona_means": 0.672166666666667
+    },
+    "judge_rating": {
+      "persona_means": {
+        "P1_premium_tier_owner": 3.8333333333333335,
+        "P2_midrange_heavy_user": 3.6666666666666665,
+        "P3_midrange_moderate_user": 3.6666666666666665,
+        "P4_budget_or_undisclosed_price": 3.5
+      },
+      "kruskal_H": 1.4375000000000118,
+      "kruskal_p": 0.696768541688175,
+      "range_of_persona_means": 0.3333333333333335
+    },
+    "text_same_construct_cross_persona_mean_cosine": 0.8158451595553822,
+    "note": "n=6 per persona: very low power; descriptive only"
+  },
+  "quality": {
+    "construct_alignment_judge_pct": 70.83333333333334,
+    "construct_alignment_embedding_pct": 66.66666666666666,
+    "product_relevance_judge_pct": 58.333333333333336,
+    "persona_consistency_judge_pct": 100.0,
+    "naturalness_judge_mean_1to5": 4.375,
+    "mentions_other_product_type_n": 12,
+    "contains_numeric_rating_n": 0,
+    "overall_fallback_used_n": 0,
+    "unique_texts": 24,
+    "mean_words": 28.541666666666668
+  },
+  "largest_disagreements": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "construct": "PP",
+      "judge_reference_rating": 3,
+      "improved_E": 4.3706,
+      "response_text": "The build quality feels robust, and the device seems durable. With its strong performance, I expect it to last for a considerable amount of time without any issues."
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "construct": "PP",
+      "judge_reference_rating": 3,
+      "improved_E": 4.3232,
+      "response_text": "The build quality feels sturdy and well-engineered. With regular maintenance, it should last a few years without major issues. There are no explicit security features mentioned, so data protection relies on standard measures."
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "construct": "PP",
+      "judge_reference_rating": 3,
+      "improved_E": 4.1318,
+      "response_text": "The build quality seems sturdy, and the hardware is reliable, ensuring it will last a good few years without any major issues."
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "construct": "BI",
+      "judge_reference_rating": 3,
+      "improved_E": 4.0626,
+      "response_text": "I am certain I will continue using this smartphone as my primary phone; it offers balanced performance for everyday tasks and is reasonably priced for an entry-level device. While it might not be the best in every aspect, it provides good value for money."
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "construct": "SI",
+      "judge_reference_rating": 4,
+      "improved_E": 3.2753,
+      "response_text": "My peers might find it a reliable option, though they might prefer more advanced models for intensive tasks. It's a solid choice for everyday use."
+    }
+  ]
+}

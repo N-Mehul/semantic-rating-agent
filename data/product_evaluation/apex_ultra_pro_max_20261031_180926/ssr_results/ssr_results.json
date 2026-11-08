@@ -1,0 +1,545 @@
+{
+  "evaluation_id": "apex_ultra_pro_max_20261031_180926",
+  "product_name": "Apex Ultra Pro Max",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-31T12:42:14.181516+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 1,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 4.0003,
+  "overall_adoption_average": 4.0003,
+  "primary_adoption_average": 4.0003,
+  "construct_averages": {
+    "PE": 3.5181,
+    "EE": 4.1221,
+    "HM": 3.9029,
+    "SI": 3.95,
+    "PP": 3.565,
+    "BI": 4.0003
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 6,
+  "qualitative_constructs": [
+    "PV"
+  ],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "primary_adoption_rating": 4.0003,
+      "primary_adoption_pmf": [
+        0.0,
+        0.131097,
+        0.082897,
+        0.440567,
+        0.345439
+      ],
+      "construct_scores": {
+        "PE": 3.5181,
+        "EE": 4.1221,
+        "HM": 3.9029,
+        "SI": 3.95,
+        "PP": 3.565,
+        "BI": 4.0003
+      },
+      "construct_responses": {
+        "PE": "The Snapdragon 8 Elite processor ensures top-notch performance for heavy multitasking and gaming. The 2K AMOLED display and 6500mAh battery with fast charging will handle daily tasks efficiently, making work and study smoother. I am certain I will continue using this smartphone as my primary phone; the speed and efficiency match everything I need.",
+        "EE": "The interface is intuitive, and the 2K AMOLED display provides vibrant visuals. The 120W fast charging and 6500mAh battery mean I won't waste time waiting for my phone to charge. I am certain I will continue using this smartphone as my primary phone; the ease of use is top-notch.",
+        "HM": "The 200MP camera and advanced AI photography will be a game-changer for entertainment and gaming, with stunning visuals and crisp photos. The premium titanium design and 7 years of software support will definitely impress my college friends. I am certain I will continue using this smartphone as my primary phone; the display quality and camera are unbeatable.",
+        "SI": "My friends and peers will be impressed by the premium titanium design and the advanced features of the Apex Ultra Pro Max. The social perception is that of a tech-savvy and stylish individual. I am certain I will continue using this smartphone as my primary phone; it's a status symbol in my circle.",
+        "PP": "The advanced security features and long-term software updates provide peace of mind regarding personal data privacy. The 7 years of software support ensures that the phone remains secure and up-to-date. I am certain I will continue using this smartphone as my primary phone; I feel confident in its security.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone; the premium build quality, flagship processor, and display match everything I need. The price fits comfortably within my budget and I definitely intend to keep using it.",
+        "OVERALL": "The Apex Ultra Pro Max ticks all the boxes for me, offering top-tier performance, a premium design, and advanced features. It's a perfect fit for my needs and budget, and I am confident I will continue using it."
+      },
+      "response_text": "The Apex Ultra Pro Max ticks all the boxes for me, offering top-tier performance, a premium design, and advanced features. It's a perfect fit for my needs and budget, and I am confident I will continue using it.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The Snapdragon 8 Elite processor ensures top-notch performance for heavy multitasking and gaming. The 2K AMOLED display and 6500mAh battery with fast charging will handle daily tasks efficiently, making work and study smoother. I am certain I will continue using this smartphone as my primary phone; the speed and efficiency match everything I need.",
+          "cosine_similarities": [
+            0.65571,
+            0.675653,
+            0.619446,
+            0.740914,
+            0.699156
+          ],
+          "min_similarity": 0.619446,
+          "pmf_probabilities": [
+            0.123495,
+            0.19141,
+            0.0,
+            0.413649,
+            0.271447
+          ],
+          "expected_rating": 3.5181,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The interface is intuitive, and the 2K AMOLED display provides vibrant visuals. The 120W fast charging and 6500mAh battery mean I won't waste time waiting for my phone to charge. I am certain I will continue using this smartphone as my primary phone; the ease of use is top-notch.",
+          "cosine_similarities": [
+            0.58437,
+            0.572484,
+            0.645148,
+            0.650808,
+            0.718525
+          ],
+          "min_similarity": 0.572484,
+          "pmf_probabilities": [
+            0.038477,
+            0.0,
+            0.235223,
+            0.253546,
+            0.472753
+          ],
+          "expected_rating": 4.1221,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The 200MP camera and advanced AI photography will be a game-changer for entertainment and gaming, with stunning visuals and crisp photos. The premium titanium design and 7 years of software support will definitely impress my college friends. I am certain I will continue using this smartphone as my primary phone; the display quality and camera are unbeatable.",
+          "cosine_similarities": [
+            0.580977,
+            0.608079,
+            0.624522,
+            0.625249,
+            0.659901
+          ],
+          "min_similarity": 0.580977,
+          "pmf_probabilities": [
+            0.0,
+            0.139815,
+            0.22464,
+            0.22839,
+            0.407155
+          ],
+          "expected_rating": 3.9029,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and peers will be impressed by the premium titanium design and the advanced features of the Apex Ultra Pro Max. The social perception is that of a tech-savvy and stylish individual. I am certain I will continue using this smartphone as my primary phone; it's a status symbol in my circle.",
+          "cosine_similarities": [
+            0.664554,
+            0.63841,
+            0.681493,
+            0.725064,
+            0.746708
+          ],
+          "min_similarity": 0.63841,
+          "pmf_probabilities": [
+            0.098962,
+            0.0,
+            0.163084,
+            0.328012,
+            0.409942
+          ],
+          "expected_rating": 3.95,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The advanced security features and long-term software updates provide peace of mind regarding personal data privacy. The 7 years of software support ensures that the phone remains secure and up-to-date. I am certain I will continue using this smartphone as my primary phone; I feel confident in its security.",
+          "cosine_similarities": [
+            0.755213,
+            0.701461,
+            0.679129,
+            0.785989,
+            0.807089
+          ],
+          "min_similarity": 0.679129,
+          "pmf_probabilities": [
+            0.228319,
+            0.067015,
+            0.0,
+            0.320673,
+            0.383992
+          ],
+          "expected_rating": 3.565,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone; the premium build quality, flagship processor, and display match everything I need. The price fits comfortably within my budget and I definitely intend to keep using it.",
+          "cosine_similarities": [
+            0.667266,
+            0.69879,
+            0.6872,
+            0.773204,
+            0.75033
+          ],
+          "min_similarity": 0.667266,
+          "pmf_probabilities": [
+            0.0,
+            0.131097,
+            0.082897,
+            0.440567,
+            0.345439
+          ],
+          "expected_rating": 4.0003,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.65571,
+        0.675653,
+        0.619446,
+        0.740914,
+        0.699156
+      ],
+      "pmf_probabilities": [
+        0.123495,
+        0.19141,
+        0.0,
+        0.413649,
+        0.271447
+      ],
+      "expected_rating": 3.5181,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.58437,
+        0.572484,
+        0.645148,
+        0.650808,
+        0.718525
+      ],
+      "pmf_probabilities": [
+        0.038477,
+        0.0,
+        0.235223,
+        0.253546,
+        0.472753
+      ],
+      "expected_rating": 4.1221,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.580977,
+        0.608079,
+        0.624522,
+        0.625249,
+        0.659901
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.139815,
+        0.22464,
+        0.22839,
+        0.407155
+      ],
+      "expected_rating": 3.9029,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.664554,
+        0.63841,
+        0.681493,
+        0.725064,
+        0.746708
+      ],
+      "pmf_probabilities": [
+        0.098962,
+        0.0,
+        0.163084,
+        0.328012,
+        0.409942
+      ],
+      "expected_rating": 3.95,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.755213,
+        0.701461,
+        0.679129,
+        0.785989,
+        0.807089
+      ],
+      "pmf_probabilities": [
+        0.228319,
+        0.067015,
+        0.0,
+        0.320673,
+        0.383992
+      ],
+      "expected_rating": 3.565,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.667266,
+        0.69879,
+        0.6872,
+        0.773204,
+        0.75033
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.131097,
+        0.082897,
+        0.440567,
+        0.345439
+      ],
+      "expected_rating": 4.0003,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.65571,
+      "cos_sim_2": 0.675653,
+      "cos_sim_3": 0.619446,
+      "cos_sim_4": 0.740914,
+      "cos_sim_5": 0.699156,
+      "min_similarity": 0.619446,
+      "p1": 0.123495,
+      "p2": 0.19141,
+      "p3": 0.0,
+      "p4": 0.413649,
+      "p5": 0.271447,
+      "set_expected_rating": 3.5181,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.58437,
+      "cos_sim_2": 0.572484,
+      "cos_sim_3": 0.645148,
+      "cos_sim_4": 0.650808,
+      "cos_sim_5": 0.718525,
+      "min_similarity": 0.572484,
+      "p1": 0.038477,
+      "p2": 0.0,
+      "p3": 0.235223,
+      "p4": 0.253546,
+      "p5": 0.472753,
+      "set_expected_rating": 4.1221,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.580977,
+      "cos_sim_2": 0.608079,
+      "cos_sim_3": 0.624522,
+      "cos_sim_4": 0.625249,
+      "cos_sim_5": 0.659901,
+      "min_similarity": 0.580977,
+      "p1": 0.0,
+      "p2": 0.139815,
+      "p3": 0.22464,
+      "p4": 0.22839,
+      "p5": 0.407155,
+      "set_expected_rating": 3.9029,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.664554,
+      "cos_sim_2": 0.63841,
+      "cos_sim_3": 0.681493,
+      "cos_sim_4": 0.725064,
+      "cos_sim_5": 0.746708,
+      "min_similarity": 0.63841,
+      "p1": 0.098962,
+      "p2": 0.0,
+      "p3": 0.163084,
+      "p4": 0.328012,
+      "p5": 0.409942,
+      "set_expected_rating": 3.95,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.755213,
+      "cos_sim_2": 0.701461,
+      "cos_sim_3": 0.679129,
+      "cos_sim_4": 0.785989,
+      "cos_sim_5": 0.807089,
+      "min_similarity": 0.679129,
+      "p1": 0.228319,
+      "p2": 0.067015,
+      "p3": 0.0,
+      "p4": 0.320673,
+      "p5": 0.383992,
+      "set_expected_rating": 3.565,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.667266,
+      "cos_sim_2": 0.69879,
+      "cos_sim_3": 0.6872,
+      "cos_sim_4": 0.773204,
+      "cos_sim_5": 0.75033,
+      "min_similarity": 0.667266,
+      "p1": 0.0,
+      "p2": 0.131097,
+      "p3": 0.082897,
+      "p4": 0.440567,
+      "p5": 0.345439,
+      "set_expected_rating": 4.0003,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "EcoBot Mini",
+  "category": "Smart Home Robot",
+  "description": "An expensive household waste management robot that frequently malfunctions, is difficult to operate, has poor battery life, provides inaccurate waste sorting, requires complicated maintenance, and offers limited practical benefits for everyday users.",
+  "price_inr": 149999.0,
+  "target_group": "all",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Technology Platform",
+  "features": [
+    {
+      "name": "Offers Limited Practical Benefits",
+      "explanation": "offers limited practical benefits for everyday users",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "ssr_method": "improved",
+  "ssr_method_label": "Improved SSR (Experimental, k=3, T=0.75)",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Smart Home Robot",
+    "product_noun": "smart home robot",
+    "usage_role": "primary smart home robot",
+    "brand_or_ecosystem": "Technology Platform",
+    "features_count": 1,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-05T07:20:35.497384+00:00"
+}

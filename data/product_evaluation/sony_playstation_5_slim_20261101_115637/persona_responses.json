@@ -1,0 +1,19 @@
+[
+  {
+    "persona_id": "P4_budget_or_undisclosed_price",
+    "product_name": "Sony PlayStation 5 Slim",
+    "response_text": "While the console offers great features, it's simply too expensive for my budget. I would prefer to save my money for more essential items.",
+    "construct_responses": {
+      "PE": "The gaming console has high-quality graphics and fast loading, which would make the gaming experience smooth and immersive. However, as a student, I find it hard to justify spending such a large amount on a gaming console that isn't a necessity for my studies.",
+      "EE": "Setting up the console and understanding its features shouldn't be a big issue, but given my budget, I doubt I would invest in it. The console seems user-friendly, but it's not a priority for me right now.",
+      "HM": "The console would be fun to use with its high-quality visuals and fast loading times, but it's way out of my budget. I enjoy playing games, but I have to focus on my studies and essential expenses.",
+      "SI": "My friends and classmates might think it's cool, but I can't afford it. It's a luxury item that I can't justify buying at the moment.",
+      "PP": "The console seems well-built with good protection features, but I can't afford to spend so much on a gaming device. I have other priorities like my studies and basic necessities.",
+      "BI": "I cannot buy or continue using this gaming console as it is beyond my budget. I have to prioritize essential needs and studies over entertainment devices.",
+      "OVERALL": "While the console offers great features, it's simply too expensive for my budget. I would prefer to save my money for more essential items."
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-11-01T06:29:11.393325+00:00"
+  }
+]

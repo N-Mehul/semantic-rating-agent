@@ -1,0 +1,25 @@
+persona_id,product_name,anchor_set_code,anchor_set_name,cos_sim_1,cos_sim_2,cos_sim_3,cos_sim_4,cos_sim_5,min_similarity,p1,p2,p3,p4,p5,set_expected_rating,embedding_model
+P1_premium_tier_owner,Nova AI Premium 5G,PE,Performance Expectancy,0.726024,0.742085,0.701817,0.779684,0.720487,0.701817,0.150343,0.250092,0.0,0.483609,0.115955,3.1647,nomic-embed-text
+P1_premium_tier_owner,Nova AI Premium 5G,EE,Effort Expectancy,0.657331,0.629057,0.681813,0.730205,0.743829,0.629057,0.095214,0.0,0.17766,0.340623,0.386503,3.9232,nomic-embed-text
+P1_premium_tier_owner,Nova AI Premium 5G,HM,Hedonic Motivation,0.55639,0.580791,0.58874,0.587548,0.565758,0.55639,0.0,0.250839,0.332556,0.320305,0.0963,3.2621,nomic-embed-text
+P1_premium_tier_owner,Nova AI Premium 5G,SI,Social Influence,0.634516,0.668947,0.721174,0.70496,0.666291,0.634516,0.0,0.154186,0.388063,0.315459,0.142292,3.4459,nomic-embed-text
+P1_premium_tier_owner,Nova AI Premium 5G,PP,Perceived Protection,0.616154,0.59806,0.562543,0.668412,0.6291,0.562543,0.20497,0.135792,0.0,0.40477,0.254468,3.368,nomic-embed-text
+P1_premium_tier_owner,Nova AI Premium 5G,BI,Behavioral Intention,0.444726,0.49234,0.52972,0.530994,0.500365,0.444726,0.0,0.173448,0.309615,0.314256,0.202681,3.5462,nomic-embed-text
+P2_midrange_heavy_user,Nova AI Premium 5G,PE,Performance Expectancy,0.732771,0.733171,0.706084,0.750764,0.718773,0.706084,0.240113,0.243714,0.0,0.402002,0.11417,2.9064,nomic-embed-text
+P2_midrange_heavy_user,Nova AI Premium 5G,EE,Effort Expectancy,0.720206,0.631306,0.698648,0.701664,0.724487,0.631306,0.278002,0.0,0.210588,0.22002,0.29139,3.2468,nomic-embed-text
+P2_midrange_heavy_user,Nova AI Premium 5G,HM,Hedonic Motivation,0.643827,0.652239,0.657657,0.674092,0.710437,0.643827,0.0,0.070622,0.116104,0.25408,0.559194,4.3018,nomic-embed-text
+P2_midrange_heavy_user,Nova AI Premium 5G,SI,Social Influence,0.571251,0.580243,0.651673,0.628343,0.584799,0.571251,0.0,0.056185,0.502463,0.356703,0.084648,3.4698,nomic-embed-text
+P2_midrange_heavy_user,Nova AI Premium 5G,PP,Perceived Protection,0.697578,0.677397,0.648756,0.72928,0.714998,0.648756,0.217734,0.127732,0.0,0.359114,0.29542,3.3868,nomic-embed-text
+P2_midrange_heavy_user,Nova AI Premium 5G,BI,Behavioral Intention,0.544806,0.598832,0.643955,0.579472,0.561589,0.544806,0.0,0.264025,0.484542,0.169415,0.082019,3.0694,nomic-embed-text
+P3_midrange_moderate_user,Nova AI Premium 5G,PE,Performance Expectancy,0.734086,0.755156,0.720668,0.775937,0.719936,0.719936,0.133356,0.331945,0.006895,0.527804,0.0,2.9291,nomic-embed-text
+P3_midrange_moderate_user,Nova AI Premium 5G,EE,Effort Expectancy,0.625513,0.586551,0.627879,0.685408,0.66384,0.586551,0.151935,0.0,0.161162,0.385505,0.301398,3.6844,nomic-embed-text
+P3_midrange_moderate_user,Nova AI Premium 5G,HM,Hedonic Motivation,0.621378,0.649391,0.651545,0.672901,0.70346,0.621378,0.0,0.146066,0.157297,0.26865,0.427987,3.9786,nomic-embed-text
+P3_midrange_moderate_user,Nova AI Premium 5G,SI,Social Influence,0.674282,0.674865,0.724035,0.664003,0.68469,0.664003,0.100917,0.106637,0.589358,0.0,0.203088,3.0977,nomic-embed-text
+P3_midrange_moderate_user,Nova AI Premium 5G,PP,Perceived Protection,0.713891,0.652639,0.642417,0.732359,0.726456,0.642417,0.279549,0.039979,0.0,0.35178,0.328691,3.4101,nomic-embed-text
+P3_midrange_moderate_user,Nova AI Premium 5G,BI,Behavioral Intention,0.700916,0.75114,0.773818,0.725098,0.706664,0.700916,0.0,0.328142,0.476308,0.157993,0.037556,2.905,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova AI Premium 5G,PE,Performance Expectancy,0.658184,0.66427,0.647257,0.668462,0.632079,0.632079,0.237631,0.293023,0.138165,0.331181,0.0,2.5629,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova AI Premium 5G,EE,Effort Expectancy,0.696416,0.658645,0.711286,0.712365,0.723168,0.658645,0.181021,0.0,0.252288,0.25746,0.309231,3.5139,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova AI Premium 5G,HM,Hedonic Motivation,0.565736,0.59528,0.599666,0.603968,0.645206,0.565736,0.0,0.163066,0.187276,0.211021,0.438637,3.9252,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova AI Premium 5G,SI,Social Influence,0.483694,0.546689,0.612761,0.588682,0.52502,0.483694,0.0,0.186169,0.381432,0.31027,0.122129,3.3684,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova AI Premium 5G,PP,Perceived Protection,0.707041,0.696789,0.670423,0.715824,0.706421,0.670423,0.253619,0.182614,0.0,0.314444,0.249323,3.1232,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova AI Premium 5G,BI,Behavioral Intention,0.574369,0.604948,0.628665,0.607661,0.584133,0.574369,0.0,0.239027,0.424417,0.260232,0.076324,3.1739,nomic-embed-text

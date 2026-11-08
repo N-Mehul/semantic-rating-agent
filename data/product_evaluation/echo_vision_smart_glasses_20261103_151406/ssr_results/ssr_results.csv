@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,Echo Vision Smart Glasses,PE,Performance Expectancy,False,3.4372,0.0,0.208999,0.272969,0.389889,0.128143,nomic-embed-text
+P1_premium_tier_owner,Echo Vision Smart Glasses,EE,Effort Expectancy,False,4.1001,0.021754,0.0,0.254602,0.303646,0.419998,nomic-embed-text
+P1_premium_tier_owner,Echo Vision Smart Glasses,HM,Hedonic Motivation,False,2.6201,0.195455,0.241808,0.309903,0.252835,0.0,nomic-embed-text
+P1_premium_tier_owner,Echo Vision Smart Glasses,SI,Social Influence,False,3.6922,0.0,0.134073,0.248544,0.40849,0.208893,nomic-embed-text
+P1_premium_tier_owner,Echo Vision Smart Glasses,PP,Perceived Protection,False,3.2857,0.208985,0.173089,0.0,0.359118,0.258808,nomic-embed-text
+P1_premium_tier_owner,Echo Vision Smart Glasses,BI,Behavioral Intention,True,3.9652,0.0,0.153509,0.089754,0.394758,0.361979,nomic-embed-text
+P2_midrange_heavy_user,Echo Vision Smart Glasses,PE,Performance Expectancy,False,3.4974,0.114584,0.18845,0.0,0.478898,0.218067,nomic-embed-text
+P2_midrange_heavy_user,Echo Vision Smart Glasses,EE,Effort Expectancy,False,3.8469,0.0,0.103501,0.270798,0.300956,0.324745,nomic-embed-text
+P2_midrange_heavy_user,Echo Vision Smart Glasses,HM,Hedonic Motivation,False,3.919,0.0,0.151191,0.117436,0.392562,0.33881,nomic-embed-text
+P2_midrange_heavy_user,Echo Vision Smart Glasses,SI,Social Influence,False,3.7966,0.039222,0.0,0.301278,0.443946,0.215555,nomic-embed-text
+P2_midrange_heavy_user,Echo Vision Smart Glasses,PP,Perceived Protection,False,3.8046,0.11934,0.12339,0.0,0.347862,0.409408,nomic-embed-text
+P2_midrange_heavy_user,Echo Vision Smart Glasses,BI,Behavioral Intention,True,3.7428,0.0,0.18626,0.164484,0.369483,0.279773,nomic-embed-text
+P3_midrange_moderate_user,Echo Vision Smart Glasses,PE,Performance Expectancy,False,2.8864,0.099699,0.303083,0.208301,0.388917,0.0,nomic-embed-text
+P3_midrange_moderate_user,Echo Vision Smart Glasses,EE,Effort Expectancy,False,3.717,0.126385,0.0,0.281206,0.215089,0.377319,nomic-embed-text
+P3_midrange_moderate_user,Echo Vision Smart Glasses,HM,Hedonic Motivation,False,2.8145,0.147117,0.266108,0.211979,0.374797,0.0,nomic-embed-text
+P3_midrange_moderate_user,Echo Vision Smart Glasses,SI,Social Influence,False,3.1046,0.0,0.216898,0.470781,0.303144,0.009177,nomic-embed-text
+P3_midrange_moderate_user,Echo Vision Smart Glasses,PP,Perceived Protection,False,2.0679,0.493049,0.273658,0.0,0.138972,0.094321,nomic-embed-text
+P3_midrange_moderate_user,Echo Vision Smart Glasses,BI,Behavioral Intention,True,3.6588,0.0,0.19979,0.218859,0.304135,0.277216,nomic-embed-text
+P4_budget_or_undisclosed_price,Echo Vision Smart Glasses,PE,Performance Expectancy,False,3.3278,0.110964,0.221898,0.0,0.562645,0.104493,nomic-embed-text
+P4_budget_or_undisclosed_price,Echo Vision Smart Glasses,EE,Effort Expectancy,False,3.9393,0.0,0.065792,0.287737,0.287824,0.358647,nomic-embed-text
+P4_budget_or_undisclosed_price,Echo Vision Smart Glasses,HM,Hedonic Motivation,False,4.1012,0.0,0.112096,0.063374,0.435774,0.388755,nomic-embed-text
+P4_budget_or_undisclosed_price,Echo Vision Smart Glasses,SI,Social Influence,False,3.8149,0.04952,0.0,0.318296,0.350404,0.28178,nomic-embed-text
+P4_budget_or_undisclosed_price,Echo Vision Smart Glasses,PP,Perceived Protection,False,4.1557,0.0,0.05214,0.151416,0.385035,0.411409,nomic-embed-text
+P4_budget_or_undisclosed_price,Echo Vision Smart Glasses,BI,Behavioral Intention,True,3.9957,0.0,0.128948,0.090369,0.43671,0.343973,nomic-embed-text

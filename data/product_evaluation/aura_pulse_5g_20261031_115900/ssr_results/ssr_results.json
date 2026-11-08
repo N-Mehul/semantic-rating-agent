@@ -1,0 +1,2014 @@
+{
+  "evaluation_id": "aura_pulse_5g_20261031_115900",
+  "product_name": "Aura Pulse 5G",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-31T06:38:23.546375+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "primary_adoption_rating": 2.9961,
+      "primary_adoption_pmf": [
+        0.101701,
+        0.163445,
+        0.553401,
+        0.0,
+        0.181452
+      ],
+      "construct_scores": {
+        "PE": 2.6797,
+        "EE": 3.9314,
+        "HM": 3.9402,
+        "SI": 3.5735,
+        "PP": 2.7688,
+        "BI": 2.9961
+      },
+      "construct_responses": {
+        "PE": "This phone should handle my daily tasks well, especially with the efficient processor. It’s fast enough for social media and light gaming, but I wouldn’t use it for heavy workloads.",
+        "EE": "It’s not as complicated as my iPhone, so I’ll find it easy to use. The clean UI will help with a smoother experience.",
+        "HM": "The vibrant display and fast refresh rate will make browsing and gaming more enjoyable. I’ll like the 120Hz screen for smoother scrolling and quick taps.",
+        "SI": "The brand isn’t as established as Apple, but the privacy features are good. The Smart Privacy Shield will be useful for storing sensitive documents.",
+        "PP": "I’m skeptical about switching. At ₹19,999, it’s a lot, but my current iPhone is expensive too. I might keep using it for now.",
+        "BI": "I’m not sure if I should buy it. My current phone is still working fine, and I’d rather save money for other needs.",
+        "OVERALL": "The phone seems decent for basic tasks, but it’s too expensive for me right now. I’ll keep using my current phone for now."
+      },
+      "response_text": "The phone seems decent for basic tasks, but it’s too expensive for me right now. I’ll keep using my current phone for now.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This phone should handle my daily tasks well, especially with the efficient processor. It’s fast enough for social media and light gaming, but I wouldn’t use it for heavy workloads.",
+          "cosine_similarities": [
+            0.765612,
+            0.774731,
+            0.739061,
+            0.793898,
+            0.734113
+          ],
+          "min_similarity": 0.734113,
+          "pmf_probabilities": [
+            0.23017,
+            0.296806,
+            0.036158,
+            0.436865,
+            0.0
+          ],
+          "expected_rating": 2.6797,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "It’s not as complicated as my iPhone, so I’ll find it easy to use. The clean UI will help with a smoother experience.",
+          "cosine_similarities": [
+            0.62578,
+            0.621218,
+            0.713547,
+            0.690668,
+            0.709758
+          ],
+          "min_similarity": 0.621218,
+          "pmf_probabilities": [
+            0.017898,
+            0.0,
+            0.362245,
+            0.272479,
+            0.347378
+          ],
+          "expected_rating": 3.9314,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The vibrant display and fast refresh rate will make browsing and gaming more enjoyable. I’ll like the 120Hz screen for smoother scrolling and quick taps.",
+          "cosine_similarities": [
+            0.497149,
+            0.529713,
+            0.515937,
+            0.561854,
+            0.569782
+          ],
+          "min_similarity": 0.497149,
+          "pmf_probabilities": [
+            0.0,
+            0.172578,
+            0.099572,
+            0.342915,
+            0.384935
+          ],
+          "expected_rating": 3.9402,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "The brand isn’t as established as Apple, but the privacy features are good. The Smart Privacy Shield will be useful for storing sensitive documents.",
+          "cosine_similarities": [
+            0.532153,
+            0.521547,
+            0.551618,
+            0.547548,
+            0.544998
+          ],
+          "min_similarity": 0.521547,
+          "pmf_probabilities": [
+            0.11767,
+            0.0,
+            0.333647,
+            0.288491,
+            0.260192
+          ],
+          "expected_rating": 3.5735,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "I’m skeptical about switching. At ₹19,999, it’s a lot, but my current iPhone is expensive too. I might keep using it for now.",
+          "cosine_similarities": [
+            0.557918,
+            0.562771,
+            0.531626,
+            0.554768,
+            0.550431
+          ],
+          "min_similarity": 0.531626,
+          "pmf_probabilities": [
+            0.26455,
+            0.313384,
+            0.0,
+            0.232851,
+            0.189215
+          ],
+          "expected_rating": 2.7688,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I’m not sure if I should buy it. My current phone is still working fine, and I’d rather save money for other needs.",
+          "cosine_similarities": [
+            0.695868,
+            0.708966,
+            0.791691,
+            0.674293,
+            0.712786
+          ],
+          "min_similarity": 0.674293,
+          "pmf_probabilities": [
+            0.101701,
+            0.163445,
+            0.553401,
+            0.0,
+            0.181452
+          ],
+          "expected_rating": 2.9961,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "primary_adoption_rating": 3.7392,
+      "primary_adoption_pmf": [
+        0.0,
+        0.148689,
+        0.252767,
+        0.309205,
+        0.289339
+      ],
+      "construct_scores": {
+        "PE": 3.0323,
+        "EE": 3.3042,
+        "HM": 4.0912,
+        "SI": 3.3627,
+        "PP": 4.2606,
+        "BI": 3.7392
+      },
+      "construct_responses": {
+        "PE": "This phone should be really useful for my daily tasks because of its efficient processor and good battery life. It will handle all my social media and study needs without any lag.",
+        "EE": "Learning to use this phone shouldn't be too difficult. Since I'm already comfortable with Android, the Pulse UI should be easy to get used to. Maybe a bit more intuitive for some features, but it's not a big deal.",
+        "HM": "The display and camera will definitely make using it fun, especially for taking pictures and videos during college events. The 120Hz refresh rate will make scrolling through social media super smooth too.",
+        "SI": "The Smart Privacy Shield sounds like a good feature. It will give me peace of mind knowing my private stuff is safe. Plus, no ads on the lock screen is a big plus for me.",
+        "PP": "Considering the price, I think this phone fits within my budget and offers good value for money. The fast charging and long battery life are really important for me, so I feel confident about buying it.",
+        "BI": "I would definitely buy this phone. The features and price make it a no-brainer for me. I feel it's a solid choice for my daily needs and I trust the brand.",
+        "OVERALL": "Overall, the Aura Pulse 5G seems like a great fit for me. It checks all the boxes for a mid-range phone that I need for my daily activities and entertainment. I'm excited to try it out."
+      },
+      "response_text": "Overall, the Aura Pulse 5G seems like a great fit for me. It checks all the boxes for a mid-range phone that I need for my daily activities and entertainment. I'm excited to try it out.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This phone should be really useful for my daily tasks because of its efficient processor and good battery life. It will handle all my social media and study needs without any lag.",
+          "cosine_similarities": [
+            0.764864,
+            0.780791,
+            0.723383,
+            0.82505,
+            0.746341
+          ],
+          "min_similarity": 0.723383,
+          "pmf_probabilities": [
+            0.185588,
+            0.256843,
+            0.0,
+            0.454855,
+            0.102714
+          ],
+          "expected_rating": 3.0323,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Learning to use this phone shouldn't be too difficult. Since I'm already comfortable with Android, the Pulse UI should be easy to get used to. Maybe a bit more intuitive for some features, but it's not a big deal.",
+          "cosine_similarities": [
+            0.75184,
+            0.703147,
+            0.705658,
+            0.739184,
+            0.75497
+          ],
+          "min_similarity": 0.703147,
+          "pmf_probabilities": [
+            0.350145,
+            0.0,
+            0.018062,
+            0.25914,
+            0.372652
+          ],
+          "expected_rating": 3.3042,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The display and camera will definitely make using it fun, especially for taking pictures and videos during college events. The 120Hz refresh rate will make scrolling through social media super smooth too.",
+          "cosine_similarities": [
+            0.542151,
+            0.574963,
+            0.581955,
+            0.617077,
+            0.672974
+          ],
+          "min_similarity": 0.542151,
+          "pmf_probabilities": [
+            0.0,
+            0.117874,
+            0.142992,
+            0.269166,
+            0.469968
+          ],
+          "expected_rating": 4.0912,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "The Smart Privacy Shield sounds like a good feature. It will give me peace of mind knowing my private stuff is safe. Plus, no ads on the lock screen is a big plus for me.",
+          "cosine_similarities": [
+            0.565444,
+            0.524209,
+            0.559267,
+            0.566227,
+            0.575128
+          ],
+          "min_similarity": 0.524209,
+          "pmf_probabilities": [
+            0.243663,
+            0.0,
+            0.207162,
+            0.248289,
+            0.300886
+          ],
+          "expected_rating": 3.3627,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "Considering the price, I think this phone fits within my budget and offers good value for money. The fast charging and long battery life are really important for me, so I feel confident about buying it.",
+          "cosine_similarities": [
+            0.544125,
+            0.549459,
+            0.541257,
+            0.625167,
+            0.608545
+          ],
+          "min_similarity": 0.541257,
+          "pmf_probabilities": [
+            0.017672,
+            0.050549,
+            0.0,
+            0.517107,
+            0.414673
+          ],
+          "expected_rating": 4.2606,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I would definitely buy this phone. The features and price make it a no-brainer for me. I feel it's a solid choice for my daily needs and I trust the brand.",
+          "cosine_similarities": [
+            0.583062,
+            0.618593,
+            0.643464,
+            0.656951,
+            0.652203
+          ],
+          "min_similarity": 0.583062,
+          "pmf_probabilities": [
+            0.0,
+            0.148689,
+            0.252767,
+            0.309205,
+            0.289339
+          ],
+          "expected_rating": 3.7392,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "primary_adoption_rating": 2.9164,
+      "primary_adoption_pmf": [
+        0.017936,
+        0.232544,
+        0.564727,
+        0.184793,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 3.4618,
+        "EE": 3.7184,
+        "HM": 3.888,
+        "SI": 3.626,
+        "PP": 3.8217,
+        "BI": 2.9164
+      },
+      "construct_responses": {
+        "PE": "For my study and work, it should work well. The processor is efficient, and the fast charging is handy. The battery life is good for a day, so no need to worry about charging.",
+        "EE": "Learning this phone shouldn't be too difficult. Since I'm used to Android, most of the features should be familiar. The UI is clean, so it's user-friendly.",
+        "HM": "It's a fun phone for entertainment and social media. The display is vibrant, and the camera is decent for taking photos during college events. It's not perfect for gaming, but it's fine for casual stuff.",
+        "SI": "My friends might recommend it. The privacy features like the Smart Privacy Shield seem good, and I trust the brand. My family might be a bit skeptical but would consider it.",
+        "PP": "I feel pretty confident about the privacy and security. With no ads and good camera features, I think it's worth the money. The fast charging is a plus, and the battery lasts all day.",
+        "BI": "Considering the price, I might consider it if it's on sale. It's a bit high for me, but the features are useful. I might wait for discounts or compare with other phones before buying.",
+        "OVERALL": "The phone seems like a good fit for my needs, but the price is a bit steep. It offers decent performance and features, so I might look into it more if it becomes more affordable."
+      },
+      "response_text": "The phone seems like a good fit for my needs, but the price is a bit steep. It offers decent performance and features, so I might look into it more if it becomes more affordable.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "For my study and work, it should work well. The processor is efficient, and the fast charging is handy. The battery life is good for a day, so no need to worry about charging.",
+          "cosine_similarities": [
+            0.633769,
+            0.642552,
+            0.623932,
+            0.696839,
+            0.631865
+          ],
+          "min_similarity": 0.623932,
+          "pmf_probabilities": [
+            0.090005,
+            0.170362,
+            0.0,
+            0.66705,
+            0.072583
+          ],
+          "expected_rating": 3.4618,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Learning this phone shouldn't be too difficult. Since I'm used to Android, most of the features should be familiar. The UI is clean, so it's user-friendly.",
+          "cosine_similarities": [
+            0.727134,
+            0.684144,
+            0.694579,
+            0.733647,
+            0.770302
+          ],
+          "min_similarity": 0.684144,
+          "pmf_probabilities": [
+            0.227356,
+            0.0,
+            0.055186,
+            0.261803,
+            0.455655
+          ],
+          "expected_rating": 3.7184,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "It's a fun phone for entertainment and social media. The display is vibrant, and the camera is decent for taking photos during college events. It's not perfect for gaming, but it's fine for casual stuff.",
+          "cosine_similarities": [
+            0.631621,
+            0.681821,
+            0.664249,
+            0.714703,
+            0.734545
+          ],
+          "min_similarity": 0.631621,
+          "pmf_probabilities": [
+            0.0,
+            0.186732,
+            0.121369,
+            0.309045,
+            0.382854
+          ],
+          "expected_rating": 3.888,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might recommend it. The privacy features like the Smart Privacy Shield seem good, and I trust the brand. My family might be a bit skeptical but would consider it.",
+          "cosine_similarities": [
+            0.555407,
+            0.559957,
+            0.61802,
+            0.585768,
+            0.581057
+          ],
+          "min_similarity": 0.555407,
+          "pmf_probabilities": [
+            0.0,
+            0.036938,
+            0.50833,
+            0.24649,
+            0.208242
+          ],
+          "expected_rating": 3.626,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "I feel pretty confident about the privacy and security. With no ads and good camera features, I think it's worth the money. The fast charging is a plus, and the battery lasts all day.",
+          "cosine_similarities": [
+            0.613417,
+            0.564498,
+            0.57315,
+            0.657242,
+            0.673646
+          ],
+          "min_similarity": 0.564498,
+          "pmf_probabilities": [
+            0.188541,
+            0.0,
+            0.033348,
+            0.357445,
+            0.420665
+          ],
+          "expected_rating": 3.8217,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Considering the price, I might consider it if it's on sale. It's a bit high for me, but the features are useful. I might wait for discounts or compare with other phones before buying.",
+          "cosine_similarities": [
+            0.596805,
+            0.624632,
+            0.667704,
+            0.61844,
+            0.594479
+          ],
+          "min_similarity": 0.594479,
+          "pmf_probabilities": [
+            0.017936,
+            0.232544,
+            0.564727,
+            0.184793,
+            0.0
+          ],
+          "expected_rating": 2.9164,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "primary_adoption_rating": 2.8833,
+      "primary_adoption_pmf": [
+        0.0,
+        0.409445,
+        0.34499,
+        0.198404,
+        0.047161
+      ],
+      "construct_scores": {
+        "PE": 2.9001,
+        "EE": 3.5807,
+        "HM": 3.6851,
+        "SI": 3.1841,
+        "PP": 4.0214,
+        "BI": 2.8833
+      },
+      "construct_responses": {
+        "PE": "It would be really useful for my study and daily tasks. The processor seems fast enough for browsing, social media, and watching videos. The battery life would be great for long lectures without needing to charge.",
+        "EE": "I think it would be pretty easy to use. Since I'm already comfortable with Android, I should be able to handle the Pulse UI without much trouble. The processor and fast charging would make things smoother.",
+        "HM": "I wouldn't say it's super fun, but it would be decent for gaming and social media. The display looks good, and the camera would be nice for taking pictures during college events. Overall, it's not something I'd get too excited about, but it would do the job.",
+        "SI": "My friends might say it's a good brand, but they might also question why I'd spend so much. It has good security features, and I like the privacy shield, but I still might be a bit skeptical about the price.",
+        "PP": "I feel fairly confident about the privacy, but it's a bit more than what I usually spend. I might hesitate because it's a bigger budget for me, but the features are pretty solid.",
+        "BI": "Considering my budget, I don't think I'd buy it right away. I might keep it in mind for the future, but for now, I'd stick with my current phone. It's a bit out of my comfort zone in terms of spending.",
+        "OVERALL": "It seems like a good phone with useful features, but the price is a bit high for me right now. I might consider it if my budget allows in the future."
+      },
+      "response_text": "It seems like a good phone with useful features, but the price is a bit high for me right now. I might consider it if my budget allows in the future.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It would be really useful for my study and daily tasks. The processor seems fast enough for browsing, social media, and watching videos. The battery life would be great for long lectures without needing to charge.",
+          "cosine_similarities": [
+            0.673254,
+            0.688795,
+            0.6574,
+            0.716924,
+            0.652974
+          ],
+          "min_similarity": 0.652974,
+          "pmf_probabilities": [
+            0.162922,
+            0.287771,
+            0.035551,
+            0.513756,
+            0.0
+          ],
+          "expected_rating": 2.9001,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "I think it would be pretty easy to use. Since I'm already comfortable with Android, I should be able to handle the Pulse UI without much trouble. The processor and fast charging would make things smoother.",
+          "cosine_similarities": [
+            0.648967,
+            0.614252,
+            0.680803,
+            0.676856,
+            0.686101
+          ],
+          "min_similarity": 0.614252,
+          "pmf_probabilities": [
+            0.147272,
+            0.0,
+            0.282331,
+            0.265588,
+            0.30481
+          ],
+          "expected_rating": 3.5807,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "I wouldn't say it's super fun, but it would be decent for gaming and social media. The display looks good, and the camera would be nice for taking pictures during college events. Overall, it's not something I'd get too excited about, but it would do the job.",
+          "cosine_similarities": [
+            0.523464,
+            0.560297,
+            0.576956,
+            0.571576,
+            0.587013
+          ],
+          "min_similarity": 0.523464,
+          "pmf_probabilities": [
+            0.0,
+            0.182353,
+            0.26483,
+            0.238194,
+            0.314623
+          ],
+          "expected_rating": 3.6851,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might say it's a good brand, but they might also question why I'd spend so much. It has good security features, and I like the privacy shield, but I still might be a bit skeptical about the price.",
+          "cosine_similarities": [
+            0.527459,
+            0.586419,
+            0.636967,
+            0.602162,
+            0.543448
+          ],
+          "min_similarity": 0.527459,
+          "pmf_probabilities": [
+            0.0,
+            0.227505,
+            0.42255,
+            0.28825,
+            0.061695
+          ],
+          "expected_rating": 3.1841,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "I feel fairly confident about the privacy, but it's a bit more than what I usually spend. I might hesitate because it's a bigger budget for me, but the features are pretty solid.",
+          "cosine_similarities": [
+            0.598694,
+            0.596921,
+            0.588931,
+            0.652595,
+            0.63697
+          ],
+          "min_similarity": 0.588931,
+          "pmf_probabilities": [
+            0.075417,
+            0.061724,
+            0.0,
+            0.491777,
+            0.371082
+          ],
+          "expected_rating": 4.0214,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Considering my budget, I don't think I'd buy it right away. I might keep it in mind for the future, but for now, I'd stick with my current phone. It's a bit out of my comfort zone in terms of spending.",
+          "cosine_similarities": [
+            0.734739,
+            0.782536,
+            0.775012,
+            0.7579,
+            0.740244
+          ],
+          "min_similarity": 0.734739,
+          "pmf_probabilities": [
+            0.0,
+            0.409445,
+            0.34499,
+            0.198404,
+            0.047161
+          ],
+          "expected_rating": 2.8833,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.765612,
+        0.774731,
+        0.739061,
+        0.793898,
+        0.734113
+      ],
+      "pmf_probabilities": [
+        0.23017,
+        0.296806,
+        0.036158,
+        0.436865,
+        0.0
+      ],
+      "expected_rating": 2.6797,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.62578,
+        0.621218,
+        0.713547,
+        0.690668,
+        0.709758
+      ],
+      "pmf_probabilities": [
+        0.017898,
+        0.0,
+        0.362245,
+        0.272479,
+        0.347378
+      ],
+      "expected_rating": 3.9314,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.497149,
+        0.529713,
+        0.515937,
+        0.561854,
+        0.569782
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.172578,
+        0.099572,
+        0.342915,
+        0.384935
+      ],
+      "expected_rating": 3.9402,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.532153,
+        0.521547,
+        0.551618,
+        0.547548,
+        0.544998
+      ],
+      "pmf_probabilities": [
+        0.11767,
+        0.0,
+        0.333647,
+        0.288491,
+        0.260192
+      ],
+      "expected_rating": 3.5735,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.557918,
+        0.562771,
+        0.531626,
+        0.554768,
+        0.550431
+      ],
+      "pmf_probabilities": [
+        0.26455,
+        0.313384,
+        0.0,
+        0.232851,
+        0.189215
+      ],
+      "expected_rating": 2.7688,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.695868,
+        0.708966,
+        0.791691,
+        0.674293,
+        0.712786
+      ],
+      "pmf_probabilities": [
+        0.101701,
+        0.163445,
+        0.553401,
+        0.0,
+        0.181452
+      ],
+      "expected_rating": 2.9961,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.764864,
+        0.780791,
+        0.723383,
+        0.82505,
+        0.746341
+      ],
+      "pmf_probabilities": [
+        0.185588,
+        0.256843,
+        0.0,
+        0.454855,
+        0.102714
+      ],
+      "expected_rating": 3.0323,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.75184,
+        0.703147,
+        0.705658,
+        0.739184,
+        0.75497
+      ],
+      "pmf_probabilities": [
+        0.350145,
+        0.0,
+        0.018062,
+        0.25914,
+        0.372652
+      ],
+      "expected_rating": 3.3042,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.542151,
+        0.574963,
+        0.581955,
+        0.617077,
+        0.672974
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.117874,
+        0.142992,
+        0.269166,
+        0.469968
+      ],
+      "expected_rating": 4.0912,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.565444,
+        0.524209,
+        0.559267,
+        0.566227,
+        0.575128
+      ],
+      "pmf_probabilities": [
+        0.243663,
+        0.0,
+        0.207162,
+        0.248289,
+        0.300886
+      ],
+      "expected_rating": 3.3627,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.544125,
+        0.549459,
+        0.541257,
+        0.625167,
+        0.608545
+      ],
+      "pmf_probabilities": [
+        0.017672,
+        0.050549,
+        0.0,
+        0.517107,
+        0.414673
+      ],
+      "expected_rating": 4.2606,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.583062,
+        0.618593,
+        0.643464,
+        0.656951,
+        0.652203
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.148689,
+        0.252767,
+        0.309205,
+        0.289339
+      ],
+      "expected_rating": 3.7392,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.633769,
+        0.642552,
+        0.623932,
+        0.696839,
+        0.631865
+      ],
+      "pmf_probabilities": [
+        0.090005,
+        0.170362,
+        0.0,
+        0.66705,
+        0.072583
+      ],
+      "expected_rating": 3.4618,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.727134,
+        0.684144,
+        0.694579,
+        0.733647,
+        0.770302
+      ],
+      "pmf_probabilities": [
+        0.227356,
+        0.0,
+        0.055186,
+        0.261803,
+        0.455655
+      ],
+      "expected_rating": 3.7184,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.631621,
+        0.681821,
+        0.664249,
+        0.714703,
+        0.734545
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.186732,
+        0.121369,
+        0.309045,
+        0.382854
+      ],
+      "expected_rating": 3.888,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.555407,
+        0.559957,
+        0.61802,
+        0.585768,
+        0.581057
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.036938,
+        0.50833,
+        0.24649,
+        0.208242
+      ],
+      "expected_rating": 3.626,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.613417,
+        0.564498,
+        0.57315,
+        0.657242,
+        0.673646
+      ],
+      "pmf_probabilities": [
+        0.188541,
+        0.0,
+        0.033348,
+        0.357445,
+        0.420665
+      ],
+      "expected_rating": 3.8217,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.596805,
+        0.624632,
+        0.667704,
+        0.61844,
+        0.594479
+      ],
+      "pmf_probabilities": [
+        0.017936,
+        0.232544,
+        0.564727,
+        0.184793,
+        0.0
+      ],
+      "expected_rating": 2.9164,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.673254,
+        0.688795,
+        0.6574,
+        0.716924,
+        0.652974
+      ],
+      "pmf_probabilities": [
+        0.162922,
+        0.287771,
+        0.035551,
+        0.513756,
+        0.0
+      ],
+      "expected_rating": 2.9001,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.648967,
+        0.614252,
+        0.680803,
+        0.676856,
+        0.686101
+      ],
+      "pmf_probabilities": [
+        0.147272,
+        0.0,
+        0.282331,
+        0.265588,
+        0.30481
+      ],
+      "expected_rating": 3.5807,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.523464,
+        0.560297,
+        0.576956,
+        0.571576,
+        0.587013
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.182353,
+        0.26483,
+        0.238194,
+        0.314623
+      ],
+      "expected_rating": 3.6851,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.527459,
+        0.586419,
+        0.636967,
+        0.602162,
+        0.543448
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.227505,
+        0.42255,
+        0.28825,
+        0.061695
+      ],
+      "expected_rating": 3.1841,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.598694,
+        0.596921,
+        0.588931,
+        0.652595,
+        0.63697
+      ],
+      "pmf_probabilities": [
+        0.075417,
+        0.061724,
+        0.0,
+        0.491777,
+        0.371082
+      ],
+      "expected_rating": 4.0214,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.734739,
+        0.782536,
+        0.775012,
+        0.7579,
+        0.740244
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.409445,
+        0.34499,
+        0.198404,
+        0.047161
+      ],
+      "expected_rating": 2.8833,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.765612,
+      "cos_sim_2": 0.774731,
+      "cos_sim_3": 0.739061,
+      "cos_sim_4": 0.793898,
+      "cos_sim_5": 0.734113,
+      "min_similarity": 0.734113,
+      "p1": 0.23017,
+      "p2": 0.296806,
+      "p3": 0.036158,
+      "p4": 0.436865,
+      "p5": 0.0,
+      "set_expected_rating": 2.6797,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.62578,
+      "cos_sim_2": 0.621218,
+      "cos_sim_3": 0.713547,
+      "cos_sim_4": 0.690668,
+      "cos_sim_5": 0.709758,
+      "min_similarity": 0.621218,
+      "p1": 0.017898,
+      "p2": 0.0,
+      "p3": 0.362245,
+      "p4": 0.272479,
+      "p5": 0.347378,
+      "set_expected_rating": 3.9314,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.497149,
+      "cos_sim_2": 0.529713,
+      "cos_sim_3": 0.515937,
+      "cos_sim_4": 0.561854,
+      "cos_sim_5": 0.569782,
+      "min_similarity": 0.497149,
+      "p1": 0.0,
+      "p2": 0.172578,
+      "p3": 0.099572,
+      "p4": 0.342915,
+      "p5": 0.384935,
+      "set_expected_rating": 3.9402,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.532153,
+      "cos_sim_2": 0.521547,
+      "cos_sim_3": 0.551618,
+      "cos_sim_4": 0.547548,
+      "cos_sim_5": 0.544998,
+      "min_similarity": 0.521547,
+      "p1": 0.11767,
+      "p2": 0.0,
+      "p3": 0.333647,
+      "p4": 0.288491,
+      "p5": 0.260192,
+      "set_expected_rating": 3.5735,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.557918,
+      "cos_sim_2": 0.562771,
+      "cos_sim_3": 0.531626,
+      "cos_sim_4": 0.554768,
+      "cos_sim_5": 0.550431,
+      "min_similarity": 0.531626,
+      "p1": 0.26455,
+      "p2": 0.313384,
+      "p3": 0.0,
+      "p4": 0.232851,
+      "p5": 0.189215,
+      "set_expected_rating": 2.7688,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.695868,
+      "cos_sim_2": 0.708966,
+      "cos_sim_3": 0.791691,
+      "cos_sim_4": 0.674293,
+      "cos_sim_5": 0.712786,
+      "min_similarity": 0.674293,
+      "p1": 0.101701,
+      "p2": 0.163445,
+      "p3": 0.553401,
+      "p4": 0.0,
+      "p5": 0.181452,
+      "set_expected_rating": 2.9961,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.764864,
+      "cos_sim_2": 0.780791,
+      "cos_sim_3": 0.723383,
+      "cos_sim_4": 0.82505,
+      "cos_sim_5": 0.746341,
+      "min_similarity": 0.723383,
+      "p1": 0.185588,
+      "p2": 0.256843,
+      "p3": 0.0,
+      "p4": 0.454855,
+      "p5": 0.102714,
+      "set_expected_rating": 3.0323,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.75184,
+      "cos_sim_2": 0.703147,
+      "cos_sim_3": 0.705658,
+      "cos_sim_4": 0.739184,
+      "cos_sim_5": 0.75497,
+      "min_similarity": 0.703147,
+      "p1": 0.350145,
+      "p2": 0.0,
+      "p3": 0.018062,
+      "p4": 0.25914,
+      "p5": 0.372652,
+      "set_expected_rating": 3.3042,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.542151,
+      "cos_sim_2": 0.574963,
+      "cos_sim_3": 0.581955,
+      "cos_sim_4": 0.617077,
+      "cos_sim_5": 0.672974,
+      "min_similarity": 0.542151,
+      "p1": 0.0,
+      "p2": 0.117874,
+      "p3": 0.142992,
+      "p4": 0.269166,
+      "p5": 0.469968,
+      "set_expected_rating": 4.0912,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.565444,
+      "cos_sim_2": 0.524209,
+      "cos_sim_3": 0.559267,
+      "cos_sim_4": 0.566227,
+      "cos_sim_5": 0.575128,
+      "min_similarity": 0.524209,
+      "p1": 0.243663,
+      "p2": 0.0,
+      "p3": 0.207162,
+      "p4": 0.248289,
+      "p5": 0.300886,
+      "set_expected_rating": 3.3627,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.544125,
+      "cos_sim_2": 0.549459,
+      "cos_sim_3": 0.541257,
+      "cos_sim_4": 0.625167,
+      "cos_sim_5": 0.608545,
+      "min_similarity": 0.541257,
+      "p1": 0.017672,
+      "p2": 0.050549,
+      "p3": 0.0,
+      "p4": 0.517107,
+      "p5": 0.414673,
+      "set_expected_rating": 4.2606,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.583062,
+      "cos_sim_2": 0.618593,
+      "cos_sim_3": 0.643464,
+      "cos_sim_4": 0.656951,
+      "cos_sim_5": 0.652203,
+      "min_similarity": 0.583062,
+      "p1": 0.0,
+      "p2": 0.148689,
+      "p3": 0.252767,
+      "p4": 0.309205,
+      "p5": 0.289339,
+      "set_expected_rating": 3.7392,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.633769,
+      "cos_sim_2": 0.642552,
+      "cos_sim_3": 0.623932,
+      "cos_sim_4": 0.696839,
+      "cos_sim_5": 0.631865,
+      "min_similarity": 0.623932,
+      "p1": 0.090005,
+      "p2": 0.170362,
+      "p3": 0.0,
+      "p4": 0.66705,
+      "p5": 0.072583,
+      "set_expected_rating": 3.4618,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.727134,
+      "cos_sim_2": 0.684144,
+      "cos_sim_3": 0.694579,
+      "cos_sim_4": 0.733647,
+      "cos_sim_5": 0.770302,
+      "min_similarity": 0.684144,
+      "p1": 0.227356,
+      "p2": 0.0,
+      "p3": 0.055186,
+      "p4": 0.261803,
+      "p5": 0.455655,
+      "set_expected_rating": 3.7184,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.631621,
+      "cos_sim_2": 0.681821,
+      "cos_sim_3": 0.664249,
+      "cos_sim_4": 0.714703,
+      "cos_sim_5": 0.734545,
+      "min_similarity": 0.631621,
+      "p1": 0.0,
+      "p2": 0.186732,
+      "p3": 0.121369,
+      "p4": 0.309045,
+      "p5": 0.382854,
+      "set_expected_rating": 3.888,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.555407,
+      "cos_sim_2": 0.559957,
+      "cos_sim_3": 0.61802,
+      "cos_sim_4": 0.585768,
+      "cos_sim_5": 0.581057,
+      "min_similarity": 0.555407,
+      "p1": 0.0,
+      "p2": 0.036938,
+      "p3": 0.50833,
+      "p4": 0.24649,
+      "p5": 0.208242,
+      "set_expected_rating": 3.626,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.613417,
+      "cos_sim_2": 0.564498,
+      "cos_sim_3": 0.57315,
+      "cos_sim_4": 0.657242,
+      "cos_sim_5": 0.673646,
+      "min_similarity": 0.564498,
+      "p1": 0.188541,
+      "p2": 0.0,
+      "p3": 0.033348,
+      "p4": 0.357445,
+      "p5": 0.420665,
+      "set_expected_rating": 3.8217,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.596805,
+      "cos_sim_2": 0.624632,
+      "cos_sim_3": 0.667704,
+      "cos_sim_4": 0.61844,
+      "cos_sim_5": 0.594479,
+      "min_similarity": 0.594479,
+      "p1": 0.017936,
+      "p2": 0.232544,
+      "p3": 0.564727,
+      "p4": 0.184793,
+      "p5": 0.0,
+      "set_expected_rating": 2.9164,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.673254,
+      "cos_sim_2": 0.688795,
+      "cos_sim_3": 0.6574,
+      "cos_sim_4": 0.716924,
+      "cos_sim_5": 0.652974,
+      "min_similarity": 0.652974,
+      "p1": 0.162922,
+      "p2": 0.287771,
+      "p3": 0.035551,
+      "p4": 0.513756,
+      "p5": 0.0,
+      "set_expected_rating": 2.9001,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.648967,
+      "cos_sim_2": 0.614252,
+      "cos_sim_3": 0.680803,
+      "cos_sim_4": 0.676856,
+      "cos_sim_5": 0.686101,
+      "min_similarity": 0.614252,
+      "p1": 0.147272,
+      "p2": 0.0,
+      "p3": 0.282331,
+      "p4": 0.265588,
+      "p5": 0.30481,
+      "set_expected_rating": 3.5807,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.523464,
+      "cos_sim_2": 0.560297,
+      "cos_sim_3": 0.576956,
+      "cos_sim_4": 0.571576,
+      "cos_sim_5": 0.587013,
+      "min_similarity": 0.523464,
+      "p1": 0.0,
+      "p2": 0.182353,
+      "p3": 0.26483,
+      "p4": 0.238194,
+      "p5": 0.314623,
+      "set_expected_rating": 3.6851,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.527459,
+      "cos_sim_2": 0.586419,
+      "cos_sim_3": 0.636967,
+      "cos_sim_4": 0.602162,
+      "cos_sim_5": 0.543448,
+      "min_similarity": 0.527459,
+      "p1": 0.0,
+      "p2": 0.227505,
+      "p3": 0.42255,
+      "p4": 0.28825,
+      "p5": 0.061695,
+      "set_expected_rating": 3.1841,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.598694,
+      "cos_sim_2": 0.596921,
+      "cos_sim_3": 0.588931,
+      "cos_sim_4": 0.652595,
+      "cos_sim_5": 0.63697,
+      "min_similarity": 0.588931,
+      "p1": 0.075417,
+      "p2": 0.061724,
+      "p3": 0.0,
+      "p4": 0.491777,
+      "p5": 0.371082,
+      "set_expected_rating": 4.0214,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Aura Pulse 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.734739,
+      "cos_sim_2": 0.782536,
+      "cos_sim_3": 0.775012,
+      "cos_sim_4": 0.7579,
+      "cos_sim_5": 0.740244,
+      "min_similarity": 0.734739,
+      "p1": 0.0,
+      "p2": 0.409445,
+      "p3": 0.34499,
+      "p4": 0.198404,
+      "p5": 0.047161,
+      "set_expected_rating": 2.8833,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

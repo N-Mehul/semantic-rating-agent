@@ -1,0 +1,67 @@
+{
+  "overall": {
+    "floor_count_le_1_5": 0,
+    "floor_pct_le_1_5": 0.0,
+    "floor_count_le_2_0": 7,
+    "floor_pct_le_2_0": 1.75,
+    "ceiling_count_ge_4_5": 0,
+    "ceiling_pct_ge_4_5": 0.0,
+    "ceiling_count_ge_4_0": 49,
+    "ceiling_pct_ge_4_0": 12.25,
+    "central_clustering_pct_2_5_to_4_0": 71.0,
+    "full_observed_range": [
+      1.5815,
+      4.3166
+    ]
+  },
+  "by_persona": {
+    "P1": {
+      "count": 100,
+      "floor_count_le_2_0": 0,
+      "floor_pct_le_2_0": 0.0,
+      "ceiling_count_ge_4_0": 16,
+      "ceiling_pct_ge_4_0": 16.0,
+      "central_clustering_pct_2_5_to_4_0": 72.0,
+      "range": [
+        2.0944,
+        4.2785
+      ]
+    },
+    "P2": {
+      "count": 100,
+      "floor_count_le_2_0": 4,
+      "floor_pct_le_2_0": 4.0,
+      "ceiling_count_ge_4_0": 8,
+      "ceiling_pct_ge_4_0": 8.0,
+      "central_clustering_pct_2_5_to_4_0": 76.0,
+      "range": [
+        1.5815,
+        4.3124
+      ]
+    },
+    "P3": {
+      "count": 100,
+      "floor_count_le_2_0": 1,
+      "floor_pct_le_2_0": 1.0,
+      "ceiling_count_ge_4_0": 13,
+      "ceiling_pct_ge_4_0": 13.0,
+      "central_clustering_pct_2_5_to_4_0": 66.0,
+      "range": [
+        1.8915,
+        4.3166
+      ]
+    },
+    "P4": {
+      "count": 100,
+      "floor_count_le_2_0": 2,
+      "floor_pct_le_2_0": 2.0,
+      "ceiling_count_ge_4_0": 12,
+      "ceiling_pct_ge_4_0": 12.0,
+      "central_clustering_pct_2_5_to_4_0": 70.0,
+      "range": [
+        1.8405,
+        4.2037
+      ]
+    }
+  }
+}

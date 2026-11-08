@@ -1,0 +1,25 @@
+persona_id,product_name,anchor_set_code,anchor_set_name,cos_sim_1,cos_sim_2,cos_sim_3,cos_sim_4,cos_sim_5,min_similarity,p1,p2,p3,p4,p5,set_expected_rating,embedding_model
+P1_premium_tier_owner,Apex Ultra Pro Max,PE,Performance Expectancy,0.657183,0.672515,0.635751,0.716766,0.705463,0.635751,0.102583,0.17597,0.0,0.387774,0.333673,3.674,nomic-embed-text
+P1_premium_tier_owner,Apex Ultra Pro Max,EE,Effort Expectancy,0.692005,0.661867,0.69129,0.70476,0.75503,0.661867,0.154064,0.0,0.150413,0.219271,0.476252,3.8636,nomic-embed-text
+P1_premium_tier_owner,Apex Ultra Pro Max,HM,Hedonic Motivation,0.523639,0.555811,0.547641,0.580258,0.58894,0.523639,0.0,0.180648,0.134774,0.317914,0.366664,3.8706,nomic-embed-text
+P1_premium_tier_owner,Apex Ultra Pro Max,SI,Social Influence,0.571147,0.557243,0.608501,0.613104,0.615533,0.557243,0.077541,0.0,0.28586,0.311526,0.325073,3.8066,nomic-embed-text
+P1_premium_tier_owner,Apex Ultra Pro Max,PP,Perceived Protection,0.506589,0.494038,0.463552,0.511689,0.511623,0.463552,0.253558,0.179616,0.0,0.283608,0.283218,3.1633,nomic-embed-text
+P1_premium_tier_owner,Apex Ultra Pro Max,BI,Behavioral Intention,0.634321,0.677291,0.749212,0.622619,0.628625,0.622619,0.058814,0.274769,0.636232,0.0,0.030186,2.668,nomic-embed-text
+P2_midrange_heavy_user,Apex Ultra Pro Max,PE,Performance Expectancy,0.65869,0.674516,0.647583,0.716657,0.659454,0.647583,0.093346,0.226357,0.0,0.580527,0.09977,3.367,nomic-embed-text
+P2_midrange_heavy_user,Apex Ultra Pro Max,EE,Effort Expectancy,0.624022,0.576308,0.635421,0.690087,0.694226,0.576308,0.140948,0.0,0.174621,0.336102,0.348329,3.7509,nomic-embed-text
+P2_midrange_heavy_user,Apex Ultra Pro Max,HM,Hedonic Motivation,0.613507,0.62973,0.640219,0.662595,0.689049,0.613507,0.0,0.096815,0.15941,0.292951,0.450824,4.0978,nomic-embed-text
+P2_midrange_heavy_user,Apex Ultra Pro Max,SI,Social Influence,0.646206,0.608086,0.677096,0.682171,0.697237,0.608086,0.140993,0.0,0.255249,0.274018,0.329741,3.6515,nomic-embed-text
+P2_midrange_heavy_user,Apex Ultra Pro Max,PP,Perceived Protection,0.784044,0.736284,0.704231,0.817497,0.840063,0.704231,0.22111,0.088799,0.0,0.313788,0.376303,3.5354,nomic-embed-text
+P2_midrange_heavy_user,Apex Ultra Pro Max,BI,Behavioral Intention,0.64057,0.674521,0.692651,0.656691,0.6662,0.64057,0.0,0.265695,0.407575,0.126156,0.200574,3.2616,nomic-embed-text
+P3_midrange_moderate_user,Apex Ultra Pro Max,PE,Performance Expectancy,0.743762,0.752634,0.710856,0.775835,0.722833,0.710856,0.217,0.27551,0.0,0.428509,0.078981,2.877,nomic-embed-text
+P3_midrange_moderate_user,Apex Ultra Pro Max,EE,Effort Expectancy,0.745624,0.719974,0.743533,0.753655,0.760105,0.719974,0.208501,0.0,0.191502,0.273786,0.326212,3.5092,nomic-embed-text
+P3_midrange_moderate_user,Apex Ultra Pro Max,HM,Hedonic Motivation,0.598734,0.630831,0.628583,0.614331,0.632061,0.598734,0.0,0.289504,0.269224,0.140678,0.300594,3.4524,nomic-embed-text
+P3_midrange_moderate_user,Apex Ultra Pro Max,SI,Social Influence,0.594896,0.544163,0.590283,0.562877,0.559271,0.544163,0.388238,0.0,0.352932,0.143213,0.115617,2.598,nomic-embed-text
+P3_midrange_moderate_user,Apex Ultra Pro Max,PP,Perceived Protection,0.500539,0.52299,0.489456,0.498395,0.48025,0.48025,0.224481,0.472899,0.101858,0.200762,0.0,2.2789,nomic-embed-text
+P3_midrange_moderate_user,Apex Ultra Pro Max,BI,Behavioral Intention,0.624336,0.67158,0.649638,0.611744,0.615232,0.611744,0.11064,0.525755,0.332957,0.0,0.030649,2.3143,nomic-embed-text
+P4_budget_or_undisclosed_price,Apex Ultra Pro Max,PE,Performance Expectancy,0.680765,0.693926,0.662364,0.670573,0.632954,0.632954,0.271942,0.3468,0.167283,0.213975,0.0,2.3233,nomic-embed-text
+P4_budget_or_undisclosed_price,Apex Ultra Pro Max,EE,Effort Expectancy,0.639374,0.644882,0.675978,0.637228,0.632229,0.632229,0.104231,0.184588,0.638254,0.072928,0.0,2.6799,nomic-embed-text
+P4_budget_or_undisclosed_price,Apex Ultra Pro Max,HM,Hedonic Motivation,0.691459,0.7247,0.7225,0.686425,0.695268,0.686425,0.057056,0.433827,0.40889,0.0,0.100227,2.6525,nomic-embed-text
+P4_budget_or_undisclosed_price,Apex Ultra Pro Max,SI,Social Influence,0.572857,0.588817,0.607998,0.549584,0.511336,0.511336,0.224601,0.282868,0.352894,0.139636,0.0,2.4076,nomic-embed-text
+P4_budget_or_undisclosed_price,Apex Ultra Pro Max,PP,Perceived Protection,0.577004,0.589683,0.525336,0.560385,0.520457,0.520457,0.331497,0.405829,0.028604,0.234071,0.0,2.1652,nomic-embed-text
+P4_budget_or_undisclosed_price,Apex Ultra Pro Max,BI,Behavioral Intention,0.667383,0.666927,0.670289,0.575461,0.625106,0.575461,0.28037,0.278978,0.289233,0.0,0.151419,2.4631,nomic-embed-text

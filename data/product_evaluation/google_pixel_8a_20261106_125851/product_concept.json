@@ -1,0 +1,94 @@
+{
+  "name": "Google Pixel 8a",
+  "category": "Smartphone",
+  "description": "Google Pixel 8a is a mid-range smartphone designed for users who value photography, software experience and smart features. It features a 6.1-inch OLED display with a 120Hz refresh rate, providing smooth scrolling and clear visuals. The device is powered by Google's Tensor G3 processor and includes 8GB RAM with 128GB or 256GB storage options. Its camera system consists of a 64MP main camera and a 13MP ultrawide camera, along with a 13MP front camera. The phone has a 4492mAh battery, supports wired and wireless charging, and offers 5G connectivity. It runs Android with Google's Pixel software experience and includes Titan M2 security hardware. It is suitable for users interested in photography, everyday performance, software features and a compact smartphone design.\nSpecifications: Display: 6.1-inch OLED\nRefresh Rate: 120Hz\nProcessor: Google Tensor G3\nRAM: 8GB\nStorage: 128GB / 256GB\nRear Camera: 64MP main + 13MP ultrawide\nFront Camera: 13MP\nBattery: 4492mAh\nCharging: 18W wired, wireless charging supported\nNetwork: 5G\nOperating System at launch: Android 14\nUser Interface: Pixel UI\nSecurity: Titan M2 security chip, fingerprint unlock and face unlock",
+  "price_inr": 39999.0,
+  "target_group": "Technology consumers",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Android",
+  "features": [
+    {
+      "name": "AI-Powered Automation",
+      "explanation": "Intelligent workflow automation and smart content/task assistance.",
+      "category": null
+    },
+    {
+      "name": "Intuitive Interface",
+      "explanation": "Clean, user-friendly layout with minimal onboarding friction.",
+      "category": null
+    },
+    {
+      "name": "Data Privacy & Encryption",
+      "explanation": "Robust security standards ensuring sensitive user data remains protected.",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "ssr_method": "improved",
+  "ssr_method_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Smartphone",
+    "product_noun": "smartphone",
+    "usage_role": "primary phone",
+    "brand_or_ecosystem": "Android",
+    "features_count": 3,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-06T07:28:51.705509+00:00",
+  "pipeline_fingerprint": "ea19ffd3b81b",
+  "product_context": {
+    "name": "Google Pixel 8a",
+    "category": "Smartphone",
+    "noun": "smartphone",
+    "usage_role": "primary phone",
+    "ecosystem": "Android",
+    "price_inr": 39999.0,
+    "description": "Google Pixel 8a is a mid-range smartphone designed for users who value photography, software experience and smart features. It features a 6.1-inch OLED display with a 120Hz refresh rate, providing smooth scrolling and clear visuals. The device is powered by Google's Tensor G3 processor and includes 8GB RAM with 128GB or 256GB storage options. Its camera system consists of a 64MP main camera and a 13MP ultrawide camera, along with a 13MP front camera. The phone has a 4492mAh battery, supports wired and wireless charging, and offers 5G connectivity. It runs Android with Google's Pixel software experience and includes Titan M2 security hardware. It is suitable for users interested in photography, everyday performance, software features and a compact smartphone design.\nSpecifications: Display: 6.1-inch OLED\nRefresh Rate: 120Hz\nProcessor: Google Tensor G3\nRAM: 8GB\nStorage: 128GB / 256GB\nRear Camera: 64MP main + 13MP ultrawide\nFront Camera: 13MP\nBattery: 4492mAh\nCharging: 18W wired, wireless charging supported\nNetwork: 5G\nOperating System at launch: Android 14\nUser Interface: Pixel UI\nSecurity: Titan M2 security chip, fingerprint unlock and face unlock"
+  },
+  "response_validation_summary": {
+    "P1_premium_tier_owner": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "passed",
+      "BI": "corrected"
+    },
+    "P2_midrange_heavy_user": {
+      "PE": "corrected",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "passed",
+      "BI": "corrected"
+    },
+    "P3_midrange_moderate_user": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "corrected",
+      "PP": "corrected",
+      "BI": "corrected"
+    },
+    "P4_budget_or_undisclosed_price": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "corrected",
+      "PP": "passed",
+      "BI": "corrected"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# Representation Consistency Audit Report
+
+## Analysis of Representation Formats
+
+| Synthetic_Representation            | Human_Representation          | Metric_Type                   | Observed_Value        | Representational_Validity                                                   | Scientific_Consequence                                                                                  |
+|:------------------------------------|:------------------------------|:------------------------------|:----------------------|:----------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------|
+| Continuous Expected Rating E[R]     | Discrete Likert Integer (1-5) | Wasserstein Distance W1       | 0.4881                | Questionable (Category mismatch: continuous expectation vs discrete choice) | Continuous expectation naturally compresses variance; comparison penalizes SSR for being probabilistic. |
+| Rounded Expected Rating Round(E[R]) | Discrete Likert Integer (1-5) | Wasserstein W1 / Discrete JSD | W1=0.3691, JSD=0.4092 | Valid Discrete-to-Discrete Comparison                                       | Rounding eliminates intermediate probabilities; confirms discrete clustering around neutral ratings.    |
+| Argmax Predicted Rating Argmax(p)   | Discrete Likert Integer (1-5) | Wasserstein W1 / Discrete JSD | W1=0.2512, JSD=0.2310 | Strict Discrete Winner-Take-All                                             | Restores full discrete variance and endpoints (1 and 5) but discards probability uncertainty.           |
+
+### Methodological Category Mismatch:
+- Comparing continuous expected ratings $\mathbb{E}[R] \in [1.0, 5.0]$ with discrete human ratings $\{1, 2, 3, 4, 5\}$ creates an inherent structural discrepancy.
+- Probability expectations of non-degenerate distributions are mathematically bounded away from extreme endpoints, whereas human respondents pick single integers.
+- Researchers must explicitly distinguish between **continuous latent expectation alignment** and **discrete choice emulation**.

@@ -1,0 +1,45 @@
+{
+  "experiment_id": "persona_validation_400",
+  "timestamp_completed": "2026-11-02T16:40:13.174595+00:00",
+  "model_name": "qwen2.5:7b-instruct",
+  "model_provider": "ollama_local",
+  "total_responses_generated": 400,
+  "total_responses_target": 400,
+  "personas_count": 4,
+  "responses_per_persona": {
+    "P1_premium_tier_owner": 100,
+    "P2_midrange_heavy_user": 100,
+    "P3_budget_practical_adopter": 100,
+    "P4_student_value_seeker": 100
+  },
+  "constructs_evaluated": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "constructs_distribution": {
+    "PE": 68,
+    "EE": 68,
+    "HM": 65,
+    "SI": 75,
+    "PP": 57,
+    "BI": 67
+  },
+  "language_register": "everyday_indian_english",
+  "response_length_target": "2-3 sentences",
+  "sentiment_balance": [
+    "positive",
+    "neutral",
+    "negative"
+  ],
+  "rating_elicitation": "text_only_zero_numeric_ratings",
+  "quality_metrics": {
+    "duplicate_sample_ids": 0,
+    "duplicate_response_texts": 0,
+    "missing_or_empty_fields": 0,
+    "numeric_likert_violations": 0
+  }
+}

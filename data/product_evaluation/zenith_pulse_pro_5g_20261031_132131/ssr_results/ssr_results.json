@@ -1,0 +1,2025 @@
+{
+  "evaluation_id": "zenith_pulse_pro_5g_20261031_132131",
+  "product_name": "Zenith Pulse Pro 5G",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-31T07:58:12.839109+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 2.894,
+  "overall_adoption_average": 2.894,
+  "primary_adoption_average": 2.894,
+  "construct_averages": {
+    "PE": 3.2123,
+    "EE": 3.1924,
+    "HM": 3.7904,
+    "SI": 3.3505,
+    "PP": 3.3994,
+    "BI": 2.894
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "primary_adoption_rating": 2.2383,
+      "primary_adoption_pmf": [
+        0.347905,
+        0.239324,
+        0.32605,
+        0.0,
+        0.086722
+      ],
+      "construct_scores": {
+        "PE": 2.5604,
+        "EE": 3.7218,
+        "HM": 3.6953,
+        "SI": 2.7186,
+        "PP": 3.7538,
+        "BI": 2.2383
+      },
+      "construct_responses": {
+        "PE": "It has good performance for daily tasks and light multitasking, but it's not as powerful as my current iPhone. The battery life is decent for a day, but I wouldn't expect it to last all day during heavy use.",
+        "EE": "It's easy to use, but the transition from iOS to Android might take some time. The interface is clean, but I'm used to the iOS ecosystem and its apps.",
+        "HM": "The display is crisp and the camera is good for social media, but not as impressive as my current phone. The gaming isn't lag-free, but it's okay for casual games.",
+        "SI": "My friends might suggest it for budget-conscious students, but they wouldn't recommend it as a replacement for a flagship phone. The prestige factor is definitely lower than my current device.",
+        "PP": "The on-device security is good, but my current phone has better biometric security and privacy features. I would feel safer with my current device.",
+        "BI": "No, I wouldn't buy this phone. I see it more as a budget option for someone else, not for my own use. I might consider it as a second phone for basic tasks, but definitely not my main device.",
+        "OVERALL": "It's a good budget phone, but it's not worth the switch for someone who values high performance and brand prestige. I'll stick with my current phone for now."
+      },
+      "response_text": "It's a good budget phone, but it's not worth the switch for someone who values high performance and brand prestige. I'll stick with my current phone for now.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It has good performance for daily tasks and light multitasking, but it's not as powerful as my current iPhone. The battery life is decent for a day, but I wouldn't expect it to last all day during heavy use.",
+          "cosine_similarities": [
+            0.691266,
+            0.700714,
+            0.694256,
+            0.698788,
+            0.66291
+          ],
+          "min_similarity": 0.66291,
+          "pmf_probabilities": [
+            0.212592,
+            0.283421,
+            0.235004,
+            0.268983,
+            0.0
+          ],
+          "expected_rating": 2.5604,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "It's easy to use, but the transition from iOS to Android might take some time. The interface is clean, but I'm used to the iOS ecosystem and its apps.",
+          "cosine_similarities": [
+            0.642435,
+            0.621364,
+            0.70042,
+            0.690267,
+            0.695883
+          ],
+          "min_similarity": 0.621364,
+          "pmf_probabilities": [
+            0.086515,
+            0.0,
+            0.324603,
+            0.282911,
+            0.305971
+          ],
+          "expected_rating": 3.7218,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The display is crisp and the camera is good for social media, but not as impressive as my current phone. The gaming isn't lag-free, but it's okay for casual games.",
+          "cosine_similarities": [
+            0.60996,
+            0.642171,
+            0.624825,
+            0.668157,
+            0.64614
+          ],
+          "min_similarity": 0.60996,
+          "pmf_probabilities": [
+            0.0,
+            0.227717,
+            0.105086,
+            0.411426,
+            0.255771
+          ],
+          "expected_rating": 3.6953,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might suggest it for budget-conscious students, but they wouldn't recommend it as a replacement for a flagship phone. The prestige factor is definitely lower than my current device.",
+          "cosine_similarities": [
+            0.644681,
+            0.625531,
+            0.651545,
+            0.605549,
+            0.635649
+          ],
+          "min_similarity": 0.605549,
+          "pmf_probabilities": [
+            0.289414,
+            0.147783,
+            0.340186,
+            0.0,
+            0.222617
+          ],
+          "expected_rating": 2.7186,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The on-device security is good, but my current phone has better biometric security and privacy features. I would feel safer with my current device.",
+          "cosine_similarities": [
+            0.733282,
+            0.747146,
+            0.739012,
+            0.765924,
+            0.749807
+          ],
+          "min_similarity": 0.733282,
+          "pmf_probabilities": [
+            0.0,
+            0.201619,
+            0.083336,
+            0.474716,
+            0.240329
+          ],
+          "expected_rating": 3.7538,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "No, I wouldn't buy this phone. I see it more as a budget option for someone else, not for my own use. I might consider it as a second phone for basic tasks, but definitely not my main device.",
+          "cosine_similarities": [
+            0.734472,
+            0.717567,
+            0.731069,
+            0.680307,
+            0.693809
+          ],
+          "min_similarity": 0.680307,
+          "pmf_probabilities": [
+            0.347905,
+            0.239324,
+            0.32605,
+            0.0,
+            0.086722
+          ],
+          "expected_rating": 2.2383,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "primary_adoption_rating": 3.0457,
+      "primary_adoption_pmf": [
+        0.0,
+        0.359562,
+        0.361697,
+        0.152236,
+        0.126505
+      ],
+      "construct_scores": {
+        "PE": 3.8125,
+        "EE": 2.748,
+        "HM": 3.9927,
+        "SI": 3.5003,
+        "PP": 3.5884,
+        "BI": 3.0457
+      },
+      "construct_responses": {
+        "PE": "This phone should handle gaming and multitasking smoothly due to its high-efficiency processor. But I'm skeptical about the battery life; 6–8 hours of use might drain it pretty fast.",
+        "EE": "The interface will be easy to use, but I might need some time to get used to the new OS compared to my current phone. The on-device security features sound good, though.",
+        "HM": "The display and camera will definitely make gaming and streaming more enjoyable. The fast charging is a plus too, as I hate waiting for my phone to charge.",
+        "SI": "My friends might recommend it since it's a good balance of performance and price. It could be a status symbol among college students, but I'm not too concerned about that.",
+        "PP": "The on-device security features are reassuring. With regular updates, my personal data should be safe.",
+        "BI": "I might consider it if I can save some money. But I'm not sure if the battery life will hold up, so I'll probably stick with my current phone for now.",
+        "OVERALL": "The Zenith Pulse Pro 5G seems like a decent choice for gaming and daily use, but I need to test it more before I make a decision."
+      },
+      "response_text": "The Zenith Pulse Pro 5G seems like a decent choice for gaming and daily use, but I need to test it more before I make a decision.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This phone should handle gaming and multitasking smoothly due to its high-efficiency processor. But I'm skeptical about the battery life; 6–8 hours of use might drain it pretty fast.",
+          "cosine_similarities": [
+            0.576794,
+            0.589809,
+            0.571957,
+            0.616714,
+            0.603591
+          ],
+          "min_similarity": 0.571957,
+          "pmf_probabilities": [
+            0.048821,
+            0.180175,
+            0.0,
+            0.451729,
+            0.319275
+          ],
+          "expected_rating": 3.8125,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The interface will be easy to use, but I might need some time to get used to the new OS compared to my current phone. The on-device security features sound good, though.",
+          "cosine_similarities": [
+            0.636477,
+            0.606499,
+            0.621645,
+            0.606799,
+            0.627907
+          ],
+          "min_similarity": 0.606499,
+          "pmf_probabilities": [
+            0.448558,
+            0.0,
+            0.22663,
+            0.004489,
+            0.320323
+          ],
+          "expected_rating": 2.748,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The display and camera will definitely make gaming and streaming more enjoyable. The fast charging is a plus too, as I hate waiting for my phone to charge.",
+          "cosine_similarities": [
+            0.549688,
+            0.58416,
+            0.577144,
+            0.604595,
+            0.64454
+          ],
+          "min_similarity": 0.549688,
+          "pmf_probabilities": [
+            0.0,
+            0.162847,
+            0.129703,
+            0.259377,
+            0.448073
+          ],
+          "expected_rating": 3.9927,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might recommend it since it's a good balance of performance and price. It could be a status symbol among college students, but I'm not too concerned about that.",
+          "cosine_similarities": [
+            0.508173,
+            0.542075,
+            0.592646,
+            0.589318,
+            0.543228
+          ],
+          "min_similarity": 0.508173,
+          "pmf_probabilities": [
+            0.0,
+            0.144525,
+            0.360112,
+            0.345925,
+            0.149438
+          ],
+          "expected_rating": 3.5003,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The on-device security features are reassuring. With regular updates, my personal data should be safe.",
+          "cosine_similarities": [
+            0.746435,
+            0.721326,
+            0.686027,
+            0.789352,
+            0.806396
+          ],
+          "min_similarity": 0.686027,
+          "pmf_probabilities": [
+            0.189128,
+            0.110517,
+            0.0,
+            0.323496,
+            0.376858
+          ],
+          "expected_rating": 3.5884,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I might consider it if I can save some money. But I'm not sure if the battery life will hold up, so I'll probably stick with my current phone for now.",
+          "cosine_similarities": [
+            0.734852,
+            0.782679,
+            0.782964,
+            0.755102,
+            0.751679
+          ],
+          "min_similarity": 0.734852,
+          "pmf_probabilities": [
+            0.0,
+            0.359562,
+            0.361697,
+            0.152236,
+            0.126505
+          ],
+          "expected_rating": 3.0457,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "primary_adoption_rating": 3.4825,
+      "primary_adoption_pmf": [
+        0.0,
+        0.172283,
+        0.343951,
+        0.312746,
+        0.171019
+      ],
+      "construct_scores": {
+        "PE": 3.5519,
+        "EE": 3.8155,
+        "HM": 3.9842,
+        "SI": 3.8444,
+        "PP": 3.2538,
+        "BI": 3.4825
+      },
+      "construct_responses": {
+        "PE": "It should handle my daily tasks well, especially the battery life, which is a big plus. The 5000mAh battery will last through my long study sessions. The 120Hz display will help with smooth scrolling and video streaming, making it easy to multitask.",
+        "EE": "The interface seems clean and user-friendly. The transition from my current Samsung to Android 14 should be smooth, and the on-device security will give me peace of mind.",
+        "HM": "The gaming capabilities and crisp display will make my gaming sessions more enjoyable. The 108MP camera will be great for social media posts and selfies, and the fast charging will be a lifesaver after a long day of classes.",
+        "SI": "My friends in college will probably recommend this phone as they like the gaming and camera features. It's a bit of a status symbol to have a new smartphone, but I think the benefits outweigh the social prestige.",
+        "PP": "The on-device security will protect my personal data, which is important to me. The clean Android OS will keep my phone free from bloatware, and regular security patches will ensure my data stays safe.",
+        "BI": "Considering the price of ₹19,999, it falls within my budget, and the balance of features like battery life and gaming capabilities make it a good buy. I think I will go for it because it offers a lot of value for money.",
+        "OVERALL": "The Zenith Pulse Pro 5G seems like a solid choice with good battery life and display quality. It meets my needs for a student, and the price is reasonable, so I'm inclined to buy it."
+      },
+      "response_text": "The Zenith Pulse Pro 5G seems like a solid choice with good battery life and display quality. It meets my needs for a student, and the price is reasonable, so I'm inclined to buy it.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It should handle my daily tasks well, especially the battery life, which is a big plus. The 5000mAh battery will last through my long study sessions. The 120Hz display will help with smooth scrolling and video streaming, making it easy to multitask.",
+          "cosine_similarities": [
+            0.620199,
+            0.638346,
+            0.61235,
+            0.699673,
+            0.627018
+          ],
+          "min_similarity": 0.61235,
+          "pmf_probabilities": [
+            0.057778,
+            0.191379,
+            0.0,
+            0.64286,
+            0.107983
+          ],
+          "expected_rating": 3.5519,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The interface seems clean and user-friendly. The transition from my current Samsung to Android 14 should be smooth, and the on-device security will give me peace of mind.",
+          "cosine_similarities": [
+            0.546448,
+            0.561584,
+            0.621494,
+            0.576689,
+            0.616604
+          ],
+          "min_similarity": 0.546448,
+          "pmf_probabilities": [
+            0.0,
+            0.079423,
+            0.393777,
+            0.158681,
+            0.368119
+          ],
+          "expected_rating": 3.8155,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The gaming capabilities and crisp display will make my gaming sessions more enjoyable. The 108MP camera will be great for social media posts and selfies, and the fast charging will be a lifesaver after a long day of classes.",
+          "cosine_similarities": [
+            0.537662,
+            0.577093,
+            0.567776,
+            0.611619,
+            0.642725
+          ],
+          "min_similarity": 0.537662,
+          "pmf_probabilities": [
+            0.0,
+            0.158636,
+            0.121154,
+            0.297536,
+            0.422675
+          ],
+          "expected_rating": 3.9842,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends in college will probably recommend this phone as they like the gaming and camera features. It's a bit of a status symbol to have a new smartphone, but I think the benefits outweigh the social prestige.",
+          "cosine_similarities": [
+            0.66677,
+            0.658575,
+            0.704992,
+            0.707295,
+            0.706103
+          ],
+          "min_similarity": 0.658575,
+          "pmf_probabilities": [
+            0.054318,
+            0.0,
+            0.307687,
+            0.322947,
+            0.315047
+          ],
+          "expected_rating": 3.8444,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The on-device security will protect my personal data, which is important to me. The clean Android OS will keep my phone free from bloatware, and regular security patches will ensure my data stays safe.",
+          "cosine_similarities": [
+            0.736369,
+            0.735212,
+            0.674318,
+            0.759677,
+            0.761656
+          ],
+          "min_similarity": 0.674318,
+          "pmf_probabilities": [
+            0.209885,
+            0.205972,
+            0.0,
+            0.288725,
+            0.295418
+          ],
+          "expected_rating": 3.2538,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Considering the price of ₹19,999, it falls within my budget, and the balance of features like battery life and gaming capabilities make it a good buy. I think I will go for it because it offers a lot of value for money.",
+          "cosine_similarities": [
+            0.491419,
+            0.529922,
+            0.568289,
+            0.561315,
+            0.52964
+          ],
+          "min_similarity": 0.491419,
+          "pmf_probabilities": [
+            0.0,
+            0.172283,
+            0.343951,
+            0.312746,
+            0.171019
+          ],
+          "expected_rating": 3.4825,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "primary_adoption_rating": 2.8094,
+      "primary_adoption_pmf": [
+        0.158345,
+        0.196449,
+        0.48393,
+        0.0,
+        0.161277
+      ],
+      "construct_scores": {
+        "PE": 2.9245,
+        "EE": 2.4842,
+        "HM": 3.4892,
+        "SI": 3.3386,
+        "PP": 3.0018,
+        "BI": 2.8094
+      },
+      "construct_responses": {
+        "PE": "The Zenith Pulse Pro 5G seems fast and should handle my study and work well, but the price is a bit high. The 8GB RAM should help with multitasking, but I'd need to save up to buy it.",
+        "EE": "Switching from my current Xiaomi to the Zenith Pulse Pro 5G would be a bit of a learning curve, but the Android 14 UI is clean and user-friendly. I'd need to get used to a new phone though.",
+        "HM": "The display and camera sound great for gaming and streaming, but I can't afford it right now. The cooling system is a nice touch for when I play games for longer periods.",
+        "SI": "My college friends might think it's cool, but I'd need to save more to get it. They might suggest getting it, but I'm not sure if I can afford the EMI.",
+        "PP": "The on-device security features are good, but I'm not worried about data privacy as much as the price. I'm more concerned about saving up for it.",
+        "BI": "I might consider it if there's a discount or EMI option, but for now, I think I'll stick with my current phone. The budget is tight, and I can't justify the price difference.",
+        "OVERALL": "The Zenith Pulse Pro 5G sounds like a good phone, but the price is a bit steep for me. I'll keep an eye out for discounts before considering it."
+      },
+      "response_text": "The Zenith Pulse Pro 5G sounds like a good phone, but the price is a bit steep for me. I'll keep an eye out for discounts before considering it.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The Zenith Pulse Pro 5G seems fast and should handle my study and work well, but the price is a bit high. The 8GB RAM should help with multitasking, but I'd need to save up to buy it.",
+          "cosine_similarities": [
+            0.555257,
+            0.577892,
+            0.572432,
+            0.575526,
+            0.55398
+          ],
+          "min_similarity": 0.55398,
+          "pmf_probabilities": [
+            0.019597,
+            0.366824,
+            0.283058,
+            0.330521,
+            0.0
+          ],
+          "expected_rating": 2.9245,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Switching from my current Xiaomi to the Zenith Pulse Pro 5G would be a bit of a learning curve, but the Android 14 UI is clean and user-friendly. I'd need to get used to a new phone though.",
+          "cosine_similarities": [
+            0.671416,
+            0.606358,
+            0.622872,
+            0.604215,
+            0.640448
+          ],
+          "min_similarity": 0.604215,
+          "pmf_probabilities": [
+            0.540921,
+            0.017253,
+            0.150175,
+            0.0,
+            0.291651
+          ],
+          "expected_rating": 2.4842,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The display and camera sound great for gaming and streaming, but I can't afford it right now. The cooling system is a nice touch for when I play games for longer periods.",
+          "cosine_similarities": [
+            0.526988,
+            0.550258,
+            0.524552,
+            0.547531,
+            0.546136
+          ],
+          "min_similarity": 0.524552,
+          "pmf_probabilities": [
+            0.033503,
+            0.353569,
+            0.0,
+            0.316057,
+            0.29687
+          ],
+          "expected_rating": 3.4892,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My college friends might think it's cool, but I'd need to save more to get it. They might suggest getting it, but I'm not sure if I can afford the EMI.",
+          "cosine_similarities": [
+            0.481692,
+            0.484564,
+            0.540803,
+            0.489934,
+            0.492771
+          ],
+          "min_similarity": 0.481692,
+          "pmf_probabilities": [
+            0.0,
+            0.035319,
+            0.727043,
+            0.101375,
+            0.136263
+          ],
+          "expected_rating": 3.3386,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The on-device security features are good, but I'm not worried about data privacy as much as the price. I'm more concerned about saving up for it.",
+          "cosine_similarities": [
+            0.680256,
+            0.668225,
+            0.622514,
+            0.69148,
+            0.668825
+          ],
+          "min_similarity": 0.622514,
+          "pmf_probabilities": [
+            0.263988,
+            0.208985,
+            0.0,
+            0.315301,
+            0.211726
+          ],
+          "expected_rating": 3.0018,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I might consider it if there's a discount or EMI option, but for now, I think I'll stick with my current phone. The budget is tight, and I can't justify the price difference.",
+          "cosine_similarities": [
+            0.648013,
+            0.655701,
+            0.713707,
+            0.616063,
+            0.648604
+          ],
+          "min_similarity": 0.616063,
+          "pmf_probabilities": [
+            0.158345,
+            0.196449,
+            0.48393,
+            0.0,
+            0.161277
+          ],
+          "expected_rating": 2.8094,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.691266,
+        0.700714,
+        0.694256,
+        0.698788,
+        0.66291
+      ],
+      "pmf_probabilities": [
+        0.212592,
+        0.283421,
+        0.235004,
+        0.268983,
+        0.0
+      ],
+      "expected_rating": 2.5604,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.642435,
+        0.621364,
+        0.70042,
+        0.690267,
+        0.695883
+      ],
+      "pmf_probabilities": [
+        0.086515,
+        0.0,
+        0.324603,
+        0.282911,
+        0.305971
+      ],
+      "expected_rating": 3.7218,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.60996,
+        0.642171,
+        0.624825,
+        0.668157,
+        0.64614
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.227717,
+        0.105086,
+        0.411426,
+        0.255771
+      ],
+      "expected_rating": 3.6953,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.644681,
+        0.625531,
+        0.651545,
+        0.605549,
+        0.635649
+      ],
+      "pmf_probabilities": [
+        0.289414,
+        0.147783,
+        0.340186,
+        0.0,
+        0.222617
+      ],
+      "expected_rating": 2.7186,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.733282,
+        0.747146,
+        0.739012,
+        0.765924,
+        0.749807
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.201619,
+        0.083336,
+        0.474716,
+        0.240329
+      ],
+      "expected_rating": 3.7538,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.734472,
+        0.717567,
+        0.731069,
+        0.680307,
+        0.693809
+      ],
+      "pmf_probabilities": [
+        0.347905,
+        0.239324,
+        0.32605,
+        0.0,
+        0.086722
+      ],
+      "expected_rating": 2.2383,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.576794,
+        0.589809,
+        0.571957,
+        0.616714,
+        0.603591
+      ],
+      "pmf_probabilities": [
+        0.048821,
+        0.180175,
+        0.0,
+        0.451729,
+        0.319275
+      ],
+      "expected_rating": 3.8125,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.636477,
+        0.606499,
+        0.621645,
+        0.606799,
+        0.627907
+      ],
+      "pmf_probabilities": [
+        0.448558,
+        0.0,
+        0.22663,
+        0.004489,
+        0.320323
+      ],
+      "expected_rating": 2.748,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.549688,
+        0.58416,
+        0.577144,
+        0.604595,
+        0.64454
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.162847,
+        0.129703,
+        0.259377,
+        0.448073
+      ],
+      "expected_rating": 3.9927,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.508173,
+        0.542075,
+        0.592646,
+        0.589318,
+        0.543228
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.144525,
+        0.360112,
+        0.345925,
+        0.149438
+      ],
+      "expected_rating": 3.5003,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.746435,
+        0.721326,
+        0.686027,
+        0.789352,
+        0.806396
+      ],
+      "pmf_probabilities": [
+        0.189128,
+        0.110517,
+        0.0,
+        0.323496,
+        0.376858
+      ],
+      "expected_rating": 3.5884,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.734852,
+        0.782679,
+        0.782964,
+        0.755102,
+        0.751679
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.359562,
+        0.361697,
+        0.152236,
+        0.126505
+      ],
+      "expected_rating": 3.0457,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.620199,
+        0.638346,
+        0.61235,
+        0.699673,
+        0.627018
+      ],
+      "pmf_probabilities": [
+        0.057778,
+        0.191379,
+        0.0,
+        0.64286,
+        0.107983
+      ],
+      "expected_rating": 3.5519,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.546448,
+        0.561584,
+        0.621494,
+        0.576689,
+        0.616604
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.079423,
+        0.393777,
+        0.158681,
+        0.368119
+      ],
+      "expected_rating": 3.8155,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.537662,
+        0.577093,
+        0.567776,
+        0.611619,
+        0.642725
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.158636,
+        0.121154,
+        0.297536,
+        0.422675
+      ],
+      "expected_rating": 3.9842,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.66677,
+        0.658575,
+        0.704992,
+        0.707295,
+        0.706103
+      ],
+      "pmf_probabilities": [
+        0.054318,
+        0.0,
+        0.307687,
+        0.322947,
+        0.315047
+      ],
+      "expected_rating": 3.8444,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.736369,
+        0.735212,
+        0.674318,
+        0.759677,
+        0.761656
+      ],
+      "pmf_probabilities": [
+        0.209885,
+        0.205972,
+        0.0,
+        0.288725,
+        0.295418
+      ],
+      "expected_rating": 3.2538,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.491419,
+        0.529922,
+        0.568289,
+        0.561315,
+        0.52964
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.172283,
+        0.343951,
+        0.312746,
+        0.171019
+      ],
+      "expected_rating": 3.4825,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.555257,
+        0.577892,
+        0.572432,
+        0.575526,
+        0.55398
+      ],
+      "pmf_probabilities": [
+        0.019597,
+        0.366824,
+        0.283058,
+        0.330521,
+        0.0
+      ],
+      "expected_rating": 2.9245,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.671416,
+        0.606358,
+        0.622872,
+        0.604215,
+        0.640448
+      ],
+      "pmf_probabilities": [
+        0.540921,
+        0.017253,
+        0.150175,
+        0.0,
+        0.291651
+      ],
+      "expected_rating": 2.4842,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.526988,
+        0.550258,
+        0.524552,
+        0.547531,
+        0.546136
+      ],
+      "pmf_probabilities": [
+        0.033503,
+        0.353569,
+        0.0,
+        0.316057,
+        0.29687
+      ],
+      "expected_rating": 3.4892,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.481692,
+        0.484564,
+        0.540803,
+        0.489934,
+        0.492771
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.035319,
+        0.727043,
+        0.101375,
+        0.136263
+      ],
+      "expected_rating": 3.3386,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.680256,
+        0.668225,
+        0.622514,
+        0.69148,
+        0.668825
+      ],
+      "pmf_probabilities": [
+        0.263988,
+        0.208985,
+        0.0,
+        0.315301,
+        0.211726
+      ],
+      "expected_rating": 3.0018,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.648013,
+        0.655701,
+        0.713707,
+        0.616063,
+        0.648604
+      ],
+      "pmf_probabilities": [
+        0.158345,
+        0.196449,
+        0.48393,
+        0.0,
+        0.161277
+      ],
+      "expected_rating": 2.8094,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.691266,
+      "cos_sim_2": 0.700714,
+      "cos_sim_3": 0.694256,
+      "cos_sim_4": 0.698788,
+      "cos_sim_5": 0.66291,
+      "min_similarity": 0.66291,
+      "p1": 0.212592,
+      "p2": 0.283421,
+      "p3": 0.235004,
+      "p4": 0.268983,
+      "p5": 0.0,
+      "set_expected_rating": 2.5604,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.642435,
+      "cos_sim_2": 0.621364,
+      "cos_sim_3": 0.70042,
+      "cos_sim_4": 0.690267,
+      "cos_sim_5": 0.695883,
+      "min_similarity": 0.621364,
+      "p1": 0.086515,
+      "p2": 0.0,
+      "p3": 0.324603,
+      "p4": 0.282911,
+      "p5": 0.305971,
+      "set_expected_rating": 3.7218,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.60996,
+      "cos_sim_2": 0.642171,
+      "cos_sim_3": 0.624825,
+      "cos_sim_4": 0.668157,
+      "cos_sim_5": 0.64614,
+      "min_similarity": 0.60996,
+      "p1": 0.0,
+      "p2": 0.227717,
+      "p3": 0.105086,
+      "p4": 0.411426,
+      "p5": 0.255771,
+      "set_expected_rating": 3.6953,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.644681,
+      "cos_sim_2": 0.625531,
+      "cos_sim_3": 0.651545,
+      "cos_sim_4": 0.605549,
+      "cos_sim_5": 0.635649,
+      "min_similarity": 0.605549,
+      "p1": 0.289414,
+      "p2": 0.147783,
+      "p3": 0.340186,
+      "p4": 0.0,
+      "p5": 0.222617,
+      "set_expected_rating": 2.7186,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.733282,
+      "cos_sim_2": 0.747146,
+      "cos_sim_3": 0.739012,
+      "cos_sim_4": 0.765924,
+      "cos_sim_5": 0.749807,
+      "min_similarity": 0.733282,
+      "p1": 0.0,
+      "p2": 0.201619,
+      "p3": 0.083336,
+      "p4": 0.474716,
+      "p5": 0.240329,
+      "set_expected_rating": 3.7538,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.734472,
+      "cos_sim_2": 0.717567,
+      "cos_sim_3": 0.731069,
+      "cos_sim_4": 0.680307,
+      "cos_sim_5": 0.693809,
+      "min_similarity": 0.680307,
+      "p1": 0.347905,
+      "p2": 0.239324,
+      "p3": 0.32605,
+      "p4": 0.0,
+      "p5": 0.086722,
+      "set_expected_rating": 2.2383,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.576794,
+      "cos_sim_2": 0.589809,
+      "cos_sim_3": 0.571957,
+      "cos_sim_4": 0.616714,
+      "cos_sim_5": 0.603591,
+      "min_similarity": 0.571957,
+      "p1": 0.048821,
+      "p2": 0.180175,
+      "p3": 0.0,
+      "p4": 0.451729,
+      "p5": 0.319275,
+      "set_expected_rating": 3.8125,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.636477,
+      "cos_sim_2": 0.606499,
+      "cos_sim_3": 0.621645,
+      "cos_sim_4": 0.606799,
+      "cos_sim_5": 0.627907,
+      "min_similarity": 0.606499,
+      "p1": 0.448558,
+      "p2": 0.0,
+      "p3": 0.22663,
+      "p4": 0.004489,
+      "p5": 0.320323,
+      "set_expected_rating": 2.748,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.549688,
+      "cos_sim_2": 0.58416,
+      "cos_sim_3": 0.577144,
+      "cos_sim_4": 0.604595,
+      "cos_sim_5": 0.64454,
+      "min_similarity": 0.549688,
+      "p1": 0.0,
+      "p2": 0.162847,
+      "p3": 0.129703,
+      "p4": 0.259377,
+      "p5": 0.448073,
+      "set_expected_rating": 3.9927,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.508173,
+      "cos_sim_2": 0.542075,
+      "cos_sim_3": 0.592646,
+      "cos_sim_4": 0.589318,
+      "cos_sim_5": 0.543228,
+      "min_similarity": 0.508173,
+      "p1": 0.0,
+      "p2": 0.144525,
+      "p3": 0.360112,
+      "p4": 0.345925,
+      "p5": 0.149438,
+      "set_expected_rating": 3.5003,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.746435,
+      "cos_sim_2": 0.721326,
+      "cos_sim_3": 0.686027,
+      "cos_sim_4": 0.789352,
+      "cos_sim_5": 0.806396,
+      "min_similarity": 0.686027,
+      "p1": 0.189128,
+      "p2": 0.110517,
+      "p3": 0.0,
+      "p4": 0.323496,
+      "p5": 0.376858,
+      "set_expected_rating": 3.5884,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.734852,
+      "cos_sim_2": 0.782679,
+      "cos_sim_3": 0.782964,
+      "cos_sim_4": 0.755102,
+      "cos_sim_5": 0.751679,
+      "min_similarity": 0.734852,
+      "p1": 0.0,
+      "p2": 0.359562,
+      "p3": 0.361697,
+      "p4": 0.152236,
+      "p5": 0.126505,
+      "set_expected_rating": 3.0457,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.620199,
+      "cos_sim_2": 0.638346,
+      "cos_sim_3": 0.61235,
+      "cos_sim_4": 0.699673,
+      "cos_sim_5": 0.627018,
+      "min_similarity": 0.61235,
+      "p1": 0.057778,
+      "p2": 0.191379,
+      "p3": 0.0,
+      "p4": 0.64286,
+      "p5": 0.107983,
+      "set_expected_rating": 3.5519,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.546448,
+      "cos_sim_2": 0.561584,
+      "cos_sim_3": 0.621494,
+      "cos_sim_4": 0.576689,
+      "cos_sim_5": 0.616604,
+      "min_similarity": 0.546448,
+      "p1": 0.0,
+      "p2": 0.079423,
+      "p3": 0.393777,
+      "p4": 0.158681,
+      "p5": 0.368119,
+      "set_expected_rating": 3.8155,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.537662,
+      "cos_sim_2": 0.577093,
+      "cos_sim_3": 0.567776,
+      "cos_sim_4": 0.611619,
+      "cos_sim_5": 0.642725,
+      "min_similarity": 0.537662,
+      "p1": 0.0,
+      "p2": 0.158636,
+      "p3": 0.121154,
+      "p4": 0.297536,
+      "p5": 0.422675,
+      "set_expected_rating": 3.9842,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.66677,
+      "cos_sim_2": 0.658575,
+      "cos_sim_3": 0.704992,
+      "cos_sim_4": 0.707295,
+      "cos_sim_5": 0.706103,
+      "min_similarity": 0.658575,
+      "p1": 0.054318,
+      "p2": 0.0,
+      "p3": 0.307687,
+      "p4": 0.322947,
+      "p5": 0.315047,
+      "set_expected_rating": 3.8444,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.736369,
+      "cos_sim_2": 0.735212,
+      "cos_sim_3": 0.674318,
+      "cos_sim_4": 0.759677,
+      "cos_sim_5": 0.761656,
+      "min_similarity": 0.674318,
+      "p1": 0.209885,
+      "p2": 0.205972,
+      "p3": 0.0,
+      "p4": 0.288725,
+      "p5": 0.295418,
+      "set_expected_rating": 3.2538,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.491419,
+      "cos_sim_2": 0.529922,
+      "cos_sim_3": 0.568289,
+      "cos_sim_4": 0.561315,
+      "cos_sim_5": 0.52964,
+      "min_similarity": 0.491419,
+      "p1": 0.0,
+      "p2": 0.172283,
+      "p3": 0.343951,
+      "p4": 0.312746,
+      "p5": 0.171019,
+      "set_expected_rating": 3.4825,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.555257,
+      "cos_sim_2": 0.577892,
+      "cos_sim_3": 0.572432,
+      "cos_sim_4": 0.575526,
+      "cos_sim_5": 0.55398,
+      "min_similarity": 0.55398,
+      "p1": 0.019597,
+      "p2": 0.366824,
+      "p3": 0.283058,
+      "p4": 0.330521,
+      "p5": 0.0,
+      "set_expected_rating": 2.9245,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.671416,
+      "cos_sim_2": 0.606358,
+      "cos_sim_3": 0.622872,
+      "cos_sim_4": 0.604215,
+      "cos_sim_5": 0.640448,
+      "min_similarity": 0.604215,
+      "p1": 0.540921,
+      "p2": 0.017253,
+      "p3": 0.150175,
+      "p4": 0.0,
+      "p5": 0.291651,
+      "set_expected_rating": 2.4842,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.526988,
+      "cos_sim_2": 0.550258,
+      "cos_sim_3": 0.524552,
+      "cos_sim_4": 0.547531,
+      "cos_sim_5": 0.546136,
+      "min_similarity": 0.524552,
+      "p1": 0.033503,
+      "p2": 0.353569,
+      "p3": 0.0,
+      "p4": 0.316057,
+      "p5": 0.29687,
+      "set_expected_rating": 3.4892,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.481692,
+      "cos_sim_2": 0.484564,
+      "cos_sim_3": 0.540803,
+      "cos_sim_4": 0.489934,
+      "cos_sim_5": 0.492771,
+      "min_similarity": 0.481692,
+      "p1": 0.0,
+      "p2": 0.035319,
+      "p3": 0.727043,
+      "p4": 0.101375,
+      "p5": 0.136263,
+      "set_expected_rating": 3.3386,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.680256,
+      "cos_sim_2": 0.668225,
+      "cos_sim_3": 0.622514,
+      "cos_sim_4": 0.69148,
+      "cos_sim_5": 0.668825,
+      "min_similarity": 0.622514,
+      "p1": 0.263988,
+      "p2": 0.208985,
+      "p3": 0.0,
+      "p4": 0.315301,
+      "p5": 0.211726,
+      "set_expected_rating": 3.0018,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Zenith Pulse Pro 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.648013,
+      "cos_sim_2": 0.655701,
+      "cos_sim_3": 0.713707,
+      "cos_sim_4": 0.616063,
+      "cos_sim_5": 0.648604,
+      "min_similarity": 0.616063,
+      "p1": 0.158345,
+      "p2": 0.196449,
+      "p3": 0.48393,
+      "p4": 0.0,
+      "p5": 0.161277,
+      "set_expected_rating": 2.8094,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

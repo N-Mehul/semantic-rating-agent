@@ -1,0 +1,19 @@
+[
+  {
+    "persona_id": "P4_budget_or_undisclosed_price",
+    "product_name": "Nova AI 1",
+    "response_text": "This phone offers great value for money with essential features that enhance daily study and leisure activities. It's perfect for someone like me who needs a reliable device without spending too much.",
+    "construct_responses": {
+      "PE": "The AI-powered features like the personal assistant and smart notifications are handy for daily tasks and study. The performance speed is good for browsing and casual gaming, which suits my needs perfectly.",
+      "EE": "The interface is simple and user-friendly, making it easy to navigate. The optional contextual AI suggestions can be helpful but aren't necessary for basic usage.",
+      "HM": "The display is clear and the battery life is decent, making it great for watching videos and gaming when I want to unwind. The AI camera enhancement is a nice touch for taking better pictures.",
+      "SI": "My college friends would likely be impressed by the AI features and smooth performance, which could boost my social standing a bit.",
+      "PP": "The on-device AI processing gives me peace of mind about my personal data privacy.",
+      "BI": "I am certain I will continue using this smartphone as my primary phone. The AI features and performance are exactly what I need, and it fits well within my budget.",
+      "OVERALL": "This phone offers great value for money with essential features that enhance daily study and leisure activities. It's perfect for someone like me who needs a reliable device without spending too much."
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-10-31T15:04:08.142148+00:00"
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "label": "Phase 4 improved generation (24 responses). TEXT ONLY - SSR not computed.",
+  "created_utc": "2026-11-04T15:58:19.872231+00:00",
+  "model": "qwen2.5:7b-instruct",
+  "temperature": 0.7,
+  "prompt_version": "product_eval_v3_2026-11-04",
+  "prompt_module_sha256": "23f4ad847fc81c2b7f26252bbf2dd8a28bf53a7a139520330cdfd69ae666ff7b",
+  "design": "4 personas x 6 constructs, one construct per call, persona order then construct order",
+  "personas": [
+    "P1_premium_tier_owner",
+    "P2_midrange_heavy_user",
+    "P3_midrange_moderate_user",
+    "P4_budget_or_undisclosed_price"
+  ],
+  "constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "respondent_specs": {
+    "P1_premium_tier_owner": "P1_S10",
+    "P2_midrange_heavy_user": "P2_S08",
+    "P3_midrange_moderate_user": "P3_S04",
+    "P4_budget_or_undisclosed_price": "P4_S09"
+  },
+  "respondent_specs_source": "data\\persona_generator\\respondent_specs_extended_v2.jsonl",
+  "excluded_generation_inputs": [
+    "Q21 rebuy rating",
+    "Q26 free text",
+    "SSR anchors",
+    "answer-scale labels"
+  ],
+  "rating_leak_policy": "max one corrective regeneration; unresolved leaks flagged, not retried further",
+  "ssr_settings_for_later_scoring_unchanged": {
+    "method": "Improved SSR",
+    "k": 3,
+    "T": 0.75,
+    "embedding_model": "nomic-embed-text",
+    "anchors": "docs/survey_instrument/smartphone_construct_anchor_statements.csv"
+  },
+  "summary": {
+    "responses": 24,
+    "with_text": 24,
+    "status_counts": {
+      "ok": 24
+    },
+    "corrective_retries": 0,
+    "llm_calls": 24,
+    "total_generation_s": 929.2,
+    "mean_generation_s_per_response": 38.7,
+    "wall_clock_this_run_s": 929.3,
+    "responses_with_any_issue": 17,
+    "issue_counts": {
+      "same_opening_as_other_persona": 5,
+      "repeated_phrasing_across_personas": 16,
+      "possible_contamination:BI": 1,
+      "not_about_product": 1
+    }
+  },
+  "files": [
+    "generation_records.jsonl",
+    "persona_responses.json",
+    "quality_flags.csv",
+    "product_concept.json",
+    "generation_manifest.json"
+  ]
+}

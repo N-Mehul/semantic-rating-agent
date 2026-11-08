@@ -1,0 +1,99 @@
+{
+  "name": "iphone 17",
+  "category": "Smartphone",
+  "description": "Apple iPhone 17 is a premium smartphone with a 6.3-inch OLED display, A19 processor, 48MP rear camera and 18MP front camera. It runs on iOS and supports 5G connectivity. It offers smooth performance, good photography, gaming, video streaming and everyday use. It has Face ID, USB-C charging and water and dust resistance.\nSpecifications: 6.3-inch OLED Display\nA19 Processor\n48MP Rear Camera\n18MP Front Camera\niOS Operating System\n5G Connectivity\nFace ID\nUSB-C Charging\nWater and Dust Resistance",
+  "price_inr": 45000.0,
+  "target_group": "Technology consumers",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "iOS",
+  "features": [
+    {
+      "name": "A 6.3-Inch Oled Display",
+      "explanation": "a 6.3-inch OLED display, A19 processor, 48MP rear camera",
+      "category": null
+    },
+    {
+      "name": "18Mp Front Camera",
+      "explanation": "18MP front camera",
+      "category": null
+    },
+    {
+      "name": "It Runs On Ios",
+      "explanation": "It runs on iOS",
+      "category": null
+    },
+    {
+      "name": "Supports 5G Connectivity",
+      "explanation": "supports 5G connectivity",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "ssr_method": "improved",
+  "ssr_method_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Smartphone",
+    "product_noun": "smartphone",
+    "usage_role": "primary phone",
+    "brand_or_ecosystem": "iOS",
+    "features_count": 4,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-06T02:44:38.678441+00:00",
+  "pipeline_fingerprint": "af731df3da6e",
+  "product_context": {
+    "name": "iphone 17",
+    "category": "Smartphone",
+    "noun": "smartphone",
+    "usage_role": "primary phone",
+    "ecosystem": "iOS",
+    "price_inr": 45000.0,
+    "description": "Apple iPhone 17 is a premium smartphone with a 6.3-inch OLED display, A19 processor, 48MP rear camera and 18MP front camera. It runs on iOS and supports 5G connectivity. It offers smooth performance, good photography, gaming, video streaming and everyday use. It has Face ID, USB-C charging and water and dust resistance.\nSpecifications: 6.3-inch OLED Display\nA19 Processor\n48MP Rear Camera\n18MP Front Camera\niOS Operating System\n5G Connectivity\nFace ID\nUSB-C Charging\nWater and Dust Resistance"
+  },
+  "response_validation_summary": {
+    "P1_premium_tier_owner": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "flagged",
+      "PP": "corrected",
+      "BI": "flagged"
+    },
+    "P2_midrange_heavy_user": {
+      "PE": "passed",
+      "EE": "corrected",
+      "HM": "passed",
+      "SI": "flagged",
+      "PP": "corrected",
+      "BI": "corrected"
+    },
+    "P3_midrange_moderate_user": {
+      "PE": "corrected",
+      "EE": "corrected",
+      "HM": "corrected",
+      "SI": "corrected",
+      "PP": "corrected",
+      "BI": "corrected"
+    },
+    "P4_budget_or_undisclosed_price": {
+      "PE": "corrected",
+      "EE": "passed",
+      "HM": "corrected",
+      "SI": "passed",
+      "PP": "flagged",
+      "BI": "flagged"
+    }
+  }
+}

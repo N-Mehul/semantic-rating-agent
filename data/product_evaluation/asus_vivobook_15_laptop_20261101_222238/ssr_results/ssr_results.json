@@ -1,0 +1,2027 @@
+{
+  "evaluation_id": "asus_vivobook_15_laptop_20261101_225758",
+  "product_name": "ASUS Vivobook 15 Laptop",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-11-01T17:36:45.494809+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.8338,
+  "overall_adoption_average": 3.8338,
+  "primary_adoption_average": 3.8338,
+  "construct_averages": {
+    "PE": 3.3407,
+    "EE": 3.8866,
+    "HM": 3.6589,
+    "SI": 3.9376,
+    "PP": 3.2786,
+    "BI": 3.8338
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [
+    "PV"
+  ],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "primary_adoption_rating": 3.7697,
+      "primary_adoption_pmf": [
+        0.0,
+        0.172856,
+        0.146351,
+        0.419024,
+        0.26177
+      ],
+      "construct_scores": {
+        "PE": 3.6606,
+        "EE": 4.1313,
+        "HM": 4.1763,
+        "SI": 3.8908,
+        "PP": 3.6653,
+        "BI": 3.7697
+      },
+      "construct_responses": {
+        "PE": "The high-speed multi-core processor and crisp display make this laptop very effective for multitasking and handling demanding workloads. The comprehensive connectivity options ensure I can connect to multiple devices without any hassle.",
+        "EE": "Setting up and operating the laptop feels straightforward with a user-friendly interface. Navigation is intuitive, making it easy to switch between applications and settings.",
+        "HM": "Using the laptop for daily tasks and media viewing is a pleasant experience due to its high-resolution display and accurate color reproduction. The versatile connectivity also adds to its enjoyment by allowing me to easily connect to external displays and accessories.",
+        "SI": "Peers and colleagues who use laptops in this category would likely think highly of this model due to its solid build quality and reliable performance. It's a testament to the brand's commitment to quality.",
+        "PP": "The robust build quality and comprehensive ports suggest that this laptop will be durable and reliable over time. The high-resolution display and fast processor make it a reliable choice for long-term use.",
+        "BI": "I am certain I will continue using this laptop as my primary computer as it offers the necessary performance and features at a reasonable price of ₹55,000. Its versatile connectivity and high-resolution display make it a valuable tool for both work and leisure.",
+        "OVERALL": "The laptop strikes a good balance between performance and build quality, making it a solid choice for daily use. Its high-resolution display and fast processor ensure a smooth and enjoyable experience."
+      },
+      "response_text": "The laptop strikes a good balance between performance and build quality, making it a solid choice for daily use. Its high-resolution display and fast processor ensure a smooth and enjoyable experience.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The high-speed multi-core processor and crisp display make this laptop very effective for multitasking and handling demanding workloads. The comprehensive connectivity options ensure I can connect to multiple devices without any hassle.",
+          "cosine_similarities": [
+            0.542869,
+            0.550062,
+            0.516151,
+            0.625968,
+            0.583432
+          ],
+          "min_similarity": 0.516151,
+          "pmf_probabilities": [
+            0.112389,
+            0.142646,
+            0.0,
+            0.461947,
+            0.283018
+          ],
+          "expected_rating": 3.6606,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and operating the laptop feels straightforward with a user-friendly interface. Navigation is intuitive, making it easy to switch between applications and settings.",
+          "cosine_similarities": [
+            0.554431,
+            0.560145,
+            0.61555,
+            0.633669,
+            0.660021
+          ],
+          "min_similarity": 0.554431,
+          "pmf_probabilities": [
+            0.0,
+            0.022706,
+            0.242863,
+            0.31486,
+            0.419571
+          ],
+          "expected_rating": 4.1313,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the laptop for daily tasks and media viewing is a pleasant experience due to its high-resolution display and accurate color reproduction. The versatile connectivity also adds to its enjoyment by allowing me to easily connect to external displays and accessories.",
+          "cosine_similarities": [
+            0.572195,
+            0.596296,
+            0.60357,
+            0.663766,
+            0.70029
+          ],
+          "min_similarity": 0.572195,
+          "pmf_probabilities": [
+            0.0,
+            0.087593,
+            0.114031,
+            0.332815,
+            0.465562
+          ],
+          "expected_rating": 4.1763,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers and colleagues who use laptops in this category would likely think highly of this model due to its solid build quality and reliable performance. It's a testament to the brand's commitment to quality.",
+          "cosine_similarities": [
+            0.48218,
+            0.509592,
+            0.530009,
+            0.590906,
+            0.556611
+          ],
+          "min_similarity": 0.48218,
+          "pmf_probabilities": [
+            0.0,
+            0.106085,
+            0.185099,
+            0.420768,
+            0.288048
+          ],
+          "expected_rating": 3.8908,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The robust build quality and comprehensive ports suggest that this laptop will be durable and reliable over time. The high-resolution display and fast processor make it a reliable choice for long-term use.",
+          "cosine_similarities": [
+            0.435378,
+            0.417258,
+            0.392737,
+            0.476753,
+            0.48741
+          ],
+          "min_similarity": 0.392737,
+          "pmf_probabilities": [
+            0.173441,
+            0.099738,
+            0.0,
+            0.341737,
+            0.385083
+          ],
+          "expected_rating": 3.6653,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this laptop as my primary computer as it offers the necessary performance and features at a reasonable price of ₹55,000. Its versatile connectivity and high-resolution display make it a valuable tool for both work and leisure.",
+          "cosine_similarities": [
+            0.530158,
+            0.563932,
+            0.558753,
+            0.61203,
+            0.581304
+          ],
+          "min_similarity": 0.530158,
+          "pmf_probabilities": [
+            0.0,
+            0.172856,
+            0.146351,
+            0.419024,
+            0.26177
+          ],
+          "expected_rating": 3.7697,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "primary_adoption_rating": 3.927,
+      "primary_adoption_pmf": [
+        0.0,
+        0.173114,
+        0.058682,
+        0.436306,
+        0.331899
+      ],
+      "construct_scores": {
+        "PE": 3.3111,
+        "EE": 3.3276,
+        "HM": 4.1246,
+        "SI": 4.0187,
+        "PP": 2.9925,
+        "BI": 3.927
+      },
+      "construct_responses": {
+        "PE": "The laptop should provide good performance for multitasking and heavy daily use due to its high-speed processor and high-resolution display. The battery life should be decent for continuous work throughout the day.",
+        "EE": "Setting up and navigating the laptop should be straightforward, though I might need to familiarize myself with the interface and controls to make the most of it.",
+        "HM": "Using the laptop for daily tasks and media viewing should be a pleasant experience with its high-resolution display, although I might prefer a larger screen for extended use.",
+        "SI": "My colleagues and peers who use similar laptops would likely appreciate its processing speed and multitasking capabilities, making it a reliable choice for daily work.",
+        "PP": "The build quality seems sturdy, and the laptop should be reliable over time. However, without explicit security features, I might be a bit cautious about data protection.",
+        "BI": "I am certain I will continue using this laptop as my primary computer given its price and specifications. The high-speed processor and battery life will support my intensive daily tasks without slowing down.",
+        "OVERALL": "The laptop seems well-suited for heavy daily use, offering good performance and reliability, making it a solid choice within its price range."
+      },
+      "response_text": "The laptop seems well-suited for heavy daily use, offering good performance and reliability, making it a solid choice within its price range.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The laptop should provide good performance for multitasking and heavy daily use due to its high-speed processor and high-resolution display. The battery life should be decent for continuous work throughout the day.",
+          "cosine_similarities": [
+            0.582995,
+            0.590715,
+            0.556539,
+            0.650663,
+            0.580881
+          ],
+          "min_similarity": 0.556539,
+          "pmf_probabilities": [
+            0.147717,
+            0.190823,
+            0.0,
+            0.525542,
+            0.135918
+          ],
+          "expected_rating": 3.3111,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and navigating the laptop should be straightforward, though I might need to familiarize myself with the interface and controls to make the most of it.",
+          "cosine_similarities": [
+            0.602475,
+            0.543955,
+            0.580287,
+            0.590244,
+            0.613909
+          ],
+          "min_similarity": 0.543955,
+          "pmf_probabilities": [
+            0.277222,
+            0.0,
+            0.172112,
+            0.219278,
+            0.331388
+          ],
+          "expected_rating": 3.3276,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the laptop for daily tasks and media viewing should be a pleasant experience with its high-resolution display, although I might prefer a larger screen for extended use.",
+          "cosine_similarities": [
+            0.550554,
+            0.551535,
+            0.548449,
+            0.612454,
+            0.572569
+          ],
+          "min_similarity": 0.548449,
+          "pmf_probabilities": [
+            0.022563,
+            0.033076,
+            0.0,
+            0.68589,
+            0.258471
+          ],
+          "expected_rating": 4.1246,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My colleagues and peers who use similar laptops would likely appreciate its processing speed and multitasking capabilities, making it a reliable choice for daily work.",
+          "cosine_similarities": [
+            0.507005,
+            0.499739,
+            0.553701,
+            0.595274,
+            0.579932
+          ],
+          "min_similarity": 0.499739,
+          "pmf_probabilities": [
+            0.030665,
+            0.0,
+            0.227731,
+            0.403175,
+            0.338429
+          ],
+          "expected_rating": 4.0187,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality seems sturdy, and the laptop should be reliable over time. However, without explicit security features, I might be a bit cautious about data protection.",
+          "cosine_similarities": [
+            0.622877,
+            0.595248,
+            0.589274,
+            0.615775,
+            0.612281
+          ],
+          "min_similarity": 0.589274,
+          "pmf_probabilities": [
+            0.377201,
+            0.067057,
+            0.0,
+            0.297478,
+            0.258265
+          ],
+          "expected_rating": 2.9925,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this laptop as my primary computer given its price and specifications. The high-speed processor and battery life will support my intensive daily tasks without slowing down.",
+          "cosine_similarities": [
+            0.548831,
+            0.588473,
+            0.562269,
+            0.648742,
+            0.624833
+          ],
+          "min_similarity": 0.548831,
+          "pmf_probabilities": [
+            0.0,
+            0.173114,
+            0.058682,
+            0.436306,
+            0.331899
+          ],
+          "expected_rating": 3.927,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "primary_adoption_rating": 3.7936,
+      "primary_adoption_pmf": [
+        0.0,
+        0.1739,
+        0.148288,
+        0.388172,
+        0.28964
+      ],
+      "construct_scores": {
+        "PE": 3.1098,
+        "EE": 3.9166,
+        "HM": 2.6693,
+        "SI": 3.8065,
+        "PP": 2.8508,
+        "BI": 3.7936
+      },
+      "construct_responses": {
+        "PE": "This laptop provides a crisp and accurate visual workspace with its high-resolution display, making it suitable for everyday tasks like document writing and presentations. It also offers comprehensive connectivity options, which ensures that I can easily connect to external displays and accessories for work and entertainment.",
+        "EE": "The setup and navigation seem straightforward with its versatile connectivity options, making it easy to connect to various devices. The interface is user-friendly and intuitive, ensuring that I can operate it without much hassle.",
+        "HM": "While the display is pleasant to look at, the overall experience isn't as exciting as more premium models. It's suitable for basic media viewing and casual browsing, but the lack of any special features makes it feel somewhat plain.",
+        "SI": "My friends and colleagues who use laptops for work and general tasks would likely appreciate this laptop's balance of features and reliability. It's a practical choice that doesn't come with the bells and whistles of premium models.",
+        "PP": "The build seems sturdy with its comprehensive ports, which should provide good protection against daily wear and tear. However, I would expect better durability from a laptop in this price range, given the competition in the market.",
+        "BI": "I am certain I will continue using this laptop as my primary computer, given its well-rounded features and sensible value for money. It provides a good balance between performance and cost, making it a reliable choice for everyday tasks.",
+        "OVERALL": "This laptop offers a solid and dependable experience for everyday use, with a good mix of features and a reasonable price. It's a practical choice that balances performance with affordability."
+      },
+      "response_text": "This laptop offers a solid and dependable experience for everyday use, with a good mix of features and a reasonable price. It's a practical choice that balances performance with affordability.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This laptop provides a crisp and accurate visual workspace with its high-resolution display, making it suitable for everyday tasks like document writing and presentations. It also offers comprehensive connectivity options, which ensures that I can easily connect to external displays and accessories for work and entertainment.",
+          "cosine_similarities": [
+            0.595024,
+            0.602044,
+            0.550389,
+            0.667912,
+            0.575185
+          ],
+          "min_similarity": 0.550389,
+          "pmf_probabilities": [
+            0.187063,
+            0.216485,
+            0.0,
+            0.492533,
+            0.103919
+          ],
+          "expected_rating": 3.1098,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The setup and navigation seem straightforward with its versatile connectivity options, making it easy to connect to various devices. The interface is user-friendly and intuitive, ensuring that I can operate it without much hassle.",
+          "cosine_similarities": [
+            0.553095,
+            0.588665,
+            0.633723,
+            0.649921,
+            0.676769
+          ],
+          "min_similarity": 0.553095,
+          "pmf_probabilities": [
+            0.0,
+            0.105643,
+            0.239466,
+            0.287575,
+            0.367315
+          ],
+          "expected_rating": 3.9166,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "While the display is pleasant to look at, the overall experience isn't as exciting as more premium models. It's suitable for basic media viewing and casual browsing, but the lack of any special features makes it feel somewhat plain.",
+          "cosine_similarities": [
+            0.535941,
+            0.588264,
+            0.566567,
+            0.56414,
+            0.517274
+          ],
+          "min_similarity": 0.517274,
+          "pmf_probabilities": [
+            0.100461,
+            0.382044,
+            0.265277,
+            0.252218,
+            0.0
+          ],
+          "expected_rating": 2.6693,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and colleagues who use laptops for work and general tasks would likely appreciate this laptop's balance of features and reliability. It's a practical choice that doesn't come with the bells and whistles of premium models.",
+          "cosine_similarities": [
+            0.54216,
+            0.556384,
+            0.607494,
+            0.62224,
+            0.594852
+          ],
+          "min_similarity": 0.54216,
+          "pmf_probabilities": [
+            0.0,
+            0.066992,
+            0.307698,
+            0.37715,
+            0.24816
+          ],
+          "expected_rating": 3.8065,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build seems sturdy with its comprehensive ports, which should provide good protection against daily wear and tear. However, I would expect better durability from a laptop in this price range, given the competition in the market.",
+          "cosine_similarities": [
+            0.434637,
+            0.478333,
+            0.47281,
+            0.465605,
+            0.431707
+          ],
+          "min_similarity": 0.431707,
+          "pmf_probabilities": [
+            0.02352,
+            0.374335,
+            0.329997,
+            0.272148,
+            0.0
+          ],
+          "expected_rating": 2.8508,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this laptop as my primary computer, given its well-rounded features and sensible value for money. It provides a good balance between performance and cost, making it a reliable choice for everyday tasks.",
+          "cosine_similarities": [
+            0.505563,
+            0.554929,
+            0.547658,
+            0.615756,
+            0.587785
+          ],
+          "min_similarity": 0.505563,
+          "pmf_probabilities": [
+            0.0,
+            0.1739,
+            0.148288,
+            0.388172,
+            0.28964
+          ],
+          "expected_rating": 3.7936,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "primary_adoption_rating": 3.845,
+      "primary_adoption_pmf": [
+        0.0,
+        0.136791,
+        0.177457,
+        0.389726,
+        0.296027
+      ],
+      "construct_scores": {
+        "PE": 3.2811,
+        "EE": 4.171,
+        "HM": 3.6652,
+        "SI": 4.0345,
+        "PP": 3.6059,
+        "BI": 3.845
+      },
+      "construct_responses": {
+        "PE": "The laptop's processor and high-resolution display make it effective for daily tasks like word processing and light design work. The comprehensive ports are handy for connecting various devices, ensuring a versatile workspace.",
+        "EE": "Setting up the laptop is straightforward with its user-friendly interface, making navigation and operation simple and intuitive.",
+        "HM": "Using the laptop for daily tasks is enjoyable due to its crisp display and practical connectivity options, though it doesn't offer any specific multimedia features that enhance the user experience.",
+        "SI": "My colleagues might appreciate the laptop's reliability and the high-resolution display, making it a good choice for presentations and collaborative work.",
+        "PP": "The system is built to last with multiple ports and a durable build, offering good protection for everyday use. However, its reliability might not be as evident without extensive use.",
+        "BI": "I am certain I will continue using this laptop as my primary computer, given its practical features and everyday value. The price feels fair for the hardware it offers, making it a reliable choice for daily tasks.",
+        "OVERALL": "The laptop provides a balanced set of features for daily use, making it a practical and enjoyable choice without breaking the bank. It ticks all the right boxes for essential tasks."
+      },
+      "response_text": "The laptop provides a balanced set of features for daily use, making it a practical and enjoyable choice without breaking the bank. It ticks all the right boxes for essential tasks.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The laptop's processor and high-resolution display make it effective for daily tasks like word processing and light design work. The comprehensive ports are handy for connecting various devices, ensuring a versatile workspace.",
+          "cosine_similarities": [
+            0.609652,
+            0.617163,
+            0.594057,
+            0.670993,
+            0.599798
+          ],
+          "min_similarity": 0.594057,
+          "pmf_probabilities": [
+            0.128481,
+            0.190366,
+            0.0,
+            0.633857,
+            0.047296
+          ],
+          "expected_rating": 3.2811,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up the laptop is straightforward with its user-friendly interface, making navigation and operation simple and intuitive.",
+          "cosine_similarities": [
+            0.553899,
+            0.548552,
+            0.600416,
+            0.623844,
+            0.657806
+          ],
+          "min_similarity": 0.548552,
+          "pmf_probabilities": [
+            0.022116,
+            0.0,
+            0.21453,
+            0.311436,
+            0.451918
+          ],
+          "expected_rating": 4.171,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the laptop for daily tasks is enjoyable due to its crisp display and practical connectivity options, though it doesn't offer any specific multimedia features that enhance the user experience.",
+          "cosine_similarities": [
+            0.600869,
+            0.626197,
+            0.629406,
+            0.648241,
+            0.634808
+          ],
+          "min_similarity": 0.600869,
+          "pmf_probabilities": [
+            0.0,
+            0.18737,
+            0.21111,
+            0.350446,
+            0.251074
+          ],
+          "expected_rating": 3.6652,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My colleagues might appreciate the laptop's reliability and the high-resolution display, making it a good choice for presentations and collaborative work.",
+          "cosine_similarities": [
+            0.509036,
+            0.513712,
+            0.578751,
+            0.605201,
+            0.597017
+          ],
+          "min_similarity": 0.509036,
+          "pmf_probabilities": [
+            0.0,
+            0.018084,
+            0.269653,
+            0.371958,
+            0.340304
+          ],
+          "expected_rating": 4.0345,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The system is built to last with multiple ports and a durable build, offering good protection for everyday use. However, its reliability might not be as evident without extensive use.",
+          "cosine_similarities": [
+            0.525937,
+            0.552716,
+            0.522333,
+            0.552397,
+            0.555568
+          ],
+          "min_similarity": 0.522333,
+          "pmf_probabilities": [
+            0.037045,
+            0.312308,
+            0.0,
+            0.309026,
+            0.341621
+          ],
+          "expected_rating": 3.6059,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this laptop as my primary computer, given its practical features and everyday value. The price feels fair for the hardware it offers, making it a reliable choice for daily tasks.",
+          "cosine_similarities": [
+            0.512813,
+            0.551711,
+            0.563275,
+            0.623635,
+            0.596991
+          ],
+          "min_similarity": 0.512813,
+          "pmf_probabilities": [
+            0.0,
+            0.136791,
+            0.177457,
+            0.389726,
+            0.296027
+          ],
+          "expected_rating": 3.845,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.542869,
+        0.550062,
+        0.516151,
+        0.625968,
+        0.583432
+      ],
+      "pmf_probabilities": [
+        0.112389,
+        0.142646,
+        0.0,
+        0.461947,
+        0.283018
+      ],
+      "expected_rating": 3.6606,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.554431,
+        0.560145,
+        0.61555,
+        0.633669,
+        0.660021
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.022706,
+        0.242863,
+        0.31486,
+        0.419571
+      ],
+      "expected_rating": 4.1313,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.572195,
+        0.596296,
+        0.60357,
+        0.663766,
+        0.70029
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.087593,
+        0.114031,
+        0.332815,
+        0.465562
+      ],
+      "expected_rating": 4.1763,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.48218,
+        0.509592,
+        0.530009,
+        0.590906,
+        0.556611
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.106085,
+        0.185099,
+        0.420768,
+        0.288048
+      ],
+      "expected_rating": 3.8908,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.435378,
+        0.417258,
+        0.392737,
+        0.476753,
+        0.48741
+      ],
+      "pmf_probabilities": [
+        0.173441,
+        0.099738,
+        0.0,
+        0.341737,
+        0.385083
+      ],
+      "expected_rating": 3.6653,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.530158,
+        0.563932,
+        0.558753,
+        0.61203,
+        0.581304
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.172856,
+        0.146351,
+        0.419024,
+        0.26177
+      ],
+      "expected_rating": 3.7697,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.582995,
+        0.590715,
+        0.556539,
+        0.650663,
+        0.580881
+      ],
+      "pmf_probabilities": [
+        0.147717,
+        0.190823,
+        0.0,
+        0.525542,
+        0.135918
+      ],
+      "expected_rating": 3.3111,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.602475,
+        0.543955,
+        0.580287,
+        0.590244,
+        0.613909
+      ],
+      "pmf_probabilities": [
+        0.277222,
+        0.0,
+        0.172112,
+        0.219278,
+        0.331388
+      ],
+      "expected_rating": 3.3276,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.550554,
+        0.551535,
+        0.548449,
+        0.612454,
+        0.572569
+      ],
+      "pmf_probabilities": [
+        0.022563,
+        0.033076,
+        0.0,
+        0.68589,
+        0.258471
+      ],
+      "expected_rating": 4.1246,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.507005,
+        0.499739,
+        0.553701,
+        0.595274,
+        0.579932
+      ],
+      "pmf_probabilities": [
+        0.030665,
+        0.0,
+        0.227731,
+        0.403175,
+        0.338429
+      ],
+      "expected_rating": 4.0187,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.622877,
+        0.595248,
+        0.589274,
+        0.615775,
+        0.612281
+      ],
+      "pmf_probabilities": [
+        0.377201,
+        0.067057,
+        0.0,
+        0.297478,
+        0.258265
+      ],
+      "expected_rating": 2.9925,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.548831,
+        0.588473,
+        0.562269,
+        0.648742,
+        0.624833
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.173114,
+        0.058682,
+        0.436306,
+        0.331899
+      ],
+      "expected_rating": 3.927,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.595024,
+        0.602044,
+        0.550389,
+        0.667912,
+        0.575185
+      ],
+      "pmf_probabilities": [
+        0.187063,
+        0.216485,
+        0.0,
+        0.492533,
+        0.103919
+      ],
+      "expected_rating": 3.1098,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.553095,
+        0.588665,
+        0.633723,
+        0.649921,
+        0.676769
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.105643,
+        0.239466,
+        0.287575,
+        0.367315
+      ],
+      "expected_rating": 3.9166,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.535941,
+        0.588264,
+        0.566567,
+        0.56414,
+        0.517274
+      ],
+      "pmf_probabilities": [
+        0.100461,
+        0.382044,
+        0.265277,
+        0.252218,
+        0.0
+      ],
+      "expected_rating": 2.6693,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.54216,
+        0.556384,
+        0.607494,
+        0.62224,
+        0.594852
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.066992,
+        0.307698,
+        0.37715,
+        0.24816
+      ],
+      "expected_rating": 3.8065,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.434637,
+        0.478333,
+        0.47281,
+        0.465605,
+        0.431707
+      ],
+      "pmf_probabilities": [
+        0.02352,
+        0.374335,
+        0.329997,
+        0.272148,
+        0.0
+      ],
+      "expected_rating": 2.8508,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.505563,
+        0.554929,
+        0.547658,
+        0.615756,
+        0.587785
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.1739,
+        0.148288,
+        0.388172,
+        0.28964
+      ],
+      "expected_rating": 3.7936,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.609652,
+        0.617163,
+        0.594057,
+        0.670993,
+        0.599798
+      ],
+      "pmf_probabilities": [
+        0.128481,
+        0.190366,
+        0.0,
+        0.633857,
+        0.047296
+      ],
+      "expected_rating": 3.2811,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.553899,
+        0.548552,
+        0.600416,
+        0.623844,
+        0.657806
+      ],
+      "pmf_probabilities": [
+        0.022116,
+        0.0,
+        0.21453,
+        0.311436,
+        0.451918
+      ],
+      "expected_rating": 4.171,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.600869,
+        0.626197,
+        0.629406,
+        0.648241,
+        0.634808
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.18737,
+        0.21111,
+        0.350446,
+        0.251074
+      ],
+      "expected_rating": 3.6652,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.509036,
+        0.513712,
+        0.578751,
+        0.605201,
+        0.597017
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.018084,
+        0.269653,
+        0.371958,
+        0.340304
+      ],
+      "expected_rating": 4.0345,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.525937,
+        0.552716,
+        0.522333,
+        0.552397,
+        0.555568
+      ],
+      "pmf_probabilities": [
+        0.037045,
+        0.312308,
+        0.0,
+        0.309026,
+        0.341621
+      ],
+      "expected_rating": 3.6059,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.512813,
+        0.551711,
+        0.563275,
+        0.623635,
+        0.596991
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.136791,
+        0.177457,
+        0.389726,
+        0.296027
+      ],
+      "expected_rating": 3.845,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.542869,
+      "cos_sim_2": 0.550062,
+      "cos_sim_3": 0.516151,
+      "cos_sim_4": 0.625968,
+      "cos_sim_5": 0.583432,
+      "min_similarity": 0.516151,
+      "p1": 0.112389,
+      "p2": 0.142646,
+      "p3": 0.0,
+      "p4": 0.461947,
+      "p5": 0.283018,
+      "set_expected_rating": 3.6606,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.554431,
+      "cos_sim_2": 0.560145,
+      "cos_sim_3": 0.61555,
+      "cos_sim_4": 0.633669,
+      "cos_sim_5": 0.660021,
+      "min_similarity": 0.554431,
+      "p1": 0.0,
+      "p2": 0.022706,
+      "p3": 0.242863,
+      "p4": 0.31486,
+      "p5": 0.419571,
+      "set_expected_rating": 4.1313,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.572195,
+      "cos_sim_2": 0.596296,
+      "cos_sim_3": 0.60357,
+      "cos_sim_4": 0.663766,
+      "cos_sim_5": 0.70029,
+      "min_similarity": 0.572195,
+      "p1": 0.0,
+      "p2": 0.087593,
+      "p3": 0.114031,
+      "p4": 0.332815,
+      "p5": 0.465562,
+      "set_expected_rating": 4.1763,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.48218,
+      "cos_sim_2": 0.509592,
+      "cos_sim_3": 0.530009,
+      "cos_sim_4": 0.590906,
+      "cos_sim_5": 0.556611,
+      "min_similarity": 0.48218,
+      "p1": 0.0,
+      "p2": 0.106085,
+      "p3": 0.185099,
+      "p4": 0.420768,
+      "p5": 0.288048,
+      "set_expected_rating": 3.8908,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.435378,
+      "cos_sim_2": 0.417258,
+      "cos_sim_3": 0.392737,
+      "cos_sim_4": 0.476753,
+      "cos_sim_5": 0.48741,
+      "min_similarity": 0.392737,
+      "p1": 0.173441,
+      "p2": 0.099738,
+      "p3": 0.0,
+      "p4": 0.341737,
+      "p5": 0.385083,
+      "set_expected_rating": 3.6653,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.530158,
+      "cos_sim_2": 0.563932,
+      "cos_sim_3": 0.558753,
+      "cos_sim_4": 0.61203,
+      "cos_sim_5": 0.581304,
+      "min_similarity": 0.530158,
+      "p1": 0.0,
+      "p2": 0.172856,
+      "p3": 0.146351,
+      "p4": 0.419024,
+      "p5": 0.26177,
+      "set_expected_rating": 3.7697,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.582995,
+      "cos_sim_2": 0.590715,
+      "cos_sim_3": 0.556539,
+      "cos_sim_4": 0.650663,
+      "cos_sim_5": 0.580881,
+      "min_similarity": 0.556539,
+      "p1": 0.147717,
+      "p2": 0.190823,
+      "p3": 0.0,
+      "p4": 0.525542,
+      "p5": 0.135918,
+      "set_expected_rating": 3.3111,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.602475,
+      "cos_sim_2": 0.543955,
+      "cos_sim_3": 0.580287,
+      "cos_sim_4": 0.590244,
+      "cos_sim_5": 0.613909,
+      "min_similarity": 0.543955,
+      "p1": 0.277222,
+      "p2": 0.0,
+      "p3": 0.172112,
+      "p4": 0.219278,
+      "p5": 0.331388,
+      "set_expected_rating": 3.3276,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.550554,
+      "cos_sim_2": 0.551535,
+      "cos_sim_3": 0.548449,
+      "cos_sim_4": 0.612454,
+      "cos_sim_5": 0.572569,
+      "min_similarity": 0.548449,
+      "p1": 0.022563,
+      "p2": 0.033076,
+      "p3": 0.0,
+      "p4": 0.68589,
+      "p5": 0.258471,
+      "set_expected_rating": 4.1246,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.507005,
+      "cos_sim_2": 0.499739,
+      "cos_sim_3": 0.553701,
+      "cos_sim_4": 0.595274,
+      "cos_sim_5": 0.579932,
+      "min_similarity": 0.499739,
+      "p1": 0.030665,
+      "p2": 0.0,
+      "p3": 0.227731,
+      "p4": 0.403175,
+      "p5": 0.338429,
+      "set_expected_rating": 4.0187,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.622877,
+      "cos_sim_2": 0.595248,
+      "cos_sim_3": 0.589274,
+      "cos_sim_4": 0.615775,
+      "cos_sim_5": 0.612281,
+      "min_similarity": 0.589274,
+      "p1": 0.377201,
+      "p2": 0.067057,
+      "p3": 0.0,
+      "p4": 0.297478,
+      "p5": 0.258265,
+      "set_expected_rating": 2.9925,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.548831,
+      "cos_sim_2": 0.588473,
+      "cos_sim_3": 0.562269,
+      "cos_sim_4": 0.648742,
+      "cos_sim_5": 0.624833,
+      "min_similarity": 0.548831,
+      "p1": 0.0,
+      "p2": 0.173114,
+      "p3": 0.058682,
+      "p4": 0.436306,
+      "p5": 0.331899,
+      "set_expected_rating": 3.927,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.595024,
+      "cos_sim_2": 0.602044,
+      "cos_sim_3": 0.550389,
+      "cos_sim_4": 0.667912,
+      "cos_sim_5": 0.575185,
+      "min_similarity": 0.550389,
+      "p1": 0.187063,
+      "p2": 0.216485,
+      "p3": 0.0,
+      "p4": 0.492533,
+      "p5": 0.103919,
+      "set_expected_rating": 3.1098,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.553095,
+      "cos_sim_2": 0.588665,
+      "cos_sim_3": 0.633723,
+      "cos_sim_4": 0.649921,
+      "cos_sim_5": 0.676769,
+      "min_similarity": 0.553095,
+      "p1": 0.0,
+      "p2": 0.105643,
+      "p3": 0.239466,
+      "p4": 0.287575,
+      "p5": 0.367315,
+      "set_expected_rating": 3.9166,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.535941,
+      "cos_sim_2": 0.588264,
+      "cos_sim_3": 0.566567,
+      "cos_sim_4": 0.56414,
+      "cos_sim_5": 0.517274,
+      "min_similarity": 0.517274,
+      "p1": 0.100461,
+      "p2": 0.382044,
+      "p3": 0.265277,
+      "p4": 0.252218,
+      "p5": 0.0,
+      "set_expected_rating": 2.6693,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.54216,
+      "cos_sim_2": 0.556384,
+      "cos_sim_3": 0.607494,
+      "cos_sim_4": 0.62224,
+      "cos_sim_5": 0.594852,
+      "min_similarity": 0.54216,
+      "p1": 0.0,
+      "p2": 0.066992,
+      "p3": 0.307698,
+      "p4": 0.37715,
+      "p5": 0.24816,
+      "set_expected_rating": 3.8065,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.434637,
+      "cos_sim_2": 0.478333,
+      "cos_sim_3": 0.47281,
+      "cos_sim_4": 0.465605,
+      "cos_sim_5": 0.431707,
+      "min_similarity": 0.431707,
+      "p1": 0.02352,
+      "p2": 0.374335,
+      "p3": 0.329997,
+      "p4": 0.272148,
+      "p5": 0.0,
+      "set_expected_rating": 2.8508,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.505563,
+      "cos_sim_2": 0.554929,
+      "cos_sim_3": 0.547658,
+      "cos_sim_4": 0.615756,
+      "cos_sim_5": 0.587785,
+      "min_similarity": 0.505563,
+      "p1": 0.0,
+      "p2": 0.1739,
+      "p3": 0.148288,
+      "p4": 0.388172,
+      "p5": 0.28964,
+      "set_expected_rating": 3.7936,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.609652,
+      "cos_sim_2": 0.617163,
+      "cos_sim_3": 0.594057,
+      "cos_sim_4": 0.670993,
+      "cos_sim_5": 0.599798,
+      "min_similarity": 0.594057,
+      "p1": 0.128481,
+      "p2": 0.190366,
+      "p3": 0.0,
+      "p4": 0.633857,
+      "p5": 0.047296,
+      "set_expected_rating": 3.2811,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.553899,
+      "cos_sim_2": 0.548552,
+      "cos_sim_3": 0.600416,
+      "cos_sim_4": 0.623844,
+      "cos_sim_5": 0.657806,
+      "min_similarity": 0.548552,
+      "p1": 0.022116,
+      "p2": 0.0,
+      "p3": 0.21453,
+      "p4": 0.311436,
+      "p5": 0.451918,
+      "set_expected_rating": 4.171,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.600869,
+      "cos_sim_2": 0.626197,
+      "cos_sim_3": 0.629406,
+      "cos_sim_4": 0.648241,
+      "cos_sim_5": 0.634808,
+      "min_similarity": 0.600869,
+      "p1": 0.0,
+      "p2": 0.18737,
+      "p3": 0.21111,
+      "p4": 0.350446,
+      "p5": 0.251074,
+      "set_expected_rating": 3.6652,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.509036,
+      "cos_sim_2": 0.513712,
+      "cos_sim_3": 0.578751,
+      "cos_sim_4": 0.605201,
+      "cos_sim_5": 0.597017,
+      "min_similarity": 0.509036,
+      "p1": 0.0,
+      "p2": 0.018084,
+      "p3": 0.269653,
+      "p4": 0.371958,
+      "p5": 0.340304,
+      "set_expected_rating": 4.0345,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.525937,
+      "cos_sim_2": 0.552716,
+      "cos_sim_3": 0.522333,
+      "cos_sim_4": 0.552397,
+      "cos_sim_5": 0.555568,
+      "min_similarity": 0.522333,
+      "p1": 0.037045,
+      "p2": 0.312308,
+      "p3": 0.0,
+      "p4": 0.309026,
+      "p5": 0.341621,
+      "set_expected_rating": 3.6059,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "ASUS Vivobook 15 Laptop",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.512813,
+      "cos_sim_2": 0.551711,
+      "cos_sim_3": 0.563275,
+      "cos_sim_4": 0.623635,
+      "cos_sim_5": 0.596991,
+      "min_similarity": 0.512813,
+      "p1": 0.0,
+      "p2": 0.136791,
+      "p3": 0.177457,
+      "p4": 0.389726,
+      "p5": 0.296027,
+      "set_expected_rating": 3.845,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,Samsung Crystal 4K UHD Smart TV (55-inch),PE,Performance Expectancy,False,3.5997,0.009362,0.193749,0.0,0.781575,0.015314,nomic-embed-text
+P1_premium_tier_owner,Samsung Crystal 4K UHD Smart TV (55-inch),EE,Effort Expectancy,False,3.981,0.0,0.046297,0.310196,0.259736,0.38377,nomic-embed-text
+P1_premium_tier_owner,Samsung Crystal 4K UHD Smart TV (55-inch),HM,Hedonic Motivation,False,3.9906,0.0,0.105664,0.20058,0.291224,0.402532,nomic-embed-text
+P1_premium_tier_owner,Samsung Crystal 4K UHD Smart TV (55-inch),SI,Social Influence,False,4.1192,0.007726,0.0,0.170381,0.509148,0.312745,nomic-embed-text
+P1_premium_tier_owner,Samsung Crystal 4K UHD Smart TV (55-inch),PP,Perceived Protection,False,3.9066,0.113086,0.083406,0.0,0.390861,0.412646,nomic-embed-text
+P1_premium_tier_owner,Samsung Crystal 4K UHD Smart TV (55-inch),BI,Behavioral Intention,True,3.8605,0.0,0.128807,0.176212,0.400701,0.29428,nomic-embed-text
+P2_midrange_heavy_user,Samsung Crystal 4K UHD Smart TV (55-inch),PE,Performance Expectancy,False,4.1981,0.035686,0.0,0.12462,0.409885,0.429809,nomic-embed-text
+P2_midrange_heavy_user,Samsung Crystal 4K UHD Smart TV (55-inch),EE,Effort Expectancy,False,3.8034,0.037247,0.0,0.411984,0.223634,0.327135,nomic-embed-text
+P2_midrange_heavy_user,Samsung Crystal 4K UHD Smart TV (55-inch),HM,Hedonic Motivation,False,3.8545,0.0,0.171491,0.158632,0.313762,0.356115,nomic-embed-text
+P2_midrange_heavy_user,Samsung Crystal 4K UHD Smart TV (55-inch),SI,Social Influence,False,3.2859,0.047814,0.0,0.650982,0.220872,0.080333,nomic-embed-text
+P2_midrange_heavy_user,Samsung Crystal 4K UHD Smart TV (55-inch),PP,Perceived Protection,False,3.4311,0.149044,0.21412,0.0,0.33036,0.306476,nomic-embed-text
+P2_midrange_heavy_user,Samsung Crystal 4K UHD Smart TV (55-inch),BI,Behavioral Intention,True,3.5914,0.0,0.182809,0.224626,0.410905,0.181659,nomic-embed-text
+P3_midrange_moderate_user,Samsung Crystal 4K UHD Smart TV (55-inch),PE,Performance Expectancy,False,3.6174,0.0,0.162165,0.227194,0.441723,0.168918,nomic-embed-text
+P3_midrange_moderate_user,Samsung Crystal 4K UHD Smart TV (55-inch),EE,Effort Expectancy,False,3.9951,0.058726,0.0,0.305207,0.159577,0.47649,nomic-embed-text
+P3_midrange_moderate_user,Samsung Crystal 4K UHD Smart TV (55-inch),HM,Hedonic Motivation,False,3.7634,0.0,0.219928,0.110001,0.356771,0.3133,nomic-embed-text
+P3_midrange_moderate_user,Samsung Crystal 4K UHD Smart TV (55-inch),SI,Social Influence,False,2.5738,0.144883,0.298902,0.393699,0.162517,0.0,nomic-embed-text
+P3_midrange_moderate_user,Samsung Crystal 4K UHD Smart TV (55-inch),PP,Perceived Protection,False,3.2719,0.22504,0.173357,0.0,0.307845,0.293759,nomic-embed-text
+P3_midrange_moderate_user,Samsung Crystal 4K UHD Smart TV (55-inch),BI,Behavioral Intention,True,3.4655,0.0,0.207453,0.290522,0.331092,0.170933,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Crystal 4K UHD Smart TV (55-inch),PE,Performance Expectancy,False,3.1751,0.085355,0.227841,0.113117,0.573687,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Crystal 4K UHD Smart TV (55-inch),EE,Effort Expectancy,False,4.0937,0.0,0.012041,0.293174,0.283871,0.410914,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Crystal 4K UHD Smart TV (55-inch),HM,Hedonic Motivation,False,3.8586,0.0,0.160767,0.194709,0.269674,0.37485,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Crystal 4K UHD Smart TV (55-inch),SI,Social Influence,False,4.0461,0.0,0.003469,0.264414,0.414651,0.317466,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Crystal 4K UHD Smart TV (55-inch),PP,Perceived Protection,False,3.6327,0.162841,0.122611,0.0,0.348112,0.366435,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Crystal 4K UHD Smart TV (55-inch),BI,Behavioral Intention,True,3.8638,0.0,0.14416,0.1082,0.487272,0.260367,nomic-embed-text

@@ -1,0 +1,63 @@
+{
+  "normality_shapiro": {
+    "P1": {
+      "stat": 0.9048,
+      "p_value": 2.3914133746678504e-06,
+      "is_normal_05": false
+    },
+    "P2": {
+      "stat": 0.9256,
+      "p_value": 2.8365535159996616e-05,
+      "is_normal_05": false
+    },
+    "P3": {
+      "stat": 0.9179,
+      "p_value": 1.0868781832058148e-05,
+      "is_normal_05": false
+    },
+    "P4": {
+      "stat": 0.8962,
+      "p_value": 9.443094949183388e-07,
+      "is_normal_05": false
+    }
+  },
+  "normality_dagostino": {
+    "P1": {
+      "stat": 26.5656,
+      "p_value": 1.7035220658798794e-06,
+      "is_normal_05": false
+    },
+    "P2": {
+      "stat": 9.3,
+      "p_value": 0.009561837135590267,
+      "is_normal_05": false
+    },
+    "P3": {
+      "stat": 34.0331,
+      "p_value": 4.071946206897262e-08,
+      "is_normal_05": false
+    },
+    "P4": {
+      "stat": 22.039,
+      "p_value": 1.6379371506411585e-05,
+      "is_normal_05": false
+    }
+  },
+  "homoscedasticity": {
+    "levene_brown_forsythe_median": {
+      "stat": 0.7047,
+      "p_value": 0.5496817681131856,
+      "equal_var_05": true
+    },
+    "levene_mean": {
+      "stat": 0.8466,
+      "p_value": 0.4690378213823213,
+      "equal_var_05": true
+    },
+    "bartlett": {
+      "stat": 1.2948,
+      "p_value": 0.7303773272273171,
+      "equal_var_05": true
+    }
+  }
+}

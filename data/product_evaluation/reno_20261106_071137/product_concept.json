@@ -1,0 +1,88 @@
+{
+  "name": "reno",
+  "category": "Smartphone",
+  "description": "The Samsung Galaxy M35 5G is a mid-range smartphone designed for users who want a balance of performance, entertainment, connectivity and everyday usability. It offers a Super AMOLED display, high refresh rate, capable processor, high-capacity battery and a camera with optical image stabilisation. It is suitable for communication, multitasking, entertainment and general smartphone usage.\nSpecifications: - Display: 6.6-inch Super AMOLED\n- Refresh rate: 120Hz\n- Processor: Exynos 1380\n- RAM: 8GB\n- Storage: 128GB\n- Battery: 6000mAh\n- Rear camera: 50MP main camera with OIS\n- Front camera: 13MP\n- Connectivity: 5G\n- Operating system: Android with Samsung One UI",
+  "price_inr": 20000.0,
+  "target_group": "Technology consumers",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Android",
+  "features": [
+    {
+      "name": "Vibrant 4K Display",
+      "explanation": "Ultra-high definition panel with HDR support for vivid contrast and colors.",
+      "category": null
+    },
+    {
+      "name": "Smart Streaming Hub",
+      "explanation": "Integrated operating system with popular streaming apps and easy navigation.",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "ssr_method": "improved",
+  "ssr_method_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Smartphone",
+    "product_noun": "smartphone",
+    "usage_role": "primary phone",
+    "brand_or_ecosystem": "Android",
+    "features_count": 2,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-06T01:41:37.134814+00:00",
+  "product_context": {
+    "name": "reno",
+    "category": "Smartphone",
+    "noun": "smartphone",
+    "usage_role": "primary phone",
+    "ecosystem": "Android",
+    "price_inr": 20000.0,
+    "description": "The Samsung Galaxy M35 5G is a mid-range smartphone designed for users who want a balance of performance, entertainment, connectivity and everyday usability. It offers a Super AMOLED display, high refresh rate, capable processor, high-capacity battery and a camera with optical image stabilisation. It is suitable for communication, multitasking, entertainment and general smartphone usage.\nSpecifications: - Display: 6.6-inch Super AMOLED\n- Refresh rate: 120Hz\n- Processor: Exynos 1380\n- RAM: 8GB\n- Storage: 128GB\n- Battery: 6000mAh\n- Rear camera: 50MP main camera with OIS\n- Front camera: 13MP\n- Connectivity: 5G\n- Operating system: Android with Samsung One UI"
+  },
+  "response_validation_summary": {
+    "P1_premium_tier_owner": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "corrected",
+      "BI": "passed"
+    },
+    "P2_midrange_heavy_user": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "passed",
+      "BI": "corrected"
+    },
+    "P3_midrange_moderate_user": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "passed",
+      "BI": "passed"
+    },
+    "P4_budget_or_undisclosed_price": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "corrected",
+      "BI": "passed"
+    }
+  }
+}

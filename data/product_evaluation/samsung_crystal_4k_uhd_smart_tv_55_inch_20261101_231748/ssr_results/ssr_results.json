@@ -1,0 +1,2025 @@
+{
+  "evaluation_id": "samsung_crystal_4k_uhd_smart_tv_55_inch_20261101_231748",
+  "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-11-01T17:56:23.346039+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.6953,
+  "overall_adoption_average": 3.6953,
+  "primary_adoption_average": 3.6953,
+  "construct_averages": {
+    "PE": 3.6476,
+    "EE": 3.9683,
+    "HM": 3.8668,
+    "SI": 3.5062,
+    "PP": 3.5606,
+    "BI": 3.6953
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "primary_adoption_rating": 3.8605,
+      "primary_adoption_pmf": [
+        0.0,
+        0.128807,
+        0.176212,
+        0.400701,
+        0.29428
+      ],
+      "construct_scores": {
+        "PE": 3.5997,
+        "EE": 3.981,
+        "HM": 3.9906,
+        "SI": 4.1192,
+        "PP": 3.9066,
+        "BI": 3.8605
+      },
+      "construct_responses": {
+        "PE": "The 4K display with HDR support provides vibrant and clear visuals, making it effective for daily media viewing. The integrated operating system with popular streaming apps ensures a wide range of content is readily accessible.",
+        "EE": "Setting up and navigating the TV should be straightforward, thanks to the integrated OS and easy-to-use interface. The smart hub allows for simple access to streaming services without much hassle.",
+        "HM": "Using the smart TV is likely to be pleasant, especially with its vibrant display and easy navigation. It should offer a satisfying experience for daily media consumption and entertainment.",
+        "SI": "Peers and colleagues who use smart TVs would likely view this positively, as it offers a reliable and feature-rich viewing experience.",
+        "PP": "The solid build quality and reliable performance suggest that this TV will be durable and long-lasting. The mid-range price of ₹50,000 seems reasonable for the quality provided.",
+        "BI": "I am certain I will continue using this smart TV as my primary television; the 4K display and integrated streaming hub justify the price and offer a reliable viewing experience.",
+        "OVERALL": "The smart TV provides a good balance of performance and features for its price, making it a solid choice for daily media viewing."
+      },
+      "response_text": "The smart TV provides a good balance of performance and features for its price, making it a solid choice for daily media viewing.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The 4K display with HDR support provides vibrant and clear visuals, making it effective for daily media viewing. The integrated operating system with popular streaming apps ensures a wide range of content is readily accessible.",
+          "cosine_similarities": [
+            0.517972,
+            0.534956,
+            0.51711,
+            0.5891,
+            0.51852
+          ],
+          "min_similarity": 0.51711,
+          "pmf_probabilities": [
+            0.009362,
+            0.193749,
+            0.0,
+            0.781575,
+            0.015314
+          ],
+          "expected_rating": 3.5997,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and navigating the TV should be straightforward, thanks to the integrated OS and easy-to-use interface. The smart hub allows for simple access to streaming services without much hassle.",
+          "cosine_similarities": [
+            0.517877,
+            0.528514,
+            0.589143,
+            0.577551,
+            0.606047
+          ],
+          "min_similarity": 0.517877,
+          "pmf_probabilities": [
+            0.0,
+            0.046297,
+            0.310196,
+            0.259736,
+            0.38377
+          ],
+          "expected_rating": 3.981,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the smart TV is likely to be pleasant, especially with its vibrant display and easy navigation. It should offer a satisfying experience for daily media consumption and entertainment.",
+          "cosine_similarities": [
+            0.599766,
+            0.621624,
+            0.641258,
+            0.660009,
+            0.683034
+          ],
+          "min_similarity": 0.599766,
+          "pmf_probabilities": [
+            0.0,
+            0.105664,
+            0.20058,
+            0.291224,
+            0.402532
+          ],
+          "expected_rating": 3.9906,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers and colleagues who use smart TVs would likely view this positively, as it offers a reliable and feature-rich viewing experience.",
+          "cosine_similarities": [
+            0.573342,
+            0.572114,
+            0.59921,
+            0.653086,
+            0.621851
+          ],
+          "min_similarity": 0.572114,
+          "pmf_probabilities": [
+            0.007726,
+            0.0,
+            0.170381,
+            0.509148,
+            0.312745
+          ],
+          "expected_rating": 4.1192,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The solid build quality and reliable performance suggest that this TV will be durable and long-lasting. The mid-range price of ₹50,000 seems reasonable for the quality provided.",
+          "cosine_similarities": [
+            0.401969,
+            0.397192,
+            0.383767,
+            0.44668,
+            0.450186
+          ],
+          "min_similarity": 0.383767,
+          "pmf_probabilities": [
+            0.113086,
+            0.083406,
+            0.0,
+            0.390861,
+            0.412646
+          ],
+          "expected_rating": 3.9066,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smart TV as my primary television; the 4K display and integrated streaming hub justify the price and offer a reliable viewing experience.",
+          "cosine_similarities": [
+            0.524183,
+            0.552527,
+            0.562959,
+            0.612359,
+            0.58894
+          ],
+          "min_similarity": 0.524183,
+          "pmf_probabilities": [
+            0.0,
+            0.128807,
+            0.176212,
+            0.400701,
+            0.29428
+          ],
+          "expected_rating": 3.8605,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "primary_adoption_rating": 3.5914,
+      "primary_adoption_pmf": [
+        0.0,
+        0.182809,
+        0.224626,
+        0.410905,
+        0.181659
+      ],
+      "construct_scores": {
+        "PE": 4.1981,
+        "EE": 3.8034,
+        "HM": 3.8545,
+        "SI": 3.2859,
+        "PP": 3.4311,
+        "BI": 3.5914
+      },
+      "construct_responses": {
+        "PE": "The 4K display provides a clear and vivid viewing experience, and the integrated operating system with popular streaming apps makes it easy to access content. However, the key is whether the processor can handle heavy multitasking without slowing down, which we need to see in action.",
+        "EE": "Setting up and navigating the smart TV is straightforward with its integrated OS and easy-to-use interface. However, the setup process might be a bit more complex due to the need for multiple streaming apps and services.",
+        "HM": "The vibrant 4K display and easy access to streaming services make it enjoyable to watch movies and TV shows, but the overall experience might be limited to what apps and content the platform offers.",
+        "SI": "Peers who use smart TVs would likely appreciate the integrated streaming apps and the vibrant display, but the price might be a concern for those looking for more budget-friendly options.",
+        "PP": "The smart TV has a solid build with a vibrant display, and the integrated OS should provide reliable performance over time. However, the long-term durability of the hardware and the longevity of the integrated apps are worth considering.",
+        "BI": "I am certain I will continue using this smart TV as my primary television; the 4K display and easy streaming apps make it a valuable option, and the ₹50,000 price seems reasonable for the features offered, especially for someone who prioritizes vivid visuals and easy access to content.",
+        "OVERALL": "The smart TV offers a vivid 4K display and easy streaming, making it a good choice for daily media consumption, but its effectiveness in handling heavy multitasking remains to be seen."
+      },
+      "response_text": "The smart TV offers a vivid 4K display and easy streaming, making it a good choice for daily media consumption, but its effectiveness in handling heavy multitasking remains to be seen.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The 4K display provides a clear and vivid viewing experience, and the integrated operating system with popular streaming apps makes it easy to access content. However, the key is whether the processor can handle heavy multitasking without slowing down, which we need to see in action.",
+          "cosine_similarities": [
+            0.54994,
+            0.547224,
+            0.556707,
+            0.578415,
+            0.579931
+          ],
+          "min_similarity": 0.547224,
+          "pmf_probabilities": [
+            0.035686,
+            0.0,
+            0.12462,
+            0.409885,
+            0.429809
+          ],
+          "expected_rating": 4.1981,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and navigating the smart TV is straightforward with its integrated OS and easy-to-use interface. However, the setup process might be a bit more complex due to the need for multiple streaming apps and services.",
+          "cosine_similarities": [
+            0.558485,
+            0.554021,
+            0.603401,
+            0.580825,
+            0.593231
+          ],
+          "min_similarity": 0.554021,
+          "pmf_probabilities": [
+            0.037247,
+            0.0,
+            0.411984,
+            0.223634,
+            0.327135
+          ],
+          "expected_rating": 3.8034,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The vibrant 4K display and easy access to streaming services make it enjoyable to watch movies and TV shows, but the overall experience might be limited to what apps and content the platform offers.",
+          "cosine_similarities": [
+            0.528695,
+            0.562554,
+            0.560015,
+            0.590645,
+            0.599007
+          ],
+          "min_similarity": 0.528695,
+          "pmf_probabilities": [
+            0.0,
+            0.171491,
+            0.158632,
+            0.313762,
+            0.356115
+          ],
+          "expected_rating": 3.8545,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers who use smart TVs would likely appreciate the integrated streaming apps and the vibrant display, but the price might be a concern for those looking for more budget-friendly options.",
+          "cosine_similarities": [
+            0.524588,
+            0.521382,
+            0.565043,
+            0.536196,
+            0.526769
+          ],
+          "min_similarity": 0.521382,
+          "pmf_probabilities": [
+            0.047814,
+            0.0,
+            0.650982,
+            0.220872,
+            0.080333
+          ],
+          "expected_rating": 3.2859,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The smart TV has a solid build with a vibrant display, and the integrated OS should provide reliable performance over time. However, the long-term durability of the hardware and the longevity of the integrated apps are worth considering.",
+          "cosine_similarities": [
+            0.477064,
+            0.491985,
+            0.442891,
+            0.518636,
+            0.51316
+          ],
+          "min_similarity": 0.442891,
+          "pmf_probabilities": [
+            0.149044,
+            0.21412,
+            0.0,
+            0.33036,
+            0.306476
+          ],
+          "expected_rating": 3.4311,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smart TV as my primary television; the 4K display and easy streaming apps make it a valuable option, and the ₹50,000 price seems reasonable for the features offered, especially for someone who prioritizes vivid visuals and easy access to content.",
+          "cosine_similarities": [
+            0.535406,
+            0.57679,
+            0.586257,
+            0.628427,
+            0.57653
+          ],
+          "min_similarity": 0.535406,
+          "pmf_probabilities": [
+            0.0,
+            0.182809,
+            0.224626,
+            0.410905,
+            0.181659
+          ],
+          "expected_rating": 3.5914,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "primary_adoption_rating": 3.4655,
+      "primary_adoption_pmf": [
+        0.0,
+        0.207453,
+        0.290522,
+        0.331092,
+        0.170933
+      ],
+      "construct_scores": {
+        "PE": 3.6174,
+        "EE": 3.9951,
+        "HM": 3.7634,
+        "SI": 2.5738,
+        "PP": 3.2719,
+        "BI": 3.4655
+      },
+      "construct_responses": {
+        "PE": "The 4K display offers vibrant and vivid colors, making movies and shows look incredibly clear. The integrated operating system with popular streaming apps ensures easy access to content, though the price of ₹50,000 might seem on the higher side for some.",
+        "EE": "Setting up and navigating the smart TV is straightforward thanks to its intuitive interface. However, the price of ₹50,000 might make some users hesitant about the ease of use.",
+        "HM": "The vibrant colors and HDR support make watching movies and shows a pleasant experience, but the cost might be a deterrent for daily use.",
+        "SI": "Peers might appreciate the smart TV's features, but the price point might make it less attractive compared to other options in the market.",
+        "PP": "The smart TV feels durable with its vibrant display and reliable streaming apps. Data security is not mentioned, so there's no specific comment on that aspect.",
+        "BI": "I am certain I will continue using this smart TV as my primary television, given its vibrant display and easy navigation. However, the price of ₹50,000 might make some users look for more affordable options.",
+        "OVERALL": "The smart TV offers a vivid and enjoyable viewing experience, but the price might be a consideration for some users. It provides a balanced utility for everyday tasks."
+      },
+      "response_text": "The smart TV offers a vivid and enjoyable viewing experience, but the price might be a consideration for some users. It provides a balanced utility for everyday tasks.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The 4K display offers vibrant and vivid colors, making movies and shows look incredibly clear. The integrated operating system with popular streaming apps ensures easy access to content, though the price of ₹50,000 might seem on the higher side for some.",
+          "cosine_similarities": [
+            0.468032,
+            0.491039,
+            0.500265,
+            0.530702,
+            0.491998
+          ],
+          "min_similarity": 0.468032,
+          "pmf_probabilities": [
+            0.0,
+            0.162165,
+            0.227194,
+            0.441723,
+            0.168918
+          ],
+          "expected_rating": 3.6174,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and navigating the smart TV is straightforward thanks to its intuitive interface. However, the price of ₹50,000 might make some users hesitant about the ease of use.",
+          "cosine_similarities": [
+            0.553192,
+            0.544913,
+            0.587939,
+            0.567409,
+            0.612085
+          ],
+          "min_similarity": 0.544913,
+          "pmf_probabilities": [
+            0.058726,
+            0.0,
+            0.305207,
+            0.159577,
+            0.47649
+          ],
+          "expected_rating": 3.9951,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The vibrant colors and HDR support make watching movies and shows a pleasant experience, but the cost might be a deterrent for daily use.",
+          "cosine_similarities": [
+            0.486822,
+            0.5161,
+            0.501466,
+            0.534318,
+            0.528531
+          ],
+          "min_similarity": 0.486822,
+          "pmf_probabilities": [
+            0.0,
+            0.219928,
+            0.110001,
+            0.356771,
+            0.3133
+          ],
+          "expected_rating": 3.7634,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers might appreciate the smart TV's features, but the price point might make it less attractive compared to other options in the market.",
+          "cosine_similarities": [
+            0.572168,
+            0.599335,
+            0.616056,
+            0.575279,
+            0.546613
+          ],
+          "min_similarity": 0.546613,
+          "pmf_probabilities": [
+            0.144883,
+            0.298902,
+            0.393699,
+            0.162517,
+            0.0
+          ],
+          "expected_rating": 2.5738,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The smart TV feels durable with its vibrant display and reliable streaming apps. Data security is not mentioned, so there's no specific comment on that aspect.",
+          "cosine_similarities": [
+            0.634095,
+            0.625807,
+            0.598007,
+            0.647374,
+            0.645115
+          ],
+          "min_similarity": 0.598007,
+          "pmf_probabilities": [
+            0.22504,
+            0.173357,
+            0.0,
+            0.307845,
+            0.293759
+          ],
+          "expected_rating": 3.2719,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smart TV as my primary television, given its vibrant display and easy navigation. However, the price of ₹50,000 might make some users look for more affordable options.",
+          "cosine_similarities": [
+            0.558564,
+            0.593989,
+            0.608174,
+            0.615101,
+            0.587753
+          ],
+          "min_similarity": 0.558564,
+          "pmf_probabilities": [
+            0.0,
+            0.207453,
+            0.290522,
+            0.331092,
+            0.170933
+          ],
+          "expected_rating": 3.4655,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "primary_adoption_rating": 3.8638,
+      "primary_adoption_pmf": [
+        0.0,
+        0.14416,
+        0.1082,
+        0.487272,
+        0.260367
+      ],
+      "construct_scores": {
+        "PE": 3.1751,
+        "EE": 4.0937,
+        "HM": 3.8586,
+        "SI": 4.0461,
+        "PP": 3.6327,
+        "BI": 3.8638
+      },
+      "construct_responses": {
+        "PE": "The 4K display with HDR support will provide vibrant and clear visuals, making it ideal for watching movies and TV shows. The smart streaming hub with popular apps will ensure easy access to entertainment content.",
+        "EE": "The integrated operating system will make navigation simple, and the apps are easy to use, which will reduce the setup effort and make the smart TV user-friendly.",
+        "HM": "The 4K display and smart streaming hub will enhance the viewing experience, making it more enjoyable and satisfying for daily media consumption.",
+        "SI": "Peers and colleagues who use smart TVs will likely appreciate its vibrant display and easy access to streaming services, making it a popular choice among friends and family.",
+        "PP": "The integrated hardware and software should offer reliable performance, and the build quality will ensure the smart TV lasts a long time, providing good value for money.",
+        "BI": "I am certain I will continue using this smart TV as my primary television, given its 4K display and smart streaming hub, which offer practical and essential daily functionality within my budget.",
+        "OVERALL": "The smart TV provides a clear and vibrant picture, easy setup, and practical daily entertainment options, making it a worthwhile investment for my household."
+      },
+      "response_text": "The smart TV provides a clear and vibrant picture, easy setup, and practical daily entertainment options, making it a worthwhile investment for my household.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The 4K display with HDR support will provide vibrant and clear visuals, making it ideal for watching movies and TV shows. The smart streaming hub with popular apps will ensure easy access to entertainment content.",
+          "cosine_similarities": [
+            0.523874,
+            0.538459,
+            0.526716,
+            0.573858,
+            0.515138
+          ],
+          "min_similarity": 0.515138,
+          "pmf_probabilities": [
+            0.085355,
+            0.227841,
+            0.113117,
+            0.573687,
+            0.0
+          ],
+          "expected_rating": 3.1751,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The integrated operating system will make navigation simple, and the apps are easy to use, which will reduce the setup effort and make the smart TV user-friendly.",
+          "cosine_similarities": [
+            0.520569,
+            0.522907,
+            0.577485,
+            0.575679,
+            0.600343
+          ],
+          "min_similarity": 0.520569,
+          "pmf_probabilities": [
+            0.0,
+            0.012041,
+            0.293174,
+            0.283871,
+            0.410914
+          ],
+          "expected_rating": 4.0937,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The 4K display and smart streaming hub will enhance the viewing experience, making it more enjoyable and satisfying for daily media consumption.",
+          "cosine_similarities": [
+            0.49043,
+            0.529735,
+            0.538033,
+            0.556361,
+            0.582074
+          ],
+          "min_similarity": 0.49043,
+          "pmf_probabilities": [
+            0.0,
+            0.160767,
+            0.194709,
+            0.269674,
+            0.37485
+          ],
+          "expected_rating": 3.8586,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers and colleagues who use smart TVs will likely appreciate its vibrant display and easy access to streaming services, making it a popular choice among friends and family.",
+          "cosine_similarities": [
+            0.577236,
+            0.577962,
+            0.632623,
+            0.664094,
+            0.643736
+          ],
+          "min_similarity": 0.577236,
+          "pmf_probabilities": [
+            0.0,
+            0.003469,
+            0.264414,
+            0.414651,
+            0.317466
+          ],
+          "expected_rating": 4.0461,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The integrated hardware and software should offer reliable performance, and the build quality will ensure the smart TV lasts a long time, providing good value for money.",
+          "cosine_similarities": [
+            0.439268,
+            0.42972,
+            0.400619,
+            0.48324,
+            0.487589
+          ],
+          "min_similarity": 0.400619,
+          "pmf_probabilities": [
+            0.162841,
+            0.122611,
+            0.0,
+            0.348112,
+            0.366435
+          ],
+          "expected_rating": 3.6327,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smart TV as my primary television, given its 4K display and smart streaming hub, which offer practical and essential daily functionality within my budget.",
+          "cosine_similarities": [
+            0.555656,
+            0.585328,
+            0.577927,
+            0.65595,
+            0.609247
+          ],
+          "min_similarity": 0.555656,
+          "pmf_probabilities": [
+            0.0,
+            0.14416,
+            0.1082,
+            0.487272,
+            0.260367
+          ],
+          "expected_rating": 3.8638,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.517972,
+        0.534956,
+        0.51711,
+        0.5891,
+        0.51852
+      ],
+      "pmf_probabilities": [
+        0.009362,
+        0.193749,
+        0.0,
+        0.781575,
+        0.015314
+      ],
+      "expected_rating": 3.5997,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.517877,
+        0.528514,
+        0.589143,
+        0.577551,
+        0.606047
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.046297,
+        0.310196,
+        0.259736,
+        0.38377
+      ],
+      "expected_rating": 3.981,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.599766,
+        0.621624,
+        0.641258,
+        0.660009,
+        0.683034
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.105664,
+        0.20058,
+        0.291224,
+        0.402532
+      ],
+      "expected_rating": 3.9906,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.573342,
+        0.572114,
+        0.59921,
+        0.653086,
+        0.621851
+      ],
+      "pmf_probabilities": [
+        0.007726,
+        0.0,
+        0.170381,
+        0.509148,
+        0.312745
+      ],
+      "expected_rating": 4.1192,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.401969,
+        0.397192,
+        0.383767,
+        0.44668,
+        0.450186
+      ],
+      "pmf_probabilities": [
+        0.113086,
+        0.083406,
+        0.0,
+        0.390861,
+        0.412646
+      ],
+      "expected_rating": 3.9066,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.524183,
+        0.552527,
+        0.562959,
+        0.612359,
+        0.58894
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.128807,
+        0.176212,
+        0.400701,
+        0.29428
+      ],
+      "expected_rating": 3.8605,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.54994,
+        0.547224,
+        0.556707,
+        0.578415,
+        0.579931
+      ],
+      "pmf_probabilities": [
+        0.035686,
+        0.0,
+        0.12462,
+        0.409885,
+        0.429809
+      ],
+      "expected_rating": 4.1981,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.558485,
+        0.554021,
+        0.603401,
+        0.580825,
+        0.593231
+      ],
+      "pmf_probabilities": [
+        0.037247,
+        0.0,
+        0.411984,
+        0.223634,
+        0.327135
+      ],
+      "expected_rating": 3.8034,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.528695,
+        0.562554,
+        0.560015,
+        0.590645,
+        0.599007
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.171491,
+        0.158632,
+        0.313762,
+        0.356115
+      ],
+      "expected_rating": 3.8545,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.524588,
+        0.521382,
+        0.565043,
+        0.536196,
+        0.526769
+      ],
+      "pmf_probabilities": [
+        0.047814,
+        0.0,
+        0.650982,
+        0.220872,
+        0.080333
+      ],
+      "expected_rating": 3.2859,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.477064,
+        0.491985,
+        0.442891,
+        0.518636,
+        0.51316
+      ],
+      "pmf_probabilities": [
+        0.149044,
+        0.21412,
+        0.0,
+        0.33036,
+        0.306476
+      ],
+      "expected_rating": 3.4311,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.535406,
+        0.57679,
+        0.586257,
+        0.628427,
+        0.57653
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.182809,
+        0.224626,
+        0.410905,
+        0.181659
+      ],
+      "expected_rating": 3.5914,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.468032,
+        0.491039,
+        0.500265,
+        0.530702,
+        0.491998
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.162165,
+        0.227194,
+        0.441723,
+        0.168918
+      ],
+      "expected_rating": 3.6174,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.553192,
+        0.544913,
+        0.587939,
+        0.567409,
+        0.612085
+      ],
+      "pmf_probabilities": [
+        0.058726,
+        0.0,
+        0.305207,
+        0.159577,
+        0.47649
+      ],
+      "expected_rating": 3.9951,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.486822,
+        0.5161,
+        0.501466,
+        0.534318,
+        0.528531
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.219928,
+        0.110001,
+        0.356771,
+        0.3133
+      ],
+      "expected_rating": 3.7634,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.572168,
+        0.599335,
+        0.616056,
+        0.575279,
+        0.546613
+      ],
+      "pmf_probabilities": [
+        0.144883,
+        0.298902,
+        0.393699,
+        0.162517,
+        0.0
+      ],
+      "expected_rating": 2.5738,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.634095,
+        0.625807,
+        0.598007,
+        0.647374,
+        0.645115
+      ],
+      "pmf_probabilities": [
+        0.22504,
+        0.173357,
+        0.0,
+        0.307845,
+        0.293759
+      ],
+      "expected_rating": 3.2719,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.558564,
+        0.593989,
+        0.608174,
+        0.615101,
+        0.587753
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.207453,
+        0.290522,
+        0.331092,
+        0.170933
+      ],
+      "expected_rating": 3.4655,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.523874,
+        0.538459,
+        0.526716,
+        0.573858,
+        0.515138
+      ],
+      "pmf_probabilities": [
+        0.085355,
+        0.227841,
+        0.113117,
+        0.573687,
+        0.0
+      ],
+      "expected_rating": 3.1751,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.520569,
+        0.522907,
+        0.577485,
+        0.575679,
+        0.600343
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.012041,
+        0.293174,
+        0.283871,
+        0.410914
+      ],
+      "expected_rating": 4.0937,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.49043,
+        0.529735,
+        0.538033,
+        0.556361,
+        0.582074
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.160767,
+        0.194709,
+        0.269674,
+        0.37485
+      ],
+      "expected_rating": 3.8586,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.577236,
+        0.577962,
+        0.632623,
+        0.664094,
+        0.643736
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.003469,
+        0.264414,
+        0.414651,
+        0.317466
+      ],
+      "expected_rating": 4.0461,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.439268,
+        0.42972,
+        0.400619,
+        0.48324,
+        0.487589
+      ],
+      "pmf_probabilities": [
+        0.162841,
+        0.122611,
+        0.0,
+        0.348112,
+        0.366435
+      ],
+      "expected_rating": 3.6327,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.555656,
+        0.585328,
+        0.577927,
+        0.65595,
+        0.609247
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.14416,
+        0.1082,
+        0.487272,
+        0.260367
+      ],
+      "expected_rating": 3.8638,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.517972,
+      "cos_sim_2": 0.534956,
+      "cos_sim_3": 0.51711,
+      "cos_sim_4": 0.5891,
+      "cos_sim_5": 0.51852,
+      "min_similarity": 0.51711,
+      "p1": 0.009362,
+      "p2": 0.193749,
+      "p3": 0.0,
+      "p4": 0.781575,
+      "p5": 0.015314,
+      "set_expected_rating": 3.5997,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.517877,
+      "cos_sim_2": 0.528514,
+      "cos_sim_3": 0.589143,
+      "cos_sim_4": 0.577551,
+      "cos_sim_5": 0.606047,
+      "min_similarity": 0.517877,
+      "p1": 0.0,
+      "p2": 0.046297,
+      "p3": 0.310196,
+      "p4": 0.259736,
+      "p5": 0.38377,
+      "set_expected_rating": 3.981,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.599766,
+      "cos_sim_2": 0.621624,
+      "cos_sim_3": 0.641258,
+      "cos_sim_4": 0.660009,
+      "cos_sim_5": 0.683034,
+      "min_similarity": 0.599766,
+      "p1": 0.0,
+      "p2": 0.105664,
+      "p3": 0.20058,
+      "p4": 0.291224,
+      "p5": 0.402532,
+      "set_expected_rating": 3.9906,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.573342,
+      "cos_sim_2": 0.572114,
+      "cos_sim_3": 0.59921,
+      "cos_sim_4": 0.653086,
+      "cos_sim_5": 0.621851,
+      "min_similarity": 0.572114,
+      "p1": 0.007726,
+      "p2": 0.0,
+      "p3": 0.170381,
+      "p4": 0.509148,
+      "p5": 0.312745,
+      "set_expected_rating": 4.1192,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.401969,
+      "cos_sim_2": 0.397192,
+      "cos_sim_3": 0.383767,
+      "cos_sim_4": 0.44668,
+      "cos_sim_5": 0.450186,
+      "min_similarity": 0.383767,
+      "p1": 0.113086,
+      "p2": 0.083406,
+      "p3": 0.0,
+      "p4": 0.390861,
+      "p5": 0.412646,
+      "set_expected_rating": 3.9066,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.524183,
+      "cos_sim_2": 0.552527,
+      "cos_sim_3": 0.562959,
+      "cos_sim_4": 0.612359,
+      "cos_sim_5": 0.58894,
+      "min_similarity": 0.524183,
+      "p1": 0.0,
+      "p2": 0.128807,
+      "p3": 0.176212,
+      "p4": 0.400701,
+      "p5": 0.29428,
+      "set_expected_rating": 3.8605,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.54994,
+      "cos_sim_2": 0.547224,
+      "cos_sim_3": 0.556707,
+      "cos_sim_4": 0.578415,
+      "cos_sim_5": 0.579931,
+      "min_similarity": 0.547224,
+      "p1": 0.035686,
+      "p2": 0.0,
+      "p3": 0.12462,
+      "p4": 0.409885,
+      "p5": 0.429809,
+      "set_expected_rating": 4.1981,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.558485,
+      "cos_sim_2": 0.554021,
+      "cos_sim_3": 0.603401,
+      "cos_sim_4": 0.580825,
+      "cos_sim_5": 0.593231,
+      "min_similarity": 0.554021,
+      "p1": 0.037247,
+      "p2": 0.0,
+      "p3": 0.411984,
+      "p4": 0.223634,
+      "p5": 0.327135,
+      "set_expected_rating": 3.8034,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.528695,
+      "cos_sim_2": 0.562554,
+      "cos_sim_3": 0.560015,
+      "cos_sim_4": 0.590645,
+      "cos_sim_5": 0.599007,
+      "min_similarity": 0.528695,
+      "p1": 0.0,
+      "p2": 0.171491,
+      "p3": 0.158632,
+      "p4": 0.313762,
+      "p5": 0.356115,
+      "set_expected_rating": 3.8545,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.524588,
+      "cos_sim_2": 0.521382,
+      "cos_sim_3": 0.565043,
+      "cos_sim_4": 0.536196,
+      "cos_sim_5": 0.526769,
+      "min_similarity": 0.521382,
+      "p1": 0.047814,
+      "p2": 0.0,
+      "p3": 0.650982,
+      "p4": 0.220872,
+      "p5": 0.080333,
+      "set_expected_rating": 3.2859,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.477064,
+      "cos_sim_2": 0.491985,
+      "cos_sim_3": 0.442891,
+      "cos_sim_4": 0.518636,
+      "cos_sim_5": 0.51316,
+      "min_similarity": 0.442891,
+      "p1": 0.149044,
+      "p2": 0.21412,
+      "p3": 0.0,
+      "p4": 0.33036,
+      "p5": 0.306476,
+      "set_expected_rating": 3.4311,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.535406,
+      "cos_sim_2": 0.57679,
+      "cos_sim_3": 0.586257,
+      "cos_sim_4": 0.628427,
+      "cos_sim_5": 0.57653,
+      "min_similarity": 0.535406,
+      "p1": 0.0,
+      "p2": 0.182809,
+      "p3": 0.224626,
+      "p4": 0.410905,
+      "p5": 0.181659,
+      "set_expected_rating": 3.5914,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.468032,
+      "cos_sim_2": 0.491039,
+      "cos_sim_3": 0.500265,
+      "cos_sim_4": 0.530702,
+      "cos_sim_5": 0.491998,
+      "min_similarity": 0.468032,
+      "p1": 0.0,
+      "p2": 0.162165,
+      "p3": 0.227194,
+      "p4": 0.441723,
+      "p5": 0.168918,
+      "set_expected_rating": 3.6174,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.553192,
+      "cos_sim_2": 0.544913,
+      "cos_sim_3": 0.587939,
+      "cos_sim_4": 0.567409,
+      "cos_sim_5": 0.612085,
+      "min_similarity": 0.544913,
+      "p1": 0.058726,
+      "p2": 0.0,
+      "p3": 0.305207,
+      "p4": 0.159577,
+      "p5": 0.47649,
+      "set_expected_rating": 3.9951,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.486822,
+      "cos_sim_2": 0.5161,
+      "cos_sim_3": 0.501466,
+      "cos_sim_4": 0.534318,
+      "cos_sim_5": 0.528531,
+      "min_similarity": 0.486822,
+      "p1": 0.0,
+      "p2": 0.219928,
+      "p3": 0.110001,
+      "p4": 0.356771,
+      "p5": 0.3133,
+      "set_expected_rating": 3.7634,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.572168,
+      "cos_sim_2": 0.599335,
+      "cos_sim_3": 0.616056,
+      "cos_sim_4": 0.575279,
+      "cos_sim_5": 0.546613,
+      "min_similarity": 0.546613,
+      "p1": 0.144883,
+      "p2": 0.298902,
+      "p3": 0.393699,
+      "p4": 0.162517,
+      "p5": 0.0,
+      "set_expected_rating": 2.5738,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.634095,
+      "cos_sim_2": 0.625807,
+      "cos_sim_3": 0.598007,
+      "cos_sim_4": 0.647374,
+      "cos_sim_5": 0.645115,
+      "min_similarity": 0.598007,
+      "p1": 0.22504,
+      "p2": 0.173357,
+      "p3": 0.0,
+      "p4": 0.307845,
+      "p5": 0.293759,
+      "set_expected_rating": 3.2719,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.558564,
+      "cos_sim_2": 0.593989,
+      "cos_sim_3": 0.608174,
+      "cos_sim_4": 0.615101,
+      "cos_sim_5": 0.587753,
+      "min_similarity": 0.558564,
+      "p1": 0.0,
+      "p2": 0.207453,
+      "p3": 0.290522,
+      "p4": 0.331092,
+      "p5": 0.170933,
+      "set_expected_rating": 3.4655,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.523874,
+      "cos_sim_2": 0.538459,
+      "cos_sim_3": 0.526716,
+      "cos_sim_4": 0.573858,
+      "cos_sim_5": 0.515138,
+      "min_similarity": 0.515138,
+      "p1": 0.085355,
+      "p2": 0.227841,
+      "p3": 0.113117,
+      "p4": 0.573687,
+      "p5": 0.0,
+      "set_expected_rating": 3.1751,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.520569,
+      "cos_sim_2": 0.522907,
+      "cos_sim_3": 0.577485,
+      "cos_sim_4": 0.575679,
+      "cos_sim_5": 0.600343,
+      "min_similarity": 0.520569,
+      "p1": 0.0,
+      "p2": 0.012041,
+      "p3": 0.293174,
+      "p4": 0.283871,
+      "p5": 0.410914,
+      "set_expected_rating": 4.0937,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.49043,
+      "cos_sim_2": 0.529735,
+      "cos_sim_3": 0.538033,
+      "cos_sim_4": 0.556361,
+      "cos_sim_5": 0.582074,
+      "min_similarity": 0.49043,
+      "p1": 0.0,
+      "p2": 0.160767,
+      "p3": 0.194709,
+      "p4": 0.269674,
+      "p5": 0.37485,
+      "set_expected_rating": 3.8586,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.577236,
+      "cos_sim_2": 0.577962,
+      "cos_sim_3": 0.632623,
+      "cos_sim_4": 0.664094,
+      "cos_sim_5": 0.643736,
+      "min_similarity": 0.577236,
+      "p1": 0.0,
+      "p2": 0.003469,
+      "p3": 0.264414,
+      "p4": 0.414651,
+      "p5": 0.317466,
+      "set_expected_rating": 4.0461,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.439268,
+      "cos_sim_2": 0.42972,
+      "cos_sim_3": 0.400619,
+      "cos_sim_4": 0.48324,
+      "cos_sim_5": 0.487589,
+      "min_similarity": 0.400619,
+      "p1": 0.162841,
+      "p2": 0.122611,
+      "p3": 0.0,
+      "p4": 0.348112,
+      "p5": 0.366435,
+      "set_expected_rating": 3.6327,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Crystal 4K UHD Smart TV (55-inch)",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.555656,
+      "cos_sim_2": 0.585328,
+      "cos_sim_3": 0.577927,
+      "cos_sim_4": 0.65595,
+      "cos_sim_5": 0.609247,
+      "min_similarity": 0.555656,
+      "p1": 0.0,
+      "p2": 0.14416,
+      "p3": 0.1082,
+      "p4": 0.487272,
+      "p5": 0.260367,
+      "set_expected_rating": 3.8638,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

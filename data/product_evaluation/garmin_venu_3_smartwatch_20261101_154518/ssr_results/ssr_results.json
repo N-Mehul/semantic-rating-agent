@@ -1,0 +1,2025 @@
+{
+  "evaluation_id": "garmin_venu_3_smartwatch_20261101_154518",
+  "product_name": "Garmin Venu 3 Smartwatch",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-11-01T10:25:56.551757+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 2.9121,
+  "overall_adoption_average": 2.9121,
+  "primary_adoption_average": 2.9121,
+  "construct_averages": {
+    "PE": 2.9725,
+    "EE": 3.5373,
+    "HM": 2.9733,
+    "SI": 3.2614,
+    "PP": 3.2292,
+    "BI": 2.9121
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "primary_adoption_rating": 3.8513,
+      "primary_adoption_pmf": [
+        0.0,
+        0.178166,
+        0.119697,
+        0.374793,
+        0.327344
+      ],
+      "construct_scores": {
+        "PE": 4.0231,
+        "EE": 4.1739,
+        "HM": 4.1254,
+        "SI": 3.8155,
+        "PP": 3.3854,
+        "BI": 3.8513
+      },
+      "construct_responses": {
+        "PE": "The Garmin Venu 3 has a bright AMOLED display which is great for fitness tracking and outdoor activities. The health and fitness tracking features are comprehensive, making it a useful tool for someone who prioritizes their health.",
+        "EE": "Setting up and navigating the Garmin Venu 3 is straightforward. The interface is simple and easy to understand, making it hassle-free to use.",
+        "HM": "Using the Garmin Venu 3 is fun and engaging due to its health and fitness tracking features. It keeps me motivated to stay active and monitor my progress.",
+        "SI": "My peers and colleagues who are into fitness and health tracking would likely appreciate the Garmin Venu 3. It's seen as a premium device with good features.",
+        "PP": "The build quality seems robust, and the hardware reliability is likely due to Garmin's reputation. Data protection is important, and Garmin is known for safeguarding user information.",
+        "BI": "I am certain I will continue using this smartwatch as my daily smartwatch because of its premium build quality, fast responsiveness, and reliable performance. The price is justified by the top-tier features it offers.",
+        "OVERALL": "The Garmin Venu 3 is a solid choice for someone looking for a premium smartwatch with excellent health and fitness tracking features. It's well worth the investment."
+      },
+      "response_text": "The Garmin Venu 3 is a solid choice for someone looking for a premium smartwatch with excellent health and fitness tracking features. It's well worth the investment.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The Garmin Venu 3 has a bright AMOLED display which is great for fitness tracking and outdoor activities. The health and fitness tracking features are comprehensive, making it a useful tool for someone who prioritizes their health.",
+          "cosine_similarities": [
+            0.547517,
+            0.552507,
+            0.544402,
+            0.602832,
+            0.572204
+          ],
+          "min_similarity": 0.544402,
+          "pmf_probabilities": [
+            0.031963,
+            0.083166,
+            0.0,
+            0.599581,
+            0.28529
+          ],
+          "expected_rating": 4.0231,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and navigating the Garmin Venu 3 is straightforward. The interface is simple and easy to understand, making it hassle-free to use.",
+          "cosine_similarities": [
+            0.544677,
+            0.538069,
+            0.574911,
+            0.580425,
+            0.624728
+          ],
+          "min_similarity": 0.538069,
+          "pmf_probabilities": [
+            0.038315,
+            0.0,
+            0.213622,
+            0.245592,
+            0.502471
+          ],
+          "expected_rating": 4.1739,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the Garmin Venu 3 is fun and engaging due to its health and fitness tracking features. It keeps me motivated to stay active and monitor my progress.",
+          "cosine_similarities": [
+            0.570027,
+            0.601749,
+            0.592345,
+            0.6339,
+            0.68498
+          ],
+          "min_similarity": 0.570027,
+          "pmf_probabilities": [
+            0.0,
+            0.136225,
+            0.09584,
+            0.274291,
+            0.493644
+          ],
+          "expected_rating": 4.1254,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers and colleagues who are into fitness and health tracking would likely appreciate the Garmin Venu 3. It's seen as a premium device with good features.",
+          "cosine_similarities": [
+            0.510676,
+            0.530345,
+            0.584546,
+            0.589257,
+            0.579432
+          ],
+          "min_similarity": 0.510676,
+          "pmf_probabilities": [
+            0.0,
+            0.081657,
+            0.306673,
+            0.32623,
+            0.28544
+          ],
+          "expected_rating": 3.8155,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality seems robust, and the hardware reliability is likely due to Garmin's reputation. Data protection is important, and Garmin is known for safeguarding user information.",
+          "cosine_similarities": [
+            0.581752,
+            0.548236,
+            0.512278,
+            0.596438,
+            0.613727
+          ],
+          "min_similarity": 0.512278,
+          "pmf_probabilities": [
+            0.238708,
+            0.123548,
+            0.0,
+            0.289169,
+            0.348575
+          ],
+          "expected_rating": 3.3854,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartwatch as my daily smartwatch because of its premium build quality, fast responsiveness, and reliable performance. The price is justified by the top-tier features it offers.",
+          "cosine_similarities": [
+            0.51024,
+            0.555594,
+            0.54071,
+            0.605647,
+            0.593569
+          ],
+          "min_similarity": 0.51024,
+          "pmf_probabilities": [
+            0.0,
+            0.178166,
+            0.119697,
+            0.374793,
+            0.327344
+          ],
+          "expected_rating": 3.8513,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "primary_adoption_rating": 2.6858,
+      "primary_adoption_pmf": [
+        0.083721,
+        0.311787,
+        0.439487,
+        0.165005,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 3.0714,
+        "EE": 2.7981,
+        "HM": 2.6992,
+        "SI": 2.7192,
+        "PP": 3.1086,
+        "BI": 2.6858
+      },
+      "construct_responses": {
+        "PE": "The Garmin Venu 3 offers comprehensive health and fitness tracking, which is useful for monitoring heart rate, sleep, and activity. However, the high price makes it a premium choice that might be overkill for someone in my segment.",
+        "EE": "Setting up and navigating the smartwatch seems straightforward, but the premium price might not justify the effort for a mid-range user like me.",
+        "HM": "The high-contrast display and vibrant AMOLED screen could be enjoyable for outdoor and indoor use, but the steep price tag could deter potential buyers.",
+        "SI": "My peers might see this as a premium smartwatch with advanced features, but they might also think it's too expensive for daily use.",
+        "PP": "The build quality seems robust, and the GPS and heart rate monitoring are reliable. However, the price is a significant factor that could impact its durability perception.",
+        "BI": "I am not certain I will continue using this smartwatch as my daily smartwatch due to its high price. I might consider it for special occasions or if I need advanced health tracking.",
+        "OVERALL": "The Garmin Venu 3 offers good health and fitness tracking features, but the price is a concern for a mid-range user like me."
+      },
+      "response_text": "The Garmin Venu 3 offers good health and fitness tracking features, but the price is a concern for a mid-range user like me.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The Garmin Venu 3 offers comprehensive health and fitness tracking, which is useful for monitoring heart rate, sleep, and activity. However, the high price makes it a premium choice that might be overkill for someone in my segment.",
+          "cosine_similarities": [
+            0.515271,
+            0.526915,
+            0.521907,
+            0.530087,
+            0.514917
+          ],
+          "min_similarity": 0.514917,
+          "pmf_probabilities": [
+            0.010256,
+            0.347649,
+            0.202538,
+            0.439557,
+            0.0
+          ],
+          "expected_rating": 3.0714,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and navigating the smartwatch seems straightforward, but the premium price might not justify the effort for a mid-range user like me.",
+          "cosine_similarities": [
+            0.622706,
+            0.572698,
+            0.611047,
+            0.575216,
+            0.608646
+          ],
+          "min_similarity": 0.572698,
+          "pmf_probabilities": [
+            0.394312,
+            0.0,
+            0.30238,
+            0.019857,
+            0.283451
+          ],
+          "expected_rating": 2.7981,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The high-contrast display and vibrant AMOLED screen could be enjoyable for outdoor and indoor use, but the steep price tag could deter potential buyers.",
+          "cosine_similarities": [
+            0.467126,
+            0.464383,
+            0.488,
+            0.462318,
+            0.463138
+          ],
+          "min_similarity": 0.462318,
+          "pmf_probabilities": [
+            0.144052,
+            0.061868,
+            0.769502,
+            0.0,
+            0.024578
+          ],
+          "expected_rating": 2.6992,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers might see this as a premium smartwatch with advanced features, but they might also think it's too expensive for daily use.",
+          "cosine_similarities": [
+            0.576182,
+            0.593295,
+            0.644287,
+            0.576101,
+            0.568524
+          ],
+          "min_similarity": 0.568524,
+          "pmf_probabilities": [
+            0.06615,
+            0.213966,
+            0.654437,
+            0.065446,
+            0.0
+          ],
+          "expected_rating": 2.7192,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality seems robust, and the GPS and heart rate monitoring are reliable. However, the price is a significant factor that could impact its durability perception.",
+          "cosine_similarities": [
+            0.485423,
+            0.472993,
+            0.449619,
+            0.49676,
+            0.481019
+          ],
+          "min_similarity": 0.449619,
+          "pmf_probabilities": [
+            0.259981,
+            0.169722,
+            0.0,
+            0.342297,
+            0.228
+          ],
+          "expected_rating": 3.1086,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am not certain I will continue using this smartwatch as my daily smartwatch due to its high price. I might consider it for special occasions or if I need advanced health tracking.",
+          "cosine_similarities": [
+            0.611018,
+            0.644125,
+            0.662662,
+            0.622818,
+            0.598865
+          ],
+          "min_similarity": 0.598865,
+          "pmf_probabilities": [
+            0.083721,
+            0.311787,
+            0.439487,
+            0.165005,
+            0.0
+          ],
+          "expected_rating": 2.6858,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "primary_adoption_rating": 2.4583,
+      "primary_adoption_pmf": [
+        0.154691,
+        0.35516,
+        0.428742,
+        0.0,
+        0.061407
+      ],
+      "construct_scores": {
+        "PE": 2.3699,
+        "EE": 3.2976,
+        "HM": 2.5765,
+        "SI": 3.3553,
+        "PP": 3.3937,
+        "BI": 2.4583
+      },
+      "construct_responses": {
+        "PE": "The heart rate monitoring and sleep tracking features are quite useful for fitness and health. However, the high price might make it less practical for everyday use.",
+        "EE": "The setup process seems straightforward, but the complex interface might take some time to get used to.",
+        "HM": "The vibrant display is appealing, but the price might be a deterrent for casual users who just want a simple smartwatch.",
+        "SI": "My friends who are fitness enthusiasts might appreciate it, but for the general crowd, it might seem overpriced.",
+        "PP": "The build quality seems robust, and the hardware reliability is likely good, but the high cost might limit its appeal.",
+        "BI": "I am not certain I will continue using this smartwatch as my daily smartwatch. The features are good, but the price is too high for my needs.",
+        "OVERALL": "The Garmin Venu 3 has useful health and fitness features, but the high price makes it less appealing for everyday use."
+      },
+      "response_text": "The Garmin Venu 3 has useful health and fitness features, but the high price makes it less appealing for everyday use.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The heart rate monitoring and sleep tracking features are quite useful for fitness and health. However, the high price might make it less practical for everyday use.",
+          "cosine_similarities": [
+            0.56035,
+            0.571315,
+            0.542527,
+            0.560088,
+            0.53015
+          ],
+          "min_similarity": 0.53015,
+          "pmf_probabilities": [
+            0.265656,
+            0.362115,
+            0.108876,
+            0.263353,
+            0.0
+          ],
+          "expected_rating": 2.3699,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The setup process seems straightforward, but the complex interface might take some time to get used to.",
+          "cosine_similarities": [
+            0.534172,
+            0.551248,
+            0.574193,
+            0.539402,
+            0.552025
+          ],
+          "min_similarity": 0.534172,
+          "pmf_probabilities": [
+            0.0,
+            0.212976,
+            0.49914,
+            0.065227,
+            0.222657
+          ],
+          "expected_rating": 3.2976,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The vibrant display is appealing, but the price might be a deterrent for casual users who just want a simple smartwatch.",
+          "cosine_similarities": [
+            0.528514,
+            0.55242,
+            0.535358,
+            0.544612,
+            0.489207
+          ],
+          "min_similarity": 0.489207,
+          "pmf_probabilities": [
+            0.19261,
+            0.309752,
+            0.226148,
+            0.27149,
+            0.0
+          ],
+          "expected_rating": 2.5765,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends who are fitness enthusiasts might appreciate it, but for the general crowd, it might seem overpriced.",
+          "cosine_similarities": [
+            0.480193,
+            0.514403,
+            0.572191,
+            0.517716,
+            0.513544
+          ],
+          "min_similarity": 0.480193,
+          "pmf_probabilities": [
+            0.0,
+            0.173581,
+            0.466801,
+            0.190392,
+            0.169226
+          ],
+          "expected_rating": 3.3553,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality seems robust, and the hardware reliability is likely good, but the high cost might limit its appeal.",
+          "cosine_similarities": [
+            0.413067,
+            0.404022,
+            0.393355,
+            0.422421,
+            0.421012
+          ],
+          "min_similarity": 0.393355,
+          "pmf_probabilities": [
+            0.226313,
+            0.122463,
+            0.0,
+            0.3337,
+            0.317523
+          ],
+          "expected_rating": 3.3937,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am not certain I will continue using this smartwatch as my daily smartwatch. The features are good, but the price is too high for my needs.",
+          "cosine_similarities": [
+            0.631676,
+            0.653796,
+            0.661915,
+            0.614606,
+            0.621382
+          ],
+          "min_similarity": 0.614606,
+          "pmf_probabilities": [
+            0.154691,
+            0.35516,
+            0.428742,
+            0.0,
+            0.061407
+          ],
+          "expected_rating": 2.4583,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "primary_adoption_rating": 2.6531,
+      "primary_adoption_pmf": [
+        0.176258,
+        0.257449,
+        0.434748,
+        0.0,
+        0.131545
+      ],
+      "construct_scores": {
+        "PE": 2.4255,
+        "EE": 3.8796,
+        "HM": 2.492,
+        "SI": 3.1558,
+        "PP": 3.0291,
+        "BI": 2.6531
+      },
+      "construct_responses": {
+        "PE": "The smartwatch offers comprehensive health and fitness tracking, which could be useful for someone who wants to monitor their daily activities and workouts. However, with a price tag of ₹45,000, it seems too expensive for my budget.",
+        "EE": "Setting up the smartwatch should be straightforward, but with a higher price point, I would expect a more user-friendly interface that feels intuitive and easy to navigate.",
+        "HM": "The display is described as vibrant and clear, which could be enjoyable for daily use. However, the high price makes it less appealing for an entry-level user like me.",
+        "SI": "Friends who are fitness enthusiasts might find it useful, but for most people, it might seem like a luxury item rather than a necessity.",
+        "PP": "The build quality and durability seem solid based on the specifications, and the smartwatch does have good data protection features. However, the price is a significant concern.",
+        "BI": "I am not certain I will continue using this smartwatch as my daily smartwatch due to its high price. I would need a significant discount or a better justification for the cost.",
+        "OVERALL": "While the smartwatch offers useful health and fitness tracking features, its high price makes it unsuitable for an entry-level user like me. I would prefer a more affordable option."
+      },
+      "response_text": "While the smartwatch offers useful health and fitness tracking features, its high price makes it unsuitable for an entry-level user like me. I would prefer a more affordable option.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The smartwatch offers comprehensive health and fitness tracking, which could be useful for someone who wants to monitor their daily activities and workouts. However, with a price tag of ₹45,000, it seems too expensive for my budget.",
+          "cosine_similarities": [
+            0.588898,
+            0.59755,
+            0.566542,
+            0.590336,
+            0.569495
+          ],
+          "min_similarity": 0.566542,
+          "pmf_probabilities": [
+            0.279063,
+            0.387065,
+            0.0,
+            0.297012,
+            0.036859
+          ],
+          "expected_rating": 2.4255,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up the smartwatch should be straightforward, but with a higher price point, I would expect a more user-friendly interface that feels intuitive and easy to navigate.",
+          "cosine_similarities": [
+            0.573865,
+            0.580014,
+            0.601871,
+            0.59346,
+            0.60406
+          ],
+          "min_similarity": 0.573865,
+          "pmf_probabilities": [
+            0.0,
+            0.073251,
+            0.333624,
+            0.233426,
+            0.359699
+          ],
+          "expected_rating": 3.8796,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The display is described as vibrant and clear, which could be enjoyable for daily use. However, the high price makes it less appealing for an entry-level user like me.",
+          "cosine_similarities": [
+            0.523205,
+            0.525812,
+            0.537062,
+            0.518731,
+            0.492122
+          ],
+          "min_similarity": 0.492122,
+          "pmf_probabilities": [
+            0.228011,
+            0.247136,
+            0.329657,
+            0.195195,
+            0.0
+          ],
+          "expected_rating": 2.492,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Friends who are fitness enthusiasts might find it useful, but for most people, it might seem like a luxury item rather than a necessity.",
+          "cosine_similarities": [
+            0.571245,
+            0.509573,
+            0.593337,
+            0.525115,
+            0.581624
+          ],
+          "min_similarity": 0.509573,
+          "pmf_probabilities": [
+            0.264654,
+            0.0,
+            0.359456,
+            0.066697,
+            0.309192
+          ],
+          "expected_rating": 3.1558,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality and durability seem solid based on the specifications, and the smartwatch does have good data protection features. However, the price is a significant concern.",
+          "cosine_similarities": [
+            0.549312,
+            0.540175,
+            0.509545,
+            0.553539,
+            0.544805
+          ],
+          "min_similarity": 0.509545,
+          "pmf_probabilities": [
+            0.265733,
+            0.204674,
+            0.0,
+            0.293979,
+            0.235615
+          ],
+          "expected_rating": 3.0291,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am not certain I will continue using this smartwatch as my daily smartwatch due to its high price. I would need a significant discount or a better justification for the cost.",
+          "cosine_similarities": [
+            0.583415,
+            0.596859,
+            0.626216,
+            0.55423,
+            0.576012
+          ],
+          "min_similarity": 0.55423,
+          "pmf_probabilities": [
+            0.176258,
+            0.257449,
+            0.434748,
+            0.0,
+            0.131545
+          ],
+          "expected_rating": 2.6531,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.547517,
+        0.552507,
+        0.544402,
+        0.602832,
+        0.572204
+      ],
+      "pmf_probabilities": [
+        0.031963,
+        0.083166,
+        0.0,
+        0.599581,
+        0.28529
+      ],
+      "expected_rating": 4.0231,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.544677,
+        0.538069,
+        0.574911,
+        0.580425,
+        0.624728
+      ],
+      "pmf_probabilities": [
+        0.038315,
+        0.0,
+        0.213622,
+        0.245592,
+        0.502471
+      ],
+      "expected_rating": 4.1739,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.570027,
+        0.601749,
+        0.592345,
+        0.6339,
+        0.68498
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.136225,
+        0.09584,
+        0.274291,
+        0.493644
+      ],
+      "expected_rating": 4.1254,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.510676,
+        0.530345,
+        0.584546,
+        0.589257,
+        0.579432
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.081657,
+        0.306673,
+        0.32623,
+        0.28544
+      ],
+      "expected_rating": 3.8155,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.581752,
+        0.548236,
+        0.512278,
+        0.596438,
+        0.613727
+      ],
+      "pmf_probabilities": [
+        0.238708,
+        0.123548,
+        0.0,
+        0.289169,
+        0.348575
+      ],
+      "expected_rating": 3.3854,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.51024,
+        0.555594,
+        0.54071,
+        0.605647,
+        0.593569
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.178166,
+        0.119697,
+        0.374793,
+        0.327344
+      ],
+      "expected_rating": 3.8513,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.515271,
+        0.526915,
+        0.521907,
+        0.530087,
+        0.514917
+      ],
+      "pmf_probabilities": [
+        0.010256,
+        0.347649,
+        0.202538,
+        0.439557,
+        0.0
+      ],
+      "expected_rating": 3.0714,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.622706,
+        0.572698,
+        0.611047,
+        0.575216,
+        0.608646
+      ],
+      "pmf_probabilities": [
+        0.394312,
+        0.0,
+        0.30238,
+        0.019857,
+        0.283451
+      ],
+      "expected_rating": 2.7981,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.467126,
+        0.464383,
+        0.488,
+        0.462318,
+        0.463138
+      ],
+      "pmf_probabilities": [
+        0.144052,
+        0.061868,
+        0.769502,
+        0.0,
+        0.024578
+      ],
+      "expected_rating": 2.6992,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.576182,
+        0.593295,
+        0.644287,
+        0.576101,
+        0.568524
+      ],
+      "pmf_probabilities": [
+        0.06615,
+        0.213966,
+        0.654437,
+        0.065446,
+        0.0
+      ],
+      "expected_rating": 2.7192,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.485423,
+        0.472993,
+        0.449619,
+        0.49676,
+        0.481019
+      ],
+      "pmf_probabilities": [
+        0.259981,
+        0.169722,
+        0.0,
+        0.342297,
+        0.228
+      ],
+      "expected_rating": 3.1086,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.611018,
+        0.644125,
+        0.662662,
+        0.622818,
+        0.598865
+      ],
+      "pmf_probabilities": [
+        0.083721,
+        0.311787,
+        0.439487,
+        0.165005,
+        0.0
+      ],
+      "expected_rating": 2.6858,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.56035,
+        0.571315,
+        0.542527,
+        0.560088,
+        0.53015
+      ],
+      "pmf_probabilities": [
+        0.265656,
+        0.362115,
+        0.108876,
+        0.263353,
+        0.0
+      ],
+      "expected_rating": 2.3699,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.534172,
+        0.551248,
+        0.574193,
+        0.539402,
+        0.552025
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.212976,
+        0.49914,
+        0.065227,
+        0.222657
+      ],
+      "expected_rating": 3.2976,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.528514,
+        0.55242,
+        0.535358,
+        0.544612,
+        0.489207
+      ],
+      "pmf_probabilities": [
+        0.19261,
+        0.309752,
+        0.226148,
+        0.27149,
+        0.0
+      ],
+      "expected_rating": 2.5765,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.480193,
+        0.514403,
+        0.572191,
+        0.517716,
+        0.513544
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.173581,
+        0.466801,
+        0.190392,
+        0.169226
+      ],
+      "expected_rating": 3.3553,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.413067,
+        0.404022,
+        0.393355,
+        0.422421,
+        0.421012
+      ],
+      "pmf_probabilities": [
+        0.226313,
+        0.122463,
+        0.0,
+        0.3337,
+        0.317523
+      ],
+      "expected_rating": 3.3937,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.631676,
+        0.653796,
+        0.661915,
+        0.614606,
+        0.621382
+      ],
+      "pmf_probabilities": [
+        0.154691,
+        0.35516,
+        0.428742,
+        0.0,
+        0.061407
+      ],
+      "expected_rating": 2.4583,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.588898,
+        0.59755,
+        0.566542,
+        0.590336,
+        0.569495
+      ],
+      "pmf_probabilities": [
+        0.279063,
+        0.387065,
+        0.0,
+        0.297012,
+        0.036859
+      ],
+      "expected_rating": 2.4255,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.573865,
+        0.580014,
+        0.601871,
+        0.59346,
+        0.60406
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.073251,
+        0.333624,
+        0.233426,
+        0.359699
+      ],
+      "expected_rating": 3.8796,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.523205,
+        0.525812,
+        0.537062,
+        0.518731,
+        0.492122
+      ],
+      "pmf_probabilities": [
+        0.228011,
+        0.247136,
+        0.329657,
+        0.195195,
+        0.0
+      ],
+      "expected_rating": 2.492,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.571245,
+        0.509573,
+        0.593337,
+        0.525115,
+        0.581624
+      ],
+      "pmf_probabilities": [
+        0.264654,
+        0.0,
+        0.359456,
+        0.066697,
+        0.309192
+      ],
+      "expected_rating": 3.1558,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.549312,
+        0.540175,
+        0.509545,
+        0.553539,
+        0.544805
+      ],
+      "pmf_probabilities": [
+        0.265733,
+        0.204674,
+        0.0,
+        0.293979,
+        0.235615
+      ],
+      "expected_rating": 3.0291,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.583415,
+        0.596859,
+        0.626216,
+        0.55423,
+        0.576012
+      ],
+      "pmf_probabilities": [
+        0.176258,
+        0.257449,
+        0.434748,
+        0.0,
+        0.131545
+      ],
+      "expected_rating": 2.6531,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.547517,
+      "cos_sim_2": 0.552507,
+      "cos_sim_3": 0.544402,
+      "cos_sim_4": 0.602832,
+      "cos_sim_5": 0.572204,
+      "min_similarity": 0.544402,
+      "p1": 0.031963,
+      "p2": 0.083166,
+      "p3": 0.0,
+      "p4": 0.599581,
+      "p5": 0.28529,
+      "set_expected_rating": 4.0231,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.544677,
+      "cos_sim_2": 0.538069,
+      "cos_sim_3": 0.574911,
+      "cos_sim_4": 0.580425,
+      "cos_sim_5": 0.624728,
+      "min_similarity": 0.538069,
+      "p1": 0.038315,
+      "p2": 0.0,
+      "p3": 0.213622,
+      "p4": 0.245592,
+      "p5": 0.502471,
+      "set_expected_rating": 4.1739,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.570027,
+      "cos_sim_2": 0.601749,
+      "cos_sim_3": 0.592345,
+      "cos_sim_4": 0.6339,
+      "cos_sim_5": 0.68498,
+      "min_similarity": 0.570027,
+      "p1": 0.0,
+      "p2": 0.136225,
+      "p3": 0.09584,
+      "p4": 0.274291,
+      "p5": 0.493644,
+      "set_expected_rating": 4.1254,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.510676,
+      "cos_sim_2": 0.530345,
+      "cos_sim_3": 0.584546,
+      "cos_sim_4": 0.589257,
+      "cos_sim_5": 0.579432,
+      "min_similarity": 0.510676,
+      "p1": 0.0,
+      "p2": 0.081657,
+      "p3": 0.306673,
+      "p4": 0.32623,
+      "p5": 0.28544,
+      "set_expected_rating": 3.8155,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.581752,
+      "cos_sim_2": 0.548236,
+      "cos_sim_3": 0.512278,
+      "cos_sim_4": 0.596438,
+      "cos_sim_5": 0.613727,
+      "min_similarity": 0.512278,
+      "p1": 0.238708,
+      "p2": 0.123548,
+      "p3": 0.0,
+      "p4": 0.289169,
+      "p5": 0.348575,
+      "set_expected_rating": 3.3854,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.51024,
+      "cos_sim_2": 0.555594,
+      "cos_sim_3": 0.54071,
+      "cos_sim_4": 0.605647,
+      "cos_sim_5": 0.593569,
+      "min_similarity": 0.51024,
+      "p1": 0.0,
+      "p2": 0.178166,
+      "p3": 0.119697,
+      "p4": 0.374793,
+      "p5": 0.327344,
+      "set_expected_rating": 3.8513,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.515271,
+      "cos_sim_2": 0.526915,
+      "cos_sim_3": 0.521907,
+      "cos_sim_4": 0.530087,
+      "cos_sim_5": 0.514917,
+      "min_similarity": 0.514917,
+      "p1": 0.010256,
+      "p2": 0.347649,
+      "p3": 0.202538,
+      "p4": 0.439557,
+      "p5": 0.0,
+      "set_expected_rating": 3.0714,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.622706,
+      "cos_sim_2": 0.572698,
+      "cos_sim_3": 0.611047,
+      "cos_sim_4": 0.575216,
+      "cos_sim_5": 0.608646,
+      "min_similarity": 0.572698,
+      "p1": 0.394312,
+      "p2": 0.0,
+      "p3": 0.30238,
+      "p4": 0.019857,
+      "p5": 0.283451,
+      "set_expected_rating": 2.7981,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.467126,
+      "cos_sim_2": 0.464383,
+      "cos_sim_3": 0.488,
+      "cos_sim_4": 0.462318,
+      "cos_sim_5": 0.463138,
+      "min_similarity": 0.462318,
+      "p1": 0.144052,
+      "p2": 0.061868,
+      "p3": 0.769502,
+      "p4": 0.0,
+      "p5": 0.024578,
+      "set_expected_rating": 2.6992,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.576182,
+      "cos_sim_2": 0.593295,
+      "cos_sim_3": 0.644287,
+      "cos_sim_4": 0.576101,
+      "cos_sim_5": 0.568524,
+      "min_similarity": 0.568524,
+      "p1": 0.06615,
+      "p2": 0.213966,
+      "p3": 0.654437,
+      "p4": 0.065446,
+      "p5": 0.0,
+      "set_expected_rating": 2.7192,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.485423,
+      "cos_sim_2": 0.472993,
+      "cos_sim_3": 0.449619,
+      "cos_sim_4": 0.49676,
+      "cos_sim_5": 0.481019,
+      "min_similarity": 0.449619,
+      "p1": 0.259981,
+      "p2": 0.169722,
+      "p3": 0.0,
+      "p4": 0.342297,
+      "p5": 0.228,
+      "set_expected_rating": 3.1086,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.611018,
+      "cos_sim_2": 0.644125,
+      "cos_sim_3": 0.662662,
+      "cos_sim_4": 0.622818,
+      "cos_sim_5": 0.598865,
+      "min_similarity": 0.598865,
+      "p1": 0.083721,
+      "p2": 0.311787,
+      "p3": 0.439487,
+      "p4": 0.165005,
+      "p5": 0.0,
+      "set_expected_rating": 2.6858,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.56035,
+      "cos_sim_2": 0.571315,
+      "cos_sim_3": 0.542527,
+      "cos_sim_4": 0.560088,
+      "cos_sim_5": 0.53015,
+      "min_similarity": 0.53015,
+      "p1": 0.265656,
+      "p2": 0.362115,
+      "p3": 0.108876,
+      "p4": 0.263353,
+      "p5": 0.0,
+      "set_expected_rating": 2.3699,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.534172,
+      "cos_sim_2": 0.551248,
+      "cos_sim_3": 0.574193,
+      "cos_sim_4": 0.539402,
+      "cos_sim_5": 0.552025,
+      "min_similarity": 0.534172,
+      "p1": 0.0,
+      "p2": 0.212976,
+      "p3": 0.49914,
+      "p4": 0.065227,
+      "p5": 0.222657,
+      "set_expected_rating": 3.2976,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.528514,
+      "cos_sim_2": 0.55242,
+      "cos_sim_3": 0.535358,
+      "cos_sim_4": 0.544612,
+      "cos_sim_5": 0.489207,
+      "min_similarity": 0.489207,
+      "p1": 0.19261,
+      "p2": 0.309752,
+      "p3": 0.226148,
+      "p4": 0.27149,
+      "p5": 0.0,
+      "set_expected_rating": 2.5765,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.480193,
+      "cos_sim_2": 0.514403,
+      "cos_sim_3": 0.572191,
+      "cos_sim_4": 0.517716,
+      "cos_sim_5": 0.513544,
+      "min_similarity": 0.480193,
+      "p1": 0.0,
+      "p2": 0.173581,
+      "p3": 0.466801,
+      "p4": 0.190392,
+      "p5": 0.169226,
+      "set_expected_rating": 3.3553,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.413067,
+      "cos_sim_2": 0.404022,
+      "cos_sim_3": 0.393355,
+      "cos_sim_4": 0.422421,
+      "cos_sim_5": 0.421012,
+      "min_similarity": 0.393355,
+      "p1": 0.226313,
+      "p2": 0.122463,
+      "p3": 0.0,
+      "p4": 0.3337,
+      "p5": 0.317523,
+      "set_expected_rating": 3.3937,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.631676,
+      "cos_sim_2": 0.653796,
+      "cos_sim_3": 0.661915,
+      "cos_sim_4": 0.614606,
+      "cos_sim_5": 0.621382,
+      "min_similarity": 0.614606,
+      "p1": 0.154691,
+      "p2": 0.35516,
+      "p3": 0.428742,
+      "p4": 0.0,
+      "p5": 0.061407,
+      "set_expected_rating": 2.4583,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.588898,
+      "cos_sim_2": 0.59755,
+      "cos_sim_3": 0.566542,
+      "cos_sim_4": 0.590336,
+      "cos_sim_5": 0.569495,
+      "min_similarity": 0.566542,
+      "p1": 0.279063,
+      "p2": 0.387065,
+      "p3": 0.0,
+      "p4": 0.297012,
+      "p5": 0.036859,
+      "set_expected_rating": 2.4255,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.573865,
+      "cos_sim_2": 0.580014,
+      "cos_sim_3": 0.601871,
+      "cos_sim_4": 0.59346,
+      "cos_sim_5": 0.60406,
+      "min_similarity": 0.573865,
+      "p1": 0.0,
+      "p2": 0.073251,
+      "p3": 0.333624,
+      "p4": 0.233426,
+      "p5": 0.359699,
+      "set_expected_rating": 3.8796,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.523205,
+      "cos_sim_2": 0.525812,
+      "cos_sim_3": 0.537062,
+      "cos_sim_4": 0.518731,
+      "cos_sim_5": 0.492122,
+      "min_similarity": 0.492122,
+      "p1": 0.228011,
+      "p2": 0.247136,
+      "p3": 0.329657,
+      "p4": 0.195195,
+      "p5": 0.0,
+      "set_expected_rating": 2.492,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.571245,
+      "cos_sim_2": 0.509573,
+      "cos_sim_3": 0.593337,
+      "cos_sim_4": 0.525115,
+      "cos_sim_5": 0.581624,
+      "min_similarity": 0.509573,
+      "p1": 0.264654,
+      "p2": 0.0,
+      "p3": 0.359456,
+      "p4": 0.066697,
+      "p5": 0.309192,
+      "set_expected_rating": 3.1558,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.549312,
+      "cos_sim_2": 0.540175,
+      "cos_sim_3": 0.509545,
+      "cos_sim_4": 0.553539,
+      "cos_sim_5": 0.544805,
+      "min_similarity": 0.509545,
+      "p1": 0.265733,
+      "p2": 0.204674,
+      "p3": 0.0,
+      "p4": 0.293979,
+      "p5": 0.235615,
+      "set_expected_rating": 3.0291,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Garmin Venu 3 Smartwatch",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.583415,
+      "cos_sim_2": 0.596859,
+      "cos_sim_3": 0.626216,
+      "cos_sim_4": 0.55423,
+      "cos_sim_5": 0.576012,
+      "min_similarity": 0.55423,
+      "p1": 0.176258,
+      "p2": 0.257449,
+      "p3": 0.434748,
+      "p4": 0.0,
+      "p5": 0.131545,
+      "set_expected_rating": 2.6531,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "name": "TP-Link Tapo C220 Smart Security Camera",
+  "category": "Smart Home Security / Surveillance Camera",
+  "description": "Indoor Wi-Fi security camera with 2K 4MP resolution, 360 pan/tilt motion tracking, smart AI detection, infrared night vision, and two-way audio for home surveillance.",
+  "price_inr": 2499.0,
+  "target_group": "Technology consumers",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Smart Home Platform (Tapo / Wi-Fi)",
+  "features": [
+    {
+      "name": "2K High-Definition Video",
+      "explanation": "Crisp video recording and live stream clarity for home monitoring.",
+      "category": null
+    },
+    {
+      "name": "360° Pan & Tilt Motion Tracking",
+      "explanation": "Full rotational room coverage with automated subject tracking.",
+      "category": null
+    },
+    {
+      "name": "Infrared Night Vision",
+      "explanation": "Clear low-light surveillance and visibility in complete darkness.",
+      "category": null
+    },
+    {
+      "name": "Smart Motion Detection & Alerts",
+      "explanation": "Instant activity notifications and human/motion detection.",
+      "category": null
+    },
+    {
+      "name": "Two-Way Audio Communication",
+      "explanation": "Built-in microphone and speaker for real-time remote communication.",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI",
+    "PV"
+  ],
+  "target_persona": "P2",
+  "target_construct": "BI",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Smart Home Security / Surveillance Camera",
+    "product_noun": "security camera",
+    "usage_role": "primary security camera",
+    "brand_or_ecosystem": "Smart Home Platform (Tapo / Wi-Fi)",
+    "features_count": 5,
+    "conflict_resolved": "Category conflict detected: 'Audio Device' contradicted product 'TP-Link Tapo C220 Smart Security Camera'. Corrected to 'Smart Home Security / Surveillance Camera'.",
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-01T07:21:16.852857+00:00"
+}

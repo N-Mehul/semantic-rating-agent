@@ -1,0 +1,432 @@
+[
+  {
+    "persona_id": "P1_premium_tier_owner",
+    "product_name": "iphone",
+    "product_context": {
+      "name": "iphone",
+      "category": "Smartphone",
+      "noun": "smartphone",
+      "usage_role": "primary phone",
+      "ecosystem": "iOS",
+      "price_inr": 46000.0,
+      "description": "Apple iPhone 17 is a premium smartphone with a 6.3-inch OLED display, A19 processor, 48MP rear camera and 18MP front camera. It runs on iOS and supports 5G connectivity. It offers smooth performance, good photography, gaming, video streaming and everyday use. It has Face ID, USB-C charging and water and dust resistance.\nSpecifications: 6.3-inch OLED Display\nA19 Processor\n48MP Rear Camera\n18MP Front Camera\niOS Operating System\n5G Connectivity\nFace ID\nUSB-C Charging\nWater and Dust Resistance"
+    },
+    "response_text": "Good features, but the price is a dealbreaker.",
+    "construct_responses": {
+      "PE": "Strong camera and fast performance for daily tasks.",
+      "EE": "It seems straightforward to set up, with clear instructions. The Face ID and touch ID options are convenient.",
+      "HM": "It's comfortable to use, but I need to see it in person.",
+      "SI": "Friends might think it's reliable, but need to see it first.",
+      "PP": "Face ID is secure for personal info.",
+      "BI": "No, too expensive for the features I need.",
+      "OVERALL": "Good features, but the price is a dealbreaker."
+    },
+    "response_validation": {
+      "PE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "EE": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 1,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "Quick boot and app loading, but pricey at ₹46,000.",
+            "issues": [
+              "talks about price, which belongs only in the buying-intention answer"
+            ]
+          }
+        ]
+      },
+      "HM": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "SI": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 1,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "Not sure, need to see it in person first.",
+            "issues": [
+              "does not talk about other people's influence; keep the social answer about others"
+            ]
+          }
+        ]
+      },
+      "PP": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 1,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "Face unlock is secure.",
+            "issues": [
+              "too short; add one short natural reason and keep the same opinion"
+            ]
+          }
+        ]
+      },
+      "BI": {
+        "status": "flagged",
+        "valid": false,
+        "retries": 2,
+        "issues": [
+          "your assessment was unsure; say what you still need to check before deciding"
+        ],
+        "previous_attempts": [
+          {
+            "text": "No, it's too expensive for the features offered.",
+            "issues": [
+              "your assessment was unsure; say what you still need to check before deciding"
+            ]
+          },
+          {
+            "text": "No, too pricey for the features.",
+            "issues": [
+              "your assessment was unsure; say what you still need to check before deciding"
+            ]
+          }
+        ]
+      }
+    },
+    "suitability_assessment": {
+      "strengths": "Good for daily use, strong camera, 5G support",
+      "limitations": "Price is steep for what it offers",
+      "what_matters_to_me": "Performance, camera quality, security features",
+      "price_justified_for_me": "partly",
+      "comfortable_to_spend": "yes",
+      "better_than_my_usual_options": "no",
+      "buying_decision": "unsure",
+      "still_need_to_check": "compare with other options"
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-11-06T03:52:27.233336+00:00"
+  },
+  {
+    "persona_id": "P2_midrange_heavy_user",
+    "product_name": "iphone",
+    "product_context": {
+      "name": "iphone",
+      "category": "Smartphone",
+      "noun": "smartphone",
+      "usage_role": "primary phone",
+      "ecosystem": "iOS",
+      "price_inr": 46000.0,
+      "description": "Apple iPhone 17 is a premium smartphone with a 6.3-inch OLED display, A19 processor, 48MP rear camera and 18MP front camera. It runs on iOS and supports 5G connectivity. It offers smooth performance, good photography, gaming, video streaming and everyday use. It has Face ID, USB-C charging and water and dust resistance.\nSpecifications: 6.3-inch OLED Display\nA19 Processor\n48MP Rear Camera\n18MP Front Camera\niOS Operating System\n5G Connectivity\nFace ID\nUSB-C Charging\nWater and Dust Resistance"
+    },
+    "response_text": "Good specs, but the price is a dealbreaker.",
+    "construct_responses": {
+      "PE": "It helps with multitasking, fast app launches, and streaming videos smoother.",
+      "EE": "Easy to set up, iOS is intuitive, face ID works well.",
+      "HM": "Fun to use, smooth and responsive, good for gaming and browsing.",
+      "SI": "Friends might think it's cool for social media and calls.",
+      "PP": "Secure and fast, but not mentioned in specs.",
+      "BI": "No, too expensive for the price I'm willing to pay.",
+      "OVERALL": "Good specs, but the price is a dealbreaker."
+    },
+    "response_validation": {
+      "PE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "EE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "HM": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "SI": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 2,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "Maybe, it's good but expensive for me.",
+            "issues": [
+              "talks about price, which belongs only in the buying-intention answer",
+              "does not talk about other people's influence; keep the social answer about others"
+            ]
+          },
+          {
+            "text": "My friends might think it's fancy but a bit overpriced.",
+            "issues": [
+              "talks about price, which belongs only in the buying-intention answer"
+            ]
+          }
+        ]
+      },
+      "PP": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "BI": {
+        "status": "flagged",
+        "valid": false,
+        "retries": 2,
+        "issues": [
+          "your assessment was unsure; say what you still need to check before deciding"
+        ],
+        "previous_attempts": [
+          {
+            "text": "No, too expensive for the price.",
+            "issues": [
+              "your assessment was unsure; say what you still need to check before deciding"
+            ]
+          },
+          {
+            "text": "Maybe, but I need to check other options first.",
+            "issues": [
+              "does not give a reason based on what this buyer cares about"
+            ]
+          }
+        ]
+      }
+    },
+    "suitability_assessment": {
+      "strengths": "Good camera, fast processor, 5G support",
+      "limitations": "Price is high for me",
+      "what_matters_to_me": "Performance, camera quality, connectivity",
+      "price_justified_for_me": "partly",
+      "comfortable_to_spend": "no",
+      "better_than_my_usual_options": "yes",
+      "buying_decision": "unsure",
+      "still_need_to_check": "price"
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-11-06T03:57:30.730521+00:00"
+  },
+  {
+    "persona_id": "P3_midrange_moderate_user",
+    "product_name": "iphone",
+    "product_context": {
+      "name": "iphone",
+      "category": "Smartphone",
+      "noun": "smartphone",
+      "usage_role": "primary phone",
+      "ecosystem": "iOS",
+      "price_inr": 46000.0,
+      "description": "Apple iPhone 17 is a premium smartphone with a 6.3-inch OLED display, A19 processor, 48MP rear camera and 18MP front camera. It runs on iOS and supports 5G connectivity. It offers smooth performance, good photography, gaming, video streaming and everyday use. It has Face ID, USB-C charging and water and dust resistance.\nSpecifications: 6.3-inch OLED Display\nA19 Processor\n48MP Rear Camera\n18MP Front Camera\niOS Operating System\n5G Connectivity\nFace ID\nUSB-C Charging\nWater and Dust Resistance"
+    },
+    "response_text": "It has a lot going for it, but the price is the deciding factor.",
+    "construct_responses": {
+      "PE": "It helps with daily tasks by working smoothly and quickly.",
+      "EE": "Easy to use, thanks to a straightforward setup process.",
+      "HM": "It feels pleasant to use with its good camera and fast performance.",
+      "SI": "Maybe, it's a good option for friends.",
+      "PP": "Face ID seems to add some security but no explicit mention of other security features.",
+      "BI": "Maybe, but the price is a bit high for me right now.",
+      "OVERALL": "It has a lot going for it, but the price is the deciding factor."
+    },
+    "response_validation": {
+      "PE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "EE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "HM": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "SI": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "PP": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 1,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "Security features are not mentioned, but it seems solid.",
+            "issues": [
+              "talks about physical build or durability; this question is about protecting your personal information"
+            ]
+          }
+        ]
+      },
+      "BI": {
+        "status": "flagged",
+        "valid": false,
+        "retries": 2,
+        "issues": [
+          "opens with a hedge such as 'Maybe' like another answer; give your view or decision first"
+        ],
+        "previous_attempts": [
+          {
+            "text": "No, the price is a bit on the higher side for me.",
+            "issues": [
+              "your assessment was unsure; say what you still need to check before deciding"
+            ]
+          },
+          {
+            "text": "Maybe, but I need to check other options first.",
+            "issues": [
+              "opens with a hedge such as 'Maybe' like another answer; give your view or decision first"
+            ]
+          }
+        ]
+      }
+    },
+    "suitability_assessment": {
+      "strengths": "Good for daily use, fast and reliable.",
+      "limitations": "Not the cheapest option.",
+      "what_matters_to_me": "Performance and camera quality.",
+      "price_justified_for_me": "partly",
+      "comfortable_to_spend": "yes",
+      "better_than_my_usual_options": "yes",
+      "buying_decision": "unsure",
+      "still_need_to_check": "price"
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-11-06T04:01:56.462629+00:00"
+  },
+  {
+    "persona_id": "P4_budget_or_undisclosed_price",
+    "product_name": "iphone",
+    "product_context": {
+      "name": "iphone",
+      "category": "Smartphone",
+      "noun": "smartphone",
+      "usage_role": "primary phone",
+      "ecosystem": "iOS",
+      "price_inr": 46000.0,
+      "description": "Apple iPhone 17 is a premium smartphone with a 6.3-inch OLED display, A19 processor, 48MP rear camera and 18MP front camera. It runs on iOS and supports 5G connectivity. It offers smooth performance, good photography, gaming, video streaming and everyday use. It has Face ID, USB-C charging and water and dust resistance.\nSpecifications: 6.3-inch OLED Display\nA19 Processor\n48MP Rear Camera\n18MP Front Camera\niOS Operating System\n5G Connectivity\nFace ID\nUSB-C Charging\nWater and Dust Resistance"
+    },
+    "response_text": "Good specs, but the price is a dealbreaker for me.",
+    "construct_responses": {
+      "PE": "The camera is great for quick photos and videos, making it easier to capture moments.",
+      "EE": "Setting up is straightforward, but software takes some getting used to.",
+      "HM": "Camera quality is good, but I'm not a big camera user.",
+      "SI": "Not many friends use it, so no strong recommendation.",
+      "PP": "Face ID seems secure for personal info.",
+      "BI": "No, it's too expensive at ₹46,000 for my usual budget.",
+      "OVERALL": "Good specs, but the price is a dealbreaker for me."
+    },
+    "response_validation": {
+      "PE": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 1,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "It helps with speed and multitasking, making daily tasks easier.",
+            "issues": [
+              "reuses the same sentence pattern as another answer ('it helps with ...'); say it your own way"
+            ]
+          }
+        ]
+      },
+      "EE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "HM": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "SI": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "PP": {
+        "status": "flagged",
+        "valid": false,
+        "retries": 2,
+        "issues": [
+          "is almost the same as another buyer's answer; give your own reason in your own words"
+        ],
+        "previous_attempts": [
+          {
+            "text": "Waterproof, which is nice for accidental spills.",
+            "issues": [
+              "does not talk about protecting your personal information, accounts or privacy",
+              "talks about physical build or durability; this question is about protecting your personal information"
+            ]
+          },
+          {
+            "text": "Face ID is there, so it should be secure for personal info.",
+            "issues": [
+              "reuses the same sentence pattern as another answer ('face id is ...'); say it your own way"
+            ]
+          }
+        ]
+      },
+      "BI": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      }
+    },
+    "suitability_assessment": {
+      "strengths": "Good for daily use, 5G connectivity, water and dust resistance.",
+      "limitations": "Expensive at ₹46,000.",
+      "what_matters_to_me": "Speed and camera quality.",
+      "price_justified_for_me": "Partly",
+      "comfortable_to_spend": "No, a stretch.",
+      "better_than_my_usual_options": "Yes",
+      "buying_decision": "No",
+      "still_need_to_check": "Price"
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-11-06T04:06:10.032031+00:00"
+  }
+]

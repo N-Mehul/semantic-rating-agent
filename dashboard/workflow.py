@@ -35,6 +35,7 @@ for p in (REPO_ROOT, REPO_ROOT / "scripts"):
 
 from canonical_ssr import (PAPER_EPSILON, PAPER_TEMPERATURE, PROBABILITY_TOLERANCE, cosine_similarities, expected_rating,  # noqa: E402
                            similarities_to_pmf)
+from improved_ssr import (DEFAULT_IMPROVED_K, DEFAULT_IMPROVED_TEMPERATURE, improved_similarities_to_pmf)  # noqa: E402
 from dp_constructs import ANCHOR_CODES, TASKS, anchor_info, load_codebook, task_question  # noqa: E402
 from pilot_generate_api import SYSTEM, USER_TEMPLATE  # noqa: E402
 from ssr_eval_lib import prompt_leak_findings, response_quality  # noqa: E402
@@ -451,15 +452,27 @@ class Workflow:
     # ---------- step 4
     def step4(self, rid: str) -> dict:
         ctx = self._ctx(rid, "sims")
-        pmf = similarities_to_pmf(ctx["sims"])           # canonical function, default (paper) configuration
+        # This walkthrough re-checks the saved survey dataset, which was scored with Canonical SSR (step 6 compares
+        # against those stored scores), so it stays Canonical unless E-SSR is explicitly requested.
+        ssr_method = ctx.get("ssr_method", "canonical")
+        if ssr_method == "improved":
+            pmf = improved_similarities_to_pmf(ctx["sims"], k=DEFAULT_IMPROVED_K, temperature=DEFAULT_IMPROVED_TEMPERATURE)
+            method_text = (f"Enhanced Semantic Similarity Rating (E-SSR), the primary method: keep the top-{DEFAULT_IMPROVED_K} "
+                           f"most similar anchors, then sharpen with temperature T={DEFAULT_IMPROVED_TEMPERATURE}.")
+        else:
+            pmf = similarities_to_pmf(ctx["sims"])           # canonical function, default (paper) configuration
+            method_text = ("Canonical SSR: subtract the smallest similarity from all five, then divide by their sum (epsilon 0, temperature 1). "
+                           "The least similar anchor therefore always gets probability 0.")
         chk = validate_probabilities(pmf)
         if not chk["valid"]:
-            raise StepError("invalid_probabilities", "The canonical SSR output failed probability validation; the run was stopped.")
+            raise StepError("invalid_probabilities", "The SSR output failed probability validation; the run was stopped.")
         ctx["pmf"] = pmf
-        return {"probabilities": [{"rating": i + 1, "probability": float(p)} for i, p in enumerate(pmf)], "validation": chk, "config": SSR_CONFIG,
+        config = SSR_CONFIG if ssr_method == "canonical" else {**SSR_CONFIG, "k": DEFAULT_IMPROVED_K, "temperature": DEFAULT_IMPROVED_TEMPERATURE}
+        return {"probabilities": [{"rating": i + 1, "probability": float(p)} for i, p in enumerate(pmf)], "validation": chk, "config": config,
                 "zero_probability_ratings": [i + 1 for i, p in enumerate(pmf) if p == 0.0],
-                "method": "Canonical SSR: subtract the smallest similarity from all five, then divide by their sum (epsilon 0, temperature 1). "
-                          "The least similar anchor therefore always gets probability 0."}
+                "ssr_method": ssr_method,
+                "method": method_text
+}
 
     # ---------- step 5
     def step5(self, rid: str) -> dict:
@@ -566,8 +579,7 @@ class Workflow:
             return {"available": False, "error": e.message}
         top = lambda c, k: ", ".join(x.split(" (")[0] for x in (c.get(k) or [])[:2])
         personas = [{"persona_id": c["persona_id"], "label": c["persona_id"].split("_")[0] + " — " + " ".join(c["persona_id"].split("_")[1:]).replace("or ", "/ "),
-                     "description": f"{c.get('defining_rule')}. Based on {c.get('n_human_respondents')} survey respondents; median age {c.get('median_age')}; "
-                                    f"mostly {top(c, 'top_current_status').lower()}; common brands: {top(c, 'top_brands')}; daily use: {top(c, 'top_daily_usage')}."}
+                     "description": f"{c.get('defining_rule')}. Based on {c.get('n_human_respondents')} empirical survey respondents."}
                     for c in cards]
         cb = load_codebook()
         be = backends_status(self._env, self._find_spec, self._ollama_probe)

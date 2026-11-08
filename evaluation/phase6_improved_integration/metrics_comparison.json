@@ -1,0 +1,792 @@
+{
+  "original_phase6_improved": {
+    "dataset_name": "Phase 6 Improved Synthetic (Nova AI v3, n=24, Qwen Blind Judge)",
+    "n": 24,
+    "canonical": {
+      "n": 24,
+      "exact_accuracy": 0.7083333333333334,
+      "within_1_accuracy": 1.0,
+      "mae_continuous": 0.3850594397032497,
+      "rmse_continuous": 0.5089862285828817,
+      "mae_discrete": 0.2916666666666667,
+      "rmse_discrete": 0.5400617248673217,
+      "spearman_r": 0.6867760386262186,
+      "spearman_p": 0.00021016514493531275,
+      "pearson_r": 0.705579922909343,
+      "pearson_p": 0.00011741516106024083,
+      "qwk": 0.5714285714285714,
+      "linear_kappa": 0.4878048780487805,
+      "macro_f1": 0.5144747725392887,
+      "weighted_f1": 0.6441273779983457,
+      "dist_ref": {
+        "1": 0,
+        "2": 0,
+        "3": 5,
+        "4": 15,
+        "5": 4
+      },
+      "dist_pred": {
+        "1": 0,
+        "2": 0,
+        "3": 8,
+        "4": 16,
+        "5": 0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          12,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          4,
+          0
+        ]
+      ],
+      "per_rating": {
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "n_pred": 0
+        },
+        "2": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "n_pred": 0
+        },
+        "3": {
+          "precision": 0.625,
+          "recall": 1.0,
+          "f1": 0.7692307692307693,
+          "support": 5,
+          "n_pred": 8
+        },
+        "4": {
+          "precision": 0.75,
+          "recall": 0.8,
+          "f1": 0.7741935483870968,
+          "support": 15,
+          "n_pred": 16
+        },
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4,
+          "n_pred": 0
+        }
+      }
+    },
+    "phase6_improved": {
+      "n": 24,
+      "exact_accuracy": 0.7916666666666666,
+      "within_1_accuracy": 1.0,
+      "mae_continuous": 0.3556043027519528,
+      "rmse_continuous": 0.46199964630479534,
+      "mae_discrete": 0.20833333333333334,
+      "rmse_discrete": 0.45643546458763845,
+      "spearman_r": 0.6877845203275786,
+      "spearman_p": 0.00020392317752015041,
+      "pearson_r": 0.7369111072958825,
+      "pearson_p": 4.0077195375124935e-05,
+      "qwk": 0.696969696969697,
+      "linear_kappa": 0.6363636363636364,
+      "macro_f1": 0.6906810035842295,
+      "weighted_f1": 0.7644713261648747,
+      "dist_ref": {
+        "1": 0,
+        "2": 0,
+        "3": 5,
+        "4": 15,
+        "5": 4
+      },
+      "dist_pred": {
+        "1": 0,
+        "2": 0,
+        "3": 7,
+        "4": 16,
+        "5": 1
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          13,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          1
+        ]
+      ],
+      "per_rating": {
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "n_pred": 0
+        },
+        "2": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "n_pred": 0
+        },
+        "3": {
+          "precision": 0.7142857142857143,
+          "recall": 1.0,
+          "f1": 0.8333333333333334,
+          "support": 5,
+          "n_pred": 7
+        },
+        "4": {
+          "precision": 0.8125,
+          "recall": 0.8666666666666667,
+          "f1": 0.8387096774193549,
+          "support": 15,
+          "n_pred": 16
+        },
+        "5": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1": 0.4,
+          "support": 4,
+          "n_pred": 1
+        }
+      }
+    },
+    "per_persona": {
+      "P1_premium_tier_owner": {
+        "n": 6,
+        "canonical_exact": 0.6666666666666666,
+        "canonical_mae": 0.44974106815331355,
+        "phase6_exact": 0.8333333333333334,
+        "phase6_mae": 0.3112620243678799
+      },
+      "P2_midrange_heavy_user": {
+        "n": 6,
+        "canonical_exact": 0.8333333333333334,
+        "canonical_mae": 0.26633745590148666,
+        "phase6_exact": 1.0,
+        "phase6_mae": 0.24740018452586873
+      },
+      "P3_midrange_moderate_user": {
+        "n": 6,
+        "canonical_exact": 0.6666666666666666,
+        "canonical_mae": 0.4435050430523773,
+        "phase6_exact": 0.6666666666666666,
+        "phase6_mae": 0.39829189887001964
+      },
+      "P4_budget_or_undisclosed_price": {
+        "n": 6,
+        "canonical_exact": 0.6666666666666666,
+        "canonical_mae": 0.38065419170582143,
+        "phase6_exact": 0.6666666666666666,
+        "phase6_mae": 0.46546310324404283
+      }
+    }
+  },
+  "original_phase6_baseline": {
+    "dataset_name": "Phase 6 Baseline Synthetic (Nova AI Baseline, n=24, Qwen Blind Judge)",
+    "n": 24,
+    "canonical": {
+      "n": 24,
+      "exact_accuracy": 0.625,
+      "within_1_accuracy": 1.0,
+      "mae_continuous": 0.4285639850571434,
+      "rmse_continuous": 0.5957525998090614,
+      "mae_discrete": 0.375,
+      "rmse_discrete": 0.6123724356957945,
+      "spearman_r": -0.0038069349381344053,
+      "spearman_p": 0.9859144954868878,
+      "pearson_r": 0.102136201542421,
+      "pearson_p": 0.6348602903483982,
+      "qwk": 0.1562500000000001,
+      "linear_kappa": 0.06896551724137945,
+      "macro_f1": 0.3355855855855856,
+      "weighted_f1": 0.5777027027027027,
+      "dist_ref": {
+        "1": 0,
+        "2": 0,
+        "3": 4,
+        "4": 17,
+        "5": 3
+      },
+      "dist_pred": {
+        "1": 0,
+        "2": 0,
+        "3": 4,
+        "4": 20,
+        "5": 0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          14,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0
+        ]
+      ],
+      "per_rating": {
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "n_pred": 0
+        },
+        "2": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "n_pred": 0
+        },
+        "3": {
+          "precision": 0.25,
+          "recall": 0.25,
+          "f1": 0.25,
+          "support": 4,
+          "n_pred": 4
+        },
+        "4": {
+          "precision": 0.7,
+          "recall": 0.8235294117647058,
+          "f1": 0.7567567567567568,
+          "support": 17,
+          "n_pred": 20
+        },
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3,
+          "n_pred": 0
+        }
+      }
+    },
+    "phase6_improved": {
+      "n": 24,
+      "exact_accuracy": 0.6666666666666666,
+      "within_1_accuracy": 1.0,
+      "mae_continuous": 0.48536100206530924,
+      "rmse_continuous": 0.6289277301339395,
+      "mae_discrete": 0.3333333333333333,
+      "rmse_discrete": 0.5773502691896257,
+      "spearman_r": -0.08266487294234709,
+      "spearman_p": 0.7009688870440072,
+      "pearson_r": 0.026051418409570787,
+      "pearson_p": 0.9038238227420821,
+      "qwk": -0.010526315789473495,
+      "linear_kappa": -0.04347826086956519,
+      "macro_f1": 0.26666666666666666,
+      "weighted_f1": 0.5666666666666668,
+      "dist_ref": {
+        "1": 0,
+        "2": 0,
+        "3": 4,
+        "4": 17,
+        "5": 3
+      },
+      "dist_pred": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 23,
+        "5": 0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          16,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0
+        ]
+      ],
+      "per_rating": {
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "n_pred": 0
+        },
+        "2": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "n_pred": 0
+        },
+        "3": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4,
+          "n_pred": 1
+        },
+        "4": {
+          "precision": 0.6956521739130435,
+          "recall": 0.9411764705882353,
+          "f1": 0.8,
+          "support": 17,
+          "n_pred": 23
+        },
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3,
+          "n_pred": 0
+        }
+      }
+    },
+    "per_persona": {
+      "P1_premium_tier_owner": {
+        "n": 6,
+        "canonical_exact": 0.8333333333333334,
+        "canonical_mae": 0.27445058760188634,
+        "phase6_exact": 0.8333333333333334,
+        "phase6_mae": 0.40908095531392125
+      },
+      "P2_midrange_heavy_user": {
+        "n": 6,
+        "canonical_exact": 0.6666666666666666,
+        "canonical_mae": 0.4645263315318733,
+        "phase6_exact": 0.5,
+        "phase6_mae": 0.5472567527988197
+      },
+      "P3_midrange_moderate_user": {
+        "n": 6,
+        "canonical_exact": 0.5,
+        "canonical_mae": 0.47533564401461187,
+        "phase6_exact": 0.6666666666666666,
+        "phase6_mae": 0.4849980344069864
+      },
+      "P4_budget_or_undisclosed_price": {
+        "n": 6,
+        "canonical_exact": 0.5,
+        "canonical_mae": 0.499943377080202,
+        "phase6_exact": 0.6666666666666666,
+        "phase6_mae": 0.5001082657415098
+      }
+    }
+  },
+  "human_survey_dataset": {
+    "dataset_name": "Empirical Human Survey (Q26 text vs Q21 Ground Truth Likert, n=251)",
+    "n": 251,
+    "canonical": {
+      "n": 251,
+      "exact_accuracy": 0.33067729083665337,
+      "within_1_accuracy": 0.8725099601593626,
+      "mae_continuous": 0.8654282365574109,
+      "rmse_continuous": 1.1062341615040885,
+      "mae_discrete": 0.8326693227091634,
+      "rmse_discrete": 1.1095385064120828,
+      "spearman_r": 0.24064748885090564,
+      "spearman_p": 0.00011798426861495177,
+      "pearson_r": 0.31416467680579097,
+      "pearson_p": 3.740570083212132e-07,
+      "qwk": 0.2567488572222595,
+      "linear_kappa": 0.12822600747818869,
+      "macro_f1": 0.18099150649647056,
+      "weighted_f1": 0.24022285192871592,
+      "dist_ref": {
+        "1": 23,
+        "2": 9,
+        "3": 84,
+        "4": 81,
+        "5": 54
+      },
+      "dist_pred": {
+        "1": 1,
+        "2": 12,
+        "3": 43,
+        "4": 195,
+        "5": 0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          2,
+          13,
+          8,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          4,
+          0
+        ],
+        [
+          0,
+          3,
+          15,
+          66,
+          0
+        ],
+        [
+          0,
+          4,
+          11,
+          66,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          51,
+          0
+        ]
+      ],
+      "per_rating": {
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 23,
+          "n_pred": 1
+        },
+        "2": {
+          "precision": 0.16666666666666666,
+          "recall": 0.2222222222222222,
+          "f1": 0.19047619047619047,
+          "support": 9,
+          "n_pred": 12
+        },
+        "3": {
+          "precision": 0.3488372093023256,
+          "recall": 0.17857142857142858,
+          "f1": 0.23622047244094488,
+          "support": 84,
+          "n_pred": 43
+        },
+        "4": {
+          "precision": 0.3384615384615385,
+          "recall": 0.8148148148148148,
+          "f1": 0.4782608695652174,
+          "support": 81,
+          "n_pred": 195
+        },
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 54,
+          "n_pred": 0
+        }
+      }
+    },
+    "phase6_improved": {
+      "n": 251,
+      "exact_accuracy": 0.3346613545816733,
+      "within_1_accuracy": 0.8764940239043825,
+      "mae_continuous": 0.9042228774418635,
+      "rmse_continuous": 1.1619818401710524,
+      "mae_discrete": 0.8366533864541833,
+      "rmse_discrete": 1.1291148738752734,
+      "spearman_r": 0.2712965097065344,
+      "spearman_p": 1.3082927236528359e-05,
+      "pearson_r": 0.30154097503817245,
+      "pearson_p": 1.131754770686291e-06,
+      "qwk": 0.24848893130485228,
+      "linear_kappa": 0.13638299963954525,
+      "macro_f1": 0.17536971503073198,
+      "weighted_f1": 0.241672015606785,
+      "dist_ref": {
+        "1": 23,
+        "2": 9,
+        "3": 84,
+        "4": 81,
+        "5": 54
+      },
+      "dist_pred": {
+        "1": 1,
+        "2": 17,
+        "3": 34,
+        "4": 199,
+        "5": 0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          4,
+          8,
+          11,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          4,
+          0
+        ],
+        [
+          0,
+          5,
+          14,
+          65,
+          0
+        ],
+        [
+          0,
+          5,
+          8,
+          68,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          51,
+          0
+        ]
+      ],
+      "per_rating": {
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 23,
+          "n_pred": 1
+        },
+        "2": {
+          "precision": 0.11764705882352941,
+          "recall": 0.2222222222222222,
+          "f1": 0.15384615384615385,
+          "support": 9,
+          "n_pred": 17
+        },
+        "3": {
+          "precision": 0.4117647058823529,
+          "recall": 0.16666666666666666,
+          "f1": 0.23728813559322035,
+          "support": 84,
+          "n_pred": 34
+        },
+        "4": {
+          "precision": 0.3417085427135678,
+          "recall": 0.8395061728395061,
+          "f1": 0.4857142857142857,
+          "support": 81,
+          "n_pred": 199
+        },
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 54,
+          "n_pred": 0
+        }
+      }
+    },
+    "per_persona": {
+      "P3 mid moderate": {
+        "n": 85,
+        "canonical_exact": 0.3411764705882353,
+        "canonical_mae": 0.9049406734816711,
+        "phase6_exact": 0.3411764705882353,
+        "phase6_mae": 0.9983871768929387
+      },
+      "P1 premium": {
+        "n": 86,
+        "canonical_exact": 0.29069767441860467,
+        "canonical_mae": 0.8771201938286115,
+        "phase6_exact": 0.3023255813953488,
+        "phase6_mae": 0.8515559211359531
+      },
+      "P2 mid heavy": {
+        "n": 51,
+        "canonical_exact": 0.3137254901960784,
+        "canonical_mae": 0.930904286249796,
+        "phase6_exact": 0.29411764705882354,
+        "phase6_mae": 0.995433990735452
+      },
+      "P4 entry/undisclosed": {
+        "n": 29,
+        "canonical_exact": 0.4482758620689655,
+        "canonical_mae": 0.5997956848954441,
+        "phase6_exact": 0.4827586206896552,
+        "phase6_mae": 0.6240030847175156
+      }
+    }
+  },
+  "synthetic_400_dataset": {
+    "dataset_name": "Synthetic Persona Validation 400 (400 responses, 4 personas, 6 constructs)",
+    "n": 400,
+    "ground_truth_available": false,
+    "limitation_note": "Synthetic 400 dataset contains no external ground-truth ratings (neither human nor blind LLM judge). Metric evaluation is distributional only.",
+    "canonical_summary": {
+      "mean_E": 3.3246844999999996,
+      "std_E": 0.6477250033460566,
+      "dist_pred": {
+        "1": 0,
+        "2": 67,
+        "3": 129,
+        "4": 204,
+        "5": 0
+      }
+    },
+    "phase6_summary": {
+      "mean_E": 3.4104325,
+      "std_E": 0.8201900353753835,
+      "dist_pred": {
+        "1": 1,
+        "2": 80,
+        "3": 94,
+        "4": 224,
+        "5": 1
+      }
+    },
+    "per_persona": {
+      "P1": {
+        "n": 100,
+        "canonical_mean_E": 3.3942009999999994,
+        "canonical_std_E": 0.6085395798976597,
+        "phase6_mean_E": 3.4838669999999996,
+        "phase6_std_E": 0.7901386955420734
+      },
+      "P2": {
+        "n": 100,
+        "canonical_mean_E": 3.3109680000000004,
+        "canonical_std_E": 0.6442443768846374,
+        "phase6_mean_E": 3.403196,
+        "phase6_std_E": 0.8237664168189839
+      },
+      "P3": {
+        "n": 100,
+        "canonical_mean_E": 3.262059999999999,
+        "canonical_std_E": 0.6807174251694259,
+        "phase6_mean_E": 3.325531,
+        "phase6_std_E": 0.8564750594227081
+      },
+      "P4": {
+        "n": 100,
+        "canonical_mean_E": 3.3315090000000005,
+        "canonical_std_E": 0.658085821687461,
+        "phase6_mean_E": 3.4291359999999997,
+        "phase6_std_E": 0.8134111885886571
+      }
+    }
+  }
+}

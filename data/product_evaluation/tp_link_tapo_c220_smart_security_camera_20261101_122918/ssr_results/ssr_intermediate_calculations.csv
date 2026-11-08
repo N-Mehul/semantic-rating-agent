@@ -1,0 +1,25 @@
+persona_id,product_name,anchor_set_code,anchor_set_name,cos_sim_1,cos_sim_2,cos_sim_3,cos_sim_4,cos_sim_5,min_similarity,p1,p2,p3,p4,p5,set_expected_rating,embedding_model
+P1_premium_tier_owner,TP-Link Tapo C220 Smart Security Camera,PE,Performance Expectancy,0.556766,0.570226,0.575775,0.530343,0.509708,0.509708,0.242219,0.311503,0.340067,0.106212,0.0,2.3103,nomic-embed-text
+P1_premium_tier_owner,TP-Link Tapo C220 Smart Security Camera,EE,Effort Expectancy,0.439476,0.459368,0.501773,0.497526,0.530288,0.439476,0.0,0.086096,0.269625,0.251243,0.393036,3.9512,nomic-embed-text
+P1_premium_tier_owner,TP-Link Tapo C220 Smart Security Camera,HM,Hedonic Motivation,0.610325,0.629856,0.632647,0.593452,0.585324,0.585324,0.200031,0.356304,0.378632,0.065033,0.0,2.3087,nomic-embed-text
+P1_premium_tier_owner,TP-Link Tapo C220 Smart Security Camera,SI,Social Influence,0.556758,0.540165,0.602264,0.535676,0.554527,0.535676,0.18991,0.040441,0.599839,0.0,0.16981,2.9194,nomic-embed-text
+P1_premium_tier_owner,TP-Link Tapo C220 Smart Security Camera,PP,Perceived Protection,0.551878,0.564844,0.555105,0.533941,0.523329,0.523329,0.253879,0.369179,0.282574,0.094368,0.0,2.2174,nomic-embed-text
+P1_premium_tier_owner,TP-Link Tapo C220 Smart Security Camera,BI,Behavioral Intention,0.711433,0.70712,0.699804,0.654886,0.666211,0.654886,0.342659,0.316522,0.27219,0.0,0.068629,2.1354,nomic-embed-text
+P2_midrange_heavy_user,TP-Link Tapo C220 Smart Security Camera,PE,Performance Expectancy,0.569357,0.580362,0.58377,0.562427,0.527864,0.527864,0.224944,0.284602,0.303079,0.187375,0.0,2.4529,nomic-embed-text
+P2_midrange_heavy_user,TP-Link Tapo C220 Smart Security Camera,EE,Effort Expectancy,0.638248,0.622917,0.626241,0.649614,0.668942,0.622917,0.167778,0.0,0.036378,0.292163,0.50368,3.964,nomic-embed-text
+P2_midrange_heavy_user,TP-Link Tapo C220 Smart Security Camera,HM,Hedonic Motivation,0.573982,0.604451,0.596435,0.561815,0.526879,0.526879,0.205538,0.338495,0.303519,0.152448,0.0,2.4029,nomic-embed-text
+P2_midrange_heavy_user,TP-Link Tapo C220 Smart Security Camera,SI,Social Influence,0.513474,0.545564,0.599256,0.567161,0.522908,0.513474,0.0,0.1773,0.473951,0.296624,0.052124,3.2236,nomic-embed-text
+P2_midrange_heavy_user,TP-Link Tapo C220 Smart Security Camera,PP,Perceived Protection,0.442071,0.457146,0.4513,0.457688,0.440518,0.440518,0.033667,0.360434,0.233711,0.372188,0.0,2.9444,nomic-embed-text
+P2_midrange_heavy_user,TP-Link Tapo C220 Smart Security Camera,BI,Behavioral Intention,0.571418,0.584898,0.626463,0.598796,0.570637,0.570637,0.007889,0.144013,0.563745,0.284354,0.0,3.1246,nomic-embed-text
+P3_midrange_moderate_user,TP-Link Tapo C220 Smart Security Camera,PE,Performance Expectancy,0.509169,0.524789,0.502455,0.578897,0.516739,0.502455,0.056058,0.18647,0.0,0.638215,0.119257,3.5781,nomic-embed-text
+P3_midrange_moderate_user,TP-Link Tapo C220 Smart Security Camera,EE,Effort Expectancy,0.568639,0.510809,0.612975,0.59569,0.621919,0.510809,0.16245,0.0,0.286993,0.238438,0.312118,3.5378,nomic-embed-text
+P3_midrange_moderate_user,TP-Link Tapo C220 Smart Security Camera,HM,Hedonic Motivation,0.548488,0.60012,0.590488,0.584322,0.559235,0.548488,0.0,0.368242,0.299543,0.255569,0.076645,3.0406,nomic-embed-text
+P3_midrange_moderate_user,TP-Link Tapo C220 Smart Security Camera,SI,Social Influence,0.547902,0.522611,0.576554,0.525238,0.552097,0.522611,0.227133,0.0,0.484463,0.023594,0.264809,3.0989,nomic-embed-text
+P3_midrange_moderate_user,TP-Link Tapo C220 Smart Security Camera,PP,Perceived Protection,0.566376,0.547589,0.555118,0.575132,0.572639,0.547589,0.23808,0.0,0.095406,0.349054,0.31746,3.5078,nomic-embed-text
+P3_midrange_moderate_user,TP-Link Tapo C220 Smart Security Camera,BI,Behavioral Intention,0.520199,0.552485,0.524993,0.631193,0.608163,0.520199,0.0,0.136782,0.020311,0.470237,0.372669,4.0788,nomic-embed-text
+P4_budget_or_undisclosed_price,TP-Link Tapo C220 Smart Security Camera,PE,Performance Expectancy,0.493304,0.508757,0.516185,0.565241,0.519126,0.493304,0.0,0.113544,0.168128,0.528592,0.189735,3.7945,nomic-embed-text
+P4_budget_or_undisclosed_price,TP-Link Tapo C220 Smart Security Camera,EE,Effort Expectancy,0.520344,0.464446,0.591204,0.560739,0.59332,0.464446,0.137065,0.0,0.310815,0.236115,0.316005,3.594,nomic-embed-text
+P4_budget_or_undisclosed_price,TP-Link Tapo C220 Smart Security Camera,HM,Hedonic Motivation,0.575441,0.586087,0.585909,0.579578,0.512945,0.512945,0.227065,0.265744,0.265096,0.242095,0.0,2.5222,nomic-embed-text
+P4_budget_or_undisclosed_price,TP-Link Tapo C220 Smart Security Camera,SI,Social Influence,0.556486,0.527668,0.58384,0.497073,0.52306,0.497073,0.293019,0.150892,0.427925,0.0,0.128164,2.5194,nomic-embed-text
+P4_budget_or_undisclosed_price,TP-Link Tapo C220 Smart Security Camera,PP,Perceived Protection,0.535283,0.530096,0.576576,0.589053,0.600955,0.530096,0.028581,0.0,0.256112,0.324861,0.390445,4.0486,nomic-embed-text
+P4_budget_or_undisclosed_price,TP-Link Tapo C220 Smart Security Camera,BI,Behavioral Intention,0.549565,0.581568,0.559256,0.640233,0.614408,0.549565,0.0,0.162281,0.049141,0.459767,0.328811,3.9551,nomic-embed-text

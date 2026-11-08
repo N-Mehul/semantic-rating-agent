@@ -1,0 +1,2675 @@
+{
+  "evaluation_id": "nova_ai_20261103_161148",
+  "product_name": "Nova AI",
+  "ssr_method": "improved",
+  "ssr_method_label": "Improved SSR (Experimental, k=3, T=0.75)",
+  "k_truncation": 3,
+  "temperature": 0.75,
+  "comparison_summary": {
+    "active_ssr_method": "improved",
+    "active_ssr_label": "Improved SSR (Experimental, k=3, T=0.75)",
+    "is_comparison_mode": false,
+    "canonical": {
+      "method": "Canonical SSR (Original Reference Baseline)",
+      "k_truncation": 5,
+      "temperature": 1.0,
+      "primary_adoption_average": 3.7318,
+      "construct_averages": {
+        "PE": 3.3544,
+        "EE": 3.942,
+        "HM": 4.1698,
+        "SI": 3.8091,
+        "PP": 3.4217,
+        "BI": 3.7318
+      }
+    },
+    "improved": {
+      "method": "Improved SSR (Experimental)",
+      "k_truncation": 3,
+      "temperature": 0.75,
+      "primary_adoption_average": 3.8323,
+      "construct_averages": {
+        "PE": 3.6425,
+        "EE": 4.1274,
+        "HM": 4.3985,
+        "SI": 3.8978,
+        "PP": 3.8009,
+        "BI": 3.8323
+      }
+    },
+    "deltas": {
+      "primary_adoption_delta": 0.1005,
+      "construct_deltas": {
+        "PE": 0.2881,
+        "EE": 0.1854,
+        "HM": 0.2287,
+        "SI": 0.0887,
+        "PP": 0.3792,
+        "BI": 0.1005
+      }
+    },
+    "persona_comparison": [
+      {
+        "persona_id": "P1_premium_tier_owner",
+        "canonical_adoption_rating": 3.4757,
+        "improved_adoption_rating": 3.7501,
+        "delta": 0.2744
+      },
+      {
+        "persona_id": "P2_midrange_heavy_user",
+        "canonical_adoption_rating": 3.9787,
+        "improved_adoption_rating": 4.1544,
+        "delta": 0.1757
+      },
+      {
+        "persona_id": "P3_midrange_moderate_user",
+        "canonical_adoption_rating": 3.9398,
+        "improved_adoption_rating": 4.1151,
+        "delta": 0.1753
+      },
+      {
+        "persona_id": "P4_budget_or_undisclosed_price",
+        "canonical_adoption_rating": 3.5329,
+        "improved_adoption_rating": 3.3096,
+        "delta": -0.2233
+      }
+    ]
+  },
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Improved SSR (Experimental, k=3, T=0.75))",
+  "timestamp_utc": "2026-11-03T10:51:19.668706+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.8323,
+  "overall_adoption_average": 3.8323,
+  "primary_adoption_average": 3.8323,
+  "construct_averages": {
+    "PE": 3.6425,
+    "EE": 4.1274,
+    "HM": 4.3985,
+    "SI": 3.8978,
+    "PP": 3.8009,
+    "BI": 3.8323
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "primary_adoption_rating": 3.7501,
+      "primary_adoption_pmf": [
+        0.0,
+        0.0,
+        0.450025,
+        0.3499,
+        0.200075
+      ],
+      "construct_scores": {
+        "PE": 3.7447,
+        "EE": 4.0361,
+        "HM": 4.4329,
+        "SI": 3.9209,
+        "PP": 3.6937,
+        "BI": 3.7501
+      },
+      "construct_responses": {
+        "PE": "The smartphone offers a smooth performance with a high refresh display and fast processor, which should handle multitasking and casual gaming well. However, I would like to see a better battery life for long-day usage.",
+        "EE": "The simple interface with optional contextual AI suggestions should make setup and navigation straightforward, but I prefer a less intrusive interface.",
+        "HM": "The smooth performance and fast processor make media viewing enjoyable, and the on-device AI processing adds a personal touch. The clean layout is user-friendly.",
+        "SI": "My peers would likely appreciate the device's advanced features and smooth performance, making it a good choice for professionals and tech enthusiasts.",
+        "PP": "The build quality seems solid with on-device AI processing, ensuring data privacy. However, the price of ₹40,000 is quite on the higher side, and I would want to see a more robust battery.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone because of its advanced features, smooth performance, and on-device AI processing. However, the price is a bit high for the price.",
+        "OVERALL": "The smartphone has impressive features and a smooth performance, but the price is a bit on the higher side for my needs. It’s a great choice for someone who values advanced technology and privacy."
+      },
+      "response_text": "The smartphone has impressive features and a smooth performance, but the price is a bit on the higher side for my needs. It’s a great choice for someone who values advanced technology and privacy.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The smartphone offers a smooth performance with a high refresh display and fast processor, which should handle multitasking and casual gaming well. However, I would like to see a better battery life for long-day usage.",
+          "cosine_similarities": [
+            0.694341,
+            0.709024,
+            0.684692,
+            0.746166,
+            0.703117
+          ],
+          "min_similarity": 0.684692,
+          "pmf_probabilities": [
+            0.0,
+            0.19489,
+            0.0,
+            0.670603,
+            0.134507
+          ],
+          "expected_rating": 3.7447,
+          "canonical": {
+            "pmf_probabilities": [
+              0.084733,
+              0.213666,
+              0.0,
+              0.539811,
+              0.16179
+            ],
+            "expected_rating": 3.4803
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.19489,
+              0.0,
+              0.670603,
+              0.134507
+            ],
+            "expected_rating": 3.7447
+          },
+          "delta_improved_minus_canonical": 0.2645,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The simple interface with optional contextual AI suggestions should make setup and navigation straightforward, but I prefer a less intrusive interface.",
+          "cosine_similarities": [
+            0.490284,
+            0.512153,
+            0.541019,
+            0.560649,
+            0.545995
+          ],
+          "min_similarity": 0.490284,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.271772,
+            0.420349,
+            0.307879
+          ],
+          "expected_rating": 4.0361,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.110072,
+              0.255359,
+              0.354165,
+              0.280404
+            ],
+            "expected_rating": 3.8049
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.271772,
+              0.420349,
+              0.307879
+            ],
+            "expected_rating": 4.0361
+          },
+          "delta_improved_minus_canonical": 0.2312,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The smooth performance and fast processor make media viewing enjoyable, and the on-device AI processing adds a personal touch. The clean layout is user-friendly.",
+          "cosine_similarities": [
+            0.525322,
+            0.547964,
+            0.557377,
+            0.593802,
+            0.626457
+          ],
+          "min_similarity": 0.525322,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.119351,
+            0.328376,
+            0.552273
+          ],
+          "expected_rating": 4.4329,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.100942,
+              0.142906,
+              0.305288,
+              0.450865
+            ],
+            "expected_rating": 4.1061
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.119351,
+              0.328376,
+              0.552273
+            ],
+            "expected_rating": 4.4329
+          },
+          "delta_improved_minus_canonical": 0.3268,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers would likely appreciate the device's advanced features and smooth performance, making it a good choice for professionals and tech enthusiasts.",
+          "cosine_similarities": [
+            0.602165,
+            0.600198,
+            0.664764,
+            0.692006,
+            0.651514
+          ],
+          "min_similarity": 0.600198,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.299835,
+            0.479424,
+            0.220742
+          ],
+          "expected_rating": 3.9209,
+          "canonical": {
+            "pmf_probabilities": [
+              0.009382,
+              0.0,
+              0.307959,
+              0.437896,
+              0.244763
+            ],
+            "expected_rating": 3.9087
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.299835,
+              0.479424,
+              0.220742
+            ],
+            "expected_rating": 3.9209
+          },
+          "delta_improved_minus_canonical": 0.0122,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality seems solid with on-device AI processing, ensuring data privacy. However, the price of ₹40,000 is quite on the higher side, and I would want to see a more robust battery.",
+          "cosine_similarities": [
+            0.509048,
+            0.517224,
+            0.472827,
+            0.525836,
+            0.517206
+          ],
+          "min_similarity": 0.472827,
+          "pmf_probabilities": [
+            0.0,
+            0.306174,
+            0.0,
+            0.387817,
+            0.306008
+          ],
+          "expected_rating": 3.6937,
+          "canonical": {
+            "pmf_probabilities": [
+              0.203483,
+              0.249413,
+              0.0,
+              0.297792,
+              0.249312
+            ],
+            "expected_rating": 3.14
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.306174,
+              0.0,
+              0.387817,
+              0.306008
+            ],
+            "expected_rating": 3.6937
+          },
+          "delta_improved_minus_canonical": 0.5536,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone because of its advanced features, smooth performance, and on-device AI processing. However, the price is a bit high for the price.",
+          "cosine_similarities": [
+            0.633575,
+            0.666345,
+            0.694921,
+            0.68437,
+            0.666976
+          ],
+          "min_similarity": 0.633575,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.450025,
+            0.3499,
+            0.200075
+          ],
+          "expected_rating": 3.7501,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.183778,
+              0.34404,
+              0.284865,
+              0.187317
+            ],
+            "expected_rating": 3.4757
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.450025,
+              0.3499,
+              0.200075
+            ],
+            "expected_rating": 3.7501
+          },
+          "delta_improved_minus_canonical": 0.2743,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "primary_adoption_rating": 4.1544,
+      "primary_adoption_pmf": [
+        0.0,
+        0.114485,
+        0.0,
+        0.502135,
+        0.38338
+      ],
+      "construct_scores": {
+        "PE": 3.9706,
+        "EE": 4.1936,
+        "HM": 4.3165,
+        "SI": 3.7846,
+        "PP": 3.8149,
+        "BI": 4.1544
+      },
+      "construct_responses": {
+        "PE": "The high refresh display and fast processor ensure smooth performance for multitasking and gaming. The large battery capacity supports continuous use throughout the day without frequent charging.",
+        "EE": "The clean interface with optional AI suggestions makes navigation simple and intuitive. Setup is straightforward, requiring minimal effort.",
+        "HM": "Using the smartphone is a pleasant experience with a clean layout and smooth performance. The battery endurance and fast processor enhance the overall user experience.",
+        "SI": "Peers and colleagues who use premium smartphones would likely see this as a top choice for its performance and features.",
+        "PP": "The smartphone has a robust build and reliable hardware, ensuring long-term durability. Data security features are not explicitly mentioned, but the local AI processing enhances privacy.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone given its fast processor and large battery. The ₹40,000 price is justified by the hardware specifications and performance.",
+        "OVERALL": "The smartphone offers a seamless experience with its fast processor and large battery, making it suitable for intensive daily use. Its build and performance are impressive, though the price might be a factor for some."
+      },
+      "response_text": "The smartphone offers a seamless experience with its fast processor and large battery, making it suitable for intensive daily use. Its build and performance are impressive, though the price might be a factor for some.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The high refresh display and fast processor ensure smooth performance for multitasking and gaming. The large battery capacity supports continuous use throughout the day without frequent charging.",
+          "cosine_similarities": [
+            0.543396,
+            0.55618,
+            0.518958,
+            0.627415,
+            0.576696
+          ],
+          "min_similarity": 0.518958,
+          "pmf_probabilities": [
+            0.0,
+            0.143731,
+            0.0,
+            0.59818,
+            0.258089
+          ],
+          "expected_rating": 3.9706,
+          "canonical": {
+            "pmf_probabilities": [
+              0.107253,
+              0.163357,
+              0.0,
+              0.475992,
+              0.253398
+            ],
+            "expected_rating": 3.6049
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.143731,
+              0.0,
+              0.59818,
+              0.258089
+            ],
+            "expected_rating": 3.9706
+          },
+          "delta_improved_minus_canonical": 0.3657,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The clean interface with optional AI suggestions makes navigation simple and intuitive. Setup is straightforward, requiring minimal effort.",
+          "cosine_similarities": [
+            0.46992,
+            0.492493,
+            0.573763,
+            0.600416,
+            0.631684
+          ],
+          "min_similarity": 0.46992,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.240273,
+            0.325837,
+            0.43389
+          ],
+          "expected_rating": 4.1936,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.053915,
+              0.248027,
+              0.311688,
+              0.38637
+            ],
+            "expected_rating": 4.0305
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.240273,
+              0.325837,
+              0.43389
+            ],
+            "expected_rating": 4.1936
+          },
+          "delta_improved_minus_canonical": 0.1631,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the smartphone is a pleasant experience with a clean layout and smooth performance. The battery endurance and fast processor enhance the overall user experience.",
+          "cosine_similarities": [
+            0.723676,
+            0.732219,
+            0.751365,
+            0.792964,
+            0.794523
+          ],
+          "min_similarity": 0.723676,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.126633,
+            0.430207,
+            0.44316
+          ],
+          "expected_rating": 4.3165,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.04844,
+              0.156997,
+              0.392862,
+              0.401701
+            ],
+            "expected_rating": 4.1478
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.126633,
+              0.430207,
+              0.44316
+            ],
+            "expected_rating": 4.3165
+          },
+          "delta_improved_minus_canonical": 0.1687,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers and colleagues who use premium smartphones would likely see this as a top choice for its performance and features.",
+          "cosine_similarities": [
+            0.63508,
+            0.640811,
+            0.708932,
+            0.7053,
+            0.677661
+          ],
+          "min_similarity": 0.63508,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.414103,
+            0.387177,
+            0.19872
+          ],
+          "expected_rating": 3.7846,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.029788,
+              0.383878,
+              0.365001,
+              0.221332
+            ],
+            "expected_rating": 3.7779
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.414103,
+              0.387177,
+              0.19872
+            ],
+            "expected_rating": 3.7846
+          },
+          "delta_improved_minus_canonical": 0.0067,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The smartphone has a robust build and reliable hardware, ensuring long-term durability. Data security features are not explicitly mentioned, but the local AI processing enhances privacy.",
+          "cosine_similarities": [
+            0.743423,
+            0.745027,
+            0.694914,
+            0.767558,
+            0.755051
+          ],
+          "min_similarity": 0.694914,
+          "pmf_probabilities": [
+            0.0,
+            0.255372,
+            0.0,
+            0.418965,
+            0.325663
+          ],
+          "expected_rating": 3.8149,
+          "canonical": {
+            "pmf_probabilities": [
+              0.209628,
+              0.21656,
+              0.0,
+              0.31393,
+              0.259881
+            ],
+            "expected_rating": 3.1979
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.255372,
+              0.0,
+              0.418965,
+              0.325663
+            ],
+            "expected_rating": 3.8149
+          },
+          "delta_improved_minus_canonical": 0.617,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone given its fast processor and large battery. The ₹40,000 price is justified by the hardware specifications and performance.",
+          "cosine_similarities": [
+            0.631579,
+            0.654699,
+            0.64608,
+            0.70165,
+            0.688812
+          ],
+          "min_similarity": 0.631579,
+          "pmf_probabilities": [
+            0.0,
+            0.114485,
+            0.0,
+            0.502135,
+            0.38338
+          ],
+          "expected_rating": 4.1544,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.140184,
+              0.087927,
+              0.424866,
+              0.347023
+            ],
+            "expected_rating": 3.9787
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.114485,
+              0.0,
+              0.502135,
+              0.38338
+            ],
+            "expected_rating": 4.1544
+          },
+          "delta_improved_minus_canonical": 0.1757,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "primary_adoption_rating": 4.1151,
+      "primary_adoption_pmf": [
+        0.0,
+        0.135514,
+        0.0,
+        0.478355,
+        0.386131
+      ],
+      "construct_scores": {
+        "PE": 3.7604,
+        "EE": 4.1009,
+        "HM": 4.4338,
+        "SI": 3.8921,
+        "PP": 3.9094,
+        "BI": 4.1151
+      },
+      "construct_responses": {
+        "PE": "This smartphone offers a smooth performance with its high refresh display and fast processor, making it great for multitasking and casual gaming. The battery life is sufficient for a full day of use, ensuring no interruptions during work or leisure.",
+        "EE": "The interface is clean and simple, making it easy to set up and navigate. The optional contextual AI suggestions can help with quick tasks without feeling intrusive.",
+        "HM": "Using this smartphone is pleasant for daily tasks and media viewing. The high refresh display ensures clear visuals, and the fast processor handles apps and games smoothly without lag.",
+        "SI": "Peers and colleagues might find this smartphone appealing due to its balanced features and reliable performance. It strikes a good balance between utility and aesthetics.",
+        "PP": "The build quality feels robust, and the processor is reliable, indicating good longevity. Data security is not explicitly mentioned, so no specific claims can be made about it.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone given its balanced features and sensible value for the price. It provides good everyday utility and reliable day-to-day operation.",
+        "OVERALL": "This smartphone offers a well-rounded experience with a clean interface and reliable performance, making it suitable for everyday use without feeling overpriced."
+      },
+      "response_text": "This smartphone offers a well-rounded experience with a clean interface and reliable performance, making it suitable for everyday use without feeling overpriced.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This smartphone offers a smooth performance with its high refresh display and fast processor, making it great for multitasking and casual gaming. The battery life is sufficient for a full day of use, ensuring no interruptions during work or leisure.",
+          "cosine_similarities": [
+            0.680989,
+            0.694981,
+            0.64838,
+            0.755625,
+            0.68901
+          ],
+          "min_similarity": 0.64838,
+          "pmf_probabilities": [
+            0.0,
+            0.205285,
+            0.0,
+            0.623733,
+            0.170983
+          ],
+          "expected_rating": 3.7604,
+          "canonical": {
+            "pmf_probabilities": [
+              0.143599,
+              0.205214,
+              0.0,
+              0.472269,
+              0.178918
+            ],
+            "expected_rating": 3.3377
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.205285,
+              0.0,
+              0.623733,
+              0.170983
+            ],
+            "expected_rating": 3.7604
+          },
+          "delta_improved_minus_canonical": 0.4227,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The interface is clean and simple, making it easy to set up and navigate. The optional contextual AI suggestions can help with quick tasks without feeling intrusive.",
+          "cosine_similarities": [
+            0.462904,
+            0.492905,
+            0.573043,
+            0.608428,
+            0.603674
+          ],
+          "min_similarity": 0.462904,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.260628,
+            0.377871,
+            0.361502
+          ],
+          "expected_rating": 4.1009,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.070354,
+              0.25828,
+              0.341257,
+              0.330109
+            ],
+            "expected_rating": 3.9311
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.260628,
+              0.377871,
+              0.361502
+            ],
+            "expected_rating": 4.1009
+          },
+          "delta_improved_minus_canonical": 0.1698,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using this smartphone is pleasant for daily tasks and media viewing. The high refresh display ensures clear visuals, and the fast processor handles apps and games smoothly without lag.",
+          "cosine_similarities": [
+            0.673547,
+            0.683353,
+            0.689989,
+            0.744981,
+            0.751495
+          ],
+          "min_similarity": 0.673547,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.062293,
+            0.441606,
+            0.496101
+          ],
+          "expected_rating": 4.4338,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.055835,
+              0.093618,
+              0.406728,
+              0.443819
+            ],
+            "expected_rating": 4.2385
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.062293,
+              0.441606,
+              0.496101
+            ],
+            "expected_rating": 4.4338
+          },
+          "delta_improved_minus_canonical": 0.1953,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers and colleagues might find this smartphone appealing due to its balanced features and reliable performance. It strikes a good balance between utility and aesthetics.",
+          "cosine_similarities": [
+            0.626374,
+            0.666558,
+            0.698494,
+            0.727066,
+            0.67877
+          ],
+          "min_similarity": 0.626374,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.31118,
+            0.485582,
+            0.203238
+          ],
+          "expected_rating": 3.8921,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.151415,
+              0.271748,
+              0.379407,
+              0.197429
+            ],
+            "expected_rating": 3.6229
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.31118,
+              0.485582,
+              0.203238
+            ],
+            "expected_rating": 3.8921
+          },
+          "delta_improved_minus_canonical": 0.2692,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality feels robust, and the processor is reliable, indicating good longevity. Data security is not explicitly mentioned, so no specific claims can be made about it.",
+          "cosine_similarities": [
+            0.559065,
+            0.518525,
+            0.510704,
+            0.583581,
+            0.60755
+          ],
+          "min_similarity": 0.510704,
+          "pmf_probabilities": [
+            0.190409,
+            0.0,
+            0.0,
+            0.328966,
+            0.480625
+          ],
+          "expected_rating": 3.9094,
+          "canonical": {
+            "pmf_probabilities": [
+              0.214076,
+              0.034621,
+              0.0,
+              0.3226,
+              0.428703
+            ],
+            "expected_rating": 3.7172
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.190409,
+              0.0,
+              0.0,
+              0.328966,
+              0.480625
+            ],
+            "expected_rating": 3.9094
+          },
+          "delta_improved_minus_canonical": 0.1922,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone given its balanced features and sensible value for the price. It provides good everyday utility and reliable day-to-day operation.",
+          "cosine_similarities": [
+            0.653517,
+            0.690755,
+            0.674928,
+            0.749414,
+            0.735184
+          ],
+          "min_similarity": 0.653517,
+          "pmf_probabilities": [
+            0.0,
+            0.135514,
+            0.0,
+            0.478355,
+            0.386131
+          ],
+          "expected_rating": 4.1151,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.157645,
+              0.090642,
+              0.405979,
+              0.345734
+            ],
+            "expected_rating": 3.9398
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.135514,
+              0.0,
+              0.478355,
+              0.386131
+            ],
+            "expected_rating": 4.1151
+          },
+          "delta_improved_minus_canonical": 0.1753,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "primary_adoption_rating": 3.3096,
+      "primary_adoption_pmf": [
+        0.0,
+        0.21899,
+        0.252403,
+        0.528607,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 3.0943,
+        "EE": 4.179,
+        "HM": 4.4107,
+        "SI": 3.9936,
+        "PP": 3.7854,
+        "BI": 3.3096
+      },
+      "construct_responses": {
+        "PE": "This smartphone has a good display and fast processor for everyday use, making tasks like browsing the internet and using apps smooth. The battery life is decent, allowing for a full day of use without needing to recharge.",
+        "EE": "The simple interface makes it easy to navigate and set up. The optional AI suggestions can be handy for quick tasks without cluttering the screen with too many options.",
+        "HM": "For daily tasks, it provides a pleasant experience with a clean layout and clear display. The fast processor ensures that apps and tasks load quickly, enhancing the overall user experience.",
+        "SI": "My peers and colleagues might find this smartphone reliable and user-friendly, making it a good choice for everyday use.",
+        "PP": "The device feels durable with a good build, and the processor and battery suggest it will last for a while. However, the price might be a concern for someone looking for a more budget-friendly option.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone, given its fast performance and practical features. However, the price of ₹40,000 might make me consider a simpler, more accessible option for basic daily tasks.",
+        "OVERALL": "This smartphone offers a good balance of performance and simplicity, but the higher price might make it less attractive for someone prioritizing budget-friendly solutions for essential daily tasks."
+      },
+      "response_text": "This smartphone offers a good balance of performance and simplicity, but the higher price might make it less attractive for someone prioritizing budget-friendly solutions for essential daily tasks.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This smartphone has a good display and fast processor for everyday use, making tasks like browsing the internet and using apps smooth. The battery life is decent, allowing for a full day of use without needing to recharge.",
+          "cosine_similarities": [
+            0.713538,
+            0.729648,
+            0.680832,
+            0.779744,
+            0.687999
+          ],
+          "min_similarity": 0.680832,
+          "pmf_probabilities": [
+            0.141257,
+            0.240951,
+            0.0,
+            0.617792,
+            0.0
+          ],
+          "expected_rating": 3.0943,
+          "canonical": {
+            "pmf_probabilities": [
+              0.174337,
+              0.260213,
+              0.0,
+              0.527247,
+              0.038203
+            ],
+            "expected_rating": 2.9948
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.141257,
+              0.240951,
+              0.0,
+              0.617792,
+              0.0
+            ],
+            "expected_rating": 3.0943
+          },
+          "delta_improved_minus_canonical": 0.0996,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The simple interface makes it easy to navigate and set up. The optional AI suggestions can be handy for quick tasks without cluttering the screen with too many options.",
+          "cosine_similarities": [
+            0.502458,
+            0.526133,
+            0.587994,
+            0.630178,
+            0.635846
+          ],
+          "min_similarity": 0.502458,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.221481,
+            0.377994,
+            0.400525
+          ],
+          "expected_rating": 4.179,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.063931,
+              0.230979,
+              0.344892,
+              0.360198
+            ],
+            "expected_rating": 4.0014
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.221481,
+              0.377994,
+              0.400525
+            ],
+            "expected_rating": 4.179
+          },
+          "delta_improved_minus_canonical": 0.1777,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "For daily tasks, it provides a pleasant experience with a clean layout and clear display. The fast processor ensures that apps and tasks load quickly, enhancing the overall user experience.",
+          "cosine_similarities": [
+            0.539385,
+            0.550959,
+            0.560355,
+            0.606356,
+            0.616457
+          ],
+          "min_similarity": 0.539385,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.08791,
+            0.413458,
+            0.498632
+          ],
+          "expected_rating": 4.4107,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.065543,
+              0.11875,
+              0.379252,
+              0.436455
+            ],
+            "expected_rating": 4.1866
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.08791,
+              0.413458,
+              0.498632
+            ],
+            "expected_rating": 4.4107
+          },
+          "delta_improved_minus_canonical": 0.2241,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers and colleagues might find this smartphone reliable and user-friendly, making it a good choice for everyday use.",
+          "cosine_similarities": [
+            0.679192,
+            0.686822,
+            0.743975,
+            0.767052,
+            0.742887
+          ],
+          "min_similarity": 0.679192,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.28745,
+            0.431519,
+            0.281031
+          ],
+          "expected_rating": 3.9936,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.034067,
+              0.289252,
+              0.392287,
+              0.284394
+            ],
+            "expected_rating": 3.927
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.28745,
+              0.431519,
+              0.281031
+            ],
+            "expected_rating": 3.9936
+          },
+          "delta_improved_minus_canonical": 0.0666,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The device feels durable with a good build, and the processor and battery suggest it will last for a while. However, the price might be a concern for someone looking for a more budget-friendly option.",
+          "cosine_similarities": [
+            0.501542,
+            0.524144,
+            0.520203,
+            0.557592,
+            0.522026
+          ],
+          "min_similarity": 0.501542,
+          "pmf_probabilities": [
+            0.0,
+            0.191072,
+            0.0,
+            0.641356,
+            0.167572
+          ],
+          "expected_rating": 3.7854,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.191875,
+              0.158414,
+              0.475822,
+              0.173889
+            ],
+            "expected_rating": 3.6317
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.191072,
+              0.0,
+              0.641356,
+              0.167572
+            ],
+            "expected_rating": 3.7854
+          },
+          "delta_improved_minus_canonical": 0.1537,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone, given its fast performance and practical features. However, the price of ₹40,000 might make me consider a simpler, more accessible option for basic daily tasks.",
+          "cosine_similarities": [
+            0.661398,
+            0.687186,
+            0.690084,
+            0.711337,
+            0.682865
+          ],
+          "min_similarity": 0.661398,
+          "pmf_probabilities": [
+            0.0,
+            0.21899,
+            0.252403,
+            0.528607,
+            0.0
+          ],
+          "expected_rating": 3.3096,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.20486,
+              0.227882,
+              0.396723,
+              0.170535
+            ],
+            "expected_rating": 3.5329
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.21899,
+              0.252403,
+              0.528607,
+              0.0
+            ],
+            "expected_rating": 3.3096
+          },
+          "delta_improved_minus_canonical": -0.2233,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.694341,
+        0.709024,
+        0.684692,
+        0.746166,
+        0.703117
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.19489,
+        0.0,
+        0.670603,
+        0.134507
+      ],
+      "expected_rating": 3.7447,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.490284,
+        0.512153,
+        0.541019,
+        0.560649,
+        0.545995
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.271772,
+        0.420349,
+        0.307879
+      ],
+      "expected_rating": 4.0361,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.525322,
+        0.547964,
+        0.557377,
+        0.593802,
+        0.626457
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.119351,
+        0.328376,
+        0.552273
+      ],
+      "expected_rating": 4.4329,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.602165,
+        0.600198,
+        0.664764,
+        0.692006,
+        0.651514
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.299835,
+        0.479424,
+        0.220742
+      ],
+      "expected_rating": 3.9209,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.509048,
+        0.517224,
+        0.472827,
+        0.525836,
+        0.517206
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.306174,
+        0.0,
+        0.387817,
+        0.306008
+      ],
+      "expected_rating": 3.6937,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.633575,
+        0.666345,
+        0.694921,
+        0.68437,
+        0.666976
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.450025,
+        0.3499,
+        0.200075
+      ],
+      "expected_rating": 3.7501,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.543396,
+        0.55618,
+        0.518958,
+        0.627415,
+        0.576696
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.143731,
+        0.0,
+        0.59818,
+        0.258089
+      ],
+      "expected_rating": 3.9706,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.46992,
+        0.492493,
+        0.573763,
+        0.600416,
+        0.631684
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.240273,
+        0.325837,
+        0.43389
+      ],
+      "expected_rating": 4.1936,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.723676,
+        0.732219,
+        0.751365,
+        0.792964,
+        0.794523
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.126633,
+        0.430207,
+        0.44316
+      ],
+      "expected_rating": 4.3165,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.63508,
+        0.640811,
+        0.708932,
+        0.7053,
+        0.677661
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.414103,
+        0.387177,
+        0.19872
+      ],
+      "expected_rating": 3.7846,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.743423,
+        0.745027,
+        0.694914,
+        0.767558,
+        0.755051
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.255372,
+        0.0,
+        0.418965,
+        0.325663
+      ],
+      "expected_rating": 3.8149,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.631579,
+        0.654699,
+        0.64608,
+        0.70165,
+        0.688812
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.114485,
+        0.0,
+        0.502135,
+        0.38338
+      ],
+      "expected_rating": 4.1544,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.680989,
+        0.694981,
+        0.64838,
+        0.755625,
+        0.68901
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.205285,
+        0.0,
+        0.623733,
+        0.170983
+      ],
+      "expected_rating": 3.7604,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.462904,
+        0.492905,
+        0.573043,
+        0.608428,
+        0.603674
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.260628,
+        0.377871,
+        0.361502
+      ],
+      "expected_rating": 4.1009,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.673547,
+        0.683353,
+        0.689989,
+        0.744981,
+        0.751495
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.062293,
+        0.441606,
+        0.496101
+      ],
+      "expected_rating": 4.4338,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.626374,
+        0.666558,
+        0.698494,
+        0.727066,
+        0.67877
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.31118,
+        0.485582,
+        0.203238
+      ],
+      "expected_rating": 3.8921,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.559065,
+        0.518525,
+        0.510704,
+        0.583581,
+        0.60755
+      ],
+      "pmf_probabilities": [
+        0.190409,
+        0.0,
+        0.0,
+        0.328966,
+        0.480625
+      ],
+      "expected_rating": 3.9094,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.653517,
+        0.690755,
+        0.674928,
+        0.749414,
+        0.735184
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.135514,
+        0.0,
+        0.478355,
+        0.386131
+      ],
+      "expected_rating": 4.1151,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.713538,
+        0.729648,
+        0.680832,
+        0.779744,
+        0.687999
+      ],
+      "pmf_probabilities": [
+        0.141257,
+        0.240951,
+        0.0,
+        0.617792,
+        0.0
+      ],
+      "expected_rating": 3.0943,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.502458,
+        0.526133,
+        0.587994,
+        0.630178,
+        0.635846
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.221481,
+        0.377994,
+        0.400525
+      ],
+      "expected_rating": 4.179,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.539385,
+        0.550959,
+        0.560355,
+        0.606356,
+        0.616457
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.08791,
+        0.413458,
+        0.498632
+      ],
+      "expected_rating": 4.4107,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.679192,
+        0.686822,
+        0.743975,
+        0.767052,
+        0.742887
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.28745,
+        0.431519,
+        0.281031
+      ],
+      "expected_rating": 3.9936,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.501542,
+        0.524144,
+        0.520203,
+        0.557592,
+        0.522026
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.191072,
+        0.0,
+        0.641356,
+        0.167572
+      ],
+      "expected_rating": 3.7854,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.661398,
+        0.687186,
+        0.690084,
+        0.711337,
+        0.682865
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.21899,
+        0.252403,
+        0.528607,
+        0.0
+      ],
+      "expected_rating": 3.3096,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.694341,
+      "cos_sim_2": 0.709024,
+      "cos_sim_3": 0.684692,
+      "cos_sim_4": 0.746166,
+      "cos_sim_5": 0.703117,
+      "min_similarity": 0.684692,
+      "p1": 0.0,
+      "p2": 0.19489,
+      "p3": 0.0,
+      "p4": 0.670603,
+      "p5": 0.134507,
+      "set_expected_rating": 3.7447,
+      "canonical_expected_rating": 3.4803,
+      "improved_expected_rating": 3.7447,
+      "delta": 0.2645,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.490284,
+      "cos_sim_2": 0.512153,
+      "cos_sim_3": 0.541019,
+      "cos_sim_4": 0.560649,
+      "cos_sim_5": 0.545995,
+      "min_similarity": 0.490284,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.271772,
+      "p4": 0.420349,
+      "p5": 0.307879,
+      "set_expected_rating": 4.0361,
+      "canonical_expected_rating": 3.8049,
+      "improved_expected_rating": 4.0361,
+      "delta": 0.2312,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.525322,
+      "cos_sim_2": 0.547964,
+      "cos_sim_3": 0.557377,
+      "cos_sim_4": 0.593802,
+      "cos_sim_5": 0.626457,
+      "min_similarity": 0.525322,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.119351,
+      "p4": 0.328376,
+      "p5": 0.552273,
+      "set_expected_rating": 4.4329,
+      "canonical_expected_rating": 4.1061,
+      "improved_expected_rating": 4.4329,
+      "delta": 0.3268,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.602165,
+      "cos_sim_2": 0.600198,
+      "cos_sim_3": 0.664764,
+      "cos_sim_4": 0.692006,
+      "cos_sim_5": 0.651514,
+      "min_similarity": 0.600198,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.299835,
+      "p4": 0.479424,
+      "p5": 0.220742,
+      "set_expected_rating": 3.9209,
+      "canonical_expected_rating": 3.9087,
+      "improved_expected_rating": 3.9209,
+      "delta": 0.0122,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.509048,
+      "cos_sim_2": 0.517224,
+      "cos_sim_3": 0.472827,
+      "cos_sim_4": 0.525836,
+      "cos_sim_5": 0.517206,
+      "min_similarity": 0.472827,
+      "p1": 0.0,
+      "p2": 0.306174,
+      "p3": 0.0,
+      "p4": 0.387817,
+      "p5": 0.306008,
+      "set_expected_rating": 3.6937,
+      "canonical_expected_rating": 3.14,
+      "improved_expected_rating": 3.6937,
+      "delta": 0.5536,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova AI",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.633575,
+      "cos_sim_2": 0.666345,
+      "cos_sim_3": 0.694921,
+      "cos_sim_4": 0.68437,
+      "cos_sim_5": 0.666976,
+      "min_similarity": 0.633575,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.450025,
+      "p4": 0.3499,
+      "p5": 0.200075,
+      "set_expected_rating": 3.7501,
+      "canonical_expected_rating": 3.4757,
+      "improved_expected_rating": 3.7501,
+      "delta": 0.2743,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.543396,
+      "cos_sim_2": 0.55618,
+      "cos_sim_3": 0.518958,
+      "cos_sim_4": 0.627415,
+      "cos_sim_5": 0.576696,
+      "min_similarity": 0.518958,
+      "p1": 0.0,
+      "p2": 0.143731,
+      "p3": 0.0,
+      "p4": 0.59818,
+      "p5": 0.258089,
+      "set_expected_rating": 3.9706,
+      "canonical_expected_rating": 3.6049,
+      "improved_expected_rating": 3.9706,
+      "delta": 0.3657,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.46992,
+      "cos_sim_2": 0.492493,
+      "cos_sim_3": 0.573763,
+      "cos_sim_4": 0.600416,
+      "cos_sim_5": 0.631684,
+      "min_similarity": 0.46992,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.240273,
+      "p4": 0.325837,
+      "p5": 0.43389,
+      "set_expected_rating": 4.1936,
+      "canonical_expected_rating": 4.0305,
+      "improved_expected_rating": 4.1936,
+      "delta": 0.1631,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.723676,
+      "cos_sim_2": 0.732219,
+      "cos_sim_3": 0.751365,
+      "cos_sim_4": 0.792964,
+      "cos_sim_5": 0.794523,
+      "min_similarity": 0.723676,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.126633,
+      "p4": 0.430207,
+      "p5": 0.44316,
+      "set_expected_rating": 4.3165,
+      "canonical_expected_rating": 4.1478,
+      "improved_expected_rating": 4.3165,
+      "delta": 0.1687,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.63508,
+      "cos_sim_2": 0.640811,
+      "cos_sim_3": 0.708932,
+      "cos_sim_4": 0.7053,
+      "cos_sim_5": 0.677661,
+      "min_similarity": 0.63508,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.414103,
+      "p4": 0.387177,
+      "p5": 0.19872,
+      "set_expected_rating": 3.7846,
+      "canonical_expected_rating": 3.7779,
+      "improved_expected_rating": 3.7846,
+      "delta": 0.0067,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.743423,
+      "cos_sim_2": 0.745027,
+      "cos_sim_3": 0.694914,
+      "cos_sim_4": 0.767558,
+      "cos_sim_5": 0.755051,
+      "min_similarity": 0.694914,
+      "p1": 0.0,
+      "p2": 0.255372,
+      "p3": 0.0,
+      "p4": 0.418965,
+      "p5": 0.325663,
+      "set_expected_rating": 3.8149,
+      "canonical_expected_rating": 3.1979,
+      "improved_expected_rating": 3.8149,
+      "delta": 0.617,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova AI",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.631579,
+      "cos_sim_2": 0.654699,
+      "cos_sim_3": 0.64608,
+      "cos_sim_4": 0.70165,
+      "cos_sim_5": 0.688812,
+      "min_similarity": 0.631579,
+      "p1": 0.0,
+      "p2": 0.114485,
+      "p3": 0.0,
+      "p4": 0.502135,
+      "p5": 0.38338,
+      "set_expected_rating": 4.1544,
+      "canonical_expected_rating": 3.9787,
+      "improved_expected_rating": 4.1544,
+      "delta": 0.1757,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.680989,
+      "cos_sim_2": 0.694981,
+      "cos_sim_3": 0.64838,
+      "cos_sim_4": 0.755625,
+      "cos_sim_5": 0.68901,
+      "min_similarity": 0.64838,
+      "p1": 0.0,
+      "p2": 0.205285,
+      "p3": 0.0,
+      "p4": 0.623733,
+      "p5": 0.170983,
+      "set_expected_rating": 3.7604,
+      "canonical_expected_rating": 3.3377,
+      "improved_expected_rating": 3.7604,
+      "delta": 0.4227,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.462904,
+      "cos_sim_2": 0.492905,
+      "cos_sim_3": 0.573043,
+      "cos_sim_4": 0.608428,
+      "cos_sim_5": 0.603674,
+      "min_similarity": 0.462904,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.260628,
+      "p4": 0.377871,
+      "p5": 0.361502,
+      "set_expected_rating": 4.1009,
+      "canonical_expected_rating": 3.9311,
+      "improved_expected_rating": 4.1009,
+      "delta": 0.1698,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.673547,
+      "cos_sim_2": 0.683353,
+      "cos_sim_3": 0.689989,
+      "cos_sim_4": 0.744981,
+      "cos_sim_5": 0.751495,
+      "min_similarity": 0.673547,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.062293,
+      "p4": 0.441606,
+      "p5": 0.496101,
+      "set_expected_rating": 4.4338,
+      "canonical_expected_rating": 4.2385,
+      "improved_expected_rating": 4.4338,
+      "delta": 0.1953,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.626374,
+      "cos_sim_2": 0.666558,
+      "cos_sim_3": 0.698494,
+      "cos_sim_4": 0.727066,
+      "cos_sim_5": 0.67877,
+      "min_similarity": 0.626374,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.31118,
+      "p4": 0.485582,
+      "p5": 0.203238,
+      "set_expected_rating": 3.8921,
+      "canonical_expected_rating": 3.6229,
+      "improved_expected_rating": 3.8921,
+      "delta": 0.2692,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.559065,
+      "cos_sim_2": 0.518525,
+      "cos_sim_3": 0.510704,
+      "cos_sim_4": 0.583581,
+      "cos_sim_5": 0.60755,
+      "min_similarity": 0.510704,
+      "p1": 0.190409,
+      "p2": 0.0,
+      "p3": 0.0,
+      "p4": 0.328966,
+      "p5": 0.480625,
+      "set_expected_rating": 3.9094,
+      "canonical_expected_rating": 3.7172,
+      "improved_expected_rating": 3.9094,
+      "delta": 0.1922,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova AI",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.653517,
+      "cos_sim_2": 0.690755,
+      "cos_sim_3": 0.674928,
+      "cos_sim_4": 0.749414,
+      "cos_sim_5": 0.735184,
+      "min_similarity": 0.653517,
+      "p1": 0.0,
+      "p2": 0.135514,
+      "p3": 0.0,
+      "p4": 0.478355,
+      "p5": 0.386131,
+      "set_expected_rating": 4.1151,
+      "canonical_expected_rating": 3.9398,
+      "improved_expected_rating": 4.1151,
+      "delta": 0.1753,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.713538,
+      "cos_sim_2": 0.729648,
+      "cos_sim_3": 0.680832,
+      "cos_sim_4": 0.779744,
+      "cos_sim_5": 0.687999,
+      "min_similarity": 0.680832,
+      "p1": 0.141257,
+      "p2": 0.240951,
+      "p3": 0.0,
+      "p4": 0.617792,
+      "p5": 0.0,
+      "set_expected_rating": 3.0943,
+      "canonical_expected_rating": 2.9948,
+      "improved_expected_rating": 3.0943,
+      "delta": 0.0996,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.502458,
+      "cos_sim_2": 0.526133,
+      "cos_sim_3": 0.587994,
+      "cos_sim_4": 0.630178,
+      "cos_sim_5": 0.635846,
+      "min_similarity": 0.502458,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.221481,
+      "p4": 0.377994,
+      "p5": 0.400525,
+      "set_expected_rating": 4.179,
+      "canonical_expected_rating": 4.0014,
+      "improved_expected_rating": 4.179,
+      "delta": 0.1777,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.539385,
+      "cos_sim_2": 0.550959,
+      "cos_sim_3": 0.560355,
+      "cos_sim_4": 0.606356,
+      "cos_sim_5": 0.616457,
+      "min_similarity": 0.539385,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.08791,
+      "p4": 0.413458,
+      "p5": 0.498632,
+      "set_expected_rating": 4.4107,
+      "canonical_expected_rating": 4.1866,
+      "improved_expected_rating": 4.4107,
+      "delta": 0.2241,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.679192,
+      "cos_sim_2": 0.686822,
+      "cos_sim_3": 0.743975,
+      "cos_sim_4": 0.767052,
+      "cos_sim_5": 0.742887,
+      "min_similarity": 0.679192,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.28745,
+      "p4": 0.431519,
+      "p5": 0.281031,
+      "set_expected_rating": 3.9936,
+      "canonical_expected_rating": 3.927,
+      "improved_expected_rating": 3.9936,
+      "delta": 0.0666,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.501542,
+      "cos_sim_2": 0.524144,
+      "cos_sim_3": 0.520203,
+      "cos_sim_4": 0.557592,
+      "cos_sim_5": 0.522026,
+      "min_similarity": 0.501542,
+      "p1": 0.0,
+      "p2": 0.191072,
+      "p3": 0.0,
+      "p4": 0.641356,
+      "p5": 0.167572,
+      "set_expected_rating": 3.7854,
+      "canonical_expected_rating": 3.6317,
+      "improved_expected_rating": 3.7854,
+      "delta": 0.1537,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova AI",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.661398,
+      "cos_sim_2": 0.687186,
+      "cos_sim_3": 0.690084,
+      "cos_sim_4": 0.711337,
+      "cos_sim_5": 0.682865,
+      "min_similarity": 0.661398,
+      "p1": 0.0,
+      "p2": 0.21899,
+      "p3": 0.252403,
+      "p4": 0.528607,
+      "p5": 0.0,
+      "set_expected_rating": 3.3096,
+      "canonical_expected_rating": 3.5329,
+      "improved_expected_rating": 3.3096,
+      "delta": -0.2233,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

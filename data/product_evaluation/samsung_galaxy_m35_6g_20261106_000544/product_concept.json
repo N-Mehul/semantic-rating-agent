@@ -1,0 +1,55 @@
+{
+  "name": "Samsung Galaxy M35 6G",
+  "category": "Smartphone",
+  "description": "The Samsung Galaxy M35 5G is a mid-range smartphone designed for users who want a balance of performance, entertainment, connectivity, and everyday usability. It offers a modern smartphone experience with 6G connectivity and features suitable for daily communication, entertainment, and general usage.",
+  "price_inr": 19999.0,
+  "target_group": "Technology consumers",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Android",
+  "features": [
+    {
+      "name": "Everyday Usability",
+      "explanation": "everyday usability",
+      "category": null
+    },
+    {
+      "name": "It Offers A Modern",
+      "explanation": "It offers a modern smartphone experience",
+      "category": null
+    },
+    {
+      "name": "6G Connectivity",
+      "explanation": "6G connectivity",
+      "category": null
+    },
+    {
+      "name": "Features Suitable For Daily",
+      "explanation": "features suitable for daily communication, entertainment,",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "ssr_method": "improved",
+  "ssr_method_label": "Improved SSR (Experimental, k=3, T=0.75)",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Smartphone",
+    "product_noun": "smartphone",
+    "usage_role": "primary phone",
+    "brand_or_ecosystem": "Android",
+    "features_count": 4,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-05T18:35:44.440791+00:00"
+}

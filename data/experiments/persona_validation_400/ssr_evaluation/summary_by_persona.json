@@ -1,0 +1,94 @@
+{
+  "P1: Premium Tier Owner": {
+    "Persona": "P1: Premium Tier Owner",
+    "Count": 100,
+    "Mean_Expected_Rating": 3.3941,
+    "Std_Expected_Rating": 0.6055,
+    "Median_Expected_Rating": 3.621,
+    "Min_Expected_Rating": 2.0944,
+    "Max_Expected_Rating": 4.2785,
+    "Argmax_Distribution": {
+      "R1": 1,
+      "R2": 21,
+      "R3": 21,
+      "R4": 28,
+      "R5": 29
+    },
+    "Rounded_Distribution": {
+      "R1": 0,
+      "R2": 12,
+      "R3": 32,
+      "R4": 56,
+      "R5": 0
+    }
+  },
+  "P2: Mid-Range Heavy User": {
+    "Persona": "P2: Mid-Range Heavy User",
+    "Count": 100,
+    "Mean_Expected_Rating": 3.311,
+    "Std_Expected_Rating": 0.641,
+    "Median_Expected_Rating": 3.4495,
+    "Min_Expected_Rating": 1.5815,
+    "Max_Expected_Rating": 4.3124,
+    "Argmax_Distribution": {
+      "R1": 3,
+      "R2": 20,
+      "R3": 19,
+      "R4": 26,
+      "R5": 32
+    },
+    "Rounded_Distribution": {
+      "R1": 0,
+      "R2": 16,
+      "R3": 35,
+      "R4": 49,
+      "R5": 0
+    }
+  },
+  "P3: Budget Practical Adopter": {
+    "Persona": "P3: Budget Practical Adopter",
+    "Count": 100,
+    "Mean_Expected_Rating": 3.2621,
+    "Std_Expected_Rating": 0.6773,
+    "Median_Expected_Rating": 3.4218,
+    "Min_Expected_Rating": 1.8915,
+    "Max_Expected_Rating": 4.3166,
+    "Argmax_Distribution": {
+      "R1": 4,
+      "R2": 21,
+      "R3": 14,
+      "R4": 27,
+      "R5": 34
+    },
+    "Rounded_Distribution": {
+      "R1": 0,
+      "R2": 21,
+      "R3": 32,
+      "R4": 47,
+      "R5": 0
+    }
+  },
+  "P4: Student Value Seeker": {
+    "Persona": "P4: Student Value Seeker",
+    "Count": 100,
+    "Mean_Expected_Rating": 3.3315,
+    "Std_Expected_Rating": 0.6547,
+    "Median_Expected_Rating": 3.5583,
+    "Min_Expected_Rating": 1.8405,
+    "Max_Expected_Rating": 4.2037,
+    "Argmax_Distribution": {
+      "R1": 5,
+      "R2": 18,
+      "R3": 16,
+      "R4": 27,
+      "R5": 34
+    },
+    "Rounded_Distribution": {
+      "R1": 0,
+      "R2": 18,
+      "R3": 30,
+      "R4": 52,
+      "R5": 0
+    }
+  }
+}

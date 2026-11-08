@@ -1,0 +1,25 @@
+persona_id,product_name,anchor_set_code,anchor_set_name,cos_sim_1,cos_sim_2,cos_sim_3,cos_sim_4,cos_sim_5,min_similarity,p1,p2,p3,p4,p5,set_expected_rating,canonical_expected_rating,improved_expected_rating,delta,embedding_model
+P1_premium_tier_owner,samsung 1,PE,Performance Expectancy,0.687181,0.6968,0.659526,0.76562,0.710898,0.659526,0.0,0.152266,0.0,0.614195,0.233539,3.929,3.5227,3.929,0.4063,nomic-embed-text
+P1_premium_tier_owner,samsung 1,EE,Effort Expectancy,0.503934,0.526415,0.59929,0.633215,0.645099,0.503934,0.0,0.0,0.23879,0.358316,0.402895,4.1641,4.0022,4.1641,0.1619,nomic-embed-text
+P1_premium_tier_owner,samsung 1,HM,Hedonic Motivation,0.503015,0.530346,0.544656,0.569224,0.60422,0.503015,0.0,0.0,0.163306,0.30306,0.533634,4.3703,4.0207,4.3703,0.3496,nomic-embed-text
+P1_premium_tier_owner,samsung 1,SI,Social Influence,0.647809,0.672164,0.729357,0.738025,0.710872,0.647809,0.0,0.0,0.350384,0.400903,0.248713,3.8983,3.7407,3.8983,0.1576,nomic-embed-text
+P1_premium_tier_owner,samsung 1,PP,Perceived Protection,0.700815,0.665653,0.628796,0.724154,0.739208,0.628796,0.236872,0.0,0.0,0.344396,0.418732,3.7081,3.43,3.7081,0.2782,nomic-embed-text
+P1_premium_tier_owner,samsung 1,BI,Behavioral Intention,0.61064,0.647651,0.653531,0.705055,0.682942,0.61064,0.0,0.0,0.170366,0.487845,0.341789,4.1714,3.8191,4.1714,0.3523,nomic-embed-text
+P2_midrange_heavy_user,samsung 1,PE,Performance Expectancy,0.729348,0.743226,0.712113,0.803849,0.767075,0.712113,0.0,0.135808,0.0,0.574184,0.290008,4.0184,3.6977,4.0184,0.3207,nomic-embed-text
+P2_midrange_heavy_user,samsung 1,EE,Effort Expectancy,0.513837,0.558931,0.609725,0.616673,0.636909,0.513837,0.0,0.0,0.286318,0.314309,0.399373,4.1131,3.8283,4.1131,0.2848,nomic-embed-text
+P2_midrange_heavy_user,samsung 1,HM,Hedonic Motivation,0.673721,0.689461,0.697916,0.743999,0.764364,0.673721,0.0,0.0,0.091216,0.378037,0.530747,4.4395,4.1741,4.4395,0.2654,nomic-embed-text
+P2_midrange_heavy_user,samsung 1,SI,Social Influence,0.621836,0.64364,0.69149,0.715582,0.681548,0.621836,0.0,0.0,0.302998,0.45025,0.246752,3.9438,3.7814,3.9438,0.1624,nomic-embed-text
+P2_midrange_heavy_user,samsung 1,PP,Perceived Protection,0.610094,0.630683,0.585416,0.632617,0.612662,0.585416,0.0,0.38978,0.0,0.412139,0.198082,3.4185,3.049,3.4185,0.3696,nomic-embed-text
+P2_midrange_heavy_user,samsung 1,BI,Behavioral Intention,0.67189,0.712049,0.696892,0.769582,0.735112,0.67189,0.0,0.163852,0.0,0.536068,0.30008,3.9724,3.8138,3.9724,0.1586,nomic-embed-text
+P3_midrange_moderate_user,samsung 1,PE,Performance Expectancy,0.75257,0.770581,0.743164,0.821949,0.760465,0.743164,0.0,0.177724,0.0,0.726081,0.096195,3.7407,3.5053,3.7407,0.2354,nomic-embed-text
+P3_midrange_moderate_user,samsung 1,EE,Effort Expectancy,0.463263,0.489652,0.548625,0.587436,0.587116,0.463263,0.0,0.0,0.233057,0.384131,0.382812,4.1498,3.9603,4.1498,0.1895,nomic-embed-text
+P3_midrange_moderate_user,samsung 1,HM,Hedonic Motivation,0.703907,0.723052,0.747245,0.768593,0.798206,0.703907,0.0,0.0,0.180981,0.308718,0.5103,4.3293,4.0572,4.3293,0.2721,nomic-embed-text
+P3_midrange_moderate_user,samsung 1,SI,Social Influence,0.642846,0.633737,0.675868,0.709362,0.708014,0.633737,0.0,0.0,0.188281,0.410724,0.400995,4.2127,4.024,4.2127,0.1888,nomic-embed-text
+P3_midrange_moderate_user,samsung 1,PP,Perceived Protection,0.611749,0.62485,0.578834,0.666241,0.646924,0.578834,0.0,0.198471,0.0,0.466881,0.334648,3.9377,3.4766,3.9377,0.4611,nomic-embed-text
+P3_midrange_moderate_user,samsung 1,BI,Behavioral Intention,0.644011,0.674695,0.673118,0.732032,0.696504,0.644011,0.0,0.14041,0.0,0.572303,0.287287,4.0065,3.8104,4.0065,0.1961,nomic-embed-text
+P4_budget_or_undisclosed_price,samsung 1,PE,Performance Expectancy,0.729551,0.741937,0.69254,0.801396,0.719294,0.69254,0.149621,0.219866,0.0,0.630513,0.0,3.1114,3.1754,3.1114,-0.064,nomic-embed-text
+P4_budget_or_undisclosed_price,samsung 1,EE,Effort Expectancy,0.483873,0.505842,0.588776,0.629433,0.612629,0.483873,0.0,0.0,0.258946,0.400761,0.340293,4.0813,3.9499,4.0813,0.1314,nomic-embed-text
+P4_budget_or_undisclosed_price,samsung 1,HM,Hedonic Motivation,0.700544,0.713754,0.730899,0.77407,0.78885,0.700544,0.0,0.0,0.118964,0.386991,0.494045,4.3751,4.1535,4.3751,0.2216,nomic-embed-text
+P4_budget_or_undisclosed_price,samsung 1,SI,Social Influence,0.658206,0.641626,0.689821,0.725724,0.731509,0.641626,0.0,0.0,0.185308,0.38929,0.425402,4.2401,3.9663,4.2401,0.2738,nomic-embed-text
+P4_budget_or_undisclosed_price,samsung 1,PP,Perceived Protection,0.522701,0.512756,0.504871,0.574248,0.559314,0.504871,0.086582,0.0,0.0,0.529875,0.383542,4.1238,3.9009,4.1238,0.2229,nomic-embed-text
+P4_budget_or_undisclosed_price,samsung 1,BI,Behavioral Intention,0.651683,0.692743,0.683564,0.74575,0.733178,0.651683,0.0,0.153504,0.0,0.463607,0.38289,4.0759,3.8692,4.0759,0.2067,nomic-embed-text

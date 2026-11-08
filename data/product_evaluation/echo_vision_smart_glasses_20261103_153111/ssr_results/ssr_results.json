@@ -1,0 +1,2677 @@
+{
+  "evaluation_id": "echo_vision_smart_glasses_20261103_153111",
+  "product_name": "Echo Vision Smart Glasses",
+  "ssr_method": "compare",
+  "ssr_method_label": "Comparison Mode (Canonical vs. Improved)",
+  "k_truncation": 5,
+  "temperature": 1.0,
+  "comparison_summary": {
+    "active_ssr_method": "compare",
+    "active_ssr_label": "Comparison Mode (Canonical vs. Improved)",
+    "is_comparison_mode": true,
+    "canonical": {
+      "method": "Canonical SSR (Original Reference Baseline)",
+      "k_truncation": 5,
+      "temperature": 1.0,
+      "primary_adoption_average": 3.8692,
+      "construct_averages": {
+        "PE": 3.328,
+        "EE": 3.9953,
+        "HM": 3.9074,
+        "SI": 3.6911,
+        "PP": 3.933,
+        "BI": 3.8692
+      }
+    },
+    "improved": {
+      "method": "Improved SSR (Experimental)",
+      "k_truncation": 3,
+      "temperature": 0.75,
+      "primary_adoption_average": 4.0484,
+      "construct_averages": {
+        "PE": 3.5699,
+        "EE": 4.2376,
+        "HM": 4.0378,
+        "SI": 3.805,
+        "PP": 4.2111,
+        "BI": 4.0484
+      }
+    },
+    "deltas": {
+      "primary_adoption_delta": 0.1792,
+      "construct_deltas": {
+        "PE": 0.2419,
+        "EE": 0.2423,
+        "HM": 0.1304,
+        "SI": 0.1139,
+        "PP": 0.2781,
+        "BI": 0.1792
+      }
+    },
+    "persona_comparison": [
+      {
+        "persona_id": "P1_premium_tier_owner",
+        "canonical_adoption_rating": 3.8867,
+        "improved_adoption_rating": 4.0986,
+        "delta": 0.2119
+      },
+      {
+        "persona_id": "P2_midrange_heavy_user",
+        "canonical_adoption_rating": 3.9539,
+        "improved_adoption_rating": 4.0967,
+        "delta": 0.1428
+      },
+      {
+        "persona_id": "P3_midrange_moderate_user",
+        "canonical_adoption_rating": 3.7729,
+        "improved_adoption_rating": 3.96,
+        "delta": 0.1871
+      },
+      {
+        "persona_id": "P4_budget_or_undisclosed_price",
+        "canonical_adoption_rating": 3.8633,
+        "improved_adoption_rating": 4.0385,
+        "delta": 0.1752
+      }
+    ]
+  },
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Comparison Mode (Canonical vs. Improved))",
+  "timestamp_utc": "2026-11-03T10:10:02.389134+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.8692,
+  "overall_adoption_average": 3.8692,
+  "primary_adoption_average": 3.8692,
+  "construct_averages": {
+    "PE": 3.328,
+    "EE": 3.9953,
+    "HM": 3.9074,
+    "SI": 3.6911,
+    "PP": 3.933,
+    "BI": 3.8692
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [
+    "PV"
+  ],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "primary_adoption_rating": 3.8867,
+      "primary_adoption_pmf": [
+        0.0,
+        0.169038,
+        0.123928,
+        0.358332,
+        0.348702
+      ],
+      "construct_scores": {
+        "PE": 3.7266,
+        "EE": 3.8702,
+        "HM": 3.9477,
+        "SI": 3.7933,
+        "PP": 3.8401,
+        "BI": 3.8867
+      },
+      "construct_responses": {
+        "PE": "The smartphone offers a good processor and battery life, making it suitable for everyday tasks and media consumption. The display is clear and sharp, enhancing the overall user experience.",
+        "EE": "Setting up and navigating the smartphone is straightforward, with an intuitive interface that makes it easy to use right from the start.",
+        "HM": "Using this smartphone feels pleasant and satisfying, with a smooth performance that supports quick media consumption and daily tasks without any lag.",
+        "SI": "My peers and colleagues who are tech-savvy would likely appreciate the smartphone's performance and features, making it a good addition to their daily routines.",
+        "PP": "The solid build quality and reliable hardware suggest that this smartphone will last a long time, providing good protection and longevity.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone due to its strong build quality and reasonable price. The performance and display make it a reliable choice for daily use.",
+        "OVERALL": "This smartphone provides a good balance of performance and build quality, making it a satisfying choice for everyday use at an affordable price. It meets my needs for a primary device without any hesitation."
+      },
+      "response_text": "This smartphone provides a good balance of performance and build quality, making it a satisfying choice for everyday use at an affordable price. It meets my needs for a primary device without any hesitation.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The smartphone offers a good processor and battery life, making it suitable for everyday tasks and media consumption. The display is clear and sharp, enhancing the overall user experience.",
+          "cosine_similarities": [
+            0.73747,
+            0.758087,
+            0.739183,
+            0.81231,
+            0.75033
+          ],
+          "min_similarity": 0.73747,
+          "pmf_probabilities": [
+            0.0,
+            0.187378,
+            0.015565,
+            0.680178,
+            0.11688
+          ],
+          "expected_rating": 3.7266,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.187378,
+              0.015565,
+              0.680178,
+              0.11688
+            ],
+            "expected_rating": 3.7266
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.140613,
+              0.0,
+              0.784447,
+              0.074941
+            ],
+            "expected_rating": 3.7937
+          },
+          "delta_improved_minus_canonical": 0.0672,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and navigating the smartphone is straightforward, with an intuitive interface that makes it easy to use right from the start.",
+          "cosine_similarities": [
+            0.724052,
+            0.691799,
+            0.747839,
+            0.774515,
+            0.807386
+          ],
+          "min_similarity": 0.691799,
+          "pmf_probabilities": [
+            0.112539,
+            0.0,
+            0.195535,
+            0.288616,
+            0.40331
+          ],
+          "expected_rating": 3.8702,
+          "canonical": {
+            "pmf_probabilities": [
+              0.112539,
+              0.0,
+              0.195535,
+              0.288616,
+              0.40331
+            ],
+            "expected_rating": 3.8702
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.188461,
+              0.316726,
+              0.494813
+            ],
+            "expected_rating": 4.3064
+          },
+          "delta_improved_minus_canonical": 0.4362,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using this smartphone feels pleasant and satisfying, with a smooth performance that supports quick media consumption and daily tasks without any lag.",
+          "cosine_similarities": [
+            0.680222,
+            0.723802,
+            0.723749,
+            0.771048,
+            0.795561
+          ],
+          "min_similarity": 0.680222,
+          "pmf_probabilities": [
+            0.0,
+            0.1486,
+            0.148419,
+            0.3097,
+            0.393282
+          ],
+          "expected_rating": 3.9477,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.1486,
+              0.148419,
+              0.3097,
+              0.393282
+            ],
+            "expected_rating": 3.9477
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.136556,
+              0.0,
+              0.363532,
+              0.499912
+            ],
+            "expected_rating": 4.2268
+          },
+          "delta_improved_minus_canonical": 0.2791,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers and colleagues who are tech-savvy would likely appreciate the smartphone's performance and features, making it a good addition to their daily routines.",
+          "cosine_similarities": [
+            0.707634,
+            0.670741,
+            0.720333,
+            0.759408,
+            0.773546
+          ],
+          "min_similarity": 0.670741,
+          "pmf_probabilities": [
+            0.132729,
+            0.0,
+            0.178415,
+            0.318996,
+            0.36986
+          ],
+          "expected_rating": 3.7933,
+          "canonical": {
+            "pmf_probabilities": [
+              0.132729,
+              0.0,
+              0.178415,
+              0.318996,
+              0.36986
+            ],
+            "expected_rating": 3.7933
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.172018,
+              0.37329,
+              0.454692
+            ],
+            "expected_rating": 4.2827
+          },
+          "delta_improved_minus_canonical": 0.4894,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The solid build quality and reliable hardware suggest that this smartphone will last a long time, providing good protection and longevity.",
+          "cosine_similarities": [
+            0.624578,
+            0.615672,
+            0.599628,
+            0.666956,
+            0.67689
+          ],
+          "min_similarity": 0.599628,
+          "pmf_probabilities": [
+            0.134439,
+            0.086453,
+            0.0,
+            0.36279,
+            0.416317
+          ],
+          "expected_rating": 3.8401,
+          "canonical": {
+            "pmf_probabilities": [
+              0.134439,
+              0.086453,
+              0.0,
+              0.36279,
+              0.416317
+            ],
+            "expected_rating": 3.8401
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.107867,
+              0.0,
+              0.0,
+              0.405255,
+              0.486878
+            ],
+            "expected_rating": 4.1633
+          },
+          "delta_improved_minus_canonical": 0.3232,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone due to its strong build quality and reasonable price. The performance and display make it a reliable choice for daily use.",
+          "cosine_similarities": [
+            0.6295,
+            0.671679,
+            0.660423,
+            0.718911,
+            0.716509
+          ],
+          "min_similarity": 0.6295,
+          "pmf_probabilities": [
+            0.0,
+            0.169038,
+            0.123928,
+            0.358332,
+            0.348702
+          ],
+          "expected_rating": 3.8867,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.169038,
+              0.123928,
+              0.358332,
+              0.348702
+            ],
+            "expected_rating": 3.8867
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.157503,
+              0.0,
+              0.428898,
+              0.413599
+            ],
+            "expected_rating": 4.0986
+          },
+          "delta_improved_minus_canonical": 0.2119,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "primary_adoption_rating": 3.9539,
+      "primary_adoption_pmf": [
+        0.0,
+        0.149155,
+        0.070464,
+        0.457683,
+        0.322698
+      ],
+      "construct_scores": {
+        "PE": 3.2628,
+        "EE": 3.9978,
+        "HM": 4.1676,
+        "SI": 3.8778,
+        "PP": 3.6215,
+        "BI": 3.9539
+      },
+      "construct_responses": {
+        "PE": "This smartphone should handle my daily tasks well, thanks to its capable processor and battery life. The multitasking responsiveness will be smooth, allowing me to stay productive throughout the day.",
+        "EE": "The setup and navigation should be straightforward, making it easy to use right away. The interface will likely be user-friendly, requiring minimal effort to operate.",
+        "HM": "Using this smartphone for daily tasks and media viewing will be a pleasant experience, given its performance and battery endurance. The display and battery life will ensure a seamless user experience.",
+        "SI": "My peers and colleagues who use smartphones for work and daily tasks would likely appreciate its performance and reliability. It seems like a solid choice for someone looking for a reliable device.",
+        "PP": "The build quality appears to be decent, with a focus on durability and reliability. The battery life will likely hold up well over time, ensuring the device remains usable for years.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone. The ₹14,999 price is within my budget, and the hardware specifications comfortably meet my daily needs for speed and battery life.",
+        "OVERALL": "This smartphone seems like a good fit for my daily tasks and work requirements, offering a balanced mix of performance and battery life at a reasonable price. It looks like a solid choice for someone like me."
+      },
+      "response_text": "This smartphone seems like a good fit for my daily tasks and work requirements, offering a balanced mix of performance and battery life at a reasonable price. It looks like a solid choice for someone like me.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This smartphone should handle my daily tasks well, thanks to its capable processor and battery life. The multitasking responsiveness will be smooth, allowing me to stay productive throughout the day.",
+          "cosine_similarities": [
+            0.783365,
+            0.798037,
+            0.740965,
+            0.862975,
+            0.78591
+          ],
+          "min_similarity": 0.740965,
+          "pmf_probabilities": [
+            0.159145,
+            0.214211,
+            0.0,
+            0.457948,
+            0.168696
+          ],
+          "expected_rating": 3.2628,
+          "canonical": {
+            "pmf_probabilities": [
+              0.159145,
+              0.214211,
+              0.0,
+              0.457948,
+              0.168696
+            ],
+            "expected_rating": 3.2628
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.223152,
+              0.0,
+              0.614561,
+              0.162287
+            ],
+            "expected_rating": 3.716
+          },
+          "delta_improved_minus_canonical": 0.4531,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The setup and navigation should be straightforward, making it easy to use right away. The interface will likely be user-friendly, requiring minimal effort to operate.",
+          "cosine_similarities": [
+            0.542483,
+            0.523093,
+            0.611433,
+            0.650059,
+            0.668776
+          ],
+          "min_similarity": 0.523093,
+          "pmf_probabilities": [
+            0.050977,
+            0.0,
+            0.232242,
+            0.333788,
+            0.382994
+          ],
+          "expected_rating": 3.9978,
+          "canonical": {
+            "pmf_probabilities": [
+              0.050977,
+              0.0,
+              0.232242,
+              0.333788,
+              0.382994
+            ],
+            "expected_rating": 3.9978
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.218803,
+              0.35489,
+              0.426307
+            ],
+            "expected_rating": 4.2075
+          },
+          "delta_improved_minus_canonical": 0.2097,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using this smartphone for daily tasks and media viewing will be a pleasant experience, given its performance and battery endurance. The display and battery life will ensure a seamless user experience.",
+          "cosine_similarities": [
+            0.668884,
+            0.674795,
+            0.694069,
+            0.729325,
+            0.731775
+          ],
+          "min_similarity": 0.668884,
+          "pmf_probabilities": [
+            0.0,
+            0.038277,
+            0.163086,
+            0.391385,
+            0.407252
+          ],
+          "expected_rating": 4.1676,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.038277,
+              0.163086,
+              0.391385,
+              0.407252
+            ],
+            "expected_rating": 4.1676
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.131563,
+              0.422717,
+              0.44572
+            ],
+            "expected_rating": 4.3142
+          },
+          "delta_improved_minus_canonical": 0.1465,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers and colleagues who use smartphones for work and daily tasks would likely appreciate its performance and reliability. It seems like a solid choice for someone looking for a reliable device.",
+          "cosine_similarities": [
+            0.656495,
+            0.648497,
+            0.715708,
+            0.72641,
+            0.713103
+          ],
+          "min_similarity": 0.648497,
+          "pmf_probabilities": [
+            0.036736,
+            0.0,
+            0.308691,
+            0.357845,
+            0.296728
+          ],
+          "expected_rating": 3.8778,
+          "canonical": {
+            "pmf_probabilities": [
+              0.036736,
+              0.0,
+              0.308691,
+              0.357845,
+              0.296728
+            ],
+            "expected_rating": 3.8778
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.315814,
+              0.384585,
+              0.299601
+            ],
+            "expected_rating": 3.9838
+          },
+          "delta_improved_minus_canonical": 0.106,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality appears to be decent, with a focus on durability and reliability. The battery life will likely hold up well over time, ensuring the device remains usable for years.",
+          "cosine_similarities": [
+            0.48066,
+            0.496778,
+            0.461081,
+            0.54222,
+            0.518024
+          ],
+          "min_similarity": 0.461081,
+          "pmf_probabilities": [
+            0.101257,
+            0.184619,
+            0.0,
+            0.419629,
+            0.294494
+          ],
+          "expected_rating": 3.6215,
+          "canonical": {
+            "pmf_probabilities": [
+              0.101257,
+              0.184619,
+              0.0,
+              0.419629,
+              0.294494
+            ],
+            "expected_rating": 3.6215
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.170873,
+              0.0,
+              0.510653,
+              0.318474
+            ],
+            "expected_rating": 3.9767
+          },
+          "delta_improved_minus_canonical": 0.3552,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone. The ₹14,999 price is within my budget, and the hardware specifications comfortably meet my daily needs for speed and battery life.",
+          "cosine_similarities": [
+            0.660266,
+            0.689886,
+            0.674259,
+            0.751154,
+            0.724349
+          ],
+          "min_similarity": 0.660266,
+          "pmf_probabilities": [
+            0.0,
+            0.149155,
+            0.070464,
+            0.457683,
+            0.322698
+          ],
+          "expected_rating": 3.9539,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.149155,
+              0.070464,
+              0.457683,
+              0.322698
+            ],
+            "expected_rating": 3.9539
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.121106,
+              0.0,
+              0.540014,
+              0.33888
+            ],
+            "expected_rating": 4.0967
+          },
+          "delta_improved_minus_canonical": 0.1427,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "primary_adoption_rating": 3.7729,
+      "primary_adoption_pmf": [
+        0.0,
+        0.171984,
+        0.145755,
+        0.419676,
+        0.262586
+      ],
+      "construct_scores": {
+        "PE": 3.0932,
+        "EE": 4.0821,
+        "HM": 3.9933,
+        "SI": 3.7929,
+        "PP": 4.1977,
+        "BI": 3.7729
+      },
+      "construct_responses": {
+        "PE": "The smartphone offers a decent performance with its processor and battery capacity, making it suitable for everyday tasks like browsing, messaging, and basic multimedia use. It has enough power to handle most applications without lagging.",
+        "EE": "The interface is straightforward, and the controls are user-friendly, making it easy to navigate and use. Setting it up and operating it is simple and intuitive, which is a plus for someone who values ease of use.",
+        "HM": "Using this smartphone feels pleasant, especially for daily tasks. The display is clear, and the battery life is satisfactory, allowing for a full day of use without needing to charge frequently.",
+        "SI": "My friends who use smartphones would likely view it as a reliable choice for everyday use. It strikes a good balance between features and cost, making it a practical option for most people.",
+        "PP": "The build quality seems sturdy, with a durable design that can withstand daily wear and tear. The smartphone feels reliable and should last for a good number of years with proper care.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone; it offers a well-rounded set of features for its price, making it a sensible choice for everyday use. The build quality and battery life are strong points, and the overall performance is satisfactory.",
+        "OVERALL": "This smartphone provides a balanced set of features for everyday use, making it a reliable choice. It offers good performance, ease of use, and a pleasant user experience at a reasonable price."
+      },
+      "response_text": "This smartphone provides a balanced set of features for everyday use, making it a reliable choice. It offers good performance, ease of use, and a pleasant user experience at a reasonable price.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The smartphone offers a decent performance with its processor and battery capacity, making it suitable for everyday tasks like browsing, messaging, and basic multimedia use. It has enough power to handle most applications without lagging.",
+          "cosine_similarities": [
+            0.769107,
+            0.788862,
+            0.77376,
+            0.820972,
+            0.758569
+          ],
+          "min_similarity": 0.758569,
+          "pmf_probabilities": [
+            0.088984,
+            0.255803,
+            0.128272,
+            0.52694,
+            0.0
+          ],
+          "expected_rating": 3.0932,
+          "canonical": {
+            "pmf_probabilities": [
+              0.088984,
+              0.255803,
+              0.128272,
+              0.52694,
+              0.0
+            ],
+            "expected_rating": 3.0932
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.248792,
+              0.099115,
+              0.652093,
+              0.0
+            ],
+            "expected_rating": 3.4033
+          },
+          "delta_improved_minus_canonical": 0.3101,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The interface is straightforward, and the controls are user-friendly, making it easy to navigate and use. Setting it up and operating it is simple and intuitive, which is a plus for someone who values ease of use.",
+          "cosine_similarities": [
+            0.512309,
+            0.530078,
+            0.594644,
+            0.644881,
+            0.661541
+          ],
+          "min_similarity": 0.512309,
+          "pmf_probabilities": [
+            0.0,
+            0.046526,
+            0.215589,
+            0.34713,
+            0.390755
+          ],
+          "expected_rating": 4.0821,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.046526,
+              0.215589,
+              0.34713,
+              0.390755
+            ],
+            "expected_rating": 4.0821
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.196189,
+              0.370252,
+              0.433558
+            ],
+            "expected_rating": 4.2374
+          },
+          "delta_improved_minus_canonical": 0.1553,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using this smartphone feels pleasant, especially for daily tasks. The display is clear, and the battery life is satisfactory, allowing for a full day of use without needing to charge frequently.",
+          "cosine_similarities": [
+            0.670713,
+            0.705829,
+            0.695625,
+            0.766935,
+            0.764176
+          ],
+          "min_similarity": 0.670713,
+          "pmf_probabilities": [
+            0.0,
+            0.140624,
+            0.099762,
+            0.385332,
+            0.374282
+          ],
+          "expected_rating": 3.9933,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.140624,
+              0.099762,
+              0.385332,
+              0.374282
+            ],
+            "expected_rating": 3.9933
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.11733,
+              0.0,
+              0.449895,
+              0.432775
+            ],
+            "expected_rating": 4.1981
+          },
+          "delta_improved_minus_canonical": 0.2048,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends who use smartphones would likely view it as a reliable choice for everyday use. It strikes a good balance between features and cost, making it a practical option for most people.",
+          "cosine_similarities": [
+            0.661395,
+            0.657604,
+            0.734554,
+            0.72606,
+            0.705173
+          ],
+          "min_similarity": 0.657604,
+          "pmf_probabilities": [
+            0.019269,
+            0.0,
+            0.391071,
+            0.347906,
+            0.241755
+          ],
+          "expected_rating": 3.7929,
+          "canonical": {
+            "pmf_probabilities": [
+              0.019269,
+              0.0,
+              0.391071,
+              0.347906,
+              0.241755
+            ],
+            "expected_rating": 3.7929
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.419776,
+              0.359164,
+              0.22106
+            ],
+            "expected_rating": 3.8013
+          },
+          "delta_improved_minus_canonical": 0.0084,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality seems sturdy, with a durable design that can withstand daily wear and tear. The smartphone feels reliable and should last for a good number of years with proper care.",
+          "cosine_similarities": [
+            0.621139,
+            0.618609,
+            0.612301,
+            0.672181,
+            0.679558
+          ],
+          "min_similarity": 0.612301,
+          "pmf_probabilities": [
+            0.06212,
+            0.044333,
+            0.0,
+            0.42085,
+            0.472696
+          ],
+          "expected_rating": 4.1977,
+          "canonical": {
+            "pmf_probabilities": [
+              0.06212,
+              0.044333,
+              0.0,
+              0.42085,
+              0.472696
+            ],
+            "expected_rating": 4.1977
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.034739,
+              0.0,
+              0.0,
+              0.445325,
+              0.519936
+            ],
+            "expected_rating": 4.4157
+          },
+          "delta_improved_minus_canonical": 0.2181,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone; it offers a well-rounded set of features for its price, making it a sensible choice for everyday use. The build quality and battery life are strong points, and the overall performance is satisfactory.",
+          "cosine_similarities": [
+            0.625929,
+            0.667214,
+            0.660918,
+            0.726674,
+            0.688964
+          ],
+          "min_similarity": 0.625929,
+          "pmf_probabilities": [
+            0.0,
+            0.171984,
+            0.145755,
+            0.419676,
+            0.262586
+          ],
+          "expected_rating": 3.7729,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.171984,
+              0.145755,
+              0.419676,
+              0.262586
+            ],
+            "expected_rating": 3.7729
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.165471,
+              0.0,
+              0.543613,
+              0.290916
+            ],
+            "expected_rating": 3.96
+          },
+          "delta_improved_minus_canonical": 0.1871,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "primary_adoption_rating": 3.8633,
+      "primary_adoption_pmf": [
+        0.0,
+        0.163361,
+        0.111416,
+        0.423832,
+        0.301392
+      ],
+      "construct_scores": {
+        "PE": 3.2296,
+        "EE": 4.0312,
+        "HM": 3.5208,
+        "SI": 3.3005,
+        "PP": 4.0726,
+        "BI": 3.8633
+      },
+      "construct_responses": {
+        "PE": "This smartphone performs well for basic tasks with its reliable processor and decent battery life. It should handle daily use without any major issues.",
+        "EE": "The setup and navigation seem straightforward, making it easy to use right out of the box. The interface is user-friendly, though there’s room for a more intuitive design in the long run.",
+        "HM": "It provides a decent experience for watching videos and browsing the internet, but the display isn’t the best for media consumption. The battery lasts long enough for a day of light usage.",
+        "SI": "My peers might think it’s a good value for the money, given its features and price point. It’s not as fancy as some of the higher-end models, but it gets the job done.",
+        "PP": "The build quality feels solid, and the smartphone seems reliable for everyday use. It’s durable enough to withstand daily handling and occasional drops.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone because of its practical features and affordable price. The battery life and processor are sufficient for my daily needs, and it’s within my budget.",
+        "OVERALL": "This smartphone is a reliable choice for everyday use, offering decent performance and a good balance of features at an affordable price. It’s a solid option for someone looking for a no-frills phone."
+      },
+      "response_text": "This smartphone is a reliable choice for everyday use, offering decent performance and a good balance of features at an affordable price. It’s a solid option for someone looking for a no-frills phone.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This smartphone performs well for basic tasks with its reliable processor and decent battery life. It should handle daily use without any major issues.",
+          "cosine_similarities": [
+            0.707612,
+            0.731112,
+            0.692156,
+            0.786379,
+            0.697672
+          ],
+          "min_similarity": 0.692156,
+          "pmf_probabilities": [
+            0.100262,
+            0.252713,
+            0.0,
+            0.611246,
+            0.03578
+          ],
+          "expected_rating": 3.2296,
+          "canonical": {
+            "pmf_probabilities": [
+              0.100262,
+              0.252713,
+              0.0,
+              0.611246,
+              0.03578
+            ],
+            "expected_rating": 3.2296
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.064237,
+              0.220347,
+              0.0,
+              0.715416,
+              0.0
+            ],
+            "expected_rating": 3.3666
+          },
+          "delta_improved_minus_canonical": 0.137,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The setup and navigation seem straightforward, making it easy to use right out of the box. The interface is user-friendly, though there’s room for a more intuitive design in the long run.",
+          "cosine_similarities": [
+            0.501905,
+            0.521294,
+            0.583518,
+            0.615211,
+            0.633075
+          ],
+          "min_similarity": 0.501905,
+          "pmf_probabilities": [
+            0.0,
+            0.056124,
+            0.236232,
+            0.327968,
+            0.379675
+          ],
+          "expected_rating": 4.0312,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.056124,
+              0.236232,
+              0.327968,
+              0.379675
+            ],
+            "expected_rating": 4.0312
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.225662,
+              0.349501,
+              0.424837
+            ],
+            "expected_rating": 4.1992
+          },
+          "delta_improved_minus_canonical": 0.168,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "It provides a decent experience for watching videos and browsing the internet, but the display isn’t the best for media consumption. The battery lasts long enough for a day of light usage.",
+          "cosine_similarities": [
+            0.58291,
+            0.606999,
+            0.596384,
+            0.633993,
+            0.595873
+          ],
+          "min_similarity": 0.58291,
+          "pmf_probabilities": [
+            0.0,
+            0.237074,
+            0.132604,
+            0.502746,
+            0.127575
+          ],
+          "expected_rating": 3.5208,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.237074,
+              0.132604,
+              0.502746,
+              0.127575
+            ],
+            "expected_rating": 3.5208
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.238929,
+              0.110111,
+              0.65096,
+              0.0
+            ],
+            "expected_rating": 3.412
+          },
+          "delta_improved_minus_canonical": -0.1088,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers might think it’s a good value for the money, given its features and price point. It’s not as fancy as some of the higher-end models, but it gets the job done.",
+          "cosine_similarities": [
+            0.447387,
+            0.532099,
+            0.555026,
+            0.568211,
+            0.481507
+          ],
+          "min_similarity": 0.447387,
+          "pmf_probabilities": [
+            0.0,
+            0.24392,
+            0.309934,
+            0.3479,
+            0.098245
+          ],
+          "expected_rating": 3.3005,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.24392,
+              0.309934,
+              0.3479,
+              0.098245
+            ],
+            "expected_rating": 3.3005
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.251147,
+              0.345639,
+              0.403215,
+              0.0
+            ],
+            "expected_rating": 3.1521
+          },
+          "delta_improved_minus_canonical": -0.1484,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality feels solid, and the smartphone seems reliable for everyday use. It’s durable enough to withstand daily handling and occasional drops.",
+          "cosine_similarities": [
+            0.615453,
+            0.62782,
+            0.649478,
+            0.677104,
+            0.687268
+          ],
+          "min_similarity": 0.615453,
+          "pmf_probabilities": [
+            0.0,
+            0.068762,
+            0.189177,
+            0.342777,
+            0.399284
+          ],
+          "expected_rating": 4.0726,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.068762,
+              0.189177,
+              0.342777,
+              0.399284
+            ],
+            "expected_rating": 4.0726
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.169022,
+              0.373367,
+              0.457611
+            ],
+            "expected_rating": 4.2886
+          },
+          "delta_improved_minus_canonical": 0.216,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone because of its practical features and affordable price. The battery life and processor are sufficient for my daily needs, and it’s within my budget.",
+          "cosine_similarities": [
+            0.661368,
+            0.702972,
+            0.689743,
+            0.769307,
+            0.738124
+          ],
+          "min_similarity": 0.661368,
+          "pmf_probabilities": [
+            0.0,
+            0.163361,
+            0.111416,
+            0.423832,
+            0.301392
+          ],
+          "expected_rating": 3.8633,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.163361,
+              0.111416,
+              0.423832,
+              0.301392
+            ],
+            "expected_rating": 3.8633
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.14646,
+              0.0,
+              0.522131,
+              0.331408
+            ],
+            "expected_rating": 4.0385
+          },
+          "delta_improved_minus_canonical": 0.1752,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.73747,
+        0.758087,
+        0.739183,
+        0.81231,
+        0.75033
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.187378,
+        0.015565,
+        0.680178,
+        0.11688
+      ],
+      "expected_rating": 3.7266,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.724052,
+        0.691799,
+        0.747839,
+        0.774515,
+        0.807386
+      ],
+      "pmf_probabilities": [
+        0.112539,
+        0.0,
+        0.195535,
+        0.288616,
+        0.40331
+      ],
+      "expected_rating": 3.8702,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.680222,
+        0.723802,
+        0.723749,
+        0.771048,
+        0.795561
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.1486,
+        0.148419,
+        0.3097,
+        0.393282
+      ],
+      "expected_rating": 3.9477,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.707634,
+        0.670741,
+        0.720333,
+        0.759408,
+        0.773546
+      ],
+      "pmf_probabilities": [
+        0.132729,
+        0.0,
+        0.178415,
+        0.318996,
+        0.36986
+      ],
+      "expected_rating": 3.7933,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.624578,
+        0.615672,
+        0.599628,
+        0.666956,
+        0.67689
+      ],
+      "pmf_probabilities": [
+        0.134439,
+        0.086453,
+        0.0,
+        0.36279,
+        0.416317
+      ],
+      "expected_rating": 3.8401,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.6295,
+        0.671679,
+        0.660423,
+        0.718911,
+        0.716509
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.169038,
+        0.123928,
+        0.358332,
+        0.348702
+      ],
+      "expected_rating": 3.8867,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.783365,
+        0.798037,
+        0.740965,
+        0.862975,
+        0.78591
+      ],
+      "pmf_probabilities": [
+        0.159145,
+        0.214211,
+        0.0,
+        0.457948,
+        0.168696
+      ],
+      "expected_rating": 3.2628,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.542483,
+        0.523093,
+        0.611433,
+        0.650059,
+        0.668776
+      ],
+      "pmf_probabilities": [
+        0.050977,
+        0.0,
+        0.232242,
+        0.333788,
+        0.382994
+      ],
+      "expected_rating": 3.9978,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.668884,
+        0.674795,
+        0.694069,
+        0.729325,
+        0.731775
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.038277,
+        0.163086,
+        0.391385,
+        0.407252
+      ],
+      "expected_rating": 4.1676,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.656495,
+        0.648497,
+        0.715708,
+        0.72641,
+        0.713103
+      ],
+      "pmf_probabilities": [
+        0.036736,
+        0.0,
+        0.308691,
+        0.357845,
+        0.296728
+      ],
+      "expected_rating": 3.8778,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.48066,
+        0.496778,
+        0.461081,
+        0.54222,
+        0.518024
+      ],
+      "pmf_probabilities": [
+        0.101257,
+        0.184619,
+        0.0,
+        0.419629,
+        0.294494
+      ],
+      "expected_rating": 3.6215,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.660266,
+        0.689886,
+        0.674259,
+        0.751154,
+        0.724349
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.149155,
+        0.070464,
+        0.457683,
+        0.322698
+      ],
+      "expected_rating": 3.9539,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.769107,
+        0.788862,
+        0.77376,
+        0.820972,
+        0.758569
+      ],
+      "pmf_probabilities": [
+        0.088984,
+        0.255803,
+        0.128272,
+        0.52694,
+        0.0
+      ],
+      "expected_rating": 3.0932,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.512309,
+        0.530078,
+        0.594644,
+        0.644881,
+        0.661541
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.046526,
+        0.215589,
+        0.34713,
+        0.390755
+      ],
+      "expected_rating": 4.0821,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.670713,
+        0.705829,
+        0.695625,
+        0.766935,
+        0.764176
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.140624,
+        0.099762,
+        0.385332,
+        0.374282
+      ],
+      "expected_rating": 3.9933,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.661395,
+        0.657604,
+        0.734554,
+        0.72606,
+        0.705173
+      ],
+      "pmf_probabilities": [
+        0.019269,
+        0.0,
+        0.391071,
+        0.347906,
+        0.241755
+      ],
+      "expected_rating": 3.7929,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.621139,
+        0.618609,
+        0.612301,
+        0.672181,
+        0.679558
+      ],
+      "pmf_probabilities": [
+        0.06212,
+        0.044333,
+        0.0,
+        0.42085,
+        0.472696
+      ],
+      "expected_rating": 4.1977,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.625929,
+        0.667214,
+        0.660918,
+        0.726674,
+        0.688964
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.171984,
+        0.145755,
+        0.419676,
+        0.262586
+      ],
+      "expected_rating": 3.7729,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.707612,
+        0.731112,
+        0.692156,
+        0.786379,
+        0.697672
+      ],
+      "pmf_probabilities": [
+        0.100262,
+        0.252713,
+        0.0,
+        0.611246,
+        0.03578
+      ],
+      "expected_rating": 3.2296,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.501905,
+        0.521294,
+        0.583518,
+        0.615211,
+        0.633075
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.056124,
+        0.236232,
+        0.327968,
+        0.379675
+      ],
+      "expected_rating": 4.0312,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.58291,
+        0.606999,
+        0.596384,
+        0.633993,
+        0.595873
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.237074,
+        0.132604,
+        0.502746,
+        0.127575
+      ],
+      "expected_rating": 3.5208,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.447387,
+        0.532099,
+        0.555026,
+        0.568211,
+        0.481507
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.24392,
+        0.309934,
+        0.3479,
+        0.098245
+      ],
+      "expected_rating": 3.3005,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.615453,
+        0.62782,
+        0.649478,
+        0.677104,
+        0.687268
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.068762,
+        0.189177,
+        0.342777,
+        0.399284
+      ],
+      "expected_rating": 4.0726,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.661368,
+        0.702972,
+        0.689743,
+        0.769307,
+        0.738124
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.163361,
+        0.111416,
+        0.423832,
+        0.301392
+      ],
+      "expected_rating": 3.8633,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.73747,
+      "cos_sim_2": 0.758087,
+      "cos_sim_3": 0.739183,
+      "cos_sim_4": 0.81231,
+      "cos_sim_5": 0.75033,
+      "min_similarity": 0.73747,
+      "p1": 0.0,
+      "p2": 0.187378,
+      "p3": 0.015565,
+      "p4": 0.680178,
+      "p5": 0.11688,
+      "set_expected_rating": 3.7266,
+      "canonical_expected_rating": 3.7266,
+      "improved_expected_rating": 3.7937,
+      "delta": 0.0672,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.724052,
+      "cos_sim_2": 0.691799,
+      "cos_sim_3": 0.747839,
+      "cos_sim_4": 0.774515,
+      "cos_sim_5": 0.807386,
+      "min_similarity": 0.691799,
+      "p1": 0.112539,
+      "p2": 0.0,
+      "p3": 0.195535,
+      "p4": 0.288616,
+      "p5": 0.40331,
+      "set_expected_rating": 3.8702,
+      "canonical_expected_rating": 3.8702,
+      "improved_expected_rating": 4.3064,
+      "delta": 0.4362,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.680222,
+      "cos_sim_2": 0.723802,
+      "cos_sim_3": 0.723749,
+      "cos_sim_4": 0.771048,
+      "cos_sim_5": 0.795561,
+      "min_similarity": 0.680222,
+      "p1": 0.0,
+      "p2": 0.1486,
+      "p3": 0.148419,
+      "p4": 0.3097,
+      "p5": 0.393282,
+      "set_expected_rating": 3.9477,
+      "canonical_expected_rating": 3.9477,
+      "improved_expected_rating": 4.2268,
+      "delta": 0.2791,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.707634,
+      "cos_sim_2": 0.670741,
+      "cos_sim_3": 0.720333,
+      "cos_sim_4": 0.759408,
+      "cos_sim_5": 0.773546,
+      "min_similarity": 0.670741,
+      "p1": 0.132729,
+      "p2": 0.0,
+      "p3": 0.178415,
+      "p4": 0.318996,
+      "p5": 0.36986,
+      "set_expected_rating": 3.7933,
+      "canonical_expected_rating": 3.7933,
+      "improved_expected_rating": 4.2827,
+      "delta": 0.4894,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.624578,
+      "cos_sim_2": 0.615672,
+      "cos_sim_3": 0.599628,
+      "cos_sim_4": 0.666956,
+      "cos_sim_5": 0.67689,
+      "min_similarity": 0.599628,
+      "p1": 0.134439,
+      "p2": 0.086453,
+      "p3": 0.0,
+      "p4": 0.36279,
+      "p5": 0.416317,
+      "set_expected_rating": 3.8401,
+      "canonical_expected_rating": 3.8401,
+      "improved_expected_rating": 4.1633,
+      "delta": 0.3232,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.6295,
+      "cos_sim_2": 0.671679,
+      "cos_sim_3": 0.660423,
+      "cos_sim_4": 0.718911,
+      "cos_sim_5": 0.716509,
+      "min_similarity": 0.6295,
+      "p1": 0.0,
+      "p2": 0.169038,
+      "p3": 0.123928,
+      "p4": 0.358332,
+      "p5": 0.348702,
+      "set_expected_rating": 3.8867,
+      "canonical_expected_rating": 3.8867,
+      "improved_expected_rating": 4.0986,
+      "delta": 0.2119,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.783365,
+      "cos_sim_2": 0.798037,
+      "cos_sim_3": 0.740965,
+      "cos_sim_4": 0.862975,
+      "cos_sim_5": 0.78591,
+      "min_similarity": 0.740965,
+      "p1": 0.159145,
+      "p2": 0.214211,
+      "p3": 0.0,
+      "p4": 0.457948,
+      "p5": 0.168696,
+      "set_expected_rating": 3.2628,
+      "canonical_expected_rating": 3.2628,
+      "improved_expected_rating": 3.716,
+      "delta": 0.4531,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.542483,
+      "cos_sim_2": 0.523093,
+      "cos_sim_3": 0.611433,
+      "cos_sim_4": 0.650059,
+      "cos_sim_5": 0.668776,
+      "min_similarity": 0.523093,
+      "p1": 0.050977,
+      "p2": 0.0,
+      "p3": 0.232242,
+      "p4": 0.333788,
+      "p5": 0.382994,
+      "set_expected_rating": 3.9978,
+      "canonical_expected_rating": 3.9978,
+      "improved_expected_rating": 4.2075,
+      "delta": 0.2097,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.668884,
+      "cos_sim_2": 0.674795,
+      "cos_sim_3": 0.694069,
+      "cos_sim_4": 0.729325,
+      "cos_sim_5": 0.731775,
+      "min_similarity": 0.668884,
+      "p1": 0.0,
+      "p2": 0.038277,
+      "p3": 0.163086,
+      "p4": 0.391385,
+      "p5": 0.407252,
+      "set_expected_rating": 4.1676,
+      "canonical_expected_rating": 4.1676,
+      "improved_expected_rating": 4.3142,
+      "delta": 0.1465,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.656495,
+      "cos_sim_2": 0.648497,
+      "cos_sim_3": 0.715708,
+      "cos_sim_4": 0.72641,
+      "cos_sim_5": 0.713103,
+      "min_similarity": 0.648497,
+      "p1": 0.036736,
+      "p2": 0.0,
+      "p3": 0.308691,
+      "p4": 0.357845,
+      "p5": 0.296728,
+      "set_expected_rating": 3.8778,
+      "canonical_expected_rating": 3.8778,
+      "improved_expected_rating": 3.9838,
+      "delta": 0.106,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.48066,
+      "cos_sim_2": 0.496778,
+      "cos_sim_3": 0.461081,
+      "cos_sim_4": 0.54222,
+      "cos_sim_5": 0.518024,
+      "min_similarity": 0.461081,
+      "p1": 0.101257,
+      "p2": 0.184619,
+      "p3": 0.0,
+      "p4": 0.419629,
+      "p5": 0.294494,
+      "set_expected_rating": 3.6215,
+      "canonical_expected_rating": 3.6215,
+      "improved_expected_rating": 3.9767,
+      "delta": 0.3552,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.660266,
+      "cos_sim_2": 0.689886,
+      "cos_sim_3": 0.674259,
+      "cos_sim_4": 0.751154,
+      "cos_sim_5": 0.724349,
+      "min_similarity": 0.660266,
+      "p1": 0.0,
+      "p2": 0.149155,
+      "p3": 0.070464,
+      "p4": 0.457683,
+      "p5": 0.322698,
+      "set_expected_rating": 3.9539,
+      "canonical_expected_rating": 3.9539,
+      "improved_expected_rating": 4.0967,
+      "delta": 0.1427,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.769107,
+      "cos_sim_2": 0.788862,
+      "cos_sim_3": 0.77376,
+      "cos_sim_4": 0.820972,
+      "cos_sim_5": 0.758569,
+      "min_similarity": 0.758569,
+      "p1": 0.088984,
+      "p2": 0.255803,
+      "p3": 0.128272,
+      "p4": 0.52694,
+      "p5": 0.0,
+      "set_expected_rating": 3.0932,
+      "canonical_expected_rating": 3.0932,
+      "improved_expected_rating": 3.4033,
+      "delta": 0.3101,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.512309,
+      "cos_sim_2": 0.530078,
+      "cos_sim_3": 0.594644,
+      "cos_sim_4": 0.644881,
+      "cos_sim_5": 0.661541,
+      "min_similarity": 0.512309,
+      "p1": 0.0,
+      "p2": 0.046526,
+      "p3": 0.215589,
+      "p4": 0.34713,
+      "p5": 0.390755,
+      "set_expected_rating": 4.0821,
+      "canonical_expected_rating": 4.0821,
+      "improved_expected_rating": 4.2374,
+      "delta": 0.1553,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.670713,
+      "cos_sim_2": 0.705829,
+      "cos_sim_3": 0.695625,
+      "cos_sim_4": 0.766935,
+      "cos_sim_5": 0.764176,
+      "min_similarity": 0.670713,
+      "p1": 0.0,
+      "p2": 0.140624,
+      "p3": 0.099762,
+      "p4": 0.385332,
+      "p5": 0.374282,
+      "set_expected_rating": 3.9933,
+      "canonical_expected_rating": 3.9933,
+      "improved_expected_rating": 4.1981,
+      "delta": 0.2048,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.661395,
+      "cos_sim_2": 0.657604,
+      "cos_sim_3": 0.734554,
+      "cos_sim_4": 0.72606,
+      "cos_sim_5": 0.705173,
+      "min_similarity": 0.657604,
+      "p1": 0.019269,
+      "p2": 0.0,
+      "p3": 0.391071,
+      "p4": 0.347906,
+      "p5": 0.241755,
+      "set_expected_rating": 3.7929,
+      "canonical_expected_rating": 3.7929,
+      "improved_expected_rating": 3.8013,
+      "delta": 0.0084,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.621139,
+      "cos_sim_2": 0.618609,
+      "cos_sim_3": 0.612301,
+      "cos_sim_4": 0.672181,
+      "cos_sim_5": 0.679558,
+      "min_similarity": 0.612301,
+      "p1": 0.06212,
+      "p2": 0.044333,
+      "p3": 0.0,
+      "p4": 0.42085,
+      "p5": 0.472696,
+      "set_expected_rating": 4.1977,
+      "canonical_expected_rating": 4.1977,
+      "improved_expected_rating": 4.4157,
+      "delta": 0.2181,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.625929,
+      "cos_sim_2": 0.667214,
+      "cos_sim_3": 0.660918,
+      "cos_sim_4": 0.726674,
+      "cos_sim_5": 0.688964,
+      "min_similarity": 0.625929,
+      "p1": 0.0,
+      "p2": 0.171984,
+      "p3": 0.145755,
+      "p4": 0.419676,
+      "p5": 0.262586,
+      "set_expected_rating": 3.7729,
+      "canonical_expected_rating": 3.7729,
+      "improved_expected_rating": 3.96,
+      "delta": 0.1871,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.707612,
+      "cos_sim_2": 0.731112,
+      "cos_sim_3": 0.692156,
+      "cos_sim_4": 0.786379,
+      "cos_sim_5": 0.697672,
+      "min_similarity": 0.692156,
+      "p1": 0.100262,
+      "p2": 0.252713,
+      "p3": 0.0,
+      "p4": 0.611246,
+      "p5": 0.03578,
+      "set_expected_rating": 3.2296,
+      "canonical_expected_rating": 3.2296,
+      "improved_expected_rating": 3.3666,
+      "delta": 0.137,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.501905,
+      "cos_sim_2": 0.521294,
+      "cos_sim_3": 0.583518,
+      "cos_sim_4": 0.615211,
+      "cos_sim_5": 0.633075,
+      "min_similarity": 0.501905,
+      "p1": 0.0,
+      "p2": 0.056124,
+      "p3": 0.236232,
+      "p4": 0.327968,
+      "p5": 0.379675,
+      "set_expected_rating": 4.0312,
+      "canonical_expected_rating": 4.0312,
+      "improved_expected_rating": 4.1992,
+      "delta": 0.168,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.58291,
+      "cos_sim_2": 0.606999,
+      "cos_sim_3": 0.596384,
+      "cos_sim_4": 0.633993,
+      "cos_sim_5": 0.595873,
+      "min_similarity": 0.58291,
+      "p1": 0.0,
+      "p2": 0.237074,
+      "p3": 0.132604,
+      "p4": 0.502746,
+      "p5": 0.127575,
+      "set_expected_rating": 3.5208,
+      "canonical_expected_rating": 3.5208,
+      "improved_expected_rating": 3.412,
+      "delta": -0.1088,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.447387,
+      "cos_sim_2": 0.532099,
+      "cos_sim_3": 0.555026,
+      "cos_sim_4": 0.568211,
+      "cos_sim_5": 0.481507,
+      "min_similarity": 0.447387,
+      "p1": 0.0,
+      "p2": 0.24392,
+      "p3": 0.309934,
+      "p4": 0.3479,
+      "p5": 0.098245,
+      "set_expected_rating": 3.3005,
+      "canonical_expected_rating": 3.3005,
+      "improved_expected_rating": 3.1521,
+      "delta": -0.1484,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.615453,
+      "cos_sim_2": 0.62782,
+      "cos_sim_3": 0.649478,
+      "cos_sim_4": 0.677104,
+      "cos_sim_5": 0.687268,
+      "min_similarity": 0.615453,
+      "p1": 0.0,
+      "p2": 0.068762,
+      "p3": 0.189177,
+      "p4": 0.342777,
+      "p5": 0.399284,
+      "set_expected_rating": 4.0726,
+      "canonical_expected_rating": 4.0726,
+      "improved_expected_rating": 4.2886,
+      "delta": 0.216,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Vision Smart Glasses",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.661368,
+      "cos_sim_2": 0.702972,
+      "cos_sim_3": 0.689743,
+      "cos_sim_4": 0.769307,
+      "cos_sim_5": 0.738124,
+      "min_similarity": 0.661368,
+      "p1": 0.0,
+      "p2": 0.163361,
+      "p3": 0.111416,
+      "p4": 0.423832,
+      "p5": 0.301392,
+      "set_expected_rating": 3.8633,
+      "canonical_expected_rating": 3.8633,
+      "improved_expected_rating": 4.0385,
+      "delta": 0.1752,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

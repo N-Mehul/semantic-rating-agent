@@ -1,0 +1,149 @@
+HUMAN CV mean
+                                       exact  within1    MAE   RMSE  spearman    qwk    lwk  macro_P  macro_R  macro_F1     R1     R2     R3     R4     R5  pred_mean  pred_sd  W1_vs_human  JSD_vs_human
+method                                                                                                                                                                                                   
+M0 canonical (ORIGINAL)                0.335    0.876  0.837  1.127     0.298  0.248  0.136    0.166    0.251     0.171  0.000  0.250  0.167  0.839  0.000      3.717    0.590        0.613         0.263
+M2 mean/SD alignment                   0.335    0.824  0.902  1.219     0.335  0.341  0.199    0.297    0.256     0.236  0.225  0.050  0.178  0.696  0.130      3.531    0.971        0.384         0.110
+M6 probability reweighting             0.318    0.863  0.875  1.169     0.338  0.307  0.160    0.181    0.226     0.173  0.115  0.075  0.161  0.777  0.000      3.573    0.804        0.511         0.212
+M7 rank-quantile (transductive)        0.306    0.672  1.107  1.458     0.256  0.285  0.172    0.250    0.265     0.240  0.243  0.025  0.310  0.180  0.565      3.688    1.299        0.197         0.062
+M8 source-wise z-score (transductive)  0.284    0.712  1.080  1.405     0.232  0.275  0.146    0.253    0.244     0.233  0.255  0.050  0.292  0.249  0.376      3.574    1.201        0.206         0.046
+M9 hybrid M6->M2                       0.344    0.828  0.889  1.211     0.356  0.341  0.195    0.300    0.268     0.231  0.258  0.075  0.164  0.765  0.079      3.548    0.953        0.472         0.167
+M10 hybrid M2->M7 (redundant check)    0.306    0.672  1.107  1.458     0.256  0.285  0.172    0.250    0.265     0.240  0.243  0.025  0.310  0.180  0.565      3.688    1.299        0.197         0.062
+M11 hybrid M6->M7 (transductive)       0.330    0.679  1.069  1.427     0.286  0.313  0.200    0.273    0.284     0.260  0.285  0.000  0.310  0.213  0.611      3.688    1.296        0.196         0.050
+M12a ensemble average                  0.316    0.769  0.988  1.322     0.303  0.324  0.192    0.261    0.252     0.241  0.225  0.000  0.196  0.461  0.376      3.739    1.122        0.304         0.053
+M12b ensemble majority vote            0.313    0.781  0.961  1.271     0.259  0.301  0.158    0.278    0.248     0.237  0.235  0.075  0.280  0.518  0.130      3.383    1.006        0.218         0.057
+M12c ensemble weighted (inner-CV)      0.340    0.824  0.899  1.226     0.335  0.327  0.194    0.294    0.258     0.235  0.200  0.050  0.169  0.700  0.170      3.614    0.960        0.396         0.112
+
+HUMAN CV sd
+                                       exact    qwk    MAE  macro_F1     R1     R5
+method                                                                            
+M0 canonical (ORIGINAL)                0.064  0.104  0.085     0.066  0.000  0.000
+M2 mean/SD alignment                   0.045  0.109  0.099     0.046  0.143  0.080
+M6 probability reweighting             0.046  0.125  0.084     0.053  0.144  0.000
+M7 rank-quantile (transductive)        0.055  0.115  0.125     0.056  0.166  0.148
+M8 source-wise z-score (transductive)  0.057  0.114  0.126     0.055  0.141  0.166
+M9 hybrid M6->M2                       0.048  0.129  0.107     0.065  0.141  0.096
+M10 hybrid M2->M7 (redundant check)    0.055  0.115  0.125     0.056  0.166  0.148
+M11 hybrid M6->M7 (transductive)       0.055  0.105  0.125     0.049  0.161  0.133
+M12a ensemble average                  0.040  0.123  0.124     0.045  0.143  0.166
+M12b ensemble majority vote            0.065  0.114  0.102     0.058  0.148  0.080
+M12c ensemble weighted (inner-CV)      0.052  0.118  0.082     0.056  0.136  0.175
+
+STABILITY
+                                       qwk_better_folds  exact_better_folds  exact_worse_folds  MAE_better_folds  qwk_diff_mean  exact_diff_mean  MAE_diff_mean  macro_F1_diff_mean  spearman_diff_mean
+M0 canonical (ORIGINAL)                             0.0                 0.0                0.0               0.0          0.000            0.000          0.000               0.000               0.000
+M2 mean/SD alignment                               17.0                10.0                7.0               4.0          0.093           -0.000          0.065               0.064               0.036
+M6 probability reweighting                         16.0                 5.0               11.0               5.0          0.059           -0.017          0.038               0.001               0.039
+M7 rank-quantile (transductive)                    13.0                 4.0               14.0               0.0          0.037           -0.029          0.270               0.069              -0.042
+M8 source-wise z-score (transductive)              13.0                 4.0               15.0               0.0          0.027           -0.051          0.243               0.061              -0.067
+M9 hybrid M6->M2                                   18.0                 8.0                8.0               4.0          0.093            0.010          0.052               0.060               0.058
+M10 hybrid M2->M7 (redundant check)                13.0                 4.0               14.0               0.0          0.037           -0.029          0.270               0.069              -0.042
+M11 hybrid M6->M7 (transductive)                   17.0                 9.0                9.0               0.0          0.065           -0.005          0.232               0.089              -0.012
+M12a ensemble average                              13.0                 5.0                9.0               0.0          0.076           -0.019          0.152               0.070               0.005
+M12b ensemble majority vote                        14.0                 5.0               12.0               0.0          0.052           -0.022          0.125               0.066              -0.039
+M12c ensemble weighted (inner-CV)                  16.0                11.0                7.0               3.0          0.079            0.005          0.063               0.064               0.037
+
+HUMAN BOOT
+                                                 exact              qwk              MAE         macro_F1 mcnemar_p
+M2 mean/SD alignment                     [-0.06, 0.04]   [0.023, 0.156]    [-0.0, 0.136]  [-0.012, 0.108]       1.0
+M6 probability reweighting              [-0.06, 0.008]   [0.002, 0.107]     [0.0, 0.096]  [-0.073, 0.033]    0.2632
+M7 rank-quantile (transductive)        [-0.096, 0.064]  [-0.047, 0.124]   [0.163, 0.387]   [0.001, 0.136]    0.7117
+M8 source-wise z-score (transductive)  [-0.116, 0.044]  [-0.048, 0.121]   [0.131, 0.355]   [0.002, 0.162]    0.3776
+M9 hybrid M6->M2                       [-0.032, 0.052]   [0.032, 0.141]  [-0.008, 0.124]  [-0.008, 0.174]    0.7201
+M10 hybrid M2->M7 (redundant check)    [-0.096, 0.064]  [-0.047, 0.124]   [0.163, 0.387]   [0.001, 0.136]    0.7117
+M11 hybrid M6->M7 (transductive)       [-0.072, 0.096]  [-0.004, 0.166]   [0.095, 0.323]   [0.032, 0.167]    0.9267
+M12a ensemble average                   [-0.076, 0.06]   [0.007, 0.147]   [0.052, 0.223]   [0.012, 0.135]    0.8176
+M12b ensemble majority vote            [-0.092, 0.036]  [-0.027, 0.132]   [0.036, 0.219]    [-0.019, 0.1]    0.4426
+M12c ensemble weighted (inner-CV)       [-0.04, 0.048]   [0.037, 0.157]  [-0.024, 0.104]  [-0.011, 0.109]    0.8746
+
+human persona exact
+                                       P1 premium  P2 mid heavy  P3 mid moderate  P4 entry/undisclosed
+M0 canonical (ORIGINAL)                     0.302         0.294            0.341                 0.483
+M2 mean/SD alignment                        0.349         0.255            0.306                 0.483
+M6 probability reweighting                  0.279         0.235            0.341                 0.448
+M7 rank-quantile (transductive)             0.384         0.216            0.294                 0.345
+M8 source-wise z-score (transductive)       0.326         0.314            0.247                 0.310
+M9 hybrid M6->M2                            0.314         0.275            0.365                 0.517
+M10 hybrid M2->M7 (redundant check)         0.384         0.216            0.294                 0.345
+M11 hybrid M6->M7 (transductive)            0.407         0.314            0.294                 0.345
+M12a ensemble average                       0.395         0.235            0.294                 0.345
+M12b ensemble majority vote                 0.314         0.294            0.259                 0.448
+M12c ensemble weighted (inner-CV)           0.349         0.255            0.341                 0.483
+
+SYNTHETIC
+                                       exact within1    MAE      RMSE  spearman       qwk       lwk   macro_P   macro_R  macro_F1        R1        R2        R3        R4        R5 pred_mean   pred_sd             pred_dist W1_vs_human JSD_vs_human
+M0 canonical (ORIGINAL)                0.435    0.93  0.635  0.880341  0.719793  0.620823  0.436107  0.242924  0.418535  0.298303       0.0      0.75  0.886792  0.455882       0.0     3.195  0.677696   [0, 30, 101, 69, 0]    0.522131     0.193382
+M2 mean/SD alignment                    0.21     0.7   1.14  1.392839  0.736327  0.466652  0.280348  0.239179  0.277651  0.234859  0.913043  0.166667  0.132075  0.176471       0.0      2.37  0.942092   [33, 92, 43, 32, 0]    1.163865     0.299967
+M6 probability reweighting             0.425    0.94  0.635  0.868907  0.762188  0.640938  0.446454  0.235873  0.414317  0.287918       0.0      0.75  0.924528  0.397059       0.0     3.135  0.692222   [1, 33, 104, 62, 0]    0.572131     0.188853
+M7 rank-quantile (transductive)        0.605   0.965  0.435  0.724569  0.785007  0.813902  0.660223  0.600558  0.556719  0.571932  0.652174      0.25  0.716981  0.573529  0.590909     3.555  1.150475   [19, 7, 61, 70, 43]    0.033167     0.000921
+M8 source-wise z-score (transductive)   0.52   0.905  0.575  0.874643  0.726704  0.767343  0.596534  0.603633  0.547626  0.480602  0.826087      0.25  0.867925  0.044118      0.75     3.405  1.337881    [27, 5, 96, 4, 68]    0.378586       0.1397
+M9 hybrid M6->M2                        0.43   0.925  0.645  0.891628  0.768613  0.717915  0.504931  0.316335  0.419142  0.355022  0.913043  0.083333  0.716981  0.382353       0.0     2.915  0.996363   [31, 15, 94, 60, 0]    0.618865      0.12715
+M10 hybrid M2->M7 (redundant check)    0.605   0.965  0.435  0.724569  0.785007  0.813902  0.660223  0.600558  0.556719  0.571932  0.652174      0.25  0.716981  0.573529  0.590909     3.555  1.150475   [19, 7, 61, 70, 43]    0.033167     0.000921
+M11 hybrid M6->M7 (transductive)       0.625   0.945   0.43  0.734847   0.76913  0.808551  0.664913  0.615147  0.571692   0.58579  0.652174      0.25  0.716981  0.602941  0.636364      3.53  1.151403   [19, 7, 66, 65, 43]    0.008167      0.00004
+M12a ensemble average                  0.535   0.935   0.53  0.812404  0.735828  0.762179  0.591302  0.568346   0.55292  0.539827  0.652174       0.5  0.849057  0.308824  0.454545      3.26  1.108396  [19, 14, 95, 40, 32]    0.273865     0.026305
+M12b ensemble majority vote            0.505    0.93  0.565  0.839643  0.754256  0.740933  0.556793  0.535266  0.498816  0.466196  0.826087      0.25  0.943396  0.338235  0.136364     3.065  1.022744  [27, 6, 105, 51, 11]    0.468865      0.05799
+M12c ensemble weighted (inner-CV)      0.425    0.94  0.635  0.868907  0.735139   0.64104  0.444712  0.236658   0.41182   0.29009       0.0      0.75  0.867925  0.441176       0.0     3.165  0.707302    [1, 33, 98, 68, 0]    0.542131     0.184929
+
+SYN BOOT
+                                                  exact               qwk               MAE         macro_F1 mcnemar_p
+M2 mean/SD alignment                   [-0.315, -0.125]  [-0.195, -0.107]     [0.395, 0.61]  [-0.139, 0.015]       0.0
+M6 probability reweighting                [-0.04, 0.02]    [-0.005, 0.05]     [-0.03, 0.03]  [-0.037, 0.018]    0.7539
+M7 rank-quantile (transductive)           [0.077, 0.26]     [0.13, 0.247]     [-0.29, -0.1]   [0.172, 0.358]    0.0007
+M8 source-wise z-score (transductive)     [-0.02, 0.17]     [0.11, 0.177]   [-0.153, 0.045]    [0.066, 0.29]    0.0966
+M9 hybrid M6->M2                         [-0.07, 0.065]    [0.061, 0.131]     [-0.07, 0.08]  [-0.022, 0.131]       1.0
+M10 hybrid M2->M7 (redundant check)       [0.077, 0.26]     [0.13, 0.247]     [-0.29, -0.1]   [0.172, 0.358]    0.0007
+M11 hybrid M6->M7 (transductive)          [0.095, 0.28]    [0.134, 0.239]  [-0.303, -0.097]   [0.192, 0.379]    0.0002
+M12a ensemble average                      [0.03, 0.17]     [0.109, 0.17]   [-0.18, -0.035]   [0.152, 0.326]    0.0105
+M12b ensemble majority vote                 [0.0, 0.14]     [0.084, 0.15]    [-0.14, 0.003]   [0.072, 0.268]    0.0488
+M12c ensemble weighted (inner-CV)         [-0.03, 0.01]    [-0.003, 0.05]   [-0.025, 0.023]  [-0.031, 0.017]     0.625
+
+syn persona means
+                                         P1    P2    P3    P4
+M0 canonical (ORIGINAL)                3.54  3.04  2.90  3.30
+M2 mean/SD alignment                   2.90  2.14  1.94  2.50
+M6 probability reweighting             3.52  2.96  2.84  3.22
+M7 rank-quantile (transductive)        3.98  3.38  3.10  3.76
+M8 source-wise z-score (transductive)  4.10  3.06  2.80  3.66
+M9 hybrid M6->M2                       3.40  2.70  2.48  3.08
+M10 hybrid M2->M7 (redundant check)    3.98  3.38  3.10  3.76
+M11 hybrid M6->M7 (transductive)       3.98  3.34  3.10  3.70
+M12a ensemble average                  3.82  3.08  2.76  3.38
+M12b ensemble majority vote            3.52  2.82  2.66  3.26
+M12c ensemble weighted (inner-CV)      3.54  3.00  2.86  3.26
+{
+ "M10_identical_to_M7_on_all_human_oof": true,
+ "M10_identical_to_M7_on_synthetic": true,
+ "eligible_human_rule": [
+  "M2 mean/SD alignment",
+  "M9 hybrid M6->M2",
+  "M11 hybrid M6->M7 (transductive)",
+  "M12c ensemble weighted (inner-CV)"
+ ],
+ "best_human": "M9 hybrid M6->M2",
+ "synthetic_nondeterioration_check": {
+  "M2 mean/SD alignment": false,
+  "M6 probability reweighting": true,
+  "M7 rank-quantile (transductive)": true,
+  "M8 source-wise z-score (transductive)": true,
+  "M9 hybrid M6->M2": true,
+  "M10 hybrid M2->M7 (redundant check)": true,
+  "M11 hybrid M6->M7 (transductive)": true,
+  "M12a ensemble average": true,
+  "M12b ensemble majority vote": true,
+  "M12c ensemble weighted (inner-CV)": true
+ },
+ "best_balanced": "M9 hybrid M6->M2",
+ "best_synthetic_descriptive_only": "M7 rank-quantile (transductive)",
+ "human_persona_q21_means": {
+  "P1 premium": 4.023,
+  "P2 mid heavy": 3.02,
+  "P3 mid moderate": 3.271,
+  "P4 entry/undisclosed": 3.759
+ },
+ "synthetic_persona_stance_means": {
+  "P1": 4.1,
+  "P2": 3.14,
+  "P3": 3.02,
+  "P4": 3.7
+ }
+}
+M12c weights per fold [[0.5, 0.25, 0.25, 0.0], [0.25, 0.5, 0.25, 0.0], [0.5, 0.25, 0.0, 0.25], [0.5, 0.25, 0.25, 0.0], [0.25, 0.5, 0.25, 0.0], [0.5, 0.25, 0.25, 0.0], [0.75, 0.0, 0.0, 0.25], [0.25, 0.5, 0.25, 0.0], [0.25, 0.5, 0.0, 0.25], [0.25, 0.5, 0.0, 0.25], [0.5, 0.25, 0.0, 0.25], [0.75, 0.0, 0.0, 0.25], [0.75, 0.0, 0.0, 0.25], [0.25, 0.5, 0.25, 0.0], [0.25, 0.5, 0.0, 0.25], [0.25, 0.25, 0.5, 0.0], [0.5, 0.25, 0.0, 0.25], [0.25, 0.5, 0.25, 0.0], [0.25, 0.5, 0.25, 0.0], [0.0, 0.5, 0.5, 0.0]] | full-human [0.25, 0.5, 0.0, 0.25]

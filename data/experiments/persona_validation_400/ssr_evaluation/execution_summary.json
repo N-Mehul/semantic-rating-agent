@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETED",
+  "dataset_input": "C:\\Users\\mehul\\OneDrive - Shri Vile Parle Kelavani Mandal\\Capstone\\semantic_rating_agent\\data\\experiments\\persona_validation_400\\synthetic_responses.csv",
+  "total_responses": 400,
+  "valid_scored_responses": 400,
+  "model_name": "nomic-embed-text",
+  "embedding_dim": 768,
+  "all_pmf_sums_valid": true,
+  "ssr_k_parameter": 3,
+  "ssr_epsilon": 0.0,
+  "ssr_temperature": 1.0,
+  "execution_time_seconds": {
+    "adapter_init": 2.187,
+    "anchor_embedding": 14.5772,
+    "response_batch_embedding": 91.9317,
+    "scoring": 0.2278,
+    "total": 108.9311
+  },
+  "average_time_per_response_seconds": 0.2723,
+  "errors": []
+}

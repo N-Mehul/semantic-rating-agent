@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,Samsung Galaxy Watch Ultra,PE,Performance Expectancy,False,3.6711,0.118483,0.138974,0.0,0.438012,0.304531,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy Watch Ultra,EE,Effort Expectancy,False,4.091,0.009462,0.0,0.246489,0.378154,0.365895,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy Watch Ultra,HM,Hedonic Motivation,False,4.0373,0.0,0.140257,0.141886,0.258199,0.459658,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy Watch Ultra,SI,Social Influence,False,4.1972,0.021394,0.0,0.147562,0.422122,0.408922,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy Watch Ultra,PP,Perceived Protection,False,3.3739,0.227477,0.138524,0.0,0.300651,0.333348,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy Watch Ultra,BI,Behavioral Intention,True,3.8467,0.0,0.170704,0.096829,0.447552,0.284915,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy Watch Ultra,PE,Performance Expectancy,False,3.1881,0.199038,0.179378,0.0,0.477642,0.143941,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy Watch Ultra,EE,Effort Expectancy,False,3.9129,0.115658,0.0,0.193811,0.2368,0.453731,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy Watch Ultra,HM,Hedonic Motivation,False,4.2826,0.0,0.061264,0.150012,0.233574,0.55515,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy Watch Ultra,SI,Social Influence,False,3.878,0.122439,0.0,0.142542,0.347135,0.387884,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy Watch Ultra,PP,Perceived Protection,False,3.7205,0.215605,0.029079,0.0,0.329881,0.425435,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy Watch Ultra,BI,Behavioral Intention,True,3.7112,0.0,0.172268,0.204424,0.363131,0.260177,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy Watch Ultra,PE,Performance Expectancy,False,3.1146,0.210218,0.204538,0.0,0.430874,0.15437,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy Watch Ultra,EE,Effort Expectancy,False,3.3322,0.232333,0.0,0.26082,0.216801,0.290045,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy Watch Ultra,HM,Hedonic Motivation,False,2.4658,0.203264,0.327232,0.269968,0.199536,0.0,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy Watch Ultra,SI,Social Influence,False,2.9981,0.045179,0.193201,0.479992,0.281627,0.0,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy Watch Ultra,PP,Perceived Protection,False,3.0565,0.314925,0.123695,0.0,0.312721,0.248659,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy Watch Ultra,BI,Behavioral Intention,True,2.5566,0.20825,0.303909,0.349342,0.0,0.138499,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy Watch Ultra,PE,Performance Expectancy,False,3.4336,0.123922,0.188118,0.0,0.506405,0.181554,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy Watch Ultra,EE,Effort Expectancy,False,3.9045,0.022518,0.0,0.346892,0.31163,0.318959,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy Watch Ultra,HM,Hedonic Motivation,False,3.7343,0.0,0.159243,0.275876,0.236248,0.328633,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy Watch Ultra,SI,Social Influence,False,4.1444,0.0,0.001713,0.277069,0.296311,0.424907,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy Watch Ultra,PP,Perceived Protection,False,3.7958,0.186372,0.033693,0.0,0.357621,0.422314,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy Watch Ultra,BI,Behavioral Intention,True,3.5121,0.0,0.20888,0.264913,0.331452,0.194754,nomic-embed-text

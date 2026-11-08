@@ -49,13 +49,16 @@ def live():
 # ---------- the reported 404: frontend/backend route consistency
 def test_every_api_path_used_by_the_page_is_served_by_the_server():
     used = set(re.findall(r"/api/[A-Za-z/]+", JS))
-    assert {"/api/product/options", "/api/health", "/api/product/respond", "/api/product/report"} <= used
+    assert {"/api/evaluation/options", "/api/evaluation/saved", "/api/evaluation/run", "/api/evaluation/export"} <= used
     dash = da.Dashboard()
     for path in sorted(used):
         if path == "/api/workflow/step/":                                   # called as POST /api/workflow/step/<n>
             assert all(f"/api/workflow/step/{n}" in srv.POST_ROUTES for n in range(1, 7))
             continue
-        if path in srv.POST_ROUTES:                                         # e.g. POST /api/survey/generate
+        if path in srv.POST_ROUTES:                                         # e.g. POST /api/evaluation/run
+            continue
+        if path == "/api/evaluation/export":                                # streamed as a file download by the request handler
+            assert path in srv.GET_ROUTES
             continue
         status, _ = srv.route(dash, path, {})
         assert status != HTTPStatus.NOT_FOUND, f"{path} is used by app.js but the server answers 404"
@@ -81,10 +84,12 @@ def test_options_endpoint_works_over_http_with_the_schema_the_page_reads(live):
 def test_health_endpoint_lists_the_routes_so_a_stale_server_can_be_detected(live):
     s, b = live.call("/api/health")
     h = json.loads(b)
-    assert s == 200 and h["app"] == "digital-persona-dashboard" and "/api/workflow/options" in h["get_routes"] and h["server_started_utc"]
+    assert s == 200 and h["app"] == "digital-persona-dashboard" and h["server_started_utc"]
+    assert {"/api/evaluation/options", "/api/evaluation/saved", "/api/evaluation/export"} <= set(h["get_routes"])
     for path in h["get_routes"]:
         assert live.call(path)[0] != 404, f"health advertises {path} but it answers 404"
-    assert set(h["post_routes"]) == {f"/api/workflow/step/{n}" for n in range(1, 7)} | {"/api/survey/generate", "/api/simple/run", "/api/product/respond", "/api/product/report"}
+    assert set(h["post_routes"]) == {f"/api/workflow/step/{n}" for n in range(1, 7)} | {
+        "/api/survey/generate", "/api/simple/run", "/api/product/respond", "/api/product/report", "/api/evaluation/run"}
 
 
 def test_favicon_request_does_not_produce_a_404(live):
@@ -110,20 +115,24 @@ def test_old_server_without_the_route_is_what_produces_the_404(live):
             pass
     old = Live(handler_factory=Old, server_cls=srv.DashboardServer)
     try:
-        assert old.call("/api/workflow/options")[0] == 404 and old.call("/api/health")[0] == 404
+        assert old.call("/api/evaluation/options")[0] == 404 and old.call("/api/health")[0] == 404
     finally:
         old.close()
-    # the page reacts to exactly that situation with an explicit instruction (checked in the source) instead of a blank console error
-    assert "older dashboard server" in JS and "Stop-Process" in JS and "/api/health" in JS
+    # the page reports a failed request as a visible error message instead of a blank console error
+    assert "if (!res.ok)" in JS and "Server error: HTTP ${res.status}" in JS
 
 
-# ---------- single screen
+# ---------- current multi-view dashboard
 def test_page_shows_only_the_requested_elements():
-    assert "<nav" not in HTML and "data-view" not in HTML and "<title>Digital Persona — Synthetic Consumer Research</title>" in HTML
-    assert JS.count('class="primary"') == 1 and "Analyze Product &amp; Generate Consumer Responses" in JS        # one primary action
-    assert 'id="concept"' in JS and "<textarea" in JS and "p-one" in JS and 'id="question"' in JS
-    for gone in ("encoder", "sw-survey", "Synthetic Survey Responses", "Validation", "Coverage", "c-enc", 'id="c-be"', 'id="s-be"', "LLM backend", "<select"):
-        assert gone not in JS                                                                                    # no model/encoder selectors or extra pages
+    assert "<title>Digital Persona — Synthetic Consumer Research &amp; Adoption Analytics</title>" in HTML or \
+        "<title>Digital Persona — Synthetic Consumer Research & Adoption Analytics</title>" in HTML
+    assert JS.count('<nav class="sidebar-nav">') == 1                                                          # one navigation bar
+    for view in ("overview", "product", "personas", "evaluation", "insights", "methodology"):
+        assert f"switchView('{view}')" in JS                                                                     # each view is reachable from the nav
+    assert "<textarea" in JS and "state.form.description" in JS                                                 # product concept input
+    assert "Enhanced Semantic Similarity Rating (E-SSR)" in JS and "Canonical Semantic Similarity Rating (Canonical SSR)" in JS
+    assert 'ssr_method: "improved"' in JS                                                                        # E-SSR is the form default
+    assert not re.search(r"P[1-4]_[a-z]", JS) and not re.search(r"gemini-\d|gpt-\d|-flash\b", JS.lower())       # nothing hardcoded
 
 def test_six_steps_over_http_return_the_fields_the_page_displays(live):
     def post(n, body):

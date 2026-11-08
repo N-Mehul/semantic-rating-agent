@@ -1,0 +1,19 @@
+[
+  {
+    "persona_id": "P1_premium_tier_owner",
+    "product_name": "Apex Ultra Pro Max",
+    "response_text": "This phone seems like a perfect fit for me, with its powerful performance and premium features. It’s exactly what I was looking for, and I’m excited to start using it.",
+    "construct_responses": {
+      "PE": "The Snapdragon 8 Elite processor will make my work and study way more efficient. The 200MP camera will also help with my photography classes. The 2K AMOLED display ensures I can work and study on a sharp and clear screen.",
+      "EE": "The UI is going to be simple and intuitive, making it easy to use. The learning curve is minimal, so there won't be any hassle in getting started with this phone.",
+      "HM": "With the 200MP camera, I can take amazing photos and videos for fun. The 2K AMOLED display will make gaming and streaming a real treat. The titanium design will add a touch of luxury to my daily life.",
+      "SI": "My friends will be impressed with the design and features, and it will be seen as a status symbol among my college peers.",
+      "PP": "The security features will give me peace of mind, knowing my personal data is well-protected.",
+      "BI": "I am certain I will continue using this smartphone as my primary phone; the premium build quality, flagship processor, and display match everything I need. The price fits comfortably within my budget and I definitely intend to keep using it.",
+      "OVERALL": "This phone seems like a perfect fit for me, with its powerful performance and premium features. It’s exactly what I was looking for, and I’m excited to start using it."
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-10-31T12:50:56.097199+00:00"
+  }
+]

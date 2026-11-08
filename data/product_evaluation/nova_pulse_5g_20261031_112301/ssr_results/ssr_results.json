@@ -1,0 +1,2013 @@
+{
+  "evaluation_id": "nova_pulse_5g_20261031_112301",
+  "product_name": "Nova Pulse 5G",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-31T06:00:11.624128+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "primary_adoption_rating": 3.5458,
+      "primary_adoption_pmf": [
+        0.0,
+        0.195982,
+        0.32492,
+        0.216376,
+        0.262722
+      ],
+      "construct_scores": {
+        "PE": 3.4357,
+        "EE": 4.0988,
+        "HM": 3.9936,
+        "SI": 3.5771,
+        "PP": 3.4282,
+        "BI": 3.5458
+      },
+      "construct_responses": {
+        "PE": "The Nova Pulse 5G should work fine for my studies as it has good performance for multitasking and social media. The 120Hz display is a bit overkill for me, but it does make scrolling and gaming smoother.",
+        "EE": "Since I already use Android, learning the Pulse UI should be pretty straightforward. It's clean and intuitive, so I think I can pick it up quickly.",
+        "HM": "For entertainment, the display is vibrant and great for watching videos and playing games. I don't really use many apps, so I won't be missing out on much. The camera is also decent for capturing moments with friends.",
+        "SI": "My friends might be a bit surprised by the brand but they'd likely recommend it for its value and features. It's not as flashy as iPhones, but it gets the job done.",
+        "PP": "The Smart Privacy Shield sounds like a useful feature. I can see it being handy for keeping personal stuff secure. With no ads and 2 OS upgrades, it feels like a safer choice.",
+        "BI": "Considering the price, I might consider it as an upgrade from my current phone. I wouldn't go for it right away, but I might if the deal is good or if my current phone breaks down.",
+        "OVERALL": "It seems like a solid phone with good features for the price, but I might hold off as I prefer my current Apple phone. It could be worth a look if I need a new one."
+      },
+      "response_text": "It seems like a solid phone with good features for the price, but I might hold off as I prefer my current Apple phone. It could be worth a look if I need a new one.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The Nova Pulse 5G should work fine for my studies as it has good performance for multitasking and social media. The 120Hz display is a bit overkill for me, but it does make scrolling and gaming smoother.",
+          "cosine_similarities": [
+            0.604156,
+            0.617042,
+            0.621485,
+            0.64499,
+            0.606078
+          ],
+          "min_similarity": 0.604156,
+          "pmf_probabilities": [
+            0.0,
+            0.176589,
+            0.237475,
+            0.559604,
+            0.026332
+          ],
+          "expected_rating": 3.4357,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Since I already use Android, learning the Pulse UI should be pretty straightforward. It's clean and intuitive, so I think I can pick it up quickly.",
+          "cosine_similarities": [
+            0.641806,
+            0.625517,
+            0.639394,
+            0.680542,
+            0.704481
+          ],
+          "min_similarity": 0.625517,
+          "pmf_probabilities": [
+            0.099228,
+            0.0,
+            0.084535,
+            0.335204,
+            0.481032
+          ],
+          "expected_rating": 4.0988,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "For entertainment, the display is vibrant and great for watching videos and playing games. I don't really use many apps, so I won't be missing out on much. The camera is also decent for capturing moments with friends.",
+          "cosine_similarities": [
+            0.605505,
+            0.659147,
+            0.635057,
+            0.673677,
+            0.74051
+          ],
+          "min_similarity": 0.605505,
+          "pmf_probabilities": [
+            0.0,
+            0.187317,
+            0.103194,
+            0.238056,
+            0.471433
+          ],
+          "expected_rating": 3.9936,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might be a bit surprised by the brand but they'd likely recommend it for its value and features. It's not as flashy as iPhones, but it gets the job done.",
+          "cosine_similarities": [
+            0.567687,
+            0.595356,
+            0.629351,
+            0.638784,
+            0.602233
+          ],
+          "min_similarity": 0.567687,
+          "pmf_probabilities": [
+            0.0,
+            0.141908,
+            0.316267,
+            0.364645,
+            0.17718
+          ],
+          "expected_rating": 3.5771,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The Smart Privacy Shield sounds like a useful feature. I can see it being handy for keeping personal stuff secure. With no ads and 2 OS upgrades, it feels like a safer choice.",
+          "cosine_similarities": [
+            0.669548,
+            0.667427,
+            0.631921,
+            0.709258,
+            0.694179
+          ],
+          "min_similarity": 0.631921,
+          "pmf_probabilities": [
+            0.176876,
+            0.166908,
+            0.0,
+            0.363551,
+            0.292665
+          ],
+          "expected_rating": 3.4282,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Considering the price, I might consider it as an upgrade from my current phone. I wouldn't go for it right away, but I might if the deal is good or if my current phone breaks down.",
+          "cosine_similarities": [
+            0.648643,
+            0.688256,
+            0.714317,
+            0.692378,
+            0.701746
+          ],
+          "min_similarity": 0.648643,
+          "pmf_probabilities": [
+            0.0,
+            0.195982,
+            0.32492,
+            0.216376,
+            0.262722
+          ],
+          "expected_rating": 3.5458,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "primary_adoption_rating": 3.2726,
+      "primary_adoption_pmf": [
+        0.0,
+        0.16895,
+        0.518632,
+        0.183258,
+        0.12916
+      ],
+      "construct_scores": {
+        "PE": 3.1234,
+        "EE": 4.1971,
+        "HM": 4.2043,
+        "SI": 3.4846,
+        "PP": 3.7265,
+        "BI": 3.2726
+      },
+      "construct_responses": {
+        "PE": "This phone would be super useful for my studies and daily routines. The fast charging and long battery life mean I won't have to worry about running out of power during long hours of social media and video calls. The 120Hz display makes everything feel snappy and responsive.",
+        "EE": "It wouldn't be too difficult to learn and use. I'm already comfortable with Android, so most of the features should be easy to figure out. The clean Pulse UI looks good and is easy to navigate.",
+        "HM": "Using this phone would be fun for gaming and social media. The fast display and good battery would make it great for those late-night movie sessions. The 64MP camera is perfect for taking clear pictures of my notes and assignments.",
+        "SI": "My friends and family would probably recommend it. They like the fast charging and camera quality. The privacy features would also make them feel safer about their personal data.",
+        "PP": "I feel quite confident about the privacy and security. The Smart Privacy Shield and 2 guaranteed OS upgrades are good. I trust that my sensitive data and privacy will be well-protected.",
+        "BI": "Considering the price, I might consider it. It seems like a good value for the features. But I'll probably compare it with other similar phones before making a decision.",
+        "OVERALL": "Overall, it seems like a solid choice for a student. It checks most of the boxes for me, but the price might be a deciding factor."
+      },
+      "response_text": "Overall, it seems like a solid choice for a student. It checks most of the boxes for me, but the price might be a deciding factor.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This phone would be super useful for my studies and daily routines. The fast charging and long battery life mean I won't have to worry about running out of power during long hours of social media and video calls. The 120Hz display makes everything feel snappy and responsive.",
+          "cosine_similarities": [
+            0.676595,
+            0.691957,
+            0.622728,
+            0.73895,
+            0.670839
+          ],
+          "min_similarity": 0.622728,
+          "pmf_probabilities": [
+            0.187409,
+            0.240857,
+            0.0,
+            0.404349,
+            0.167385
+          ],
+          "expected_rating": 3.1234,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "It wouldn't be too difficult to learn and use. I'm already comfortable with Android, so most of the features should be easy to figure out. The clean Pulse UI looks good and is easy to navigate.",
+          "cosine_similarities": [
+            0.676015,
+            0.666681,
+            0.678765,
+            0.724688,
+            0.736096
+          ],
+          "min_similarity": 0.666681,
+          "pmf_probabilities": [
+            0.062708,
+            0.0,
+            0.081188,
+            0.389728,
+            0.466377
+          ],
+          "expected_rating": 4.1971,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using this phone would be fun for gaming and social media. The fast display and good battery would make it great for those late-night movie sessions. The 64MP camera is perfect for taking clear pictures of my notes and assignments.",
+          "cosine_similarities": [
+            0.610859,
+            0.624635,
+            0.629023,
+            0.664118,
+            0.690179
+          ],
+          "min_similarity": 0.610859,
+          "pmf_probabilities": [
+            0.0,
+            0.083736,
+            0.110406,
+            0.323726,
+            0.482132
+          ],
+          "expected_rating": 4.2043,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and family would probably recommend it. They like the fast charging and camera quality. The privacy features would also make them feel safer about their personal data.",
+          "cosine_similarities": [
+            0.610477,
+            0.569207,
+            0.644238,
+            0.620031,
+            0.643577
+          ],
+          "min_similarity": 0.569207,
+          "pmf_probabilities": [
+            0.170895,
+            0.0,
+            0.310693,
+            0.210455,
+            0.307957
+          ],
+          "expected_rating": 3.4846,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "I feel quite confident about the privacy and security. The Smart Privacy Shield and 2 guaranteed OS upgrades are good. I trust that my sensitive data and privacy will be well-protected.",
+          "cosine_similarities": [
+            0.707075,
+            0.646355,
+            0.634792,
+            0.748211,
+            0.780851
+          ],
+          "min_similarity": 0.634792,
+          "pmf_probabilities": [
+            0.210538,
+            0.033681,
+            0.0,
+            0.330356,
+            0.425426
+          ],
+          "expected_rating": 3.7265,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Considering the price, I might consider it. It seems like a good value for the features. But I'll probably compare it with other similar phones before making a decision.",
+          "cosine_similarities": [
+            0.596194,
+            0.6318,
+            0.705496,
+            0.634816,
+            0.623414
+          ],
+          "min_similarity": 0.596194,
+          "pmf_probabilities": [
+            0.0,
+            0.16895,
+            0.518632,
+            0.183258,
+            0.12916
+          ],
+          "expected_rating": 3.2726,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "primary_adoption_rating": 3.4592,
+      "primary_adoption_pmf": [
+        0.0,
+        0.170314,
+        0.360193,
+        0.30944,
+        0.160053
+      ],
+      "construct_scores": {
+        "PE": 3.4148,
+        "EE": 3.4374,
+        "HM": 4.0354,
+        "SI": 2.7914,
+        "PP": 3.8272,
+        "BI": 3.4592
+      },
+      "construct_responses": {
+        "PE": "This phone should work great for my studies and daily tasks. With the Dimensity 7050 processor, I won",
+        "EE": "Learning and using this phone should be pretty easy. I",
+        "HM": "Using this phone for entertainment and social media would be fun. The Super AMOLED display looks great for watching videos and scrolling through Instagram, but I wouldn",
+        "SI": "My friends and family would probably think it",
+        "PP": "I feel pretty safe using this phone. The Smart Privacy Shield is a nice feature, and I like that there are no ads on the home screen. The fast charging option is a plus too, as I don",
+        "BI": "Considering the price, I might consider this phone. It"
+      },
+      "response_text": "{\n  \"PE\": \"This phone should work great for my studies and daily tasks. With the Dimensity 7050 processor, I won't have to worry about lagging or slow performance while browsing the internet or using apps. The battery life is also impressive, so I won't have to charge it frequently during class or when I'm out with friends.\",\n  \"EE\": \"Learning and using this phone should be pretty easy. I'm already comfortable with Android, and the Pulse UI looks clean and user-friendly. I don't think I'll have any major issues figuring out how to use the features.\",\n  \"HM\": \"Using this phone for entertainment and social media would be fun. The Super AMOLED display looks great for watching videos and scrolling through Instagram, but I wouldn't say it's super entertaining. The 64MP camera is nice for taking photos during college events, but it's not a game-changer for me.\",\n  \"SI\": \"My friends and family would probably think it's a good choice. They might ask why I didn't get a more expensive phone, but I don't think they'd question the brand. It's a known good option for students, and the features seem practical and useful.\",\n  \"PP\": \"I feel pretty safe using this phone. The Smart Privacy Shield is a nice feature, and I like that there are no ads on the home screen. The fast charging option is a plus too, as I don't want to spend too much time waiting for my phone to charge.\",\n  \"BI\": \"Considering the price, I might consider this phone. It's a bit expensive for me, but the features seem worth it. I might look for discounts or deals, but I wouldn't outright reject it. It's a balanced phone that seems to offer good value for the money.\",\n  \"overall\": \"",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This phone should work great for my studies and daily tasks. With the Dimensity 7050 processor, I won",
+          "cosine_similarities": [
+            0.676957,
+            0.696827,
+            0.656025,
+            0.746554,
+            0.690908
+          ],
+          "min_similarity": 0.656025,
+          "pmf_probabilities": [
+            0.111847,
+            0.218021,
+            0.0,
+            0.483738,
+            0.186394
+          ],
+          "expected_rating": 3.4148,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Learning and using this phone should be pretty easy. I",
+          "cosine_similarities": [
+            0.815105,
+            0.732366,
+            0.774871,
+            0.836399,
+            0.835868
+          ],
+          "min_similarity": 0.732366,
+          "pmf_probabilities": [
+            0.24863,
+            0.0,
+            0.127727,
+            0.31262,
+            0.311023
+          ],
+          "expected_rating": 3.4374,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using this phone for entertainment and social media would be fun. The Super AMOLED display looks great for watching videos and scrolling through Instagram, but I wouldn",
+          "cosine_similarities": [
+            0.676768,
+            0.688607,
+            0.699942,
+            0.705291,
+            0.727674
+          ],
+          "min_similarity": 0.676768,
+          "pmf_probabilities": [
+            0.0,
+            0.103448,
+            0.202494,
+            0.24924,
+            0.444819
+          ],
+          "expected_rating": 4.0354,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and family would probably think it",
+          "cosine_similarities": [
+            0.540969,
+            0.535574,
+            0.54617,
+            0.561164,
+            0.515433
+          ],
+          "min_similarity": 0.515433,
+          "pmf_probabilities": [
+            0.209065,
+            0.164896,
+            0.251644,
+            0.374394,
+            0.0
+          ],
+          "expected_rating": 2.7914,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "I feel pretty safe using this phone. The Smart Privacy Shield is a nice feature, and I like that there are no ads on the home screen. The fast charging option is a plus too, as I don",
+          "cosine_similarities": [
+            0.719623,
+            0.702531,
+            0.760943,
+            0.769036,
+            0.775141
+          ],
+          "min_similarity": 0.702531,
+          "pmf_probabilities": [
+            0.079638,
+            0.0,
+            0.272166,
+            0.309875,
+            0.33832
+          ],
+          "expected_rating": 3.8272,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Considering the price, I might consider this phone. It",
+          "cosine_similarities": [
+            0.58743,
+            0.622306,
+            0.661189,
+            0.650796,
+            0.620205
+          ],
+          "min_similarity": 0.58743,
+          "pmf_probabilities": [
+            0.0,
+            0.170314,
+            0.360193,
+            0.30944,
+            0.160053
+          ],
+          "expected_rating": 3.4592,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "primary_adoption_rating": 3.3385,
+      "primary_adoption_pmf": [
+        0.0,
+        0.18792,
+        0.471616,
+        0.154469,
+        0.185995
+      ],
+      "construct_scores": {
+        "PE": 3.2231,
+        "EE": 3.7533,
+        "HM": 4.0931,
+        "SI": 3.0342,
+        "PP": 3.9699,
+        "BI": 3.3385
+      },
+      "construct_responses": {
+        "PE": "For my study and work tasks, this phone will be super useful. The 120Hz display and fast processor will make it easier to follow online classes and do quick edits on documents.",
+        "EE": "Learning and using this phone should be pretty easy. I already use Android, so I won't have any trouble figuring out the Pulse UI. The clean interface will help me stay focused on my work.",
+        "HM": "I think it will be a lot of fun to use, especially for gaming and social media. The vibrant display and fast refresh rate will make scrolling through feeds smoother and more enjoyable. The camera quality will also be great for taking pictures during college events.",
+        "SI": "My friends might be surprised to see me using a phone from this brand. They usually recommend big brands like Samsung or Xiaomi, so they might think it's a good choice. My family might be skeptical because they're not familiar with the brand, but they'll see it as a cost-effective option.",
+        "PP": "I feel very safe with the Smart Privacy Shield feature. I don't have to worry about my private stuff being accessed by anyone else. The clean OS without ads also gives me peace of mind.",
+        "BI": "₹19,999 is a bit high for my budget, but I might consider it as an upgrade. I might save up for it or look for a deal. I'm not sure if it's worth the extra money, but I'll think about it.",
+        "OVERALL": "This phone seems like a good option if I can save up for it. It has all the features I need for my daily tasks, but the price might be a bit steep for a budget student like me."
+      },
+      "response_text": "This phone seems like a good option if I can save up for it. It has all the features I need for my daily tasks, but the price might be a bit steep for a budget student like me.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "For my study and work tasks, this phone will be super useful. The 120Hz display and fast processor will make it easier to follow online classes and do quick edits on documents.",
+          "cosine_similarities": [
+            0.713153,
+            0.720975,
+            0.695238,
+            0.749585,
+            0.711606
+          ],
+          "min_similarity": 0.695238,
+          "pmf_probabilities": [
+            0.156645,
+            0.225035,
+            0.0,
+            0.4752,
+            0.14312
+          ],
+          "expected_rating": 3.2231,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Learning and using this phone should be pretty easy. I already use Android, so I won't have any trouble figuring out the Pulse UI. The clean interface will help me stay focused on my work.",
+          "cosine_similarities": [
+            0.714159,
+            0.676499,
+            0.741827,
+            0.756659,
+            0.783289
+          ],
+          "min_similarity": 0.676499,
+          "pmf_probabilities": [
+            0.12989,
+            0.0,
+            0.225316,
+            0.276474,
+            0.368319
+          ],
+          "expected_rating": 3.7533,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "I think it will be a lot of fun to use, especially for gaming and social media. The vibrant display and fast refresh rate will make scrolling through feeds smoother and more enjoyable. The camera quality will also be great for taking pictures during college events.",
+          "cosine_similarities": [
+            0.548856,
+            0.581245,
+            0.593282,
+            0.618083,
+            0.684268
+          ],
+          "min_similarity": 0.548856,
+          "pmf_probabilities": [
+            0.0,
+            0.115077,
+            0.157847,
+            0.245962,
+            0.481115
+          ],
+          "expected_rating": 4.0931,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends might be surprised to see me using a phone from this brand. They usually recommend big brands like Samsung or Xiaomi, so they might think it's a good choice. My family might be skeptical because they're not familiar with the brand, but they'll see it as a cost-effective option.",
+          "cosine_similarities": [
+            0.664871,
+            0.649793,
+            0.693556,
+            0.65178,
+            0.665182
+          ],
+          "min_similarity": 0.649793,
+          "pmf_probabilities": [
+            0.197831,
+            0.0,
+            0.574197,
+            0.026067,
+            0.201904
+          ],
+          "expected_rating": 3.0342,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "I feel very safe with the Smart Privacy Shield feature. I don't have to worry about my private stuff being accessed by anyone else. The clean OS without ads also gives me peace of mind.",
+          "cosine_similarities": [
+            0.721886,
+            0.693915,
+            0.712363,
+            0.759761,
+            0.790015
+          ],
+          "min_similarity": 0.693915,
+          "pmf_probabilities": [
+            0.134242,
+            0.0,
+            0.088535,
+            0.316014,
+            0.461209
+          ],
+          "expected_rating": 3.9699,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "₹19,999 is a bit high for my budget, but I might consider it as an upgrade. I might save up for it or look for a deal. I'm not sure if it's worth the extra money, but I'll think about it.",
+          "cosine_similarities": [
+            0.530924,
+            0.562951,
+            0.611302,
+            0.55725,
+            0.562623
+          ],
+          "min_similarity": 0.530924,
+          "pmf_probabilities": [
+            0.0,
+            0.18792,
+            0.471616,
+            0.154469,
+            0.185995
+          ],
+          "expected_rating": 3.3385,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.604156,
+        0.617042,
+        0.621485,
+        0.64499,
+        0.606078
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.176589,
+        0.237475,
+        0.559604,
+        0.026332
+      ],
+      "expected_rating": 3.4357,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.641806,
+        0.625517,
+        0.639394,
+        0.680542,
+        0.704481
+      ],
+      "pmf_probabilities": [
+        0.099228,
+        0.0,
+        0.084535,
+        0.335204,
+        0.481032
+      ],
+      "expected_rating": 4.0988,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.605505,
+        0.659147,
+        0.635057,
+        0.673677,
+        0.74051
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.187317,
+        0.103194,
+        0.238056,
+        0.471433
+      ],
+      "expected_rating": 3.9936,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.567687,
+        0.595356,
+        0.629351,
+        0.638784,
+        0.602233
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.141908,
+        0.316267,
+        0.364645,
+        0.17718
+      ],
+      "expected_rating": 3.5771,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.669548,
+        0.667427,
+        0.631921,
+        0.709258,
+        0.694179
+      ],
+      "pmf_probabilities": [
+        0.176876,
+        0.166908,
+        0.0,
+        0.363551,
+        0.292665
+      ],
+      "expected_rating": 3.4282,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.648643,
+        0.688256,
+        0.714317,
+        0.692378,
+        0.701746
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.195982,
+        0.32492,
+        0.216376,
+        0.262722
+      ],
+      "expected_rating": 3.5458,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.676595,
+        0.691957,
+        0.622728,
+        0.73895,
+        0.670839
+      ],
+      "pmf_probabilities": [
+        0.187409,
+        0.240857,
+        0.0,
+        0.404349,
+        0.167385
+      ],
+      "expected_rating": 3.1234,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.676015,
+        0.666681,
+        0.678765,
+        0.724688,
+        0.736096
+      ],
+      "pmf_probabilities": [
+        0.062708,
+        0.0,
+        0.081188,
+        0.389728,
+        0.466377
+      ],
+      "expected_rating": 4.1971,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.610859,
+        0.624635,
+        0.629023,
+        0.664118,
+        0.690179
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.083736,
+        0.110406,
+        0.323726,
+        0.482132
+      ],
+      "expected_rating": 4.2043,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.610477,
+        0.569207,
+        0.644238,
+        0.620031,
+        0.643577
+      ],
+      "pmf_probabilities": [
+        0.170895,
+        0.0,
+        0.310693,
+        0.210455,
+        0.307957
+      ],
+      "expected_rating": 3.4846,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.707075,
+        0.646355,
+        0.634792,
+        0.748211,
+        0.780851
+      ],
+      "pmf_probabilities": [
+        0.210538,
+        0.033681,
+        0.0,
+        0.330356,
+        0.425426
+      ],
+      "expected_rating": 3.7265,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.596194,
+        0.6318,
+        0.705496,
+        0.634816,
+        0.623414
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.16895,
+        0.518632,
+        0.183258,
+        0.12916
+      ],
+      "expected_rating": 3.2726,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.676957,
+        0.696827,
+        0.656025,
+        0.746554,
+        0.690908
+      ],
+      "pmf_probabilities": [
+        0.111847,
+        0.218021,
+        0.0,
+        0.483738,
+        0.186394
+      ],
+      "expected_rating": 3.4148,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.815105,
+        0.732366,
+        0.774871,
+        0.836399,
+        0.835868
+      ],
+      "pmf_probabilities": [
+        0.24863,
+        0.0,
+        0.127727,
+        0.31262,
+        0.311023
+      ],
+      "expected_rating": 3.4374,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.676768,
+        0.688607,
+        0.699942,
+        0.705291,
+        0.727674
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.103448,
+        0.202494,
+        0.24924,
+        0.444819
+      ],
+      "expected_rating": 4.0354,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.540969,
+        0.535574,
+        0.54617,
+        0.561164,
+        0.515433
+      ],
+      "pmf_probabilities": [
+        0.209065,
+        0.164896,
+        0.251644,
+        0.374394,
+        0.0
+      ],
+      "expected_rating": 2.7914,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.719623,
+        0.702531,
+        0.760943,
+        0.769036,
+        0.775141
+      ],
+      "pmf_probabilities": [
+        0.079638,
+        0.0,
+        0.272166,
+        0.309875,
+        0.33832
+      ],
+      "expected_rating": 3.8272,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.58743,
+        0.622306,
+        0.661189,
+        0.650796,
+        0.620205
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.170314,
+        0.360193,
+        0.30944,
+        0.160053
+      ],
+      "expected_rating": 3.4592,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.713153,
+        0.720975,
+        0.695238,
+        0.749585,
+        0.711606
+      ],
+      "pmf_probabilities": [
+        0.156645,
+        0.225035,
+        0.0,
+        0.4752,
+        0.14312
+      ],
+      "expected_rating": 3.2231,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.714159,
+        0.676499,
+        0.741827,
+        0.756659,
+        0.783289
+      ],
+      "pmf_probabilities": [
+        0.12989,
+        0.0,
+        0.225316,
+        0.276474,
+        0.368319
+      ],
+      "expected_rating": 3.7533,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.548856,
+        0.581245,
+        0.593282,
+        0.618083,
+        0.684268
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.115077,
+        0.157847,
+        0.245962,
+        0.481115
+      ],
+      "expected_rating": 4.0931,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.664871,
+        0.649793,
+        0.693556,
+        0.65178,
+        0.665182
+      ],
+      "pmf_probabilities": [
+        0.197831,
+        0.0,
+        0.574197,
+        0.026067,
+        0.201904
+      ],
+      "expected_rating": 3.0342,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.721886,
+        0.693915,
+        0.712363,
+        0.759761,
+        0.790015
+      ],
+      "pmf_probabilities": [
+        0.134242,
+        0.0,
+        0.088535,
+        0.316014,
+        0.461209
+      ],
+      "expected_rating": 3.9699,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.530924,
+        0.562951,
+        0.611302,
+        0.55725,
+        0.562623
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.18792,
+        0.471616,
+        0.154469,
+        0.185995
+      ],
+      "expected_rating": 3.3385,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.604156,
+      "cos_sim_2": 0.617042,
+      "cos_sim_3": 0.621485,
+      "cos_sim_4": 0.64499,
+      "cos_sim_5": 0.606078,
+      "min_similarity": 0.604156,
+      "p1": 0.0,
+      "p2": 0.176589,
+      "p3": 0.237475,
+      "p4": 0.559604,
+      "p5": 0.026332,
+      "set_expected_rating": 3.4357,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.641806,
+      "cos_sim_2": 0.625517,
+      "cos_sim_3": 0.639394,
+      "cos_sim_4": 0.680542,
+      "cos_sim_5": 0.704481,
+      "min_similarity": 0.625517,
+      "p1": 0.099228,
+      "p2": 0.0,
+      "p3": 0.084535,
+      "p4": 0.335204,
+      "p5": 0.481032,
+      "set_expected_rating": 4.0988,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.605505,
+      "cos_sim_2": 0.659147,
+      "cos_sim_3": 0.635057,
+      "cos_sim_4": 0.673677,
+      "cos_sim_5": 0.74051,
+      "min_similarity": 0.605505,
+      "p1": 0.0,
+      "p2": 0.187317,
+      "p3": 0.103194,
+      "p4": 0.238056,
+      "p5": 0.471433,
+      "set_expected_rating": 3.9936,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.567687,
+      "cos_sim_2": 0.595356,
+      "cos_sim_3": 0.629351,
+      "cos_sim_4": 0.638784,
+      "cos_sim_5": 0.602233,
+      "min_similarity": 0.567687,
+      "p1": 0.0,
+      "p2": 0.141908,
+      "p3": 0.316267,
+      "p4": 0.364645,
+      "p5": 0.17718,
+      "set_expected_rating": 3.5771,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.669548,
+      "cos_sim_2": 0.667427,
+      "cos_sim_3": 0.631921,
+      "cos_sim_4": 0.709258,
+      "cos_sim_5": 0.694179,
+      "min_similarity": 0.631921,
+      "p1": 0.176876,
+      "p2": 0.166908,
+      "p3": 0.0,
+      "p4": 0.363551,
+      "p5": 0.292665,
+      "set_expected_rating": 3.4282,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.648643,
+      "cos_sim_2": 0.688256,
+      "cos_sim_3": 0.714317,
+      "cos_sim_4": 0.692378,
+      "cos_sim_5": 0.701746,
+      "min_similarity": 0.648643,
+      "p1": 0.0,
+      "p2": 0.195982,
+      "p3": 0.32492,
+      "p4": 0.216376,
+      "p5": 0.262722,
+      "set_expected_rating": 3.5458,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.676595,
+      "cos_sim_2": 0.691957,
+      "cos_sim_3": 0.622728,
+      "cos_sim_4": 0.73895,
+      "cos_sim_5": 0.670839,
+      "min_similarity": 0.622728,
+      "p1": 0.187409,
+      "p2": 0.240857,
+      "p3": 0.0,
+      "p4": 0.404349,
+      "p5": 0.167385,
+      "set_expected_rating": 3.1234,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.676015,
+      "cos_sim_2": 0.666681,
+      "cos_sim_3": 0.678765,
+      "cos_sim_4": 0.724688,
+      "cos_sim_5": 0.736096,
+      "min_similarity": 0.666681,
+      "p1": 0.062708,
+      "p2": 0.0,
+      "p3": 0.081188,
+      "p4": 0.389728,
+      "p5": 0.466377,
+      "set_expected_rating": 4.1971,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.610859,
+      "cos_sim_2": 0.624635,
+      "cos_sim_3": 0.629023,
+      "cos_sim_4": 0.664118,
+      "cos_sim_5": 0.690179,
+      "min_similarity": 0.610859,
+      "p1": 0.0,
+      "p2": 0.083736,
+      "p3": 0.110406,
+      "p4": 0.323726,
+      "p5": 0.482132,
+      "set_expected_rating": 4.2043,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.610477,
+      "cos_sim_2": 0.569207,
+      "cos_sim_3": 0.644238,
+      "cos_sim_4": 0.620031,
+      "cos_sim_5": 0.643577,
+      "min_similarity": 0.569207,
+      "p1": 0.170895,
+      "p2": 0.0,
+      "p3": 0.310693,
+      "p4": 0.210455,
+      "p5": 0.307957,
+      "set_expected_rating": 3.4846,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.707075,
+      "cos_sim_2": 0.646355,
+      "cos_sim_3": 0.634792,
+      "cos_sim_4": 0.748211,
+      "cos_sim_5": 0.780851,
+      "min_similarity": 0.634792,
+      "p1": 0.210538,
+      "p2": 0.033681,
+      "p3": 0.0,
+      "p4": 0.330356,
+      "p5": 0.425426,
+      "set_expected_rating": 3.7265,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.596194,
+      "cos_sim_2": 0.6318,
+      "cos_sim_3": 0.705496,
+      "cos_sim_4": 0.634816,
+      "cos_sim_5": 0.623414,
+      "min_similarity": 0.596194,
+      "p1": 0.0,
+      "p2": 0.16895,
+      "p3": 0.518632,
+      "p4": 0.183258,
+      "p5": 0.12916,
+      "set_expected_rating": 3.2726,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.676957,
+      "cos_sim_2": 0.696827,
+      "cos_sim_3": 0.656025,
+      "cos_sim_4": 0.746554,
+      "cos_sim_5": 0.690908,
+      "min_similarity": 0.656025,
+      "p1": 0.111847,
+      "p2": 0.218021,
+      "p3": 0.0,
+      "p4": 0.483738,
+      "p5": 0.186394,
+      "set_expected_rating": 3.4148,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.815105,
+      "cos_sim_2": 0.732366,
+      "cos_sim_3": 0.774871,
+      "cos_sim_4": 0.836399,
+      "cos_sim_5": 0.835868,
+      "min_similarity": 0.732366,
+      "p1": 0.24863,
+      "p2": 0.0,
+      "p3": 0.127727,
+      "p4": 0.31262,
+      "p5": 0.311023,
+      "set_expected_rating": 3.4374,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.676768,
+      "cos_sim_2": 0.688607,
+      "cos_sim_3": 0.699942,
+      "cos_sim_4": 0.705291,
+      "cos_sim_5": 0.727674,
+      "min_similarity": 0.676768,
+      "p1": 0.0,
+      "p2": 0.103448,
+      "p3": 0.202494,
+      "p4": 0.24924,
+      "p5": 0.444819,
+      "set_expected_rating": 4.0354,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.540969,
+      "cos_sim_2": 0.535574,
+      "cos_sim_3": 0.54617,
+      "cos_sim_4": 0.561164,
+      "cos_sim_5": 0.515433,
+      "min_similarity": 0.515433,
+      "p1": 0.209065,
+      "p2": 0.164896,
+      "p3": 0.251644,
+      "p4": 0.374394,
+      "p5": 0.0,
+      "set_expected_rating": 2.7914,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.719623,
+      "cos_sim_2": 0.702531,
+      "cos_sim_3": 0.760943,
+      "cos_sim_4": 0.769036,
+      "cos_sim_5": 0.775141,
+      "min_similarity": 0.702531,
+      "p1": 0.079638,
+      "p2": 0.0,
+      "p3": 0.272166,
+      "p4": 0.309875,
+      "p5": 0.33832,
+      "set_expected_rating": 3.8272,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.58743,
+      "cos_sim_2": 0.622306,
+      "cos_sim_3": 0.661189,
+      "cos_sim_4": 0.650796,
+      "cos_sim_5": 0.620205,
+      "min_similarity": 0.58743,
+      "p1": 0.0,
+      "p2": 0.170314,
+      "p3": 0.360193,
+      "p4": 0.30944,
+      "p5": 0.160053,
+      "set_expected_rating": 3.4592,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.713153,
+      "cos_sim_2": 0.720975,
+      "cos_sim_3": 0.695238,
+      "cos_sim_4": 0.749585,
+      "cos_sim_5": 0.711606,
+      "min_similarity": 0.695238,
+      "p1": 0.156645,
+      "p2": 0.225035,
+      "p3": 0.0,
+      "p4": 0.4752,
+      "p5": 0.14312,
+      "set_expected_rating": 3.2231,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.714159,
+      "cos_sim_2": 0.676499,
+      "cos_sim_3": 0.741827,
+      "cos_sim_4": 0.756659,
+      "cos_sim_5": 0.783289,
+      "min_similarity": 0.676499,
+      "p1": 0.12989,
+      "p2": 0.0,
+      "p3": 0.225316,
+      "p4": 0.276474,
+      "p5": 0.368319,
+      "set_expected_rating": 3.7533,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.548856,
+      "cos_sim_2": 0.581245,
+      "cos_sim_3": 0.593282,
+      "cos_sim_4": 0.618083,
+      "cos_sim_5": 0.684268,
+      "min_similarity": 0.548856,
+      "p1": 0.0,
+      "p2": 0.115077,
+      "p3": 0.157847,
+      "p4": 0.245962,
+      "p5": 0.481115,
+      "set_expected_rating": 4.0931,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.664871,
+      "cos_sim_2": 0.649793,
+      "cos_sim_3": 0.693556,
+      "cos_sim_4": 0.65178,
+      "cos_sim_5": 0.665182,
+      "min_similarity": 0.649793,
+      "p1": 0.197831,
+      "p2": 0.0,
+      "p3": 0.574197,
+      "p4": 0.026067,
+      "p5": 0.201904,
+      "set_expected_rating": 3.0342,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.721886,
+      "cos_sim_2": 0.693915,
+      "cos_sim_3": 0.712363,
+      "cos_sim_4": 0.759761,
+      "cos_sim_5": 0.790015,
+      "min_similarity": 0.693915,
+      "p1": 0.134242,
+      "p2": 0.0,
+      "p3": 0.088535,
+      "p4": 0.316014,
+      "p5": 0.461209,
+      "set_expected_rating": 3.9699,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Nova Pulse 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.530924,
+      "cos_sim_2": 0.562951,
+      "cos_sim_3": 0.611302,
+      "cos_sim_4": 0.55725,
+      "cos_sim_5": 0.562623,
+      "min_similarity": 0.530924,
+      "p1": 0.0,
+      "p2": 0.18792,
+      "p3": 0.471616,
+      "p4": 0.154469,
+      "p5": 0.185995,
+      "set_expected_rating": 3.3385,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

@@ -1,0 +1,2675 @@
+{
+  "evaluation_id": "tierphone_20261105_204730",
+  "product_name": "tierphone",
+  "ssr_method": "improved",
+  "ssr_method_label": "Improved SSR (Experimental, k=3, T=0.75)",
+  "k_truncation": 3,
+  "temperature": 0.75,
+  "comparison_summary": {
+    "active_ssr_method": "improved",
+    "active_ssr_label": "Improved SSR (Experimental, k=3, T=0.75)",
+    "is_comparison_mode": false,
+    "canonical": {
+      "method": "Canonical SSR (Original Reference Baseline)",
+      "k_truncation": 5,
+      "temperature": 1.0,
+      "primary_adoption_average": 3.0465,
+      "construct_averages": {
+        "PE": 3.2996,
+        "EE": 3.645,
+        "HM": 3.8633,
+        "SI": 3.2931,
+        "PP": 3.5036,
+        "BI": 3.0465
+      }
+    },
+    "improved": {
+      "method": "Improved SSR (Experimental)",
+      "k_truncation": 3,
+      "temperature": 0.75,
+      "primary_adoption_average": 2.978,
+      "construct_averages": {
+        "PE": 3.3588,
+        "EE": 3.854,
+        "HM": 4.0537,
+        "SI": 3.4034,
+        "PP": 3.828,
+        "BI": 2.978
+      }
+    },
+    "deltas": {
+      "primary_adoption_delta": -0.0685,
+      "construct_deltas": {
+        "PE": 0.0592,
+        "EE": 0.209,
+        "HM": 0.1904,
+        "SI": 0.1103,
+        "PP": 0.3244,
+        "BI": -0.0685
+      }
+    },
+    "persona_comparison": [
+      {
+        "persona_id": "P1_premium_tier_owner",
+        "canonical_adoption_rating": 2.9812,
+        "improved_adoption_rating": 2.8982,
+        "delta": -0.083
+      },
+      {
+        "persona_id": "P2_midrange_heavy_user",
+        "canonical_adoption_rating": 3.2712,
+        "improved_adoption_rating": 2.927,
+        "delta": -0.3442
+      },
+      {
+        "persona_id": "P3_midrange_moderate_user",
+        "canonical_adoption_rating": 2.8227,
+        "improved_adoption_rating": 2.7875,
+        "delta": -0.0352
+      },
+      {
+        "persona_id": "P4_budget_or_undisclosed_price",
+        "canonical_adoption_rating": 3.1108,
+        "improved_adoption_rating": 3.2992,
+        "delta": 0.1884
+      }
+    ]
+  },
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Improved SSR (Experimental, k=3, T=0.75))",
+  "timestamp_utc": "2026-11-05T15:25:54.200562+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 2.978,
+  "overall_adoption_average": 2.978,
+  "primary_adoption_average": 2.978,
+  "construct_averages": {
+    "PE": 3.3588,
+    "EE": 3.854,
+    "HM": 4.0537,
+    "SI": 3.4034,
+    "PP": 3.828,
+    "BI": 2.978
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "primary_adoption_rating": 2.8982,
+      "primary_adoption_pmf": [
+        0.0,
+        0.186824,
+        0.770665,
+        0.0,
+        0.042512
+      ],
+      "construct_scores": {
+        "PE": 3.0097,
+        "EE": 3.9942,
+        "HM": 3.491,
+        "SI": 2.9428,
+        "PP": 3.8999,
+        "BI": 2.8982
+      },
+      "construct_responses": {
+        "PE": "The device seems quite capable for its intended use, offering a decent set of features. However, given the price point, I'm skeptical if it can match the performance of more expensive devices in its category.",
+        "EE": "Setting it up and navigating its interface should be straightforward, but I wonder if the controls feel intuitive enough for everyday use.",
+        "HM": "Using it for daily tasks and media viewing would likely be pleasant, but I'm not sure if the audio quality and display are great enough to justify the price.",
+        "SI": "My peers might find it attractive due to its distinctive design, but they might also be hesitant given the price compared to the competition.",
+        "PP": "The build quality feels robust, but I'm concerned that some components might be mid-range, which could affect its long-term reliability.",
+        "BI": "Given the price, I'm hesitant to adopt this device. It needs to deliver premium quality and distinctive features to be considered a worthwhile purchase.",
+        "OVERALL": "While it has some appealing features, I need more convincing that it's worth the price for a premium-oriented consumer. It needs to offer exceptional value to make the switch worthwhile."
+      },
+      "response_text": "While it has some appealing features, I need more convincing that it's worth the price for a premium-oriented consumer. It needs to offer exceptional value to make the switch worthwhile.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The device seems quite capable for its intended use, offering a decent set of features. However, given the price point, I'm skeptical if it can match the performance of more expensive devices in its category.",
+          "cosine_similarities": [
+            0.565135,
+            0.594475,
+            0.631795,
+            0.564988,
+            0.583094
+          ],
+          "min_similarity": 0.564988,
+          "pmf_probabilities": [
+            0.0,
+            0.22234,
+            0.661625,
+            0.0,
+            0.116035
+          ],
+          "expected_rating": 3.0097,
+          "canonical": {
+            "pmf_probabilities": [
+              0.001282,
+              0.257423,
+              0.583234,
+              0.0,
+              0.158061
+            ],
+            "expected_rating": 3.0561
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.22234,
+              0.661625,
+              0.0,
+              0.116035
+            ],
+            "expected_rating": 3.0097
+          },
+          "delta_improved_minus_canonical": -0.0464,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting it up and navigating its interface should be straightforward, but I wonder if the controls feel intuitive enough for everyday use.",
+          "cosine_similarities": [
+            0.538476,
+            0.550208,
+            0.602042,
+            0.598058,
+            0.601239
+          ],
+          "min_similarity": 0.538476,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.344765,
+            0.316261,
+            0.338975
+          ],
+          "expected_rating": 3.9942,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.059358,
+              0.321619,
+              0.301463,
+              0.31756
+            ],
+            "expected_rating": 3.8772
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.344765,
+              0.316261,
+              0.338975
+            ],
+            "expected_rating": 3.9942
+          },
+          "delta_improved_minus_canonical": 0.117,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using it for daily tasks and media viewing would likely be pleasant, but I'm not sure if the audio quality and display are great enough to justify the price.",
+          "cosine_similarities": [
+            0.517224,
+            0.524164,
+            0.541742,
+            0.550643,
+            0.517204
+          ],
+          "min_similarity": 0.517204,
+          "pmf_probabilities": [
+            0.0,
+            0.069102,
+            0.37075,
+            0.560148,
+            0.0
+          ],
+          "expected_rating": 3.491,
+          "canonical": {
+            "pmf_probabilities": [
+              0.000308,
+              0.107156,
+              0.377753,
+              0.514783,
+              0.0
+            ],
+            "expected_rating": 3.407
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.069102,
+              0.37075,
+              0.560148,
+              0.0
+            ],
+            "expected_rating": 3.491
+          },
+          "delta_improved_minus_canonical": 0.084,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers might find it attractive due to its distinctive design, but they might also be hesitant given the price compared to the competition.",
+          "cosine_similarities": [
+            0.506612,
+            0.553699,
+            0.594207,
+            0.541498,
+            0.475644
+          ],
+          "min_similarity": 0.475644,
+          "pmf_probabilities": [
+            0.0,
+            0.282225,
+            0.492783,
+            0.224992,
+            0.0
+          ],
+          "expected_rating": 2.9428,
+          "canonical": {
+            "pmf_probabilities": [
+              0.105535,
+              0.266001,
+              0.404044,
+              0.22442,
+              0.0
+            ],
+            "expected_rating": 2.7474
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.282225,
+              0.492783,
+              0.224992,
+              0.0
+            ],
+            "expected_rating": 2.9428
+          },
+          "delta_improved_minus_canonical": 0.1954,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality feels robust, but I'm concerned that some components might be mid-range, which could affect its long-term reliability.",
+          "cosine_similarities": [
+            0.435763,
+            0.415517,
+            0.445175,
+            0.438967,
+            0.439452
+          ],
+          "min_similarity": 0.415517,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.402815,
+            0.294519,
+            0.302666
+          ],
+          "expected_rating": 3.8999,
+          "canonical": {
+            "pmf_probabilities": [
+              0.208099,
+              0.0,
+              0.304844,
+              0.241037,
+              0.24602
+            ],
+            "expected_rating": 3.3169
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.402815,
+              0.294519,
+              0.302666
+            ],
+            "expected_rating": 3.8999
+          },
+          "delta_improved_minus_canonical": 0.583,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Given the price, I'm hesitant to adopt this device. It needs to deliver premium quality and distinctive features to be considered a worthwhile purchase.",
+          "cosine_similarities": [
+            0.542497,
+            0.568868,
+            0.618828,
+            0.549269,
+            0.551185
+          ],
+          "min_similarity": 0.542497,
+          "pmf_probabilities": [
+            0.0,
+            0.186824,
+            0.770665,
+            0.0,
+            0.042512
+          ],
+          "expected_rating": 2.8982,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.223176,
+              0.645985,
+              0.057311,
+              0.073528
+            ],
+            "expected_rating": 2.9812
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.186824,
+              0.770665,
+              0.0,
+              0.042512
+            ],
+            "expected_rating": 2.8982
+          },
+          "delta_improved_minus_canonical": -0.083,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "primary_adoption_rating": 2.927,
+      "primary_adoption_pmf": [
+        0.0,
+        0.270089,
+        0.532844,
+        0.197068,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 3.5646,
+        "EE": 4.2132,
+        "HM": 4.2293,
+        "SI": 4.0777,
+        "PP": 3.8507,
+        "BI": 2.927
+      },
+      "construct_responses": {
+        "PE": "This tierphone offers impressive performance with its powerful processor and ample RAM, making it capable of handling heavy daily work smoothly. However, I'm skeptical about its ability to handle intensive multitasking for extended periods without potential throttling issues at this price point.",
+        "EE": "Setting up and operating the tierphone is straightforward, with an intuitive interface that makes navigation easy. The controls are well-designed, though I would like to see more customization options for power users.",
+        "HM": "Using the tierphone for daily tasks and media viewing is pleasant, thanks to its vibrant display and good battery life. The audio quality is decent, though I'd prefer a bit more clarity in the sound.",
+        "SI": "My tech-savvy friends would likely be impressed with the tierphone's advanced features and sleek design. It positions well in terms of status and functionality among peers.",
+        "PP": "The build quality feels sturdy and well-made, with a good level of protection against accidental drops and spills. The hardware reliability seems promising, but I'm concerned about potential software bugs that could affect long-term performance.",
+        "BI": "Given the price and the specifications, I'm hesitant to fully commit to this tierphone. While it has many appealing features, I need to see more real-world performance to justify the cost. I might give it a chance if it proves to be reliable and doesn't throttle under heavy use.",
+        "OVERALL": "The tierphone looks promising with its performance and features, but I need to see more in practical use before I can fully recommend it. It seems like a solid choice if the price is right for me."
+      },
+      "response_text": "The tierphone looks promising with its performance and features, but I need to see more in practical use before I can fully recommend it. It seems like a solid choice if the price is right for me.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This tierphone offers impressive performance with its powerful processor and ample RAM, making it capable of handling heavy daily work smoothly. However, I'm skeptical about its ability to handle intensive multitasking for extended periods without potential throttling issues at this price point.",
+          "cosine_similarities": [
+            0.603946,
+            0.613917,
+            0.586275,
+            0.614955,
+            0.609028
+          ],
+          "min_similarity": 0.586275,
+          "pmf_probabilities": [
+            0.0,
+            0.354381,
+            0.0,
+            0.372243,
+            0.273376
+          ],
+          "expected_rating": 3.5646,
+          "canonical": {
+            "pmf_probabilities": [
+              0.182656,
+              0.285715,
+              0.0,
+              0.296449,
+              0.23518
+            ],
+            "expected_rating": 3.1158
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.354381,
+              0.0,
+              0.372243,
+              0.273376
+            ],
+            "expected_rating": 3.5646
+          },
+          "delta_improved_minus_canonical": 0.4488,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and operating the tierphone is straightforward, with an intuitive interface that makes navigation easy. The controls are well-designed, though I would like to see more customization options for power users.",
+          "cosine_similarities": [
+            0.576168,
+            0.596743,
+            0.610269,
+            0.608648,
+            0.629067
+          ],
+          "min_similarity": 0.576168,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.267895,
+            0.251047,
+            0.481058
+          ],
+          "expected_rating": 4.2132,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.146909,
+              0.243485,
+              0.231907,
+              0.377699
+            ],
+            "expected_rating": 3.8404
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.267895,
+              0.251047,
+              0.481058
+            ],
+            "expected_rating": 4.2132
+          },
+          "delta_improved_minus_canonical": 0.3728,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the tierphone for daily tasks and media viewing is pleasant, thanks to its vibrant display and good battery life. The audio quality is decent, though I'd prefer a bit more clarity in the sound.",
+          "cosine_similarities": [
+            0.588321,
+            0.603989,
+            0.602457,
+            0.662084,
+            0.642592
+          ],
+          "min_similarity": 0.588321,
+          "pmf_probabilities": [
+            0.0,
+            0.070765,
+            0.0,
+            0.558364,
+            0.370871
+          ],
+          "expected_rating": 4.2293,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.099267,
+              0.089563,
+              0.467332,
+              0.343839
+            ],
+            "expected_rating": 4.0557
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.070765,
+              0.0,
+              0.558364,
+              0.370871
+            ],
+            "expected_rating": 4.2293
+          },
+          "delta_improved_minus_canonical": 0.1736,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My tech-savvy friends would likely be impressed with the tierphone's advanced features and sleek design. It positions well in terms of status and functionality among peers.",
+          "cosine_similarities": [
+            0.612742,
+            0.582944,
+            0.64902,
+            0.662717,
+            0.662301
+          ],
+          "min_similarity": 0.582944,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.280729,
+            0.360888,
+            0.358383
+          ],
+          "expected_rating": 4.0777,
+          "canonical": {
+            "pmf_probabilities": [
+              0.116853,
+              0.0,
+              0.259116,
+              0.31283,
+              0.3112
+            ],
+            "expected_rating": 3.7015
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.280729,
+              0.360888,
+              0.358383
+            ],
+            "expected_rating": 4.0777
+          },
+          "delta_improved_minus_canonical": 0.3761,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build quality feels sturdy and well-made, with a good level of protection against accidental drops and spills. The hardware reliability seems promising, but I'm concerned about potential software bugs that could affect long-term performance.",
+          "cosine_similarities": [
+            0.48775,
+            0.455294,
+            0.481671,
+            0.490622,
+            0.516596
+          ],
+          "min_similarity": 0.455294,
+          "pmf_probabilities": [
+            0.224495,
+            0.0,
+            0.0,
+            0.251363,
+            0.524142
+          ],
+          "expected_rating": 3.8507,
+          "canonical": {
+            "pmf_probabilities": [
+              0.20877,
+              0.0,
+              0.169665,
+              0.227243,
+              0.394321
+            ],
+            "expected_rating": 3.5983
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.224495,
+              0.0,
+              0.0,
+              0.251363,
+              0.524142
+            ],
+            "expected_rating": 3.8507
+          },
+          "delta_improved_minus_canonical": 0.2523,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Given the price and the specifications, I'm hesitant to fully commit to this tierphone. While it has many appealing features, I need to see more real-world performance to justify the cost. I might give it a chance if it proves to be reliable and doesn't throttle under heavy use.",
+          "cosine_similarities": [
+            0.567786,
+            0.609739,
+            0.637623,
+            0.600907,
+            0.595627
+          ],
+          "min_similarity": 0.567786,
+          "pmf_probabilities": [
+            0.0,
+            0.270089,
+            0.532844,
+            0.197068,
+            0.0
+          ],
+          "expected_rating": 2.927,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.242853,
+              0.404262,
+              0.191723,
+              0.161162
+            ],
+            "expected_rating": 3.2712
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.270089,
+              0.532844,
+              0.197068,
+              0.0
+            ],
+            "expected_rating": 2.927
+          },
+          "delta_improved_minus_canonical": -0.3442,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "primary_adoption_rating": 2.7875,
+      "primary_adoption_pmf": [
+        0.0,
+        0.304713,
+        0.603076,
+        0.092211,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 3.8669,
+        "EE": 4.0145,
+        "HM": 4.1043,
+        "SI": 3.5427,
+        "PP": 3.6748,
+        "BI": 2.7875
+      },
+      "construct_responses": {
+        "PE": "The device seems very powerful with its high-speed processor and large display, making it suitable for intensive tasks like video editing or graphic design. However, it might be overkill for basic tasks like web browsing and document editing.",
+        "EE": "Setting up and navigating the device appears straightforward, with an intuitive interface. Maintenance should be hassle-free as well, given its simplicity.",
+        "HM": "Using it for daily tasks would be enjoyable due to its large, high-resolution display and fast performance, though the high price might make some users hesitant.",
+        "SI": "My peers and colleagues would likely view it positively due to its high performance and professional features, but they might also question its necessity for everyday tasks.",
+        "PP": "The device feels robust with its durable build, and its hardware reliability should last a long time. Data security is not explicitly mentioned, so it's unclear if there are any specific features to protect user data.",
+        "BI": "Given the on the higher side price, I would be hesitant to adopt this device for everyday tasks. Simpler and more affordable alternatives would likely suffice for most users. It might be more suitable for professionals who need top-tier performance for their work.",
+        "OVERALL": "While the device offers impressive performance for specific tasks, its high price makes it a tough sell for everyday use. It might be better suited for professionals who need top-tier hardware."
+      },
+      "response_text": "While the device offers impressive performance for specific tasks, its high price makes it a tough sell for everyday use. It might be better suited for professionals who need top-tier hardware.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The device seems very powerful with its high-speed processor and large display, making it suitable for intensive tasks like video editing or graphic design. However, it might be overkill for basic tasks like web browsing and document editing.",
+          "cosine_similarities": [
+            0.611103,
+            0.616962,
+            0.639764,
+            0.626508,
+            0.633358
+          ],
+          "min_similarity": 0.611103,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.464959,
+            0.203197,
+            0.331845
+          ],
+          "expected_rating": 3.8669,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.081169,
+              0.397076,
+              0.213427,
+              0.308328
+            ],
+            "expected_rating": 3.7489
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.464959,
+              0.203197,
+              0.331845
+            ],
+            "expected_rating": 3.8669
+          },
+          "delta_improved_minus_canonical": 0.118,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and navigating the device appears straightforward, with an intuitive interface. Maintenance should be hassle-free as well, given its simplicity.",
+          "cosine_similarities": [
+            0.574455,
+            0.595114,
+            0.677225,
+            0.648844,
+            0.68022
+          ],
+          "min_similarity": 0.574455,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.371892,
+            0.241699,
+            0.38641
+          ],
+          "expected_rating": 4.0145,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.068052,
+              0.338524,
+              0.245037,
+              0.348387
+            ],
+            "expected_rating": 3.8738
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.371892,
+              0.241699,
+              0.38641
+            ],
+            "expected_rating": 4.0145
+          },
+          "delta_improved_minus_canonical": 0.1408,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using it for daily tasks would be enjoyable due to its large, high-resolution display and fast performance, though the high price might make some users hesitant.",
+          "cosine_similarities": [
+            0.525072,
+            0.519221,
+            0.54069,
+            0.554799,
+            0.547755
+          ],
+          "min_similarity": 0.519221,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.226122,
+            0.44345,
+            0.330428
+          ],
+          "expected_rating": 4.1043,
+          "canonical": {
+            "pmf_probabilities": [
+              0.063993,
+              0.0,
+              0.234807,
+              0.389123,
+              0.312076
+            ],
+            "expected_rating": 3.8853
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.226122,
+              0.44345,
+              0.330428
+            ],
+            "expected_rating": 4.1043
+          },
+          "delta_improved_minus_canonical": 0.219,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers and colleagues would likely view it positively due to its high performance and professional features, but they might also question its necessity for everyday tasks.",
+          "cosine_similarities": [
+            0.589211,
+            0.59471,
+            0.651997,
+            0.64434,
+            0.60108
+          ],
+          "min_similarity": 0.589211,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.513005,
+            0.431334,
+            0.05566
+          ],
+          "expected_rating": 3.5427,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.040648,
+              0.464106,
+              0.407509,
+              0.087737
+            ],
+            "expected_rating": 3.5423
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.513005,
+              0.431334,
+              0.05566
+            ],
+            "expected_rating": 3.5427
+          },
+          "delta_improved_minus_canonical": 0.0003,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The device feels robust with its durable build, and its hardware reliability should last a long time. Data security is not explicitly mentioned, so it's unclear if there are any specific features to protect user data.",
+          "cosine_similarities": [
+            0.654108,
+            0.642155,
+            0.605741,
+            0.676081,
+            0.675008
+          ],
+          "min_similarity": 0.605741,
+          "pmf_probabilities": [
+            0.234636,
+            0.0,
+            0.0,
+            0.386605,
+            0.378759
+          ],
+          "expected_rating": 3.6748,
+          "canonical": {
+            "pmf_probabilities": [
+              0.215551,
+              0.16228,
+              0.0,
+              0.313476,
+              0.308692
+            ],
+            "expected_rating": 3.3375
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.234636,
+              0.0,
+              0.0,
+              0.386605,
+              0.378759
+            ],
+            "expected_rating": 3.6748
+          },
+          "delta_improved_minus_canonical": 0.3374,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Given the on the higher side price, I would be hesitant to adopt this device for everyday tasks. Simpler and more affordable alternatives would likely suffice for most users. It might be more suitable for professionals who need top-tier performance for their work.",
+          "cosine_similarities": [
+            0.530243,
+            0.564491,
+            0.587391,
+            0.544217,
+            0.530974
+          ],
+          "min_similarity": 0.530243,
+          "pmf_probabilities": [
+            0.0,
+            0.304713,
+            0.603076,
+            0.092211,
+            0.0
+          ],
+          "expected_rating": 2.7875,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.322792,
+              0.538622,
+              0.131702,
+              0.006884
+            ],
+            "expected_rating": 2.8227
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.304713,
+              0.603076,
+              0.092211,
+              0.0
+            ],
+            "expected_rating": 2.7875
+          },
+          "delta_improved_minus_canonical": -0.0352,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "primary_adoption_rating": 3.2992,
+      "primary_adoption_pmf": [
+        0.0,
+        0.139662,
+        0.640912,
+        0.0,
+        0.219426
+      ],
+      "construct_scores": {
+        "PE": 2.9939,
+        "EE": 3.1941,
+        "HM": 4.3902,
+        "SI": 3.0503,
+        "PP": 3.8866,
+        "BI": 3.2992
+      },
+      "construct_responses": {
+        "PE": "The tierphone is highly effective for its primary purpose, offering a powerful processor and ample storage. However, the high price might make it less appealing for budget-conscious users.",
+        "EE": "Setting up and navigating the tierphone feels straightforward, with an intuitive interface, but the on the higher side price might make it seem like an overcomplicated purchase.",
+        "HM": "Using the tierphone for daily tasks and media viewing is quite enjoyable, thanks to its high-resolution display and long battery life. The sound quality is impressive, but the cost might be a deterrent.",
+        "SI": "Peers might find the tierphone impressive due to its advanced features, but the high price tag could overshadow its benefits.",
+        "PP": "The tierphone has a robust build and reliable hardware, ensuring long-term use. However, the high price might make some hesitant about the value it provides.",
+        "BI": "Given the ₹30,000 price, the tierphone is far too expensive for the price. I would need more compelling reasons to justify such a significant financial investment.",
+        "OVERALL": "While the tierphone offers some impressive features, its high price makes it hard to justify, especially for budget-conscious consumers like me."
+      },
+      "response_text": "While the tierphone offers some impressive features, its high price makes it hard to justify, especially for budget-conscious consumers like me.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The tierphone is highly effective for its primary purpose, offering a powerful processor and ample storage. However, the high price might make it less appealing for budget-conscious users.",
+          "cosine_similarities": [
+            0.575183,
+            0.595873,
+            0.586711,
+            0.595643,
+            0.583816
+          ],
+          "min_similarity": 0.575183,
+          "pmf_probabilities": [
+            0.0,
+            0.409224,
+            0.187622,
+            0.403155,
+            0.0
+          ],
+          "expected_rating": 2.9939,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.337466,
+              0.188028,
+              0.333706,
+              0.1408
+            ],
+            "expected_rating": 3.2778
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.409224,
+              0.187622,
+              0.403155,
+              0.0
+            ],
+            "expected_rating": 2.9939
+          },
+          "delta_improved_minus_canonical": -0.2839,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and navigating the tierphone feels straightforward, with an intuitive interface, but the on the higher side price might make it seem like an overcomplicated purchase.",
+          "cosine_similarities": [
+            0.575124,
+            0.572404,
+            0.60154,
+            0.556207,
+            0.582606
+          ],
+          "min_similarity": 0.556207,
+          "pmf_probabilities": [
+            0.173417,
+            0.0,
+            0.55613,
+            0.0,
+            0.270452
+          ],
+          "expected_rating": 3.1941,
+          "canonical": {
+            "pmf_probabilities": [
+              0.177047,
+              0.151591,
+              0.42428,
+              0.0,
+              0.247081
+            ],
+            "expected_rating": 2.9885
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.173417,
+              0.0,
+              0.55613,
+              0.0,
+              0.270452
+            ],
+            "expected_rating": 3.1941
+          },
+          "delta_improved_minus_canonical": 0.2056,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using the tierphone for daily tasks and media viewing is quite enjoyable, thanks to its high-resolution display and long battery life. The sound quality is impressive, but the cost might be a deterrent.",
+          "cosine_similarities": [
+            0.583632,
+            0.597785,
+            0.604162,
+            0.638686,
+            0.648793
+          ],
+          "min_similarity": 0.583632,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.106497,
+            0.396761,
+            0.496742
+          ],
+          "expected_rating": 4.3902,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.091368,
+              0.13254,
+              0.35542,
+              0.420672
+            ],
+            "expected_rating": 4.1054
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.106497,
+              0.396761,
+              0.496742
+            ],
+            "expected_rating": 4.3902
+          },
+          "delta_improved_minus_canonical": 0.2849,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers might find the tierphone impressive due to its advanced features, but the high price tag could overshadow its benefits.",
+          "cosine_similarities": [
+            0.55993,
+            0.543615,
+            0.603578,
+            0.558868,
+            0.562295
+          ],
+          "min_similarity": 0.543615,
+          "pmf_probabilities": [
+            0.12707,
+            0.0,
+            0.720725,
+            0.0,
+            0.152204
+          ],
+          "expected_rating": 3.0503,
+          "canonical": {
+            "pmf_probabilities": [
+              0.148035,
+              0.0,
+              0.544073,
+              0.1384,
+              0.169492
+            ],
+            "expected_rating": 3.1813
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.12707,
+              0.0,
+              0.720725,
+              0.0,
+              0.152204
+            ],
+            "expected_rating": 3.0503
+          },
+          "delta_improved_minus_canonical": -0.131,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The tierphone has a robust build and reliable hardware, ensuring long-term use. However, the high price might make some hesitant about the value it provides.",
+          "cosine_similarities": [
+            0.49535,
+            0.475332,
+            0.477053,
+            0.517373,
+            0.512945
+          ],
+          "min_similarity": 0.475332,
+          "pmf_probabilities": [
+            0.166445,
+            0.0,
+            0.0,
+            0.447648,
+            0.385907
+          ],
+          "expected_rating": 3.8866,
+          "canonical": {
+            "pmf_probabilities": [
+              0.197432,
+              0.0,
+              0.016971,
+              0.414636,
+              0.37096
+            ],
+            "expected_rating": 3.7617
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.166445,
+              0.0,
+              0.0,
+              0.447648,
+              0.385907
+            ],
+            "expected_rating": 3.8866
+          },
+          "delta_improved_minus_canonical": 0.1249,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Given the ₹30,000 price, the tierphone is far too expensive for the price. I would need more compelling reasons to justify such a significant financial investment.",
+          "cosine_similarities": [
+            0.515628,
+            0.52382,
+            0.564048,
+            0.504982,
+            0.531419
+          ],
+          "min_similarity": 0.504982,
+          "pmf_probabilities": [
+            0.0,
+            0.139662,
+            0.640912,
+            0.0,
+            0.219426
+          ],
+          "expected_rating": 3.2992,
+          "canonical": {
+            "pmf_probabilities": [
+              0.092586,
+              0.163832,
+              0.513674,
+              0.0,
+              0.229909
+            ],
+            "expected_rating": 3.1108
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.139662,
+              0.640912,
+              0.0,
+              0.219426
+            ],
+            "expected_rating": 3.2992
+          },
+          "delta_improved_minus_canonical": 0.1884,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.565135,
+        0.594475,
+        0.631795,
+        0.564988,
+        0.583094
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.22234,
+        0.661625,
+        0.0,
+        0.116035
+      ],
+      "expected_rating": 3.0097,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.538476,
+        0.550208,
+        0.602042,
+        0.598058,
+        0.601239
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.344765,
+        0.316261,
+        0.338975
+      ],
+      "expected_rating": 3.9942,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.517224,
+        0.524164,
+        0.541742,
+        0.550643,
+        0.517204
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.069102,
+        0.37075,
+        0.560148,
+        0.0
+      ],
+      "expected_rating": 3.491,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.506612,
+        0.553699,
+        0.594207,
+        0.541498,
+        0.475644
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.282225,
+        0.492783,
+        0.224992,
+        0.0
+      ],
+      "expected_rating": 2.9428,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.435763,
+        0.415517,
+        0.445175,
+        0.438967,
+        0.439452
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.402815,
+        0.294519,
+        0.302666
+      ],
+      "expected_rating": 3.8999,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.542497,
+        0.568868,
+        0.618828,
+        0.549269,
+        0.551185
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.186824,
+        0.770665,
+        0.0,
+        0.042512
+      ],
+      "expected_rating": 2.8982,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.603946,
+        0.613917,
+        0.586275,
+        0.614955,
+        0.609028
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.354381,
+        0.0,
+        0.372243,
+        0.273376
+      ],
+      "expected_rating": 3.5646,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.576168,
+        0.596743,
+        0.610269,
+        0.608648,
+        0.629067
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.267895,
+        0.251047,
+        0.481058
+      ],
+      "expected_rating": 4.2132,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.588321,
+        0.603989,
+        0.602457,
+        0.662084,
+        0.642592
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.070765,
+        0.0,
+        0.558364,
+        0.370871
+      ],
+      "expected_rating": 4.2293,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.612742,
+        0.582944,
+        0.64902,
+        0.662717,
+        0.662301
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.280729,
+        0.360888,
+        0.358383
+      ],
+      "expected_rating": 4.0777,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.48775,
+        0.455294,
+        0.481671,
+        0.490622,
+        0.516596
+      ],
+      "pmf_probabilities": [
+        0.224495,
+        0.0,
+        0.0,
+        0.251363,
+        0.524142
+      ],
+      "expected_rating": 3.8507,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.567786,
+        0.609739,
+        0.637623,
+        0.600907,
+        0.595627
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.270089,
+        0.532844,
+        0.197068,
+        0.0
+      ],
+      "expected_rating": 2.927,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.611103,
+        0.616962,
+        0.639764,
+        0.626508,
+        0.633358
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.464959,
+        0.203197,
+        0.331845
+      ],
+      "expected_rating": 3.8669,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.574455,
+        0.595114,
+        0.677225,
+        0.648844,
+        0.68022
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.371892,
+        0.241699,
+        0.38641
+      ],
+      "expected_rating": 4.0145,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.525072,
+        0.519221,
+        0.54069,
+        0.554799,
+        0.547755
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.226122,
+        0.44345,
+        0.330428
+      ],
+      "expected_rating": 4.1043,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.589211,
+        0.59471,
+        0.651997,
+        0.64434,
+        0.60108
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.513005,
+        0.431334,
+        0.05566
+      ],
+      "expected_rating": 3.5427,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.654108,
+        0.642155,
+        0.605741,
+        0.676081,
+        0.675008
+      ],
+      "pmf_probabilities": [
+        0.234636,
+        0.0,
+        0.0,
+        0.386605,
+        0.378759
+      ],
+      "expected_rating": 3.6748,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.530243,
+        0.564491,
+        0.587391,
+        0.544217,
+        0.530974
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.304713,
+        0.603076,
+        0.092211,
+        0.0
+      ],
+      "expected_rating": 2.7875,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.575183,
+        0.595873,
+        0.586711,
+        0.595643,
+        0.583816
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.409224,
+        0.187622,
+        0.403155,
+        0.0
+      ],
+      "expected_rating": 2.9939,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.575124,
+        0.572404,
+        0.60154,
+        0.556207,
+        0.582606
+      ],
+      "pmf_probabilities": [
+        0.173417,
+        0.0,
+        0.55613,
+        0.0,
+        0.270452
+      ],
+      "expected_rating": 3.1941,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.583632,
+        0.597785,
+        0.604162,
+        0.638686,
+        0.648793
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.106497,
+        0.396761,
+        0.496742
+      ],
+      "expected_rating": 4.3902,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.55993,
+        0.543615,
+        0.603578,
+        0.558868,
+        0.562295
+      ],
+      "pmf_probabilities": [
+        0.12707,
+        0.0,
+        0.720725,
+        0.0,
+        0.152204
+      ],
+      "expected_rating": 3.0503,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.49535,
+        0.475332,
+        0.477053,
+        0.517373,
+        0.512945
+      ],
+      "pmf_probabilities": [
+        0.166445,
+        0.0,
+        0.0,
+        0.447648,
+        0.385907
+      ],
+      "expected_rating": 3.8866,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.515628,
+        0.52382,
+        0.564048,
+        0.504982,
+        0.531419
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.139662,
+        0.640912,
+        0.0,
+        0.219426
+      ],
+      "expected_rating": 3.2992,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.565135,
+      "cos_sim_2": 0.594475,
+      "cos_sim_3": 0.631795,
+      "cos_sim_4": 0.564988,
+      "cos_sim_5": 0.583094,
+      "min_similarity": 0.564988,
+      "p1": 0.0,
+      "p2": 0.22234,
+      "p3": 0.661625,
+      "p4": 0.0,
+      "p5": 0.116035,
+      "set_expected_rating": 3.0097,
+      "canonical_expected_rating": 3.0561,
+      "improved_expected_rating": 3.0097,
+      "delta": -0.0464,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.538476,
+      "cos_sim_2": 0.550208,
+      "cos_sim_3": 0.602042,
+      "cos_sim_4": 0.598058,
+      "cos_sim_5": 0.601239,
+      "min_similarity": 0.538476,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.344765,
+      "p4": 0.316261,
+      "p5": 0.338975,
+      "set_expected_rating": 3.9942,
+      "canonical_expected_rating": 3.8772,
+      "improved_expected_rating": 3.9942,
+      "delta": 0.117,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.517224,
+      "cos_sim_2": 0.524164,
+      "cos_sim_3": 0.541742,
+      "cos_sim_4": 0.550643,
+      "cos_sim_5": 0.517204,
+      "min_similarity": 0.517204,
+      "p1": 0.0,
+      "p2": 0.069102,
+      "p3": 0.37075,
+      "p4": 0.560148,
+      "p5": 0.0,
+      "set_expected_rating": 3.491,
+      "canonical_expected_rating": 3.407,
+      "improved_expected_rating": 3.491,
+      "delta": 0.084,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.506612,
+      "cos_sim_2": 0.553699,
+      "cos_sim_3": 0.594207,
+      "cos_sim_4": 0.541498,
+      "cos_sim_5": 0.475644,
+      "min_similarity": 0.475644,
+      "p1": 0.0,
+      "p2": 0.282225,
+      "p3": 0.492783,
+      "p4": 0.224992,
+      "p5": 0.0,
+      "set_expected_rating": 2.9428,
+      "canonical_expected_rating": 2.7474,
+      "improved_expected_rating": 2.9428,
+      "delta": 0.1954,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.435763,
+      "cos_sim_2": 0.415517,
+      "cos_sim_3": 0.445175,
+      "cos_sim_4": 0.438967,
+      "cos_sim_5": 0.439452,
+      "min_similarity": 0.415517,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.402815,
+      "p4": 0.294519,
+      "p5": 0.302666,
+      "set_expected_rating": 3.8999,
+      "canonical_expected_rating": 3.3169,
+      "improved_expected_rating": 3.8999,
+      "delta": 0.583,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "tierphone",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.542497,
+      "cos_sim_2": 0.568868,
+      "cos_sim_3": 0.618828,
+      "cos_sim_4": 0.549269,
+      "cos_sim_5": 0.551185,
+      "min_similarity": 0.542497,
+      "p1": 0.0,
+      "p2": 0.186824,
+      "p3": 0.770665,
+      "p4": 0.0,
+      "p5": 0.042512,
+      "set_expected_rating": 2.8982,
+      "canonical_expected_rating": 2.9812,
+      "improved_expected_rating": 2.8982,
+      "delta": -0.083,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.603946,
+      "cos_sim_2": 0.613917,
+      "cos_sim_3": 0.586275,
+      "cos_sim_4": 0.614955,
+      "cos_sim_5": 0.609028,
+      "min_similarity": 0.586275,
+      "p1": 0.0,
+      "p2": 0.354381,
+      "p3": 0.0,
+      "p4": 0.372243,
+      "p5": 0.273376,
+      "set_expected_rating": 3.5646,
+      "canonical_expected_rating": 3.1158,
+      "improved_expected_rating": 3.5646,
+      "delta": 0.4488,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.576168,
+      "cos_sim_2": 0.596743,
+      "cos_sim_3": 0.610269,
+      "cos_sim_4": 0.608648,
+      "cos_sim_5": 0.629067,
+      "min_similarity": 0.576168,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.267895,
+      "p4": 0.251047,
+      "p5": 0.481058,
+      "set_expected_rating": 4.2132,
+      "canonical_expected_rating": 3.8404,
+      "improved_expected_rating": 4.2132,
+      "delta": 0.3728,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.588321,
+      "cos_sim_2": 0.603989,
+      "cos_sim_3": 0.602457,
+      "cos_sim_4": 0.662084,
+      "cos_sim_5": 0.642592,
+      "min_similarity": 0.588321,
+      "p1": 0.0,
+      "p2": 0.070765,
+      "p3": 0.0,
+      "p4": 0.558364,
+      "p5": 0.370871,
+      "set_expected_rating": 4.2293,
+      "canonical_expected_rating": 4.0557,
+      "improved_expected_rating": 4.2293,
+      "delta": 0.1736,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.612742,
+      "cos_sim_2": 0.582944,
+      "cos_sim_3": 0.64902,
+      "cos_sim_4": 0.662717,
+      "cos_sim_5": 0.662301,
+      "min_similarity": 0.582944,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.280729,
+      "p4": 0.360888,
+      "p5": 0.358383,
+      "set_expected_rating": 4.0777,
+      "canonical_expected_rating": 3.7015,
+      "improved_expected_rating": 4.0777,
+      "delta": 0.3761,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.48775,
+      "cos_sim_2": 0.455294,
+      "cos_sim_3": 0.481671,
+      "cos_sim_4": 0.490622,
+      "cos_sim_5": 0.516596,
+      "min_similarity": 0.455294,
+      "p1": 0.224495,
+      "p2": 0.0,
+      "p3": 0.0,
+      "p4": 0.251363,
+      "p5": 0.524142,
+      "set_expected_rating": 3.8507,
+      "canonical_expected_rating": 3.5983,
+      "improved_expected_rating": 3.8507,
+      "delta": 0.2523,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "tierphone",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.567786,
+      "cos_sim_2": 0.609739,
+      "cos_sim_3": 0.637623,
+      "cos_sim_4": 0.600907,
+      "cos_sim_5": 0.595627,
+      "min_similarity": 0.567786,
+      "p1": 0.0,
+      "p2": 0.270089,
+      "p3": 0.532844,
+      "p4": 0.197068,
+      "p5": 0.0,
+      "set_expected_rating": 2.927,
+      "canonical_expected_rating": 3.2712,
+      "improved_expected_rating": 2.927,
+      "delta": -0.3442,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.611103,
+      "cos_sim_2": 0.616962,
+      "cos_sim_3": 0.639764,
+      "cos_sim_4": 0.626508,
+      "cos_sim_5": 0.633358,
+      "min_similarity": 0.611103,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.464959,
+      "p4": 0.203197,
+      "p5": 0.331845,
+      "set_expected_rating": 3.8669,
+      "canonical_expected_rating": 3.7489,
+      "improved_expected_rating": 3.8669,
+      "delta": 0.118,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.574455,
+      "cos_sim_2": 0.595114,
+      "cos_sim_3": 0.677225,
+      "cos_sim_4": 0.648844,
+      "cos_sim_5": 0.68022,
+      "min_similarity": 0.574455,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.371892,
+      "p4": 0.241699,
+      "p5": 0.38641,
+      "set_expected_rating": 4.0145,
+      "canonical_expected_rating": 3.8738,
+      "improved_expected_rating": 4.0145,
+      "delta": 0.1408,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.525072,
+      "cos_sim_2": 0.519221,
+      "cos_sim_3": 0.54069,
+      "cos_sim_4": 0.554799,
+      "cos_sim_5": 0.547755,
+      "min_similarity": 0.519221,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.226122,
+      "p4": 0.44345,
+      "p5": 0.330428,
+      "set_expected_rating": 4.1043,
+      "canonical_expected_rating": 3.8853,
+      "improved_expected_rating": 4.1043,
+      "delta": 0.219,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.589211,
+      "cos_sim_2": 0.59471,
+      "cos_sim_3": 0.651997,
+      "cos_sim_4": 0.64434,
+      "cos_sim_5": 0.60108,
+      "min_similarity": 0.589211,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.513005,
+      "p4": 0.431334,
+      "p5": 0.05566,
+      "set_expected_rating": 3.5427,
+      "canonical_expected_rating": 3.5423,
+      "improved_expected_rating": 3.5427,
+      "delta": 0.0003,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.654108,
+      "cos_sim_2": 0.642155,
+      "cos_sim_3": 0.605741,
+      "cos_sim_4": 0.676081,
+      "cos_sim_5": 0.675008,
+      "min_similarity": 0.605741,
+      "p1": 0.234636,
+      "p2": 0.0,
+      "p3": 0.0,
+      "p4": 0.386605,
+      "p5": 0.378759,
+      "set_expected_rating": 3.6748,
+      "canonical_expected_rating": 3.3375,
+      "improved_expected_rating": 3.6748,
+      "delta": 0.3374,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "tierphone",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.530243,
+      "cos_sim_2": 0.564491,
+      "cos_sim_3": 0.587391,
+      "cos_sim_4": 0.544217,
+      "cos_sim_5": 0.530974,
+      "min_similarity": 0.530243,
+      "p1": 0.0,
+      "p2": 0.304713,
+      "p3": 0.603076,
+      "p4": 0.092211,
+      "p5": 0.0,
+      "set_expected_rating": 2.7875,
+      "canonical_expected_rating": 2.8227,
+      "improved_expected_rating": 2.7875,
+      "delta": -0.0352,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.575183,
+      "cos_sim_2": 0.595873,
+      "cos_sim_3": 0.586711,
+      "cos_sim_4": 0.595643,
+      "cos_sim_5": 0.583816,
+      "min_similarity": 0.575183,
+      "p1": 0.0,
+      "p2": 0.409224,
+      "p3": 0.187622,
+      "p4": 0.403155,
+      "p5": 0.0,
+      "set_expected_rating": 2.9939,
+      "canonical_expected_rating": 3.2778,
+      "improved_expected_rating": 2.9939,
+      "delta": -0.2839,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.575124,
+      "cos_sim_2": 0.572404,
+      "cos_sim_3": 0.60154,
+      "cos_sim_4": 0.556207,
+      "cos_sim_5": 0.582606,
+      "min_similarity": 0.556207,
+      "p1": 0.173417,
+      "p2": 0.0,
+      "p3": 0.55613,
+      "p4": 0.0,
+      "p5": 0.270452,
+      "set_expected_rating": 3.1941,
+      "canonical_expected_rating": 2.9885,
+      "improved_expected_rating": 3.1941,
+      "delta": 0.2056,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.583632,
+      "cos_sim_2": 0.597785,
+      "cos_sim_3": 0.604162,
+      "cos_sim_4": 0.638686,
+      "cos_sim_5": 0.648793,
+      "min_similarity": 0.583632,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.106497,
+      "p4": 0.396761,
+      "p5": 0.496742,
+      "set_expected_rating": 4.3902,
+      "canonical_expected_rating": 4.1054,
+      "improved_expected_rating": 4.3902,
+      "delta": 0.2849,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.55993,
+      "cos_sim_2": 0.543615,
+      "cos_sim_3": 0.603578,
+      "cos_sim_4": 0.558868,
+      "cos_sim_5": 0.562295,
+      "min_similarity": 0.543615,
+      "p1": 0.12707,
+      "p2": 0.0,
+      "p3": 0.720725,
+      "p4": 0.0,
+      "p5": 0.152204,
+      "set_expected_rating": 3.0503,
+      "canonical_expected_rating": 3.1813,
+      "improved_expected_rating": 3.0503,
+      "delta": -0.131,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.49535,
+      "cos_sim_2": 0.475332,
+      "cos_sim_3": 0.477053,
+      "cos_sim_4": 0.517373,
+      "cos_sim_5": 0.512945,
+      "min_similarity": 0.475332,
+      "p1": 0.166445,
+      "p2": 0.0,
+      "p3": 0.0,
+      "p4": 0.447648,
+      "p5": 0.385907,
+      "set_expected_rating": 3.8866,
+      "canonical_expected_rating": 3.7617,
+      "improved_expected_rating": 3.8866,
+      "delta": 0.1249,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "tierphone",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.515628,
+      "cos_sim_2": 0.52382,
+      "cos_sim_3": 0.564048,
+      "cos_sim_4": 0.504982,
+      "cos_sim_5": 0.531419,
+      "min_similarity": 0.504982,
+      "p1": 0.0,
+      "p2": 0.139662,
+      "p3": 0.640912,
+      "p4": 0.0,
+      "p5": 0.219426,
+      "set_expected_rating": 3.2992,
+      "canonical_expected_rating": 3.1108,
+      "improved_expected_rating": 3.2992,
+      "delta": 0.1884,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

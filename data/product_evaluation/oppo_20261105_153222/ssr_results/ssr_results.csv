@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,canonical_expected_rating,improved_expected_rating,delta,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,oppo,PE,Performance Expectancy,False,4.1921,4.0807,4.1921,0.1114,0.0,0.097045,0.0,0.516814,0.38614,nomic-embed-text
+P1_premium_tier_owner,oppo,EE,Effort Expectancy,False,4.1955,3.9796,4.1955,0.216,0.0,0.0,0.205635,0.393189,0.401176,nomic-embed-text
+P1_premium_tier_owner,oppo,HM,Hedonic Motivation,False,4.4582,4.0313,4.4582,0.4269,0.0,0.0,0.121914,0.298005,0.58008,nomic-embed-text
+P1_premium_tier_owner,oppo,SI,Social Influence,False,3.8928,3.6599,3.8928,0.2328,0.0,0.0,0.322886,0.461451,0.215663,nomic-embed-text
+P1_premium_tier_owner,oppo,PP,Perceived Protection,False,3.7336,3.4412,3.7336,0.2924,0.228302,0.0,0.0,0.353174,0.418524,nomic-embed-text
+P1_premium_tier_owner,oppo,BI,Behavioral Intention,True,3.9971,3.6689,3.9971,0.3283,0.0,0.0,0.263894,0.475092,0.261014,nomic-embed-text
+P2_midrange_heavy_user,oppo,PE,Performance Expectancy,False,3.6851,3.2606,3.6851,0.4245,0.0,0.234437,0.0,0.61157,0.153993,nomic-embed-text
+P2_midrange_heavy_user,oppo,EE,Effort Expectancy,False,3.9864,3.7701,3.9864,0.2162,0.0,0.0,0.305981,0.401641,0.292378,nomic-embed-text
+P2_midrange_heavy_user,oppo,HM,Hedonic Motivation,False,4.3678,4.1536,4.3678,0.2143,0.0,0.0,0.117216,0.397746,0.485038,nomic-embed-text
+P2_midrange_heavy_user,oppo,SI,Social Influence,False,3.9411,3.9046,3.9411,0.0365,0.0,0.0,0.357034,0.344814,0.298152,nomic-embed-text
+P2_midrange_heavy_user,oppo,PP,Perceived Protection,False,3.7694,3.4786,3.7694,0.2909,0.203438,0.0,0.0,0.416826,0.379736,nomic-embed-text
+P2_midrange_heavy_user,oppo,BI,Behavioral Intention,True,4.2837,3.9627,4.2837,0.321,0.0,0.0,0.106967,0.502357,0.390676,nomic-embed-text
+P3_midrange_moderate_user,oppo,PE,Performance Expectancy,False,3.7231,3.2939,3.7231,0.4292,0.0,0.209921,0.0,0.647133,0.142946,nomic-embed-text
+P3_midrange_moderate_user,oppo,EE,Effort Expectancy,False,4.1322,3.98,4.1322,0.1522,0.0,0.0,0.252673,0.362447,0.38488,nomic-embed-text
+P3_midrange_moderate_user,oppo,HM,Hedonic Motivation,False,4.3498,4.0943,4.3498,0.2555,0.0,0.0,0.139933,0.370329,0.489738,nomic-embed-text
+P3_midrange_moderate_user,oppo,SI,Social Influence,False,4.0373,3.8475,4.0373,0.1898,0.0,0.0,0.234274,0.494168,0.271558,nomic-embed-text
+P3_midrange_moderate_user,oppo,PP,Perceived Protection,False,2.2742,2.8425,2.2742,-0.5683,0.417995,0.235913,0.0,0.346092,0.0,nomic-embed-text
+P3_midrange_moderate_user,oppo,BI,Behavioral Intention,True,3.9398,3.7289,3.9398,0.2109,0.0,0.193894,0.0,0.478514,0.327593,nomic-embed-text
+P4_budget_or_undisclosed_price,oppo,PE,Performance Expectancy,False,3.8308,3.613,3.8308,0.2179,0.0,0.12622,0.0,0.790491,0.083289,nomic-embed-text
+P4_budget_or_undisclosed_price,oppo,EE,Effort Expectancy,False,3.9814,3.7682,3.9814,0.2132,0.0,0.0,0.351247,0.316107,0.332646,nomic-embed-text
+P4_budget_or_undisclosed_price,oppo,HM,Hedonic Motivation,False,3.4455,3.0858,3.4455,0.3597,0.0,0.110258,0.333949,0.555793,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,oppo,SI,Social Influence,False,2.9816,3.1943,2.9816,-0.2127,0.0,0.258717,0.500955,0.240328,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,oppo,PP,Perceived Protection,False,3.8259,3.2481,3.8259,0.5779,0.0,0.263105,0.0,0.384744,0.352152,nomic-embed-text
+P4_budget_or_undisclosed_price,oppo,BI,Behavioral Intention,True,4.0075,3.7828,4.0075,0.2247,0.0,0.178709,0.0,0.456405,0.364886,nomic-embed-text

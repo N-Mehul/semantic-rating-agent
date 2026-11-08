@@ -1,0 +1,543 @@
+{
+  "evaluation_id": "sony_playstation_5_slim_20261101_111610",
+  "product_name": "Sony PlayStation 5 Slim",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-11-01T05:49:00.276832+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 1,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 2.4155,
+  "overall_adoption_average": 2.4155,
+  "primary_adoption_average": 2.4155,
+  "construct_averages": {
+    "PE": 2.2723,
+    "EE": 3.1299,
+    "HM": 2.2696,
+    "SI": 2.8462,
+    "PP": 3.1689,
+    "BI": 2.4155
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 6,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "primary_adoption_rating": 2.4155,
+      "primary_adoption_pmf": [
+        0.358459,
+        0.281903,
+        0.152481,
+        0.0,
+        0.207157
+      ],
+      "construct_scores": {
+        "PE": 2.2723,
+        "EE": 3.1299,
+        "HM": 2.2696,
+        "SI": 2.8462,
+        "PP": 3.1689,
+        "BI": 2.4155
+      },
+      "construct_responses": {
+        "PE": "For daily study tasks, it might help with reminders and notifications, but it's too pricey for my needs. I need something more budget-friendly.",
+        "EE": "Setting it up and using it might be simple, but it's not something I can afford. It feels like a luxury product.",
+        "HM": "Using it for fun would be enjoyable, but I can't justify the cost. It's not something I can enjoy regularly.",
+        "SI": "Friends might think I'm cool for having one, but it's out of my budget. They would probably suggest getting a more affordable option.",
+        "PP": "I trust the device to be reliable, but the high price makes me feel uneasy about the value for money.",
+        "BI": "I cannot continue using this product as my primary daily driver. It's too expensive and I have more pressing needs.",
+        "OVERALL": "While the features seem interesting, the price is beyond my current budget. I need something more affordable for daily use."
+      },
+      "response_text": "While the features seem interesting, the price is beyond my current budget. I need something more affordable for daily use.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "For daily study tasks, it might help with reminders and notifications, but it's too pricey for my needs. I need something more budget-friendly.",
+          "cosine_similarities": [
+            0.67363,
+            0.668133,
+            0.611397,
+            0.651237,
+            0.583083
+          ],
+          "min_similarity": 0.583083,
+          "pmf_probabilities": [
+            0.332814,
+            0.312608,
+            0.104072,
+            0.250506,
+            0.0
+          ],
+          "expected_rating": 2.2723,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting it up and using it might be simple, but it's not something I can afford. It feels like a luxury product.",
+          "cosine_similarities": [
+            0.562896,
+            0.52615,
+            0.559523,
+            0.51582,
+            0.578716
+          ],
+          "min_similarity": 0.51582,
+          "pmf_probabilities": [
+            0.287041,
+            0.062989,
+            0.26647,
+            0.0,
+            0.3835
+          ],
+          "expected_rating": 3.1299,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using it for fun would be enjoyable, but I can't justify the cost. It's not something I can enjoy regularly.",
+          "cosine_similarities": [
+            0.625264,
+            0.66149,
+            0.657449,
+            0.586321,
+            0.592824
+          ],
+          "min_similarity": 0.586321,
+          "pmf_probabilities": [
+            0.203099,
+            0.392031,
+            0.370955,
+            0.0,
+            0.033915
+          ],
+          "expected_rating": 2.2696,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Friends might think I'm cool for having one, but it's out of my budget. They would probably suggest getting a more affordable option.",
+          "cosine_similarities": [
+            0.50177,
+            0.541722,
+            0.574966,
+            0.510772,
+            0.507417
+          ],
+          "min_similarity": 0.50177,
+          "pmf_probabilities": [
+            0.0,
+            0.312617,
+            0.572751,
+            0.07044,
+            0.044192
+          ],
+          "expected_rating": 2.8462,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "I trust the device to be reliable, but the high price makes me feel uneasy about the value for money.",
+          "cosine_similarities": [
+            0.578124,
+            0.499429,
+            0.522559,
+            0.54326,
+            0.574883
+          ],
+          "min_similarity": 0.499429,
+          "pmf_probabilities": [
+            0.355908,
+            0.0,
+            0.104609,
+            0.198233,
+            0.34125
+          ],
+          "expected_rating": 3.1689,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I cannot continue using this product as my primary daily driver. It's too expensive and I have more pressing needs.",
+          "cosine_similarities": [
+            0.650837,
+            0.635916,
+            0.610692,
+            0.580973,
+            0.621348
+          ],
+          "min_similarity": 0.580973,
+          "pmf_probabilities": [
+            0.358459,
+            0.281903,
+            0.152481,
+            0.0,
+            0.207157
+          ],
+          "expected_rating": 2.4155,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.67363,
+        0.668133,
+        0.611397,
+        0.651237,
+        0.583083
+      ],
+      "pmf_probabilities": [
+        0.332814,
+        0.312608,
+        0.104072,
+        0.250506,
+        0.0
+      ],
+      "expected_rating": 2.2723,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.562896,
+        0.52615,
+        0.559523,
+        0.51582,
+        0.578716
+      ],
+      "pmf_probabilities": [
+        0.287041,
+        0.062989,
+        0.26647,
+        0.0,
+        0.3835
+      ],
+      "expected_rating": 3.1299,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.625264,
+        0.66149,
+        0.657449,
+        0.586321,
+        0.592824
+      ],
+      "pmf_probabilities": [
+        0.203099,
+        0.392031,
+        0.370955,
+        0.0,
+        0.033915
+      ],
+      "expected_rating": 2.2696,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.50177,
+        0.541722,
+        0.574966,
+        0.510772,
+        0.507417
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.312617,
+        0.572751,
+        0.07044,
+        0.044192
+      ],
+      "expected_rating": 2.8462,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.578124,
+        0.499429,
+        0.522559,
+        0.54326,
+        0.574883
+      ],
+      "pmf_probabilities": [
+        0.355908,
+        0.0,
+        0.104609,
+        0.198233,
+        0.34125
+      ],
+      "expected_rating": 3.1689,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.650837,
+        0.635916,
+        0.610692,
+        0.580973,
+        0.621348
+      ],
+      "pmf_probabilities": [
+        0.358459,
+        0.281903,
+        0.152481,
+        0.0,
+        0.207157
+      ],
+      "expected_rating": 2.4155,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.67363,
+      "cos_sim_2": 0.668133,
+      "cos_sim_3": 0.611397,
+      "cos_sim_4": 0.651237,
+      "cos_sim_5": 0.583083,
+      "min_similarity": 0.583083,
+      "p1": 0.332814,
+      "p2": 0.312608,
+      "p3": 0.104072,
+      "p4": 0.250506,
+      "p5": 0.0,
+      "set_expected_rating": 2.2723,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.562896,
+      "cos_sim_2": 0.52615,
+      "cos_sim_3": 0.559523,
+      "cos_sim_4": 0.51582,
+      "cos_sim_5": 0.578716,
+      "min_similarity": 0.51582,
+      "p1": 0.287041,
+      "p2": 0.062989,
+      "p3": 0.26647,
+      "p4": 0.0,
+      "p5": 0.3835,
+      "set_expected_rating": 3.1299,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.625264,
+      "cos_sim_2": 0.66149,
+      "cos_sim_3": 0.657449,
+      "cos_sim_4": 0.586321,
+      "cos_sim_5": 0.592824,
+      "min_similarity": 0.586321,
+      "p1": 0.203099,
+      "p2": 0.392031,
+      "p3": 0.370955,
+      "p4": 0.0,
+      "p5": 0.033915,
+      "set_expected_rating": 2.2696,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.50177,
+      "cos_sim_2": 0.541722,
+      "cos_sim_3": 0.574966,
+      "cos_sim_4": 0.510772,
+      "cos_sim_5": 0.507417,
+      "min_similarity": 0.50177,
+      "p1": 0.0,
+      "p2": 0.312617,
+      "p3": 0.572751,
+      "p4": 0.07044,
+      "p5": 0.044192,
+      "set_expected_rating": 2.8462,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.578124,
+      "cos_sim_2": 0.499429,
+      "cos_sim_3": 0.522559,
+      "cos_sim_4": 0.54326,
+      "cos_sim_5": 0.574883,
+      "min_similarity": 0.499429,
+      "p1": 0.355908,
+      "p2": 0.0,
+      "p3": 0.104609,
+      "p4": 0.198233,
+      "p5": 0.34125,
+      "set_expected_rating": 3.1689,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Sony PlayStation 5 Slim",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.650837,
+      "cos_sim_2": 0.635916,
+      "cos_sim_3": 0.610692,
+      "cos_sim_4": 0.580973,
+      "cos_sim_5": 0.621348,
+      "min_similarity": 0.580973,
+      "p1": 0.358459,
+      "p2": 0.281903,
+      "p3": 0.152481,
+      "p4": 0.0,
+      "p5": 0.207157,
+      "set_expected_rating": 2.4155,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

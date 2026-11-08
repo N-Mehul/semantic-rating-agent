@@ -1,0 +1,25 @@
+persona_id,product_name,anchor_set_code,anchor_set_name,cos_sim_1,cos_sim_2,cos_sim_3,cos_sim_4,cos_sim_5,min_similarity,p1,p2,p3,p4,p5,set_expected_rating,embedding_model
+P1_premium_tier_owner,Garmin Venu 3 Smartwatch,PE,Performance Expectancy,0.547517,0.552507,0.544402,0.602832,0.572204,0.544402,0.031963,0.083166,0.0,0.599581,0.28529,4.0231,nomic-embed-text
+P1_premium_tier_owner,Garmin Venu 3 Smartwatch,EE,Effort Expectancy,0.544677,0.538069,0.574911,0.580425,0.624728,0.538069,0.038315,0.0,0.213622,0.245592,0.502471,4.1739,nomic-embed-text
+P1_premium_tier_owner,Garmin Venu 3 Smartwatch,HM,Hedonic Motivation,0.570027,0.601749,0.592345,0.6339,0.68498,0.570027,0.0,0.136225,0.09584,0.274291,0.493644,4.1254,nomic-embed-text
+P1_premium_tier_owner,Garmin Venu 3 Smartwatch,SI,Social Influence,0.510676,0.530345,0.584546,0.589257,0.579432,0.510676,0.0,0.081657,0.306673,0.32623,0.28544,3.8155,nomic-embed-text
+P1_premium_tier_owner,Garmin Venu 3 Smartwatch,PP,Perceived Protection,0.581752,0.548236,0.512278,0.596438,0.613727,0.512278,0.238708,0.123548,0.0,0.289169,0.348575,3.3854,nomic-embed-text
+P1_premium_tier_owner,Garmin Venu 3 Smartwatch,BI,Behavioral Intention,0.51024,0.555594,0.54071,0.605647,0.593569,0.51024,0.0,0.178166,0.119697,0.374793,0.327344,3.8513,nomic-embed-text
+P2_midrange_heavy_user,Garmin Venu 3 Smartwatch,PE,Performance Expectancy,0.515271,0.526915,0.521907,0.530087,0.514917,0.514917,0.010256,0.347649,0.202538,0.439557,0.0,3.0714,nomic-embed-text
+P2_midrange_heavy_user,Garmin Venu 3 Smartwatch,EE,Effort Expectancy,0.622706,0.572698,0.611047,0.575216,0.608646,0.572698,0.394312,0.0,0.30238,0.019857,0.283451,2.7981,nomic-embed-text
+P2_midrange_heavy_user,Garmin Venu 3 Smartwatch,HM,Hedonic Motivation,0.467126,0.464383,0.488,0.462318,0.463138,0.462318,0.144052,0.061868,0.769502,0.0,0.024578,2.6992,nomic-embed-text
+P2_midrange_heavy_user,Garmin Venu 3 Smartwatch,SI,Social Influence,0.576182,0.593295,0.644287,0.576101,0.568524,0.568524,0.06615,0.213966,0.654437,0.065446,0.0,2.7192,nomic-embed-text
+P2_midrange_heavy_user,Garmin Venu 3 Smartwatch,PP,Perceived Protection,0.485423,0.472993,0.449619,0.49676,0.481019,0.449619,0.259981,0.169722,0.0,0.342297,0.228,3.1086,nomic-embed-text
+P2_midrange_heavy_user,Garmin Venu 3 Smartwatch,BI,Behavioral Intention,0.611018,0.644125,0.662662,0.622818,0.598865,0.598865,0.083721,0.311787,0.439487,0.165005,0.0,2.6858,nomic-embed-text
+P3_midrange_moderate_user,Garmin Venu 3 Smartwatch,PE,Performance Expectancy,0.56035,0.571315,0.542527,0.560088,0.53015,0.53015,0.265656,0.362115,0.108876,0.263353,0.0,2.3699,nomic-embed-text
+P3_midrange_moderate_user,Garmin Venu 3 Smartwatch,EE,Effort Expectancy,0.534172,0.551248,0.574193,0.539402,0.552025,0.534172,0.0,0.212976,0.49914,0.065227,0.222657,3.2976,nomic-embed-text
+P3_midrange_moderate_user,Garmin Venu 3 Smartwatch,HM,Hedonic Motivation,0.528514,0.55242,0.535358,0.544612,0.489207,0.489207,0.19261,0.309752,0.226148,0.27149,0.0,2.5765,nomic-embed-text
+P3_midrange_moderate_user,Garmin Venu 3 Smartwatch,SI,Social Influence,0.480193,0.514403,0.572191,0.517716,0.513544,0.480193,0.0,0.173581,0.466801,0.190392,0.169226,3.3553,nomic-embed-text
+P3_midrange_moderate_user,Garmin Venu 3 Smartwatch,PP,Perceived Protection,0.413067,0.404022,0.393355,0.422421,0.421012,0.393355,0.226313,0.122463,0.0,0.3337,0.317523,3.3937,nomic-embed-text
+P3_midrange_moderate_user,Garmin Venu 3 Smartwatch,BI,Behavioral Intention,0.631676,0.653796,0.661915,0.614606,0.621382,0.614606,0.154691,0.35516,0.428742,0.0,0.061407,2.4583,nomic-embed-text
+P4_budget_or_undisclosed_price,Garmin Venu 3 Smartwatch,PE,Performance Expectancy,0.588898,0.59755,0.566542,0.590336,0.569495,0.566542,0.279063,0.387065,0.0,0.297012,0.036859,2.4255,nomic-embed-text
+P4_budget_or_undisclosed_price,Garmin Venu 3 Smartwatch,EE,Effort Expectancy,0.573865,0.580014,0.601871,0.59346,0.60406,0.573865,0.0,0.073251,0.333624,0.233426,0.359699,3.8796,nomic-embed-text
+P4_budget_or_undisclosed_price,Garmin Venu 3 Smartwatch,HM,Hedonic Motivation,0.523205,0.525812,0.537062,0.518731,0.492122,0.492122,0.228011,0.247136,0.329657,0.195195,0.0,2.492,nomic-embed-text
+P4_budget_or_undisclosed_price,Garmin Venu 3 Smartwatch,SI,Social Influence,0.571245,0.509573,0.593337,0.525115,0.581624,0.509573,0.264654,0.0,0.359456,0.066697,0.309192,3.1558,nomic-embed-text
+P4_budget_or_undisclosed_price,Garmin Venu 3 Smartwatch,PP,Perceived Protection,0.549312,0.540175,0.509545,0.553539,0.544805,0.509545,0.265733,0.204674,0.0,0.293979,0.235615,3.0291,nomic-embed-text
+P4_budget_or_undisclosed_price,Garmin Venu 3 Smartwatch,BI,Behavioral Intention,0.583415,0.596859,0.626216,0.55423,0.576012,0.55423,0.176258,0.257449,0.434748,0.0,0.131545,2.6531,nomic-embed-text

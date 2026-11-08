@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,Apex Ultra Flagship 5G,PE,Performance Expectancy,False,3.338,0.144318,0.231291,0.0,0.39081,0.233581,nomic-embed-text
+P1_premium_tier_owner,Apex Ultra Flagship 5G,EE,Effort Expectancy,False,2.774,0.402002,0.13115,0.0,0.224509,0.242339,nomic-embed-text
+P1_premium_tier_owner,Apex Ultra Flagship 5G,HM,Hedonic Motivation,False,4.1227,0.0,0.101963,0.178965,0.213463,0.505609,nomic-embed-text
+P1_premium_tier_owner,Apex Ultra Flagship 5G,SI,Social Influence,False,3.6678,0.182412,0.0,0.165416,0.271672,0.3805,nomic-embed-text
+P1_premium_tier_owner,Apex Ultra Flagship 5G,PP,Perceived Protection,False,3.6197,0.224582,0.05818,0.0,0.307431,0.409808,nomic-embed-text
+P1_premium_tier_owner,Apex Ultra Flagship 5G,BI,Behavioral Intention,True,2.7693,0.088715,0.2166,0.613014,0.0,0.08167,nomic-embed-text
+P2_midrange_heavy_user,Apex Ultra Flagship 5G,PE,Performance Expectancy,False,2.7932,0.243795,0.2776,0.0,0.398854,0.079751,nomic-embed-text
+P2_midrange_heavy_user,Apex Ultra Flagship 5G,EE,Effort Expectancy,False,3.9707,0.0,0.141084,0.137495,0.331061,0.390359,nomic-embed-text
+P2_midrange_heavy_user,Apex Ultra Flagship 5G,HM,Hedonic Motivation,False,3.917,0.0,0.175063,0.150374,0.257078,0.417485,nomic-embed-text
+P2_midrange_heavy_user,Apex Ultra Flagship 5G,SI,Social Influence,False,3.5826,0.0,0.144105,0.323962,0.337139,0.194794,nomic-embed-text
+P2_midrange_heavy_user,Apex Ultra Flagship 5G,PP,Perceived Protection,False,3.4902,0.224429,0.091549,0.0,0.337434,0.346587,nomic-embed-text
+P2_midrange_heavy_user,Apex Ultra Flagship 5G,BI,Behavioral Intention,True,3.3469,0.0,0.228562,0.392789,0.181867,0.196783,nomic-embed-text
+P3_midrange_moderate_user,Apex Ultra Flagship 5G,PE,Performance Expectancy,False,3.2635,0.085363,0.292745,0.0,0.516856,0.105035,nomic-embed-text
+P3_midrange_moderate_user,Apex Ultra Flagship 5G,EE,Effort Expectancy,False,1.8086,0.450609,0.32671,0.204433,0.0,0.018248,nomic-embed-text
+P3_midrange_moderate_user,Apex Ultra Flagship 5G,HM,Hedonic Motivation,False,3.5369,0.0,0.223326,0.294136,0.204887,0.277651,nomic-embed-text
+P3_midrange_moderate_user,Apex Ultra Flagship 5G,SI,Social Influence,False,2.7885,0.283549,0.119938,0.358726,0.0,0.237787,nomic-embed-text
+P3_midrange_moderate_user,Apex Ultra Flagship 5G,PP,Perceived Protection,False,3.6317,0.238983,0.02472,0.0,0.338236,0.398061,nomic-embed-text
+P3_midrange_moderate_user,Apex Ultra Flagship 5G,BI,Behavioral Intention,True,2.3454,0.195815,0.401923,0.332795,0.0,0.069467,nomic-embed-text
+P4_budget_or_undisclosed_price,Apex Ultra Flagship 5G,PE,Performance Expectancy,False,2.2065,0.308954,0.389044,0.088543,0.213459,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,Apex Ultra Flagship 5G,EE,Effort Expectancy,False,2.7607,0.359855,0.0,0.322741,0.154414,0.16299,nomic-embed-text
+P4_budget_or_undisclosed_price,Apex Ultra Flagship 5G,HM,Hedonic Motivation,False,2.653,0.110247,0.413465,0.332798,0.0,0.143491,nomic-embed-text
+P4_budget_or_undisclosed_price,Apex Ultra Flagship 5G,SI,Social Influence,False,2.9294,0.36128,0.0,0.267872,0.089688,0.281159,nomic-embed-text
+P4_budget_or_undisclosed_price,Apex Ultra Flagship 5G,PP,Perceived Protection,False,2.076,0.284866,0.49246,0.084501,0.138173,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,Apex Ultra Flagship 5G,BI,Behavioral Intention,True,2.6363,0.109907,0.309188,0.498237,0.0,0.082668,nomic-embed-text

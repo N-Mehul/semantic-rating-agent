@@ -1,0 +1,20 @@
+persona_id,product_name,anchor_set_code,anchor_set_name,cos_sim_1,cos_sim_2,cos_sim_3,cos_sim_4,cos_sim_5,min_similarity,p1,p2,p3,p4,p5,set_expected_rating,canonical_expected_rating,improved_expected_rating,delta,embedding_model
+P1_premium_tier_owner,iphone 17,PE,Performance Expectancy,0.69085,0.700248,0.677473,0.702081,0.636857,0.636857,0.283677,0.351356,0.0,0.364968,0.0,2.4463,2.5245,2.4463,-0.0782,nomic-embed-text
+P1_premium_tier_owner,iphone 17,EE,Effort Expectancy,0.525939,0.51133,0.550692,0.55887,0.574562,0.51133,0.0,0.0,0.239948,0.308618,0.451434,4.2115,3.8788,4.2115,0.3326,nomic-embed-text
+P1_premium_tier_owner,iphone 17,HM,Hedonic Motivation,0.526344,0.57071,0.558591,0.59695,0.686712,0.526344,0.0,0.118972,0.0,0.221053,0.659975,4.422,4.1281,4.422,0.294,nomic-embed-text
+P1_premium_tier_owner,iphone 17,PP,Perceived Protection,0.411267,0.464394,0.499499,0.433832,0.425943,0.411267,0.0,0.304319,0.598517,0.097163,0.0,2.7928,2.9932,2.7928,-0.2004,nomic-embed-text
+P2_midrange_heavy_user,iphone 17,PE,Performance Expectancy,0.64659,0.647608,0.667703,0.715605,0.701084,0.64659,0.0,0.0,0.106479,0.516545,0.376976,4.2705,4.2152,4.2705,0.0553,nomic-embed-text
+P2_midrange_heavy_user,iphone 17,EE,Effort Expectancy,0.510076,0.483031,0.583004,0.600503,0.654811,0.483031,0.0,0.0,0.232668,0.288493,0.478839,4.2462,3.9776,4.2462,0.2686,nomic-embed-text
+P2_midrange_heavy_user,iphone 17,HM,Hedonic Motivation,0.539884,0.57814,0.589489,0.637022,0.700799,0.539884,0.0,0.0,0.121182,0.296889,0.58193,4.4607,4.1006,4.4607,0.3601,nomic-embed-text
+P2_midrange_heavy_user,iphone 17,PP,Perceived Protection,0.451572,0.438267,0.478868,0.504314,0.500888,0.438267,0.0,0.0,0.212987,0.407474,0.379539,4.1666,3.902,4.1666,0.2646,nomic-embed-text
+P2_midrange_heavy_user,iphone 17,BI,Behavioral Intention,0.452578,0.480304,0.526183,0.458906,0.469966,0.452578,0.0,0.191837,0.705178,0.0,0.102985,3.0141,3.107,3.0141,-0.0929,nomic-embed-text
+P3_midrange_moderate_user,iphone 17,PE,Performance Expectancy,0.681484,0.688537,0.661413,0.721832,0.686649,0.661413,0.0,0.20758,0.0,0.603878,0.188541,3.7734,3.3284,3.7734,0.445,nomic-embed-text
+P3_midrange_moderate_user,iphone 17,EE,Effort Expectancy,0.579737,0.534813,0.636968,0.638931,0.674599,0.534813,0.0,0.0,0.282099,0.289348,0.428553,4.1465,3.7515,4.1465,0.3949,nomic-embed-text
+P3_midrange_moderate_user,iphone 17,HM,Hedonic Motivation,0.60374,0.644598,0.630275,0.677312,0.736237,0.60374,0.0,0.125144,0.0,0.274154,0.600702,4.3504,4.0887,4.3504,0.2617,nomic-embed-text
+P3_midrange_moderate_user,iphone 17,SI,Social Influence,0.641989,0.613322,0.662243,0.586625,0.621019,0.586625,0.328358,0.0,0.49759,0.0,0.174052,2.6914,2.6426,2.6914,0.0487,nomic-embed-text
+P3_midrange_moderate_user,iphone 17,PP,Perceived Protection,0.588136,0.604194,0.64627,0.652188,0.649413,0.588136,0.0,0.0,0.311459,0.354434,0.334106,4.0226,3.8548,4.0226,0.1679,nomic-embed-text
+P3_midrange_moderate_user,iphone 17,BI,Behavioral Intention,0.479296,0.478073,0.497967,0.446571,0.46471,0.446571,0.264828,0.251712,0.483461,0.0,0.0,2.2186,2.5464,2.2186,-0.3278,nomic-embed-text
+P4_budget_or_undisclosed_price,iphone 17,PE,Performance Expectancy,0.669918,0.675237,0.678966,0.717912,0.699371,0.669918,0.0,0.0,0.066338,0.613647,0.320015,4.2537,4.1064,4.2537,0.1473,nomic-embed-text
+P4_budget_or_undisclosed_price,iphone 17,EE,Effort Expectancy,0.500181,0.493079,0.569136,0.599352,0.642953,0.493079,0.0,0.0,0.198704,0.310397,0.490899,4.2922,4.1548,4.2922,0.1374,nomic-embed-text
+P4_budget_or_undisclosed_price,iphone 17,HM,Hedonic Motivation,0.549329,0.561473,0.582452,0.609854,0.611309,0.549329,0.0,0.0,0.180508,0.403256,0.416236,4.2357,4.0272,4.2357,0.2085,nomic-embed-text
+P4_budget_or_undisclosed_price,iphone 17,SI,Social Influence,0.461529,0.51761,0.58779,0.523282,0.482207,0.461529,0.0,0.196545,0.579966,0.223489,0.0,3.0269,3.1776,3.0269,-0.1507,nomic-embed-text

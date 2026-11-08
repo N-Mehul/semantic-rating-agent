@@ -1,0 +1,5 @@
+Persona_ID,Persona_Name,Synthetic_N_Valid,Synthetic_Mean_Valid,Synthetic_Std_Valid,Human_Overall_N,Human_Overall_Mean,Diff_vs_Overall_Human,CI95_Diff_Overall_Lower,CI95_Diff_Overall_Upper,Cohens_d_Overall,Hedges_g_Overall,Wasserstein_Overall,JSD_Overall,KS_Overall_D,KS_Overall_p,Matched_Human_N,Matched_Human_Mean,Diff_vs_Matched_Human,Wasserstein_Matched,JSD_Matched,Cohens_d_Matched
+P1,P1: Premium Tier Owner,91,3.4026,0.5943,516,3.6124,-0.2098,-0.3638,-0.0578,-0.2059,-0.2056,0.4792,0.406,0.4179,1.0426478760823293e-12,174,3.9598,-0.5572,0.6722,0.4808,-0.6258
+P2,P2: Mid-Range Heavy User,84,3.3291,0.6002,516,3.6124,-0.2833,-0.4453,-0.1264,-0.2768,-0.2765,0.4978,0.4033,0.5241,7.702840251565321e-19,104,3.2788,0.0502,0.4554,0.3904,0.0547
+P3,P3: Budget Practical Adopter,84,3.2779,0.6624,516,3.6124,-0.3345,-0.5056,-0.1673,-0.3251,-0.3247,0.5156,0.419,0.4408,3.1660700356798913e-13,174,3.4425,-0.1646,0.4065,0.3667,-0.1803
+P4,P4: Student Value Seeker,84,3.355,0.6374,516,3.6124,-0.2574,-0.4287,-0.094,-0.2508,-0.2505,0.4849,0.4152,0.4408,3.1660700356798913e-13,64,3.6719,-0.3169,0.5461,0.4037,-0.3621

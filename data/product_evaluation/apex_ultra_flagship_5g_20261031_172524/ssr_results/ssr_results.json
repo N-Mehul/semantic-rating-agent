@@ -1,0 +1,545 @@
+{
+  "evaluation_id": "apex_ultra_flagship_5g_20261031_172524",
+  "product_name": "Apex Ultra Flagship 5G",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-31T11:59:05.858756+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 1,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.968,
+  "overall_adoption_average": 3.968,
+  "primary_adoption_average": 3.968,
+  "construct_averages": {
+    "PE": 3.5666,
+    "EE": 4.1534,
+    "HM": 3.9863,
+    "SI": 3.4443,
+    "PP": 3.683,
+    "BI": 3.968
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 6,
+  "qualitative_constructs": [
+    "PV"
+  ],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "primary_adoption_rating": 3.968,
+      "primary_adoption_pmf": [
+        0.0,
+        0.15611,
+        0.085822,
+        0.39198,
+        0.366088
+      ],
+      "construct_scores": {
+        "PE": 3.5666,
+        "EE": 4.1534,
+        "HM": 3.9863,
+        "SI": 3.4443,
+        "PP": 3.683,
+        "BI": 3.968
+      },
+      "construct_responses": {
+        "PE": "The Snapdragon 8 Elite processor ensures lightning-fast performance and seamless multitasking. With this device, I am certain I will continue using this smartphone as my primary phone; the speed and efficiency match everything I need for study and work.",
+        "EE": "The user interface is incredibly intuitive and simple, making it easy to navigate. I am certain I will continue using this smartphone; the learning curve is minimal and the experience is smooth.",
+        "HM": "The 2K LTPO AMOLED display is stunning, offering an immersive gaming and video streaming experience. I am certain I will continue using this smartphone as my primary device; it provides unparalleled fun and entertainment.",
+        "SI": "My college friends would be envious of this phone's sleek design and advanced features. It would definitely enhance my social perception among peers.",
+        "PP": "The advanced security features give me peace of mind, ensuring my personal data is well-protected. I am certain I will continue using this smartphone; it meets all my needs and budget perfectly.",
+        "BI": "Considering the price of ₹64,999, this phone fits comfortably within my budget and I am certain I will continue using this smartphone as my primary phone; it matches everything I need for daily use.",
+        "OVERALL": "This phone is a perfect fit for my needs and budget, offering top-tier performance and features. I am certain I will continue using this smartphone; it meets all my requirements for work and play."
+      },
+      "response_text": "This phone is a perfect fit for my needs and budget, offering top-tier performance and features. I am certain I will continue using this smartphone; it meets all my requirements for work and play.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The Snapdragon 8 Elite processor ensures lightning-fast performance and seamless multitasking. With this device, I am certain I will continue using this smartphone as my primary phone; the speed and efficiency match everything I need for study and work.",
+          "cosine_similarities": [
+            0.654602,
+            0.67228,
+            0.62096,
+            0.738253,
+            0.701816
+          ],
+          "min_similarity": 0.62096,
+          "pmf_probabilities": [
+            0.11883,
+            0.181271,
+            0.0,
+            0.414301,
+            0.285599
+          ],
+          "expected_rating": 3.5666,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The user interface is incredibly intuitive and simple, making it easy to navigate. I am certain I will continue using this smartphone; the learning curve is minimal and the experience is smooth.",
+          "cosine_similarities": [
+            0.673822,
+            0.656482,
+            0.7082,
+            0.762774,
+            0.81077
+          ],
+          "min_similarity": 0.656482,
+          "pmf_probabilities": [
+            0.052602,
+            0.0,
+            0.156892,
+            0.322452,
+            0.468055
+          ],
+          "expected_rating": 4.1534,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The 2K LTPO AMOLED display is stunning, offering an immersive gaming and video streaming experience. I am certain I will continue using this smartphone as my primary device; it provides unparalleled fun and entertainment.",
+          "cosine_similarities": [
+            0.604176,
+            0.638156,
+            0.649156,
+            0.651247,
+            0.713886
+          ],
+          "min_similarity": 0.604176,
+          "pmf_probabilities": [
+            0.0,
+            0.144142,
+            0.190803,
+            0.199672,
+            0.465383
+          ],
+          "expected_rating": 3.9863,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My college friends would be envious of this phone's sleek design and advanced features. It would definitely enhance my social perception among peers.",
+          "cosine_similarities": [
+            0.692092,
+            0.64204,
+            0.676958,
+            0.689608,
+            0.713665
+          ],
+          "min_similarity": 0.64204,
+          "pmf_probabilities": [
+            0.245156,
+            0.0,
+            0.17103,
+            0.232991,
+            0.350823
+          ],
+          "expected_rating": 3.4443,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The advanced security features give me peace of mind, ensuring my personal data is well-protected. I am certain I will continue using this smartphone; it meets all my needs and budget perfectly.",
+          "cosine_similarities": [
+            0.770937,
+            0.747036,
+            0.718602,
+            0.819036,
+            0.83739
+          ],
+          "min_similarity": 0.718602,
+          "pmf_probabilities": [
+            0.174456,
+            0.094783,
+            0.0,
+            0.334789,
+            0.395972
+          ],
+          "expected_rating": 3.683,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Considering the price of ₹64,999, this phone fits comfortably within my budget and I am certain I will continue using this smartphone as my primary phone; it matches everything I need for daily use.",
+          "cosine_similarities": [
+            0.582818,
+            0.620002,
+            0.60326,
+            0.676185,
+            0.670018
+          ],
+          "min_similarity": 0.582818,
+          "pmf_probabilities": [
+            0.0,
+            0.15611,
+            0.085822,
+            0.39198,
+            0.366088
+          ],
+          "expected_rating": 3.968,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.654602,
+        0.67228,
+        0.62096,
+        0.738253,
+        0.701816
+      ],
+      "pmf_probabilities": [
+        0.11883,
+        0.181271,
+        0.0,
+        0.414301,
+        0.285599
+      ],
+      "expected_rating": 3.5666,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.673822,
+        0.656482,
+        0.7082,
+        0.762774,
+        0.81077
+      ],
+      "pmf_probabilities": [
+        0.052602,
+        0.0,
+        0.156892,
+        0.322452,
+        0.468055
+      ],
+      "expected_rating": 4.1534,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.604176,
+        0.638156,
+        0.649156,
+        0.651247,
+        0.713886
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.144142,
+        0.190803,
+        0.199672,
+        0.465383
+      ],
+      "expected_rating": 3.9863,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.692092,
+        0.64204,
+        0.676958,
+        0.689608,
+        0.713665
+      ],
+      "pmf_probabilities": [
+        0.245156,
+        0.0,
+        0.17103,
+        0.232991,
+        0.350823
+      ],
+      "expected_rating": 3.4443,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.770937,
+        0.747036,
+        0.718602,
+        0.819036,
+        0.83739
+      ],
+      "pmf_probabilities": [
+        0.174456,
+        0.094783,
+        0.0,
+        0.334789,
+        0.395972
+      ],
+      "expected_rating": 3.683,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.582818,
+        0.620002,
+        0.60326,
+        0.676185,
+        0.670018
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.15611,
+        0.085822,
+        0.39198,
+        0.366088
+      ],
+      "expected_rating": 3.968,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.654602,
+      "cos_sim_2": 0.67228,
+      "cos_sim_3": 0.62096,
+      "cos_sim_4": 0.738253,
+      "cos_sim_5": 0.701816,
+      "min_similarity": 0.62096,
+      "p1": 0.11883,
+      "p2": 0.181271,
+      "p3": 0.0,
+      "p4": 0.414301,
+      "p5": 0.285599,
+      "set_expected_rating": 3.5666,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.673822,
+      "cos_sim_2": 0.656482,
+      "cos_sim_3": 0.7082,
+      "cos_sim_4": 0.762774,
+      "cos_sim_5": 0.81077,
+      "min_similarity": 0.656482,
+      "p1": 0.052602,
+      "p2": 0.0,
+      "p3": 0.156892,
+      "p4": 0.322452,
+      "p5": 0.468055,
+      "set_expected_rating": 4.1534,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.604176,
+      "cos_sim_2": 0.638156,
+      "cos_sim_3": 0.649156,
+      "cos_sim_4": 0.651247,
+      "cos_sim_5": 0.713886,
+      "min_similarity": 0.604176,
+      "p1": 0.0,
+      "p2": 0.144142,
+      "p3": 0.190803,
+      "p4": 0.199672,
+      "p5": 0.465383,
+      "set_expected_rating": 3.9863,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.692092,
+      "cos_sim_2": 0.64204,
+      "cos_sim_3": 0.676958,
+      "cos_sim_4": 0.689608,
+      "cos_sim_5": 0.713665,
+      "min_similarity": 0.64204,
+      "p1": 0.245156,
+      "p2": 0.0,
+      "p3": 0.17103,
+      "p4": 0.232991,
+      "p5": 0.350823,
+      "set_expected_rating": 3.4443,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.770937,
+      "cos_sim_2": 0.747036,
+      "cos_sim_3": 0.718602,
+      "cos_sim_4": 0.819036,
+      "cos_sim_5": 0.83739,
+      "min_similarity": 0.718602,
+      "p1": 0.174456,
+      "p2": 0.094783,
+      "p3": 0.0,
+      "p4": 0.334789,
+      "p5": 0.395972,
+      "set_expected_rating": 3.683,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Flagship 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.582818,
+      "cos_sim_2": 0.620002,
+      "cos_sim_3": 0.60326,
+      "cos_sim_4": 0.676185,
+      "cos_sim_5": 0.670018,
+      "min_similarity": 0.582818,
+      "p1": 0.0,
+      "p2": 0.15611,
+      "p3": 0.085822,
+      "p4": 0.39198,
+      "p5": 0.366088,
+      "set_expected_rating": 3.968,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Echo Vision Smart Glasses",
+  "category": "AI Smart Glasses / Wearable Technology",
+  "description": "Echo Vision Smart Glasses are AI-powered smart glasses designed to provide hands-free assistance in everyday activities. The glasses feature a built-in voice assistant, real-time navigation, audio playback, notification alerts, and AI-powered object and text recognition. Users can interact with the assistant through voice commands without needing to access their smartphones. The lightweight frame is designed for comfortable daily use, with rechargeable battery support and Bluetooth connectivity. The product aims to improve productivity, accessibility, and convenience for students and young professionals. Privacy features include user-controlled camera activation, microphone controls, and indicators when sensing features are active. The glasses are designed to integrate with Android smartphones while maintaining a stylish appearance similar to traditional eyewear.",
+  "price_inr": 14999.0,
+  "target_group": "College students, young professionals, technology enthusiasts, and early adopters of wearable AI technology",
+  "target_age_group": "18–30 years",
+  "market": "India",
+  "brand_or_ecosystem": "Android",
+  "features": [
+    {
+      "name": "Core Functionality",
+      "explanation": "Primary operational capabilities and design features.",
+      "category": null
+    },
+    {
+      "name": "Usability & Interface",
+      "explanation": "Interaction design and ease of operation.",
+      "category": null
+    },
+    {
+      "name": "Build Quality & Materials",
+      "explanation": "Physical durability and hardware engineering.",
+      "category": null
+    },
+    {
+      "name": "Safety & Privacy Controls",
+      "explanation": "User data security and privacy boundaries.",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI",
+    "PV"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "ssr_method": "compare",
+  "ssr_method_label": "Comparison Mode (Canonical vs. Improved)",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "AI Smart Glasses / Wearable Technology",
+    "product_noun": "smartphone",
+    "usage_role": "primary phone",
+    "brand_or_ecosystem": "Android",
+    "features_count": 4,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-03T10:12:57.567848+00:00"
+}

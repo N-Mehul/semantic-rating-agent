@@ -1,0 +1,2014 @@
+{
+  "evaluation_id": "apex_ultra_pro_max_20261031_174018",
+  "product_name": "Apex Ultra Pro Max",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-31T12:18:38.421841+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "primary_adoption_rating": 2.668,
+      "primary_adoption_pmf": [
+        0.058814,
+        0.274769,
+        0.636232,
+        0.0,
+        0.030186
+      ],
+      "construct_scores": {
+        "PE": 3.674,
+        "EE": 3.8636,
+        "HM": 3.8706,
+        "SI": 3.8066,
+        "PP": 3.1633,
+        "BI": 2.668
+      },
+      "construct_responses": {
+        "PE": "This phone's performance is top-notch for my study needs, especially with the Snapdragon 8 Elite processor. The quick response and multitasking capabilities are a game-changer for managing assignments and lectures.",
+        "EE": "Learning and using this phone should be smooth since I'm already familiar with Android and have decent tech comfort. However, the premium features might take some getting used to, but the clean interface will help with that.",
+        "HM": "The 2K AMOLED display and the advanced camera would make my social media and gaming experiences much more enjoyable. The 6500mAh battery and fast charging will also ensure I don't run out of juice during long study sessions.",
+        "SI": "The brand prestige and on-device AI processing give me confidence that my personal data is secure. My peers and family would be impressed by the advanced features and would likely recommend it, but they might question the steep price.",
+        "PP": "While the advanced AI and privacy features are reassuring, the price is a bit steep. I'd be hesitant about buying it right away, but I might consider it if there are more discounts or deals in the future.",
+        "BI": "Considering the price, I might consider this phone if there are significant discounts, but I'm not sure if it's worth the premium over my current device. I'm open to evaluation but unlikely to buy right now.",
+        "OVERALL": "The Apex Ultra Pro Max seems like a powerful device for my needs, but the price is a major concern. I might wait for a better deal or consider it if my current phone reaches its end of life."
+      },
+      "response_text": "The Apex Ultra Pro Max seems like a powerful device for my needs, but the price is a major concern. I might wait for a better deal or consider it if my current phone reaches its end of life.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This phone's performance is top-notch for my study needs, especially with the Snapdragon 8 Elite processor. The quick response and multitasking capabilities are a game-changer for managing assignments and lectures.",
+          "cosine_similarities": [
+            0.657183,
+            0.672515,
+            0.635751,
+            0.716766,
+            0.705463
+          ],
+          "min_similarity": 0.635751,
+          "pmf_probabilities": [
+            0.102583,
+            0.17597,
+            0.0,
+            0.387774,
+            0.333673
+          ],
+          "expected_rating": 3.674,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Learning and using this phone should be smooth since I'm already familiar with Android and have decent tech comfort. However, the premium features might take some getting used to, but the clean interface will help with that.",
+          "cosine_similarities": [
+            0.692005,
+            0.661867,
+            0.69129,
+            0.70476,
+            0.75503
+          ],
+          "min_similarity": 0.661867,
+          "pmf_probabilities": [
+            0.154064,
+            0.0,
+            0.150413,
+            0.219271,
+            0.476252
+          ],
+          "expected_rating": 3.8636,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The 2K AMOLED display and the advanced camera would make my social media and gaming experiences much more enjoyable. The 6500mAh battery and fast charging will also ensure I don't run out of juice during long study sessions.",
+          "cosine_similarities": [
+            0.523639,
+            0.555811,
+            0.547641,
+            0.580258,
+            0.58894
+          ],
+          "min_similarity": 0.523639,
+          "pmf_probabilities": [
+            0.0,
+            0.180648,
+            0.134774,
+            0.317914,
+            0.366664
+          ],
+          "expected_rating": 3.8706,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "The brand prestige and on-device AI processing give me confidence that my personal data is secure. My peers and family would be impressed by the advanced features and would likely recommend it, but they might question the steep price.",
+          "cosine_similarities": [
+            0.571147,
+            0.557243,
+            0.608501,
+            0.613104,
+            0.615533
+          ],
+          "min_similarity": 0.557243,
+          "pmf_probabilities": [
+            0.077541,
+            0.0,
+            0.28586,
+            0.311526,
+            0.325073
+          ],
+          "expected_rating": 3.8066,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "While the advanced AI and privacy features are reassuring, the price is a bit steep. I'd be hesitant about buying it right away, but I might consider it if there are more discounts or deals in the future.",
+          "cosine_similarities": [
+            0.506589,
+            0.494038,
+            0.463552,
+            0.511689,
+            0.511623
+          ],
+          "min_similarity": 0.463552,
+          "pmf_probabilities": [
+            0.253558,
+            0.179616,
+            0.0,
+            0.283608,
+            0.283218
+          ],
+          "expected_rating": 3.1633,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Considering the price, I might consider this phone if there are significant discounts, but I'm not sure if it's worth the premium over my current device. I'm open to evaluation but unlikely to buy right now.",
+          "cosine_similarities": [
+            0.634321,
+            0.677291,
+            0.749212,
+            0.622619,
+            0.628625
+          ],
+          "min_similarity": 0.622619,
+          "pmf_probabilities": [
+            0.058814,
+            0.274769,
+            0.636232,
+            0.0,
+            0.030186
+          ],
+          "expected_rating": 2.668,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "primary_adoption_rating": 3.2616,
+      "primary_adoption_pmf": [
+        0.0,
+        0.265695,
+        0.407575,
+        0.126156,
+        0.200574
+      ],
+      "construct_scores": {
+        "PE": 3.367,
+        "EE": 3.7509,
+        "HM": 4.0978,
+        "SI": 3.6515,
+        "PP": 3.5354,
+        "BI": 3.2616
+      },
+      "construct_responses": {
+        "PE": "For my study and daily routines, the Apex Ultra Pro Max seems really useful. The fast processor and smooth performance will definitely help with multitasking and running multiple apps without lag.",
+        "EE": "Considering my current OS and tech comfort, I think it will be easy to learn and use. The clean interface with AI suggestions will make it user-friendly even for someone with moderate tech comfort.",
+        "HM": "Using this phone for gaming and social media would be fun. The 2K AMOLED display and advanced camera features would make it enjoyable, especially for photo-taking during college events.",
+        "SI": "I think my friends and family would be impressed by the brand and the phone's features. They might even ask me about it since it's a premium device with a long battery life.",
+        "PP": "On-device privacy and security seem strong, which is important for me. With 7 years of software updates and advanced AI for personal data protection, I feel confident about my personal information being safe.",
+        "BI": "Given the price, I might consider it if there's a sale or if the phone comes down to around ₹50,000. But at ₹69,999, I might stick to my current OnePlus for now. It’s a good device, but it’s a bit expensive for my budget.",
+        "OVERALL": "The Apex Ultra Pro Max seems like a great phone with lots of features, but the price might be a bit steep for my needs. It’s definitely an option to consider in the future."
+      },
+      "response_text": "The Apex Ultra Pro Max seems like a great phone with lots of features, but the price might be a bit steep for my needs. It’s definitely an option to consider in the future.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "For my study and daily routines, the Apex Ultra Pro Max seems really useful. The fast processor and smooth performance will definitely help with multitasking and running multiple apps without lag.",
+          "cosine_similarities": [
+            0.65869,
+            0.674516,
+            0.647583,
+            0.716657,
+            0.659454
+          ],
+          "min_similarity": 0.647583,
+          "pmf_probabilities": [
+            0.093346,
+            0.226357,
+            0.0,
+            0.580527,
+            0.09977
+          ],
+          "expected_rating": 3.367,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Considering my current OS and tech comfort, I think it will be easy to learn and use. The clean interface with AI suggestions will make it user-friendly even for someone with moderate tech comfort.",
+          "cosine_similarities": [
+            0.624022,
+            0.576308,
+            0.635421,
+            0.690087,
+            0.694226
+          ],
+          "min_similarity": 0.576308,
+          "pmf_probabilities": [
+            0.140948,
+            0.0,
+            0.174621,
+            0.336102,
+            0.348329
+          ],
+          "expected_rating": 3.7509,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using this phone for gaming and social media would be fun. The 2K AMOLED display and advanced camera features would make it enjoyable, especially for photo-taking during college events.",
+          "cosine_similarities": [
+            0.613507,
+            0.62973,
+            0.640219,
+            0.662595,
+            0.689049
+          ],
+          "min_similarity": 0.613507,
+          "pmf_probabilities": [
+            0.0,
+            0.096815,
+            0.15941,
+            0.292951,
+            0.450824
+          ],
+          "expected_rating": 4.0978,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "I think my friends and family would be impressed by the brand and the phone's features. They might even ask me about it since it's a premium device with a long battery life.",
+          "cosine_similarities": [
+            0.646206,
+            0.608086,
+            0.677096,
+            0.682171,
+            0.697237
+          ],
+          "min_similarity": 0.608086,
+          "pmf_probabilities": [
+            0.140993,
+            0.0,
+            0.255249,
+            0.274018,
+            0.329741
+          ],
+          "expected_rating": 3.6515,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "On-device privacy and security seem strong, which is important for me. With 7 years of software updates and advanced AI for personal data protection, I feel confident about my personal information being safe.",
+          "cosine_similarities": [
+            0.784044,
+            0.736284,
+            0.704231,
+            0.817497,
+            0.840063
+          ],
+          "min_similarity": 0.704231,
+          "pmf_probabilities": [
+            0.22111,
+            0.088799,
+            0.0,
+            0.313788,
+            0.376303
+          ],
+          "expected_rating": 3.5354,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Given the price, I might consider it if there's a sale or if the phone comes down to around ₹50,000. But at ₹69,999, I might stick to my current OnePlus for now. It’s a good device, but it’s a bit expensive for my budget.",
+          "cosine_similarities": [
+            0.64057,
+            0.674521,
+            0.692651,
+            0.656691,
+            0.6662
+          ],
+          "min_similarity": 0.64057,
+          "pmf_probabilities": [
+            0.0,
+            0.265695,
+            0.407575,
+            0.126156,
+            0.200574
+          ],
+          "expected_rating": 3.2616,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "primary_adoption_rating": 2.3143,
+      "primary_adoption_pmf": [
+        0.11064,
+        0.525755,
+        0.332957,
+        0.0,
+        0.030649
+      ],
+      "construct_scores": {
+        "PE": 2.877,
+        "EE": 3.5092,
+        "HM": 3.4524,
+        "SI": 2.598,
+        "PP": 2.2789,
+        "BI": 2.3143
+      },
+      "construct_responses": {
+        "PE": "For my daily study and work tasks, this phone would be very useful. The fast processor and smooth performance would definitely help with multitasking and staying focused during online classes.",
+        "EE": "Learning and using this phone might be a bit challenging at first, but I'm okay with that. The clean interface and AI suggestions could make it easier to navigate, especially for someone who isn't too tech-savvy like me.",
+        "HM": "Using this phone for entertainment would be pretty cool. The 2K AMOLED display and advanced AI features like the camera enhancement could make gaming and social media more enjoyable, but the high price might make me think twice.",
+        "SI": "I think the on-device AI processing would be a good feature for privacy, but I'd still have concerns about my personal information. Still, I understand the brand's commitment to security, so I'd give it a try.",
+        "PP": "The premium titanium design sounds great, but the price is just too high for me. I'd rather stick to my current phone and save up for something more affordable in the future.",
+        "BI": "I don't think I'd buy this phone at ₹69,999. It's just way out of my budget, and I have other mid-range options that serve my needs just fine. I might consider it in the future, but not now.",
+        "OVERALL": "This phone looks awesome, but the price is just not something I can justify right now. It would be perfect for someone who wants top-of-the-line features, but for me, it's a bit of a stretch."
+      },
+      "response_text": "This phone looks awesome, but the price is just not something I can justify right now. It would be perfect for someone who wants top-of-the-line features, but for me, it's a bit of a stretch.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "For my daily study and work tasks, this phone would be very useful. The fast processor and smooth performance would definitely help with multitasking and staying focused during online classes.",
+          "cosine_similarities": [
+            0.743762,
+            0.752634,
+            0.710856,
+            0.775835,
+            0.722833
+          ],
+          "min_similarity": 0.710856,
+          "pmf_probabilities": [
+            0.217,
+            0.27551,
+            0.0,
+            0.428509,
+            0.078981
+          ],
+          "expected_rating": 2.877,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Learning and using this phone might be a bit challenging at first, but I'm okay with that. The clean interface and AI suggestions could make it easier to navigate, especially for someone who isn't too tech-savvy like me.",
+          "cosine_similarities": [
+            0.745624,
+            0.719974,
+            0.743533,
+            0.753655,
+            0.760105
+          ],
+          "min_similarity": 0.719974,
+          "pmf_probabilities": [
+            0.208501,
+            0.0,
+            0.191502,
+            0.273786,
+            0.326212
+          ],
+          "expected_rating": 3.5092,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using this phone for entertainment would be pretty cool. The 2K AMOLED display and advanced AI features like the camera enhancement could make gaming and social media more enjoyable, but the high price might make me think twice.",
+          "cosine_similarities": [
+            0.598734,
+            0.630831,
+            0.628583,
+            0.614331,
+            0.632061
+          ],
+          "min_similarity": 0.598734,
+          "pmf_probabilities": [
+            0.0,
+            0.289504,
+            0.269224,
+            0.140678,
+            0.300594
+          ],
+          "expected_rating": 3.4524,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "I think the on-device AI processing would be a good feature for privacy, but I'd still have concerns about my personal information. Still, I understand the brand's commitment to security, so I'd give it a try.",
+          "cosine_similarities": [
+            0.594896,
+            0.544163,
+            0.590283,
+            0.562877,
+            0.559271
+          ],
+          "min_similarity": 0.544163,
+          "pmf_probabilities": [
+            0.388238,
+            0.0,
+            0.352932,
+            0.143213,
+            0.115617
+          ],
+          "expected_rating": 2.598,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The premium titanium design sounds great, but the price is just too high for me. I'd rather stick to my current phone and save up for something more affordable in the future.",
+          "cosine_similarities": [
+            0.500539,
+            0.52299,
+            0.489456,
+            0.498395,
+            0.48025
+          ],
+          "min_similarity": 0.48025,
+          "pmf_probabilities": [
+            0.224481,
+            0.472899,
+            0.101858,
+            0.200762,
+            0.0
+          ],
+          "expected_rating": 2.2789,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I don't think I'd buy this phone at ₹69,999. It's just way out of my budget, and I have other mid-range options that serve my needs just fine. I might consider it in the future, but not now.",
+          "cosine_similarities": [
+            0.624336,
+            0.67158,
+            0.649638,
+            0.611744,
+            0.615232
+          ],
+          "min_similarity": 0.611744,
+          "pmf_probabilities": [
+            0.11064,
+            0.525755,
+            0.332957,
+            0.0,
+            0.030649
+          ],
+          "expected_rating": 2.3143,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "primary_adoption_rating": 2.4631,
+      "primary_adoption_pmf": [
+        0.28037,
+        0.278978,
+        0.289233,
+        0.0,
+        0.151419
+      ],
+      "construct_scores": {
+        "PE": 2.3233,
+        "EE": 2.6799,
+        "HM": 2.6525,
+        "SI": 2.4076,
+        "PP": 2.1652,
+        "BI": 2.4631
+      },
+      "construct_responses": {
+        "PE": "For my study and work tasks, the Apex Ultra Pro Max would be too powerful. I don't need all those features, but it could help with managing notes and reminders. The battery life would be great for long hours of studying, but the price is out of my budget.",
+        "EE": "I might find it a bit overwhelming at first, given my current tech comfort level and experience with Xiaomi. But with some time, I could get used to it. The AI assistant might be a bit too much for just studying and basic tasks.",
+        "HM": "I wouldn't find it particularly fun or entertaining. The display and camera are great, but I don't game much and social media isn't my thing. The battery and fast charging would be nice, but I don't use it that much.",
+        "SI": "I'm not sure how my friends would react to it. They might think it's cool, but I doubt they'd recommend it. I'd be hesitant to buy it because of the privacy concerns, but I wouldn't want to explain why I didn't get it.",
+        "PP": "The privacy and security features sound good, but with the price, I don't think it's worth it. I'd rather stick with something simpler and more affordable, even if it means sacrificing a bit of performance.",
+        "BI": "No, I definitely wouldn't buy it. The price is too high, and I don't need all those advanced features. I'd rather keep my current Xiaomi for now and save up for something I can afford.",
+        "OVERALL": "The phone seems great for someone who needs all those features, but it's way out of my budget. I'd stick with my current Xiaomi for now."
+      },
+      "response_text": "The phone seems great for someone who needs all those features, but it's way out of my budget. I'd stick with my current Xiaomi for now.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "For my study and work tasks, the Apex Ultra Pro Max would be too powerful. I don't need all those features, but it could help with managing notes and reminders. The battery life would be great for long hours of studying, but the price is out of my budget.",
+          "cosine_similarities": [
+            0.680765,
+            0.693926,
+            0.662364,
+            0.670573,
+            0.632954
+          ],
+          "min_similarity": 0.632954,
+          "pmf_probabilities": [
+            0.271942,
+            0.3468,
+            0.167283,
+            0.213975,
+            0.0
+          ],
+          "expected_rating": 2.3233,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "I might find it a bit overwhelming at first, given my current tech comfort level and experience with Xiaomi. But with some time, I could get used to it. The AI assistant might be a bit too much for just studying and basic tasks.",
+          "cosine_similarities": [
+            0.639374,
+            0.644882,
+            0.675978,
+            0.637228,
+            0.632229
+          ],
+          "min_similarity": 0.632229,
+          "pmf_probabilities": [
+            0.104231,
+            0.184588,
+            0.638254,
+            0.072928,
+            0.0
+          ],
+          "expected_rating": 2.6799,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "I wouldn't find it particularly fun or entertaining. The display and camera are great, but I don't game much and social media isn't my thing. The battery and fast charging would be nice, but I don't use it that much.",
+          "cosine_similarities": [
+            0.691459,
+            0.7247,
+            0.7225,
+            0.686425,
+            0.695268
+          ],
+          "min_similarity": 0.686425,
+          "pmf_probabilities": [
+            0.057056,
+            0.433827,
+            0.40889,
+            0.0,
+            0.100227
+          ],
+          "expected_rating": 2.6525,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "I'm not sure how my friends would react to it. They might think it's cool, but I doubt they'd recommend it. I'd be hesitant to buy it because of the privacy concerns, but I wouldn't want to explain why I didn't get it.",
+          "cosine_similarities": [
+            0.572857,
+            0.588817,
+            0.607998,
+            0.549584,
+            0.511336
+          ],
+          "min_similarity": 0.511336,
+          "pmf_probabilities": [
+            0.224601,
+            0.282868,
+            0.352894,
+            0.139636,
+            0.0
+          ],
+          "expected_rating": 2.4076,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The privacy and security features sound good, but with the price, I don't think it's worth it. I'd rather stick with something simpler and more affordable, even if it means sacrificing a bit of performance.",
+          "cosine_similarities": [
+            0.577004,
+            0.589683,
+            0.525336,
+            0.560385,
+            0.520457
+          ],
+          "min_similarity": 0.520457,
+          "pmf_probabilities": [
+            0.331497,
+            0.405829,
+            0.028604,
+            0.234071,
+            0.0
+          ],
+          "expected_rating": 2.1652,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "No, I definitely wouldn't buy it. The price is too high, and I don't need all those advanced features. I'd rather keep my current Xiaomi for now and save up for something I can afford.",
+          "cosine_similarities": [
+            0.667383,
+            0.666927,
+            0.670289,
+            0.575461,
+            0.625106
+          ],
+          "min_similarity": 0.575461,
+          "pmf_probabilities": [
+            0.28037,
+            0.278978,
+            0.289233,
+            0.0,
+            0.151419
+          ],
+          "expected_rating": 2.4631,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.657183,
+        0.672515,
+        0.635751,
+        0.716766,
+        0.705463
+      ],
+      "pmf_probabilities": [
+        0.102583,
+        0.17597,
+        0.0,
+        0.387774,
+        0.333673
+      ],
+      "expected_rating": 3.674,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.692005,
+        0.661867,
+        0.69129,
+        0.70476,
+        0.75503
+      ],
+      "pmf_probabilities": [
+        0.154064,
+        0.0,
+        0.150413,
+        0.219271,
+        0.476252
+      ],
+      "expected_rating": 3.8636,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.523639,
+        0.555811,
+        0.547641,
+        0.580258,
+        0.58894
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.180648,
+        0.134774,
+        0.317914,
+        0.366664
+      ],
+      "expected_rating": 3.8706,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.571147,
+        0.557243,
+        0.608501,
+        0.613104,
+        0.615533
+      ],
+      "pmf_probabilities": [
+        0.077541,
+        0.0,
+        0.28586,
+        0.311526,
+        0.325073
+      ],
+      "expected_rating": 3.8066,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.506589,
+        0.494038,
+        0.463552,
+        0.511689,
+        0.511623
+      ],
+      "pmf_probabilities": [
+        0.253558,
+        0.179616,
+        0.0,
+        0.283608,
+        0.283218
+      ],
+      "expected_rating": 3.1633,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.634321,
+        0.677291,
+        0.749212,
+        0.622619,
+        0.628625
+      ],
+      "pmf_probabilities": [
+        0.058814,
+        0.274769,
+        0.636232,
+        0.0,
+        0.030186
+      ],
+      "expected_rating": 2.668,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.65869,
+        0.674516,
+        0.647583,
+        0.716657,
+        0.659454
+      ],
+      "pmf_probabilities": [
+        0.093346,
+        0.226357,
+        0.0,
+        0.580527,
+        0.09977
+      ],
+      "expected_rating": 3.367,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.624022,
+        0.576308,
+        0.635421,
+        0.690087,
+        0.694226
+      ],
+      "pmf_probabilities": [
+        0.140948,
+        0.0,
+        0.174621,
+        0.336102,
+        0.348329
+      ],
+      "expected_rating": 3.7509,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.613507,
+        0.62973,
+        0.640219,
+        0.662595,
+        0.689049
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.096815,
+        0.15941,
+        0.292951,
+        0.450824
+      ],
+      "expected_rating": 4.0978,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.646206,
+        0.608086,
+        0.677096,
+        0.682171,
+        0.697237
+      ],
+      "pmf_probabilities": [
+        0.140993,
+        0.0,
+        0.255249,
+        0.274018,
+        0.329741
+      ],
+      "expected_rating": 3.6515,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.784044,
+        0.736284,
+        0.704231,
+        0.817497,
+        0.840063
+      ],
+      "pmf_probabilities": [
+        0.22111,
+        0.088799,
+        0.0,
+        0.313788,
+        0.376303
+      ],
+      "expected_rating": 3.5354,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.64057,
+        0.674521,
+        0.692651,
+        0.656691,
+        0.6662
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.265695,
+        0.407575,
+        0.126156,
+        0.200574
+      ],
+      "expected_rating": 3.2616,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.743762,
+        0.752634,
+        0.710856,
+        0.775835,
+        0.722833
+      ],
+      "pmf_probabilities": [
+        0.217,
+        0.27551,
+        0.0,
+        0.428509,
+        0.078981
+      ],
+      "expected_rating": 2.877,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.745624,
+        0.719974,
+        0.743533,
+        0.753655,
+        0.760105
+      ],
+      "pmf_probabilities": [
+        0.208501,
+        0.0,
+        0.191502,
+        0.273786,
+        0.326212
+      ],
+      "expected_rating": 3.5092,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.598734,
+        0.630831,
+        0.628583,
+        0.614331,
+        0.632061
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.289504,
+        0.269224,
+        0.140678,
+        0.300594
+      ],
+      "expected_rating": 3.4524,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.594896,
+        0.544163,
+        0.590283,
+        0.562877,
+        0.559271
+      ],
+      "pmf_probabilities": [
+        0.388238,
+        0.0,
+        0.352932,
+        0.143213,
+        0.115617
+      ],
+      "expected_rating": 2.598,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.500539,
+        0.52299,
+        0.489456,
+        0.498395,
+        0.48025
+      ],
+      "pmf_probabilities": [
+        0.224481,
+        0.472899,
+        0.101858,
+        0.200762,
+        0.0
+      ],
+      "expected_rating": 2.2789,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.624336,
+        0.67158,
+        0.649638,
+        0.611744,
+        0.615232
+      ],
+      "pmf_probabilities": [
+        0.11064,
+        0.525755,
+        0.332957,
+        0.0,
+        0.030649
+      ],
+      "expected_rating": 2.3143,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.680765,
+        0.693926,
+        0.662364,
+        0.670573,
+        0.632954
+      ],
+      "pmf_probabilities": [
+        0.271942,
+        0.3468,
+        0.167283,
+        0.213975,
+        0.0
+      ],
+      "expected_rating": 2.3233,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.639374,
+        0.644882,
+        0.675978,
+        0.637228,
+        0.632229
+      ],
+      "pmf_probabilities": [
+        0.104231,
+        0.184588,
+        0.638254,
+        0.072928,
+        0.0
+      ],
+      "expected_rating": 2.6799,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.691459,
+        0.7247,
+        0.7225,
+        0.686425,
+        0.695268
+      ],
+      "pmf_probabilities": [
+        0.057056,
+        0.433827,
+        0.40889,
+        0.0,
+        0.100227
+      ],
+      "expected_rating": 2.6525,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.572857,
+        0.588817,
+        0.607998,
+        0.549584,
+        0.511336
+      ],
+      "pmf_probabilities": [
+        0.224601,
+        0.282868,
+        0.352894,
+        0.139636,
+        0.0
+      ],
+      "expected_rating": 2.4076,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.577004,
+        0.589683,
+        0.525336,
+        0.560385,
+        0.520457
+      ],
+      "pmf_probabilities": [
+        0.331497,
+        0.405829,
+        0.028604,
+        0.234071,
+        0.0
+      ],
+      "expected_rating": 2.1652,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.667383,
+        0.666927,
+        0.670289,
+        0.575461,
+        0.625106
+      ],
+      "pmf_probabilities": [
+        0.28037,
+        0.278978,
+        0.289233,
+        0.0,
+        0.151419
+      ],
+      "expected_rating": 2.4631,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.657183,
+      "cos_sim_2": 0.672515,
+      "cos_sim_3": 0.635751,
+      "cos_sim_4": 0.716766,
+      "cos_sim_5": 0.705463,
+      "min_similarity": 0.635751,
+      "p1": 0.102583,
+      "p2": 0.17597,
+      "p3": 0.0,
+      "p4": 0.387774,
+      "p5": 0.333673,
+      "set_expected_rating": 3.674,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.692005,
+      "cos_sim_2": 0.661867,
+      "cos_sim_3": 0.69129,
+      "cos_sim_4": 0.70476,
+      "cos_sim_5": 0.75503,
+      "min_similarity": 0.661867,
+      "p1": 0.154064,
+      "p2": 0.0,
+      "p3": 0.150413,
+      "p4": 0.219271,
+      "p5": 0.476252,
+      "set_expected_rating": 3.8636,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.523639,
+      "cos_sim_2": 0.555811,
+      "cos_sim_3": 0.547641,
+      "cos_sim_4": 0.580258,
+      "cos_sim_5": 0.58894,
+      "min_similarity": 0.523639,
+      "p1": 0.0,
+      "p2": 0.180648,
+      "p3": 0.134774,
+      "p4": 0.317914,
+      "p5": 0.366664,
+      "set_expected_rating": 3.8706,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.571147,
+      "cos_sim_2": 0.557243,
+      "cos_sim_3": 0.608501,
+      "cos_sim_4": 0.613104,
+      "cos_sim_5": 0.615533,
+      "min_similarity": 0.557243,
+      "p1": 0.077541,
+      "p2": 0.0,
+      "p3": 0.28586,
+      "p4": 0.311526,
+      "p5": 0.325073,
+      "set_expected_rating": 3.8066,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.506589,
+      "cos_sim_2": 0.494038,
+      "cos_sim_3": 0.463552,
+      "cos_sim_4": 0.511689,
+      "cos_sim_5": 0.511623,
+      "min_similarity": 0.463552,
+      "p1": 0.253558,
+      "p2": 0.179616,
+      "p3": 0.0,
+      "p4": 0.283608,
+      "p5": 0.283218,
+      "set_expected_rating": 3.1633,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.634321,
+      "cos_sim_2": 0.677291,
+      "cos_sim_3": 0.749212,
+      "cos_sim_4": 0.622619,
+      "cos_sim_5": 0.628625,
+      "min_similarity": 0.622619,
+      "p1": 0.058814,
+      "p2": 0.274769,
+      "p3": 0.636232,
+      "p4": 0.0,
+      "p5": 0.030186,
+      "set_expected_rating": 2.668,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.65869,
+      "cos_sim_2": 0.674516,
+      "cos_sim_3": 0.647583,
+      "cos_sim_4": 0.716657,
+      "cos_sim_5": 0.659454,
+      "min_similarity": 0.647583,
+      "p1": 0.093346,
+      "p2": 0.226357,
+      "p3": 0.0,
+      "p4": 0.580527,
+      "p5": 0.09977,
+      "set_expected_rating": 3.367,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.624022,
+      "cos_sim_2": 0.576308,
+      "cos_sim_3": 0.635421,
+      "cos_sim_4": 0.690087,
+      "cos_sim_5": 0.694226,
+      "min_similarity": 0.576308,
+      "p1": 0.140948,
+      "p2": 0.0,
+      "p3": 0.174621,
+      "p4": 0.336102,
+      "p5": 0.348329,
+      "set_expected_rating": 3.7509,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.613507,
+      "cos_sim_2": 0.62973,
+      "cos_sim_3": 0.640219,
+      "cos_sim_4": 0.662595,
+      "cos_sim_5": 0.689049,
+      "min_similarity": 0.613507,
+      "p1": 0.0,
+      "p2": 0.096815,
+      "p3": 0.15941,
+      "p4": 0.292951,
+      "p5": 0.450824,
+      "set_expected_rating": 4.0978,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.646206,
+      "cos_sim_2": 0.608086,
+      "cos_sim_3": 0.677096,
+      "cos_sim_4": 0.682171,
+      "cos_sim_5": 0.697237,
+      "min_similarity": 0.608086,
+      "p1": 0.140993,
+      "p2": 0.0,
+      "p3": 0.255249,
+      "p4": 0.274018,
+      "p5": 0.329741,
+      "set_expected_rating": 3.6515,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.784044,
+      "cos_sim_2": 0.736284,
+      "cos_sim_3": 0.704231,
+      "cos_sim_4": 0.817497,
+      "cos_sim_5": 0.840063,
+      "min_similarity": 0.704231,
+      "p1": 0.22111,
+      "p2": 0.088799,
+      "p3": 0.0,
+      "p4": 0.313788,
+      "p5": 0.376303,
+      "set_expected_rating": 3.5354,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.64057,
+      "cos_sim_2": 0.674521,
+      "cos_sim_3": 0.692651,
+      "cos_sim_4": 0.656691,
+      "cos_sim_5": 0.6662,
+      "min_similarity": 0.64057,
+      "p1": 0.0,
+      "p2": 0.265695,
+      "p3": 0.407575,
+      "p4": 0.126156,
+      "p5": 0.200574,
+      "set_expected_rating": 3.2616,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.743762,
+      "cos_sim_2": 0.752634,
+      "cos_sim_3": 0.710856,
+      "cos_sim_4": 0.775835,
+      "cos_sim_5": 0.722833,
+      "min_similarity": 0.710856,
+      "p1": 0.217,
+      "p2": 0.27551,
+      "p3": 0.0,
+      "p4": 0.428509,
+      "p5": 0.078981,
+      "set_expected_rating": 2.877,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.745624,
+      "cos_sim_2": 0.719974,
+      "cos_sim_3": 0.743533,
+      "cos_sim_4": 0.753655,
+      "cos_sim_5": 0.760105,
+      "min_similarity": 0.719974,
+      "p1": 0.208501,
+      "p2": 0.0,
+      "p3": 0.191502,
+      "p4": 0.273786,
+      "p5": 0.326212,
+      "set_expected_rating": 3.5092,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.598734,
+      "cos_sim_2": 0.630831,
+      "cos_sim_3": 0.628583,
+      "cos_sim_4": 0.614331,
+      "cos_sim_5": 0.632061,
+      "min_similarity": 0.598734,
+      "p1": 0.0,
+      "p2": 0.289504,
+      "p3": 0.269224,
+      "p4": 0.140678,
+      "p5": 0.300594,
+      "set_expected_rating": 3.4524,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.594896,
+      "cos_sim_2": 0.544163,
+      "cos_sim_3": 0.590283,
+      "cos_sim_4": 0.562877,
+      "cos_sim_5": 0.559271,
+      "min_similarity": 0.544163,
+      "p1": 0.388238,
+      "p2": 0.0,
+      "p3": 0.352932,
+      "p4": 0.143213,
+      "p5": 0.115617,
+      "set_expected_rating": 2.598,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.500539,
+      "cos_sim_2": 0.52299,
+      "cos_sim_3": 0.489456,
+      "cos_sim_4": 0.498395,
+      "cos_sim_5": 0.48025,
+      "min_similarity": 0.48025,
+      "p1": 0.224481,
+      "p2": 0.472899,
+      "p3": 0.101858,
+      "p4": 0.200762,
+      "p5": 0.0,
+      "set_expected_rating": 2.2789,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.624336,
+      "cos_sim_2": 0.67158,
+      "cos_sim_3": 0.649638,
+      "cos_sim_4": 0.611744,
+      "cos_sim_5": 0.615232,
+      "min_similarity": 0.611744,
+      "p1": 0.11064,
+      "p2": 0.525755,
+      "p3": 0.332957,
+      "p4": 0.0,
+      "p5": 0.030649,
+      "set_expected_rating": 2.3143,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.680765,
+      "cos_sim_2": 0.693926,
+      "cos_sim_3": 0.662364,
+      "cos_sim_4": 0.670573,
+      "cos_sim_5": 0.632954,
+      "min_similarity": 0.632954,
+      "p1": 0.271942,
+      "p2": 0.3468,
+      "p3": 0.167283,
+      "p4": 0.213975,
+      "p5": 0.0,
+      "set_expected_rating": 2.3233,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.639374,
+      "cos_sim_2": 0.644882,
+      "cos_sim_3": 0.675978,
+      "cos_sim_4": 0.637228,
+      "cos_sim_5": 0.632229,
+      "min_similarity": 0.632229,
+      "p1": 0.104231,
+      "p2": 0.184588,
+      "p3": 0.638254,
+      "p4": 0.072928,
+      "p5": 0.0,
+      "set_expected_rating": 2.6799,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.691459,
+      "cos_sim_2": 0.7247,
+      "cos_sim_3": 0.7225,
+      "cos_sim_4": 0.686425,
+      "cos_sim_5": 0.695268,
+      "min_similarity": 0.686425,
+      "p1": 0.057056,
+      "p2": 0.433827,
+      "p3": 0.40889,
+      "p4": 0.0,
+      "p5": 0.100227,
+      "set_expected_rating": 2.6525,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.572857,
+      "cos_sim_2": 0.588817,
+      "cos_sim_3": 0.607998,
+      "cos_sim_4": 0.549584,
+      "cos_sim_5": 0.511336,
+      "min_similarity": 0.511336,
+      "p1": 0.224601,
+      "p2": 0.282868,
+      "p3": 0.352894,
+      "p4": 0.139636,
+      "p5": 0.0,
+      "set_expected_rating": 2.4076,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.577004,
+      "cos_sim_2": 0.589683,
+      "cos_sim_3": 0.525336,
+      "cos_sim_4": 0.560385,
+      "cos_sim_5": 0.520457,
+      "min_similarity": 0.520457,
+      "p1": 0.331497,
+      "p2": 0.405829,
+      "p3": 0.028604,
+      "p4": 0.234071,
+      "p5": 0.0,
+      "set_expected_rating": 2.1652,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Apex Ultra Pro Max",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.667383,
+      "cos_sim_2": 0.666927,
+      "cos_sim_3": 0.670289,
+      "cos_sim_4": 0.575461,
+      "cos_sim_5": 0.625106,
+      "min_similarity": 0.575461,
+      "p1": 0.28037,
+      "p2": 0.278978,
+      "p3": 0.289233,
+      "p4": 0.0,
+      "p5": 0.151419,
+      "set_expected_rating": 2.4631,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

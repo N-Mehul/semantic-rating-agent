@@ -1,0 +1,100 @@
+{
+  "name": "OnePlus Nord CE4 5G",
+  "category": "Smartphone",
+  "description": "OnePlus Nord CE4 5G is a mid-range smartphone designed for users who want strong everyday performance, fast charging and an enjoyable display experience. It features a 6.7-inch AMOLED display with a 120Hz refresh rate, providing smooth scrolling and vibrant visuals. It is powered by the Qualcomm Snapdragon 7 Gen 3 processor and comes with 8GB RAM and 128GB or 256GB storage options. The phone includes a 50MP Sony LYT-600 main camera with OIS and an 8MP ultra-wide camera, along with a 16MP front camera. Its 5500mAh battery supports 100W SUPERVOOC fast charging. It supports 5G connectivity and runs OxygenOS 14 based on Android 14. These features make it suitable for everyday multitasking, entertainment, photography and users who value fast charging.\nSpecifications: Display: 6.7-inch AMOLED, 120Hz\nProcessor: Qualcomm Snapdragon 7 Gen 3\nRAM: 8GB\nStorage: 128GB / 256GB\nRear Camera: 50MP Sony LYT-600 with OIS + 8MP ultra-wide\nFront Camera: 16MP\nBattery: 5500mAh\nCharging: 100W SUPERVOOC\nNetwork: 5G\nOperating System at launch: Android 14\nUser Interface: OxygenOS 14\nFingerprint: In-display fingerprint sensor",
+  "price_inr": 24999.0,
+  "target_group": "Technology consumers",
+  "target_age_group": "18-25 years",
+  "market": "India",
+  "brand_or_ecosystem": "Android",
+  "features": [
+    {
+      "name": "An Enjoyable Display Experience",
+      "explanation": "an enjoyable display experience",
+      "category": null
+    },
+    {
+      "name": "It Features A 6.7-Inch",
+      "explanation": "It features a 6.7-inch AMOLED display",
+      "category": null
+    },
+    {
+      "name": "A 120Hz Refresh Rate",
+      "explanation": "a 120Hz refresh rate, providing smooth scrolling",
+      "category": null
+    },
+    {
+      "name": "It Is Powered By",
+      "explanation": "It is powered by the Qualcomm Snapdragon 7 Gen 3 processor",
+      "category": null
+    }
+  ],
+  "evaluated_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP",
+    "BI",
+    "PV"
+  ],
+  "target_persona": "all",
+  "target_construct": "all",
+  "ssr_method": "improved",
+  "ssr_method_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+  "validation_gate": {
+    "status": "PASSED",
+    "validated_category": "Smartphone",
+    "product_noun": "smartphone",
+    "usage_role": "primary phone",
+    "brand_or_ecosystem": "Android",
+    "features_count": 4,
+    "conflict_resolved": null,
+    "construct_relevance_verified": true
+  },
+  "timestamp_created": "2026-11-06T07:06:00.263534+00:00",
+  "pipeline_fingerprint": "d9223fef2da7",
+  "product_context": {
+    "name": "OnePlus Nord CE4 5G",
+    "category": "Smartphone",
+    "noun": "smartphone",
+    "usage_role": "primary phone",
+    "ecosystem": "Android",
+    "price_inr": 24999.0,
+    "description": "OnePlus Nord CE4 5G is a mid-range smartphone designed for users who want strong everyday performance, fast charging and an enjoyable display experience. It features a 6.7-inch AMOLED display with a 120Hz refresh rate, providing smooth scrolling and vibrant visuals. It is powered by the Qualcomm Snapdragon 7 Gen 3 processor and comes with 8GB RAM and 128GB or 256GB storage options. The phone includes a 50MP Sony LYT-600 main camera with OIS and an 8MP ultra-wide camera, along with a 16MP front camera. Its 5500mAh battery supports 100W SUPERVOOC fast charging. It supports 5G connectivity and runs OxygenOS 14 based on Android 14. These features make it suitable for everyday multitasking, entertainment, photography and users who value fast charging.\nSpecifications: Display: 6.7-inch AMOLED, 120Hz\nProcessor: Qualcomm Snapdragon 7 Gen 3\nRAM: 8GB\nStorage: 128GB / 256GB\nRear Camera: 50MP Sony LYT-600 with OIS + 8MP ultra-wide\nFront Camera: 16MP\nBattery: 5500mAh\nCharging: 100W SUPERVOOC\nNetwork: 5G\nOperating System at launch: Android 14\nUser Interface: OxygenOS 14\nFingerprint: In-display fingerprint sensor"
+  },
+  "response_validation_summary": {
+    "P1_premium_tier_owner": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "corrected",
+      "BI": "passed"
+    },
+    "P2_midrange_heavy_user": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "corrected",
+      "BI": "corrected"
+    },
+    "P3_midrange_moderate_user": {
+      "PE": "passed",
+      "EE": "corrected",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "corrected",
+      "BI": "passed"
+    },
+    "P4_budget_or_undisclosed_price": {
+      "PE": "passed",
+      "EE": "passed",
+      "HM": "passed",
+      "SI": "passed",
+      "PP": "passed",
+      "BI": "passed"
+    }
+  }
+}

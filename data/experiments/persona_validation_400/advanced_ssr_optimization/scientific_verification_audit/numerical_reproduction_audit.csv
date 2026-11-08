@@ -1,0 +1,19 @@
+Metric,Reported_Value,Recalculated_Value,Absolute_Difference,Verification_Status,Explanation
+Synthetic_N_Total,400.0,400.0,0.0,VERIFIED,Exact match within numerical precision
+Synthetic_N_Valid,343.0,343.0,0.0,VERIFIED,Exact match within numerical precision
+Human_N_Pooled,516.0,516.0,0.0,VERIFIED,Exact match within numerical precision
+Synthetic_Mean,3.3424,3.3424,0.0,VERIFIED,Exact match within numerical precision
+Synthetic_Std,0.6225,0.6225,0.0,VERIFIED,Exact match within numerical precision
+Synthetic_Median,3.5272,3.5272,0.0,VERIFIED,Exact match within numerical precision
+Synthetic_IQR,1.054,1.054,0.0,VERIFIED,Exact match within numerical precision
+Human_Mean,3.6124,3.6124,0.0,VERIFIED,Exact match within numerical precision
+Human_Std,1.0762,1.0762,0.0,VERIFIED,Exact match within numerical precision
+Mean_Diff_Synth_Minus_Human,-0.27,-0.27,0.0,VERIFIED,Exact match within numerical precision
+Wasserstein_Distance,0.4881,0.4881,0.0,VERIFIED,Exact match within numerical precision
+KS_Statistic,0.4551,0.4551,0.0,VERIFIED,Exact match within numerical precision
+PE_ANOVA_F,4.3475,4.3475,0.0,VERIFIED,Exact match within numerical precision
+PE_ANOVA_p,0.007518,0.007518,0.0,VERIFIED,Exact match within numerical precision
+PE_Eta_Squared,0.1693,0.1693,0.0,VERIFIED,Exact match within numerical precision
+PE_P1_vs_P3_Mean_Diff,0.5261,0.5261,0.0,VERIFIED,Exact match within numerical precision
+PE_P1_vs_P3_Tukey_p,0.003368,0.003368,0.0,VERIFIED,Exact match within numerical precision
+PE_P1_vs_P3_Hedges_g,1.0598,1.0598,0.0,VERIFIED,Exact match within numerical precision

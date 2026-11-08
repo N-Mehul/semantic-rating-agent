@@ -1,0 +1,25 @@
+persona_id,product_name,anchor_set_code,anchor_set_name,cos_sim_1,cos_sim_2,cos_sim_3,cos_sim_4,cos_sim_5,min_similarity,p1,p2,p3,p4,p5,set_expected_rating,embedding_model
+P1_premium_tier_owner,Samsung Galaxy Tab S10 FE,PE,Performance Expectancy,0.54327,0.542626,0.529087,0.607334,0.574955,0.529087,0.093411,0.089165,0.0,0.515335,0.30209,3.8435,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy Tab S10 FE,EE,Effort Expectancy,0.591862,0.613133,0.621818,0.640381,0.676198,0.591862,0.0,0.115554,0.162733,0.263571,0.458142,4.0643,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy Tab S10 FE,HM,Hedonic Motivation,0.623633,0.644563,0.645328,0.67823,0.733951,0.623633,0.0,0.100848,0.104534,0.263066,0.531552,4.2253,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy Tab S10 FE,SI,Social Influence,0.591833,0.588376,0.617643,0.688535,0.666459,0.588376,0.016387,0.0,0.138728,0.474764,0.37012,4.1822,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy Tab S10 FE,PP,Perceived Protection,0.588078,0.574468,0.601299,0.63632,0.666767,0.574468,0.069939,0.0,0.137884,0.317856,0.474321,4.1266,nomic-embed-text
+P1_premium_tier_owner,Samsung Galaxy Tab S10 FE,BI,Behavioral Intention,0.592367,0.61858,0.616992,0.687835,0.662013,0.592367,0.0,0.121383,0.114031,0.442078,0.322508,3.9657,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy Tab S10 FE,PE,Performance Expectancy,0.658247,0.666599,0.60304,0.727058,0.648866,0.60304,0.191286,0.220224,0.0,0.429707,0.158783,3.1445,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy Tab S10 FE,EE,Effort Expectancy,0.521605,0.52301,0.613122,0.606561,0.656212,0.521605,0.0,0.004497,0.292869,0.271873,0.430761,4.1289,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy Tab S10 FE,HM,Hedonic Motivation,0.639775,0.648926,0.656227,0.70483,0.740741,0.639775,0.0,0.047758,0.085857,0.339489,0.526895,4.3455,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy Tab S10 FE,SI,Social Influence,0.586062,0.532923,0.591447,0.609379,0.641827,0.532923,0.178906,0.0,0.197034,0.257408,0.366652,3.6329,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy Tab S10 FE,PP,Perceived Protection,0.617817,0.585562,0.614042,0.656371,0.687615,0.585562,0.138079,0.0,0.121921,0.303126,0.436874,3.9007,nomic-embed-text
+P2_midrange_heavy_user,Samsung Galaxy Tab S10 FE,BI,Behavioral Intention,0.568327,0.593423,0.576824,0.673362,0.635065,0.568327,0.0,0.122202,0.041372,0.511456,0.32497,4.0392,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy Tab S10 FE,PE,Performance Expectancy,0.604209,0.614793,0.58581,0.592097,0.5742,0.5742,0.299763,0.405489,0.115971,0.178776,0.0,2.1738,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy Tab S10 FE,EE,Effort Expectancy,0.543343,0.509374,0.556209,0.509076,0.569233,0.509076,0.241565,0.002098,0.332262,0.0,0.424074,3.3629,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy Tab S10 FE,HM,Hedonic Motivation,0.585423,0.614656,0.604774,0.57401,0.582111,0.57401,0.125523,0.447031,0.338351,0.0,0.089095,2.4801,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy Tab S10 FE,SI,Social Influence,0.48668,0.503758,0.538846,0.523001,0.498239,0.48668,0.0,0.145815,0.445385,0.310104,0.098696,3.3617,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy Tab S10 FE,PP,Perceived Protection,0.432381,0.422734,0.435099,0.454987,0.466388,0.422734,0.098525,0.0,0.126279,0.329381,0.445815,4.024,nomic-embed-text
+P3_midrange_moderate_user,Samsung Galaxy Tab S10 FE,BI,Behavioral Intention,0.668607,0.702053,0.716079,0.65868,0.660942,0.65868,0.087884,0.383965,0.50813,0.0,0.020021,2.4803,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy Tab S10 FE,PE,Performance Expectancy,0.566426,0.591582,0.559226,0.570925,0.541527,0.541527,0.204006,0.410116,0.145013,0.240865,0.0,2.4227,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy Tab S10 FE,EE,Effort Expectancy,0.446753,0.402237,0.450701,0.410281,0.418456,0.402237,0.379687,0.0,0.413363,0.068614,0.138336,2.5859,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy Tab S10 FE,HM,Hedonic Motivation,0.576878,0.572403,0.597064,0.535253,0.53696,0.535253,0.292531,0.261079,0.434389,0.0,0.012002,2.1779,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy Tab S10 FE,SI,Social Influence,0.615588,0.676959,0.673873,0.619871,0.600826,0.600826,0.080673,0.416055,0.399191,0.104081,0.0,2.5267,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy Tab S10 FE,PP,Perceived Protection,0.402926,0.374331,0.360297,0.382122,0.376395,0.360297,0.450696,0.148371,0.0,0.230746,0.170187,2.5214,nomic-embed-text
+P4_budget_or_undisclosed_price,Samsung Galaxy Tab S10 FE,BI,Behavioral Intention,0.61171,0.622752,0.600752,0.580255,0.61096,0.580255,0.251328,0.339558,0.163777,0.0,0.245337,2.6485,nomic-embed-text

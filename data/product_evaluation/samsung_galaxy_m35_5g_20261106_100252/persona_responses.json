@@ -1,0 +1,414 @@
+[
+  {
+    "persona_id": "P1_premium_tier_owner",
+    "product_name": "Samsung Galaxy M35 5G",
+    "product_context": {
+      "name": "Samsung Galaxy M35 5G",
+      "category": "Smartphone",
+      "noun": "smartphone",
+      "usage_role": "primary phone",
+      "ecosystem": "Android",
+      "price_inr": 20000.0,
+      "description": "Samsung Galaxy M35 5G is a mid-range smartphone featuring a 6.6-inch Super AMOLED display with a 120Hz refresh rate, Exynos 1380 processor, 50MP main camera with OIS, 6000mAh battery, 25W charging, and 5G connectivity. It runs on Samsung One UI and offers features for everyday smartphone use, entertainment, photography, and multitasking.\nSpecifications: Display: 6.6-inch Super AMOLED, 120Hz\nProcessor: Exynos 1380\nRAM: 6GB / 8GB\nStorage: 128GB / 256GB\nRear Camera: 50MP + 8MP + 2MP\nFront Camera: 13MP\nBattery: 6000mAh\nCharging: 25W\nNetwork: 5G\nOS: Android 14 with One UI\nProtection: Gorilla Glass Victus+"
+    },
+    "response_text": "Good for daily use, secure and fast.",
+    "construct_responses": {
+      "PE": "Opens apps quickly, good for daily tasks.",
+      "EE": "Good security features like fingerprint unlock.",
+      "HM": "Likes the camera and speed, but unsure about security.",
+      "SI": "Maybe, friends who love photography might think it’s great for pics.",
+      "PP": "It doesn't mention any security features like face or fingerprint unlock.",
+      "BI": "Yes, good speed and features for ₹20,000.",
+      "OVERALL": "Good for daily use, secure and fast."
+    },
+    "response_validation": {
+      "PE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "EE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "HM": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "SI": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 1,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "Maybe, depends on friends' experiences.",
+            "issues": [
+              "too short; add one short natural reason and keep the same opinion"
+            ]
+          }
+        ]
+      },
+      "PP": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 1,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "Yes, secure enough for personal info.",
+            "issues": [
+              "claims protection that the product information does not describe; say it isn't stated"
+            ]
+          }
+        ]
+      },
+      "BI": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      }
+    },
+    "suitability_assessment": {
+      "strengths": "Good for everyday use, fast apps, good camera, secure.",
+      "limitations": "No specific privacy features mentioned, no durability info.",
+      "what_matters_to_me": "Speed, camera quality, security.",
+      "price_justified_for_me": "Partly",
+      "comfortable_to_spend": "Yes",
+      "better_than_my_usual_options": "Yes",
+      "buying_decision": "Yes",
+      "still_need_to_check": "Durability, physical build"
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-11-06T04:35:53.999300+00:00"
+  },
+  {
+    "persona_id": "P2_midrange_heavy_user",
+    "product_name": "Samsung Galaxy M35 5G",
+    "product_context": {
+      "name": "Samsung Galaxy M35 5G",
+      "category": "Smartphone",
+      "noun": "smartphone",
+      "usage_role": "primary phone",
+      "ecosystem": "Android",
+      "price_inr": 20000.0,
+      "description": "Samsung Galaxy M35 5G is a mid-range smartphone featuring a 6.6-inch Super AMOLED display with a 120Hz refresh rate, Exynos 1380 processor, 50MP main camera with OIS, 6000mAh battery, 25W charging, and 5G connectivity. It runs on Samsung One UI and offers features for everyday smartphone use, entertainment, photography, and multitasking.\nSpecifications: Display: 6.6-inch Super AMOLED, 120Hz\nProcessor: Exynos 1380\nRAM: 6GB / 8GB\nStorage: 128GB / 256GB\nRear Camera: 50MP + 8MP + 2MP\nFront Camera: 13MP\nBattery: 6000mAh\nCharging: 25W\nNetwork: 5G\nOS: Android 14 with One UI\nProtection: Gorilla Glass Victus+"
+    },
+    "response_text": "It offers good performance, but the price is a bit on the higher side.",
+    "construct_responses": {
+      "PE": "It handles tasks quickly, which saves time.",
+      "EE": "Easy to use, though fingerprint unlock is a bit slow.",
+      "HM": "Camera is good for photos, but battery is average.",
+      "SI": "My friends might think it's okay for everyday use, but not the best choice.",
+      "PP": "It only mentions fingerprint lock, no other security features, so I'm not sure it protects personal info well.",
+      "BI": "Maybe, at this price, I'd wait for a sale.",
+      "OVERALL": "It offers good performance, but the price is a bit on the higher side."
+    },
+    "response_validation": {
+      "PE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "EE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "HM": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "SI": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 1,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "It's good, but my friends prefer cheaper options.",
+            "issues": [
+              "talks about price, which belongs only in the buying-intention answer"
+            ]
+          }
+        ]
+      },
+      "PP": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 2,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "It has fingerprint lock, so my data is safe.",
+            "issues": [
+              "claims protection that the product information does not describe; say it isn't stated"
+            ]
+          },
+          {
+            "text": "It has fingerprint lock, so I feel somewhat safe for personal info.",
+            "issues": [
+              "claims protection that the product information does not describe; say it isn't stated"
+            ]
+          }
+        ]
+      },
+      "BI": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      }
+    },
+    "suitability_assessment": {
+      "strengths": "Good for multitasking and photography, 5G for fast internet.",
+      "limitations": "Price is on the higher side for a mid-range phone.",
+      "what_matters_to_me": "Performance and camera quality are key.",
+      "price_justified_for_me": "partly",
+      "comfortable_to_spend": "yes",
+      "better_than_my_usual_options": "yes",
+      "buying_decision": "unsure",
+      "still_need_to_check": "Battery life and camera quality"
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-11-06T04:39:11.127585+00:00"
+  },
+  {
+    "persona_id": "P3_midrange_moderate_user",
+    "product_name": "Samsung Galaxy M35 5G",
+    "product_context": {
+      "name": "Samsung Galaxy M35 5G",
+      "category": "Smartphone",
+      "noun": "smartphone",
+      "usage_role": "primary phone",
+      "ecosystem": "Android",
+      "price_inr": 20000.0,
+      "description": "Samsung Galaxy M35 5G is a mid-range smartphone featuring a 6.6-inch Super AMOLED display with a 120Hz refresh rate, Exynos 1380 processor, 50MP main camera with OIS, 6000mAh battery, 25W charging, and 5G connectivity. It runs on Samsung One UI and offers features for everyday smartphone use, entertainment, photography, and multitasking.\nSpecifications: Display: 6.6-inch Super AMOLED, 120Hz\nProcessor: Exynos 1380\nRAM: 6GB / 8GB\nStorage: 128GB / 256GB\nRear Camera: 50MP + 8MP + 2MP\nFront Camera: 13MP\nBattery: 6000mAh\nCharging: 25W\nNetwork: 5G\nOS: Android 14 with One UI\nProtection: Gorilla Glass Victus+"
+    },
+    "response_text": "It's a solid choice for daily use, but the price is a consideration.",
+    "construct_responses": {
+      "PE": "It handles my daily tasks quickly and efficiently.",
+      "EE": "It's easy to use and meets my basic needs.",
+      "HM": "It's user-friendly and fits my daily routine.",
+      "SI": "My friends might like it for videos, but not sure about family preferences.",
+      "PP": "It has fingerprint unlock, so it's okay for basic protection.",
+      "BI": "Maybe, need to check if 20,000 is fair for its features.",
+      "OVERALL": "It's a solid choice for daily use, but the price is a consideration."
+    },
+    "response_validation": {
+      "PE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "EE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "HM": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "SI": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 2,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "No specific security features mentioned, but fingerprint unlock is good.",
+            "issues": [
+              "does not talk about other people's influence; keep the social answer about others"
+            ]
+          },
+          {
+            "text": "My friends might think it's good for daily use and videos, but not sure if family would prefer a cheaper option.",
+            "issues": [
+              "talks about price, which belongs only in the buying-intention answer"
+            ]
+          }
+        ]
+      },
+      "PP": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 1,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "It protects my info adequately with fingerprint unlock.",
+            "issues": [
+              "claims protection that the product information does not describe; say it isn't stated"
+            ]
+          }
+        ]
+      },
+      "BI": {
+        "status": "flagged",
+        "valid": false,
+        "retries": 2,
+        "issues": [
+          "opens with a hedge such as 'Maybe' like another answer; give your view or decision first"
+        ],
+        "previous_attempts": [
+          {
+            "text": "Maybe, as it fits my needs but the price is a bit on the higher side.",
+            "issues": [
+              "opens with a hedge such as 'Maybe' like another answer; give your view or decision first"
+            ]
+          },
+          {
+            "text": "No, the price is too high for its specs.",
+            "issues": [
+              "your assessment was unsure; say what you still need to check before deciding"
+            ]
+          }
+        ]
+      }
+    },
+    "suitability_assessment": {
+      "strengths": "Good for daily use, 5G, long battery life, 120Hz display.",
+      "limitations": "Not the fastest processor, no wireless charging.",
+      "what_matters_to_me": "Speed and battery life.",
+      "price_justified_for_me": "Partly",
+      "comfortable_to_spend": "Yes",
+      "better_than_my_usual_options": "No",
+      "buying_decision": "Maybe",
+      "still_need_to_check": "Price comparison"
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-11-06T04:42:30.523536+00:00"
+  },
+  {
+    "persona_id": "P4_budget_or_undisclosed_price",
+    "product_name": "Samsung Galaxy M35 5G",
+    "product_context": {
+      "name": "Samsung Galaxy M35 5G",
+      "category": "Smartphone",
+      "noun": "smartphone",
+      "usage_role": "primary phone",
+      "ecosystem": "Android",
+      "price_inr": 20000.0,
+      "description": "Samsung Galaxy M35 5G is a mid-range smartphone featuring a 6.6-inch Super AMOLED display with a 120Hz refresh rate, Exynos 1380 processor, 50MP main camera with OIS, 6000mAh battery, 25W charging, and 5G connectivity. It runs on Samsung One UI and offers features for everyday smartphone use, entertainment, photography, and multitasking.\nSpecifications: Display: 6.6-inch Super AMOLED, 120Hz\nProcessor: Exynos 1380\nRAM: 6GB / 8GB\nStorage: 128GB / 256GB\nRear Camera: 50MP + 8MP + 2MP\nFront Camera: 13MP\nBattery: 6000mAh\nCharging: 25W\nNetwork: 5G\nOS: Android 14 with One UI\nProtection: Gorilla Glass Victus+"
+    },
+    "response_text": "It's useful, but the price is a bit on the higher side.",
+    "construct_responses": {
+      "PE": "It has a long battery life and fast app opening, which is handy.",
+      "EE": "The 5G connectivity is good, but it takes time to open apps sometimes.",
+      "HM": "I like the face unlock feature, but I don't use it much.",
+      "SI": "My friends might like the big screen and fast charging.",
+      "PP": "No, I'd feel safer with a device that has fingerprint unlock.",
+      "BI": "No, the price is a bit high for me.",
+      "OVERALL": "It's useful, but the price is a bit on the higher side."
+    },
+    "response_validation": {
+      "PE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "EE": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "HM": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "SI": {
+        "status": "corrected",
+        "valid": true,
+        "retries": 1,
+        "issues": [],
+        "previous_attempts": [
+          {
+            "text": "Not sure, no specific mention of security features.",
+            "issues": [
+              "opens with a hedge such as 'Maybe' like another answer; give your view or decision first",
+              "does not talk about other people's influence; keep the social answer about others"
+            ]
+          }
+        ]
+      },
+      "PP": {
+        "status": "passed",
+        "valid": true,
+        "retries": 0,
+        "issues": [],
+        "previous_attempts": []
+      },
+      "BI": {
+        "status": "flagged",
+        "valid": false,
+        "retries": 2,
+        "issues": [
+          "your assessment was unsure; say what you still need to check before deciding"
+        ],
+        "previous_attempts": [
+          {
+            "text": "No, it's a bit pricey for me at ₹20,000.",
+            "issues": [
+              "your assessment was unsure; say what you still need to check before deciding"
+            ]
+          },
+          {
+            "text": "No, 8GB RAM seems standard, but price is high.",
+            "issues": [
+              "your assessment was unsure; say what you still need to check before deciding"
+            ]
+          }
+        ]
+      }
+    },
+    "suitability_assessment": {
+      "strengths": "Good battery, fast app opening, 5G connectivity.",
+      "limitations": "Price is a bit high for me, 8GB RAM is standard but not top-end.",
+      "what_matters_to_me": "Battery life, fast app opening, and 5G.",
+      "price_justified_for_me": "partly",
+      "comfortable_to_spend": "no",
+      "better_than_my_usual_options": "not sure",
+      "buying_decision": "unsure",
+      "still_need_to_check": "actual cost versus benefit"
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "finish_reason": "STOP",
+    "timestamp_utc": "2026-11-06T04:47:01.407739+00:00"
+  }
+]

@@ -1,0 +1,2549 @@
+{
+  "evaluation_id": "iphone_17_20261106_081438",
+  "product_name": "iphone 17",
+  "ssr_method": "improved",
+  "ssr_method_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+  "k_truncation": 3,
+  "temperature": 0.75,
+  "comparison_summary": {
+    "active_ssr_method": "improved",
+    "active_ssr_label": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+    "is_comparison_mode": false,
+    "canonical": {
+      "method": "Canonical Semantic Similarity Rating (Canonical SSR) — Baseline method",
+      "k_truncation": 5,
+      "temperature": 1.0,
+      "primary_adoption_average": 2.8267,
+      "construct_averages": {
+        "PE": 3.5436,
+        "EE": 3.9407,
+        "HM": 4.0861,
+        "SI": 2.9101,
+        "PP": 3.5833,
+        "BI": 2.8267
+      }
+    },
+    "improved": {
+      "method": "Enhanced Semantic Similarity Rating (E-SSR) — Primary method",
+      "k_truncation": 3,
+      "temperature": 0.75,
+      "primary_adoption_average": 2.6163,
+      "construct_averages": {
+        "PE": 3.686,
+        "EE": 4.2241,
+        "HM": 4.3672,
+        "SI": 2.8591,
+        "PP": 3.6607,
+        "BI": 2.6163
+      }
+    },
+    "deltas": {
+      "primary_adoption_delta": -0.2104,
+      "construct_deltas": {
+        "PE": 0.1424,
+        "EE": 0.2834,
+        "HM": 0.2811,
+        "SI": -0.051,
+        "PP": 0.0774,
+        "BI": -0.2104
+      }
+    },
+    "persona_comparison": [
+      {
+        "persona_id": "P1_premium_tier_owner",
+        "canonical_adoption_rating": 0.0,
+        "improved_adoption_rating": 0.0,
+        "delta": 0.0
+      },
+      {
+        "persona_id": "P2_midrange_heavy_user",
+        "canonical_adoption_rating": 3.107,
+        "improved_adoption_rating": 3.0141,
+        "delta": -0.0929
+      },
+      {
+        "persona_id": "P3_midrange_moderate_user",
+        "canonical_adoption_rating": 2.5464,
+        "improved_adoption_rating": 2.2186,
+        "delta": -0.3278
+      },
+      {
+        "persona_id": "P4_budget_or_undisclosed_price",
+        "canonical_adoption_rating": 0.0,
+        "improved_adoption_rating": 0.0,
+        "delta": 0.0
+      }
+    ]
+  },
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Enhanced Semantic Similarity Rating (E-SSR) — Primary method)",
+  "timestamp_utc": "2026-11-06T02:56:59.378689+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 2.6163,
+  "overall_adoption_average": 2.6163,
+  "primary_adoption_average": 2.6163,
+  "construct_averages": {
+    "PE": 3.686,
+    "EE": 4.2241,
+    "HM": 4.3672,
+    "SI": 2.8591,
+    "PP": 3.6607,
+    "BI": 2.6163
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 19,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "iphone 17",
+      "primary_adoption_rating": null,
+      "primary_adoption_pmf": null,
+      "construct_scores": {
+        "PE": 2.4463,
+        "EE": 4.2115,
+        "HM": 4.422,
+        "PP": 2.7928
+      },
+      "construct_responses": {
+        "PE": "It would help with daily tasks, especially with the 5G feature for faster internet.",
+        "EE": "Easy to set up, but the software feels a bit basic.",
+        "HM": "Fun to use, especially with the OLED display and camera.",
+        "SI": "Friends might like it, but family could find it pricey.",
+        "PP": "The build feels sturdy, but not long-lasting enough.",
+        "BI": "No, too expensive for the features I want.",
+        "OVERALL": "It has good features but is overpriced for me."
+      },
+      "response_text": "It has good features but is overpriced for me.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It would help with daily tasks, especially with the 5G feature for faster internet.",
+          "cosine_similarities": [
+            0.69085,
+            0.700248,
+            0.677473,
+            0.702081,
+            0.636857
+          ],
+          "min_similarity": 0.636857,
+          "pmf_probabilities": [
+            0.283677,
+            0.351356,
+            0.0,
+            0.364968,
+            0.0
+          ],
+          "expected_rating": 2.4463,
+          "canonical": {
+            "pmf_probabilities": [
+              0.241877,
+              0.283979,
+              0.181953,
+              0.292191,
+              0.0
+            ],
+            "expected_rating": 2.5245
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.283677,
+              0.351356,
+              0.0,
+              0.364968,
+              0.0
+            ],
+            "expected_rating": 2.4463
+          },
+          "delta_improved_minus_canonical": -0.0782,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Easy to set up, but the software feels a bit basic.",
+          "cosine_similarities": [
+            0.525939,
+            0.51133,
+            0.550692,
+            0.55887,
+            0.574562
+          ],
+          "min_similarity": 0.51133,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.239948,
+            0.308618,
+            0.451434
+          ],
+          "expected_rating": 4.2115,
+          "canonical": {
+            "pmf_probabilities": [
+              0.088681,
+              0.0,
+              0.23893,
+              0.288568,
+              0.383821
+            ],
+            "expected_rating": 3.8788
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.239948,
+              0.308618,
+              0.451434
+            ],
+            "expected_rating": 4.2115
+          },
+          "delta_improved_minus_canonical": 0.3326,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Fun to use, especially with the OLED display and camera.",
+          "cosine_similarities": [
+            0.526344,
+            0.57071,
+            0.558591,
+            0.59695,
+            0.686712
+          ],
+          "min_similarity": 0.526344,
+          "pmf_probabilities": [
+            0.0,
+            0.118972,
+            0.0,
+            0.221053,
+            0.659975
+          ],
+          "expected_rating": 4.422,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.14424,
+              0.104838,
+              0.229549,
+              0.521373
+            ],
+            "expected_rating": 4.1281
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.118972,
+              0.0,
+              0.221053,
+              0.659975
+            ],
+            "expected_rating": 4.422
+          },
+          "delta_improved_minus_canonical": 0.294,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build feels sturdy, but not long-lasting enough.",
+          "cosine_similarities": [
+            0.411267,
+            0.464394,
+            0.499499,
+            0.433832,
+            0.425943
+          ],
+          "min_similarity": 0.411267,
+          "pmf_probabilities": [
+            0.0,
+            0.304319,
+            0.598517,
+            0.097163,
+            0.0
+          ],
+          "expected_rating": 2.7928,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.297462,
+              0.494017,
+              0.126346,
+              0.082175
+            ],
+            "expected_rating": 2.9932
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.304319,
+              0.598517,
+              0.097163,
+              0.0
+            ],
+            "expected_rating": 2.7928
+          },
+          "delta_improved_minus_canonical": -0.2004,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "flagged",
+          "valid": false,
+          "retries": 2,
+          "issues": [
+            "talks about price, which belongs only in the buying-intention answer"
+          ],
+          "previous_attempts": [
+            {
+              "text": "Friends might recommend it due to its brand and features, but others might find it pricey.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            },
+            {
+              "text": "Friends might recommend it, but family could think it’s expensive.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            }
+          ]
+        },
+        "PP": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Reliable build, but not long-lasting enough to justify the price.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer",
+                "uses formal words (justify); use simple everyday words"
+              ]
+            }
+          ]
+        },
+        "BI": {
+          "status": "flagged",
+          "valid": false,
+          "retries": 2,
+          "issues": [
+            "does not give a reason based on what this buyer cares about",
+            "your assessment was unsure; say what you still need to check before deciding"
+          ],
+          "previous_attempts": [
+            {
+              "text": "No, too expensive for its features and price.",
+              "issues": [
+                "does not give a reason based on what this buyer cares about",
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            },
+            {
+              "text": "No, too pricey for the features.",
+              "issues": [
+                "does not give a reason based on what this buyer cares about",
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            }
+          ]
+        }
+      },
+      "flagged_constructs": [
+        "SI",
+        "BI"
+      ],
+      "alignment_flags": []
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "iphone 17",
+      "primary_adoption_rating": 3.0141,
+      "primary_adoption_pmf": [
+        0.0,
+        0.191837,
+        0.705178,
+        0.0,
+        0.102985
+      ],
+      "construct_scores": {
+        "PE": 4.2705,
+        "EE": 4.2462,
+        "HM": 4.4607,
+        "PP": 4.1666,
+        "BI": 3.0141
+      },
+      "construct_responses": {
+        "PE": "It helps with productivity by being fast and having good cameras.",
+        "EE": "The setup is simple, just follow the on-screen instructions and it's ready to use quickly.",
+        "HM": "Pleasant to use, fun with its speed and good display.",
+        "SI": "Friends might think it's advanced, but others could just see it as expensive.",
+        "PP": "Yes, it seems well built and sturdy.",
+        "BI": "Maybe, the camera and speed are good but the price is high.",
+        "OVERALL": "It has good features, but the price is a dealbreaker."
+      },
+      "response_text": "It has good features, but the price is a dealbreaker.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It helps with productivity by being fast and having good cameras.",
+          "cosine_similarities": [
+            0.64659,
+            0.647608,
+            0.667703,
+            0.715605,
+            0.701084
+          ],
+          "min_similarity": 0.64659,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.106479,
+            0.516545,
+            0.376976
+          ],
+          "expected_rating": 4.2705,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.006994,
+              0.14497,
+              0.473871,
+              0.374166
+            ],
+            "expected_rating": 4.2152
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.106479,
+              0.516545,
+              0.376976
+            ],
+            "expected_rating": 4.2705
+          },
+          "delta_improved_minus_canonical": 0.0553,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The setup is simple, just follow the on-screen instructions and it's ready to use quickly.",
+          "cosine_similarities": [
+            0.510076,
+            0.483031,
+            0.583004,
+            0.600503,
+            0.654811
+          ],
+          "min_similarity": 0.483031,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.232668,
+            0.288493,
+            0.478839
+          ],
+          "expected_rating": 4.2462,
+          "canonical": {
+            "pmf_probabilities": [
+              0.064971,
+              0.0,
+              0.240164,
+              0.2822,
+              0.412665
+            ],
+            "expected_rating": 3.9776
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.232668,
+              0.288493,
+              0.478839
+            ],
+            "expected_rating": 4.2462
+          },
+          "delta_improved_minus_canonical": 0.2686,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Pleasant to use, fun with its speed and good display.",
+          "cosine_similarities": [
+            0.539884,
+            0.57814,
+            0.589489,
+            0.637022,
+            0.700799
+          ],
+          "min_similarity": 0.539884,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.121182,
+            0.296889,
+            0.58193
+          ],
+          "expected_rating": 4.4607,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.110593,
+              0.143402,
+              0.280816,
+              0.465189
+            ],
+            "expected_rating": 4.1006
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.121182,
+              0.296889,
+              0.58193
+            ],
+            "expected_rating": 4.4607
+          },
+          "delta_improved_minus_canonical": 0.3601,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "Yes, it seems well built and sturdy.",
+          "cosine_similarities": [
+            0.451572,
+            0.438267,
+            0.478868,
+            0.504314,
+            0.500888
+          ],
+          "min_similarity": 0.438267,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.212987,
+            0.407474,
+            0.379539
+          ],
+          "expected_rating": 4.1666,
+          "canonical": {
+            "pmf_probabilities": [
+              0.072873,
+              0.0,
+              0.222383,
+              0.361754,
+              0.342989
+            ],
+            "expected_rating": 3.902
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.212987,
+              0.407474,
+              0.379539
+            ],
+            "expected_rating": 4.1666
+          },
+          "delta_improved_minus_canonical": 0.2646,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Maybe, the camera and speed are good but the price is high.",
+          "cosine_similarities": [
+            0.452578,
+            0.480304,
+            0.526183,
+            0.458906,
+            0.469966
+          ],
+          "min_similarity": 0.452578,
+          "pmf_probabilities": [
+            0.0,
+            0.191837,
+            0.705178,
+            0.0,
+            0.102985
+          ],
+          "expected_rating": 3.0141,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.221722,
+              0.588617,
+              0.050606,
+              0.139056
+            ],
+            "expected_rating": 3.107
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.191837,
+              0.705178,
+              0.0,
+              0.102985
+            ],
+            "expected_rating": 3.0141
+          },
+          "delta_improved_minus_canonical": -0.0929,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "EE": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Easy to set up and use, iOS is intuitive.",
+              "issues": [
+                "uses a stock phrase such as 'easy to set up and use' or 'user-friendly interface'; say what is easy in your own words"
+              ]
+            }
+          ]
+        },
+        "HM": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "SI": {
+          "status": "flagged",
+          "valid": false,
+          "retries": 2,
+          "issues": [
+            "talks about price, which belongs only in the buying-intention answer"
+          ],
+          "previous_attempts": [
+            {
+              "text": "Friends might approve, but it depends on the price.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            },
+            {
+              "text": "Friends might think it's cool, but others could say it's pricey.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            }
+          ]
+        },
+        "PP": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Reliable build.",
+              "issues": [
+                "missing or too short"
+              ]
+            }
+          ]
+        },
+        "BI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 2,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "No, it's too expensive for the price.",
+              "issues": [
+                "does not give a reason based on what this buyer cares about",
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            },
+            {
+              "text": "No, the price is too high for the features.",
+              "issues": [
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            }
+          ]
+        }
+      },
+      "flagged_constructs": [
+        "SI"
+      ],
+      "alignment_flags": []
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "primary_adoption_rating": 2.2186,
+      "primary_adoption_pmf": [
+        0.264828,
+        0.251712,
+        0.483461,
+        0.0,
+        0.0
+      ],
+      "construct_scores": {
+        "PE": 3.7734,
+        "EE": 4.1465,
+        "HM": 4.3504,
+        "SI": 2.6914,
+        "PP": 4.0226,
+        "BI": 2.2186
+      },
+      "construct_responses": {
+        "PE": "The iPhone 17's 5G and Face ID make my daily tasks faster and more convenient.",
+        "EE": "It's pretty straightforward to set up and use, with a good camera and fast processor.",
+        "HM": "The 5G and smooth performance make it fun to use for everyday tasks.",
+        "SI": "Friends might like it, but it's more for tech-savvy people.",
+        "PP": "The phone feels well-built and should last a long time.",
+        "BI": "No, too pricey for everyday use.",
+        "OVERALL": "It has good features for daily use, but the price matters."
+      },
+      "response_text": "It has good features for daily use, but the price matters.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The iPhone 17's 5G and Face ID make my daily tasks faster and more convenient.",
+          "cosine_similarities": [
+            0.681484,
+            0.688537,
+            0.661413,
+            0.721832,
+            0.686649
+          ],
+          "min_similarity": 0.661413,
+          "pmf_probabilities": [
+            0.0,
+            0.20758,
+            0.0,
+            0.603878,
+            0.188541
+          ],
+          "expected_rating": 3.7734,
+          "canonical": {
+            "pmf_probabilities": [
+              0.151076,
+              0.204171,
+              0.0,
+              0.454795,
+              0.189959
+            ],
+            "expected_rating": 3.3284
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.20758,
+              0.0,
+              0.603878,
+              0.188541
+            ],
+            "expected_rating": 3.7734
+          },
+          "delta_improved_minus_canonical": 0.445,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "It's pretty straightforward to set up and use, with a good camera and fast processor.",
+          "cosine_similarities": [
+            0.579737,
+            0.534813,
+            0.636968,
+            0.638931,
+            0.674599
+          ],
+          "min_similarity": 0.534813,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.282099,
+            0.289348,
+            0.428553
+          ],
+          "expected_rating": 4.1465,
+          "canonical": {
+            "pmf_probabilities": [
+              0.114899,
+              0.0,
+              0.261278,
+              0.266298,
+              0.357524
+            ],
+            "expected_rating": 3.7515
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.282099,
+              0.289348,
+              0.428553
+            ],
+            "expected_rating": 4.1465
+          },
+          "delta_improved_minus_canonical": 0.3949,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The 5G and smooth performance make it fun to use for everyday tasks.",
+          "cosine_similarities": [
+            0.60374,
+            0.644598,
+            0.630275,
+            0.677312,
+            0.736237
+          ],
+          "min_similarity": 0.60374,
+          "pmf_probabilities": [
+            0.0,
+            0.125144,
+            0.0,
+            0.274154,
+            0.600702
+          ],
+          "expected_rating": 4.3504,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.149408,
+              0.097033,
+              0.269038,
+              0.484521
+            ],
+            "expected_rating": 4.0887
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.125144,
+              0.0,
+              0.274154,
+              0.600702
+            ],
+            "expected_rating": 4.3504
+          },
+          "delta_improved_minus_canonical": 0.2617,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Friends might like it, but it's more for tech-savvy people.",
+          "cosine_similarities": [
+            0.641989,
+            0.613322,
+            0.662243,
+            0.586625,
+            0.621019
+          ],
+          "min_similarity": 0.586625,
+          "pmf_probabilities": [
+            0.328358,
+            0.0,
+            0.49759,
+            0.0,
+            0.174052
+          ],
+          "expected_rating": 2.6914,
+          "canonical": {
+            "pmf_probabilities": [
+              0.288247,
+              0.138994,
+              0.393693,
+              0.0,
+              0.179066
+            ],
+            "expected_rating": 2.6426
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.328358,
+              0.0,
+              0.49759,
+              0.0,
+              0.174052
+            ],
+            "expected_rating": 2.6914
+          },
+          "delta_improved_minus_canonical": 0.0487,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The phone feels well-built and should last a long time.",
+          "cosine_similarities": [
+            0.588136,
+            0.604194,
+            0.64627,
+            0.652188,
+            0.649413
+          ],
+          "min_similarity": 0.588136,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.311459,
+            0.354434,
+            0.334106
+          ],
+          "expected_rating": 4.0226,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.080485,
+              0.291369,
+              0.321028,
+              0.307118
+            ],
+            "expected_rating": 3.8548
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.311459,
+              0.354434,
+              0.334106
+            ],
+            "expected_rating": 4.0226
+          },
+          "delta_improved_minus_canonical": 0.1679,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "No, too pricey for everyday use.",
+          "cosine_similarities": [
+            0.479296,
+            0.478073,
+            0.497967,
+            0.446571,
+            0.46471
+          ],
+          "min_similarity": 0.446571,
+          "pmf_probabilities": [
+            0.264828,
+            0.251712,
+            0.483461,
+            0.0,
+            0.0
+          ],
+          "expected_rating": 2.2186,
+          "canonical": {
+            "pmf_probabilities": [
+              0.244652,
+              0.235507,
+              0.384235,
+              0.0,
+              0.135607
+            ],
+            "expected_rating": 2.5464
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.264828,
+              0.251712,
+              0.483461,
+              0.0,
+              0.0
+            ],
+            "expected_rating": 2.2186
+          },
+          "delta_improved_minus_canonical": -0.3278,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "It would help with daily tasks, especially with 5G for quicker internet.",
+              "issues": [
+                "is almost the same as another buyer's answer; give your own reason in your own words",
+                "reuses the same sentence pattern as another answer ('it would help ...'); say it your own way"
+              ]
+            }
+          ]
+        },
+        "EE": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Easy to set up and use, iOS is intuitive for non-techy users.",
+              "issues": [
+                "uses a stock phrase such as 'easy to set up and use' or 'user-friendly interface'; say what is easy in your own words"
+              ]
+            }
+          ]
+        },
+        "HM": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Fun to use, especially with the good camera for photos and videos.",
+              "issues": [
+                "reuses the same sentence pattern as another answer ('fun to use ...'); say it your own way"
+              ]
+            }
+          ]
+        },
+        "SI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Friends might like it, but not everyone uses the latest tech.",
+              "issues": [
+                "states a recommendation, review or popularity the product information does not give (everyone uses)"
+              ]
+            }
+          ]
+        },
+        "PP": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 2,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Reliable build, but a bit pricey at ₹45,000.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            },
+            {
+              "text": "The build feels sturdy and durable, lasting a long time.",
+              "issues": [
+                "reuses the same sentence pattern as another answer ('the build feels ...'); say it your own way",
+                "makes a claim the description does not support (durable)"
+              ]
+            }
+          ]
+        },
+        "BI": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 2,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "Maybe, it's good for daily use but the price is a bit high.",
+              "issues": [
+                "opens with a hedge such as 'Maybe' like another answer; give your view or decision first"
+              ]
+            },
+            {
+              "text": "No, too expensive for its features.",
+              "issues": [
+                "does not give a reason based on what this buyer cares about"
+              ]
+            }
+          ]
+        }
+      },
+      "flagged_constructs": [],
+      "alignment_flags": []
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "iphone 17",
+      "primary_adoption_rating": null,
+      "primary_adoption_pmf": null,
+      "construct_scores": {
+        "PE": 4.2537,
+        "EE": 4.2922,
+        "HM": 4.2357,
+        "SI": 3.0269
+      },
+      "construct_responses": {
+        "PE": "The 5G and fast processor make tasks quicker and smoother for me.",
+        "EE": "Setup is easy with clear instructions. Easy to use, especially with Face ID.",
+        "HM": "It would be pleasant to use due to the smooth performance and good camera.",
+        "SI": "Friends might recommend it, but I'm not sure about its popularity.",
+        "PP": "It feels sturdy and well-built, but the price is on the higher side.",
+        "BI": "No, too expensive for daily tasks.",
+        "OVERALL": "Good features, but the price is a deal-breaker for now."
+      },
+      "response_text": "Good features, but the price is a deal-breaker for now.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The 5G and fast processor make tasks quicker and smoother for me.",
+          "cosine_similarities": [
+            0.669918,
+            0.675237,
+            0.678966,
+            0.717912,
+            0.699371
+          ],
+          "min_similarity": 0.669918,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.066338,
+            0.613647,
+            0.320015
+          ],
+          "expected_rating": 4.2537,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.057929,
+              0.098551,
+              0.522732,
+              0.320788
+            ],
+            "expected_rating": 4.1064
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.066338,
+              0.613647,
+              0.320015
+            ],
+            "expected_rating": 4.2537
+          },
+          "delta_improved_minus_canonical": 0.1473,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setup is easy with clear instructions. Easy to use, especially with Face ID.",
+          "cosine_similarities": [
+            0.500181,
+            0.493079,
+            0.569136,
+            0.599352,
+            0.642953
+          ],
+          "min_similarity": 0.493079,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.198704,
+            0.310397,
+            0.490899
+          ],
+          "expected_rating": 4.2922,
+          "canonical": {
+            "pmf_probabilities": [
+              0.020931,
+              0.0,
+              0.224154,
+              0.313206,
+              0.441709
+            ],
+            "expected_rating": 4.1548
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.198704,
+              0.310397,
+              0.490899
+            ],
+            "expected_rating": 4.2922
+          },
+          "delta_improved_minus_canonical": 0.1374,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "It would be pleasant to use due to the smooth performance and good camera.",
+          "cosine_similarities": [
+            0.549329,
+            0.561473,
+            0.582452,
+            0.609854,
+            0.611309
+          ],
+          "min_similarity": 0.549329,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.180508,
+            0.403256,
+            0.416236
+          ],
+          "expected_rating": 4.2357,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.072385,
+              0.197426,
+              0.360758,
+              0.369432
+            ],
+            "expected_rating": 4.0272
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.180508,
+              0.403256,
+              0.416236
+            ],
+            "expected_rating": 4.2357
+          },
+          "delta_improved_minus_canonical": 0.2085,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Friends might recommend it, but I'm not sure about its popularity.",
+          "cosine_similarities": [
+            0.461529,
+            0.51761,
+            0.58779,
+            0.523282,
+            0.482207
+          ],
+          "min_similarity": 0.461529,
+          "pmf_probabilities": [
+            0.0,
+            0.196545,
+            0.579966,
+            0.223489,
+            0.0
+          ],
+          "expected_rating": 3.0269,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.211807,
+              0.476865,
+              0.233231,
+              0.078097
+            ],
+            "expected_rating": 3.1776
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.196545,
+              0.579966,
+              0.223489,
+              0.0
+            ],
+            "expected_rating": 3.0269
+          },
+          "delta_improved_minus_canonical": -0.1507,
+          "alignment_flag": null,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ],
+      "response_validation": {
+        "PE": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "It would help with daily tasks, especially with the camera and 5G for faster internet.",
+              "issues": [
+                "is almost the same as another buyer's answer; give your own reason in your own words",
+                "reuses the same sentence pattern as another answer ('it would help ...'); say it your own way"
+              ]
+            }
+          ]
+        },
+        "EE": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "HM": {
+          "status": "corrected",
+          "valid": true,
+          "retries": 1,
+          "issues": [],
+          "previous_attempts": [
+            {
+              "text": "It would be fun to use with the nice display and good camera, but pricey.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            }
+          ]
+        },
+        "SI": {
+          "status": "passed",
+          "valid": true,
+          "retries": 0,
+          "issues": [],
+          "previous_attempts": []
+        },
+        "PP": {
+          "status": "flagged",
+          "valid": false,
+          "retries": 2,
+          "issues": [
+            "talks about price, which belongs only in the buying-intention answer"
+          ],
+          "previous_attempts": [
+            {
+              "text": "Well-built, but expensive for the features I need.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            },
+            {
+              "text": "It feels sturdy with good build quality, but the price seems high.",
+              "issues": [
+                "talks about price, which belongs only in the buying-intention answer"
+              ]
+            }
+          ]
+        },
+        "BI": {
+          "status": "flagged",
+          "valid": false,
+          "retries": 2,
+          "issues": [
+            "your assessment was unsure; say what you still need to check before deciding"
+          ],
+          "previous_attempts": [
+            {
+              "text": "No, too expensive. I would wait for a sale or a cheaper alternative.",
+              "issues": [
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            },
+            {
+              "text": "No, too expensive for now. Need to see more discounts.",
+              "issues": [
+                "your assessment was unsure; say what you still need to check before deciding"
+              ]
+            }
+          ]
+        }
+      },
+      "flagged_constructs": [
+        "PP",
+        "BI"
+      ],
+      "alignment_flags": []
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "iphone 17",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.69085,
+        0.700248,
+        0.677473,
+        0.702081,
+        0.636857
+      ],
+      "pmf_probabilities": [
+        0.283677,
+        0.351356,
+        0.0,
+        0.364968,
+        0.0
+      ],
+      "expected_rating": 2.4463,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "iphone 17",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.525939,
+        0.51133,
+        0.550692,
+        0.55887,
+        0.574562
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.239948,
+        0.308618,
+        0.451434
+      ],
+      "expected_rating": 4.2115,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "iphone 17",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.526344,
+        0.57071,
+        0.558591,
+        0.59695,
+        0.686712
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.118972,
+        0.0,
+        0.221053,
+        0.659975
+      ],
+      "expected_rating": 4.422,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "iphone 17",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.411267,
+        0.464394,
+        0.499499,
+        0.433832,
+        0.425943
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.304319,
+        0.598517,
+        0.097163,
+        0.0
+      ],
+      "expected_rating": 2.7928,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "iphone 17",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.64659,
+        0.647608,
+        0.667703,
+        0.715605,
+        0.701084
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.106479,
+        0.516545,
+        0.376976
+      ],
+      "expected_rating": 4.2705,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "iphone 17",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.510076,
+        0.483031,
+        0.583004,
+        0.600503,
+        0.654811
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.232668,
+        0.288493,
+        0.478839
+      ],
+      "expected_rating": 4.2462,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "iphone 17",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.539884,
+        0.57814,
+        0.589489,
+        0.637022,
+        0.700799
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.121182,
+        0.296889,
+        0.58193
+      ],
+      "expected_rating": 4.4607,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "iphone 17",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.451572,
+        0.438267,
+        0.478868,
+        0.504314,
+        0.500888
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.212987,
+        0.407474,
+        0.379539
+      ],
+      "expected_rating": 4.1666,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "iphone 17",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.452578,
+        0.480304,
+        0.526183,
+        0.458906,
+        0.469966
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.191837,
+        0.705178,
+        0.0,
+        0.102985
+      ],
+      "expected_rating": 3.0141,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.681484,
+        0.688537,
+        0.661413,
+        0.721832,
+        0.686649
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.20758,
+        0.0,
+        0.603878,
+        0.188541
+      ],
+      "expected_rating": 3.7734,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.579737,
+        0.534813,
+        0.636968,
+        0.638931,
+        0.674599
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.282099,
+        0.289348,
+        0.428553
+      ],
+      "expected_rating": 4.1465,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.60374,
+        0.644598,
+        0.630275,
+        0.677312,
+        0.736237
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.125144,
+        0.0,
+        0.274154,
+        0.600702
+      ],
+      "expected_rating": 4.3504,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.641989,
+        0.613322,
+        0.662243,
+        0.586625,
+        0.621019
+      ],
+      "pmf_probabilities": [
+        0.328358,
+        0.0,
+        0.49759,
+        0.0,
+        0.174052
+      ],
+      "expected_rating": 2.6914,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.588136,
+        0.604194,
+        0.64627,
+        0.652188,
+        0.649413
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.311459,
+        0.354434,
+        0.334106
+      ],
+      "expected_rating": 4.0226,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.479296,
+        0.478073,
+        0.497967,
+        0.446571,
+        0.46471
+      ],
+      "pmf_probabilities": [
+        0.264828,
+        0.251712,
+        0.483461,
+        0.0,
+        0.0
+      ],
+      "expected_rating": 2.2186,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "iphone 17",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.669918,
+        0.675237,
+        0.678966,
+        0.717912,
+        0.699371
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.066338,
+        0.613647,
+        0.320015
+      ],
+      "expected_rating": 4.2537,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "iphone 17",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.500181,
+        0.493079,
+        0.569136,
+        0.599352,
+        0.642953
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.198704,
+        0.310397,
+        0.490899
+      ],
+      "expected_rating": 4.2922,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "iphone 17",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.549329,
+        0.561473,
+        0.582452,
+        0.609854,
+        0.611309
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.180508,
+        0.403256,
+        0.416236
+      ],
+      "expected_rating": 4.2357,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "iphone 17",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.461529,
+        0.51761,
+        0.58779,
+        0.523282,
+        0.482207
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.196545,
+        0.579966,
+        0.223489,
+        0.0
+      ],
+      "expected_rating": 3.0269,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "iphone 17",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.69085,
+      "cos_sim_2": 0.700248,
+      "cos_sim_3": 0.677473,
+      "cos_sim_4": 0.702081,
+      "cos_sim_5": 0.636857,
+      "min_similarity": 0.636857,
+      "p1": 0.283677,
+      "p2": 0.351356,
+      "p3": 0.0,
+      "p4": 0.364968,
+      "p5": 0.0,
+      "set_expected_rating": 2.4463,
+      "canonical_expected_rating": 2.5245,
+      "improved_expected_rating": 2.4463,
+      "delta": -0.0782,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "iphone 17",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.525939,
+      "cos_sim_2": 0.51133,
+      "cos_sim_3": 0.550692,
+      "cos_sim_4": 0.55887,
+      "cos_sim_5": 0.574562,
+      "min_similarity": 0.51133,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.239948,
+      "p4": 0.308618,
+      "p5": 0.451434,
+      "set_expected_rating": 4.2115,
+      "canonical_expected_rating": 3.8788,
+      "improved_expected_rating": 4.2115,
+      "delta": 0.3326,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "iphone 17",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.526344,
+      "cos_sim_2": 0.57071,
+      "cos_sim_3": 0.558591,
+      "cos_sim_4": 0.59695,
+      "cos_sim_5": 0.686712,
+      "min_similarity": 0.526344,
+      "p1": 0.0,
+      "p2": 0.118972,
+      "p3": 0.0,
+      "p4": 0.221053,
+      "p5": 0.659975,
+      "set_expected_rating": 4.422,
+      "canonical_expected_rating": 4.1281,
+      "improved_expected_rating": 4.422,
+      "delta": 0.294,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "iphone 17",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.411267,
+      "cos_sim_2": 0.464394,
+      "cos_sim_3": 0.499499,
+      "cos_sim_4": 0.433832,
+      "cos_sim_5": 0.425943,
+      "min_similarity": 0.411267,
+      "p1": 0.0,
+      "p2": 0.304319,
+      "p3": 0.598517,
+      "p4": 0.097163,
+      "p5": 0.0,
+      "set_expected_rating": 2.7928,
+      "canonical_expected_rating": 2.9932,
+      "improved_expected_rating": 2.7928,
+      "delta": -0.2004,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "iphone 17",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.64659,
+      "cos_sim_2": 0.647608,
+      "cos_sim_3": 0.667703,
+      "cos_sim_4": 0.715605,
+      "cos_sim_5": 0.701084,
+      "min_similarity": 0.64659,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.106479,
+      "p4": 0.516545,
+      "p5": 0.376976,
+      "set_expected_rating": 4.2705,
+      "canonical_expected_rating": 4.2152,
+      "improved_expected_rating": 4.2705,
+      "delta": 0.0553,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "iphone 17",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.510076,
+      "cos_sim_2": 0.483031,
+      "cos_sim_3": 0.583004,
+      "cos_sim_4": 0.600503,
+      "cos_sim_5": 0.654811,
+      "min_similarity": 0.483031,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.232668,
+      "p4": 0.288493,
+      "p5": 0.478839,
+      "set_expected_rating": 4.2462,
+      "canonical_expected_rating": 3.9776,
+      "improved_expected_rating": 4.2462,
+      "delta": 0.2686,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "iphone 17",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.539884,
+      "cos_sim_2": 0.57814,
+      "cos_sim_3": 0.589489,
+      "cos_sim_4": 0.637022,
+      "cos_sim_5": 0.700799,
+      "min_similarity": 0.539884,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.121182,
+      "p4": 0.296889,
+      "p5": 0.58193,
+      "set_expected_rating": 4.4607,
+      "canonical_expected_rating": 4.1006,
+      "improved_expected_rating": 4.4607,
+      "delta": 0.3601,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "iphone 17",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.451572,
+      "cos_sim_2": 0.438267,
+      "cos_sim_3": 0.478868,
+      "cos_sim_4": 0.504314,
+      "cos_sim_5": 0.500888,
+      "min_similarity": 0.438267,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.212987,
+      "p4": 0.407474,
+      "p5": 0.379539,
+      "set_expected_rating": 4.1666,
+      "canonical_expected_rating": 3.902,
+      "improved_expected_rating": 4.1666,
+      "delta": 0.2646,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "iphone 17",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.452578,
+      "cos_sim_2": 0.480304,
+      "cos_sim_3": 0.526183,
+      "cos_sim_4": 0.458906,
+      "cos_sim_5": 0.469966,
+      "min_similarity": 0.452578,
+      "p1": 0.0,
+      "p2": 0.191837,
+      "p3": 0.705178,
+      "p4": 0.0,
+      "p5": 0.102985,
+      "set_expected_rating": 3.0141,
+      "canonical_expected_rating": 3.107,
+      "improved_expected_rating": 3.0141,
+      "delta": -0.0929,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.681484,
+      "cos_sim_2": 0.688537,
+      "cos_sim_3": 0.661413,
+      "cos_sim_4": 0.721832,
+      "cos_sim_5": 0.686649,
+      "min_similarity": 0.661413,
+      "p1": 0.0,
+      "p2": 0.20758,
+      "p3": 0.0,
+      "p4": 0.603878,
+      "p5": 0.188541,
+      "set_expected_rating": 3.7734,
+      "canonical_expected_rating": 3.3284,
+      "improved_expected_rating": 3.7734,
+      "delta": 0.445,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.579737,
+      "cos_sim_2": 0.534813,
+      "cos_sim_3": 0.636968,
+      "cos_sim_4": 0.638931,
+      "cos_sim_5": 0.674599,
+      "min_similarity": 0.534813,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.282099,
+      "p4": 0.289348,
+      "p5": 0.428553,
+      "set_expected_rating": 4.1465,
+      "canonical_expected_rating": 3.7515,
+      "improved_expected_rating": 4.1465,
+      "delta": 0.3949,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.60374,
+      "cos_sim_2": 0.644598,
+      "cos_sim_3": 0.630275,
+      "cos_sim_4": 0.677312,
+      "cos_sim_5": 0.736237,
+      "min_similarity": 0.60374,
+      "p1": 0.0,
+      "p2": 0.125144,
+      "p3": 0.0,
+      "p4": 0.274154,
+      "p5": 0.600702,
+      "set_expected_rating": 4.3504,
+      "canonical_expected_rating": 4.0887,
+      "improved_expected_rating": 4.3504,
+      "delta": 0.2617,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.641989,
+      "cos_sim_2": 0.613322,
+      "cos_sim_3": 0.662243,
+      "cos_sim_4": 0.586625,
+      "cos_sim_5": 0.621019,
+      "min_similarity": 0.586625,
+      "p1": 0.328358,
+      "p2": 0.0,
+      "p3": 0.49759,
+      "p4": 0.0,
+      "p5": 0.174052,
+      "set_expected_rating": 2.6914,
+      "canonical_expected_rating": 2.6426,
+      "improved_expected_rating": 2.6914,
+      "delta": 0.0487,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.588136,
+      "cos_sim_2": 0.604194,
+      "cos_sim_3": 0.64627,
+      "cos_sim_4": 0.652188,
+      "cos_sim_5": 0.649413,
+      "min_similarity": 0.588136,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.311459,
+      "p4": 0.354434,
+      "p5": 0.334106,
+      "set_expected_rating": 4.0226,
+      "canonical_expected_rating": 3.8548,
+      "improved_expected_rating": 4.0226,
+      "delta": 0.1679,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "iphone 17",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.479296,
+      "cos_sim_2": 0.478073,
+      "cos_sim_3": 0.497967,
+      "cos_sim_4": 0.446571,
+      "cos_sim_5": 0.46471,
+      "min_similarity": 0.446571,
+      "p1": 0.264828,
+      "p2": 0.251712,
+      "p3": 0.483461,
+      "p4": 0.0,
+      "p5": 0.0,
+      "set_expected_rating": 2.2186,
+      "canonical_expected_rating": 2.5464,
+      "improved_expected_rating": 2.2186,
+      "delta": -0.3278,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "iphone 17",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.669918,
+      "cos_sim_2": 0.675237,
+      "cos_sim_3": 0.678966,
+      "cos_sim_4": 0.717912,
+      "cos_sim_5": 0.699371,
+      "min_similarity": 0.669918,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.066338,
+      "p4": 0.613647,
+      "p5": 0.320015,
+      "set_expected_rating": 4.2537,
+      "canonical_expected_rating": 4.1064,
+      "improved_expected_rating": 4.2537,
+      "delta": 0.1473,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "iphone 17",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.500181,
+      "cos_sim_2": 0.493079,
+      "cos_sim_3": 0.569136,
+      "cos_sim_4": 0.599352,
+      "cos_sim_5": 0.642953,
+      "min_similarity": 0.493079,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.198704,
+      "p4": 0.310397,
+      "p5": 0.490899,
+      "set_expected_rating": 4.2922,
+      "canonical_expected_rating": 4.1548,
+      "improved_expected_rating": 4.2922,
+      "delta": 0.1374,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "iphone 17",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.549329,
+      "cos_sim_2": 0.561473,
+      "cos_sim_3": 0.582452,
+      "cos_sim_4": 0.609854,
+      "cos_sim_5": 0.611309,
+      "min_similarity": 0.549329,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.180508,
+      "p4": 0.403256,
+      "p5": 0.416236,
+      "set_expected_rating": 4.2357,
+      "canonical_expected_rating": 4.0272,
+      "improved_expected_rating": 4.2357,
+      "delta": 0.2085,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "iphone 17",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.461529,
+      "cos_sim_2": 0.51761,
+      "cos_sim_3": 0.58779,
+      "cos_sim_4": 0.523282,
+      "cos_sim_5": 0.482207,
+      "min_similarity": 0.461529,
+      "p1": 0.0,
+      "p2": 0.196545,
+      "p3": 0.579966,
+      "p4": 0.223489,
+      "p5": 0.0,
+      "set_expected_rating": 3.0269,
+      "canonical_expected_rating": 3.1776,
+      "improved_expected_rating": 3.0269,
+      "delta": -0.1507,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

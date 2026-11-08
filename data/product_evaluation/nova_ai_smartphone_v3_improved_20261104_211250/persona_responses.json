@@ -1,0 +1,94 @@
+[
+  {
+    "persona_id": "P1_premium_tier_owner",
+    "product_name": "Nova AI Smartphone",
+    "respondent_spec_id": "P1_S10",
+    "construct_responses": {
+      "PE": "This phone really helps me get things done faster, especially with the AI Personal Assistant reminding me of my classes and assignments. The AI Camera Enhancement is great for taking good pictures in low light, which I need for my social media posts. The smooth performance and battery optimisation also mean I don't have to worry about it running out of juice during long study sessions.",
+      "EE": "Learning to use this phone was pretty easy for me because of my high comfort level with new technology. The interface is clean and the AI suggestions make sense, helping me do tasks without much effort. Since I spend a lot of time on social media and studying, the AI Personal Assistant and study support features are a big plus, making my phone even more user-friendly.",
+      "HM": "This phone is really fun to use, especially for taking photos and short videos. The AI camera enhancement makes my shots look great, and the smooth display is awesome for casual gaming and entertainment. It's like having a personal assistant who knows exactly what I want to do.",
+      "SI": "People who are important to me think I should use my current smartphone, but they wouldn't mind me switching to this Nova AI Smartphone. It's much cheaper than what I've been using, and they think it offers good value for money. Plus, the AI features like the personal assistant and camera enhancements might make studying and taking photos easier.",
+      "PP": "This phone feels safer because the AI tasks are processed locally, so my personal data isn't sent to the cloud. I like that I have control over my information with its privacy and security controls. For my social media and work stuff, I feel pretty safe using it.",
+      "BI": "I think I'll keep using this phone for a while. The AI features like the personal assistant and camera enhancement are pretty handy, especially for studying and social media. And the smooth performance is good for my daily tasks. Even though it's not as fancy as my last phone, it feels like it has enough power and AI features to meet my needs without breaking the bank."
+    },
+    "construct_status": {
+      "PE": "ok",
+      "EE": "ok",
+      "HM": "ok",
+      "SI": "ok",
+      "PP": "ok",
+      "BI": "ok"
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "prompt_version": "product_eval_v3_2026-11-04"
+  },
+  {
+    "persona_id": "P2_midrange_heavy_user",
+    "product_name": "Nova AI Smartphone",
+    "respondent_spec_id": "P2_S08",
+    "construct_responses": {
+      "PE": "This phone really makes taking photos and videos a breeze, with the AI camera enhancement kicking in when I need it most. The AI personal assistant is a lifesaver for reminders and study tips, and the smooth performance means I can watch videos without any lag. Overall, it helps me stay organized and productive, which is perfect for my busy schedule.",
+      "EE": "This phone is really easy to use because I'm already comfortable with new technology. The AI suggestions and simple interface make it really intuitive, and I don't find myself struggling to do tasks or navigate the settings.",
+      "HM": "This phone is really fun to use for taking and enhancing photos and videos. The AI camera enhancements make it easy to get great shots even in low light, and the smooth display is great for watching videos or playing casual games.",
+      "SI": "People around me whose technology use I respect use smartphones like this one. My friends say it's a good phone with a nice camera, which I use a lot for photography and videos. My family thinks I should use my current smartphone, but they don't really know much about this one, so they're not pushing me to change.",
+      "PP": "This phone feels like it gives me control over my information because of the on-device AI processing. It means my personal data isn't sent to the cloud, which makes me feel safer. The location-based suggestions are handy, but I like knowing I have control over my privacy settings.",
+      "BI": "This phone has been really helpful for my photography and videos, and the AI camera enhancement is a game-changer. The smooth performance and on-device AI processing also make it easy to use without worrying about data privacy. But at ₹24,999, I'm not sure if the extra cost is worth it, considering I usually replace my phone every 3-4 years. I might keep it for now, but I'll probably go for something less expensive next time."
+    },
+    "construct_status": {
+      "PE": "ok",
+      "EE": "ok",
+      "HM": "ok",
+      "SI": "ok",
+      "PP": "ok",
+      "BI": "ok"
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "prompt_version": "product_eval_v3_2026-11-04"
+  },
+  {
+    "persona_id": "P3_midrange_moderate_user",
+    "product_name": "Nova AI Smartphone",
+    "respondent_spec_id": "P3_S04",
+    "construct_responses": {
+      "PE": "This phone helps me a lot with my studies and work. The AI Personal Assistant reminds me of deadlines and suggests study materials, which is really useful. The AI Camera Enhancement also comes in handy for taking clear photos of notes and documents for study.",
+      "EE": "This phone is pretty easy to use, especially with the simple interface and AI suggestions. Since I'm not very tech-savvy, the contextual shortcuts really help me out. It's just like having a friend giving me tips on what to do next.",
+      "HM": "This phone is really fun to use, especially for taking photos and short videos. The AI Camera Enhancement makes my pictures look great even in low light, and the smooth display makes gaming a real treat. It’s just nice to have something that makes using my phone enjoyable.",
+      "SI": "My friends and family would probably say that this phone is a good choice. They think it’s reliable and has good battery life, which is important since my previous phone stopped working. They say the AI features like reminders and battery optimization are helpful, and since it’s not too expensive, they think it’s worth it for daily use like gaming and studying.",
+      "PP": "This phone gives me some control over my information with its on-device AI processing, but I still worry about my personal data being sent to the cloud. The location-based suggestions feel a bit too personal, and I'm not sure if they are really necessary. I feel safer knowing my phone doesn't get too slow, but I still want more assurance about my privacy.",
+      "BI": "This phone is pretty handy for gaming and study, and the AI features are cool, but I'm not sure if it's worth the price. It stops working sometimes, and I've been there before where my previous phone just stopped working. The battery optimization sounds good, but I don't want to replace it too often."
+    },
+    "construct_status": {
+      "PE": "ok",
+      "EE": "ok",
+      "HM": "ok",
+      "SI": "ok",
+      "PP": "ok",
+      "BI": "ok"
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "prompt_version": "product_eval_v3_2026-11-04"
+  },
+  {
+    "persona_id": "P4_budget_or_undisclosed_price",
+    "product_name": "Nova AI Smartphone",
+    "respondent_spec_id": "P4_S09",
+    "construct_responses": {
+      "PE": "This phone is pretty handy for my daily tasks. The AI personal assistant reminds me of my classes and helps with notes, which is really useful. The camera enhancement is nice when I need to take quick photos of my notes or assignments. It saves me from having to carry around a separate camera.",
+      "EE": "This phone has a simple interface, and the AI suggestions make things pretty straightforward. Since I'm not super tech-savvy, the clean UI and contextual shortcuts really help me out. It's easy to understand how to use it, and I can usually get things done without much hassle.",
+      "HM": "This phone is pretty fun to use, especially for taking photos and videos. The AI enhancement makes the pictures and videos look great, and it's cool to see how it works. The smooth display and casual gaming features make it enjoyable too.",
+      "SI": "My family would say it's a good phone because it helps with studies and work, and it's not too expensive. Friends and classmates think it's okay, but they might say something like, 'Why spend so much when you could get something cheaper? ' They usually talk about how people replace their phones too quickly, so they're not really encouraging me to get this one, but they don't say it's a bad choice either.",
+      "PP": "This phone gives me some control over my information with its on-device AI processing, but I still worry about my data going to the cloud. For my studies and work, I need to be careful about what I share, so I appreciate the privacy controls, even if they're not perfect. I feel safer knowing my location-based suggestions are handled locally, but I wish there were more options to customize them.",
+      "BI": "This phone seems a bit pricey for what I need, but the AI features like the personal assistant and camera enhancement could be handy. I mainly use my phone for social media and studying, so the smooth performance and simple interface might work well for me. Still, I'm not sure if the price is worth it for me."
+    },
+    "construct_status": {
+      "PE": "ok",
+      "EE": "ok",
+      "HM": "ok",
+      "SI": "ok",
+      "PP": "ok",
+      "BI": "ok"
+    },
+    "model_returned": "qwen2.5:7b-instruct",
+    "prompt_version": "product_eval_v3_2026-11-04"
+  }
+]

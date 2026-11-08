@@ -1,0 +1,2025 @@
+{
+  "evaluation_id": "samsung_galaxy_watch_ultra_20261031_224450",
+  "product_name": "Samsung Galaxy Watch Ultra",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-31T17:21:10.424493+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.4066,
+  "overall_adoption_average": 3.4066,
+  "primary_adoption_average": 3.4066,
+  "construct_averages": {
+    "PE": 3.3518,
+    "EE": 3.8102,
+    "HM": 3.63,
+    "SI": 3.8044,
+    "PP": 3.4867,
+    "BI": 3.4066
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "primary_adoption_rating": 3.8467,
+      "primary_adoption_pmf": [
+        0.0,
+        0.170704,
+        0.096829,
+        0.447552,
+        0.284915
+      ],
+      "construct_scores": {
+        "PE": 3.6711,
+        "EE": 4.091,
+        "HM": 4.0373,
+        "SI": 4.1972,
+        "PP": 3.3739,
+        "BI": 3.8467
+      },
+      "construct_responses": {
+        "PE": "The advanced health and fitness tracking features will help me stay on top of my routine. The AI-powered health insights will make sure I don't miss any important notifications, which is crucial for my daily work and studies. The GPS navigation will be a lifesaver when I'm traveling to different places.",
+        "EE": "The interface is clean and simple, making it easy to set up and use. The AI Personal Assistant will help with daily tasks and reminders, reducing the learning curve. It's intuitive and user-friendly.",
+        "HM": "The AMOLED display will give me a vibrant and clear visual experience, making it fun to watch movies and play games. The sound quality is top-notch, enhancing the overall media experience.",
+        "SI": "My peers and colleagues will be impressed by the premium build quality and advanced features. It will enhance my social status and give me a sense of prestige.",
+        "PP": "The on-device AI processing and smart battery optimization ensure my personal data is secure and private. I feel confident that my information is protected.",
+        "BI": "I am certain I will continue using this smart TV as my primary television. The premium build quality, top performance, and features match everything I need for my daily work and studies. The price fits comfortably within my budget, and I definitely intend to keep using it.",
+        "OVERALL": "The Samsung Galaxy Watch Ultra meets all my needs and exceeds expectations. It's a perfect fit for my lifestyle and budget."
+      },
+      "response_text": "The Samsung Galaxy Watch Ultra meets all my needs and exceeds expectations. It's a perfect fit for my lifestyle and budget.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The advanced health and fitness tracking features will help me stay on top of my routine. The AI-powered health insights will make sure I don't miss any important notifications, which is crucial for my daily work and studies. The GPS navigation will be a lifesaver when I'm traveling to different places.",
+          "cosine_similarities": [
+            0.618314,
+            0.621958,
+            0.597242,
+            0.675139,
+            0.651401
+          ],
+          "min_similarity": 0.597242,
+          "pmf_probabilities": [
+            0.118483,
+            0.138974,
+            0.0,
+            0.438012,
+            0.304531
+          ],
+          "expected_rating": 3.6711,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The interface is clean and simple, making it easy to set up and use. The AI Personal Assistant will help with daily tasks and reminders, reducing the learning curve. It's intuitive and user-friendly.",
+          "cosine_similarities": [
+            0.5214,
+            0.518165,
+            0.602451,
+            0.647474,
+            0.643282
+          ],
+          "min_similarity": 0.518165,
+          "pmf_probabilities": [
+            0.009462,
+            0.0,
+            0.246489,
+            0.378154,
+            0.365895
+          ],
+          "expected_rating": 4.091,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The AMOLED display will give me a vibrant and clear visual experience, making it fun to watch movies and play games. The sound quality is top-notch, enhancing the overall media experience.",
+          "cosine_similarities": [
+            0.524063,
+            0.556914,
+            0.557296,
+            0.584539,
+            0.631725
+          ],
+          "min_similarity": 0.524063,
+          "pmf_probabilities": [
+            0.0,
+            0.140257,
+            0.141886,
+            0.258199,
+            0.459658
+          ],
+          "expected_rating": 4.0373,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers and colleagues will be impressed by the premium build quality and advanced features. It will enhance my social status and give me a sense of prestige.",
+          "cosine_similarities": [
+            0.535455,
+            0.53124,
+            0.560307,
+            0.614389,
+            0.611788
+          ],
+          "min_similarity": 0.53124,
+          "pmf_probabilities": [
+            0.021394,
+            0.0,
+            0.147562,
+            0.422122,
+            0.408922
+          ],
+          "expected_rating": 4.1972,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The on-device AI processing and smart battery optimization ensure my personal data is secure and private. I feel confident that my information is protected.",
+          "cosine_similarities": [
+            0.759993,
+            0.719006,
+            0.655179,
+            0.793709,
+            0.808774
+          ],
+          "min_similarity": 0.655179,
+          "pmf_probabilities": [
+            0.227477,
+            0.138524,
+            0.0,
+            0.300651,
+            0.333348
+          ],
+          "expected_rating": 3.3739,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smart TV as my primary television. The premium build quality, top performance, and features match everything I need for my daily work and studies. The price fits comfortably within my budget, and I definitely intend to keep using it.",
+          "cosine_similarities": [
+            0.549387,
+            0.592373,
+            0.57377,
+            0.662088,
+            0.621133
+          ],
+          "min_similarity": 0.549387,
+          "pmf_probabilities": [
+            0.0,
+            0.170704,
+            0.096829,
+            0.447552,
+            0.284915
+          ],
+          "expected_rating": 3.8467,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "primary_adoption_rating": 3.7112,
+      "primary_adoption_pmf": [
+        0.0,
+        0.172268,
+        0.204424,
+        0.363131,
+        0.260177
+      ],
+      "construct_scores": {
+        "PE": 3.1881,
+        "EE": 3.9129,
+        "HM": 4.2826,
+        "SI": 3.878,
+        "PP": 3.7205,
+        "BI": 3.7112
+      },
+      "construct_responses": {
+        "PE": "This smart TV has a high refresh rate and good picture quality, which would be great for watching fast-paced shows and videos. It could help me stay productive by providing quick access to work-related content and notifications.",
+        "EE": "The setup process is straightforward, and the interface is user-friendly. However, it might take some time to get used to all the features, especially for someone who isn't very tech-savvy.",
+        "HM": "The display and sound quality are impressive, making binge-watching a real pleasure. It would also be fun to use the voice assistant for quick movie searches and adjustments.",
+        "SI": "My friends and family would be happy to see me using such a modern smart TV. It's seen as a status symbol and a sign of keeping up with the latest technology trends.",
+        "PP": "The on-device security features seem robust, which gives me peace of mind. I trust that my personal data is safe, and there's no risk of hacking or unauthorized access.",
+        "BI": "I am certain I will continue using this smart TV as my primary television; it offers a lot of features and a better picture quality than my current TV, which would be worth the extra cost if I could afford it.",
+        "OVERALL": "This smart TV is a step up from my current one, with better picture quality and more features. However, the price is a bit steep for my budget."
+      },
+      "response_text": "This smart TV is a step up from my current one, with better picture quality and more features. However, the price is a bit steep for my budget.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This smart TV has a high refresh rate and good picture quality, which would be great for watching fast-paced shows and videos. It could help me stay productive by providing quick access to work-related content and notifications.",
+          "cosine_similarities": [
+            0.640555,
+            0.636991,
+            0.604475,
+            0.691057,
+            0.630567
+          ],
+          "min_similarity": 0.604475,
+          "pmf_probabilities": [
+            0.199038,
+            0.179378,
+            0.0,
+            0.477642,
+            0.143941
+          ],
+          "expected_rating": 3.1881,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The setup process is straightforward, and the interface is user-friendly. However, it might take some time to get used to all the features, especially for someone who isn't very tech-savvy.",
+          "cosine_similarities": [
+            0.607211,
+            0.587966,
+            0.620214,
+            0.627367,
+            0.663462
+          ],
+          "min_similarity": 0.587966,
+          "pmf_probabilities": [
+            0.115658,
+            0.0,
+            0.193811,
+            0.2368,
+            0.453731
+          ],
+          "expected_rating": 3.9129,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The display and sound quality are impressive, making binge-watching a real pleasure. It would also be fun to use the voice assistant for quick movie searches and adjustments.",
+          "cosine_similarities": [
+            0.515403,
+            0.529721,
+            0.550463,
+            0.569992,
+            0.645147
+          ],
+          "min_similarity": 0.515403,
+          "pmf_probabilities": [
+            0.0,
+            0.061264,
+            0.150012,
+            0.233574,
+            0.55515
+          ],
+          "expected_rating": 4.2826,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and family would be happy to see me using such a modern smart TV. It's seen as a status symbol and a sign of keeping up with the latest technology trends.",
+          "cosine_similarities": [
+            0.610912,
+            0.584843,
+            0.615192,
+            0.658751,
+            0.667427
+          ],
+          "min_similarity": 0.584843,
+          "pmf_probabilities": [
+            0.122439,
+            0.0,
+            0.142542,
+            0.347135,
+            0.387884
+          ],
+          "expected_rating": 3.878,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The on-device security features seem robust, which gives me peace of mind. I trust that my personal data is safe, and there's no risk of hacking or unauthorized access.",
+          "cosine_similarities": [
+            0.761372,
+            0.711564,
+            0.703799,
+            0.791887,
+            0.817403
+          ],
+          "min_similarity": 0.703799,
+          "pmf_probabilities": [
+            0.215605,
+            0.029079,
+            0.0,
+            0.329881,
+            0.425435
+          ],
+          "expected_rating": 3.7205,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smart TV as my primary television; it offers a lot of features and a better picture quality than my current TV, which would be worth the extra cost if I could afford it.",
+          "cosine_similarities": [
+            0.606189,
+            0.644302,
+            0.651417,
+            0.68653,
+            0.663752
+          ],
+          "min_similarity": 0.606189,
+          "pmf_probabilities": [
+            0.0,
+            0.172268,
+            0.204424,
+            0.363131,
+            0.260177
+          ],
+          "expected_rating": 3.7112,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "primary_adoption_rating": 2.5566,
+      "primary_adoption_pmf": [
+        0.20825,
+        0.303909,
+        0.349342,
+        0.0,
+        0.138499
+      ],
+      "construct_scores": {
+        "PE": 3.1146,
+        "EE": 3.3322,
+        "HM": 2.4658,
+        "SI": 2.9981,
+        "PP": 3.0565,
+        "BI": 2.5566
+      },
+      "construct_responses": {
+        "PE": "For someone like me, who needs a smart TV for study and daily use, the Samsung Galaxy Watch Ultra's performance in terms of speed and daily productivity is impressive. It would definitely help with reminders and notifications, making my study sessions more efficient.",
+        "EE": "The interface seems user-friendly, but I might find it a bit tricky to set up for a first-time user. However, with some basic guidance, I should be able to get it running smoothly.",
+        "HM": "While I enjoy watching movies and shows, the display and audio quality of the Samsung Galaxy Watch Ultra might be a bit underwhelming compared to a dedicated smart TV. It's more about convenience than entertainment here.",
+        "SI": "My friends and family might think it's cool, but they might also wonder why I'm spending so much on a smart TV when I have a perfectly good one at home. Social perception could vary based on the conversation.",
+        "PP": "The on-device security features seem strong, which is reassuring. However, I'm concerned about the data privacy with a smart TV, especially since it's quite expensive.",
+        "BI": "I would not continue using this smart TV as my primary television because it's quite expensive for my budget. I prefer a more cost-effective option that still delivers good performance and features.",
+        "OVERALL": "Overall, the Samsung Galaxy Watch Ultra seems like a great product for those who can afford it, but it doesn't fit my budget or needs as a student and moderate user."
+      },
+      "response_text": "Overall, the Samsung Galaxy Watch Ultra seems like a great product for those who can afford it, but it doesn't fit my budget or needs as a student and moderate user.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "For someone like me, who needs a smart TV for study and daily use, the Samsung Galaxy Watch Ultra's performance in terms of speed and daily productivity is impressive. It would definitely help with reminders and notifications, making my study sessions more efficient.",
+          "cosine_similarities": [
+            0.695107,
+            0.694057,
+            0.656239,
+            0.735904,
+            0.684781
+          ],
+          "min_similarity": 0.656239,
+          "pmf_probabilities": [
+            0.210218,
+            0.204538,
+            0.0,
+            0.430874,
+            0.15437
+          ],
+          "expected_rating": 3.1146,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The interface seems user-friendly, but I might find it a bit tricky to set up for a first-time user. However, with some basic guidance, I should be able to get it running smoothly.",
+          "cosine_similarities": [
+            0.557024,
+            0.514939,
+            0.562184,
+            0.554211,
+            0.567478
+          ],
+          "min_similarity": 0.514939,
+          "pmf_probabilities": [
+            0.232333,
+            0.0,
+            0.26082,
+            0.216801,
+            0.290045
+          ],
+          "expected_rating": 3.3322,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "While I enjoy watching movies and shows, the display and audio quality of the Samsung Galaxy Watch Ultra might be a bit underwhelming compared to a dedicated smart TV. It's more about convenience than entertainment here.",
+          "cosine_similarities": [
+            0.6505,
+            0.672707,
+            0.662449,
+            0.649832,
+            0.614088
+          ],
+          "min_similarity": 0.614088,
+          "pmf_probabilities": [
+            0.203264,
+            0.327232,
+            0.269968,
+            0.199536,
+            0.0
+          ],
+          "expected_rating": 2.4658,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends and family might think it's cool, but they might also wonder why I'm spending so much on a smart TV when I have a perfectly good one at home. Social perception could vary based on the conversation.",
+          "cosine_similarities": [
+            0.643192,
+            0.657967,
+            0.686594,
+            0.666794,
+            0.638683
+          ],
+          "min_similarity": 0.638683,
+          "pmf_probabilities": [
+            0.045179,
+            0.193201,
+            0.479992,
+            0.281627,
+            0.0
+          ],
+          "expected_rating": 2.9981,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The on-device security features seem strong, which is reassuring. However, I'm concerned about the data privacy with a smart TV, especially since it's quite expensive.",
+          "cosine_similarities": [
+            0.671895,
+            0.631672,
+            0.605655,
+            0.671431,
+            0.657956
+          ],
+          "min_similarity": 0.605655,
+          "pmf_probabilities": [
+            0.314925,
+            0.123695,
+            0.0,
+            0.312721,
+            0.248659
+          ],
+          "expected_rating": 3.0565,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I would not continue using this smart TV as my primary television because it's quite expensive for my budget. I prefer a more cost-effective option that still delivers good performance and features.",
+          "cosine_similarities": [
+            0.610326,
+            0.622767,
+            0.628676,
+            0.583242,
+            0.601255
+          ],
+          "min_similarity": 0.583242,
+          "pmf_probabilities": [
+            0.20825,
+            0.303909,
+            0.349342,
+            0.0,
+            0.138499
+          ],
+          "expected_rating": 2.5566,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "primary_adoption_rating": 3.5121,
+      "primary_adoption_pmf": [
+        0.0,
+        0.20888,
+        0.264913,
+        0.331452,
+        0.194754
+      ],
+      "construct_scores": {
+        "PE": 3.4336,
+        "EE": 3.9045,
+        "HM": 3.7343,
+        "SI": 4.1444,
+        "PP": 3.7958,
+        "BI": 3.5121
+      },
+      "construct_responses": {
+        "PE": "This smart TV would be really useful for watching online classes and binge-watching shows. The display quality and fast performance would definitely boost my study and entertainment time.",
+        "EE": "Setting it up would be a bit tricky, but once it's done, the interface is clean and user-friendly. The AI features like smart notifications and personal assistant would make it easier to manage my daily tasks without much effort.",
+        "HM": "The audio and video quality would be top-notch, making movies and TV shows more enjoyable. The social media integration might be fun, but I prefer simple content for daily viewing.",
+        "SI": "My friends think the smart features are cool, and they would be happy if I had this at home. It might impress my family, but they prefer traditional TVs.",
+        "PP": "I feel safe knowing that my personal data is protected on this smart TV. The on-device security features are reassuring, especially since I use it for both study and entertainment.",
+        "BI": "I am certain I will continue using this smart TV as my primary television; it offers great features for daily use, and the privacy and security are top-notch. However, it's a bit expensive for my current budget.",
+        "OVERALL": "While the smart TV has great features and a good display, it's a bit pricey for my student budget. I would still use it if it were more affordable."
+      },
+      "response_text": "While the smart TV has great features and a good display, it's a bit pricey for my student budget. I would still use it if it were more affordable.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This smart TV would be really useful for watching online classes and binge-watching shows. The display quality and fast performance would definitely boost my study and entertainment time.",
+          "cosine_similarities": [
+            0.591661,
+            0.600437,
+            0.574719,
+            0.643951,
+            0.59954
+          ],
+          "min_similarity": 0.574719,
+          "pmf_probabilities": [
+            0.123922,
+            0.188118,
+            0.0,
+            0.506405,
+            0.181554
+          ],
+          "expected_rating": 3.4336,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting it up would be a bit tricky, but once it's done, the interface is clean and user-friendly. The AI features like smart notifications and personal assistant would make it easier to manage my daily tasks without much effort.",
+          "cosine_similarities": [
+            0.548517,
+            0.540008,
+            0.67109,
+            0.657765,
+            0.660534
+          ],
+          "min_similarity": 0.540008,
+          "pmf_probabilities": [
+            0.022518,
+            0.0,
+            0.346892,
+            0.31163,
+            0.318959
+          ],
+          "expected_rating": 3.9045,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The audio and video quality would be top-notch, making movies and TV shows more enjoyable. The social media integration might be fun, but I prefer simple content for daily viewing.",
+          "cosine_similarities": [
+            0.533157,
+            0.562613,
+            0.584187,
+            0.576857,
+            0.593946
+          ],
+          "min_similarity": 0.533157,
+          "pmf_probabilities": [
+            0.0,
+            0.159243,
+            0.275876,
+            0.236248,
+            0.328633
+          ],
+          "expected_rating": 3.7343,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends think the smart features are cool, and they would be happy if I had this at home. It might impress my family, but they prefer traditional TVs.",
+          "cosine_similarities": [
+            0.558655,
+            0.558767,
+            0.576826,
+            0.578088,
+            0.586522
+          ],
+          "min_similarity": 0.558655,
+          "pmf_probabilities": [
+            0.0,
+            0.001713,
+            0.277069,
+            0.296311,
+            0.424907
+          ],
+          "expected_rating": 4.1444,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "I feel safe knowing that my personal data is protected on this smart TV. The on-device security features are reassuring, especially since I use it for both study and entertainment.",
+          "cosine_similarities": [
+            0.747303,
+            0.708978,
+            0.700521,
+            0.790289,
+            0.806528
+          ],
+          "min_similarity": 0.700521,
+          "pmf_probabilities": [
+            0.186372,
+            0.033693,
+            0.0,
+            0.357621,
+            0.422314
+          ],
+          "expected_rating": 3.7958,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smart TV as my primary television; it offers great features for daily use, and the privacy and security are top-notch. However, it's a bit expensive for my current budget.",
+          "cosine_similarities": [
+            0.567877,
+            0.60409,
+            0.613804,
+            0.62534,
+            0.601641
+          ],
+          "min_similarity": 0.567877,
+          "pmf_probabilities": [
+            0.0,
+            0.20888,
+            0.264913,
+            0.331452,
+            0.194754
+          ],
+          "expected_rating": 3.5121,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.618314,
+        0.621958,
+        0.597242,
+        0.675139,
+        0.651401
+      ],
+      "pmf_probabilities": [
+        0.118483,
+        0.138974,
+        0.0,
+        0.438012,
+        0.304531
+      ],
+      "expected_rating": 3.6711,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.5214,
+        0.518165,
+        0.602451,
+        0.647474,
+        0.643282
+      ],
+      "pmf_probabilities": [
+        0.009462,
+        0.0,
+        0.246489,
+        0.378154,
+        0.365895
+      ],
+      "expected_rating": 4.091,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.524063,
+        0.556914,
+        0.557296,
+        0.584539,
+        0.631725
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.140257,
+        0.141886,
+        0.258199,
+        0.459658
+      ],
+      "expected_rating": 4.0373,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.535455,
+        0.53124,
+        0.560307,
+        0.614389,
+        0.611788
+      ],
+      "pmf_probabilities": [
+        0.021394,
+        0.0,
+        0.147562,
+        0.422122,
+        0.408922
+      ],
+      "expected_rating": 4.1972,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.759993,
+        0.719006,
+        0.655179,
+        0.793709,
+        0.808774
+      ],
+      "pmf_probabilities": [
+        0.227477,
+        0.138524,
+        0.0,
+        0.300651,
+        0.333348
+      ],
+      "expected_rating": 3.3739,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.549387,
+        0.592373,
+        0.57377,
+        0.662088,
+        0.621133
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.170704,
+        0.096829,
+        0.447552,
+        0.284915
+      ],
+      "expected_rating": 3.8467,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.640555,
+        0.636991,
+        0.604475,
+        0.691057,
+        0.630567
+      ],
+      "pmf_probabilities": [
+        0.199038,
+        0.179378,
+        0.0,
+        0.477642,
+        0.143941
+      ],
+      "expected_rating": 3.1881,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.607211,
+        0.587966,
+        0.620214,
+        0.627367,
+        0.663462
+      ],
+      "pmf_probabilities": [
+        0.115658,
+        0.0,
+        0.193811,
+        0.2368,
+        0.453731
+      ],
+      "expected_rating": 3.9129,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.515403,
+        0.529721,
+        0.550463,
+        0.569992,
+        0.645147
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.061264,
+        0.150012,
+        0.233574,
+        0.55515
+      ],
+      "expected_rating": 4.2826,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.610912,
+        0.584843,
+        0.615192,
+        0.658751,
+        0.667427
+      ],
+      "pmf_probabilities": [
+        0.122439,
+        0.0,
+        0.142542,
+        0.347135,
+        0.387884
+      ],
+      "expected_rating": 3.878,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.761372,
+        0.711564,
+        0.703799,
+        0.791887,
+        0.817403
+      ],
+      "pmf_probabilities": [
+        0.215605,
+        0.029079,
+        0.0,
+        0.329881,
+        0.425435
+      ],
+      "expected_rating": 3.7205,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.606189,
+        0.644302,
+        0.651417,
+        0.68653,
+        0.663752
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.172268,
+        0.204424,
+        0.363131,
+        0.260177
+      ],
+      "expected_rating": 3.7112,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.695107,
+        0.694057,
+        0.656239,
+        0.735904,
+        0.684781
+      ],
+      "pmf_probabilities": [
+        0.210218,
+        0.204538,
+        0.0,
+        0.430874,
+        0.15437
+      ],
+      "expected_rating": 3.1146,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.557024,
+        0.514939,
+        0.562184,
+        0.554211,
+        0.567478
+      ],
+      "pmf_probabilities": [
+        0.232333,
+        0.0,
+        0.26082,
+        0.216801,
+        0.290045
+      ],
+      "expected_rating": 3.3322,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.6505,
+        0.672707,
+        0.662449,
+        0.649832,
+        0.614088
+      ],
+      "pmf_probabilities": [
+        0.203264,
+        0.327232,
+        0.269968,
+        0.199536,
+        0.0
+      ],
+      "expected_rating": 2.4658,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.643192,
+        0.657967,
+        0.686594,
+        0.666794,
+        0.638683
+      ],
+      "pmf_probabilities": [
+        0.045179,
+        0.193201,
+        0.479992,
+        0.281627,
+        0.0
+      ],
+      "expected_rating": 2.9981,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.671895,
+        0.631672,
+        0.605655,
+        0.671431,
+        0.657956
+      ],
+      "pmf_probabilities": [
+        0.314925,
+        0.123695,
+        0.0,
+        0.312721,
+        0.248659
+      ],
+      "expected_rating": 3.0565,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.610326,
+        0.622767,
+        0.628676,
+        0.583242,
+        0.601255
+      ],
+      "pmf_probabilities": [
+        0.20825,
+        0.303909,
+        0.349342,
+        0.0,
+        0.138499
+      ],
+      "expected_rating": 2.5566,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.591661,
+        0.600437,
+        0.574719,
+        0.643951,
+        0.59954
+      ],
+      "pmf_probabilities": [
+        0.123922,
+        0.188118,
+        0.0,
+        0.506405,
+        0.181554
+      ],
+      "expected_rating": 3.4336,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.548517,
+        0.540008,
+        0.67109,
+        0.657765,
+        0.660534
+      ],
+      "pmf_probabilities": [
+        0.022518,
+        0.0,
+        0.346892,
+        0.31163,
+        0.318959
+      ],
+      "expected_rating": 3.9045,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.533157,
+        0.562613,
+        0.584187,
+        0.576857,
+        0.593946
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.159243,
+        0.275876,
+        0.236248,
+        0.328633
+      ],
+      "expected_rating": 3.7343,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.558655,
+        0.558767,
+        0.576826,
+        0.578088,
+        0.586522
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.001713,
+        0.277069,
+        0.296311,
+        0.424907
+      ],
+      "expected_rating": 4.1444,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.747303,
+        0.708978,
+        0.700521,
+        0.790289,
+        0.806528
+      ],
+      "pmf_probabilities": [
+        0.186372,
+        0.033693,
+        0.0,
+        0.357621,
+        0.422314
+      ],
+      "expected_rating": 3.7958,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.567877,
+        0.60409,
+        0.613804,
+        0.62534,
+        0.601641
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.20888,
+        0.264913,
+        0.331452,
+        0.194754
+      ],
+      "expected_rating": 3.5121,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.618314,
+      "cos_sim_2": 0.621958,
+      "cos_sim_3": 0.597242,
+      "cos_sim_4": 0.675139,
+      "cos_sim_5": 0.651401,
+      "min_similarity": 0.597242,
+      "p1": 0.118483,
+      "p2": 0.138974,
+      "p3": 0.0,
+      "p4": 0.438012,
+      "p5": 0.304531,
+      "set_expected_rating": 3.6711,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.5214,
+      "cos_sim_2": 0.518165,
+      "cos_sim_3": 0.602451,
+      "cos_sim_4": 0.647474,
+      "cos_sim_5": 0.643282,
+      "min_similarity": 0.518165,
+      "p1": 0.009462,
+      "p2": 0.0,
+      "p3": 0.246489,
+      "p4": 0.378154,
+      "p5": 0.365895,
+      "set_expected_rating": 4.091,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.524063,
+      "cos_sim_2": 0.556914,
+      "cos_sim_3": 0.557296,
+      "cos_sim_4": 0.584539,
+      "cos_sim_5": 0.631725,
+      "min_similarity": 0.524063,
+      "p1": 0.0,
+      "p2": 0.140257,
+      "p3": 0.141886,
+      "p4": 0.258199,
+      "p5": 0.459658,
+      "set_expected_rating": 4.0373,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.535455,
+      "cos_sim_2": 0.53124,
+      "cos_sim_3": 0.560307,
+      "cos_sim_4": 0.614389,
+      "cos_sim_5": 0.611788,
+      "min_similarity": 0.53124,
+      "p1": 0.021394,
+      "p2": 0.0,
+      "p3": 0.147562,
+      "p4": 0.422122,
+      "p5": 0.408922,
+      "set_expected_rating": 4.1972,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.759993,
+      "cos_sim_2": 0.719006,
+      "cos_sim_3": 0.655179,
+      "cos_sim_4": 0.793709,
+      "cos_sim_5": 0.808774,
+      "min_similarity": 0.655179,
+      "p1": 0.227477,
+      "p2": 0.138524,
+      "p3": 0.0,
+      "p4": 0.300651,
+      "p5": 0.333348,
+      "set_expected_rating": 3.3739,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.549387,
+      "cos_sim_2": 0.592373,
+      "cos_sim_3": 0.57377,
+      "cos_sim_4": 0.662088,
+      "cos_sim_5": 0.621133,
+      "min_similarity": 0.549387,
+      "p1": 0.0,
+      "p2": 0.170704,
+      "p3": 0.096829,
+      "p4": 0.447552,
+      "p5": 0.284915,
+      "set_expected_rating": 3.8467,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.640555,
+      "cos_sim_2": 0.636991,
+      "cos_sim_3": 0.604475,
+      "cos_sim_4": 0.691057,
+      "cos_sim_5": 0.630567,
+      "min_similarity": 0.604475,
+      "p1": 0.199038,
+      "p2": 0.179378,
+      "p3": 0.0,
+      "p4": 0.477642,
+      "p5": 0.143941,
+      "set_expected_rating": 3.1881,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.607211,
+      "cos_sim_2": 0.587966,
+      "cos_sim_3": 0.620214,
+      "cos_sim_4": 0.627367,
+      "cos_sim_5": 0.663462,
+      "min_similarity": 0.587966,
+      "p1": 0.115658,
+      "p2": 0.0,
+      "p3": 0.193811,
+      "p4": 0.2368,
+      "p5": 0.453731,
+      "set_expected_rating": 3.9129,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.515403,
+      "cos_sim_2": 0.529721,
+      "cos_sim_3": 0.550463,
+      "cos_sim_4": 0.569992,
+      "cos_sim_5": 0.645147,
+      "min_similarity": 0.515403,
+      "p1": 0.0,
+      "p2": 0.061264,
+      "p3": 0.150012,
+      "p4": 0.233574,
+      "p5": 0.55515,
+      "set_expected_rating": 4.2826,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.610912,
+      "cos_sim_2": 0.584843,
+      "cos_sim_3": 0.615192,
+      "cos_sim_4": 0.658751,
+      "cos_sim_5": 0.667427,
+      "min_similarity": 0.584843,
+      "p1": 0.122439,
+      "p2": 0.0,
+      "p3": 0.142542,
+      "p4": 0.347135,
+      "p5": 0.387884,
+      "set_expected_rating": 3.878,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.761372,
+      "cos_sim_2": 0.711564,
+      "cos_sim_3": 0.703799,
+      "cos_sim_4": 0.791887,
+      "cos_sim_5": 0.817403,
+      "min_similarity": 0.703799,
+      "p1": 0.215605,
+      "p2": 0.029079,
+      "p3": 0.0,
+      "p4": 0.329881,
+      "p5": 0.425435,
+      "set_expected_rating": 3.7205,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.606189,
+      "cos_sim_2": 0.644302,
+      "cos_sim_3": 0.651417,
+      "cos_sim_4": 0.68653,
+      "cos_sim_5": 0.663752,
+      "min_similarity": 0.606189,
+      "p1": 0.0,
+      "p2": 0.172268,
+      "p3": 0.204424,
+      "p4": 0.363131,
+      "p5": 0.260177,
+      "set_expected_rating": 3.7112,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.695107,
+      "cos_sim_2": 0.694057,
+      "cos_sim_3": 0.656239,
+      "cos_sim_4": 0.735904,
+      "cos_sim_5": 0.684781,
+      "min_similarity": 0.656239,
+      "p1": 0.210218,
+      "p2": 0.204538,
+      "p3": 0.0,
+      "p4": 0.430874,
+      "p5": 0.15437,
+      "set_expected_rating": 3.1146,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.557024,
+      "cos_sim_2": 0.514939,
+      "cos_sim_3": 0.562184,
+      "cos_sim_4": 0.554211,
+      "cos_sim_5": 0.567478,
+      "min_similarity": 0.514939,
+      "p1": 0.232333,
+      "p2": 0.0,
+      "p3": 0.26082,
+      "p4": 0.216801,
+      "p5": 0.290045,
+      "set_expected_rating": 3.3322,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.6505,
+      "cos_sim_2": 0.672707,
+      "cos_sim_3": 0.662449,
+      "cos_sim_4": 0.649832,
+      "cos_sim_5": 0.614088,
+      "min_similarity": 0.614088,
+      "p1": 0.203264,
+      "p2": 0.327232,
+      "p3": 0.269968,
+      "p4": 0.199536,
+      "p5": 0.0,
+      "set_expected_rating": 2.4658,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.643192,
+      "cos_sim_2": 0.657967,
+      "cos_sim_3": 0.686594,
+      "cos_sim_4": 0.666794,
+      "cos_sim_5": 0.638683,
+      "min_similarity": 0.638683,
+      "p1": 0.045179,
+      "p2": 0.193201,
+      "p3": 0.479992,
+      "p4": 0.281627,
+      "p5": 0.0,
+      "set_expected_rating": 2.9981,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.671895,
+      "cos_sim_2": 0.631672,
+      "cos_sim_3": 0.605655,
+      "cos_sim_4": 0.671431,
+      "cos_sim_5": 0.657956,
+      "min_similarity": 0.605655,
+      "p1": 0.314925,
+      "p2": 0.123695,
+      "p3": 0.0,
+      "p4": 0.312721,
+      "p5": 0.248659,
+      "set_expected_rating": 3.0565,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.610326,
+      "cos_sim_2": 0.622767,
+      "cos_sim_3": 0.628676,
+      "cos_sim_4": 0.583242,
+      "cos_sim_5": 0.601255,
+      "min_similarity": 0.583242,
+      "p1": 0.20825,
+      "p2": 0.303909,
+      "p3": 0.349342,
+      "p4": 0.0,
+      "p5": 0.138499,
+      "set_expected_rating": 2.5566,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.591661,
+      "cos_sim_2": 0.600437,
+      "cos_sim_3": 0.574719,
+      "cos_sim_4": 0.643951,
+      "cos_sim_5": 0.59954,
+      "min_similarity": 0.574719,
+      "p1": 0.123922,
+      "p2": 0.188118,
+      "p3": 0.0,
+      "p4": 0.506405,
+      "p5": 0.181554,
+      "set_expected_rating": 3.4336,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.548517,
+      "cos_sim_2": 0.540008,
+      "cos_sim_3": 0.67109,
+      "cos_sim_4": 0.657765,
+      "cos_sim_5": 0.660534,
+      "min_similarity": 0.540008,
+      "p1": 0.022518,
+      "p2": 0.0,
+      "p3": 0.346892,
+      "p4": 0.31163,
+      "p5": 0.318959,
+      "set_expected_rating": 3.9045,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.533157,
+      "cos_sim_2": 0.562613,
+      "cos_sim_3": 0.584187,
+      "cos_sim_4": 0.576857,
+      "cos_sim_5": 0.593946,
+      "min_similarity": 0.533157,
+      "p1": 0.0,
+      "p2": 0.159243,
+      "p3": 0.275876,
+      "p4": 0.236248,
+      "p5": 0.328633,
+      "set_expected_rating": 3.7343,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.558655,
+      "cos_sim_2": 0.558767,
+      "cos_sim_3": 0.576826,
+      "cos_sim_4": 0.578088,
+      "cos_sim_5": 0.586522,
+      "min_similarity": 0.558655,
+      "p1": 0.0,
+      "p2": 0.001713,
+      "p3": 0.277069,
+      "p4": 0.296311,
+      "p5": 0.424907,
+      "set_expected_rating": 4.1444,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.747303,
+      "cos_sim_2": 0.708978,
+      "cos_sim_3": 0.700521,
+      "cos_sim_4": 0.790289,
+      "cos_sim_5": 0.806528,
+      "min_similarity": 0.700521,
+      "p1": 0.186372,
+      "p2": 0.033693,
+      "p3": 0.0,
+      "p4": 0.357621,
+      "p5": 0.422314,
+      "set_expected_rating": 3.7958,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Samsung Galaxy Watch Ultra",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.567877,
+      "cos_sim_2": 0.60409,
+      "cos_sim_3": 0.613804,
+      "cos_sim_4": 0.62534,
+      "cos_sim_5": 0.601641,
+      "min_similarity": 0.567877,
+      "p1": 0.0,
+      "p2": 0.20888,
+      "p3": 0.264913,
+      "p4": 0.331452,
+      "p5": 0.194754,
+      "set_expected_rating": 3.5121,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

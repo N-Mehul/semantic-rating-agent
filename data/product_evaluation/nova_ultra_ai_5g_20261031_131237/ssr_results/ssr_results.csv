@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,Nova Ultra AI 5G,PE,Performance Expectancy,False,2.1209,0.349562,0.303063,0.224296,0.123078,0.0,nomic-embed-text
+P1_premium_tier_owner,Nova Ultra AI 5G,EE,Effort Expectancy,False,1.9357,0.495057,0.181077,0.216963,0.106903,0.0,nomic-embed-text
+P1_premium_tier_owner,Nova Ultra AI 5G,HM,Hedonic Motivation,False,2.9323,0.0,0.454984,0.213248,0.276208,0.05556,nomic-embed-text
+P1_premium_tier_owner,Nova Ultra AI 5G,SI,Social Influence,False,2.8496,0.017502,0.369078,0.35977,0.253649,0.0,nomic-embed-text
+P1_premium_tier_owner,Nova Ultra AI 5G,PP,Perceived Protection,False,2.5218,0.276638,0.321019,0.00622,0.396124,0.0,nomic-embed-text
+P1_premium_tier_owner,Nova Ultra AI 5G,BI,Behavioral Intention,True,2.3288,0.26634,0.348047,0.280847,0.0,0.104766,nomic-embed-text
+P2_midrange_heavy_user,Nova Ultra AI 5G,PE,Performance Expectancy,False,3.6711,0.069407,0.190715,0.0,0.479148,0.26073,nomic-embed-text
+P2_midrange_heavy_user,Nova Ultra AI 5G,EE,Effort Expectancy,False,3.8939,0.079037,0.0,0.311071,0.167812,0.442079,nomic-embed-text
+P2_midrange_heavy_user,Nova Ultra AI 5G,HM,Hedonic Motivation,False,3.8395,0.0,0.198568,0.16011,0.244582,0.39674,nomic-embed-text
+P2_midrange_heavy_user,Nova Ultra AI 5G,SI,Social Influence,False,4.0415,0.058765,0.0,0.187362,0.348757,0.405116,nomic-embed-text
+P2_midrange_heavy_user,Nova Ultra AI 5G,PP,Perceived Protection,False,3.0185,0.25969,0.200157,0.0,0.342251,0.197903,nomic-embed-text
+P2_midrange_heavy_user,Nova Ultra AI 5G,BI,Behavioral Intention,True,3.5978,0.0,0.156763,0.295845,0.340177,0.207215,nomic-embed-text
+P3_midrange_moderate_user,Nova Ultra AI 5G,PE,Performance Expectancy,False,3.6258,0.0,0.21124,0.057201,0.626097,0.105461,nomic-embed-text
+P3_midrange_moderate_user,Nova Ultra AI 5G,EE,Effort Expectancy,False,3.9156,0.061277,0.0,0.268922,0.301402,0.368399,nomic-embed-text
+P3_midrange_moderate_user,Nova Ultra AI 5G,HM,Hedonic Motivation,False,3.6459,0.0,0.238428,0.187777,0.2633,0.310495,nomic-embed-text
+P3_midrange_moderate_user,Nova Ultra AI 5G,SI,Social Influence,False,3.1292,0.167347,0.0,0.54766,0.106057,0.178936,nomic-embed-text
+P3_midrange_moderate_user,Nova Ultra AI 5G,PP,Perceived Protection,False,3.344,0.202144,0.143307,0.0,0.417463,0.237086,nomic-embed-text
+P3_midrange_moderate_user,Nova Ultra AI 5G,BI,Behavioral Intention,True,3.6084,0.0,0.183921,0.286266,0.267277,0.262536,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova Ultra AI 5G,PE,Performance Expectancy,False,3.6231,0.0,0.163622,0.157644,0.570737,0.107996,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova Ultra AI 5G,EE,Effort Expectancy,False,3.7771,0.100566,0.0,0.269276,0.282093,0.348065,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova Ultra AI 5G,HM,Hedonic Motivation,False,3.903,0.0,0.154618,0.185231,0.262707,0.397444,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova Ultra AI 5G,SI,Social Influence,False,3.5254,0.000311,0.0,0.676982,0.119398,0.203309,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova Ultra AI 5G,PP,Perceived Protection,False,2.9325,0.259218,0.243539,0.0,0.299971,0.197272,nomic-embed-text
+P4_budget_or_undisclosed_price,Nova Ultra AI 5G,BI,Behavioral Intention,True,3.1329,0.0,0.282171,0.407405,0.205765,0.104659,nomic-embed-text

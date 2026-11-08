@@ -1,0 +1,21 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,canonical_expected_rating,improved_expected_rating,delta,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,iphone,PE,Performance Expectancy,False,3.6533,3.3612,3.6533,0.2921,0.179388,0.0,0.0,0.629113,0.191499,nomic-embed-text
+P1_premium_tier_owner,iphone,EE,Effort Expectancy,False,4.2208,3.8582,4.2208,0.3626,0.0,0.0,0.268355,0.242483,0.489162,nomic-embed-text
+P1_premium_tier_owner,iphone,HM,Hedonic Motivation,False,2.3107,2.7778,2.3107,-0.467,0.429942,0.0,0.399438,0.17062,0.0,nomic-embed-text
+P1_premium_tier_owner,iphone,SI,Social Influence,False,3.8334,3.579,3.8334,0.2544,0.0,0.0,0.407684,0.351219,0.241097,nomic-embed-text
+P1_premium_tier_owner,iphone,PP,Perceived Protection,False,3.4252,3.1206,3.4252,0.3046,0.297165,0.0,0.0,0.38611,0.316725,nomic-embed-text
+P2_midrange_heavy_user,iphone,PE,Performance Expectancy,False,3.9883,3.905,3.9883,0.0834,0.0,0.0,0.26855,0.474553,0.256898,nomic-embed-text
+P2_midrange_heavy_user,iphone,EE,Effort Expectancy,False,4.2286,4.0834,4.2286,0.1452,0.0,0.0,0.224777,0.321815,0.453408,nomic-embed-text
+P2_midrange_heavy_user,iphone,HM,Hedonic Motivation,False,4.4964,4.2092,4.4964,0.2872,0.0,0.08842,0.0,0.238336,0.673244,nomic-embed-text
+P2_midrange_heavy_user,iphone,SI,Social Influence,False,3.1269,3.0662,3.1269,0.0607,0.219971,0.0,0.496622,0.0,0.283407,nomic-embed-text
+P2_midrange_heavy_user,iphone,PP,Perceived Protection,False,1.7658,1.9763,1.7658,-0.2106,0.338682,0.556871,0.104447,0.0,0.0,nomic-embed-text
+P3_midrange_moderate_user,iphone,PE,Performance Expectancy,False,3.3584,3.2741,3.3584,0.0843,0.120692,0.139752,0.0,0.739556,0.0,nomic-embed-text
+P3_midrange_moderate_user,iphone,EE,Effort Expectancy,False,4.1768,3.8565,4.1768,0.3203,0.0,0.0,0.25206,0.319034,0.428905,nomic-embed-text
+P3_midrange_moderate_user,iphone,HM,Hedonic Motivation,False,4.1398,3.9026,4.1398,0.2373,0.0,0.151131,0.0,0.406758,0.442111,nomic-embed-text
+P3_midrange_moderate_user,iphone,SI,Social Influence,False,3.0361,3.0161,3.0361,0.02,0.0,0.196616,0.570642,0.232742,0.0,nomic-embed-text
+P3_midrange_moderate_user,iphone,PP,Perceived Protection,False,2.4532,2.7936,2.4532,-0.3404,0.255103,0.390753,0.0,0.354144,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,iphone,PE,Performance Expectancy,False,3.8237,3.6844,3.8237,0.1393,0.0,0.0,0.197761,0.780808,0.021431,nomic-embed-text
+P4_budget_or_undisclosed_price,iphone,EE,Effort Expectancy,False,3.1657,3.2136,3.1657,-0.0479,0.204383,0.0,0.508394,0.0,0.287223,nomic-embed-text
+P4_budget_or_undisclosed_price,iphone,HM,Hedonic Motivation,False,2.8809,2.7587,2.8809,0.1222,0.193676,0.269035,0.0,0.537289,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,iphone,SI,Social Influence,False,3.0437,2.7642,3.0437,0.2795,0.0,0.262109,0.584987,0.0,0.152904,nomic-embed-text
+P4_budget_or_undisclosed_price,iphone,BI,Behavioral Intention,True,3.5017,3.051,3.5017,0.4507,0.0,0.234448,0.397475,0.0,0.368077,nomic-embed-text

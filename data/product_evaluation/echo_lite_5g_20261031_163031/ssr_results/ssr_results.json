@@ -1,0 +1,545 @@
+{
+  "evaluation_id": "echo_lite_5g_20261031_163031",
+  "product_name": "Echo Lite 5G",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-10-31T11:02:58.508674+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 1,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 3.9297,
+  "overall_adoption_average": 3.9297,
+  "primary_adoption_average": 3.9297,
+  "construct_averages": {
+    "PE": 3.3744,
+    "EE": 4.196,
+    "HM": 3.9095,
+    "SI": 4.1317,
+    "PP": 3.6367,
+    "BI": 3.9297
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 6,
+  "qualitative_constructs": [
+    "PV"
+  ],
+  "persona_summaries": [
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "primary_adoption_rating": 3.9297,
+      "primary_adoption_pmf": [
+        0.028764,
+        0.164422,
+        0.0,
+        0.461951,
+        0.344863
+      ],
+      "construct_scores": {
+        "PE": 3.3744,
+        "EE": 4.196,
+        "HM": 3.9095,
+        "SI": 4.1317,
+        "PP": 3.6367,
+        "BI": 3.9297
+      },
+      "construct_responses": {
+        "PE": "The Echo Lite 5G has a reliable 5G chip that should handle my classes and messaging smoothly. With 2-day battery life, I won't have to worry about charging all the time, which is a big plus for my daily study needs.",
+        "EE": "The clean UI with no bloatware will make it easy to use, even for someone who isn't very tech-savvy like me. The 3 years of security patches also give me peace of mind that the phone will stay protected.",
+        "HM": "While I don't need a phone for fun, the display quality and ability to stream videos without lag will be nice. It won't be gaming-level, but for binge-watching, it should be fine.",
+        "SI": "My friends will probably be happy that I got a phone that's durable and reliable. They often recommend good quality over brand names, so this should be well-received among them.",
+        "PP": "With 3 years of security patches, I feel confident that my personal data is safe. The clean UI means no annoying updates or bloatware to deal with, which is a big plus for privacy.",
+        "BI": "Definitely intend to buy and continue using this smartphone; it fits within my budget and delivers the reliable battery and everyday performance I need without wasting money on gimmicks.",
+        "OVERALL": "The Echo Lite 5G seems like a practical choice for someone like me who just needs a reliable phone for daily use and doesn't want to spend too much. It checks all the right boxes for me."
+      },
+      "response_text": "The Echo Lite 5G seems like a practical choice for someone like me who just needs a reliable phone for daily use and doesn't want to spend too much. It checks all the right boxes for me.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The Echo Lite 5G has a reliable 5G chip that should handle my classes and messaging smoothly. With 2-day battery life, I won't have to worry about charging all the time, which is a big plus for my daily study needs.",
+          "cosine_similarities": [
+            0.580951,
+            0.596795,
+            0.550491,
+            0.666227,
+            0.589586
+          ],
+          "min_similarity": 0.550491,
+          "pmf_probabilities": [
+            0.131524,
+            0.199934,
+            0.0,
+            0.499733,
+            0.168808
+          ],
+          "expected_rating": 3.3744,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The clean UI with no bloatware will make it easy to use, even for someone who isn't very tech-savvy like me. The 3 years of security patches also give me peace of mind that the phone will stay protected.",
+          "cosine_similarities": [
+            0.597051,
+            0.593652,
+            0.655625,
+            0.636499,
+            0.709805
+          ],
+          "min_similarity": 0.593652,
+          "pmf_probabilities": [
+            0.01515,
+            0.0,
+            0.276206,
+            0.190965,
+            0.517679
+          ],
+          "expected_rating": 4.196,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "While I don't need a phone for fun, the display quality and ability to stream videos without lag will be nice. It won't be gaming-level, but for binge-watching, it should be fine.",
+          "cosine_similarities": [
+            0.649,
+            0.660384,
+            0.662505,
+            0.666929,
+            0.678709
+          ],
+          "min_similarity": 0.649,
+          "pmf_probabilities": [
+            0.0,
+            0.156967,
+            0.186209,
+            0.247202,
+            0.409623
+          ],
+          "expected_rating": 3.9095,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My friends will probably be happy that I got a phone that's durable and reliable. They often recommend good quality over brand names, so this should be well-received among them.",
+          "cosine_similarities": [
+            0.61981,
+            0.613608,
+            0.649899,
+            0.706614,
+            0.697393
+          ],
+          "min_similarity": 0.613608,
+          "pmf_probabilities": [
+            0.028283,
+            0.0,
+            0.165498,
+            0.424134,
+            0.382085
+          ],
+          "expected_rating": 4.1317,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "With 3 years of security patches, I feel confident that my personal data is safe. The clean UI means no annoying updates or bloatware to deal with, which is a big plus for privacy.",
+          "cosine_similarities": [
+            0.663597,
+            0.611874,
+            0.591027,
+            0.701026,
+            0.727108
+          ],
+          "min_similarity": 0.591027,
+          "pmf_probabilities": [
+            0.213757,
+            0.061408,
+            0.0,
+            0.324005,
+            0.400831
+          ],
+          "expected_rating": 3.6367,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "Definitely intend to buy and continue using this smartphone; it fits within my budget and delivers the reliable battery and everyday performance I need without wasting money on gimmicks.",
+          "cosine_similarities": [
+            0.672975,
+            0.702095,
+            0.666801,
+            0.765961,
+            0.740828
+          ],
+          "min_similarity": 0.666801,
+          "pmf_probabilities": [
+            0.028764,
+            0.164422,
+            0.0,
+            0.461951,
+            0.344863
+          ],
+          "expected_rating": 3.9297,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.580951,
+        0.596795,
+        0.550491,
+        0.666227,
+        0.589586
+      ],
+      "pmf_probabilities": [
+        0.131524,
+        0.199934,
+        0.0,
+        0.499733,
+        0.168808
+      ],
+      "expected_rating": 3.3744,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.597051,
+        0.593652,
+        0.655625,
+        0.636499,
+        0.709805
+      ],
+      "pmf_probabilities": [
+        0.01515,
+        0.0,
+        0.276206,
+        0.190965,
+        0.517679
+      ],
+      "expected_rating": 4.196,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.649,
+        0.660384,
+        0.662505,
+        0.666929,
+        0.678709
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.156967,
+        0.186209,
+        0.247202,
+        0.409623
+      ],
+      "expected_rating": 3.9095,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.61981,
+        0.613608,
+        0.649899,
+        0.706614,
+        0.697393
+      ],
+      "pmf_probabilities": [
+        0.028283,
+        0.0,
+        0.165498,
+        0.424134,
+        0.382085
+      ],
+      "expected_rating": 4.1317,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.663597,
+        0.611874,
+        0.591027,
+        0.701026,
+        0.727108
+      ],
+      "pmf_probabilities": [
+        0.213757,
+        0.061408,
+        0.0,
+        0.324005,
+        0.400831
+      ],
+      "expected_rating": 3.6367,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.672975,
+        0.702095,
+        0.666801,
+        0.765961,
+        0.740828
+      ],
+      "pmf_probabilities": [
+        0.028764,
+        0.164422,
+        0.0,
+        0.461951,
+        0.344863
+      ],
+      "expected_rating": 3.9297,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.580951,
+      "cos_sim_2": 0.596795,
+      "cos_sim_3": 0.550491,
+      "cos_sim_4": 0.666227,
+      "cos_sim_5": 0.589586,
+      "min_similarity": 0.550491,
+      "p1": 0.131524,
+      "p2": 0.199934,
+      "p3": 0.0,
+      "p4": 0.499733,
+      "p5": 0.168808,
+      "set_expected_rating": 3.3744,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.597051,
+      "cos_sim_2": 0.593652,
+      "cos_sim_3": 0.655625,
+      "cos_sim_4": 0.636499,
+      "cos_sim_5": 0.709805,
+      "min_similarity": 0.593652,
+      "p1": 0.01515,
+      "p2": 0.0,
+      "p3": 0.276206,
+      "p4": 0.190965,
+      "p5": 0.517679,
+      "set_expected_rating": 4.196,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.649,
+      "cos_sim_2": 0.660384,
+      "cos_sim_3": 0.662505,
+      "cos_sim_4": 0.666929,
+      "cos_sim_5": 0.678709,
+      "min_similarity": 0.649,
+      "p1": 0.0,
+      "p2": 0.156967,
+      "p3": 0.186209,
+      "p4": 0.247202,
+      "p5": 0.409623,
+      "set_expected_rating": 3.9095,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.61981,
+      "cos_sim_2": 0.613608,
+      "cos_sim_3": 0.649899,
+      "cos_sim_4": 0.706614,
+      "cos_sim_5": 0.697393,
+      "min_similarity": 0.613608,
+      "p1": 0.028283,
+      "p2": 0.0,
+      "p3": 0.165498,
+      "p4": 0.424134,
+      "p5": 0.382085,
+      "set_expected_rating": 4.1317,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.663597,
+      "cos_sim_2": 0.611874,
+      "cos_sim_3": 0.591027,
+      "cos_sim_4": 0.701026,
+      "cos_sim_5": 0.727108,
+      "min_similarity": 0.591027,
+      "p1": 0.213757,
+      "p2": 0.061408,
+      "p3": 0.0,
+      "p4": 0.324005,
+      "p5": 0.400831,
+      "set_expected_rating": 3.6367,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "Echo Lite 5G",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.672975,
+      "cos_sim_2": 0.702095,
+      "cos_sim_3": 0.666801,
+      "cos_sim_4": 0.765961,
+      "cos_sim_5": 0.740828,
+      "min_similarity": 0.666801,
+      "p1": 0.028764,
+      "p2": 0.164422,
+      "p3": 0.0,
+      "p4": 0.461951,
+      "p5": 0.344863,
+      "set_expected_rating": 3.9297,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

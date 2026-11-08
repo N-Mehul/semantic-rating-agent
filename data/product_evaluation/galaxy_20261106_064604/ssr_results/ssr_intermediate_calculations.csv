@@ -1,0 +1,25 @@
+persona_id,product_name,anchor_set_code,anchor_set_name,cos_sim_1,cos_sim_2,cos_sim_3,cos_sim_4,cos_sim_5,min_similarity,p1,p2,p3,p4,p5,set_expected_rating,canonical_expected_rating,improved_expected_rating,delta,embedding_model
+P1_premium_tier_owner,galaxy,PE,Performance Expectancy,0.540966,0.543742,0.560566,0.597316,0.576849,0.540966,0.0,0.0,0.136469,0.55789,0.305641,4.1692,4.0936,4.1692,0.0755,nomic-embed-text
+P1_premium_tier_owner,galaxy,EE,Effort Expectancy,0.595409,0.558504,0.619242,0.640878,0.692127,0.558504,0.0,0.0,0.186479,0.279945,0.533576,4.3471,3.8794,4.3471,0.4677,nomic-embed-text
+P1_premium_tier_owner,galaxy,HM,Hedonic Motivation,0.558984,0.595398,0.583657,0.619498,0.62297,0.558984,0.0,0.196506,0.0,0.386815,0.41668,4.0237,3.8194,4.0237,0.2043,nomic-embed-text
+P1_premium_tier_owner,galaxy,SI,Social Influence,0.535461,0.550193,0.564324,0.604564,0.557426,0.535461,0.0,0.0,0.204181,0.653958,0.141861,3.9377,3.73,3.9377,0.2077,nomic-embed-text
+P1_premium_tier_owner,galaxy,PP,Perceived Protection,0.476351,0.49703,0.513083,0.543336,0.565716,0.476351,0.0,0.0,0.153845,0.34276,0.503395,4.3495,4.0527,4.3495,0.2968,nomic-embed-text
+P1_premium_tier_owner,galaxy,BI,Behavioral Intention,0.471938,0.499536,0.53643,0.487832,0.476164,0.471938,0.0,0.218339,0.677048,0.104613,0.0,2.8863,2.971,2.8863,-0.0847,nomic-embed-text
+P2_midrange_heavy_user,galaxy,PE,Performance Expectancy,0.538493,0.541875,0.546347,0.605879,0.576138,0.538493,0.0,0.0,0.037527,0.659186,0.303287,4.2658,4.1981,4.2658,0.0677,nomic-embed-text
+P2_midrange_heavy_user,galaxy,EE,Effort Expectancy,0.531969,0.524218,0.602203,0.599693,0.622801,0.524218,0.0,0.0,0.300829,0.287984,0.411187,4.1104,3.9898,4.1104,0.1206,nomic-embed-text
+P2_midrange_heavy_user,galaxy,HM,Hedonic Motivation,0.561738,0.630822,0.613097,0.664347,0.728758,0.561738,0.0,0.168367,0.0,0.285318,0.546315,4.2096,3.9423,4.2096,0.2673,nomic-embed-text
+P2_midrange_heavy_user,galaxy,SI,Social Influence,0.613002,0.625391,0.698083,0.669275,0.631297,0.613002,0.0,0.0,0.586475,0.337968,0.075557,3.4891,3.4678,3.4891,0.0213,nomic-embed-text
+P2_midrange_heavy_user,galaxy,PP,Perceived Protection,0.440051,0.451216,0.47677,0.501272,0.520029,0.440051,0.0,0.0,0.172402,0.340844,0.486755,4.3144,4.1107,4.3144,0.2037,nomic-embed-text
+P2_midrange_heavy_user,galaxy,BI,Behavioral Intention,0.402121,0.438503,0.488919,0.418209,0.438309,0.402121,0.0,0.193022,0.615325,0.0,0.191653,3.1903,3.2968,3.1903,-0.1066,nomic-embed-text
+P3_midrange_moderate_user,galaxy,PE,Performance Expectancy,0.631821,0.639897,0.657662,0.683047,0.688034,0.631821,0.0,0.0,0.158507,0.394722,0.446771,4.2883,4.1006,4.2883,0.1877,nomic-embed-text
+P3_midrange_moderate_user,galaxy,EE,Effort Expectancy,0.540824,0.502566,0.583313,0.618821,0.642472,0.502566,0.0,0.0,0.212461,0.345401,0.442138,4.2297,3.8518,4.2297,0.3779,nomic-embed-text
+P3_midrange_moderate_user,galaxy,HM,Hedonic Motivation,0.54774,0.599618,0.591013,0.640748,0.7265,0.54774,0.0,0.119296,0.0,0.259822,0.620882,4.3823,4.0865,4.3823,0.2958,nomic-embed-text
+P3_midrange_moderate_user,galaxy,SI,Social Influence,0.556889,0.565084,0.628131,0.57125,0.543501,0.543501,0.0,0.116531,0.720551,0.162918,0.0,3.0464,2.8601,3.0464,0.1863,nomic-embed-text
+P3_midrange_moderate_user,galaxy,PP,Perceived Protection,0.48189,0.482847,0.511551,0.520806,0.561718,0.48189,0.0,0.0,0.161812,0.232421,0.605766,4.444,4.3231,4.444,0.1209,nomic-embed-text
+P3_midrange_moderate_user,galaxy,BI,Behavioral Intention,0.453645,0.47932,0.564217,0.499604,0.531981,0.453645,0.0,0.0,0.514994,0.159751,0.325255,3.8103,3.6792,3.8103,0.1311,nomic-embed-text
+P4_budget_or_undisclosed_price,galaxy,PE,Performance Expectancy,0.579134,0.586807,0.608177,0.639012,0.615271,0.579134,0.0,0.0,0.201522,0.52879,0.269688,4.0682,3.9378,4.0682,0.1303,nomic-embed-text
+P4_budget_or_undisclosed_price,galaxy,EE,Effort Expectancy,0.641481,0.619973,0.704973,0.723603,0.738672,0.619973,0.0,0.0,0.258846,0.337128,0.404026,4.1452,3.9063,4.1452,0.2389,nomic-embed-text
+P4_budget_or_undisclosed_price,galaxy,HM,Hedonic Motivation,0.544373,0.580758,0.589296,0.618632,0.697058,0.544373,0.0,0.0,0.123999,0.242353,0.633648,4.5096,4.1135,4.5096,0.3961,nomic-embed-text
+P4_budget_or_undisclosed_price,galaxy,SI,Social Influence,0.546206,0.592772,0.641117,0.61348,0.553729,0.546206,0.0,0.191665,0.495305,0.31303,0.0,3.1214,3.1653,3.1214,-0.044,nomic-embed-text
+P4_budget_or_undisclosed_price,galaxy,PP,Perceived Protection,0.485991,0.464064,0.532498,0.535708,0.578505,0.464064,0.0,0.0,0.247039,0.262608,0.490353,4.2433,3.9285,4.2433,0.3149,nomic-embed-text
+P4_budget_or_undisclosed_price,galaxy,BI,Behavioral Intention,0.416132,0.466635,0.525001,0.458736,0.468672,0.416132,0.0,0.206659,0.575493,0.0,0.217848,3.229,3.3818,3.229,-0.1528,nomic-embed-text

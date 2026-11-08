@@ -1,0 +1,25 @@
+persona_id,product_name,construct_code,construct_name,is_primary_outcome,expected_rating,p1,p2,p3,p4,p5,embedding_model
+P1_premium_tier_owner,Zenith Pulse Pro 5G,PE,Performance Expectancy,False,2.5604,0.212592,0.283421,0.235004,0.268983,0.0,nomic-embed-text
+P1_premium_tier_owner,Zenith Pulse Pro 5G,EE,Effort Expectancy,False,3.7218,0.086515,0.0,0.324603,0.282911,0.305971,nomic-embed-text
+P1_premium_tier_owner,Zenith Pulse Pro 5G,HM,Hedonic Motivation,False,3.6953,0.0,0.227717,0.105086,0.411426,0.255771,nomic-embed-text
+P1_premium_tier_owner,Zenith Pulse Pro 5G,SI,Social Influence,False,2.7186,0.289414,0.147783,0.340186,0.0,0.222617,nomic-embed-text
+P1_premium_tier_owner,Zenith Pulse Pro 5G,PP,Perceived Protection,False,3.7538,0.0,0.201619,0.083336,0.474716,0.240329,nomic-embed-text
+P1_premium_tier_owner,Zenith Pulse Pro 5G,BI,Behavioral Intention,True,2.2383,0.347905,0.239324,0.32605,0.0,0.086722,nomic-embed-text
+P2_midrange_heavy_user,Zenith Pulse Pro 5G,PE,Performance Expectancy,False,3.8125,0.048821,0.180175,0.0,0.451729,0.319275,nomic-embed-text
+P2_midrange_heavy_user,Zenith Pulse Pro 5G,EE,Effort Expectancy,False,2.748,0.448558,0.0,0.22663,0.004489,0.320323,nomic-embed-text
+P2_midrange_heavy_user,Zenith Pulse Pro 5G,HM,Hedonic Motivation,False,3.9927,0.0,0.162847,0.129703,0.259377,0.448073,nomic-embed-text
+P2_midrange_heavy_user,Zenith Pulse Pro 5G,SI,Social Influence,False,3.5003,0.0,0.144525,0.360112,0.345925,0.149438,nomic-embed-text
+P2_midrange_heavy_user,Zenith Pulse Pro 5G,PP,Perceived Protection,False,3.5884,0.189128,0.110517,0.0,0.323496,0.376858,nomic-embed-text
+P2_midrange_heavy_user,Zenith Pulse Pro 5G,BI,Behavioral Intention,True,3.0457,0.0,0.359562,0.361697,0.152236,0.126505,nomic-embed-text
+P3_midrange_moderate_user,Zenith Pulse Pro 5G,PE,Performance Expectancy,False,3.5519,0.057778,0.191379,0.0,0.64286,0.107983,nomic-embed-text
+P3_midrange_moderate_user,Zenith Pulse Pro 5G,EE,Effort Expectancy,False,3.8155,0.0,0.079423,0.393777,0.158681,0.368119,nomic-embed-text
+P3_midrange_moderate_user,Zenith Pulse Pro 5G,HM,Hedonic Motivation,False,3.9842,0.0,0.158636,0.121154,0.297536,0.422675,nomic-embed-text
+P3_midrange_moderate_user,Zenith Pulse Pro 5G,SI,Social Influence,False,3.8444,0.054318,0.0,0.307687,0.322947,0.315047,nomic-embed-text
+P3_midrange_moderate_user,Zenith Pulse Pro 5G,PP,Perceived Protection,False,3.2538,0.209885,0.205972,0.0,0.288725,0.295418,nomic-embed-text
+P3_midrange_moderate_user,Zenith Pulse Pro 5G,BI,Behavioral Intention,True,3.4825,0.0,0.172283,0.343951,0.312746,0.171019,nomic-embed-text
+P4_budget_or_undisclosed_price,Zenith Pulse Pro 5G,PE,Performance Expectancy,False,2.9245,0.019597,0.366824,0.283058,0.330521,0.0,nomic-embed-text
+P4_budget_or_undisclosed_price,Zenith Pulse Pro 5G,EE,Effort Expectancy,False,2.4842,0.540921,0.017253,0.150175,0.0,0.291651,nomic-embed-text
+P4_budget_or_undisclosed_price,Zenith Pulse Pro 5G,HM,Hedonic Motivation,False,3.4892,0.033503,0.353569,0.0,0.316057,0.29687,nomic-embed-text
+P4_budget_or_undisclosed_price,Zenith Pulse Pro 5G,SI,Social Influence,False,3.3386,0.0,0.035319,0.727043,0.101375,0.136263,nomic-embed-text
+P4_budget_or_undisclosed_price,Zenith Pulse Pro 5G,PP,Perceived Protection,False,3.0018,0.263988,0.208985,0.0,0.315301,0.211726,nomic-embed-text
+P4_budget_or_undisclosed_price,Zenith Pulse Pro 5G,BI,Behavioral Intention,True,2.8094,0.158345,0.196449,0.48393,0.0,0.161277,nomic-embed-text

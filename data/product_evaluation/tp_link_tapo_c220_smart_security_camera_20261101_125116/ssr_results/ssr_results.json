@@ -1,0 +1,545 @@
+{
+  "evaluation_id": "tp_link_tapo_c220_smart_security_camera_20261101_125116",
+  "product_name": "TP-Link Tapo C220 Smart Security Camera",
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Maier et al. adaptation)",
+  "timestamp_utc": "2026-11-01T07:25:26.159017+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 1,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 4.0284,
+  "overall_adoption_average": 4.0284,
+  "primary_adoption_average": 4.0284,
+  "construct_averages": {
+    "PE": 3.7914,
+    "EE": 3.5119,
+    "HM": 4.0897,
+    "SI": 3.7832,
+    "PP": 3.7603,
+    "BI": 4.0284
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 6,
+  "qualitative_constructs": [
+    "PV"
+  ],
+  "persona_summaries": [
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "primary_adoption_rating": 4.0284,
+      "primary_adoption_pmf": [
+        0.0,
+        0.160931,
+        0.029824,
+        0.429139,
+        0.380105
+      ],
+      "construct_scores": {
+        "PE": 3.7914,
+        "EE": 3.5119,
+        "HM": 4.0897,
+        "SI": 3.7832,
+        "PP": 3.7603,
+        "BI": 4.0284
+      },
+      "construct_responses": {
+        "PE": "This security camera can provide clear 2K video and effective motion detection, making it useful for home monitoring. The night vision and smart features will ensure I can keep an eye on my home even in the dark.",
+        "EE": "Setting up and connecting to Wi-Fi should be straightforward. Monitoring through the app will also be easy, allowing me to check in on my home from anywhere.",
+        "HM": "Having this camera gives me peace of mind knowing my home is secure and I can keep an eye on things even when I'm not around. It's reassuring to have such advanced features in a compact device.",
+        "SI": "My family members would likely support installing this camera as it provides better security and peace of mind. It's a good investment for anyone concerned about home safety.",
+        "PP": "I feel my home is well-protected with this camera. The smart features and clear video quality make it a secure and reliable option. I trust the data protection and privacy features.",
+        "BI": "I am certain I will continue using this security camera as my primary security camera; it delivers the responsive performance, smooth operation, and reliability I need for my daily routine, and the price fits completely within my budget.",
+        "OVERALL": "This security camera seems like a great fit for someone like me who needs reliable home monitoring and doesn't want to break the bank. It provides clear footage and smart features that make it easy to use."
+      },
+      "response_text": "This security camera seems like a great fit for someone like me who needs reliable home monitoring and doesn't want to break the bank. It provides clear footage and smart features that make it easy to use.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "This security camera can provide clear 2K video and effective motion detection, making it useful for home monitoring. The night vision and smart features will ensure I can keep an eye on my home even in the dark.",
+          "cosine_similarities": [
+            0.498414,
+            0.514183,
+            0.502234,
+            0.565761,
+            0.512662
+          ],
+          "min_similarity": 0.498414,
+          "pmf_probabilities": [
+            0.0,
+            0.155843,
+            0.037752,
+            0.665591,
+            0.140814
+          ],
+          "expected_rating": 3.7914,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "Setting up and connecting to Wi-Fi should be straightforward. Monitoring through the app will also be easy, allowing me to check in on my home from anywhere.",
+          "cosine_similarities": [
+            0.595251,
+            0.522183,
+            0.645863,
+            0.636432,
+            0.650588
+          ],
+          "min_similarity": 0.522183,
+          "pmf_probabilities": [
+            0.166289,
+            0.0,
+            0.281473,
+            0.26001,
+            0.292227
+          ],
+          "expected_rating": 3.5119,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Having this camera gives me peace of mind knowing my home is secure and I can keep an eye on things even when I'm not around. It's reassuring to have such advanced features in a compact device.",
+          "cosine_similarities": [
+            0.521247,
+            0.546873,
+            0.530935,
+            0.584314,
+            0.597894
+          ],
+          "min_similarity": 0.521247,
+          "pmf_probabilities": [
+            0.0,
+            0.14641,
+            0.055352,
+            0.360326,
+            0.437911
+          ],
+          "expected_rating": 4.0897,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My family members would likely support installing this camera as it provides better security and peace of mind. It's a good investment for anyone concerned about home safety.",
+          "cosine_similarities": [
+            0.535612,
+            0.514232,
+            0.557208,
+            0.570787,
+            0.580716
+          ],
+          "min_similarity": 0.514232,
+          "pmf_probabilities": [
+            0.114094,
+            0.0,
+            0.229332,
+            0.301797,
+            0.354778
+          ],
+          "expected_rating": 3.7832,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "I feel my home is well-protected with this camera. The smart features and clear video quality make it a secure and reliable option. I trust the data protection and privacy features.",
+          "cosine_similarities": [
+            0.665685,
+            0.616697,
+            0.624502,
+            0.695729,
+            0.715279
+          ],
+          "min_similarity": 0.616697,
+          "pmf_probabilities": [
+            0.208988,
+            0.0,
+            0.033296,
+            0.337156,
+            0.42056
+          ],
+          "expected_rating": 3.7603,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this security camera as my primary security camera; it delivers the responsive performance, smooth operation, and reliability I need for my daily routine, and the price fits completely within my budget.",
+          "cosine_similarities": [
+            0.48185,
+            0.522117,
+            0.489313,
+            0.589225,
+            0.576956
+          ],
+          "min_similarity": 0.48185,
+          "pmf_probabilities": [
+            0.0,
+            0.160931,
+            0.029824,
+            0.429139,
+            0.380105
+          ],
+          "expected_rating": 4.0284,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.498414,
+        0.514183,
+        0.502234,
+        0.565761,
+        0.512662
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.155843,
+        0.037752,
+        0.665591,
+        0.140814
+      ],
+      "expected_rating": 3.7914,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.595251,
+        0.522183,
+        0.645863,
+        0.636432,
+        0.650588
+      ],
+      "pmf_probabilities": [
+        0.166289,
+        0.0,
+        0.281473,
+        0.26001,
+        0.292227
+      ],
+      "expected_rating": 3.5119,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.521247,
+        0.546873,
+        0.530935,
+        0.584314,
+        0.597894
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.14641,
+        0.055352,
+        0.360326,
+        0.437911
+      ],
+      "expected_rating": 4.0897,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.535612,
+        0.514232,
+        0.557208,
+        0.570787,
+        0.580716
+      ],
+      "pmf_probabilities": [
+        0.114094,
+        0.0,
+        0.229332,
+        0.301797,
+        0.354778
+      ],
+      "expected_rating": 3.7832,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.665685,
+        0.616697,
+        0.624502,
+        0.695729,
+        0.715279
+      ],
+      "pmf_probabilities": [
+        0.208988,
+        0.0,
+        0.033296,
+        0.337156,
+        0.42056
+      ],
+      "expected_rating": 3.7603,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.48185,
+        0.522117,
+        0.489313,
+        0.589225,
+        0.576956
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.160931,
+        0.029824,
+        0.429139,
+        0.380105
+      ],
+      "expected_rating": 4.0284,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.498414,
+      "cos_sim_2": 0.514183,
+      "cos_sim_3": 0.502234,
+      "cos_sim_4": 0.565761,
+      "cos_sim_5": 0.512662,
+      "min_similarity": 0.498414,
+      "p1": 0.0,
+      "p2": 0.155843,
+      "p3": 0.037752,
+      "p4": 0.665591,
+      "p5": 0.140814,
+      "set_expected_rating": 3.7914,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.595251,
+      "cos_sim_2": 0.522183,
+      "cos_sim_3": 0.645863,
+      "cos_sim_4": 0.636432,
+      "cos_sim_5": 0.650588,
+      "min_similarity": 0.522183,
+      "p1": 0.166289,
+      "p2": 0.0,
+      "p3": 0.281473,
+      "p4": 0.26001,
+      "p5": 0.292227,
+      "set_expected_rating": 3.5119,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.521247,
+      "cos_sim_2": 0.546873,
+      "cos_sim_3": 0.530935,
+      "cos_sim_4": 0.584314,
+      "cos_sim_5": 0.597894,
+      "min_similarity": 0.521247,
+      "p1": 0.0,
+      "p2": 0.14641,
+      "p3": 0.055352,
+      "p4": 0.360326,
+      "p5": 0.437911,
+      "set_expected_rating": 4.0897,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.535612,
+      "cos_sim_2": 0.514232,
+      "cos_sim_3": 0.557208,
+      "cos_sim_4": 0.570787,
+      "cos_sim_5": 0.580716,
+      "min_similarity": 0.514232,
+      "p1": 0.114094,
+      "p2": 0.0,
+      "p3": 0.229332,
+      "p4": 0.301797,
+      "p5": 0.354778,
+      "set_expected_rating": 3.7832,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.665685,
+      "cos_sim_2": 0.616697,
+      "cos_sim_3": 0.624502,
+      "cos_sim_4": 0.695729,
+      "cos_sim_5": 0.715279,
+      "min_similarity": 0.616697,
+      "p1": 0.208988,
+      "p2": 0.0,
+      "p3": 0.033296,
+      "p4": 0.337156,
+      "p5": 0.42056,
+      "set_expected_rating": 3.7603,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "TP-Link Tapo C220 Smart Security Camera",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.48185,
+      "cos_sim_2": 0.522117,
+      "cos_sim_3": 0.489313,
+      "cos_sim_4": 0.589225,
+      "cos_sim_5": 0.576956,
+      "min_similarity": 0.48185,
+      "p1": 0.0,
+      "p2": 0.160931,
+      "p3": 0.029824,
+      "p4": 0.429139,
+      "p5": 0.380105,
+      "set_expected_rating": 4.0284,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}

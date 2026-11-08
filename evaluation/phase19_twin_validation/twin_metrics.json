@@ -1,0 +1,136 @@
+{
+  "n_pairs": 80,
+  "model": "qwen2.5:7b-instruct",
+  "embedding": "nomic-embed-text",
+  "ssr": "E-SSR k=3 T=0.75, BI anchors",
+  "distribution": {
+    "human_q21_share": {
+      "1": 0.062,
+      "2": 0.025,
+      "3": 0.325,
+      "4": 0.375,
+      "5": 0.212
+    },
+    "twin_essr_share": {
+      "2.0": 0.025,
+      "3.0": 0.375,
+      "4.0": 0.6
+    },
+    "twin_dle_share": {
+      "2": 0.012,
+      "3": 0.1,
+      "4": 0.725,
+      "5": 0.162
+    },
+    "W1_twin_essr_vs_human": 0.593623751448636,
+    "W1_twin_dle_vs_human": 0.48750000000000004,
+    "KS_twin_essr_vs_human": 0.2125,
+    "KS_twin_dle_vs_human": 0.3,
+    "SD": {
+      "human_q21": 1.0380269746013349,
+      "twin_E": 0.35088723270940825,
+      "twin_DLE": 0.5612767994221927
+    }
+  },
+  "persona": {
+    "groups": 4,
+    "twin_E": {
+      "spearman": 0.39999999999999997,
+      "pearson": 0.36140245389158937,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.40343767155779076
+    },
+    "twin_DLE": {
+      "spearman": 0.39999999999999997,
+      "pearson": 0.8231398224964738,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.3875000000000002
+    },
+    "human_text_E": {
+      "spearman": 0.7999999999999999,
+      "pearson": 0.985612237195619,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.3959110717473454
+    }
+  },
+  "brand": {
+    "groups": 3,
+    "twin_E": {
+      "spearman": 0.5,
+      "pearson": 0.8794547895551807,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.5107546169420033
+    },
+    "twin_DLE": {
+      "spearman": 1.0,
+      "pearson": 0.9028975860160439,
+      "pearson_ci95": [
+        0.9028975860160439,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.24999999999999986
+    },
+    "human_text_E": {
+      "spearman": 0.5,
+      "pearson": 0.5823153221968507,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.393184200149492
+    }
+  },
+  "brand_x_persona": {
+    "groups": 5,
+    "twin_E": {
+      "spearman": 0.8999999999999998,
+      "pearson": 0.7010338577937555,
+      "pearson_ci95": [
+        0.18518186138362175,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.3721561177696523
+    },
+    "twin_DLE": {
+      "spearman": 0.6,
+      "pearson": 0.8736230791011227,
+      "pearson_ci95": [
+        -0.9999999999999999,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.4937728937728937
+    },
+    "human_text_E": {
+      "spearman": 0.49999999999999994,
+      "pearson": 0.7110987226514361,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.43948627416176456
+    }
+  },
+  "human_text_vs_own_q21_all": {
+    "n": 80,
+    "spearman_Q26": 0.2208429351605337,
+    "spearman_all4": 0.15669141345120696
+  },
+  "human_text_vs_own_q21_q26_3plus_words": {
+    "n": 40,
+    "spearman_Q26": 0.42269318245305326,
+    "spearman_all4": 0.3168713997733545
+  },
+  "gate_first_pass_rate": 0.95
+}

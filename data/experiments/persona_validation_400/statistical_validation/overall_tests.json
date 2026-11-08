@@ -1,0 +1,57 @@
+{
+  "one_way_anova": {
+    "f_statistic": 0.7114,
+    "p_value": 0.5456338297107928,
+    "ss_between": 0.8973,
+    "ss_within": 166.4908,
+    "ss_total": 167.3881,
+    "df_between": 3,
+    "df_within": 396,
+    "ms_between": 0.2991,
+    "ms_within": 0.4204,
+    "eta_squared": 0.0054,
+    "omega_squared": -0.0022,
+    "significant_at_05": false
+  },
+  "kruskal_wallis": {
+    "h_statistic": 2.1093,
+    "p_value": 0.5500375949350838,
+    "df": 3,
+    "epsilon_squared": -0.0022,
+    "significant_at_05": false
+  },
+  "two_way_anova": {
+    "factor_persona": {
+      "ss": 0.8973,
+      "df": 3,
+      "ms": 0.2991,
+      "f_stat": 0.6962,
+      "p_value": 0.5548496522487625,
+      "partial_eta_sq": 0.0055,
+      "eta_sq": 0.0054
+    },
+    "factor_construct": {
+      "ss": 3.0069,
+      "df": 5,
+      "ms": 0.6014,
+      "f_stat": 1.3998,
+      "p_value": 0.22347188984148936,
+      "partial_eta_sq": 0.0183,
+      "eta_sq": 0.018
+    },
+    "factor_interaction": {
+      "ss": 1.9436,
+      "df": 15,
+      "ms": 0.1296,
+      "f_stat": 0.3016,
+      "p_value": 0.9951580375703866,
+      "partial_eta_sq": 0.0119,
+      "eta_sq": 0.0116
+    },
+    "error": {
+      "ss": 161.5403,
+      "df": 376,
+      "ms": 0.4296
+    }
+  }
+}

@@ -1,0 +1,2675 @@
+{
+  "evaluation_id": "oppo_20261105_152343",
+  "product_name": "oppo",
+  "ssr_method": "improved",
+  "ssr_method_label": "Improved SSR (Experimental, k=3, T=0.75)",
+  "k_truncation": 3,
+  "temperature": 0.75,
+  "comparison_summary": {
+    "active_ssr_method": "improved",
+    "active_ssr_label": "Improved SSR (Experimental, k=3, T=0.75)",
+    "is_comparison_mode": false,
+    "canonical": {
+      "method": "Canonical SSR (Original Reference Baseline)",
+      "k_truncation": 5,
+      "temperature": 1.0,
+      "primary_adoption_average": 3.893,
+      "construct_averages": {
+        "PE": 3.6224,
+        "EE": 3.868,
+        "HM": 4.0486,
+        "SI": 3.7725,
+        "PP": 3.5412,
+        "BI": 3.893
+      }
+    },
+    "improved": {
+      "method": "Improved SSR (Experimental)",
+      "k_truncation": 3,
+      "temperature": 0.75,
+      "primary_adoption_average": 4.1035,
+      "construct_averages": {
+        "PE": 3.9647,
+        "EE": 4.1322,
+        "HM": 4.3155,
+        "SI": 3.9599,
+        "PP": 3.8452,
+        "BI": 4.1035
+      }
+    },
+    "deltas": {
+      "primary_adoption_delta": 0.2105,
+      "construct_deltas": {
+        "PE": 0.3423,
+        "EE": 0.2642,
+        "HM": 0.2669,
+        "SI": 0.1874,
+        "PP": 0.304,
+        "BI": 0.2105
+      }
+    },
+    "persona_comparison": [
+      {
+        "persona_id": "P1_premium_tier_owner",
+        "canonical_adoption_rating": 3.9256,
+        "improved_adoption_rating": 4.2572,
+        "delta": 0.3316
+      },
+      {
+        "persona_id": "P2_midrange_heavy_user",
+        "canonical_adoption_rating": 4.028,
+        "improved_adoption_rating": 4.1333,
+        "delta": 0.1053
+      },
+      {
+        "persona_id": "P3_midrange_moderate_user",
+        "canonical_adoption_rating": 3.8763,
+        "improved_adoption_rating": 4.0845,
+        "delta": 0.2082
+      },
+      {
+        "persona_id": "P4_budget_or_undisclosed_price",
+        "canonical_adoption_rating": 3.7421,
+        "improved_adoption_rating": 3.939,
+        "delta": 0.1969
+      }
+    ]
+  },
+  "methodology": "Option A: Independent Single-Set SSR for Six Constructs (Improved SSR (Experimental, k=3, T=0.75))",
+  "timestamp_utc": "2026-11-05T10:02:17.811503+00:00",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "embedding_notes": "Local Ollama nomic-embed-text (768 dims) used instead of paper's OpenAI text-embedding-3-small (1536 dims) for 100% offline, local execution.",
+  "n_personas": 4,
+  "n_constructs": 6,
+  "anchors_per_construct": 5,
+  "total_anchors": 30,
+  "approved_constructs": [
+    "PE",
+    "BI",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "primary_adoption_construct": "BI",
+  "supporting_diagnostic_constructs": [
+    "PE",
+    "EE",
+    "HM",
+    "SI",
+    "PP"
+  ],
+  "overall_adoption_rating": 4.1035,
+  "overall_adoption_average": 4.1035,
+  "primary_adoption_average": 4.1035,
+  "construct_averages": {
+    "PE": 3.9647,
+    "EE": 4.1322,
+    "HM": 4.3155,
+    "SI": 3.9599,
+    "PP": 3.8452,
+    "BI": 4.1035
+  },
+  "cross_construct_averaging": false,
+  "n_evaluations": 24,
+  "qualitative_constructs": [],
+  "persona_summaries": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "primary_adoption_rating": 4.2572,
+      "primary_adoption_pmf": [
+        0.0,
+        0.0,
+        0.129464,
+        0.483866,
+        0.38667
+      ],
+      "construct_scores": {
+        "PE": 3.8838,
+        "EE": 4.2236,
+        "HM": 4.2433,
+        "SI": 4.2356,
+        "PP": 3.6523,
+        "BI": 4.2572
+      },
+      "construct_responses": {
+        "PE": "The high refresh rate display and fast processor make it suitable for smooth multitasking and gaming. The solid build quality ensures it can handle daily use without any issues.",
+        "EE": "The clean interface and contextual AI suggestions make it easy to navigate and use. Setting it up and operating it feels intuitive and straightforward.",
+        "HM": "Using it for daily tasks and media viewing feels satisfying due to its smooth performance and visually appealing display. The AI suggestions add a touch of convenience.",
+        "SI": "My peers and colleagues who use smartphones in this category would likely appreciate its robust build quality and reliable performance.",
+        "PP": "The device’s solid build and reliable performance suggest it will last for a good number of years. Data security is not explicitly mentioned, but the local AI processing enhances personal privacy.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone; the ₹30,000 price is justified by its high refresh display, fast processor, and solid build quality.",
+        "OVERALL": "This smartphone offers a good balance of performance and build quality, making it a reliable choice for daily use. It feels like a solid investment for someone looking for a well-rounded device."
+      },
+      "response_text": "This smartphone offers a good balance of performance and build quality, making it a reliable choice for daily use. It feels like a solid investment for someone looking for a well-rounded device.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The high refresh rate display and fast processor make it suitable for smooth multitasking and gaming. The solid build quality ensures it can handle daily use without any issues.",
+          "cosine_similarities": [
+            0.518889,
+            0.52565,
+            0.484484,
+            0.601228,
+            0.533723
+          ],
+          "min_similarity": 0.484484,
+          "pmf_probabilities": [
+            0.0,
+            0.159139,
+            0.0,
+            0.638806,
+            0.202055
+          ],
+          "expected_rating": 3.8838,
+          "canonical": {
+            "pmf_probabilities": [
+              0.142432,
+              0.170422,
+              0.0,
+              0.483303,
+              0.203842
+            ],
+            "expected_rating": 3.4357
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.159139,
+              0.0,
+              0.638806,
+              0.202055
+            ],
+            "expected_rating": 3.8838
+          },
+          "delta_improved_minus_canonical": 0.4481,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The clean interface and contextual AI suggestions make it easy to navigate and use. Setting it up and operating it feels intuitive and straightforward.",
+          "cosine_similarities": [
+            0.453733,
+            0.493416,
+            0.525707,
+            0.563842,
+            0.578558
+          ],
+          "min_similarity": 0.453733,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.206334,
+            0.363722,
+            0.429944
+          ],
+          "expected_rating": 4.2236,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.114496,
+              0.207661,
+              0.31769,
+              0.360152
+            ],
+            "expected_rating": 3.9235
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.206334,
+              0.363722,
+              0.429944
+            ],
+            "expected_rating": 4.2236
+          },
+          "delta_improved_minus_canonical": 0.3001,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using it for daily tasks and media viewing feels satisfying due to its smooth performance and visually appealing display. The AI suggestions add a touch of convenience.",
+          "cosine_similarities": [
+            0.549744,
+            0.58937,
+            0.588107,
+            0.628796,
+            0.656994
+          ],
+          "min_similarity": 0.549744,
+          "pmf_probabilities": [
+            0.0,
+            0.137301,
+            0.0,
+            0.344814,
+            0.517884
+          ],
+          "expected_rating": 4.2433,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.149933,
+              0.145156,
+              0.299109,
+              0.405803
+            ],
+            "expected_rating": 3.9608
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.137301,
+              0.0,
+              0.344814,
+              0.517884
+            ],
+            "expected_rating": 4.2433
+          },
+          "delta_improved_minus_canonical": 0.2825,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers and colleagues who use smartphones in this category would likely appreciate its robust build quality and reliable performance.",
+          "cosine_similarities": [
+            0.622734,
+            0.637138,
+            0.663231,
+            0.724706,
+            0.707376
+          ],
+          "min_similarity": 0.622734,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.140886,
+            0.482625,
+            0.376489
+          ],
+          "expected_rating": 4.2356,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.059641,
+              0.167679,
+              0.422217,
+              0.350463
+            ],
+            "expected_rating": 4.0635
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.140886,
+              0.482625,
+              0.376489
+            ],
+            "expected_rating": 4.2356
+          },
+          "delta_improved_minus_canonical": 0.1721,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The device’s solid build and reliable performance suggest it will last for a good number of years. Data security is not explicitly mentioned, but the local AI processing enhances personal privacy.",
+          "cosine_similarities": [
+            0.625373,
+            0.609047,
+            0.552814,
+            0.658829,
+            0.653133
+          ],
+          "min_similarity": 0.552814,
+          "pmf_probabilities": [
+            0.238198,
+            0.0,
+            0.0,
+            0.394918,
+            0.366885
+          ],
+          "expected_rating": 3.6523,
+          "canonical": {
+            "pmf_probabilities": [
+              0.216511,
+              0.167799,
+              0.0,
+              0.316343,
+              0.299347
+            ],
+            "expected_rating": 3.3142
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.238198,
+              0.0,
+              0.0,
+              0.394918,
+              0.366885
+            ],
+            "expected_rating": 3.6523
+          },
+          "delta_improved_minus_canonical": 0.3381,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone; the ₹30,000 price is justified by its high refresh display, fast processor, and solid build quality.",
+          "cosine_similarities": [
+            0.641031,
+            0.664761,
+            0.667673,
+            0.712644,
+            0.701559
+          ],
+          "min_similarity": 0.641031,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.129464,
+            0.483866,
+            0.38667
+          ],
+          "expected_rating": 4.2572,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.130017,
+              0.145972,
+              0.392375,
+              0.331636
+            ],
+            "expected_rating": 3.9256
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.129464,
+              0.483866,
+              0.38667
+            ],
+            "expected_rating": 4.2572
+          },
+          "delta_improved_minus_canonical": 0.3316,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "primary_adoption_rating": 4.1333,
+      "primary_adoption_pmf": [
+        0.0,
+        0.123775,
+        0.0,
+        0.495343,
+        0.380882
+      ],
+      "construct_scores": {
+        "PE": 3.9883,
+        "EE": 4.1808,
+        "HM": 4.3774,
+        "SI": 3.6841,
+        "PP": 3.5552,
+        "BI": 4.1333
+      },
+      "construct_responses": {
+        "PE": "The high refresh display and fast processor ensure that it can handle multitasking and heavy workloads smoothly. The battery endurance supports continuous use throughout the day without needing frequent charges.",
+        "EE": "The simple interface makes it easy to navigate and operate, with clean layout and optional contextual AI suggestions enhancing user experience.",
+        "HM": "Using this smartphone for daily tasks and media viewing is pleasant, thanks to its smooth performance and fast processor, which makes it feel like a seamless and enjoyable experience.",
+        "SI": "Peers and colleagues who use mid-range smartphones would likely view it favorably due to its balance of performance and affordability.",
+        "PP": "The on-device AI processing and smooth performance suggest good hardware reliability, though the price of ₹30,000 does not promise premium build quality or additional features.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone, as its high refresh display and fast processor can handle my intensive daily tasks without slowing down, and the battery endurance supports my needs.",
+        "OVERALL": "This smartphone offers a good balance of speed, performance, and battery life for daily use, making it a reliable choice within its price range."
+      },
+      "response_text": "This smartphone offers a good balance of speed, performance, and battery life for daily use, making it a reliable choice within its price range.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The high refresh display and fast processor ensure that it can handle multitasking and heavy workloads smoothly. The battery endurance supports continuous use throughout the day without needing frequent charges.",
+          "cosine_similarities": [
+            0.575234,
+            0.584055,
+            0.546594,
+            0.658628,
+            0.607588
+          ],
+          "min_similarity": 0.546594,
+          "pmf_probabilities": [
+            0.0,
+            0.138423,
+            0.0,
+            0.596435,
+            0.265141
+          ],
+          "expected_rating": 3.9883,
+          "canonical": {
+            "pmf_probabilities": [
+              0.119766,
+              0.156658,
+              0.0,
+              0.468509,
+              0.255066
+            ],
+            "expected_rating": 3.5825
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.138423,
+              0.0,
+              0.596435,
+              0.265141
+            ],
+            "expected_rating": 3.9883
+          },
+          "delta_improved_minus_canonical": 0.4058,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The simple interface makes it easy to navigate and operate, with clean layout and optional contextual AI suggestions enhancing user experience.",
+          "cosine_similarities": [
+            0.43625,
+            0.48965,
+            0.534671,
+            0.581713,
+            0.590035
+          ],
+          "min_similarity": 0.43625,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.222387,
+            0.374392,
+            0.403221
+          ],
+          "expected_rating": 4.1808,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.118386,
+              0.218195,
+              0.322485,
+              0.340934
+            ],
+            "expected_rating": 3.886
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.222387,
+              0.374392,
+              0.403221
+            ],
+            "expected_rating": 4.1808
+          },
+          "delta_improved_minus_canonical": 0.2949,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "Using this smartphone for daily tasks and media viewing is pleasant, thanks to its smooth performance and fast processor, which makes it feel like a seamless and enjoyable experience.",
+          "cosine_similarities": [
+            0.691135,
+            0.709752,
+            0.724016,
+            0.774415,
+            0.789414
+          ],
+          "min_similarity": 0.691135,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.114183,
+            0.394208,
+            0.491609
+          ],
+          "expected_rating": 4.3774,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.079879,
+              0.141086,
+              0.357338,
+              0.421696
+            ],
+            "expected_rating": 4.1209
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.114183,
+              0.394208,
+              0.491609
+            ],
+            "expected_rating": 4.3774
+          },
+          "delta_improved_minus_canonical": 0.2566,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers and colleagues who use mid-range smartphones would likely view it favorably due to its balance of performance and affordability.",
+          "cosine_similarities": [
+            0.661512,
+            0.681417,
+            0.732077,
+            0.737359,
+            0.68688
+          ],
+          "min_similarity": 0.661512,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.424334,
+            0.467199,
+            0.108467
+          ],
+          "expected_rating": 3.6841,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.10384,
+              0.368133,
+              0.395686,
+              0.132341
+            ],
+            "expected_rating": 3.5565
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.424334,
+              0.467199,
+              0.108467
+            ],
+            "expected_rating": 3.6841
+          },
+          "delta_improved_minus_canonical": 0.1276,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The on-device AI processing and smooth performance suggest good hardware reliability, though the price of ₹30,000 does not promise premium build quality or additional features.",
+          "cosine_similarities": [
+            0.465975,
+            0.477495,
+            0.433822,
+            0.474772,
+            0.470553
+          ],
+          "min_similarity": 0.433822,
+          "pmf_probabilities": [
+            0.0,
+            0.36878,
+            0.0,
+            0.33845,
+            0.29277
+          ],
+          "expected_rating": 3.5552,
+          "canonical": {
+            "pmf_probabilities": [
+              0.209458,
+              0.2845,
+              0.0,
+              0.266764,
+              0.239278
+            ],
+            "expected_rating": 3.0419
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.36878,
+              0.0,
+              0.33845,
+              0.29277
+            ],
+            "expected_rating": 3.5552
+          },
+          "delta_improved_minus_canonical": 0.5133,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone, as its high refresh display and fast processor can handle my intensive daily tasks without slowing down, and the battery endurance supports my needs.",
+          "cosine_similarities": [
+            0.705808,
+            0.738023,
+            0.710553,
+            0.796959,
+            0.780655
+          ],
+          "min_similarity": 0.705808,
+          "pmf_probabilities": [
+            0.0,
+            0.123775,
+            0.0,
+            0.495343,
+            0.380882
+          ],
+          "expected_rating": 4.1333,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.158727,
+              0.023377,
+              0.449114,
+              0.368782
+            ],
+            "expected_rating": 4.028
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.123775,
+              0.0,
+              0.495343,
+              0.380882
+            ],
+            "expected_rating": 4.1333
+          },
+          "delta_improved_minus_canonical": 0.1054,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "primary_adoption_rating": 4.0845,
+      "primary_adoption_pmf": [
+        0.0,
+        0.125885,
+        0.0,
+        0.537853,
+        0.336261
+      ],
+      "construct_scores": {
+        "PE": 3.9706,
+        "EE": 3.9875,
+        "HM": 4.3634,
+        "SI": 3.8685,
+        "PP": 4.0375,
+        "BI": 4.0845
+      },
+      "construct_responses": {
+        "PE": "It has a high refresh rate display and fast processor, making it effective for multitasking and casual gaming. However, the smooth performance might be a bit overkill for everyday tasks.",
+        "EE": "The simple interface with optional contextual AI suggestions makes it easy to use, though the AI might sometimes feel intrusive.",
+        "HM": "It provides a satisfying experience for everyday tasks and media viewing, with a clean layout and good display quality.",
+        "SI": "Peers and colleagues might think it’s a reliable and well-rounded device, suitable for everyday use.",
+        "PP": "The build feels sturdy, and the hardware is reliable, ensuring good longevity. However, there’s no mention of specific security features.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone given its balanced features and sensible price for the category.",
+        "OVERALL": "This smartphone offers a well-rounded experience with good performance and a clean interface, making it a solid choice for everyday use."
+      },
+      "response_text": "This smartphone offers a well-rounded experience with good performance and a clean interface, making it a solid choice for everyday use.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "It has a high refresh rate display and fast processor, making it effective for multitasking and casual gaming. However, the smooth performance might be a bit overkill for everyday tasks.",
+          "cosine_similarities": [
+            0.6028,
+            0.603449,
+            0.592509,
+            0.651125,
+            0.608412
+          ],
+          "min_similarity": 0.592509,
+          "pmf_probabilities": [
+            0.0,
+            0.083176,
+            0.0,
+            0.779853,
+            0.136971
+          ],
+          "expected_rating": 3.9706,
+          "canonical": {
+            "pmf_probabilities": [
+              0.107473,
+              0.114254,
+              0.0,
+              0.612183,
+              0.16609
+            ],
+            "expected_rating": 3.6152
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.083176,
+              0.0,
+              0.779853,
+              0.136971
+            ],
+            "expected_rating": 3.9706
+          },
+          "delta_improved_minus_canonical": 0.3555,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The simple interface with optional contextual AI suggestions makes it easy to use, though the AI might sometimes feel intrusive.",
+          "cosine_similarities": [
+            0.43824,
+            0.474647,
+            0.53664,
+            0.555497,
+            0.533646
+          ],
+          "min_similarity": 0.43824,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.310272,
+            0.391982,
+            0.297746
+          ],
+          "expected_rating": 3.9875,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.104777,
+              0.283191,
+              0.33746,
+              0.274572
+            ],
+            "expected_rating": 3.7818
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.310272,
+              0.391982,
+              0.297746
+            ],
+            "expected_rating": 3.9875
+          },
+          "delta_improved_minus_canonical": 0.2056,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "It provides a satisfying experience for everyday tasks and media viewing, with a clean layout and good display quality.",
+          "cosine_similarities": [
+            0.548643,
+            0.588105,
+            0.597863,
+            0.639344,
+            0.672729
+          ],
+          "min_similarity": 0.548643,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.149469,
+            0.337682,
+            0.512849
+          ],
+          "expected_rating": 4.3634,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.130039,
+              0.162191,
+              0.29888,
+              0.40889
+            ],
+            "expected_rating": 3.9866
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.149469,
+              0.337682,
+              0.512849
+            ],
+            "expected_rating": 4.3634
+          },
+          "delta_improved_minus_canonical": 0.3768,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "Peers and colleagues might think it’s a reliable and well-rounded device, suitable for everyday use.",
+          "cosine_similarities": [
+            0.57803,
+            0.592442,
+            0.628003,
+            0.647921,
+            0.611486
+          ],
+          "min_similarity": 0.57803,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.317488,
+            0.49657,
+            0.185942
+          ],
+          "expected_rating": 3.8685,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.085923,
+              0.297933,
+              0.416684,
+              0.19946
+            ],
+            "expected_rating": 3.7297
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.317488,
+              0.49657,
+              0.185942
+            ],
+            "expected_rating": 3.8685
+          },
+          "delta_improved_minus_canonical": 0.1388,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The build feels sturdy, and the hardware is reliable, ensuring good longevity. However, there’s no mention of specific security features.",
+          "cosine_similarities": [
+            0.536511,
+            0.531533,
+            0.537976,
+            0.531094,
+            0.548218
+          ],
+          "min_similarity": 0.531094,
+          "pmf_probabilities": [
+            0.142549,
+            0.0,
+            0.196135,
+            0.0,
+            0.661315
+          ],
+          "expected_rating": 4.0375,
+          "canonical": {
+            "pmf_probabilities": [
+              0.181405,
+              0.014702,
+              0.230459,
+              0.0,
+              0.573434
+            ],
+            "expected_rating": 3.7694
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.142549,
+              0.0,
+              0.196135,
+              0.0,
+              0.661315
+            ],
+            "expected_rating": 4.0375
+          },
+          "delta_improved_minus_canonical": 0.2682,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone given its balanced features and sensible price for the category.",
+          "cosine_similarities": [
+            0.704775,
+            0.733687,
+            0.732466,
+            0.790696,
+            0.765185
+          ],
+          "min_similarity": 0.704775,
+          "pmf_probabilities": [
+            0.0,
+            0.125885,
+            0.0,
+            0.537853,
+            0.336261
+          ],
+          "expected_rating": 4.0845,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.142471,
+              0.136452,
+              0.423394,
+              0.297683
+            ],
+            "expected_rating": 3.8763
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.125885,
+              0.0,
+              0.537853,
+              0.336261
+            ],
+            "expected_rating": 4.0845
+          },
+          "delta_improved_minus_canonical": 0.2082,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "primary_adoption_rating": 3.939,
+      "primary_adoption_pmf": [
+        0.0,
+        0.169829,
+        0.0,
+        0.551503,
+        0.278668
+      ],
+      "construct_scores": {
+        "PE": 4.0162,
+        "EE": 4.1368,
+        "HM": 4.2779,
+        "SI": 4.0515,
+        "PP": 4.1358,
+        "BI": 3.939
+      },
+      "construct_responses": {
+        "PE": "The high refresh display and fast processor make it suitable for multitasking and casual gaming. The smooth performance will help with quick switching between apps and handling multiple tasks.",
+        "EE": "The simple interface with optional AI suggestions is user-friendly and easy to navigate. It provides a clean layout that is straightforward to operate.",
+        "HM": "The smartphone offers a pleasant user experience for daily tasks and media viewing, thanks to its high refresh display and fast processor. It ensures that the visuals are clear and smooth, enhancing the overall viewing experience.",
+        "SI": "My peers and colleagues who are tech-savvy would likely appreciate the features and find it reliable for their daily tasks. It's a good choice for someone looking for a practical and efficient device.",
+        "PP": "The device has a clean and durable design, which suggests it can withstand daily use. With its smooth performance, it's likely to last for a considerable amount of time without major issues.",
+        "BI": "I am certain I will continue using this smartphone as my primary phone as it covers my core daily needs effectively. The ₹30,000 price is fair for a mid-range smartphone with these specifications, making it a practical choice.",
+        "OVERALL": "It offers a good balance of features and performance for everyday use, and the ₹30,000 price seems reasonable given its capabilities."
+      },
+      "response_text": "It offers a good balance of features and performance for everyday use, and the ₹30,000 price seems reasonable given its capabilities.",
+      "anchor_sets": [
+        {
+          "construct_code": "PE",
+          "construct_name": "Performance Expectancy",
+          "response_text": "The high refresh display and fast processor make it suitable for multitasking and casual gaming. The smooth performance will help with quick switching between apps and handling multiple tasks.",
+          "cosine_similarities": [
+            0.565251,
+            0.575692,
+            0.560625,
+            0.632115,
+            0.587659
+          ],
+          "min_similarity": 0.560625,
+          "pmf_probabilities": [
+            0.0,
+            0.089655,
+            0.0,
+            0.714861,
+            0.195485
+          ],
+          "expected_rating": 4.0162,
+          "canonical": {
+            "pmf_probabilities": [
+              0.039126,
+              0.127448,
+              0.0,
+              0.604741,
+              0.228685
+            ],
+            "expected_rating": 3.8564
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.089655,
+              0.0,
+              0.714861,
+              0.195485
+            ],
+            "expected_rating": 4.0162
+          },
+          "delta_improved_minus_canonical": 0.1598,
+          "anchor_statements": [
+            "My current smartphone does not help me get important everyday tasks done.",
+            "My current smartphone offers little help for completing my everyday tasks.",
+            "My current smartphone helps with some tasks but makes little difference overall.",
+            "My current smartphone helps me complete most everyday tasks effectively.",
+            "My current smartphone makes a substantial difference to how effectively I accomplish important tasks."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "EE",
+          "construct_name": "Effort Expectancy",
+          "response_text": "The simple interface with optional AI suggestions is user-friendly and easy to navigate. It provides a clean layout that is straightforward to operate.",
+          "cosine_similarities": [
+            0.431546,
+            0.47513,
+            0.528634,
+            0.564878,
+            0.566998
+          ],
+          "min_similarity": 0.431546,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.244773,
+            0.373642,
+            0.381585
+          ],
+          "expected_rating": 4.1368,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.106445,
+              0.237114,
+              0.325632,
+              0.33081
+            ],
+            "expected_rating": 3.8808
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.244773,
+              0.373642,
+              0.381585
+            ],
+            "expected_rating": 4.1368
+          },
+          "delta_improved_minus_canonical": 0.256,
+          "anchor_statements": [
+            "Learning to use my current smartphone is very difficult for me.",
+            "I find many parts of my smartphone difficult to understand or operate.",
+            "Using my smartphone is manageable, although several tasks still take effort.",
+            "Most tasks on my smartphone are easy for me to learn and perform.",
+            "I can learn and use my smartphone features easily with very little effort."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "HM",
+          "construct_name": "Hedonic Motivation",
+          "response_text": "The smartphone offers a pleasant user experience for daily tasks and media viewing, thanks to its high refresh display and fast processor. It ensures that the visuals are clear and smooth, enhancing the overall viewing experience.",
+          "cosine_similarities": [
+            0.704936,
+            0.711274,
+            0.730483,
+            0.761543,
+            0.761432
+          ],
+          "min_similarity": 0.704936,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.147716,
+            0.426703,
+            0.425582
+          ],
+          "expected_rating": 4.2779,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.043713,
+              0.176204,
+              0.390426,
+              0.389657
+            ],
+            "expected_rating": 4.126
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.147716,
+              0.426703,
+              0.425582
+            ],
+            "expected_rating": 4.2779
+          },
+          "delta_improved_minus_canonical": 0.1518,
+          "anchor_statements": [
+            "Using my smartphone is not enjoyable for me.",
+            "I get little enjoyment from using my smartphone.",
+            "Using my smartphone is neither enjoyable nor unenjoyable.",
+            "I generally enjoy using my smartphone.",
+            "Using my smartphone is highly enjoyable and fun."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "SI",
+          "construct_name": "Social Influence",
+          "response_text": "My peers and colleagues who are tech-savvy would likely appreciate the features and find it reliable for their daily tasks. It's a good choice for someone looking for a practical and efficient device.",
+          "cosine_similarities": [
+            0.609279,
+            0.581166,
+            0.657212,
+            0.676266,
+            0.667359
+          ],
+          "min_similarity": 0.581166,
+          "pmf_probabilities": [
+            0.0,
+            0.0,
+            0.28336,
+            0.381778,
+            0.334862
+          ],
+          "expected_rating": 4.0515,
+          "canonical": {
+            "pmf_probabilities": [
+              0.098485,
+              0.0,
+              0.266406,
+              0.333157,
+              0.301953
+            ],
+            "expected_rating": 3.7401
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.0,
+              0.28336,
+              0.381778,
+              0.334862
+            ],
+            "expected_rating": 4.0515
+          },
+          "delta_improved_minus_canonical": 0.3114,
+          "anchor_statements": [
+            "People important to me would discourage me from using a smartphone like mine.",
+            "People whose opinions I value are not supportive of my using this smartphone.",
+            "People important to me are divided about whether I should use this smartphone.",
+            "People whose opinions matter to me generally support my use of this smartphone.",
+            "People important to me strongly encourage me to use a smartphone like mine."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "PP",
+          "construct_name": "Perceived Protection",
+          "response_text": "The device has a clean and durable design, which suggests it can withstand daily use. With its smooth performance, it's likely to last for a considerable amount of time without major issues.",
+          "cosine_similarities": [
+            0.506038,
+            0.526604,
+            0.508836,
+            0.572128,
+            0.555439
+          ],
+          "min_similarity": 0.506038,
+          "pmf_probabilities": [
+            0.0,
+            0.111617,
+            0.0,
+            0.529314,
+            0.359069
+          ],
+          "expected_rating": 4.1358,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.148112,
+              0.020146,
+              0.475967,
+              0.355775
+            ],
+            "expected_rating": 4.0394
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.111617,
+              0.0,
+              0.529314,
+              0.359069
+            ],
+            "expected_rating": 4.1358
+          },
+          "delta_improved_minus_canonical": 0.0964,
+          "anchor_statements": [
+            "I have no confidence that my smartphone protects my personal information.",
+            "My smartphone provides little protection for my personal information and accounts.",
+            "I feel only moderately protected when I use my smartphone.",
+            "I feel that my smartphone adequately protects my personal information.",
+            "I feel highly confident that my smartphone protects my personal information and accounts."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        },
+        {
+          "construct_code": "BI",
+          "construct_name": "Behavioral Intention",
+          "response_text": "I am certain I will continue using this smartphone as my primary phone as it covers my core daily needs effectively. The ₹30,000 price is fair for a mid-range smartphone with these specifications, making it a practical choice.",
+          "cosine_similarities": [
+            0.63716,
+            0.668442,
+            0.666911,
+            0.712834,
+            0.682513
+          ],
+          "min_similarity": 0.63716,
+          "pmf_probabilities": [
+            0.0,
+            0.169829,
+            0.0,
+            0.551503,
+            0.278668
+          ],
+          "expected_rating": 3.939,
+          "canonical": {
+            "pmf_probabilities": [
+              0.0,
+              0.171823,
+              0.163412,
+              0.415657,
+              0.249108
+            ],
+            "expected_rating": 3.7421
+          },
+          "improved": {
+            "pmf_probabilities": [
+              0.0,
+              0.169829,
+              0.0,
+              0.551503,
+              0.278668
+            ],
+            "expected_rating": 3.939
+          },
+          "delta_improved_minus_canonical": 0.197,
+          "anchor_statements": [
+            "I do not intend to continue using my current smartphone.",
+            "I am unlikely to keep using my current smartphone in the near future.",
+            "I am undecided about whether I will continue using my current smartphone.",
+            "I intend to continue using my current smartphone for the foreseeable future.",
+            "I am certain I will continue using my current smartphone unless I need to replace it."
+          ],
+          "anchor_labels": [
+            "Strongly disagree",
+            "Disagree",
+            "Neither agree nor disagree",
+            "Agree",
+            "Strongly agree"
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.518889,
+        0.52565,
+        0.484484,
+        0.601228,
+        0.533723
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.159139,
+        0.0,
+        0.638806,
+        0.202055
+      ],
+      "expected_rating": 3.8838,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.453733,
+        0.493416,
+        0.525707,
+        0.563842,
+        0.578558
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.206334,
+        0.363722,
+        0.429944
+      ],
+      "expected_rating": 4.2236,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.549744,
+        0.58937,
+        0.588107,
+        0.628796,
+        0.656994
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.137301,
+        0.0,
+        0.344814,
+        0.517884
+      ],
+      "expected_rating": 4.2433,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.622734,
+        0.637138,
+        0.663231,
+        0.724706,
+        0.707376
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.140886,
+        0.482625,
+        0.376489
+      ],
+      "expected_rating": 4.2356,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.625373,
+        0.609047,
+        0.552814,
+        0.658829,
+        0.653133
+      ],
+      "pmf_probabilities": [
+        0.238198,
+        0.0,
+        0.0,
+        0.394918,
+        0.366885
+      ],
+      "expected_rating": 3.6523,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.641031,
+        0.664761,
+        0.667673,
+        0.712644,
+        0.701559
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.129464,
+        0.483866,
+        0.38667
+      ],
+      "expected_rating": 4.2572,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.575234,
+        0.584055,
+        0.546594,
+        0.658628,
+        0.607588
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.138423,
+        0.0,
+        0.596435,
+        0.265141
+      ],
+      "expected_rating": 3.9883,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.43625,
+        0.48965,
+        0.534671,
+        0.581713,
+        0.590035
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.222387,
+        0.374392,
+        0.403221
+      ],
+      "expected_rating": 4.1808,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.691135,
+        0.709752,
+        0.724016,
+        0.774415,
+        0.789414
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.114183,
+        0.394208,
+        0.491609
+      ],
+      "expected_rating": 4.3774,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.661512,
+        0.681417,
+        0.732077,
+        0.737359,
+        0.68688
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.424334,
+        0.467199,
+        0.108467
+      ],
+      "expected_rating": 3.6841,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.465975,
+        0.477495,
+        0.433822,
+        0.474772,
+        0.470553
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.36878,
+        0.0,
+        0.33845,
+        0.29277
+      ],
+      "expected_rating": 3.5552,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.705808,
+        0.738023,
+        0.710553,
+        0.796959,
+        0.780655
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.123775,
+        0.0,
+        0.495343,
+        0.380882
+      ],
+      "expected_rating": 4.1333,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.6028,
+        0.603449,
+        0.592509,
+        0.651125,
+        0.608412
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.083176,
+        0.0,
+        0.779853,
+        0.136971
+      ],
+      "expected_rating": 3.9706,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.43824,
+        0.474647,
+        0.53664,
+        0.555497,
+        0.533646
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.310272,
+        0.391982,
+        0.297746
+      ],
+      "expected_rating": 3.9875,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.548643,
+        0.588105,
+        0.597863,
+        0.639344,
+        0.672729
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.149469,
+        0.337682,
+        0.512849
+      ],
+      "expected_rating": 4.3634,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.57803,
+        0.592442,
+        0.628003,
+        0.647921,
+        0.611486
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.317488,
+        0.49657,
+        0.185942
+      ],
+      "expected_rating": 3.8685,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.536511,
+        0.531533,
+        0.537976,
+        0.531094,
+        0.548218
+      ],
+      "pmf_probabilities": [
+        0.142549,
+        0.0,
+        0.196135,
+        0.0,
+        0.661315
+      ],
+      "expected_rating": 4.0375,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.704775,
+        0.733687,
+        0.732466,
+        0.790696,
+        0.765185
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.125885,
+        0.0,
+        0.537853,
+        0.336261
+      ],
+      "expected_rating": 4.0845,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "construct_code": "PE",
+      "construct_name": "Performance Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.565251,
+        0.575692,
+        0.560625,
+        0.632115,
+        0.587659
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.089655,
+        0.0,
+        0.714861,
+        0.195485
+      ],
+      "expected_rating": 4.0162,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "construct_code": "EE",
+      "construct_name": "Effort Expectancy",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.431546,
+        0.47513,
+        0.528634,
+        0.564878,
+        0.566998
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.244773,
+        0.373642,
+        0.381585
+      ],
+      "expected_rating": 4.1368,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "construct_code": "HM",
+      "construct_name": "Hedonic Motivation",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.704936,
+        0.711274,
+        0.730483,
+        0.761543,
+        0.761432
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.147716,
+        0.426703,
+        0.425582
+      ],
+      "expected_rating": 4.2779,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "construct_code": "SI",
+      "construct_name": "Social Influence",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.609279,
+        0.581166,
+        0.657212,
+        0.676266,
+        0.667359
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.0,
+        0.28336,
+        0.381778,
+        0.334862
+      ],
+      "expected_rating": 4.0515,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "construct_code": "PP",
+      "construct_name": "Perceived Protection",
+      "is_primary_adoption_outcome": false,
+      "cosine_similarities": [
+        0.506038,
+        0.526604,
+        0.508836,
+        0.572128,
+        0.555439
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.111617,
+        0.0,
+        0.529314,
+        0.359069
+      ],
+      "expected_rating": 4.1358,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "construct_code": "BI",
+      "construct_name": "Behavioral Intention",
+      "is_primary_adoption_outcome": true,
+      "cosine_similarities": [
+        0.63716,
+        0.668442,
+        0.666911,
+        0.712834,
+        0.682513
+      ],
+      "pmf_probabilities": [
+        0.0,
+        0.169829,
+        0.0,
+        0.551503,
+        0.278668
+      ],
+      "expected_rating": 3.939,
+      "embedding_model": "nomic-embed-text"
+    }
+  ],
+  "intermediate_records": [
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.518889,
+      "cos_sim_2": 0.52565,
+      "cos_sim_3": 0.484484,
+      "cos_sim_4": 0.601228,
+      "cos_sim_5": 0.533723,
+      "min_similarity": 0.484484,
+      "p1": 0.0,
+      "p2": 0.159139,
+      "p3": 0.0,
+      "p4": 0.638806,
+      "p5": 0.202055,
+      "set_expected_rating": 3.8838,
+      "canonical_expected_rating": 3.4357,
+      "improved_expected_rating": 3.8838,
+      "delta": 0.4481,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.453733,
+      "cos_sim_2": 0.493416,
+      "cos_sim_3": 0.525707,
+      "cos_sim_4": 0.563842,
+      "cos_sim_5": 0.578558,
+      "min_similarity": 0.453733,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.206334,
+      "p4": 0.363722,
+      "p5": 0.429944,
+      "set_expected_rating": 4.2236,
+      "canonical_expected_rating": 3.9235,
+      "improved_expected_rating": 4.2236,
+      "delta": 0.3001,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.549744,
+      "cos_sim_2": 0.58937,
+      "cos_sim_3": 0.588107,
+      "cos_sim_4": 0.628796,
+      "cos_sim_5": 0.656994,
+      "min_similarity": 0.549744,
+      "p1": 0.0,
+      "p2": 0.137301,
+      "p3": 0.0,
+      "p4": 0.344814,
+      "p5": 0.517884,
+      "set_expected_rating": 4.2433,
+      "canonical_expected_rating": 3.9608,
+      "improved_expected_rating": 4.2433,
+      "delta": 0.2825,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.622734,
+      "cos_sim_2": 0.637138,
+      "cos_sim_3": 0.663231,
+      "cos_sim_4": 0.724706,
+      "cos_sim_5": 0.707376,
+      "min_similarity": 0.622734,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.140886,
+      "p4": 0.482625,
+      "p5": 0.376489,
+      "set_expected_rating": 4.2356,
+      "canonical_expected_rating": 4.0635,
+      "improved_expected_rating": 4.2356,
+      "delta": 0.1721,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.625373,
+      "cos_sim_2": 0.609047,
+      "cos_sim_3": 0.552814,
+      "cos_sim_4": 0.658829,
+      "cos_sim_5": 0.653133,
+      "min_similarity": 0.552814,
+      "p1": 0.238198,
+      "p2": 0.0,
+      "p3": 0.0,
+      "p4": 0.394918,
+      "p5": 0.366885,
+      "set_expected_rating": 3.6523,
+      "canonical_expected_rating": 3.3142,
+      "improved_expected_rating": 3.6523,
+      "delta": 0.3381,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P1_premium_tier_owner",
+      "product_name": "oppo",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.641031,
+      "cos_sim_2": 0.664761,
+      "cos_sim_3": 0.667673,
+      "cos_sim_4": 0.712644,
+      "cos_sim_5": 0.701559,
+      "min_similarity": 0.641031,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.129464,
+      "p4": 0.483866,
+      "p5": 0.38667,
+      "set_expected_rating": 4.2572,
+      "canonical_expected_rating": 3.9256,
+      "improved_expected_rating": 4.2572,
+      "delta": 0.3316,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.575234,
+      "cos_sim_2": 0.584055,
+      "cos_sim_3": 0.546594,
+      "cos_sim_4": 0.658628,
+      "cos_sim_5": 0.607588,
+      "min_similarity": 0.546594,
+      "p1": 0.0,
+      "p2": 0.138423,
+      "p3": 0.0,
+      "p4": 0.596435,
+      "p5": 0.265141,
+      "set_expected_rating": 3.9883,
+      "canonical_expected_rating": 3.5825,
+      "improved_expected_rating": 3.9883,
+      "delta": 0.4058,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.43625,
+      "cos_sim_2": 0.48965,
+      "cos_sim_3": 0.534671,
+      "cos_sim_4": 0.581713,
+      "cos_sim_5": 0.590035,
+      "min_similarity": 0.43625,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.222387,
+      "p4": 0.374392,
+      "p5": 0.403221,
+      "set_expected_rating": 4.1808,
+      "canonical_expected_rating": 3.886,
+      "improved_expected_rating": 4.1808,
+      "delta": 0.2949,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.691135,
+      "cos_sim_2": 0.709752,
+      "cos_sim_3": 0.724016,
+      "cos_sim_4": 0.774415,
+      "cos_sim_5": 0.789414,
+      "min_similarity": 0.691135,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.114183,
+      "p4": 0.394208,
+      "p5": 0.491609,
+      "set_expected_rating": 4.3774,
+      "canonical_expected_rating": 4.1209,
+      "improved_expected_rating": 4.3774,
+      "delta": 0.2566,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.661512,
+      "cos_sim_2": 0.681417,
+      "cos_sim_3": 0.732077,
+      "cos_sim_4": 0.737359,
+      "cos_sim_5": 0.68688,
+      "min_similarity": 0.661512,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.424334,
+      "p4": 0.467199,
+      "p5": 0.108467,
+      "set_expected_rating": 3.6841,
+      "canonical_expected_rating": 3.5565,
+      "improved_expected_rating": 3.6841,
+      "delta": 0.1276,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.465975,
+      "cos_sim_2": 0.477495,
+      "cos_sim_3": 0.433822,
+      "cos_sim_4": 0.474772,
+      "cos_sim_5": 0.470553,
+      "min_similarity": 0.433822,
+      "p1": 0.0,
+      "p2": 0.36878,
+      "p3": 0.0,
+      "p4": 0.33845,
+      "p5": 0.29277,
+      "set_expected_rating": 3.5552,
+      "canonical_expected_rating": 3.0419,
+      "improved_expected_rating": 3.5552,
+      "delta": 0.5133,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P2_midrange_heavy_user",
+      "product_name": "oppo",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.705808,
+      "cos_sim_2": 0.738023,
+      "cos_sim_3": 0.710553,
+      "cos_sim_4": 0.796959,
+      "cos_sim_5": 0.780655,
+      "min_similarity": 0.705808,
+      "p1": 0.0,
+      "p2": 0.123775,
+      "p3": 0.0,
+      "p4": 0.495343,
+      "p5": 0.380882,
+      "set_expected_rating": 4.1333,
+      "canonical_expected_rating": 4.028,
+      "improved_expected_rating": 4.1333,
+      "delta": 0.1054,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.6028,
+      "cos_sim_2": 0.603449,
+      "cos_sim_3": 0.592509,
+      "cos_sim_4": 0.651125,
+      "cos_sim_5": 0.608412,
+      "min_similarity": 0.592509,
+      "p1": 0.0,
+      "p2": 0.083176,
+      "p3": 0.0,
+      "p4": 0.779853,
+      "p5": 0.136971,
+      "set_expected_rating": 3.9706,
+      "canonical_expected_rating": 3.6152,
+      "improved_expected_rating": 3.9706,
+      "delta": 0.3555,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.43824,
+      "cos_sim_2": 0.474647,
+      "cos_sim_3": 0.53664,
+      "cos_sim_4": 0.555497,
+      "cos_sim_5": 0.533646,
+      "min_similarity": 0.43824,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.310272,
+      "p4": 0.391982,
+      "p5": 0.297746,
+      "set_expected_rating": 3.9875,
+      "canonical_expected_rating": 3.7818,
+      "improved_expected_rating": 3.9875,
+      "delta": 0.2056,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.548643,
+      "cos_sim_2": 0.588105,
+      "cos_sim_3": 0.597863,
+      "cos_sim_4": 0.639344,
+      "cos_sim_5": 0.672729,
+      "min_similarity": 0.548643,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.149469,
+      "p4": 0.337682,
+      "p5": 0.512849,
+      "set_expected_rating": 4.3634,
+      "canonical_expected_rating": 3.9866,
+      "improved_expected_rating": 4.3634,
+      "delta": 0.3768,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.57803,
+      "cos_sim_2": 0.592442,
+      "cos_sim_3": 0.628003,
+      "cos_sim_4": 0.647921,
+      "cos_sim_5": 0.611486,
+      "min_similarity": 0.57803,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.317488,
+      "p4": 0.49657,
+      "p5": 0.185942,
+      "set_expected_rating": 3.8685,
+      "canonical_expected_rating": 3.7297,
+      "improved_expected_rating": 3.8685,
+      "delta": 0.1388,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.536511,
+      "cos_sim_2": 0.531533,
+      "cos_sim_3": 0.537976,
+      "cos_sim_4": 0.531094,
+      "cos_sim_5": 0.548218,
+      "min_similarity": 0.531094,
+      "p1": 0.142549,
+      "p2": 0.0,
+      "p3": 0.196135,
+      "p4": 0.0,
+      "p5": 0.661315,
+      "set_expected_rating": 4.0375,
+      "canonical_expected_rating": 3.7694,
+      "improved_expected_rating": 4.0375,
+      "delta": 0.2682,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P3_midrange_moderate_user",
+      "product_name": "oppo",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.704775,
+      "cos_sim_2": 0.733687,
+      "cos_sim_3": 0.732466,
+      "cos_sim_4": 0.790696,
+      "cos_sim_5": 0.765185,
+      "min_similarity": 0.704775,
+      "p1": 0.0,
+      "p2": 0.125885,
+      "p3": 0.0,
+      "p4": 0.537853,
+      "p5": 0.336261,
+      "set_expected_rating": 4.0845,
+      "canonical_expected_rating": 3.8763,
+      "improved_expected_rating": 4.0845,
+      "delta": 0.2082,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "anchor_set_code": "PE",
+      "anchor_set_name": "Performance Expectancy",
+      "cos_sim_1": 0.565251,
+      "cos_sim_2": 0.575692,
+      "cos_sim_3": 0.560625,
+      "cos_sim_4": 0.632115,
+      "cos_sim_5": 0.587659,
+      "min_similarity": 0.560625,
+      "p1": 0.0,
+      "p2": 0.089655,
+      "p3": 0.0,
+      "p4": 0.714861,
+      "p5": 0.195485,
+      "set_expected_rating": 4.0162,
+      "canonical_expected_rating": 3.8564,
+      "improved_expected_rating": 4.0162,
+      "delta": 0.1598,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "anchor_set_code": "EE",
+      "anchor_set_name": "Effort Expectancy",
+      "cos_sim_1": 0.431546,
+      "cos_sim_2": 0.47513,
+      "cos_sim_3": 0.528634,
+      "cos_sim_4": 0.564878,
+      "cos_sim_5": 0.566998,
+      "min_similarity": 0.431546,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.244773,
+      "p4": 0.373642,
+      "p5": 0.381585,
+      "set_expected_rating": 4.1368,
+      "canonical_expected_rating": 3.8808,
+      "improved_expected_rating": 4.1368,
+      "delta": 0.256,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "anchor_set_code": "HM",
+      "anchor_set_name": "Hedonic Motivation",
+      "cos_sim_1": 0.704936,
+      "cos_sim_2": 0.711274,
+      "cos_sim_3": 0.730483,
+      "cos_sim_4": 0.761543,
+      "cos_sim_5": 0.761432,
+      "min_similarity": 0.704936,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.147716,
+      "p4": 0.426703,
+      "p5": 0.425582,
+      "set_expected_rating": 4.2779,
+      "canonical_expected_rating": 4.126,
+      "improved_expected_rating": 4.2779,
+      "delta": 0.1518,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "anchor_set_code": "SI",
+      "anchor_set_name": "Social Influence",
+      "cos_sim_1": 0.609279,
+      "cos_sim_2": 0.581166,
+      "cos_sim_3": 0.657212,
+      "cos_sim_4": 0.676266,
+      "cos_sim_5": 0.667359,
+      "min_similarity": 0.581166,
+      "p1": 0.0,
+      "p2": 0.0,
+      "p3": 0.28336,
+      "p4": 0.381778,
+      "p5": 0.334862,
+      "set_expected_rating": 4.0515,
+      "canonical_expected_rating": 3.7401,
+      "improved_expected_rating": 4.0515,
+      "delta": 0.3114,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "anchor_set_code": "PP",
+      "anchor_set_name": "Perceived Protection",
+      "cos_sim_1": 0.506038,
+      "cos_sim_2": 0.526604,
+      "cos_sim_3": 0.508836,
+      "cos_sim_4": 0.572128,
+      "cos_sim_5": 0.555439,
+      "min_similarity": 0.506038,
+      "p1": 0.0,
+      "p2": 0.111617,
+      "p3": 0.0,
+      "p4": 0.529314,
+      "p5": 0.359069,
+      "set_expected_rating": 4.1358,
+      "canonical_expected_rating": 4.0394,
+      "improved_expected_rating": 4.1358,
+      "delta": 0.0964,
+      "embedding_model": "nomic-embed-text"
+    },
+    {
+      "persona_id": "P4_budget_or_undisclosed_price",
+      "product_name": "oppo",
+      "anchor_set_code": "BI",
+      "anchor_set_name": "Behavioral Intention",
+      "cos_sim_1": 0.63716,
+      "cos_sim_2": 0.668442,
+      "cos_sim_3": 0.666911,
+      "cos_sim_4": 0.712834,
+      "cos_sim_5": 0.682513,
+      "min_similarity": 0.63716,
+      "p1": 0.0,
+      "p2": 0.169829,
+      "p3": 0.0,
+      "p4": 0.551503,
+      "p5": 0.278668,
+      "set_expected_rating": 3.939,
+      "canonical_expected_rating": 3.7421,
+      "improved_expected_rating": 3.939,
+      "delta": 0.197,
+      "embedding_model": "nomic-embed-text"
+    }
+  ]
+}
