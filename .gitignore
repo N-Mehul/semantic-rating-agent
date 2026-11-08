@@ -1,4 +1,5 @@
 __pycache__/
+.pytest_cache/
 *.pyc
 
 .venv/
@@ -23,3 +24,4 @@ temp_out.txt
 verify_out.txt
 memory.json
 data/*.csv
+data/product_evaluation/*/

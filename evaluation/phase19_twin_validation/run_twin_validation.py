@@ -64,6 +64,7 @@ REPURCHASE_ANCHORS = [
     "I would definitely buy a smartphone from this brand again.",
 ]
 ANCHOR_SET = "bi"
+SUFFIX = ""
 NUM_RE = re.compile(r"\d|\bout of\b|\bstars?\b|/\s*\d|percent", re.I)
 
 
@@ -277,7 +278,7 @@ def analyse(df: pd.DataFrame, twins_path: Path, full: pd.DataFrame | None = None
     tables = {}
     for name, key, mn in [("persona", "persona", 5), ("brand", "brand_g", 10), ("brand_x_persona", ["brand_g", "persona"], 5)]:
         tables[name], M[name] = group_compare(d, key, mn)
-        tables[name].to_csv(HERE / f"twin_{name}_table_{ANCHOR_SET}.csv", index=False)
+        tables[name].to_csv(HERE / f"twin_{name}_table_{ANCHOR_SET}{SUFFIX}.csv", index=False)
     # human text vs own Q21 (replicates Phase 13 with combined text)
     for nm, sub in [("all", d), ("q26_3plus_words", d[d.h_words >= 3])]:
         M[f"human_text_vs_own_q21_{nm}"] = {
@@ -311,8 +312,8 @@ def analyse(df: pd.DataFrame, twins_path: Path, full: pd.DataFrame | None = None
         print("GROUP", k, {c: {m: round(v, 3) for m, v in M[k][c].items() if m != "pearson_ci95"}
                            for c in ("twin_E", "twin_cal", "twin_hyb", "twin_DLE") if c in M[k]})
     print("DISTRIBUTION:", json.dumps(M["distribution"], indent=2, default=float))
-    (HERE / f"twin_metrics_{ANCHOR_SET}.json").write_text(json.dumps(M, indent=2, default=float), encoding="utf-8")
-    d.drop(columns=["answers"]).to_csv(HERE / f"twin_pairs_scored_{ANCHOR_SET}.csv", index=False)
+    (HERE / f"twin_metrics_{ANCHOR_SET}{SUFFIX}.json").write_text(json.dumps(M, indent=2, default=float), encoding="utf-8")
+    d.drop(columns=["answers"]).to_csv(HERE / f"twin_pairs_scored_{ANCHOR_SET}{SUFFIX}.csv", index=False)
     figures(d, tables)
     report(M)
 
@@ -336,7 +337,7 @@ def figures(d, T) -> None:
         lo, hi = 2.5, 4.6
         a.plot([lo, hi], [lo, hi], "k--", lw=0.8)
         a.set(title=f"{nm} means: twin vs human", xlabel="Human mean Q21", ylabel="Twin mean rating"); a.legend(fontsize=7)
-    fig.tight_layout(); fig.savefig(HERE / f"twin_validation_{ANCHOR_SET}.png", dpi=200)
+    fig.tight_layout(); fig.savefig(HERE / f"twin_validation_{ANCHOR_SET}{SUFFIX}.png", dpi=200)
 
 
 def report(M) -> None:
@@ -357,16 +358,17 @@ SD: human {M['distribution']['SD']['human_q21']:.2f}, twin E-SSR {M['distributio
 Human text vs own Q21 (Spearman): all {M['human_text_vs_own_q21_all']['spearman_Q26']:.3f} (Q26) / {M['human_text_vs_own_q21_all']['spearman_all4']:.3f} (Q23-Q26 combined); 3+ words {M['human_text_vs_own_q21_q26_3plus_words']['spearman_Q26']:.3f} / {M['human_text_vs_own_q21_q26_3plus_words']['spearman_all4']:.3f}.
 Notes: twins never saw the respondent's ratings or text. Groups below the minimum size are excluded. Small group counts give wide intervals.
 """
-    (HERE / f"twin_report_{ANCHOR_SET}.md").write_text(txt, encoding="utf-8")
+    (HERE / f"twin_report_{ANCHOR_SET}{SUFFIX}.md").write_text(txt, encoding="utf-8")
     print(txt)
 
 
 # ----------------------------------------------------------------------------- main
 def main() -> None:
-    global GEN_MODEL, OLLAMA, ANCHOR_SET
+    global GEN_MODEL, OLLAMA, ANCHOR_SET, SUFFIX
     ap = argparse.ArgumentParser()
     ap.add_argument("--survey", default=str(ROOT / "data" / "Capstone_Reviews(Responses).xlsx"))
     ap.add_argument("--pilot", type=int, default=0, help="stratified sample size (e.g. 80); 0 = everyone")
+    ap.add_argument("--heldout", type=int, default=0, help="held-out sample size of unseen respondents (e.g. 40)")
     ap.add_argument("--model", default=GEN_MODEL)
     ap.add_argument("--host", default=OLLAMA)
     ap.add_argument("--analyse-only", action="store_true")
@@ -377,6 +379,28 @@ def main() -> None:
     df = load_survey(Path(a.survey))
     print(f"eligible respondents: {len(df)}; personas: {df.persona.value_counts().sort_index().to_dict()}")
     full_df = df.copy()
+    if a.heldout > 0 and not a.pilot:
+        SUFFIX = "_heldout"
+        used = set()
+        for p in [HERE / "twins.jsonl", *HERE.glob("twins_backup_*.jsonl")]:
+            if p.exists():
+                for l in p.read_text(encoding="utf-8").splitlines():
+                    if l.strip():
+                        try:
+                            used.add(json.loads(l)["rid"])
+                        except Exception:
+                            pass
+        pool = full_df[~full_df.rid.isin(used)]
+        per = max(1, a.heldout // 4)
+        sample = pd.concat([g.sample(min(len(g), per), random_state=SEED + 1)
+                            for _, g in pool.groupby("persona")]).reset_index(drop=True)
+        print(f"held-out pool: {len(pool)}; sample: {len(sample)}; personas: {sample.persona.value_counts().sort_index().to_dict()}")
+        out = HERE / "twins_heldout.jsonl"
+        if not a.analyse_only:
+            generate(sample, out)
+        analyse(sample, out, full_df)
+        return
+
     if a.pilot:
         per = max(1, a.pilot // 4)
         df = pd.concat([g.sample(min(len(g), per), random_state=SEED)

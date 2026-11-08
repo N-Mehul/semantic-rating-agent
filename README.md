@@ -1,97 +1,91 @@
-# Semantic Similarity Rating (SSR) for LLM-Based Synthetic Consumer Survey Responses
+# Semantic Rating Agent (SRA): Digital Persona + E-SSR
 
-## Digital Persona Pipeline (technology-adoption survey study)
+## Project Overview & Purpose
+The **Semantic Rating Agent (SRA)** implements an empirical technology adoption simulation framework combining **Empirical Digital Personas** with **Enhanced Semantic Similarity Rating (E-SSR)**. 
 
-*Digital Persona-Based Synthetic Survey Data Generation for Technology Adoption Research: An SSR-Based Validation Framework.* This section describes the current capstone pipeline. The rest of this README (starting at "Default Showcase Result") documents the earlier, separate review-rating SSR project (`agent.py`), which uses a softmax variant and is **not** part of this pipeline.
+Synthetic agents ("twins") conditioned on empirical survey respondents (persona profile, spending habits, current smartphone brand, price tier) answer multi-question open-ended feedback without ever outputting numeric ratings directly. Natural language answers are scored against validated psychometric anchor statements (Behavioral Intention) using embedding-based projection into continuous expected rating spaces ($\mathbb{E}[R] \in [1, 5]$).
 
-### Architecture
-```text
-Human survey (Google Forms export, 215 submissions)
-  -> scripts/clean_human_survey.py       cleaned CSV, inclusion log (200-person primary cohort)
-  -> scripts/build_personas.py           persona assignments + aggregate profiles (P1-P4)
-  -> scripts/dp_persona_generator.py     persona cards + seeded respondent specs      -> data/persona_generator/
-  -> LLM generation (separate, explicit) pilot_generate_gemini.py / pilot_generate_openai.py -> data/pilot_*/
-  -> scripts/dp_synthetic_dataset.py     quality filter + canonical SSR (PMF, E[r], uncertainty) -> data/synthetic_dataset/
-  -> scripts/dp_validation_agent.py      human-vs-synthetic validation                -> data/validation/, docs/project_status/
+### Core Components
+- **Inference & Simulation**: Fully offline local execution via **Ollama**.
+  - Text Generation: `qwen2.5:7b-instruct`
+  - Embedding Projection: `nomic-embed-text` (768-dimensional embeddings)
+- **Scoring Pipeline**:
+  - **E-SSR**: Top-$k$ filtering ($k=3$), sharp softmax temperature scaling ($T=0.75$), projection onto 5 Likert anchor vectors.
+  - **Calibrated E-SSR**: Affine variance and mean matching against held-out human response baselines ($z$-score re-scaling).
+  - **Hybrid Twin Scoring**: Ensemble combining calibrated E-SSR with direct Likert elicitation baseline.
+
+---
+
+## Installation & Setup
+
+1. **Clone & Set Up Virtual Environment (PowerShell / Windows)**:
+   ```powershell
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   pip install -r requirements.txt
+   ```
+
+2. **Ollama Setup & Models**:
+   Ensure [Ollama](https://ollama.ai) is running locally (`http://localhost:11434`):
+   ```powershell
+   ollama pull qwen2.5:7b-instruct
+   ollama pull nomic-embed-text
+   ```
+
+---
+
+## Running the Interactive Dashboard
+To launch the full 6-step interactive workflow demonstration:
+```powershell
+python dashboard\server.py
 ```
-The LLM writes natural-language answers only; it never outputs a rating. Ratings come from `canonical_ssr.py` (unmodified) applied to the approved Behavioral Intention anchor set.
+Open your browser at `http://127.0.0.1:8765` (or specify `--port 8766` if port 8765 is occupied).
 
-### Scoring methods (dashboard product evaluation)
-| Method | Role | Configuration | Code |
-|---|---|---|---|
-| **Enhanced Semantic Similarity Rating (E-SSR)** | Primary method (default) | Keep the 3 most similar anchors (k=3), temperature T=0.75 | `improved_ssr.py` (internal id `improved`) |
-| **Canonical Semantic Similarity Rating (Canonical SSR)** | Baseline method | Paper minimum-subtraction, T=1.0 | `canonical_ssr.py` (unchanged) |
+The dashboard visualizes:
+1. Persona selection and question prompt configuration.
+2. Natural language synthetic response generation.
+3. Batch sentence embedding via `nomic-embed-text`.
+4. Cosine similarity calculation against psychometric anchor statements.
+5. Probability mass function (PMF) computation with top-$k$ temperature scaling.
+6. Continuous expected rating calculation and verification against reference baselines.
 
-Pipeline: response text → `nomic-embed-text` embedding → cosine similarity to the 5 construct anchors → PMF → expected rating E[r] → rounded 1–5 prediction.
+---
 
-Benchmark: E-SSR scores **79.17% exact (19/24)** on 24 synthetic product-evaluation responses (4 personas × 6 constructs), using Qwen 2.5 7B blind-judge ratings as the reference labels. These labels are an LLM judgement, not human ratings, so this is **not** human-validated or real-world accuracy. The judge used only ratings 3, 4 and 5 (5 / 15 / 4 responses). The result is reproducible from the saved cosine similarities of those 24 responses, without new generation or embedding calls.
+## Running Phase 19 Twin Validation
 
-### Response reliability (dashboard product evaluation, 2026-11-06)
-Every persona x construct answer is validated before scoring and corrected at most twice with a short targeted prompt; an answer that still fails is saved with its real issues and is **not scored** (no default or substituted rating). The SSR mathematics, anchors, `nomic-embed-text` (768 dims), k = 3, T = 0.75 and epsilon = 0 are unchanged; the 79.17% benchmark above is unaffected.
-- Validation adds: price/purchase leakage outside BI (incl. discounts, budget, purchase decisions), unsupported real-world claims (lag, battery hours, photo quality, fingerprint speed, weight, benchmarks) unless the answer says the specs do not show it, PP authentication-vs-privacy distinction and invented security mechanisms, contradictory BI openings ("No, unsure"), and a 20-word floor (BI 15; the prompt targets 35-55 / 25-40).
-- Speed: the four main prompts share everything up to the persona section (Ollama prompt-cache reuse), all main calls run before any correction, and all answers are embedded in one batch request (identical vectors, 4 s instead of 51 s).
-- Each saved `ssr_results.json` has a `completeness` block (expected / generated / validated / scored, not-scored reasons) shown on the dashboard.
-- Measured real run (OnePlus Nord CE4 5G, CPU-only, Qwen 2.5 7B): 24/24 scored, 7 Qwen calls (3 corrections), 695 s total. About 5 minutes is not reachable on this hardware: generation runs at ~8 tokens/s, so the four main calls alone take ~460 s.
+The Phase 19 validation pipeline generates paired digital twins for real survey respondents and evaluates group-level and individual-level psychometric alignment:
 
-### Setup (Windows CMD)
-```bat
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-pip install pytest matplotlib openpyxl google-genai openai
-```
-`requirements.txt` does not list `matplotlib` (needed by the scoring and comparison scripts that the pipeline imports), `openpyxl` (needed to read the survey workbook) or the optional LLM SDKs, so install them as shown. `google-genai` and `openai` are needed only for the separate generation step.
-Local sentence-transformer models (all-mpnet-base-v2, all-MiniLM-L6-v2, bge-base-en-v1.5) must already be in the Hugging Face cache; set `HF_HUB_OFFLINE=1` to avoid network access.
+- **Pilot Validation (80 respondents, 20 per persona)**:
+  ```powershell
+  python evaluation\phase19_twin_validation\run_twin_validation.py --pilot 80
+  ```
 
-### Commands
-```bat
-python scripts/run_pipeline.py status      :: what exists, what is missing, commands for missing generation
-python scripts/run_pipeline.py all         :: personas -> dataset -> validate (reads saved responses; no API calls)
-python scripts/run_pipeline.py prompts     :: construct-specific prompts (text only) -> data/construct_prompts/
-python scripts/run_pipeline.py dataset     :: one stage; also: personas, prompts, validate
-python scripts/verify_pipeline_outputs.py  :: 39 consistency checks on the outputs (read-only)
-python -m pytest --confcutdir=tests tests/ :: full test suite (use this exact form; bare pytest collects scratch scripts)
-```
-LLM generation is deliberately **not** run by the pipeline (it can cost money). In the same CMD window: `set GEMINI_API_KEY=...` then `python scripts/test_gemini_api.py` and `python scripts/pilot_generate_gemini.py` (resumes), or `set OPENAI_API_KEY=...` then `python scripts/pilot_generate_openai.py --model <model-id>`. Never write keys into files.
+- **Analysis Only (re-score existing generated twins without re-running LLM)**:
+  ```powershell
+  python evaluation\phase19_twin_validation\run_twin_validation.py --pilot 80 --analyse-only
+  ```
 
-Construct-specific questions (codebook `FT_PE01`, `FT_BI01`; separate folders so questions are never mixed):
-`python scripts/pilot_generate_gemini.py --prompts-file data/construct_prompts/FT_PE01_prompts.jsonl --out-dir data/pilot_gemini_FT_PE01`, then
-`python scripts/dp_synthetic_dataset.py --sources gemini_FT_PE01`. The collected survey has no human answers to these questions, so they are scored but not compared with humans. `EE`, `HM`, `SI`, `PP` have anchors but no approved free-text prompt, and Price Value has no approved anchors; see `docs/project_status/workflow_requirements_checklist.md`.
+- **Held-Out Test Set (40 completely unseen respondents, stratified by persona)**:
+  ```powershell
+  python evaluation\phase19_twin_validation\run_twin_validation.py --heldout 40
+  ```
 
-### Dashboard (local)
-```bat
-python dashboard\server.py            :: then open http://127.0.0.1:8765   (use --port 8766 if the port is busy)
-```
-Title: *Digital Persona-Based Synthetic Survey Response Generation using SSR*. The default **Workflow demo** page walks through six stages: (1) choose a persona and question and obtain a synthetic text response, (2) sentence embedding, (3) cosine similarity to the five approved anchor statements, (4) similarities to probabilities P(1)-P(5) with the canonical SSR function, (5) expected Likert rating, (6) the complete result with provenance and warnings. Each stage is computed by its own call to the project's existing code (`canonical_ssr.py`, the approved anchor file, the local encoders) and shown when its result arrives. The LLM only writes the sentence; it never provides a rating.
+*Note: Generation is fully resumable; already generated twins in JSONL are skipped automatically on re-run.*
 
-- **Existing saved response (default):** pick a saved response of the chosen persona and question; it is labelled "EXISTING saved response (not newly generated)" and SSR is recomputed on its text (the result is compared with the stored dataset score).
-- **New generation (optional):** needs `set GEMINI_API_KEY=...` (or `set OPENAI_API_KEY=...` and `set OPENAI_GEN_MODEL=...`) in the CMD window that starts the server, an explicit choice and a confirmation tick (it calls an external provider and may cost money). Nothing is generated when a page loads. If no backend is configured the page says so and offers the saved-response path. Live generation has been tested with mocked providers only, not with a real API call.
-- The dashboard is a single screen (the six-step workflow); it has no other tabs. Its options come from `GET /api/workflow/options`, which lists the four personas, the supported questions, the encoders, which generation backends are configured and the saved responses. The older read-only data endpoints (`/api/overview`, `/api/validation`, ...) are still served but are not shown in the interface.
-- **Synthetic Survey Responses section** (second button at the top of the page): generate a batch of 1-10 NEW synthetic answers for one persona and one survey question (Q26, FT_BI01, FT_PE01, or a custom question scored with an approved construct's anchors). Each response uses a different respondent profile of the persona; the prompt adds anonymised, aggregated survey context (the persona's most frequent Q23-Q25 themes, never an individual answer, Q21 or Q26) and a request not to default to praise (prompt variant `survey_batch_v1`). Every response is scored with canonical SSR (five anchor similarities, P(1)-P(5), expected rating); all responses of a batch are listed with search, persona/question filters, sorting and paging ("Show all" available), and can be exported as CSV or JSON. Batches are saved to `data/dashboard_survey_batches/` and never overwritten. Without a configured backend the section says so and offers the earlier saved Gemini v2 responses, labelled SAVED with their stored scores. Live batch generation has been tested with mocked providers only.
-- **If the browser console shows 404 for `/api/workflow/options`:** an older dashboard server is still running on the same port (the page now detects this and says so). Stop every old dashboard server, then start one again:
-  `powershell -Command "Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | Where-Object { $_.CommandLine -match 'dashboard' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force }"` then `python dashboard\server.py`. The server now refuses to start if its port is already taken.
-- Completed demonstration runs are appended to `data/dashboard_demo_runs/runs.jsonl` (no keys). The server binds to 127.0.0.1, accepts POST only for the demonstration steps and refuses cross-origin requests. Standard library only; no extra dependencies.
-Run `python scripts/run_pipeline.py all` first so the saved outputs exist.
+---
 
-### Outputs
-| Path | Content |
-|---|---|
-| `data/persona_generator/` | `persona_cards.json`, `respondent_specs.jsonl` (40 specs used by all existing prompts), `respondent_specs_extended.jsonl` (adds age, education, status, spending, uses, info sources for future prompts), manifest with input hashes and attribute coverage |
-| `data/construct_prompts/` | `construct_registry.json` (construct readiness) and 40 text-only prompts for each of `Q26_BI_proxy`, `FT_BI01`, `FT_PE01` |
-| `data/synthetic_dataset/synthetic_survey_dataset.csv` | one row per saved response: persona, spec, prompt hash, model, finish reason, quality status, task / construct / anchor hash, per-encoder cosine similarities s1-s5, PMF p1-p5, E[r], PMF SD, entropy, encoder spread |
-| `data/synthetic_dataset/coverage_by_persona_source.csv` | planned / generated / scored per persona and experiment (`not_generated` is never imputed) |
-| `data/validation/`, `docs/project_status/validation_agent_report.md` | distribution comparison, persona-consistency checks, stability status, human reference metrics |
-| `docs/project_status/step11_final_research_results.md` | audited results summary |
-| `docs/project_status/pipeline_component_checklist.md`, `workflow_requirements_checklist.md` | component audit and the workflow-stage requirement checklist |
+## Results Summary (Placeholder)
 
-Experiments are kept apart: `data/pilot_gemini/` (512-token, truncated, frozen), `data/pilot_gemini_v2/` (2048-token), `data/pilot_openai_v1/`, and the manual pilot in `data/pilot/`.
+| Experiment / Evaluation | Group Pearson ($r$) | Group Spearman ($\rho$) | Distribution $W_1$ | Individual Exact Acc | Individual Within-1 | Individual QWK |
+|---|---|---|---|---|---|---|
+| **Phase 19 Pilot (N=80) — E-SSR** | 0.76 (persona) / 0.93 (brand) | 0.80 (persona) / 0.50 (brand) | 0.522 | 47.5% | 88.8% | 0.363 |
+| **Phase 19 Pilot (N=80) — Calibrated E-SSR** | 0.76 (persona) / 0.93 (brand) | 0.80 (persona) / 0.50 (brand) | 0.329 | 40.0% | 82.5% | 0.376 |
+| **Phase 19 Pilot (N=80) — Hybrid (E-SSR + DLE)** | 0.86 (persona) / 0.99 (brand) | 1.00 (persona) / 1.00 (brand) | 0.346 | 53.8% | 88.8% | 0.461 |
+| **Phase 19 Held-Out (N=40) — Confirmation** | *In Progress* | *In Progress* | *In Progress* | *In Progress* | *In Progress* | *In Progress* |
 
-### Current status and limitations
-- Synthetic responses exist only for **P1 and P2** (Gemini v2: 20 of 40 planned; stopped on quota errors). P3 and P4 have none; OpenAI has none.
-- One adapted Behavioral Intention anchor set (a proposed domain adaptation) instead of the paper's six sets, and local encoders instead of `text-embedding-3-small`. Q21 (rebuy-brand likelihood) is only a proxy for that construct.
-- Results are preliminary (10 responses per persona, one generation per spec, independently sampled profiles). They do not establish robust persona replication or equivalence between synthetic and human answers. Repeated-generation stability cannot be assessed until specs are generated more than once with the same model.
-- The survey does not measure or validate all UTAUT2 constructs.
-- Reproducibility: seeds and input/output hashes are recorded in the manifests; the original survey workbook, `canonical_ssr.py`, the anchor CSV and frozen baselines are never modified, and output writers create `_v2`, `_v3` siblings instead of overwriting.
+---
+
+## Legacy notes
 
 ## Default Showcase Result: D1 Aspect-Based Random Forest
 
