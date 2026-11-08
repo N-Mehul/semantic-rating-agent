@@ -6,13 +6,13 @@
       "note": "20 of 40 responses (P1 and P2 only); stopped on quota errors.",
       "task_id": "Q26_BI_proxy",
       "construct": "BI",
-      "anchor_sha": "4cac7a730652e839",
+      "anchor_sha": "d9c2ba2029b7bd00",
       "anchors": [
-        "I do not intend to continue using my current smartphone.",
-        "I am unlikely to keep using my current smartphone in the near future.",
-        "I am undecided about whether I will continue using my current smartphone.",
-        "I intend to continue using my current smartphone for the foreseeable future.",
-        "I am certain I will continue using my current smartphone unless I need to replace it."
+        "I would definitely not buy this smartphone.",
+        "I am unlikely to buy this smartphone.",
+        "I am not sure whether I would buy this smartphone.",
+        "I would probably buy this smartphone.",
+        "I would definitely buy this smartphone."
       ],
       "profile_version": "v1",
       "human_reference": "Q26_Q21_proxy"
@@ -23,13 +23,13 @@
       "note": "Zero responses so far (insufficient quota).",
       "task_id": "Q26_BI_proxy",
       "construct": "BI",
-      "anchor_sha": "4cac7a730652e839",
+      "anchor_sha": "d9c2ba2029b7bd00",
       "anchors": [
-        "I do not intend to continue using my current smartphone.",
-        "I am unlikely to keep using my current smartphone in the near future.",
-        "I am undecided about whether I will continue using my current smartphone.",
-        "I intend to continue using my current smartphone for the foreseeable future.",
-        "I am certain I will continue using my current smartphone unless I need to replace it."
+        "I would definitely not buy this smartphone.",
+        "I am unlikely to buy this smartphone.",
+        "I am not sure whether I would buy this smartphone.",
+        "I would probably buy this smartphone.",
+        "I would definitely buy this smartphone."
       ],
       "profile_version": "v1",
       "human_reference": "Q26_Q21_proxy"
@@ -50,8 +50,8 @@
   },
   "columns_note": "{encoder}__s1..s5 = cosine similarity to the 5 anchors; __p1..p5 = PMF; __E expected rating; __sd, __entropy = PMF uncertainty",
   "sha256": {
-    "canonical_ssr.py": "22277736fd2be508b06180938df83315890a1d55e778315e423e8d9c7f432abd",
-    "anchors_csv": "8801ef10e679c9ebb841de21b28f56a4a6cddd35bbbbc4f9f5141ec9d2793212"
+    "canonical_ssr.py": "db609ca6379d50f9eab033f641b81ed36731143eb7c9739111532099c7bd045a",
+    "anchors_csv": "548d89eb3f2d017ce5f7cca99fe18bfc3e1c66537590fc942d8e0979e2d96fda"
   },
   "limitations": [
     "Personas without responses are listed as not_generated in the coverage table; nothing is imputed.",

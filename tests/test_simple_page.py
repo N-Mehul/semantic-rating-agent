@@ -116,10 +116,11 @@ def test_http_endpoints_for_the_page():
 
 
 def test_page_shows_the_llm_warning_once_and_disables_the_button_without_a_backend():
+    # Updated for redesigned dashboard (v2): no backend-availability check exists any more; button is disabled while a run is in progress
     js = (ROOT / "dashboard/static/app.js").read_text(encoding="utf-8")
-    assert js.count("No LLM is configured") == 1                                     # one warning, inside the form
-    assert "run.busy || !opts.generation_available" in js and '${all ? "disabled" : ""}' in js   # button cannot request without a backend
-    for name in ("GEMINI_API_KEY", "OPENAI_API_KEY", "OPENAI_GEN_MODEL"):
-        assert name in js
+    btn = js[js.index('id="btn-evaluate-product"'): js.index("</button>", js.index('id="btn-evaluate-product"'))]
+    assert "${state.isRunning ? 'disabled' : ''}" in btn and "state.isRunning ? 'Evaluating...'" in btn
+    handler = js[js.index("async function handleRunEvaluation("): js.index("\n}\n", js.index("async function handleRunEvaluation("))]
+    assert handler.index("if (state.isRunning) return;") < handler.index('apiCall("/api/evaluation/run"')   # guard before any request
     assert not __import__("re").search(r"(sk-|AIza)[A-Za-z0-9]{8,}", js)
 

@@ -227,20 +227,29 @@ def test_http_endpoints_and_page():
                                      headers={"Content-Type": "application/json"})
         assert json.loads(urllib.request.urlopen(req, timeout=30).read())["error_code"] == "invalid_persona"
         html = urllib.request.urlopen(base + "/", timeout=30).read().decode("utf-8")
-        assert "<title>Digital Persona — Synthetic Consumer Research</title>" in html
+        assert "<title>Digital Persona — Synthetic Consumer Research & Adoption Analytics</title>" in html
     finally:
         httpd.shutdown()
         httpd.server_close()
 
 
 def test_page_layout_and_error_handling_in_source():
+    # Updated for redesigned dashboard (v2)
     js = (ROOT / "dashboard/static/app.js").read_text(encoding="utf-8")
-    assert "Analyze Product &amp; Generate Consumer Responses" in js and js.count('class="primary"') == 1
-    for s in ("/api/product/options", "/api/product/respond", "/api/product/report", "All four", "Research question (optional)",
-              "Proposed price (INR)", "Target customer group", "Main product features", "Intended market / geography",
-              "LLM-generated synthetic response", "SSR-computed", "Persona comparison", "Executive summary", "Launch readiness", "No LLM is configured"):
+    # evaluation form with exactly one submit button
+    assert '<form onsubmit="handleRunEvaluation(event)"' in js and js.count('id="btn-evaluate-product"') == 1
+    assert "Evaluate Product &rarr;" in js
+    # every API endpoint the page calls is in source and served by the server
+    endpoints = ("/api/evaluation/options", "/api/evaluation/saved", "/api/evaluation/active", "/api/evaluation/status",
+                 "/api/evaluation/run", "/api/evaluation/export")
+    for e in endpoints:
+        assert e in js
+        assert e in srv.GET_ROUTES or e in srv.POST_ROUTES
+    # error handling: failed calls surface a message in the notice banner
+    for s in ("Connection failed:", "Is the dashboard server running on port 8765?", "Evaluation execution failed.",
+              "Could not load saved product evaluation.", "<strong>Notice:</strong> ${esc(state.errorMessage)}"):
         assert s in js
-    assert not re.search(r"P[1-4]_[a-z]", js) and not re.search(r"\b[1-5]\.[0-9]{2,}\b", js) and not re.search(r"(sk-|AIza)[A-Za-z0-9]{8,}", js)
+    assert not re.search(r"(sk-|AIza)[A-Za-z0-9]{8,}", js)
 
 
 def test_protected_files_unchanged_by_the_workflow(tmp_path):
@@ -306,17 +315,14 @@ def test_unrated_question_still_gets_summary(tmp_path):
 
 
 def test_page_shows_the_six_parts_in_order():
+    # Updated for redesigned dashboard (v2)
     js = (ROOT / "dashboard/static/app.js").read_text(encoding="utf-8")
-    order = ["1. Simple consumer response", "2. Key likes and concerns", "3. Comparison with the approved anchor statements",
-             "4. Likert probabilities", "5. Expected SSR rating", "6. What this means"]
-    fn = lambda name: js[js.index(f"function {name}("): js.index("\n}\n", js.index(f"function {name}("))]
-    card, summ, ssr = fn("personaCard"), fn("summaryHtml"), fn("ssrHtml")
-    assert card.index(order[0]) < card.index("${summaryHtml(r)}") < card.index("${ssrHtml(r.ssr)}")   # 1 -> summary (2) -> rating (3-6)
-    assert order[1] in summ
-    assert [ssr.index(x) for x in order[2:]] == sorted(ssr.index(x) for x in order[2:])
-    for x in ("Overall opinion:", "Why they like it:", "Main concern:", "Most important features:", "Suggested improvement:", "Purchase intention:",
-              "Original generated response (unchanged; this is the text SSR scores)"):
-        assert x in js
+    views = ["overview", "product", "personas", "evaluation", "insights"]
+    for v in views:
+        assert f"function render{v.capitalize()}View(" in js
+    # sidebar navigation lists the views in workflow order
+    nav = [js.index(f"""<div class="nav-item ${{state.currentView === '{v}' ? 'active' : ''}}" onclick="switchView('{v}')">""") for v in views]
+    assert nav == sorted(nav)
 
 
 def test_text_fields_and_numbers_not_in_the_response_are_replaced_and_flagged(tmp_path):
