@@ -1,0 +1,198 @@
+{
+  "n_pairs": 40,
+  "model": "qwen2.5:7b-instruct",
+  "embedding": "nomic-embed-text",
+  "ssr": "E-SSR k=3 T=0.75, bi anchors",
+  "distribution": {
+    "human_q21_share": {
+      "1": 0.15,
+      "2": 0.05,
+      "3": 0.3,
+      "4": 0.275,
+      "5": 0.225
+    },
+    "twin_essr_share": {
+      "2.0": 0.025,
+      "3.0": 0.3,
+      "4.0": 0.675
+    },
+    "twin_dle_share": {
+      "2": 0.05,
+      "3": 0.2,
+      "4": 0.6,
+      "5": 0.15
+    },
+    "W1_twin_essr_vs_human": 0.809126828176232,
+    "W1_twin_dle_vs_human": 0.625,
+    "KS_twin_essr_vs_human": 0.225,
+    "KS_twin_dle_vs_human": 0.25,
+    "SD": {
+      "human_q21": 1.297834735241741,
+      "twin_E": 0.3567683552945438,
+      "twin_DLE": 0.7355444521071728,
+      "twin_cal": 1.0225714110135524,
+      "twin_hyb": 0.7869146684156879
+    },
+    "W1_twin_cal_vs_human": 0.45370453466694083,
+    "KS_twin_cal_vs_human": 0.125,
+    "W1_twin_hyb_vs_human": 0.522958536905197,
+    "KS_twin_hyb_vs_human": 0.15
+  },
+  "persona": {
+    "groups": 4,
+    "twin_E": {
+      "spearman": 0.316227766016838,
+      "pearson": -0.029226840878356863,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.25479144579285773
+    },
+    "twin_cal": {
+      "spearman": 0.316227766016838,
+      "pearson": -0.02237535030016896,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.528436399714611
+    },
+    "twin_hyb": {
+      "spearman": 0.316227766016838,
+      "pearson": -0.06743975107674757,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.6017181998573055
+    },
+    "twin_DLE": {
+      "spearman": -0.316227766016838,
+      "pearson": -0.10604746049596288,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.6749999999999999
+    },
+    "human_text_E": {
+      "spearman": 0.632455532033676,
+      "pearson": 0.5085130277864756,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.317448496273684
+    }
+  },
+  "brand": {
+    "groups": 1
+  },
+  "brand_x_persona": {
+    "groups": 4,
+    "twin_E": {
+      "spearman": 0.316227766016838,
+      "pearson": -0.029226840878356863,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.25479144579285773
+    },
+    "twin_cal": {
+      "spearman": 0.316227766016838,
+      "pearson": -0.02237535030016896,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.528436399714611
+    },
+    "twin_hyb": {
+      "spearman": 0.316227766016838,
+      "pearson": -0.06743975107674757,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.6017181998573055
+    },
+    "twin_DLE": {
+      "spearman": -0.316227766016838,
+      "pearson": -0.10604746049596288,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.6749999999999999
+    },
+    "human_text_E": {
+      "spearman": 0.632455532033676,
+      "pearson": 0.5085130277864756,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.317448496273684
+    }
+  },
+  "human_text_vs_own_q21_all": {
+    "n": 40,
+    "spearman_Q26": 0.4353159626090748,
+    "spearman_all4": 0.454581643920752
+  },
+  "human_text_vs_own_q21_q26_3plus_words": {
+    "n": 20,
+    "spearman_Q26": 0.6167206899485563,
+    "spearman_all4": 0.608933812550216
+  },
+  "gate_first_pass_rate": 0.975,
+  "calibration_reference": {
+    "n_heldout": 218,
+    "mean": 3.536697247706422,
+    "sd": 1.1200033369320528
+  },
+  "individual": {
+    "twin_essr": {
+      "n": 40,
+      "exact": 0.4,
+      "within1": 0.825,
+      "MAE": 0.875,
+      "QWK": 0.2024539877300614,
+      "spearman": 0.3418161034856336
+    },
+    "twin_essr_calibrated": {
+      "n": 40,
+      "exact": 0.375,
+      "within1": 0.8,
+      "MAE": 0.975,
+      "QWK": 0.26363636363636367,
+      "spearman": 0.34373002501768796
+    },
+    "twin_hybrid": {
+      "n": 40,
+      "exact": 0.45,
+      "within1": 0.775,
+      "MAE": 0.9,
+      "QWK": 0.20626631853785904,
+      "spearman": 0.3190676645825221
+    },
+    "twin_direct": {
+      "n": 40,
+      "exact": 0.4,
+      "within1": 0.725,
+      "MAE": 1.025,
+      "QWK": 0.0871794871794872,
+      "spearman": 0.17649903680657641
+    },
+    "chance_baseline": {
+      "n": 40,
+      "exact": 0.275,
+      "within1": 0.675,
+      "MAE": 1.075,
+      "QWK": 0.31455399061032874,
+      "spearman": 0.31984568966673005
+    }
+  }
+}
