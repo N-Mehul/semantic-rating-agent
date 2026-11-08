@@ -29,8 +29,14 @@
     "SD": {
       "human_q21": 1.0380269746013349,
       "twin_E": 0.45135141291541686,
-      "twin_DLE": 0.6749355337241806
-    }
+      "twin_DLE": 0.6749355337241806,
+      "twin_cal": 1.044194591478428,
+      "twin_hyb": 0.7116080874416069
+    },
+    "W1_twin_cal_vs_human": 0.3289989422469009,
+    "KS_twin_cal_vs_human": 0.125,
+    "W1_twin_hyb_vs_human": 0.34553870440771295,
+    "KS_twin_hyb_vs_human": 0.125
   },
   "persona": {
     "groups": 4,
@@ -42,6 +48,24 @@
         1.0
       ],
       "MAE_vs_human_mean": 0.2305593826337916
+    },
+    "twin_cal": {
+      "spearman": 0.7999999999999999,
+      "pearson": 0.762480855933418,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.31919821102524426
+    },
+    "twin_hyb": {
+      "spearman": 1.0,
+      "pearson": 0.8610122881165744,
+      "pearson_ci95": [
+        0.8155693358572651,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.2533491055126217
     },
     "twin_DLE": {
       "spearman": 1.0,
@@ -73,6 +97,24 @@
       ],
       "MAE_vs_human_mean": 0.4455057516684741
     },
+    "twin_cal": {
+      "spearman": 0.5,
+      "pearson": 0.9268740587303937,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.29562816267235775
+    },
+    "twin_hyb": {
+      "spearman": 1.0,
+      "pearson": 0.9883423987726926,
+      "pearson_ci95": [
+        0.9883423987726926,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.19361434588644322
+    },
     "twin_DLE": {
       "spearman": 1.0,
       "pearson": 0.8992869016397527,
@@ -102,6 +144,24 @@
         1.0
       ],
       "MAE_vs_human_mean": 0.30459736077831756
+    },
+    "twin_cal": {
+      "spearman": 0.49999999999999994,
+      "pearson": 0.6533940419409772,
+      "pearson_ci95": [
+        -1.0,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.3758970555210312
+    },
+    "twin_hyb": {
+      "spearman": 0.7999999999999999,
+      "pearson": 0.7807346963655653,
+      "pearson_ci95": [
+        0.6136071421149487,
+        1.0
+      ],
+      "MAE_vs_human_mean": 0.3166420564540443
     },
     "twin_DLE": {
       "spearman": 0.8720815992723809,
@@ -133,6 +193,11 @@
     "spearman_all4": 0.48238498316012385
   },
   "gate_first_pass_rate": 0.975,
+  "calibration_reference": {
+    "n_heldout": 178,
+    "mean": 3.449438202247191,
+    "sd": 1.1933074764902787
+  },
   "individual": {
     "twin_essr": {
       "n": 80,
@@ -141,6 +206,22 @@
       "MAE": 0.65,
       "QWK": 0.36316695352839923,
       "spearman": 0.3899631558424849
+    },
+    "twin_essr_calibrated": {
+      "n": 80,
+      "exact": 0.4,
+      "within1": 0.825,
+      "MAE": 0.8375,
+      "QWK": 0.37601736299511657,
+      "spearman": 0.33906104342287163
+    },
+    "twin_hybrid": {
+      "n": 80,
+      "exact": 0.5375,
+      "within1": 0.8875,
+      "MAE": 0.5875,
+      "QWK": 0.4613583138173303,
+      "spearman": 0.4781423582593454
     },
     "twin_direct": {
       "n": 80,
@@ -152,11 +233,11 @@
     },
     "chance_baseline": {
       "n": 80,
-      "exact": 0.3125,
-      "within1": 0.6875,
-      "MAE": 1.1,
-      "QWK": -0.05710814094775207,
-      "spearman": -0.12466375913616634
+      "exact": 0.35,
+      "within1": 0.6625,
+      "MAE": 1.1375,
+      "QWK": -0.06360235168359174,
+      "spearman": -0.0810131935160355
     }
   }
 }

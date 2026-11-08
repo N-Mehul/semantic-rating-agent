@@ -223,10 +223,11 @@ def boot_ci(x, y, f, n=2000, seed=SEED):
 
 def group_compare(d: pd.DataFrame, key, min_n: int) -> tuple[pd.DataFrame, dict]:
     g = d.groupby(key).agg(n=("rid", "size"), human_q21=("q21", "mean"), human_text_E=("h_E", "mean"),
-                           twin_E=("t_E", "mean"), twin_DLE=("dle", "mean")).reset_index()
+                           twin_E=("t_E", "mean"), twin_cal=("t_cal", "mean"), twin_hyb=("t_hyb", "mean"),
+                           twin_DLE=("dle", "mean")).reset_index()
     g = g[g.n >= min_n]
     res = {"groups": int(len(g))}
-    for c in ("twin_E", "twin_DLE", "human_text_E"):
+    for c in ("twin_E", "twin_cal", "twin_hyb", "twin_DLE", "human_text_E"):
         if len(g) >= 3:
             rho = stats.spearmanr(g[c], g.human_q21).statistic
             r = stats.pearsonr(g[c], g.human_q21).statistic
@@ -236,7 +237,7 @@ def group_compare(d: pd.DataFrame, key, min_n: int) -> tuple[pd.DataFrame, dict]
     return g, res
 
 
-def analyse(df: pd.DataFrame, twins_path: Path) -> None:
+def analyse(df: pd.DataFrame, twins_path: Path, full: pd.DataFrame | None = None) -> None:
     tw = pd.DataFrame([json.loads(l) for l in twins_path.read_text(encoding="utf-8").splitlines() if l.strip()])
     tw = tw[tw.issues.apply(len) == 0]
     d = df.merge(tw[["rid", "answers", "dle", "tries"]], on="rid", how="inner")
@@ -252,6 +253,13 @@ def analyse(df: pd.DataFrame, twins_path: Path) -> None:
     d["h_words"] = d.h_text.str.split().str.len()
     d["brand_g"] = d.brand.where(d.brand.map(d.brand.value_counts()) >= 10, "Other")
     d["t_round"] = d.t_E.round().clip(1, 5)
+    # Calibration: map twin E-SSR onto the human rating scale using the mean/SD of Q21 from
+    # respondents NOT in the evaluated sample (held-out) and the twins' own unlabeled mean/SD.
+    held = full[~full.rid.isin(d.rid)] if full is not None else d
+    ref = held if len(held) >= 30 else d
+    mu_h, sd_h = float(ref.q21.mean()), float(ref.q21.std())
+    d["t_cal"] = ((d.t_E - d.t_E.mean()) / d.t_E.std() * sd_h + mu_h).clip(1, 5)
+    d["t_hyb"] = ((d.t_cal + d.dle) / 2).clip(1, 5)
 
     M = {"n_pairs": int(len(d)), "model": GEN_MODEL, "embedding": EMB_MODEL, "ssr": f"E-SSR k=3 T=0.75, {ANCHOR_SET} anchors"}
     # distribution
@@ -287,11 +295,22 @@ def analyse(df: pd.DataFrame, twins_path: Path) -> None:
                 "MAE": float(abs(p - t).mean()), "QWK": float(cohen_kappa_score(t, p, weights="quadratic")),
                 "spearman": float(stats.spearmanr(p, t).statistic)}
     rng = np.random.default_rng(SEED)
-    shares = d.q21.value_counts(normalize=True).sort_index()
+    shares = ref.q21.value_counts(normalize=True).sort_index()
     chance = rng.choice(shares.index.values, size=len(d), p=shares.values)
-    M["individual"] = {"twin_essr": indiv(d.t_E, d.q21), "twin_direct": indiv(d.dle, d.q21),
+    M["calibration_reference"] = {"n_heldout": int(len(ref)), "mean": mu_h, "sd": sd_h}
+    M["individual"] = {"twin_essr": indiv(d.t_E, d.q21), "twin_essr_calibrated": indiv(d.t_cal, d.q21),
+                       "twin_hybrid": indiv(d.t_hyb, d.q21), "twin_direct": indiv(d.dle, d.q21),
                        "chance_baseline": indiv(chance, d.q21)}
+    for nm, cc in [("cal", "t_cal"), ("hyb", "t_hyb")]:
+        M["distribution"][f"W1_twin_{nm}_vs_human"] = w1(d[cc], hq)
+        M["distribution"][f"KS_twin_{nm}_vs_human"] = float(stats.ks_2samp(d[cc].round(), hq).statistic)
+        M["distribution"]["SD"][f"twin_{nm}"] = float(d[cc].std())
+    print("CALIBRATION REFERENCE:", M["calibration_reference"])
     print("INDIVIDUAL LEVEL:", json.dumps(M["individual"], indent=2))
+    for k in ("persona", "brand", "brand_x_persona"):
+        print("GROUP", k, {c: {m: round(v, 3) for m, v in M[k][c].items() if m != "pearson_ci95"}
+                           for c in ("twin_E", "twin_cal", "twin_hyb", "twin_DLE") if c in M[k]})
+    print("DISTRIBUTION:", json.dumps(M["distribution"], indent=2, default=float))
     (HERE / f"twin_metrics_{ANCHOR_SET}.json").write_text(json.dumps(M, indent=2, default=float), encoding="utf-8")
     d.drop(columns=["answers"]).to_csv(HERE / f"twin_pairs_scored_{ANCHOR_SET}.csv", index=False)
     figures(d, tables)
@@ -357,6 +376,7 @@ def main() -> None:
     GEN_MODEL, OLLAMA, ANCHOR_SET = a.model, a.host, a.anchors
     df = load_survey(Path(a.survey))
     print(f"eligible respondents: {len(df)}; personas: {df.persona.value_counts().sort_index().to_dict()}")
+    full_df = df.copy()
     if a.pilot:
         per = max(1, a.pilot // 4)
         df = pd.concat([g.sample(min(len(g), per), random_state=SEED)
@@ -373,7 +393,7 @@ def main() -> None:
         print(f"backup saved: {backup.name}; removed {len(lines) - len(keep)} twins of {redo} for regeneration")
     if not a.analyse_only:
         generate(df, out)
-    analyse(df, out)
+    analyse(df, out, full_df)
 
 
 if __name__ == "__main__":
