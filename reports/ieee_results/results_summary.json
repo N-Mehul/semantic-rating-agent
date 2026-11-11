@@ -1,0 +1,1391 @@
+{
+  "dev.n_pairs": {
+    "value": 80,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.gate_first_pass": {
+    "value": 0.975,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.calib_ref.n": {
+    "value": 178,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.calib_ref.mean": {
+    "value": 3.449438202247191,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.calib_ref.sd": {
+    "value": 1.1933074764902787,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_essr.exact": {
+    "value": 0.475,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_essr.within1": {
+    "value": 0.8875,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_essr.MAE": {
+    "value": 0.65,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_essr.QWK": {
+    "value": 0.36316695352839923,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_essr.spearman": {
+    "value": 0.3899631558424849,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_hybrid.exact": {
+    "value": 0.5375,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_hybrid.within1": {
+    "value": 0.8875,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_hybrid.MAE": {
+    "value": 0.5875,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_hybrid.QWK": {
+    "value": 0.4613583138173303,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_hybrid.spearman": {
+    "value": 0.4781423582593454,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_essr_calibrated.exact": {
+    "value": 0.4,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_essr_calibrated.within1": {
+    "value": 0.825,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_essr_calibrated.MAE": {
+    "value": 0.8375,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_essr_calibrated.QWK": {
+    "value": 0.37601736299511657,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_essr_calibrated.spearman": {
+    "value": 0.33906104342287163,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_direct.exact": {
+    "value": 0.5625,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_direct.within1": {
+    "value": 0.85,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_direct.MAE": {
+    "value": 0.6125,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_direct.QWK": {
+    "value": 0.36069455406471973,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.twin_direct.spearman": {
+    "value": 0.43948291211445445,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.chance_baseline.exact": {
+    "value": 0.35,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.chance_baseline.within1": {
+    "value": 0.6625,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.chance_baseline.MAE": {
+    "value": 1.1375,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.chance_baseline.QWK": {
+    "value": -0.06360235168359174,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.ind.chance_baseline.spearman": {
+    "value": -0.0810131935160355,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.twin_E.spearman": {
+    "value": 0.7999999999999999,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.twin_E.pearson": {
+    "value": 0.764778915811083,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.twin_E.MAE": {
+    "value": 0.2305593826337916,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.twin_cal.spearman": {
+    "value": 0.7999999999999999,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.twin_cal.pearson": {
+    "value": 0.762480855933418,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.twin_cal.MAE": {
+    "value": 0.31919821102524426,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.twin_hyb.spearman": {
+    "value": 1.0,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.twin_hyb.pearson": {
+    "value": 0.8610122881165744,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.twin_hyb.MAE": {
+    "value": 0.2533491055126217,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.twin_DLE.spearman": {
+    "value": 1.0,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.twin_DLE.pearson": {
+    "value": 0.893329278872974,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.twin_DLE.MAE": {
+    "value": 0.33750000000000013,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.human_text_E.spearman": {
+    "value": 0.7999999999999999,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.human_text_E.pearson": {
+    "value": 0.9091259756566515,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.persona.human_text_E.MAE": {
+    "value": 0.3159331928780338,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.W1_twin_essr_vs_human": {
+    "value": 0.5223765896870822,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.W1_twin_dle_vs_human": {
+    "value": 0.3375,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.W1_twin_cal_vs_human": {
+    "value": 0.3289989422469009,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.W1_twin_hyb_vs_human": {
+    "value": 0.34553870440771295,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.KS_twin_essr_vs_human": {
+    "value": 0.2125,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.KS_twin_dle_vs_human": {
+    "value": 0.15,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.KS_twin_cal_vs_human": {
+    "value": 0.125,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.KS_twin_hyb_vs_human": {
+    "value": 0.125,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.SD.human_q21": {
+    "value": 1.0380269746013349,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.SD.twin_E": {
+    "value": 0.45135141291541686,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.SD.twin_DLE": {
+    "value": 0.6749355337241806,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.SD.twin_cal": {
+    "value": 1.044194591478428,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.SD.twin_hyb": {
+    "value": 0.7116080874416069,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.human_q21_share": {
+    "value": {
+      "1": 0.062,
+      "2": 0.025,
+      "3": 0.325,
+      "4": 0.375,
+      "5": 0.212
+    },
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.twin_essr_share": {
+    "value": {
+      "2": 0.062,
+      "3": 0.3,
+      "4": 0.638
+    },
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.dist.twin_dle_share": {
+    "value": {
+      "2": 0.012,
+      "3": 0.25,
+      "4": 0.575,
+      "5": 0.162
+    },
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.human_text_q21.all.n": {
+    "value": 80,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.human_text_q21.all.spearman_Q26": {
+    "value": 0.25770723047057337,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.human_text_q21.3plus.n": {
+    "value": 40,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.human_text_q21.3plus.spearman_Q26": {
+    "value": 0.5152501205311809,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "ho.n_pairs": {
+    "value": 40,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.gate_first_pass": {
+    "value": 0.975,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.calib_ref.n": {
+    "value": 218,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.calib_ref.mean": {
+    "value": 3.536697247706422,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.calib_ref.sd": {
+    "value": 1.1200033369320528,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_essr.exact": {
+    "value": 0.4,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_essr.within1": {
+    "value": 0.825,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_essr.MAE": {
+    "value": 0.875,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_essr.QWK": {
+    "value": 0.2024539877300614,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_essr.spearman": {
+    "value": 0.3418161034856336,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_hybrid.exact": {
+    "value": 0.45,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_hybrid.within1": {
+    "value": 0.775,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_hybrid.MAE": {
+    "value": 0.9,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_hybrid.QWK": {
+    "value": 0.20626631853785904,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_hybrid.spearman": {
+    "value": 0.3190676645825221,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_essr_calibrated.exact": {
+    "value": 0.375,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_essr_calibrated.within1": {
+    "value": 0.8,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_essr_calibrated.MAE": {
+    "value": 0.975,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_essr_calibrated.QWK": {
+    "value": 0.26363636363636367,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_essr_calibrated.spearman": {
+    "value": 0.34373002501768796,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_direct.exact": {
+    "value": 0.4,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_direct.within1": {
+    "value": 0.725,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_direct.MAE": {
+    "value": 1.025,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_direct.QWK": {
+    "value": 0.0871794871794872,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.twin_direct.spearman": {
+    "value": 0.17649903680657641,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.chance_baseline.exact": {
+    "value": 0.275,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.chance_baseline.within1": {
+    "value": 0.675,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.chance_baseline.MAE": {
+    "value": 1.075,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.chance_baseline.QWK": {
+    "value": 0.31455399061032874,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.ind.chance_baseline.spearman": {
+    "value": 0.31984568966673005,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.twin_E.spearman": {
+    "value": 0.316227766016838,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.twin_E.pearson": {
+    "value": -0.029226840878356863,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.twin_E.MAE": {
+    "value": 0.25479144579285773,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.twin_cal.spearman": {
+    "value": 0.316227766016838,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.twin_cal.pearson": {
+    "value": -0.02237535030016896,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.twin_cal.MAE": {
+    "value": 0.528436399714611,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.twin_hyb.spearman": {
+    "value": 0.316227766016838,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.twin_hyb.pearson": {
+    "value": -0.06743975107674757,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.twin_hyb.MAE": {
+    "value": 0.6017181998573055,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.twin_DLE.spearman": {
+    "value": -0.316227766016838,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.twin_DLE.pearson": {
+    "value": -0.10604746049596288,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.twin_DLE.MAE": {
+    "value": 0.6749999999999999,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.human_text_E.spearman": {
+    "value": 0.632455532033676,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.human_text_E.pearson": {
+    "value": 0.5085130277864756,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.persona.human_text_E.MAE": {
+    "value": 0.317448496273684,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.W1_twin_essr_vs_human": {
+    "value": 0.809126828176232,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.W1_twin_dle_vs_human": {
+    "value": 0.625,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.W1_twin_cal_vs_human": {
+    "value": 0.45370453466694083,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.W1_twin_hyb_vs_human": {
+    "value": 0.522958536905197,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.KS_twin_essr_vs_human": {
+    "value": 0.225,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.KS_twin_dle_vs_human": {
+    "value": 0.25,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.KS_twin_cal_vs_human": {
+    "value": 0.125,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.KS_twin_hyb_vs_human": {
+    "value": 0.15,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.SD.human_q21": {
+    "value": 1.297834735241741,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.SD.twin_E": {
+    "value": 0.3567683552945438,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.SD.twin_DLE": {
+    "value": 0.7355444521071728,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.SD.twin_cal": {
+    "value": 1.0225714110135524,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.SD.twin_hyb": {
+    "value": 0.7869146684156879,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.human_q21_share": {
+    "value": {
+      "1": 0.15,
+      "2": 0.05,
+      "3": 0.3,
+      "4": 0.275,
+      "5": 0.225
+    },
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.twin_essr_share": {
+    "value": {
+      "2": 0.025,
+      "3": 0.3,
+      "4": 0.675
+    },
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.dist.twin_dle_share": {
+    "value": {
+      "2": 0.05,
+      "3": 0.2,
+      "4": 0.6,
+      "5": 0.15
+    },
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.human_text_q21.all.n": {
+    "value": 40,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.human_text_q21.all.spearman_Q26": {
+    "value": 0.4353159626090748,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.human_text_q21.3plus.n": {
+    "value": 20,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "ho.human_text_q21.3plus.spearman_Q26": {
+    "value": 0.6167206899485563,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "dev.brand.twin_E.spearman": {
+    "value": 0.5,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.brand.twin_E.MAE": {
+    "value": 0.4455057516684741,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.brand.twin_hyb.spearman": {
+    "value": 1.0,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.brand.twin_hyb.MAE": {
+    "value": 0.19361434588644322,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.brand.twin_DLE.spearman": {
+    "value": 1.0,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.brand.twin_DLE.MAE": {
+    "value": 0.2397486772486769,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.brand_x_persona.twin_E.spearman": {
+    "value": 0.49999999999999994,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.brand_x_persona.twin_E.MAE": {
+    "value": 0.30459736077831756,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.brand_x_persona.twin_hyb.spearman": {
+    "value": 0.7999999999999999,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.brand_x_persona.twin_hyb.MAE": {
+    "value": 0.3166420564540443,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.brand_x_persona.twin_DLE.spearman": {
+    "value": 0.8720815992723809,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.brand_x_persona.twin_DLE.MAE": {
+    "value": 0.4288156288156288,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "dev.brand.groups": {
+    "value": 3,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+  },
+  "ho.brand.groups": {
+    "value": 1,
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "v1.n_pairs": {
+    "value": 80,
+    "source": "evaluation/phase19_twin_validation/twin_metrics.json"
+  },
+  "v1.gate_first_pass": {
+    "value": 0.95,
+    "source": "evaluation/phase19_twin_validation/twin_metrics.json"
+  },
+  "v1.persona.twin_E.spearman": {
+    "value": 0.39999999999999997,
+    "source": "evaluation/phase19_twin_validation/twin_metrics.json"
+  },
+  "v1.persona.twin_E.MAE": {
+    "value": 0.40343767155779076,
+    "source": "evaluation/phase19_twin_validation/twin_metrics.json"
+  },
+  "v1.persona.twin_DLE.spearman": {
+    "value": 0.39999999999999997,
+    "source": "evaluation/phase19_twin_validation/twin_metrics.json"
+  },
+  "v1.persona.twin_DLE.MAE": {
+    "value": 0.3875000000000002,
+    "source": "evaluation/phase19_twin_validation/twin_metrics.json"
+  },
+  "dev.persona_table": {
+    "value": [
+      {
+        "persona": "P1",
+        "n": 20,
+        "human_q21": 4.35,
+        "human_text_E": 3.833571139010621,
+        "twin_E": 3.6536812620206423,
+        "twin_cal": 3.8347413958047,
+        "twin_hyb": 4.24237069790235,
+        "twin_DLE": 4.65
+      },
+      {
+        "persona": "P2",
+        "n": 20,
+        "human_q21": 3.15,
+        "human_text_E": 3.6253545175650776,
+        "twin_E": 3.172045542556964,
+        "twin_cal": 2.7376636525925235,
+        "twin_hyb": 2.843831826296262,
+        "twin_DLE": 2.95
+      },
+      {
+        "persona": "P3",
+        "n": 20,
+        "human_q21": 3.35,
+        "human_text_E": 3.586711103833237,
+        "twin_E": 3.5049649494273227,
+        "twin_cal": 3.4891101971062093,
+        "twin_hyb": 3.719555098553104,
+        "twin_DLE": 3.95
+      },
+      {
+        "persona": "P4",
+        "n": 20,
+        "human_q21": 3.75,
+        "human_text_E": 3.7852382891244414,
+        "twin_E": 3.701091699428477,
+        "twin_cal": 3.960087695391992,
+        "twin_hyb": 3.9800438476959954,
+        "twin_DLE": 4.0
+      }
+    ],
+    "source": "evaluation/phase19_twin_validation/twin_persona_table_bi.csv"
+  },
+  "ho.persona_table": {
+    "value": [
+      {
+        "persona": "P1",
+        "n": 10,
+        "human_q21": 3.4,
+        "human_text_E": 3.7354303558022615,
+        "twin_E": 3.683173880495416,
+        "twin_cal": 3.89651880310472,
+        "twin_hyb": 4.19825940155236,
+        "twin_DLE": 4.5
+      },
+      {
+        "persona": "P2",
+        "n": 10,
+        "human_q21": 3.4,
+        "human_text_E": 3.5544093939741708,
+        "twin_E": 3.2590831630638646,
+        "twin_cal": 2.709968725321559,
+        "twin_hyb": 2.85498436266078,
+        "twin_DLE": 3.0
+      },
+      {
+        "persona": "P3",
+        "n": 10,
+        "human_q21": 3.2,
+        "human_text_E": 3.648177342591943,
+        "twin_E": 3.625552735227272,
+        "twin_cal": 3.7445808582363256,
+        "twin_hyb": 3.872290429118163,
+        "twin_DLE": 4.0
+      },
+      {
+        "persona": "P4",
+        "n": 10,
+        "human_q21": 3.5,
+        "human_text_E": 3.831776892726361,
+        "twin_E": 3.669522330512609,
+        "twin_cal": 3.882614662838957,
+        "twin_hyb": 3.8913073314194784,
+        "twin_DLE": 3.9
+      }
+    ],
+    "source": "evaluation/phase19_twin_validation/twin_persona_table_bi_heldout.csv"
+  },
+  "v1.persona_table": {
+    "value": [
+      {
+        "persona": "P1",
+        "n": 20,
+        "human_q21": 4.35,
+        "human_text_E": 3.9848440409531447,
+        "twin_E": 3.5979524268520664,
+        "twin_DLE": 4.65
+      },
+      {
+        "persona": "P2",
+        "n": 20,
+        "human_q21": 3.15,
+        "human_text_E": 3.7987368182339702,
+        "twin_E": 3.5625772493868744,
+        "twin_DLE": 3.8
+      },
+      {
+        "persona": "P3",
+        "n": 20,
+        "human_q21": 3.35,
+        "human_text_E": 3.798632374592647,
+        "twin_E": 3.565049264205922,
+        "twin_DLE": 3.95
+      },
+      {
+        "persona": "P4",
+        "n": 20,
+        "human_q21": 3.75,
+        "human_text_E": 3.871119135115909,
+        "twin_E": 3.5159234005095668,
+        "twin_DLE": 3.75
+      }
+    ],
+    "source": "evaluation/phase19_twin_validation/twin_persona_table.csv"
+  },
+  "ho.dist.twin_cal_share (derived: round(t_cal))": {
+    "value": {
+      "1": 0.025,
+      "2": 0.2,
+      "3": 0.15,
+      "4": 0.5,
+      "5": 0.125
+    },
+    "source": "evaluation/phase19_twin_validation/twin_pairs_scored_bi_heldout.csv"
+  },
+  "ho.check.cal_exact_recomputed": {
+    "value": 0.375,
+    "source": "evaluation/phase19_twin_validation/twin_pairs_scored_bi_heldout.csv"
+  },
+  "runtime.twin_seconds_median": {
+    "value": 69.25,
+    "source": "evaluation/phase19_twin_validation/twins.jsonl + twins_heldout.jsonl ('seconds' field)"
+  },
+  "runtime.twin_count": {
+    "value": 120,
+    "source": "evaluation/phase19_twin_validation/twins.jsonl + twins_heldout.jsonl"
+  },
+  "model.generator": {
+    "value": "qwen2.5:7b-instruct",
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "model.embedding": {
+    "value": "nomic-embed-text",
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "model.ssr": {
+    "value": "E-SSR k=3 T=0.75, bi anchors",
+    "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+  },
+  "p7.label": {
+    "value": "Phase 7 EXPLORATORY candidates; test n=24 (LLM-judge reference, not human ground truth); calibration n=48 disjoint",
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.n_test": {
+    "value": 24,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Majority baseline.exact": {
+    "value": 0.625,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Majority baseline.within1": {
+    "value": 1.0,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Majority baseline.MAE": {
+    "value": 0.375,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Majority baseline.qwk": {
+    "value": 0.0,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Majority baseline.spearman": {
+    "value": null,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Nearest anchor (k=1).exact": {
+    "value": 0.4583333333333333,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Nearest anchor (k=1).within1": {
+    "value": 1.0,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Nearest anchor (k=1).MAE": {
+    "value": 0.5416666666666666,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Nearest anchor (k=1).qwk": {
+    "value": 0.4388489208633094,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Nearest anchor (k=1).spearman": {
+    "value": 0.45564545641857024,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Canonical SSR (k=5, T=1).exact": {
+    "value": 0.7083333333333334,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Canonical SSR (k=5, T=1).within1": {
+    "value": 1.0,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Canonical SSR (k=5, T=1).MAE": {
+    "value": 0.2916666666666667,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Canonical SSR (k=5, T=1).qwk": {
+    "value": 0.5714285714285714,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.Canonical SSR (k=5, T=1).spearman": {
+    "value": 0.6867760386262186,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.E-SSR k=5, T=0.75.exact": {
+    "value": 0.75,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.E-SSR k=5, T=0.75.within1": {
+    "value": 1.0,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.E-SSR k=5, T=0.75.MAE": {
+    "value": 0.25,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.E-SSR k=5, T=0.75.qwk": {
+    "value": 0.6108108108108108,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.E-SSR k=5, T=0.75.spearman": {
+    "value": 0.7069456726534203,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.E-SSR k=3, T=0.75.exact": {
+    "value": 0.7916666666666666,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.E-SSR k=3, T=0.75.within1": {
+    "value": 1.0,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.E-SSR k=3, T=0.75.MAE": {
+    "value": 0.20833333333333334,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.E-SSR k=3, T=0.75.qwk": {
+    "value": 0.696969696969697,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p7.E-SSR k=3, T=0.75.spearman": {
+    "value": 0.6877845203275786,
+    "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+  },
+  "p13.label": {
+    "value": "Phase 13: SSR vs HUMAN Q21 (own Q26 text). BI anchors (proxy: Q21 = rebuy SAME BRAND; anchors = continue using phone).",
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.n_eligible": {
+    "value": 257,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.all.n": {
+    "value": 251,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.all.exact": {
+    "value": 0.3346613545816733,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.all.within1": {
+    "value": 0.8764940239043825,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.all.qwk": {
+    "value": 0.24848893130485228,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.all.spearman": {
+    "value": 0.30183789484112933,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.all.spearman_p": {
+    "value": 1.103315519447932e-06,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.meaningful_3plus.n": {
+    "value": 142,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.meaningful_3plus.exact": {
+    "value": 0.3732394366197183,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.meaningful_3plus.within1": {
+    "value": 0.8802816901408451,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.meaningful_3plus.qwk": {
+    "value": 0.32349714153721765,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.meaningful_3plus.spearman": {
+    "value": 0.3962460683427719,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.one_word.n": {
+    "value": 102,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.one_word.exact": {
+    "value": 0.28431372549019607,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.one_word.within1": {
+    "value": 0.8627450980392157,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.one_word.qwk": {
+    "value": 0.09723861222563124,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.one_word.spearman": {
+    "value": 0.117864705406843,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p13.kruskal_q21_by_persona_p": {
+    "value": 2.470924924962693e-08,
+    "source": "evaluation/phase13_human_ssr/phase13_metrics.json"
+  },
+  "p18.best_human": {
+    "value": "M9 hybrid M6->M2",
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M0 uncalibrated.exact": {
+    "value": 0.33456862745098037,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M0 uncalibrated.within1": {
+    "value": 0.8764901960784315,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M0 uncalibrated.MAE": {
+    "value": 0.8367450980392157,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M0 uncalibrated.qwk": {
+    "value": 0.2480339833518544,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M0 uncalibrated.spearman": {
+    "value": 0.29836101375453883,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M0 uncalibrated.pred_sd": {
+    "value": 0.5896254026877403,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M0 uncalibrated.W1_vs_human": {
+    "value": 0.6133933274802459,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M2 mean/SD alignment.exact": {
+    "value": 0.33454901960784317,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M2 mean/SD alignment.within1": {
+    "value": 0.8236274509803921,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M2 mean/SD alignment.MAE": {
+    "value": 0.9015882352941176,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M2 mean/SD alignment.qwk": {
+    "value": 0.3406665866877204,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M2 mean/SD alignment.spearman": {
+    "value": 0.334602852509644,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M2 mean/SD alignment.pred_sd": {
+    "value": 0.9713855924948455,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M2 mean/SD alignment.W1_vs_human": {
+    "value": 0.38398185542873864,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M9 hybrid.exact": {
+    "value": 0.34447058823529414,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M9 hybrid.within1": {
+    "value": 0.8275686274509804,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M9 hybrid.MAE": {
+    "value": 0.8887450980392156,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M9 hybrid.qwk": {
+    "value": 0.34096239945829276,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M9 hybrid.spearman": {
+    "value": 0.3562710559066539,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M9 hybrid.pred_sd": {
+    "value": 0.9533490169556884,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "p18.M9 hybrid.W1_vs_human": {
+    "value": 0.472437664618086,
+    "source": "evaluation/phase18_hybrid_ssr/phase18_metrics.json"
+  },
+  "cohort.n_raw": {
+    "value": 275,
+    "source": "data/clean/human_survey_clean.csv"
+  },
+  "cohort.n": {
+    "value": 258,
+    "source": "data/clean/human_survey_clean.csv"
+  },
+  "cohort.consent_true_share": {
+    "value": 0.0,
+    "source": "data/clean/human_survey_clean.csv"
+  },
+  "cohort.gender_share": {
+    "value": {
+      "Female": 0.5465116279069767,
+      "Male": 0.45348837209302323
+    },
+    "source": "data/clean/human_survey_clean.csv"
+  },
+  "cohort.age_median": {
+    "value": 20.0,
+    "source": "data/clean/human_survey_clean.csv"
+  },
+  "cohort.age_min": {
+    "value": 18.0,
+    "source": "data/clean/human_survey_clean.csv"
+  },
+  "cohort.age_max": {
+    "value": 35.0,
+    "source": "data/clean/human_survey_clean.csv"
+  },
+  "cohort.os_share": {
+    "value": {
+      "Android": 0.7829457364341085,
+      "iOS (iPhone)": 0.21705426356589147
+    },
+    "source": "data/clean/human_survey_clean.csv"
+  },
+  "cohort.persona_counts": {
+    "value": {
+      "P1_premium_tier_owner": 87,
+      "P2_midrange_heavy_user": 52,
+      "P3_midrange_moderate_user": 87,
+      "P4_budget_or_undisclosed_price": 32
+    },
+    "source": "data/personas/persona_assignments.csv"
+  },
+  "cohort.persona_share": {
+    "value": {
+      "P1_premium_tier_owner": 0.3372093023255814,
+      "P2_midrange_heavy_user": 0.20155038759689922,
+      "P3_midrange_moderate_user": 0.3372093023255814,
+      "P4_budget_or_undisclosed_price": 0.12403100775193798
+    },
+    "source": "data/personas/persona_assignments.csv"
+  },
+  "case.Google Pixel 8a.construct_averages": {
+    "value": {
+      "PE": 3.3089,
+      "EE": 4.243,
+      "HM": 3.887,
+      "SI": 3.3011,
+      "PP": 2.5881,
+      "BI": 3.1708
+    },
+    "source": "data/product_evaluation/google_pixel_8a_20261106_125851/ssr_results/ssr_results.json"
+  },
+  "case.Google Pixel 8a.primary_adoption_average": {
+    "value": 3.1708,
+    "source": "data/product_evaluation/google_pixel_8a_20261106_125851/ssr_results/ssr_results.json"
+  },
+  "case.Google Pixel 8a.completeness": {
+    "value": {
+      "expected_responses": 24,
+      "scored_responses": 24,
+      "passed_first_attempt": 16,
+      "corrected": 8,
+      "complete": true
+    },
+    "source": "data/product_evaluation/google_pixel_8a_20261106_125851/ssr_results/ssr_results.json"
+  },
+  "case.Google Pixel 8a.total_seconds": {
+    "value": 933.3,
+    "source": "data/product_evaluation/google_pixel_8a_20261106_125851/ssr_results/ssr_results.json → generation_stats"
+  },
+  "case.Google Pixel 8a.qwen_calls": {
+    "value": 9,
+    "source": "data/product_evaluation/google_pixel_8a_20261106_125851/ssr_results/ssr_results.json → generation_stats"
+  },
+  "case.Google Pixel 8a.canonical_BI": {
+    "value": 3.3607,
+    "source": "data/product_evaluation/google_pixel_8a_20261106_125851/ssr_results/ssr_results.json"
+  },
+  "case.Google Pixel 8a.persona_BI": {
+    "value": {
+      "P1_premium_tier_owner": 3.1953,
+      "P2_midrange_heavy_user": 3.0931,
+      "P3_midrange_moderate_user": 3.4112,
+      "P4_budget_or_undisclosed_price": 2.9835
+    },
+    "source": "data/product_evaluation/google_pixel_8a_20261106_125851/ssr_results/ssr_results.json"
+  },
+  "case.OnePlus Nord CE4 5G.construct_averages": {
+    "value": {
+      "PE": 3.6027,
+      "EE": 3.8811,
+      "HM": 3.7032,
+      "SI": 2.9703,
+      "PP": 2.3236,
+      "BI": 3.2353
+    },
+    "source": "data/product_evaluation/oneplus_nord_ce4_5g_20261106_123600/ssr_results/ssr_results.json"
+  },
+  "case.OnePlus Nord CE4 5G.primary_adoption_average": {
+    "value": 3.2353,
+    "source": "data/product_evaluation/oneplus_nord_ce4_5g_20261106_123600/ssr_results/ssr_results.json"
+  },
+  "case.OnePlus Nord CE4 5G.completeness": {
+    "value": {
+      "expected_responses": 24,
+      "scored_responses": 24,
+      "passed_first_attempt": 19,
+      "corrected": 5,
+      "complete": true
+    },
+    "source": "data/product_evaluation/oneplus_nord_ce4_5g_20261106_123600/ssr_results/ssr_results.json"
+  },
+  "case.OnePlus Nord CE4 5G.total_seconds": {
+    "value": 694.9,
+    "source": "data/product_evaluation/oneplus_nord_ce4_5g_20261106_123600/ssr_results/ssr_results.json → generation_stats"
+  },
+  "case.OnePlus Nord CE4 5G.qwen_calls": {
+    "value": 7,
+    "source": "data/product_evaluation/oneplus_nord_ce4_5g_20261106_123600/ssr_results/ssr_results.json → generation_stats"
+  },
+  "case.OnePlus Nord CE4 5G.canonical_BI": {
+    "value": 3.2213,
+    "source": "data/product_evaluation/oneplus_nord_ce4_5g_20261106_123600/ssr_results/ssr_results.json"
+  },
+  "case.OnePlus Nord CE4 5G.persona_BI": {
+    "value": {
+      "P1_premium_tier_owner": 2.9892,
+      "P2_midrange_heavy_user": 3.0483,
+      "P3_midrange_moderate_user": 3.4675,
+      "P4_budget_or_undisclosed_price": 3.4364
+    },
+    "source": "data/product_evaluation/oneplus_nord_ce4_5g_20261106_123600/ssr_results/ssr_results.json"
+  },
+  "case.Samsung Galaxy M35 5G.construct_averages": {
+    "value": {
+      "PE": 3.3601,
+      "EE": 4.0823,
+      "HM": 3.8885,
+      "SI": 2.9687,
+      "PP": 1.94,
+      "BI": 2.8763
+    },
+    "source": "data/product_evaluation/samsung_galaxy_m35_5g_20261106_110236/ssr_results/ssr_results.json"
+  },
+  "case.Samsung Galaxy M35 5G.primary_adoption_average": {
+    "value": 2.8763,
+    "source": "data/product_evaluation/samsung_galaxy_m35_5g_20261106_110236/ssr_results/ssr_results.json"
+  },
+  "case.Samsung Galaxy M35 5G.completeness": {
+    "value": {
+      "expected_responses": "not recorded",
+      "scored_responses": "not recorded",
+      "passed_first_attempt": "not recorded",
+      "corrected": "not recorded",
+      "complete": "not recorded"
+    },
+    "source": "data/product_evaluation/samsung_galaxy_m35_5g_20261106_110236/ssr_results/ssr_results.json"
+  },
+  "case.Samsung Galaxy M35 5G.total_seconds": {
+    "value": 1291.5,
+    "source": "data/product_evaluation/samsung_galaxy_m35_5g_20261106_110236/ssr_results/ssr_results.json → generation_stats"
+  },
+  "case.Samsung Galaxy M35 5G.qwen_calls": {
+    "value": 7,
+    "source": "data/product_evaluation/samsung_galaxy_m35_5g_20261106_110236/ssr_results/ssr_results.json → generation_stats"
+  },
+  "case.Samsung Galaxy M35 5G.canonical_BI": {
+    "value": 2.9658,
+    "source": "data/product_evaluation/samsung_galaxy_m35_5g_20261106_110236/ssr_results/ssr_results.json"
+  },
+  "case.Samsung Galaxy M35 5G.persona_BI": {
+    "value": {
+      "P1_premium_tier_owner": 3.1547,
+      "P2_midrange_heavy_user": 2.407,
+      "P3_midrange_moderate_user": 2.9769,
+      "P4_budget_or_undisclosed_price": 2.9664
+    },
+    "source": "data/product_evaluation/samsung_galaxy_m35_5g_20261106_110236/ssr_results/ssr_results.json"
+  },
+  "runs.saved_product_evaluations": {
+    "value": 85,
+    "source": "data/product_evaluation/*/ssr_results/ssr_results.json (count)"
+  },
+  "tests.summary": {
+    "value": "1 failed, 835 passed, 2 warnings in 317.16s (0:05:17)",
+    "source": "reports/ieee_results/pytest_summary.txt"
+  },
+  "anchors.BI_v2": {
+    "value": [
+      "I would definitely not buy this smartphone.",
+      "I am unlikely to buy this smartphone.",
+      "I am not sure whether I would buy this smartphone.",
+      "I would probably buy this smartphone.",
+      "I would definitely buy this smartphone."
+    ],
+    "source": "docs/survey_instrument/smartphone_construct_anchor_statements.csv"
+  },
+  "dev.F3_bootstrap_ci (derived, 2000 resamples, seed 20261108)": {
+    "value": {
+      "P1.q21": [
+        4.35,
+        4.0,
+        4.65
+      ],
+      "P1.t_E": [
+        3.6537,
+        3.5191,
+        3.7724
+      ],
+      "P2.q21": [
+        3.15,
+        2.65,
+        3.6
+      ],
+      "P2.t_E": [
+        3.172,
+        2.9381,
+        3.3839
+      ],
+      "P3.q21": [
+        3.35,
+        3.0,
+        3.65
+      ],
+      "P3.t_E": [
+        3.505,
+        3.2929,
+        3.6837
+      ],
+      "P4.q21": [
+        3.75,
+        3.25,
+        4.2
+      ],
+      "P4.t_E": [
+        3.7011,
+        3.5633,
+        3.8135
+      ]
+    },
+    "source": "evaluation/phase19_twin_validation/twin_pairs_scored_bi.csv"
+  },
+  "key_results_table": {
+    "value": [
+      {
+        "result": "Held-out individual accuracy (within one point)",
+        "ours": "E-SSR 82.5%",
+        "baseline": "Direct 72.5%; chance 67.5%",
+        "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+      },
+      {
+        "result": "Held-out individual MAE (lower better)",
+        "ours": "E-SSR 0.875",
+        "baseline": "Direct 1.025; chance 1.075",
+        "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+      },
+      {
+        "result": "Held-out persona-mean error (MAE)",
+        "ours": "E-SSR 0.255",
+        "baseline": "Direct 0.675",
+        "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+      },
+      {
+        "result": "Held-out distribution match (KS, lower better)",
+        "ours": "Calibrated E-SSR 0.125",
+        "baseline": "Uncalibrated 0.225; direct 0.250",
+        "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+      },
+      {
+        "result": "Held-out rating spread (SD; human = 1.298)",
+        "ours": "Calibrated E-SSR 1.023",
+        "baseline": "Uncalibrated 0.357; direct 0.736",
+        "source": "evaluation/phase19_twin_validation/twin_metrics_bi_heldout.json"
+      },
+      {
+        "result": "Development individual QWK",
+        "ours": "Hybrid 0.461",
+        "baseline": "Direct 0.361; chance -0.064",
+        "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+      },
+      {
+        "result": "Development individual within one point",
+        "ours": "Hybrid / E-SSR 88.8%",
+        "baseline": "Direct 85.0%; chance 66.2%",
+        "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+      },
+      {
+        "result": "Development persona-mean error (MAE)",
+        "ours": "E-SSR 0.231",
+        "baseline": "Direct 0.338",
+        "source": "evaluation/phase19_twin_validation/twin_metrics_bi.json"
+      },
+      {
+        "result": "v1 → v2 persona Spearman (development, E-SSR)",
+        "ours": "v2 0.800",
+        "baseline": "v1 0.400",
+        "source": "evaluation/phase19_twin_validation/twin_metrics.json; evaluation/phase19_twin_validation/twin_metrics_bi.json"
+      },
+      {
+        "result": "LLM-judge benchmark exact agreement (n=24)",
+        "ours": "E-SSR k=3 79.2% (QWK 0.697)",
+        "baseline": "Canonical SSR 70.8% (QWK 0.571); majority 62.5% (QWK 0.000)",
+        "source": "evaluation/generation_quality_improvement_v1/phase7_ssr_candidates/phase7_metrics.json"
+      }
+    ],
+    "source": "derived from the sources listed per row"
+  },
+  "abstract.word_count": {
+    "value": 183,
+    "source": "computed from report text"
+  }
+}
